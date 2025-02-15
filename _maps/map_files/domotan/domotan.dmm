@@ -121,13 +121,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/town/roofs/keep)
-"afp" = (
-/obj/structure/handcart{
-	dir = 8
-	},
-/obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/blocks/green,
-/area/rogue/under/town/basement)
 "agA" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/cobblerock,
@@ -9894,6 +9887,7 @@
 /area/rogue/indoors/town/magician)
 "kvf" = (
 /obj/structure/plough,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/basement)
 "kvA" = (
@@ -54124,7 +54118,7 @@ ylR
 cGF
 fvL
 fQk
-afp
+jyd
 kvf
 ocB
 pBC
