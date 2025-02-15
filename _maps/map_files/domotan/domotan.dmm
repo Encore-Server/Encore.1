@@ -1930,6 +1930,10 @@
 /area/rogue/indoors/shelter/town)
 "bZu" = (
 /obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/powder/health,
+/obj/item/reagent_containers/powder/health,
+/obj/item/reagent_containers/powder/mana,
+/obj/item/reagent_containers/powder/mana,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "bZO" = (
@@ -2108,9 +2112,9 @@
 /obj/item/clothing/neck/roguetown/psicross/akan,
 /obj/item/clothing/head/roguetown/helmet/heavy/akan,
 /obj/item/clothing/head/roguetown/helmet/heavy/akan,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/plate/half,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "chi" = (
@@ -4653,6 +4657,7 @@
 /area/rogue/indoors/town/garrison)
 "eSQ" = (
 /obj/structure/closet/crate/roguecloset,
+/obj/item/rope/chain,
 /obj/item/rope/chain,
 /obj/item/rope/chain,
 /obj/item/rope/chain,
@@ -7399,10 +7404,16 @@
 	},
 /area/rogue/outdoors/town/roofs)
 "hPV" = (
-/obj/item/natural/bundle/stick,
-/obj/item/natural/bundle/stick,
-/obj/item/natural/bundle/stick,
 /obj/structure/closet/crate/chest/neu,
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "hQw" = (
@@ -9233,16 +9244,6 @@
 /obj/item/rogueweapon/huntingknife/stoneknife,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
-"jOW" = (
-/obj/item/natural/bundle/cloth{
-	pixel_x = 5
-	},
-/obj/item/natural/bundle/cloth{
-	pixel_x = 5
-	},
-/obj/structure/closet/crate/chest/old_crate,
-/turf/open/floor/rogue/tile,
-/area/rogue/indoors/town/church)
 "jPl" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
@@ -10612,6 +10613,8 @@
 /area/rogue/outdoors/exposed/town/keep)
 "lph" = (
 /obj/structure/closet/crate/drawer,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church)
 "lpB" = (
@@ -11095,6 +11098,7 @@
 	dir = 1
 	},
 /obj/machinery/light/rogue/torchholder/l,
+/obj/item/reagent_containers/glass/bottle/rogue/manapot,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "lQo" = (
@@ -16408,9 +16412,10 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/visires,
 /obj/item/clothing/cloak/templar/visires,
 /obj/item/clothing/cloak/templar/visires,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/visires,
+/obj/item/clothing/under/roguetown/chainlegs,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/plate/half,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "ruQ" = (
@@ -17662,9 +17667,9 @@
 /obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
 /obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
 /obj/item/clothing/cloak/templar/iliope,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/plate/half,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "sHx" = (
@@ -18888,9 +18893,9 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm,
 /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm,
 /obj/item/clothing/head/roguetown/ganimask,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/plate/half,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "tRw" = (
@@ -19117,11 +19122,6 @@
 /obj/item/rogueweapon/pick/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"ugs" = (
-/obj/item/reagent_containers/glass/bottle/rogue/manapot,
-/obj/item/candle/yellow,
-/turf/open/floor/rogue/tile/checkeralt,
-/area/rogue/indoors/town/church)
 "ugX" = (
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/twig,
@@ -21907,9 +21907,17 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/garrison)
 "xqu" = (
-/obj/structure/rack/rogue/shelf/biggest,
-/obj/item/reagent_containers/glass/bottle/rogue/healthpotnew,
-/turf/open/floor/rogue/tile/checkeralt,
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/church)
 "xqR" = (
 /turf/open/floor/rogue/cobble,
@@ -57223,7 +57231,7 @@ mvp
 klu
 fvL
 dBv
-jOW
+eZP
 hPV
 dBv
 kpB
@@ -57725,7 +57733,7 @@ lQI
 ybq
 dBv
 vVj
-ugs
+aQL
 fUG
 jVy
 jVy
@@ -57983,7 +57991,7 @@ ybq
 dBv
 fYC
 aQL
-xqu
+fUG
 dBv
 pWr
 hnw
@@ -58252,7 +58260,7 @@ iIk
 iIk
 eZP
 eZP
-eZP
+xqu
 dBv
 dBv
 dBv
