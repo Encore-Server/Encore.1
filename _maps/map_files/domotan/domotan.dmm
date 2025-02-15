@@ -6265,6 +6265,13 @@
 "gGG" = (
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/under/cavewet)
+"gGH" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/tavern)
 "gGT" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
@@ -10680,6 +10687,13 @@
 	},
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/manor)
+"ltz" = (
+/obj/structure/table/wood{
+	icon_state = "longtable";
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/town/tavern)
 "ltE" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/cobble/mossy,
@@ -14187,6 +14201,14 @@
 /obj/item/roguebin/water/gross,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/town)
+"oRJ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/tavern)
 "oSH" = (
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/under/town/basement/keep)
@@ -119161,8 +119183,8 @@ gTe
 eLf
 eLf
 eLf
-gOk
-mXY
+ltz
+gGH
 tEp
 yaL
 xxG
@@ -119418,7 +119440,7 @@ cZE
 crQ
 crQ
 crQ
-tEp
+oRJ
 tEp
 tEp
 lDP
@@ -119931,7 +119953,7 @@ qfv
 qfv
 kHC
 qfv
-tEp
+mXY
 tEp
 qfv
 kHC
