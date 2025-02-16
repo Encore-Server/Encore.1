@@ -130,8 +130,8 @@
 	flag = BLACKSMITH
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_races = RACES_ALL_KINDS
 

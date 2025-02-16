@@ -14,7 +14,7 @@
 	tutorial = "The Divine is all that matters in the Goblet now. The Elementals have cast the onus upon mortals to maintain order, as they hold the barrier against Hell itself for our sake. None may represent the Balance more stringently than the Aspects' worshippers, priests of the Katholikos."
 	whitelist_req = FALSE
 
-	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
+	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/howl/call_of_the_moon, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
 	outfit = /datum/outfit/job/roguetown/priest
 
 	display_order = JDO_PRIEST
@@ -24,7 +24,7 @@
 	round_contrib_points = 3
 
 /datum/outfit/job/roguetown/priest
-	allowed_patrons = list(ALL_DIVINE_PATRONS)
+	allowed_patrons = ALL_DIVINE_PATRONS
 
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -66,56 +66,9 @@
 	C.grant_spells_priest(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
-	H.verbs |= /mob/living/carbon/human/proc/coronate_lord
 	H.verbs |= /mob/living/carbon/human/proc/churchexcommunicate
 	H.verbs |= /mob/living/carbon/human/proc/churchannouncement
 //	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
-
-
-/mob/living/carbon/human/proc/coronate_lord()
-	set name = "Coronate"
-	set category = "Priest"
-	if(!mind)
-		return
-	if(!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this in the chapel."))
-		return FALSE
-	for(var/mob/living/carbon/human/HU in get_step(src, src.dir))
-		if(!HU.mind)
-			continue
-		if(HU.mind.assigned_role == "Prince Regent")
-			continue
-		if(!HU.head)
-			continue
-		if(!istype(HU.head, /obj/item/clothing/head/roguetown/crown/serpcrown))
-			continue
-
-		//Abdicate previous King
-		for(var/mob/living/carbon/human/HL in GLOB.human_list)
-			if(HL.mind)
-				if(HL.mind.assigned_role == "Prince Regent" || HL.mind.assigned_role == "Consort")
-					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
-			//would be better to change their title directly, but that's not possible since the title comes from the job datum
-			if(HL.job == "Prince Regent")
-				HL.job = "Duke Emeritus"
-			if(HL.job == "Consort")
-				HL.job = "Consort Dowager"
-
-		//Coronate new King (or Queen)
-		HU.mind.assigned_role = "Prince Regent"
-		HU.job = "Prince Regent"
-		switch(HU.pronouns)
-			if(SHE_HER)
-				SSticker.rulertype = "Grand Duchess"
-			if(THEY_THEM_F)
-				SSticker.rulertype = "Grand Duchess"
-			else
-				SSticker.rulertype = "Prince Regent"
-		SSticker.rulermob = HU
-		var/dispjob = mind.assigned_role
-		removeomen(OMEN_NOLORD)
-		say("By the authority of the gods, I pronounce you Ruler of Etgard and Domotan!")
-		priority_announce("[real_name] the [dispjob] has named [HU.real_name] the inheritor of Etgard Keep! A horrible aura of dread seeps into the souls of all life upon Domotan. The One Envy is nearer now.", title = "Long Live [HU.real_name]!", sound = 'sound/misc/bell.ogg')
 
 /mob/living/carbon/human/proc/churchexcommunicate()
 	set name = "Curse"
@@ -144,7 +97,7 @@
 		if(!found)
 			return FALSE
 		GLOB.excommunicated_players += inputty
-		priority_announce("[real_name] has put Iliope's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
+		priority_announce("[real_name] has put Gani's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
 
 /mob/living/carbon/human/proc/churchannouncement()
 	set name = "Announcement"
@@ -163,8 +116,8 @@
 	new_role = "Templar"
 	overlay_state = "recruit_templar"
 	recruitment_faction = "Templars"
-	recruitment_message = "Serve the ten, %RECRUIT!"
-	accept_message = "FOR THE TEN!"
+	recruitment_message = "Serve the Elementals, %RECRUIT!"
+	accept_message = "FOR THE ELEMENTALS!"
 	refuse_message = "I refuse."
 
 /obj/effect/proc_holder/spell/self/convertrole/monk
@@ -172,6 +125,6 @@
 	new_role = "Acolyte"
 	overlay_state = "recruit_acolyte"
 	recruitment_faction = "Church"
-	recruitment_message = "Serve the ten, %RECRUIT!"
-	accept_message = "FOR THE TEN!"
+	recruitment_message = "Serve the Elementals, %RECRUIT!"
+	accept_message = "FOR THE ELEMENTALS!"
 	refuse_message = "I refuse."

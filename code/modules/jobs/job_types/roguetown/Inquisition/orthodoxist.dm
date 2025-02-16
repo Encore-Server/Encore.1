@@ -3,8 +3,8 @@
 	flag = ORTHODOXIST
 	department_flag = INQUISITION
 	faction = "Station"
-	total_positions = 2 // TWO GOONS!!
-	spawn_positions = 2
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/all_aspect) //You MUST have an All Aspect character to start. Just so people don't get japed into Oops Suddenly Katholikos!
 	tutorial = "A fervent believer in the cause of the Inquisition. Recruited by the Inquisitor to further the Katholikos' goal in the locale."

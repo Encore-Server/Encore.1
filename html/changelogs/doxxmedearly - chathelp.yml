@@ -1,0 +1,7 @@
+
+author: doxxmedearly
+
+delete-after: True
+
+changes:
+  - rscadd: "Added a helper verb to view the chat commands for emoting and whispering and such."

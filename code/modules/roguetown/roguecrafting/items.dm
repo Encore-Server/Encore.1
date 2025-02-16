@@ -539,10 +539,17 @@
 
 
 /datum/crafting_recipe/roguetown/bait
-	name = "bait"
+	name = "bait (wheat)"
 	result = /obj/item/bait
 	reqs = list(/obj/item/storage/roguebag = 1,
 				/obj/item/reagent_containers/food/snacks/grown/wheat = 2)
+	subtype_reqs = TRUE
+
+/datum/crafting_recipe/roguetown/oat_bait
+	name = "bait (oat)"
+	result = /obj/item/bait
+	reqs = list(/obj/item/storage/roguebag = 1,
+				/obj/item/reagent_containers/food/snacks/grown/oat = 2)
 	subtype_reqs = TRUE
 
 /datum/crafting_recipe/roguetown/sbaita

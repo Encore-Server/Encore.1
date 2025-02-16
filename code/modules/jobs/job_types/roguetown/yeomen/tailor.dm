@@ -3,8 +3,8 @@
 	flag = TAILOR
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 	display_order = 6
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = RACES_ALL_KINDS

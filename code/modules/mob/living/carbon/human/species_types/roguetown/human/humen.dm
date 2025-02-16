@@ -61,18 +61,18 @@
 
 /datum/species/human/northern/get_skin_list()
 	return list(
-		"Grenzelhoft" = SKIN_COLOR_GRENZELHOFT,
-		"Hammerhold" = SKIN_COLOR_HAMMERHOLD,
-		"Avar" = SKIN_COLOR_AVAR,
-		"Rockhill" = SKIN_COLOR_ROCKHILL,
-		"Otava" = SKIN_COLOR_OTAVA,
-		"Etrusca" = SKIN_COLOR_ETRUSCA,
-		"Gronn" = SKIN_COLOR_GRONN,
-		"North Zybantia (Giza)" = SKIN_COLOR_GIZA,
-		"West Zybantia (Shalvistine)" = SKIN_COLOR_SHALVISTINE,
-		"East Zybantia (Lalvestine)" = SKIN_COLOR_LALVESTINE,
-		"Naledi" = SKIN_COLOR_NALEDI,
-		"Kazengun" = SKIN_COLOR_KAZENGUN
+		"Amber Lands" = SKIN_COLOR_GRENZELHOFT,
+		"Aelondan" = SKIN_COLOR_HAMMERHOLD,
+		"True Qadirid" = SKIN_COLOR_AVAR,
+		"Rinlette" = SKIN_COLOR_ROCKHILL,
+		"Nomablood" = SKIN_COLOR_OTAVA,
+		"Arnkin" = SKIN_COLOR_ETRUSCA,
+		"Wrestchilde" = SKIN_COLOR_GRONN,
+		"Jinman" = SKIN_COLOR_GIZA,
+		"Sunnite" = SKIN_COLOR_SHALVISTINE,
+		"Imperial Kui" = SKIN_COLOR_LALVESTINE,
+		"Ginsoyon" = SKIN_COLOR_NALEDI,
+		"Yi Freemen" = SKIN_COLOR_KAZENGUN
 	)
 
 /datum/species/human/northern/get_hairc_list()

@@ -4,32 +4,9 @@
 /datum/species/elf/dark
 	name = "Dark Elf"
 	id = "elfd"
-	desc = "<b>Dark Elf</b><br>\
-	Elves, are a generic term for tall, pointy-eared humanoids\
-    Of whom trace their original heritage to the ancient mysterious Snow Elves. \
-	These ones are of a dark complexion and originate mostly from the underdark. \
-    Their culture and entire lives normally involve serving the evil gods of the inhumen pantheon. \
-    Previously rare but in recent times, more and more dark elfs can be seen on the surface. \
-    The ones who aren't overtly cruel and bloodthirsty, tend to flee to the surface lest they get culled by their own society, \
-    while some more sinister ones abandon their cities in search of new and greater power. \
-	+1 Perception"
+	desc = "Elves, are a generic term for tall, pointy-eared humanoids of whom trace their original heritage to the ancient mysterious Arnkin Dynasty. These ones are of a dark complexion and originate mostly from subterranean settlements. Previously rare but in recent times, more and more dark elves can be seen on the surface. +1 Perception"
 
-/*
-	Former RT Desc: These guys were undead which doesn't really fit considering now you have a ton of them walking around.
-
-	Descending from a perversion of necromancy, Dark Elves are a unique species \
-	that have only recently found themselves a staple of daily life. \
-	They boast a proud, beauty-centric culture that demands only the finest \
-	out of its citizens, with anyone falling behind their cripplingly high standards \
-	refered to as a Homonculus, while less graceful terms such as \
-	Stitchface, Zombie or corpsewalker are most commonly thrown out by the elder races\
-	Dark Elves tend to be extremely arrogant of others plights, with selfishness\
-	being seen as a massive boon in their society. They are academic and usually well taught\
-	through are noted to suffer from their biology, which tends to be weak and falls apart\
-	without careful upkeep...\
-	They typically trace their beginnings to how their progenator died before being raised."
-*/
-	skin_tone_wording = "Origin City-State"
+	skin_tone_wording = "Bloodline"
 
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
 	default_features = MANDATORY_FEATURE_LIST
@@ -100,13 +77,13 @@
 
 /datum/species/elf/dark/get_skin_list()
 	return list(
-		"Commorah" = SKIN_COLOR_COMMORAH,
-		"Gloomhaven" = SKIN_COLOR_GLOOMHAVEN,
-		"Darkpila" = SKIN_COLOR_DARKPILA,
-		"Sshanntynlan" = SKIN_COLOR_SSHANNTYNLAN,
-		"Llurth Dreir" = SKIN_COLOR_LLURTH_DREIR,
-		"Tafravma" = SKIN_COLOR_TAFRAVMA,
-		"Yuethindrynn" = SKIN_COLOR_YUETHINDRYNN,
+		"Havel Sectus" = SKIN_COLOR_COMMORAH,
+		"Dors" = SKIN_COLOR_GLOOMHAVEN,
+		"The Blind" = SKIN_COLOR_DARKPILA,
+		"The Far Wild" = SKIN_COLOR_SSHANNTYNLAN,
+		"The Lost" = SKIN_COLOR_LLURTH_DREIR,
+		"Wanewalkers" = SKIN_COLOR_TAFRAVMA,
+		"Dunnish" = SKIN_COLOR_YUETHINDRYNN,
 	)
 
 /datum/species/elf/dark/get_hairc_list()

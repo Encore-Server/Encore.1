@@ -18,6 +18,7 @@
 	var/stable_price = FALSE
 	var/percent_bounty = FALSE
 	var/passive_generation = 0 //How much to generate in the remote section each firing of the treasury system.
+	var/withdrawal_type = null //When set, vomitoriums and stockpiles will dispense this type instead. Use this for items that Initialize() with random values, like fish.
 
 /datum/roguestock/New()
 	..()

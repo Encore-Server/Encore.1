@@ -1,0 +1,6 @@
+author: "Hocka"
+
+delete-after: True
+
+changes:
+  - bugfix: "Changed how Ranger-Knight type classes are handed their chosen equipment, so it isn't permanently lost if they have something in their hand already."

@@ -82,8 +82,8 @@
 	return TRUE
 
 /obj/effect/proc_holder/spell/self/howl/call_of_the_moon
-	name = "Call of Angros"
-	desc = "Draw upon the the secrets of the hidden firmament to converse with the hell-cursed."
+	name = "Call of Gani"
+	desc = "Draw upon the the secrets of the hidden firmament to converse with those of Gani's realm."
 	overlay_state = "howl"
 	antimagic_allowed = FALSE
 	charge_max = 600
@@ -103,7 +103,7 @@
 		to_chat(user, span_boldnotice("The vestige of the hidden moon high above reveals His truth: the knowledge of beast-tongue was in me all along."))
 	
 	if (!first_cast)
-		to_chat(user, span_boldwarning("So it is murmured in the Earth and Air: the Call of Angros is sacred, and to share knowledge gleaned from it with those not of Him is a SIN."))
+		to_chat(user, span_boldwarning("So it is murmured in the Earth and Air: the Call of Gani is sacred, and to share knowledge gleaned from it with those not of Her is a SIN."))
 		to_chat(user, span_boldwarning("Ware thee well, child of Domotan."))
 		first_cast = TRUE
 	. = ..()

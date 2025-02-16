@@ -3,12 +3,12 @@
 	flag = PURITAN
 	department_flag = INQUISITION
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = list(/datum/patron/all_aspect)
-	tutorial = "You have been sent by the High Bishop of the Katholikos, leader of a radical denomination of the One Church that only believes in the endurance of the All-Aspect, and the security of the Elemental Pantheon. Officially, you are here on diplomatic business. /n /n Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from heretics that stray too far from doctrine, to poisoned fools that worship devils. The locals tolerate you due to your ability to fight the demonic, and Etgard's royalty tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
+	tutorial = "You have been sent by the High Bishop of the Katholikos, leader of a radical denomination of the One Church that only believes in the endurance of the All-Aspect, and the security of the Elemental Pantheon. Officially, you are here on diplomatic business. Unofficially, you work to cast out the sinners from God's house. Heresy of all kinds must be corrected; from heretics that stray too far from doctrine, to poisoned fools that worship devils. The locals tolerate you due to your ability to fight the demonic, and Etgard's royalty tolerates you due to your aligned goals...but it is probably best to not let them peer too closely."
 	whitelist_req = TRUE
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION

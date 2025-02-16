@@ -513,6 +513,8 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 //////////////
 
 /client/Del()
+	..()
+	--global.client_count
 	log_access("Logout: [key_name(src)]")
 
 	if(holder)
@@ -1081,6 +1083,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 /client/New()
 	..()
+	++global.client_count
 	fullscreen()
 
 /client/proc/give_award(achievement_type, mob/user)

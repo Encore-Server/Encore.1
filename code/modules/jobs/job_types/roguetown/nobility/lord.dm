@@ -11,6 +11,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	spawn_positions = 1
 	selection_color = JCOLOR_NOBLE
 	allowed_races = list(/datum/species/human/halfelf)
+	allowed_patrons = list(/datum/patron/heretic/jealous_god)
 	allowed_sexes = list(MALE, FEMALE)
 
 	spells = list(
@@ -93,6 +94,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 5, TRUE)
+
 			if(H.age == AGE_OLD)
 				H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.change_stat("strength", 1)
@@ -136,6 +140,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			qdel(H.wear_mask)
 			mask = /obj/item/clothing/mask/rogue/lordmask/l
 
+	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
+	C.grant_spells_priest(H)
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)

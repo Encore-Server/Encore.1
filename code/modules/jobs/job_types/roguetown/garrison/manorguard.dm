@@ -3,13 +3,13 @@
 	flag = MANATARMS
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the Royal Family and their Court. Trained regularly in combat and siege warfare, you stand a small chance of surviving the Duke's reign."
+	tutorial = "Having proven yourself loyal and capable, you are entrusted to defend the Royal Family and their Court. Trained regularly in combat and siege warfare, you stand a small chance of surviving the Regent's reign."
 	display_order = JDO_CASTLEGUARD
 	whitelist_req = TRUE
 

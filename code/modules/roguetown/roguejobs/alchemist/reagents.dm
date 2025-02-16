@@ -170,7 +170,7 @@
 
 /datum/reagent/infection
 	name = "excess choleric humour"
-	description = "Red-yellow pustulence - the carrier of disease, the enemy of all Pestrans."
+	description = "Red-yellow pustulence - the carrier of disease, the enemy of all mortals."
 	reagent_state = LIQUID
 	color = "#dfe36f"
 	metabolization_rate = 0.1
@@ -199,7 +199,7 @@
 
 /datum/reagent/infection/major
 	name = "excess melancholic humour"
-	description = "Kingsfield's Bane. Excess melancholic has killed thousands, and even Pestra's greatest struggle against its insidious advance."
+	description = "Excess melancholic has killed millions, and even the greatest academics struggle against its insidious advance."
 	damage_tick = 1
 	lethal_fever = TRUE
 	fever_multiplier = 3

@@ -36,7 +36,9 @@ GLOBAL_VAR(restart_counter)
   */
 
 /world/New()
-
+	..()
+	TgsNew(minimum_required_security_level = TGS_SECURITY_TRUSTED)
+	TgsInitializationComplete()
 	log_world("World loaded at [time_stamp()]!")
 
 	SetupExternalRSC()
@@ -45,7 +47,6 @@ GLOBAL_VAR(restart_counter)
 
 	make_datum_references_lists()	//initialises global lists for referencing frequently used datums (so that we only ever do it once)
 
-	TgsNew(minimum_required_security_level = TGS_SECURITY_TRUSTED)
 
 	GLOB.revdata = new
 
@@ -206,6 +207,7 @@ GLOBAL_VAR(restart_counter)
 
 /world/Topic(T, addr, master, key)
 	TGS_TOPIC //redirect to server tools if necessary
+	..()
 
 	var/static/list/topic_handlers = TopicHandlers()
 
@@ -262,13 +264,8 @@ GLOBAL_VAR(restart_counter)
 	qdel(src)	//shut it down
 
 /world/Reboot(reason = 0, fast_track = FALSE)
-//	if (reason || fast_track) //special reboot, do none of the normal stuff
-//		if (usr)
-//			log_admin("[key_name(usr)] Has requested an immediate world restart via client side debugging tools")
-//			message_admins("[key_name_admin(usr)] Has requested an immediate world restart via client side debugging tools")
-//		to_chat(world, span_boldannounce("Rebooting World immediately due to host request."))
-//	else
-//	to_chat(world, span_boldannounce("<b><u><a href='byond://winset?command=.reconnect'>CLICK TO RECONNECT</a></u></b>"))
+	TgsReboot()
+	..()
 
 	var/round_end_sound = pick(
 		'sound/roundend/knave.ogg',

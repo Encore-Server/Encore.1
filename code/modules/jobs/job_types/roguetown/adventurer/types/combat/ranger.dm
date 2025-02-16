@@ -10,7 +10,7 @@
 /datum/outfit/job/roguetown/adventurer/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	var/classes = list("Ranger","Gloom Stalker",) // Ranger Knight is the unique subclass. Gives you steel breastplate and a sword.
+	var/classes = list("Ranger","Gloom Stalker", "Ranger-Knight")
 	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
 
 	switch(classchoice)
@@ -20,6 +20,7 @@
 			to_chat(H, span_warning("Rangers are masters of nature, often hired as pathfinders, bodyguards and mercenaries in areas of wilderness untraversable to common soldiery."))
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			pants = /obj/item/clothing/under/roguetown/trou/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -64,6 +65,7 @@
 			to_chat(H, span_warning("Rangers are masters of nature, often hired as pathfinders, bodyguards and mercenaries in areas of wilderness untraversable to common soldiery."))
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+			pants = /obj/item/clothing/under/roguetown/trou/leather
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 			gloves = /obj/item/clothing/gloves/roguetown/leather
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -98,12 +100,52 @@
 			H.change_stat("perception", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 3)
-		
-	if(H.pronouns == HE_HIM || H.pronouns == THEY_THEM || H.pronouns == IT_ITS)
-		pants = /obj/item/clothing/under/roguetown/trou/leather
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-	else
-		pants = /obj/item/clothing/under/roguetown/tights/black
+		if("Ranger-Knight")
+			to_chat(H, span_warning("Ranger-Knights are the select few who have elected to diversify their skills with medium armor, melee weaponry and ranged warfare - at the cost of being lesser than dedicated followers of those arts."))
+			shoes = /obj/item/clothing/shoes/roguetown/boots
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
+			gloves = /obj/item/clothing/gloves/roguetown/chain
+			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			belt = /obj/item/storage/belt/rogue/leather
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+			cloak = /obj/item/clothing/cloak/tabard
+			beltr = /obj/item/flashlight/flare/torch/lantern
+			beltl = /obj/item/rogueweapon/sword/short
+			pants = /obj/item/clothing/under/roguetown/chainlegs
+			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+			H.change_stat("strength", 2)
+			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 3)
+
+			var/weapons = list("Recurve Bow","Longbow", "Crossbow")
+			var/weaponchoice = input(H, "Choose your weapon", "TAKE UP ARMS") as anything in weapons
+			H.set_blindness(0)
+			switch(weaponchoice)
+				if("Recurve Bow")
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
+					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
+					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+				if("Longbow")
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
+					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
+					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+				if("Crossbow")
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
+					H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
+					H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

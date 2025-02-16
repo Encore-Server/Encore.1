@@ -3,8 +3,8 @@
 	flag = MERCHANT
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = RACES_ALL_KINDS
 	tutorial = "You were born into wealth, learning from before you could talk about the basics of mathematics. Counting coins is a simple pleasure for any person, but you've made it an art form. These people are addicted to your wares, and you are the literal beating heart of this economy."

@@ -50,7 +50,7 @@
 		if(world.time > check_counter + 10 SECONDS)
 			check_counter = world.time
 			var/area/A = get_area(src)
-			if(A.outdoors)
+			if(A.outdoors && !istype(A, /area/rogue/outdoors/town))
 				var/list/possible_targets = list()
 				for(var/obj/item/bait/B in range(7, src))
 					if(B == src)
@@ -60,7 +60,7 @@
 				if(possible_targets.len)
 					return
 				possible_targets = list()
-				for(var/obj/structure/flora/roguetree/RT in range(7, src))
+				for(var/obj/structure/flora/newtree/RT in range(7, src))
 					if(can_see(src, RT, 7))
 						possible_targets += RT
 				for(var/obj/structure/flora/roguegrass/bush/RT in range(7, src))

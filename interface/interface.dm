@@ -114,7 +114,6 @@
 	set category = "OOC"
 	mob.hotkey_help()
 
-
 /mob/proc/hotkey_help()
 	var/hotkey_mode = {"<font color='purple'>
 Hotkey-Mode: (hotkey-mode must be on)
@@ -153,6 +152,27 @@ Hotkey-Mode: (hotkey-mode must be on)
 </font>"}
 
 	to_chat(src, hotkey_mode)
+
+/client/verb/chatkeys_help()
+	set name = "_Help-Chat"
+	set category = "OOC"
+	mob.chatkey_help()
+
+/mob/proc/chatkey_help()
+
+	var/chatkey_mode = {"<font color='purple'>
+Chat/Emote help (Use T to open the text box.)
+**You can quick emote by using the M key. The following help applies to using the T key:
+-Use an asterisk (*) before your statement to emote.
+-Use an at-sign (@) before your statement to subtly emote, an emote only visible to those adjacent or very near.
+-Use a number sign (#) before your statement to subtly speak, only audible to those adjacent or very near.
+-Append your statements with a single exclamation mark to raise the volume a little, or two (or more) to make your statements audible for a very long distance.
+-Putting an asterisk at the start of your message turns everything AFTER it into an emote.
+-Putting an asterisk anywhere else in your message will turn everything BEFORE it into the verb of your say message, and everything after into the audio part of your message
+--This can be combined with other languages to have your character do an action and then speak in a different language.
+</font>"}
+
+	to_chat(src, chatkey_mode)
 
 /client/verb/set_fixed()
 	set name = "IconSize"

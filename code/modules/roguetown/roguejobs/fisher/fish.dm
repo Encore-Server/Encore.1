@@ -70,7 +70,13 @@
 		STOP_PROCESSING(SSobj, src)
 		return 1
 
+/obj/item/reagent_containers/food/snacks/fish/common //Generic fish for stockpiles and such
 
+/obj/item/reagent_containers/food/snacks/fish/common/Initialize() //No variations in rarity, sprite, stockpile, etc. 
+	. = ..()
+	name = "common [initial(name)]"
+	sellprice = initial(sellprice)
+	icon_state = "carpcom"
 
 /obj/item/reagent_containers/food/snacks/fish/carp
 	name = "carp"

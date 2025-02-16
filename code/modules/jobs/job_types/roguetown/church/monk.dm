@@ -3,11 +3,11 @@
 	flag = MONK
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires,, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh)
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh)
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/monk
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Priest in their daily tasks, maybe today will be the day something interesting happens."

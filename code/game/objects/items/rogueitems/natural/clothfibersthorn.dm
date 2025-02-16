@@ -405,36 +405,3 @@
 	w_class = WEIGHT_CLASS_TINY
 	spitoutmouth = FALSE
 
-/obj/item/natural/bundle/worms
-	name = "worms"
-	desc = "Multiple wriggly worms."
-	color = "#964B00"
-	maxamount = 12
-	icon_state = "worm2"
-	icon1 = "worm2"
-	icon1step = 4
-	icon2 = "worm4"
-	icon2step = 6
-	icon3 = "worm6"
-	stacktype = /obj/item/natural/worms
-	stackname = "worms"
-
-/obj/item/natural/worms/attack_right(mob/user)
-	to_chat(user, span_warning("I start to collect [src]..."))
-	if(move_after(user, 1 SECONDS, target = src))
-		var/wormcount = 0
-		for(var/obj/item/natural/worms/F in get_turf(src))
-			wormcount++
-		while(wormcount > 0)
-			if(wormcount == 1)
-				new /obj/item/natural/worms(user.drop_location())
-				wormcount--
-			else if(wormcount >= 2)
-				var/obj/item/natural/bundle/worms/B = new(user.drop_location())
-				B.amount = clamp(wormcount, 2, 12)
-				B.update_bundle()
-				wormcount -= clamp(wormcount, 2, 12)
-		for(var/obj/item/natural/worms/F in get_turf(src))
-			qdel(F)
-
-

@@ -3,8 +3,8 @@
 	flag = BEGGAR
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = ALL_AGES_LIST

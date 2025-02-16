@@ -50,7 +50,7 @@ GLOBAL_LIST_INIT(badomens, list())
 		if(ASCEND_WAKENING)
 			used = "The sky begins to turn quicker. NEW OMEN, MAJOR ARCANA: THE HANGED MAN - REVERSED"
 		if(ASCEND_ASCENDANT)
-			used = "A N##EW G$ $OD A@@AKENSS IN GORE AND S3%HIT - <span class='userdanger'>MAJOR ARCANA: THE TOWER - UPRIGHT</span>"
+			used = "A N##EW G$ $OD A@@AKENSS IN GORE - <span class='userdanger'>MAJOR ARCANA: THE TOWER - UPRIGHT</span>"
 	if(eventreason && used)
 		priority_announce(used, "Bad Omen", 'sound/misc/evilevent.ogg')
 

@@ -3,8 +3,8 @@
 	flag = ELDER
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS

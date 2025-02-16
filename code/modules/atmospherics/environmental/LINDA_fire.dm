@@ -30,7 +30,7 @@
 	var/just_spawned = TRUE
 	var/bypassing = FALSE
 	var/visual_update_tick = 0
-	var/life = 20
+	var/life = 350
 	var/firelevel = 1 //RTD new firehotspot mechanics
 
 //obj/effect/hotspot/extinguish() handled in other_reagents

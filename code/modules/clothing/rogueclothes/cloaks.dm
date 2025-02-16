@@ -954,8 +954,8 @@
 
 /obj/item/clothing/cloak/cape/fur
 	name = "fur cape"
-	icon_state = "furcape"
-	item_state = "furcape"
+	icon_state = "furgrey"
+	item_state = "furgrey"
 	inhand_mod = TRUE
 
 /obj/item/clothing/cloak/chasuble

@@ -3,8 +3,8 @@
 	flag = BUTCHER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = ALL_AGES_LIST

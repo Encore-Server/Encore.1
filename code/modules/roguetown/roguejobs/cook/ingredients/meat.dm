@@ -115,7 +115,7 @@
 
 /obj/item/reagent_containers/food/snacks/rogue/meat/mince/fish
 	name = "ground fish meat"
-	desc = "Does not smell great. Should taste great though."
+	desc = "Does not smell great. Should taste great though. Even other fish like it!"
 	slices_num = 0
 	icon_state = "meatmince"
 	cooked_type = null

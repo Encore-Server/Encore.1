@@ -83,6 +83,10 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/mince/fish
 	name = "minced fish"
 	icon_state = "fishmince"
+	isbait = TRUE //can be used as fishing bait
+	baitpenalty = 10
+	fishloot = list(/obj/item/reagent_containers/food/snacks/fish/carp = 2,
+					/obj/item/natural/worms/murkminnow = 5)
 
 /obj/item/reagent_containers/food/snacks/rogue/meat/mince/poultry
 	name = "mince"

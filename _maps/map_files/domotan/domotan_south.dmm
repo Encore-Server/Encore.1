@@ -18,6 +18,7 @@
 /obj/effect/decal/cobbleedge{
 	dir = 4
 	},
+/obj/effect/decal/cobbleedge,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
 "ak" = (
@@ -217,13 +218,9 @@
 /area/rogue/outdoors/woods/heavenscoast)
 "cp" = (
 /obj/structure/fluff/railing/border{
-	dir = 6;
-	icon_state = "border"
+	dir = 4
 	},
-/obj/effect/decal/cobbleedge{
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/cave)
 "ct" = (
 /obj/structure/bed/rogue/inn,
@@ -880,12 +877,9 @@
 /area/rogue/outdoors/bog/dense)
 "kx" = (
 /obj/structure/fluff/railing/border{
-	dir = 4
+	dir = 5
 	},
-/obj/effect/decal/cobbleedge{
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/cave)
 "kA" = (
 /obj/structure/fluff/traveltile{
@@ -959,6 +953,10 @@
 "ly" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/shelter)
+"lA" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
 "lB" = (
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -1697,6 +1695,13 @@
 /obj/effect/decal/cobbleedge{
 	dir = 1
 	},
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
 "uo" = (
@@ -2281,14 +2286,7 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/indoors/shelter/woods)
 "BL" = (
-/obj/effect/decal/cobbleedge{
-	dir = 9
-	},
 /obj/effect/decal/cobbleedge,
-/obj/structure/fluff/railing/border{
-	dir = 5;
-	icon_state = "border"
-	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
 "BN" = (
@@ -2354,11 +2352,12 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
 "Cm" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
 	},
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/under/cave)
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/woods)
 "Co" = (
 /obj/item/roguecoin/copper,
 /turf/open/water/sewer,
@@ -2410,11 +2409,7 @@
 /area/rogue/under/cave)
 "CQ" = (
 /obj/effect/decal/cobbleedge{
-	dir = 8
-	},
-/obj/structure/fluff/railing/border{
-	dir = 4;
-	icon_state = "border"
+	icon_state = "cobbleedge-n"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
@@ -2501,10 +2496,6 @@
 "DS" = (
 /obj/effect/decal/cobbleedge{
 	dir = 9
-	},
-/obj/structure/fluff/railing/border{
-	dir = 6;
-	icon_state = "border"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
@@ -3036,10 +3027,7 @@
 /area/rogue/outdoors/beach)
 "Kw" = (
 /obj/machinery/light/rogue/torchholder/l,
-/obj/effect/decal/cobbleedge{
-	dir = 1
-	},
-/turf/open/floor/rogue/ruinedwood,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/cave)
 "Ky" = (
 /obj/item/natural/rock,
@@ -3392,7 +3380,10 @@
 /obj/effect/decal/cobbleedge{
 	dir = 1
 	},
-/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 6;
+	icon_state = "border"
+	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
 "OC" = (
@@ -3931,8 +3922,10 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
 "WH" = (
-/obj/structure/stairs/stone,
-/turf/open/floor/rogue/hexstone,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
 "WJ" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf,
@@ -4104,7 +4097,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cobbleedge{
-	dir = 5
+	dir = 1
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
@@ -26665,7 +26658,7 @@ um
 cp
 kx
 BL
-Cm
+bk
 bk
 Xj
 qX
@@ -26919,10 +26912,10 @@ AQ
 rL
 vt
 Ze
+lA
+vt
 gL
 WH
-vt
-bk
 bk
 Dk
 yn
@@ -91941,8 +91934,8 @@ tY
 ax
 gv
 DS
-CQ
-CQ
+Ca
+Ca
 Ca
 Xs
 mB
@@ -92198,10 +92191,10 @@ tY
 tY
 gv
 Ou
-Yk
-BI
+Cm
+Cm
 Kk
-Xs
+CQ
 vF
 gv
 QH
@@ -92712,10 +92705,10 @@ tY
 tY
 gv
 gv
+gv
+gv
+gv
 lf
-gv
-gv
-gv
 gv
 gv
 gv

@@ -97,7 +97,7 @@
 
 /obj/effect/proc_holder/spell/invoked/rituos
 	name = "Rituos"
-	desc = "Draw upon the Lesser Work of She Who Is Z, and expunge the trappings of mortal flesh from your form in exchange for power unimaginable. Be warned: indulging in even the first step of this ritual will make you more deadite than not..."
+	desc = "Draw upon the teachings of the One Envy in your blood, and expunge the trappings of mortal flesh from your form in exchange for power unimaginable. Be warned: indulging in even the first step of this ritual will make you more undead than not..."
 	clothes_req = FALSE
 	overlay_state = "rituos"
 	associated_skill = /datum/skill/magic/arcane

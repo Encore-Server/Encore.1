@@ -4,12 +4,7 @@
 /datum/species/lizardfolk
 	name = "Sissean"
 	id = "lizardfolk"
-	desc = "<b>Sissean</b><br>\
-	Sisseans are semi-aquatic reptilian humanoids.\
-	Their skin is covered in scales and varied in color from dark green through to shades of brown and gray.\
-	Taller than humans and powerfully built, sisseans are often between 6 and 7 feet tall.\
-	Sisseans have non-prehensile muscular tails that grow to three or four feet in length, and these are used for balance.\
-	They also have sharp claws and teeth."
+	desc = "Sisseans are semi-aquatic reptilian humanoids. Their skin is covered in scales and varied in color from dark green through to shades of brown and gray. Sisseans have non-prehensile muscular tails that grow to three or four feet in length, and these are used for balance. They also have sharp claws and teeth. Most of these originate from the humid tropics of the Delve north of the Qadirid or scattered disparate island nations."
 	skin_tone_wording = "Skin Colors"
 	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
 	possible_ages = ALL_AGES_LIST

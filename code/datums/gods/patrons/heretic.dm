@@ -15,10 +15,11 @@
 	desc = "She whose name is unknown, she whose agenda is lost; the Jealous God embodies no elemental aspect, and serves neither the divine nor ilk of Hell. Her solemn devotees are the royal family of Etgard itself, the Shirleigh Dynasty and their constituents. They are the only divine to lay absolute claim over Domotan Island, and is thus praised only in hushed tones beyond the walls of Etgard Keep."
 	worshippers = "The Shirleigh Dynasty, the brainwashed and the desperate"
 	mob_traits = list(TRAIT_CABAL, TRAIT_SEEPRICES_SHITTY)
-	t0 = /obj/effect/proc_holder/spell/invoked/appraise
-	t1 = /obj/effect/proc_holder/spell/invoked/transact
-	t2 = /obj/effect/proc_holder/spell/invoked/equalize
-	t3 = /obj/effect/proc_holder/spell/invoked/churnwealthy
+	t0 = /obj/effect/proc_holder/spell/invoked/eyebite
+	t1 = /obj/effect/proc_holder/spell/invoked/bonechill
+	t2 = /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle
+	t3 = /obj/effect/proc_holder/spell/invoked/raise_undead
+	t4 = /obj/effect/proc_holder/spell/invoked/rituos/miracle
 	confess_lines = list(
 		"SHE SEES! SHE LAUGHS!",
 		"SHE LAUGHS! SHE SEES!",
@@ -31,6 +32,10 @@
 	desc = "Archdevils of the steepest rage whose influence has been made in the world, either as intruders from Hell itself or hidden Divines seeking to disrupt the Elemental Balance. Worshippers of warring devils are usually affected by the fall of Angros, whose descent into madness is idealized as an attempt to break free of divine shackles."
 	worshippers = "All manner of nefarious folk"
 	mob_traits = list(TRAIT_HORDE, TRAIT_ORGAN_EATER)
+	t0 = /obj/effect/proc_holder/spell/invoked/eyebite
+	t1 = /obj/effect/proc_holder/spell/targeted/shadowwalk
+	t2 = /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning
+	t3 = /obj/effect/proc_holder/spell/invoked/projectile/bloodsteal
 	confess_lines = list(
 		"CLAW AT THE SOIL! BREAK THE FIRMAMENT!",
 		"RELEASE THE OLD ONES! RETURN THEIR CROWN!",
@@ -43,6 +48,10 @@
 	desc = "The praise of divines other than those subservient to the Four Elementals is heresy, even if those stragglers seek not to disrupt the balance; the mere worship gives power to Heavenly figures, after all. Which God that is remains up to you."
 	worshippers = "The desperate, the drunk and the depraved"
 	mob_traits = list(TRAIT_DEPRAVED, TRAIT_CRACKHEAD)
+	t0 = /obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps
+	t1 = /obj/effect/proc_holder/spell/targeted/spiderconjur//weaving a web of LIES
+	t3 = /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning//Secret gods have to be a little higher level to start getting aggressive
+	t4 = /obj/effect/proc_holder/spell/targeted/shapeshift//freakyyyy
 	confess_lines = list(
 		"THE DECEIVERS FLEE! SEE THEIR LIES!",
 		"A PANTHEON EXISTS BEYOND YOUR OWN!",

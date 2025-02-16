@@ -110,7 +110,7 @@
 			organs -= found_organ
 			organs[found_organ.name] = found_organ
 
-		var/selected = input(user, "Remove which organ?", "PESTRA") as null|anything in sortList(organs)
+		var/selected = input(user, "Remove which organ?", "PHYSIC") as null|anything in sortList(organs)
 		if(QDELETED(user) || QDELETED(target) || !user.Adjacent(target) || (user.get_active_held_item() != tool))
 			return FALSE
 		var/obj/item/organ/final_organ = organs[selected]
@@ -196,7 +196,7 @@
 	if(!length(organs))
 		to_chat(user, span_warning("There are no organs you can mold in [target]'s [parse_zone(target_zone)]!"))
 		return FALSE
-	var/selected = input(user, "Create which organ?", "PESTRA") as null|anything in sortList(organs)
+	var/selected = input(user, "Create which organ?", "PHYSIC") as null|anything in sortList(organs)
 	if(QDELETED(user) || QDELETED(target) || !user.Adjacent(target) || (user.get_active_held_item() != tool))
 		return FALSE
 	if(target.getorganslot(selected))

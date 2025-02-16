@@ -76,7 +76,7 @@
 	if(!prog_amt) // no point in the rest if it's just an expenditure
 		return TRUE
 	progression = clamp(progression + prog_amt, 0, max_progression)
-	var/obj/effect/spell_unlocked
+	var/obj/effect/proc_holder/spell/spell_unlocked
 	switch(level)
 		if(CLERIC_T0)
 			if(progression >= CLERIC_REQ_1)
@@ -96,11 +96,12 @@
 				level = CLERIC_T4
 	if(!spell_unlocked || !holder?.mind || holder.mind.has_spell(spell_unlocked, specific = FALSE))
 		return TRUE
-	spell_unlocked = new spell_unlocked
-	if(!silent)
-		to_chat(holder, span_boldnotice("I have unlocked a new spell: [spell_unlocked]"))
-	usr.mind.AddSpell(spell_unlocked)
-	LAZYADD(granted_spells, spell_unlocked)
+	if(spell_unlocked.devotion_unlockable)
+		spell_unlocked = new spell_unlocked
+		if(!silent)
+			to_chat(holder, span_boldnotice("I have unlocked a new spell: [spell_unlocked]"))
+		usr.mind.AddSpell(spell_unlocked)
+		LAZYADD(granted_spells, spell_unlocked)
 	return TRUE
 
 /datum/devotion/proc/grant_spells(mob/living/carbon/human/H)
@@ -108,6 +109,9 @@
 		return
 
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0, patron.t1)
+	if(length(patron.additional_spells))
+		for(var/S in patron.additional_spells)
+			spelllist += S
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -122,8 +126,11 @@
 		return
 
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0)
+	if(length(patron.additional_spells))
+		for(var/S in patron.additional_spells)
+			spelllist += S
 	if(istype(patron,/datum/patron/elemental))
-		spelllist += /obj/effect/proc_holder/spell/targeted/abrogation
+		spelllist += /obj/effect/proc_holder/spell/invoked/lesser_heal
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -155,6 +162,9 @@
 
 	granted_spells = list()
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0, patron.t1, patron.t2, patron.t3, patron.t4)
+	if(length(patron.additional_spells))
+		for(var/S in patron.additional_spells)
+			spelllist += S
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -172,6 +182,9 @@
 
 	granted_spells = list()
 	var/list/spelllist = list(/obj/effect/proc_holder/spell/targeted/touch/orison, patron.t0, patron.t1, patron.t2, patron.t3, patron.t4)
+	if(length(patron.additional_spells))
+		for(var/S in patron.additional_spells)
+			spelllist += S
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue

@@ -41,6 +41,7 @@
 	var/swim_skill = FALSE
 	nomouseover = FALSE
 	var/swimdir = FALSE
+	var/has_fish = TRUE // Does it have fish?
 
 /turf/open/water/Initialize()
 	.  = ..()
@@ -237,6 +238,7 @@
 	water_color = "#FFFFFF"
 	slowdown = 3
 	water_reagent = /datum/reagent/water/gross
+	has_fish = FALSE
 
 /turf/open/water/bath/Initialize()
 	.  = ..()
@@ -252,6 +254,7 @@
 	slowdown = 1
 	wash_in = FALSE
 	water_reagent = /datum/reagent/water/gross
+	has_fish = FALSE
 
 /turf/open/water/sewer/Initialize()
 	icon_state = "paving"

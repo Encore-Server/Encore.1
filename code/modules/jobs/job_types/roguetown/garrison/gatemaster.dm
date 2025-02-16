@@ -3,8 +3,8 @@
 	flag = GATEMASTER
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS

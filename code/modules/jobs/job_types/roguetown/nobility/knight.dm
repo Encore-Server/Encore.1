@@ -3,8 +3,8 @@
 	flag = KNIGHT
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 	allowed_races = RACES_ALL_KINDS
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)

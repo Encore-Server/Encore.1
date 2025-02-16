@@ -56,6 +56,10 @@
 	icon_state = "blackbelt"
 	sellprice = 10
 
+/obj/item/storage/belt/rogue/leather/black/puritan/Initialize()
+	. = ..()
+	contents = list(new /obj/item/storage/keyring/puritan)			// not doing the same checks as the coin spawn pouches because this belt shouldn't be full on spawning, maybe change if it becomes a problem though ~ Hocka
+
 /obj/item/storage/belt/rogue/leather/plaquesilver
 	name = "plaque belt"
 	icon_state = "silverplaque"

@@ -170,6 +170,8 @@
 
 	if(spells && H.mind)
 		for(var/S in spells)
+			if(H.mind.has_spell(S))
+				continue
 			H.mind.AddSpell(new S)
 
 	if(H.gender == FEMALE)

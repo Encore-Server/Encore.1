@@ -177,7 +177,7 @@
 	..()
 
 /obj/item/book/rogue/bibble
-	name = "The Book"
+	name = "The Motonium"
 	icon_state = "bibble_0"
 	base_icon_state = "bibble"
 	title = "bible"

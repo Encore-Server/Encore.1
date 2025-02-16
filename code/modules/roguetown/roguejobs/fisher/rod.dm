@@ -25,6 +25,16 @@
 	else
 		..()
 
+/obj/item/fishingrod/attack_right(mob/living/carbon/human/user)
+	if(baited && !user.doing)
+		to_chat(user, span_notice("I remove \the [baited] from the [src]."))
+		baited.forceMove(get_turf(user))
+		user.put_in_active_hand(baited)
+		baited = null
+		update_icon()
+	else
+		..()
+
 
 /obj/item/fishingrod/attackby(obj/item/I, mob/user, params)
 	if(baited)
@@ -45,6 +55,7 @@
 		else
 			W.forceMove(src)
 			baited = W
+		W.update_icon()
 	else
 		I.forceMove(src)
 		baited = I
@@ -70,6 +81,10 @@
 		return ..()
 
 	if(istype(target, /turf/open/water))
+		var/turf/open/water/W = target
+		if(!W.has_fish) //No fishing in the bathhouses that don't exist anymore.
+			to_chat(user, span_notice("Don't think there's any fish in here..."))
+			return
 		if(user.used_intent.type == ROD_CAST && !user.doing)
 			if(target in range(user,5))
 				user.visible_message("<span class='warning'>[user] casts a line!</span>", \
@@ -96,13 +111,17 @@
 							if(!do_after(user,ow, target = target))
 								if(ismob(A)) // TODO: Baits with mobs on their fishloot lists OR water tiles with their own fish loot pools
 									var/mob/M = A
-									if(M.type in subtypesof(/mob/living/simple_animal/hostile))
-										new M(target)
-									else
-										new M(user.loc)
+									var/turf/landing_spot //Where the mob will end up
+									var/list/turf/potential_spots = list() //Look for spots that are not obstructed by dense objects or other mobs
+									for(var/direction in GLOB.alldirs)
+										var/turf/T = get_step(user, direction)
+										if(!is_blocked_turf(T, FALSE))
+											potential_spots += T
+									landing_spot = length(potential_spots) ? pick(potential_spots) : get_turf(user) //If no good spots, it lands at your feet. Sucks to suck.
+									new M(landing_spot)
 									user.mind.add_sleep_experience(/datum/skill/labor/fishing, fisherman.STAINT*2) // High risk high reward
 								else
-									new A(user.loc)
+									new A(get_turf(user))
 									to_chat(user, "<span class='warning'>Reel 'em in!</span>")
 									user.mind.add_sleep_experience(/datum/skill/labor/fishing, round(fisherman.STAINT, 2), FALSE) // Level up!
 								playsound(src.loc, 'sound/items/Fish_out.ogg', 100, TRUE)

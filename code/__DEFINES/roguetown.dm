@@ -10,8 +10,11 @@
 	/datum/species/akula,\
 	/datum/species/anthromorph,\
 	/datum/species/dracon,\
+	/datum/species/elf/dark,\
+	/datum/species/lizardfolk,\
+	/datum/species/tabaxi,\
+	/datum/species/lupian,\
 
-//Tolerated races are races which don't fit and will inevitably begone mechanically
 #define RACES_TOLERATED \
 	/datum/species/elf/dark,\
 	/datum/species/tieberian,\

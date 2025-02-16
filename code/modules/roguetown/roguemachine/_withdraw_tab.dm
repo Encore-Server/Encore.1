@@ -66,7 +66,11 @@
 			D.held_items[source_stockpile]--
 			budget -= total_price
 			SStreasury.give_money_treasury(D.withdraw_price, "stockpile withdraw")
-			var/obj/item/I = new D.item_type(parent_structure.loc)
+			var/obj/item/I
+			if(D.withdrawal_type)
+				I = new D.withdrawal_type(parent_structure.loc)
+			else
+				I = new D.item_type(parent_structure.loc)
 			var/mob/user = usr
 			if(!user.put_in_hands(I))
 				I.forceMove(get_turf(user))

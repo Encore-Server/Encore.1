@@ -152,7 +152,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_PERFECT_TRACKER = span_info("I am the perfect tracker. No tracks will deceive my eyes, nor will they hide their secrets from me."),
 	TRAIT_AKANSIGHT = span_info("Akan blesses my eyes to be unburdened by the night."),
 	TRAIT_CIVILIZEDBARBARIAN = span_info("Your fists are heavier."),
-	TRAIT_COMICSANS = span_sans("I am cursed with a odd voice."),
+	TRAIT_COMICSANS = span_sans("I am cursed with an annoying face."),
 	TRAIT_SQUIRE_REPAIR = span_info("I know my way around my Master's tools."),
 	TRAIT_WATERBREATHING = span_info("I do not drown in bodies of water."),
 	TRAIT_NUDE_SLEEPER = span_warning("I can't fall asleep unless I'm nude and in bed."),
@@ -162,7 +162,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_DEATHSIGHT = span_info("I can feel when someone nearby draws the attention of Mjallidhorn."),
 	TRAIT_ILIOPE = span_info("I know how to speak in code that only fellow tricksters can understand."),
 	TRAIT_CABAL = span_info("In secret, I have studied the ways of the One Envy, and know of others of the Cabal."),
-	TRAIT_HORDE = span_info("By blood and bone, I am of Hell's anoited! I feel the strength in others who are the same."),
+	TRAIT_HORDE = span_info("By blood and bone, I am of Hell's anointed! I feel the strength in others who are the same."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others.")

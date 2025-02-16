@@ -3,10 +3,11 @@
 	flag = JESTER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 99//Uncapped basically
+	spawn_positions = 99
 
 	allowed_races = RACES_ALL_KINDS
+	allowed_patrons = list(/datum/patron/elemental/iliope)
 
 	tutorial = "The worshippers of Iliope were known for their Jesters, wisemen with a tongue just as sharp as their wit. \
 		You command a position of a fool, envious of the position your superiors have upon you. \

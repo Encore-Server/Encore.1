@@ -32,7 +32,7 @@
 	excluded_turfs = list()
 	spawnableAtoms = list(/obj/item/natural/stone = 18,
 							/obj/item/grown/log/tree/stick = 3)
-	allowed_areas = list(/area/rogue/outdoors/rtfield)
+	allowed_areas = list(/area/rogue/outdoors/rtfield, /area/rogue/outdoors/woods/lakeside)
 
 /datum/mapGeneratorModule/roguetownfield/grass
 	clusterCheckFlags = CLUSTER_CHECK_NONE
@@ -40,7 +40,7 @@
 	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
 	spawnableTurfs = list(/turf/open/floor/rogue/grass = 15)
 	spawnableAtoms = list()
-	allowed_areas = list(/area/rogue/outdoors/rtfield)
+	allowed_areas = list(/area/rogue/outdoors/rtfield, /area/rogue/outdoors/woods/lakeside)
 
 /datum/mapGeneratorModule/roguetowngrass
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS

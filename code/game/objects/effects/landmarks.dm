@@ -428,7 +428,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinguard
-	name = "Goblin Guard"
+	name = "Goblin Tribesman"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinsmith

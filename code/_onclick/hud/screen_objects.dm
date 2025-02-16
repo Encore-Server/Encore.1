@@ -1109,54 +1109,50 @@
 				switch(icon_x)
 					if(5 to 7)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(12 to 18)
-						return BODY_ZONE_PRECISE_R_HAND
 					if(20 to 29)
 						return BODY_ZONE_R_LEG
 					if(37 to 46)
 						return BODY_ZONE_L_LEG
-					if(48 to 54)
-						return BODY_ZONE_PRECISE_L_HAND
 					if(59 to 61)
 						return BODY_ZONE_PRECISE_L_INHAND
 			if(22 to 24)
 				switch(icon_x)
 					if(5 to 7)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(12 to 18)
-						return BODY_ZONE_PRECISE_R_HAND
 					if(20 to 29)
 						return BODY_ZONE_R_LEG
 					if(30 to 36)
 						return BODY_ZONE_PRECISE_GROIN
 					if(37 to 46)
 						return BODY_ZONE_L_LEG
-					if(48 to 54)
-						return BODY_ZONE_PRECISE_L_HAND
 					if(59 to 61)
 						return BODY_ZONE_PRECISE_L_INHAND
 			if(25 to 29)
 				switch(icon_x)
-					if(16 to 22)
-						return BODY_ZONE_R_ARM
 					if(27 to 39)
 						return BODY_ZONE_PRECISE_STOMACH
-					if(44 to 50)
-						return BODY_ZONE_L_ARM
 			if(30 to 38)
 				switch(icon_x)
-					if(16 to 22)
-						return BODY_ZONE_R_ARM
 					if(24 to 42)
 						return BODY_ZONE_CHEST
-					if(44 to 50)
-						return BODY_ZONE_L_ARM
 			if(39)
 				switch(icon_x)
+					if(7 to 12)
+						return BODY_ZONE_PRECISE_R_HAND
+					if(13 to 28)
+						return BODY_ZONE_R_ARM
 					if(29 to 37)
 						return BODY_ZONE_PRECISE_NECK
+					if(38 to 52)
+						return BODY_ZONE_L_ARM
+					if(53 to 60)
+						return BODY_ZONE_PRECISE_L_HAND
 			if(40 to 46)
 				switch(icon_x)
+					if(5 to 13)
+						return BODY_ZONE_PRECISE_R_HAND
+					if(14 to 26)
+						return BODY_ZONE_R_ARM
 					if(27 to 39)
 						if(icon_y in 40 to 41)
 							if(icon_x in 29 to 37)
@@ -1168,6 +1164,10 @@
 							if(icon_x in 32 to 34)
 								return BODY_ZONE_PRECISE_NOSE
 						return BODY_ZONE_HEAD
+					if(40 to 52)
+						return BODY_ZONE_L_ARM
+					if(53 to 61)
+						return BODY_ZONE_PRECISE_L_HAND
 			if(47 to 50)
 				switch(icon_x)
 					if(24 to 26)
@@ -1202,9 +1202,9 @@
 				switch(icon_x)
 					if(12 to 14)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(26 to 32)
+					if(17 to 28)
 						return BODY_ZONE_PRECISE_R_FOOT
-					if(34 to 40)
+					if(38 to 50)
 						return BODY_ZONE_PRECISE_L_FOOT
 					if(52 to 54)
 						return BODY_ZONE_PRECISE_L_INHAND
@@ -1222,62 +1222,50 @@
 				switch(icon_x)
 					if(12 to 14)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(20 to 23)
-						return BODY_ZONE_PRECISE_R_HAND
 					if(24 to 31)
 						return BODY_ZONE_R_LEG
 					if(35 to 42)
 						return BODY_ZONE_L_LEG
-					if(43 to 46)
-						return BODY_ZONE_PRECISE_L_HAND
 					if(52 to 54)
 						return BODY_ZONE_PRECISE_L_INHAND
 			if(21)
 				switch(icon_x)
 					if(12 to 14)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(20 to 23)
-						return BODY_ZONE_PRECISE_R_HAND
 					if(30 to 36)
 						return BODY_ZONE_PRECISE_GROIN
-					if(43 to 46)
-						return BODY_ZONE_PRECISE_L_HAND
 					if(52 to 54)
 						return BODY_ZONE_PRECISE_L_INHAND
 			if(22 to 23)
 				switch(icon_x)
 					if(12 to 14)
 						return BODY_ZONE_PRECISE_R_INHAND
-					if(20 to 25)
-						return BODY_ZONE_R_ARM
 					if(30 to 36)
 						return BODY_ZONE_PRECISE_GROIN
-					if(41 to 46)
-						return BODY_ZONE_L_ARM
 					if(52 to 54)
 						return BODY_ZONE_PRECISE_L_INHAND
 			if(24 to 29)
 				switch(icon_x)
-					if(20 to 25)
-						return BODY_ZONE_R_ARM
 					if(28 to 38)
 						return BODY_ZONE_PRECISE_STOMACH
-					if(41 to 46)
-						return BODY_ZONE_L_ARM
 			if(30 to 37)
 				switch(icon_x)
-					if(20 to 25)
-						return BODY_ZONE_R_ARM
 					if(27 to 39)
 						return BODY_ZONE_CHEST
-					if(41 to 46)
-						return BODY_ZONE_L_ARM
 			if(38 to 39)
 				switch(icon_x)
-					if(30 to 36)
+					if(14 to 26)
+						return BODY_ZONE_R_ARM
+					if(29 to 37)
 						return BODY_ZONE_PRECISE_NECK
+					if(38 to 52)
+						return BODY_ZONE_L_ARM
 			if(40 to 43)
 				switch(icon_x)
+					if(7 to 12)
+						return BODY_ZONE_PRECISE_R_HAND
+					if(13 to 27)
+						return BODY_ZONE_R_ARM
 					if(28 to 38)
 						if(icon_y == 40)
 							if(icon_x in 30 to 36)
@@ -1286,8 +1274,14 @@
 							if(icon_x in 32 to 34)
 								return BODY_ZONE_PRECISE_MOUTH
 						return BODY_ZONE_HEAD
+					if(39 to 52)
+						return BODY_ZONE_L_ARM
+					if(53 to 60)
+						return BODY_ZONE_PRECISE_L_HAND
 			if(44 to 47)
 				switch(icon_x)
+					if(7 to 12)
+						return BODY_ZONE_PRECISE_R_HAND
 					if(26 to 27)
 						return BODY_ZONE_PRECISE_EARS
 					if(28 to 38)
@@ -1302,6 +1296,8 @@
 						return BODY_ZONE_HEAD
 					if(39 to 40)
 						return BODY_ZONE_PRECISE_EARS
+					if(53 to 60)
+						return BODY_ZONE_PRECISE_L_HAND
 			if(48 to 51)
 				switch(icon_x)
 					if(28 to 38)
