@@ -29,6 +29,15 @@
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/psicross/gani
+	switch(H.patron?.type)
+		if(/datum/patron/elemental/visires)
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
+		if(/datum/patron/elemental/gani)
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
+		if(/datum/patron/elemental/mjallidhorn)
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+		if(/datum/patron/elemental/akan)
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 	head = /obj/item/clothing/head/roguetown/priestmask
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black

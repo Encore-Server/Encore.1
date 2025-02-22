@@ -706,6 +706,22 @@
 	skillcraft = /datum/skill/craft/engineering
 	craftdiff = 3
 
+/datum/crafting_recipe/roguetown/prosthetic/woodleftleg
+	name = "peg leg (L)"
+	result = list(/obj/item/bodypart/l_leg/prosthetic/wood)
+	reqs = list(/obj/item/grown/log/tree/small = 1,
+	/obj/item/roguegear = 1)
+	skillcraft = /datum/skill/craft/engineering
+	craftdiff = 3
+
+/datum/crafting_recipe/roguetown/prosthetic/woodrightleg
+	name = "peg leg (R)"
+	result = list(/obj/item/bodypart/r_leg/prosthetic/wood)
+	reqs = list(/obj/item/grown/log/tree/small = 1,
+	/obj/item/roguegear = 1)
+	skillcraft = /datum/skill/craft/engineering
+	craftdiff = 3
+
 /datum/crafting_recipe/roguetown/tarot_deck
 	name = "tarot deck"
 	result = list(/obj/item/toy/cards/deck/tarot)
@@ -736,3 +752,12 @@
 				/obj/item/cart_upgrade/level_1 = 1,
 				/obj/item/ingot/iron = 1)
 	craftdiff = 4
+
+/datum/crafting_recipe/roguetown/woodstaff/wizard
+	name = "wizard staff"
+	result = /obj/item/rogueweapon/woodstaff/wizard
+	reqs = list(/obj/item/grown/log/tree = 1,
+				/obj/item/roguegem/diamond = 1,
+				/obj/item/reagent_containers/powder/mana = 3)
+	skillcraft = /datum/skill/magic/arcane
+	craftdiff = 3 

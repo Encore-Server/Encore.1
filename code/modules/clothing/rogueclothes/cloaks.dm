@@ -1107,10 +1107,10 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
 
-/obj/item/clothing/cloak/templar/visires
+/obj/item/clothing/cloak/templar/visires/fire
 	name = "fire tabard"
 	desc = "An outer garment commonly worn by soldiers. This one has the symbol of Visires, the Goddess of Fire on it."
-	icon_state = "tabard_astrata_alt"
+	icon_state = "tabard_astrata"
 	alternate_worn_layer = TABARD_LAYER
 	body_parts_covered = CHEST|GROIN
 	boobed = TRUE
@@ -1149,7 +1149,7 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
 
-/obj/item/clothing/cloak/templar/mjallidhorn
+/obj/item/clothing/cloak/templar/mjallidhorn/frost
 	name = "frost tabard"
 	desc = "An outer garment commonly worn by soldiers. This one has the symbol of Mjallidhorn on it."
 	icon_state = "tabard_abyssor"
@@ -1163,7 +1163,7 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
 
-/obj/item/clothing/cloak/templar/golerkanh
+/obj/item/clothing/cloak/templar/golerkanh/earth
 	name = "goler kanh tabard"
 	desc = "An outer garment commonly worn by soldiers. This one has the symbol of Goler Kanh on it."
 	icon_state = "tabard_malum"

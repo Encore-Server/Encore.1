@@ -224,6 +224,31 @@
 	M.color = secondary
 	add_overlay(M)
 
+/obj/structure/fluff/walldeco/katholikos_banner
+	name = "All-Aspect banner"
+	desc = "A Katholikos banner, in the colours of the All-Aspect."
+	icon_state = "Katholikos_ALL"
+
+/obj/structure/fluff/walldeco/katholikos_banner/gani
+	name = "Gani banner"
+	desc = "A Katholikos banner, in the colours of Gani, the Earth Goddess."
+	icon_state = "Katholikos_GANI"
+
+/obj/structure/fluff/walldeco/katholikos_banner/mjallidhorn
+	name = "Mjallidhorn banner"
+	desc = "A Katholikos banner, in the colours of Mjallidorn, the Frost God."
+	icon_state = "Katholikos_MJALLIDHORN"
+
+/obj/structure/fluff/walldeco/katholikos_banner/visires
+	name = "Visires banner"
+	desc = "A Katholikos banner, in the colours of Visires, the Fire Goddess."
+	icon_state = "Katholikos_VISIRES"
+
+/obj/structure/fluff/walldeco/katholikos_banner/akan
+	name = "Akan banner"
+	desc = "A Katholikos banner, in the colours of Akan, the Air God."
+	icon_state = "Katholikos_AKAN"
+
 /obj/structure/fluff/walldeco/moon
 	name = "banner"
 	icon_state = "moon"
