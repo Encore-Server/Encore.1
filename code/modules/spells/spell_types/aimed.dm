@@ -101,7 +101,6 @@
 	desc = ""
 	school = "evocation"
 	charge_max = 200
-	clothes_req = TRUE
 	invocation = "UN'LTD P'WAH"
 	invocation_type = "shout"
 	cooldown_min = 30

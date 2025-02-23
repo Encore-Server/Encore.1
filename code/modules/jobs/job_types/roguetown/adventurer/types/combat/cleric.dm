@@ -13,18 +13,11 @@
 
 /datum/outfit/job/roguetown/adventurer/cleric/pre_equip(mob/living/carbon/human/H)
 	..()
-	switch(H.patron?.type)
-		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
-		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
-		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
-		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
-		if(/datum/patron/heretic/devil)
-			H.cmode_music = 'sound/music/combat_cult.ogg'
-			neck = /obj/item/roguekey/inhumen
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
+	if(istype(H.patron, /datum/patron/heretic/devil))
+		H.cmode_music = 'sound/music/combat_cult.ogg'
+		neck = /obj/item/roguekey/inhumen
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)

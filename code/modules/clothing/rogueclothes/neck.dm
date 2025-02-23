@@ -206,6 +206,11 @@
 	desc = ""
 	icon_state = "malum"
 
+/obj/item/clothing/neck/roguetown/psicross/iliope
+	name = "amulet of Iliope"
+	desc = ""
+	icon_state = "ravox"
+
 /obj/item/clothing/neck/roguetown/psicross/wood
 	name = "wooden cross"
 	icon_state = "psicrossw"
