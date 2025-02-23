@@ -177,7 +177,7 @@
 		if("Lucerne")
 			H.put_in_hands(new /obj/item/rogueweapon/eaglebeak/lucerne(H), TRUE)
 			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
 
 
 /datum/advclass/templar/heavyranger

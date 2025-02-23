@@ -3246,7 +3246,7 @@
 #include "code\modules\roguetown\roguejobs\cook\tools\pot.dm"
 #include "code\modules\roguetown\roguejobs\cook\tools\skewer.dm"
 #include "code\modules\roguetown\roguejobs\engineer\items.dm"
-#include "code\modules\roguetown\roguejobs\engineer\prostheticarm.dm"
+#include "code\modules\roguetown\roguejobs\engineer\prosthetics.dm"
 #include "code\modules\roguetown\roguejobs\engineer\anvil_recipes\mechanical.dm"
 #include "code\modules\roguetown\roguejobs\fisher\fish.dm"
 #include "code\modules\roguetown\roguejobs\fisher\leeches.dm"

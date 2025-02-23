@@ -150,6 +150,9 @@
 	was_owner.bodyparts -= src
 	owner = null
 
+	if(was_owner.has_movespeed_modifier("MOVESPEED_PROSTHETIC_[body_part]"))
+		was_owner.remove_movespeed_modifier("MOVESPEED_PROSTHETIC_[body_part]")
+
 	update_icon_dropped()
 	was_owner.update_health_hud() //update the healthdoll
 	was_owner.update_body()
@@ -359,6 +362,9 @@
 	var/obj/item/bodypart/affecting = C.get_bodypart(BODY_ZONE_CHEST)
 	if(affecting && dismember_wound)
 		affecting.remove_wound(dismember_wound)
+
+	if(pr_slowdown)
+		C.add_movespeed_modifier("MOVESPEED_PROSTHETIC_[body_part]", update=TRUE, multiplicative_slowdown = pr_slowdown, blacklisted_movetypes=(FLYING|FLOATING))
 
 	update_bodypart_damage_state()
 
