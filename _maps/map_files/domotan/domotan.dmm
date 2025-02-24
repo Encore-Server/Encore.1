@@ -1479,7 +1479,9 @@
 	dir = 8;
 	redstone_id = "stewardshutter"
 	},
-/obj/item/roguemachine/mastermail,
+/obj/structure/roguemachine/mail{
+	mailtag = "Steward"
+	},
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
 "bwb" = (
@@ -9064,6 +9066,7 @@
 "jrm" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/machinery/light/rogue/torchholder/l,
+/obj/item/roguemachine/mastermail,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "jru" = (
