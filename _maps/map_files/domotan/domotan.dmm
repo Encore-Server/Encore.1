@@ -1479,9 +1479,7 @@
 	dir = 8;
 	redstone_id = "stewardshutter"
 	},
-/obj/structure/roguemachine/mail{
-	mailtag = "Steward"
-	},
+/obj/item/roguemachine/mastermail,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town)
 "bwb" = (
