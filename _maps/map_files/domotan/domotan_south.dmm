@@ -545,12 +545,6 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach)
-"eb" = (
-/obj/structure/fluff/walldeco/katholikos_banner/akan{
-	pixel_x = -31
-	},
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/woods/churchfort)
 "ec" = (
 /obj/structure/table/wood,
 /turf/open/floor/rogue/cobble/mossy,
@@ -1052,7 +1046,7 @@
 /area/rogue/under/town/basement)
 "hs" = (
 /obj/structure/mineral_door/wood/donjon{
-	dir = 4;
+	dir = 8;
 	locked = 1
 	},
 /obj/effect/decal/cleanable/blood/tracks{
@@ -1331,10 +1325,6 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave)
-"jr" = (
-/mob/living/simple_animal/hostile/rogue/haunt,
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "js" = (
 /obj/structure/closet/crate/chest/crate,
 /obj/item/natural/bundle/cloth{
@@ -2147,12 +2137,6 @@
 "oL" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/churchfort)
-"oO" = (
-/obj/structure/handcart{
-	dir = 4
-	},
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods/churchfort)
 "oP" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
@@ -2532,8 +2516,8 @@
 /mob/living/simple_animal/hostile/rogue/dragger{
 	health = 3000;
 	maxHealth = 3000;
-	melee_damage_lower = 85;
-	melee_damage_upper = 125;
+	melee_damage_lower = 65;
+	melee_damage_upper = 95;
 	name = "Zalmalath the Tunneler";
 	desc = "CLAW AT THE SOIL! BREAK THE FIRMAMENT!"
 	},
@@ -2590,10 +2574,6 @@
 /obj/structure/table/wood{
 	dir = 9;
 	icon_state = "largetable"
-	},
-/obj/item/paper{
-	info = "Wedding's Dae - There's an uneasy feeling in this fort. Everyone's feeling real jumpy. Still, the weather is pretty bad today, and no one wants to venture out in a storm. Everyone agreed to stay an extra night here since we've got enough food. The cleric keeps swearing that they can hear scraping noises coming from the basement, though.";
-	name = "adventurer diary fragment #2"
 	},
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort)
@@ -4537,10 +4517,11 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort)
 "EM" = (
-/obj/effect/decal/cleanable/blood/tracks,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
+/obj/structure/handcart{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort)
 "EP" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/bedsheet/rogue/cloth,
@@ -4920,10 +4901,6 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog/dense)
-"HA" = (
-/mob/living/simple_animal/hostile/rogue/haunt,
-/turf/open/floor/rogue/blocks/green,
-/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "HB" = (
 /obj/structure/fluff/railing/border{
 	dir = 8;
@@ -5250,10 +5227,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
 "Jv" = (
-/obj/item/natural/stone{
-	pixel_x = 6;
-	pixel_y = 9
-	},
+/obj/structure/roguerock,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Jx" = (
@@ -6339,9 +6313,12 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
 "RS" = (
-/obj/structure/trap/fire,
-/turf/open/floor/rogue/volcanic,
-/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
+/obj/item/paper{
+	info = "Wedding's Dae - There's an uneasy feeling in this fort. Everyone's feeling real jumpy. Still, the weather is pretty bad today, and no one wants to venture out in a storm. Everyone agreed to stay an extra night here since we've got enough food. The cleric keeps swearing that they can hear scraping noises coming from the basement, though.";
+	name = "adventurer diary fragment #2"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort)
 "RU" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/blocks/bluestone,
@@ -6369,7 +6346,7 @@
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Sq" = (
 /obj/structure/stairs/stone,
-/turf/closed/mineral/random/rogue,
+/turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Ss" = (
 /obj/machinery/light/rogue/wallfire/candle,
@@ -6818,7 +6795,9 @@
 /obj/structure/chair/wood/rogue{
 	dir = 8
 	},
-/obj/machinery/light/rogue/wallfire/candle,
+/obj/structure/fluff/walldeco/katholikos_banner/akan{
+	pixel_y = 28
+	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
 "VQ" = (
@@ -7064,11 +7043,10 @@
 	icon_state = "longtable_mid";
 	dir = 1
 	},
-/obj/item/paper/scroll{
+/obj/item/paper{
 	name = "knight-commander's recount";
 	info = "The Seculton Gate is complete, and has been sealed. With that, our long vigil at the gates of Hell can come to an end. The Katholikos has sent word that we are to leave the fortress as soon as possible and report for reassignment - as such a militant force on Domotan Island is no longer required - but they have also decreed that the fortress should be sealed and left in a state ready to resume holding a standing force at short notice. Should the Seculton Gate give way, or should Hell resume its march, we will answer the call of the Royal House once more and lend our aid. Whatever petty political differences there may be, Hell is bigger than all of us. We must remember this. Hell cannot win. It must not."
 	},
-/obj/item/natural/feather,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort)
 "Xw" = (
@@ -56851,9 +56829,9 @@ My
 My
 My
 My
-vp
-vp
-AQ
+nA
+nA
+My
 LH
 LH
 LH
@@ -57107,10 +57085,10 @@ My
 My
 My
 My
-AQ
-AQ
-AQ
-AQ
+My
+My
+My
+My
 By
 LH
 By
@@ -57364,10 +57342,10 @@ My
 My
 My
 My
-AQ
-AQ
-AQ
-AQ
+My
+My
+My
+My
 By
 By
 By
@@ -57621,8 +57599,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -57878,8 +57856,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -58135,8 +58113,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -58392,8 +58370,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -58649,8 +58627,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -58906,8 +58884,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -59163,8 +59141,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -59420,8 +59398,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -59677,8 +59655,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -59934,8 +59912,8 @@ My
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -60191,8 +60169,8 @@ Xu
 My
 My
 My
-AQ
-AQ
+My
+My
 By
 By
 By
@@ -61230,7 +61208,7 @@ gd
 Jv
 XQ
 ZF
-ZF
+rK
 ZF
 ve
 ve
@@ -65306,7 +65284,7 @@ or
 tx
 or
 nw
-tx
+or
 MQ
 Ql
 SM
@@ -65564,7 +65542,7 @@ jk
 jk
 QT
 jk
-EM
+Rv
 Rv
 Rv
 jk
@@ -65820,7 +65798,7 @@ Ns
 di
 or
 de
-di
+oz
 lH
 cS
 Sf
@@ -66845,7 +66823,7 @@ AQ
 de
 or
 SQ
-HA
+oz
 hS
 Jf
 cq
@@ -67358,7 +67336,7 @@ AQ
 AQ
 nw
 xS
-jr
+or
 oz
 hS
 or
@@ -70969,7 +70947,7 @@ AQ
 Ol
 if
 if
-RS
+zo
 if
 Ol
 Ol
@@ -130097,7 +130075,7 @@ sY
 Ij
 wV
 Hp
-Hp
+EM
 Ij
 ZO
 ZO
@@ -130611,7 +130589,7 @@ gQ
 Ij
 RU
 AH
-oO
+wV
 Qx
 ZO
 ZO
@@ -133680,7 +133658,7 @@ Ij
 JY
 CD
 CD
-CD
+RS
 CD
 Ij
 Ij
@@ -198188,7 +198166,7 @@ gc
 FR
 OB
 Gc
-eb
+FR
 FR
 Ij
 Qx
@@ -199211,7 +199189,7 @@ Qc
 Qc
 Qc
 Qx
-Rn
+BH
 Rn
 Rn
 Rn
