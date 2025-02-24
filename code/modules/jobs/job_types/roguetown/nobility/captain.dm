@@ -35,7 +35,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	cloak = /obj/item/clothing/cloak/stabard/guardhood
 
-/datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L

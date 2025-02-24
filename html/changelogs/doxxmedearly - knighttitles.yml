@@ -1,0 +1,5 @@
+author: doxxmedearly
+delete-after: True
+
+changes:
+  - bugfix: "Knights should now have their titles apply properly on spawn."
