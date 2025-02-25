@@ -1,263 +1,511 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/open/floor/rogue/grassyel,
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/outdoors/mountains/decap/hell)
+"b" = (
+/obj/item/clothing/head/roguetown/helmet/sallet/elven,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"c" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"d" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"e" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/rack/rogue,
+/obj/item/ingot/copper,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"f" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"g" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"j" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/mountains/decap/hell)
 "l" = (
-/turf/open/floor/rogue/cobble,
+/obj/machinery/anvil,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"n" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"o" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"p" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"q" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"r" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/item/rogueweapon/hammer/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"t" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/machinery/light/rogue/smelter,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"u" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"v" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/item/clothing/suit/roguetown/armor/plate/half/elven,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"w" = (
+/obj/machinery/light/rogue/forge,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"y" = (
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"z" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"A" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"B" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/indoors/shelter/mountains/decap)
+"C" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/item/ingot/bronze,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"D" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"F" = (
+/obj/machinery/light/rogue/smelter/great,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"G" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"H" = (
+/obj/item/storage/roguebag{
+	pixel_y = 16;
+	pixel_x = -2
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"I" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"J" = (
+/obj/item/ingot/blacksteel,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"K" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"L" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"M" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/grindwheel,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"N" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"O" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"T" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"U" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"V" = (
+/obj/item/rogueweapon/huntingknife/stoneknife,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"W" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/rack/rogue,
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"X" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"Y" = (
+/obj/item/rogueweapon/tongs/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"Z" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/mountains/decap/hell)
 
 (1,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+B
+N
+y
+y
+y
+y
+N
+N
+N
+N
+N
+N
+N
+N
 "}
 (2,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+B
+B
+y
+y
+y
+y
+y
+y
+y
+y
+N
+N
+B
+B
+N
 "}
 (3,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+y
+y
+e
+u
+L
+u
+M
+y
+y
+y
+N
+B
+B
+N
 "}
 (4,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+y
+y
+W
+g
+w
+D
+q
+y
+y
+y
+y
+U
+N
+N
 "}
 (5,1,1) = {"
-a
-a
-a
-a
+N
+y
+y
+t
+J
 l
-l
-l
-l
-l
-l
-l
-l
-a
-a
-a
+Y
+q
+y
+y
+y
+y
+N
+G
+N
 "}
 (6,1,1) = {"
-a
-a
-a
-a
-l
-l
-l
-l
-l
-l
-l
-l
-a
-a
-a
+N
+y
+y
+t
+g
+n
+H
+z
+O
+o
+y
+y
+N
+N
+N
 "}
 (7,1,1) = {"
+N
+N
+y
+K
+A
+r
 a
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+g
+X
+u
+u
+Z
+g
+g
 "}
 (8,1,1) = {"
+N
+N
+y
+y
+y
+j
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+d
+c
+A
+A
+A
+Z
+g
+N
 "}
 (9,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+G
+y
+F
+f
+I
+v
+c
+T
+y
+N
+N
+N
+N
+N
 "}
 (10,1,1) = {"
-a
-a
-a
-a
-l
-l
-l
-l
-l
-l
-l
-l
-a
-a
-a
+N
+N
+y
+y
+y
+y
+C
+q
+y
+y
+y
+N
+y
+y
+N
 "}
 (11,1,1) = {"
-a
-a
-a
-a
-l
-l
-l
-l
-l
-l
-l
-l
-a
-a
-a
+N
+y
+y
+y
+N
+y
+j
+p
+o
+y
+V
+y
+y
+y
+y
 "}
 (12,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+B
+B
+y
+y
+N
+j
+b
+q
+N
+N
+B
+B
+y
+N
 "}
 (13,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+B
+B
+y
+G
+N
+K
+A
+T
+y
+N
+B
+B
+N
+N
 "}
 (14,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+N
+N
+N
+N
+N
+N
+y
+y
+y
+y
+N
+N
+N
+G
 "}
 (15,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+N
+N
+N
+N
+N
+N
+N
+N
+y
+y
+N
+N
+N
+N
+N
 "}

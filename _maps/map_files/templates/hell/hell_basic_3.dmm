@@ -1,29 +1,254 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/mountains/decap/hell)
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/indoors/shelter/mountains/decap)
+"b" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"c" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"d" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/cooking/pan,
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
 "e" = (
-/turf/open/floor/rogue/cobble,
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"g" = (
+/turf/open/lava,
+/area/rogue/indoors/shelter/mountains/decap)
+"h" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/structure/closet/crate/chest/old_crate,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"i" = (
+/obj/structure/spider/stickyweb,
+/obj/item/natural/stone,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"j" = (
+/obj/structure/chair/bench/coucha/r,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"k" = (
+/obj/item/storage/belt/rogue/pouch/coins/poor,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"l" = (
+/obj/item/storage/belt/rogue/leather/plaquesilver,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"m" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"o" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"p" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"q" = (
+/obj/structure/mirror{
+	pixel_x = -28;
+	pixel_y = 0
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"r" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"s" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/clothing/cloak/cape/crusader,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"t" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"u" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"v" = (
+/obj/item/roguestatue/gold,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"w" = (
+/obj/structure/fluff/railing/border,
+/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"x" = (
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"y" = (
+/obj/structure/chair/bench/coucha,
+/obj/structure/fluff/walldeco/bigpainting{
+	pixel_x = 0
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"z" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/reagent_containers/glass/bucket/pot,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"A" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"B" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/cup/golden,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"C" = (
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"D" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"F" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"G" = (
+/obj/item/reagent_containers/glass/bottle/rogue/manapot,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"I" = (
+/obj/structure/fluff/railing/border{
+	dir = 6;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"J" = (
+/obj/structure/mineral_door/wood/donjon,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"L" = (
+/obj/item/scomstone/bad,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"M" = (
+/turf/open/floor/rogue/volcanic,
 /area/rogue/outdoors/mountains/decap/hell)
+"N" = (
+/obj/structure/table/wood,
+/obj/item/clothing/ring/gold,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"O" = (
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"P" = (
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"Q" = (
+/obj/machinery/light/rogue/wallfire{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"R" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/bottle/rogue/beer/voddena,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains/decap)
+"S" = (
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"T" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"V" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"W" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
+"X" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/rogueweapon/sword/rapier/dec,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"Y" = (
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains/decap)
+"Z" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 4
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains/decap)
 
 (1,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+O
+O
+O
+M
+O
+M
+T
+T
+M
+M
+M
+M
+M
+T
+M
 "}
 (2,1,1) = {"
+O
 a
 a
 a
@@ -37,197 +262,197 @@ a
 a
 a
 a
-a
-a
+M
 "}
 (3,1,1) = {"
+O
 a
+N
+m
 a
+x
+w
+g
+e
+r
+P
+P
+C
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+M
 "}
 (4,1,1) = {"
+O
 a
+C
+C
+c
+x
+w
+g
+e
+P
+P
+P
+C
 a
-a
-e
-e
-e
-e
-e
-e
-e
-e
-e
-a
-a
-a
+O
 "}
 (5,1,1) = {"
+M
+a
+o
+C
+a
+Z
 a
 a
 a
-e
-e
-e
-e
-e
-e
-e
-e
-e
+u
 a
+C
+C
 a
-a
+O
 "}
 (6,1,1) = {"
+M
 a
+o
+C
+P
+G
+q
+P
+k
+P
 a
+C
+C
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+M
 "}
 (7,1,1) = {"
+M
+a
+o
+C
+v
+P
+r
+P
 a
 a
 a
+W
+x
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+M
 "}
 (8,1,1) = {"
+M
 a
+Q
+C
+P
+P
+P
+P
 a
-a
+w
+g
 e
-e
-e
-e
-e
-e
-e
-e
-e
-a
-a
-a
+x
+i
+M
 "}
 (9,1,1) = {"
+M
 a
-a
-a
+X
+C
+P
+l
+b
+C
+J
+w
+g
 e
-e
-e
-e
-e
-e
-e
-e
-e
-a
-a
-a
+x
+x
+T
 "}
 (10,1,1) = {"
+M
 a
+s
+A
+P
+P
+b
+C
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+w
+g
+e
+x
+x
+M
 "}
 (11,1,1) = {"
+M
+a
+C
+C
+C
+C
+o
+C
 a
 a
 a
+t
+x
 a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+M
 "}
 (12,1,1) = {"
+M
 a
+y
+B
+C
+L
+I
+S
+Y
+D
 a
+x
+x
 a
-e
-e
-e
-e
-e
-e
-e
-e
-e
-a
-a
-a
+M
 "}
 (13,1,1) = {"
+O
 a
+j
+R
+C
+C
+h
+z
+d
+F
 a
+p
+V
 a
-e
-e
-e
-e
-e
-e
-e
-e
-e
-a
-a
-a
+M
 "}
 (14,1,1) = {"
+M
 a
 a
 a
@@ -241,23 +466,22 @@ a
 a
 a
 a
-a
-a
+M
 "}
 (15,1,1) = {"
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+M
+M
+M
+M
+O
+O
+O
+M
+M
+M
+M
+O
+M
+M
+M
 "}
