@@ -2416,6 +2416,18 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
+"qE" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "borderfall";
+	pixel_x = -27
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/seculton)
 "qH" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Reagent Stores";
@@ -2785,6 +2797,10 @@
 /obj/structure/fluff/walldeco/katholikos_banner{
 	pixel_y = 25
 	},
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/seculton)
 "sW" = (
@@ -3013,6 +3029,18 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cave)
+"us" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 6;
+	icon_state = "borderfall";
+	pixel_x = 27
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/seculton)
 "ut" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -3291,6 +3319,12 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
+"wy" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/seculton)
 "wz" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -4382,6 +4416,18 @@
 	},
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort)
+"DN" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "borderfall";
+	pixel_x = -27
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/seculton)
 "DO" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/ruinedwood,
@@ -4558,6 +4604,10 @@
 /area/rogue/under/cave)
 "Fh" = (
 /obj/item/natural/stone,
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/seculton)
 "Fi" = (
@@ -4962,6 +5012,13 @@
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
+"HW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/seculton)
 "HY" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /turf/open/floor/rogue/twig,
@@ -5963,6 +6020,10 @@
 "OJ" = (
 /obj/structure/fluff/walldeco/katholikos_banner{
 	pixel_y = 25
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/seculton)
@@ -7127,6 +7188,18 @@
 "XS" = (
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/woods/heavenscoast)
+"XT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 6;
+	icon_state = "borderfall";
+	pixel_x = 27
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/seculton)
 "XU" = (
 /obj/machinery/light/rogue/hearth,
 /obj/item/cooking/pan,
@@ -7230,6 +7303,13 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods/crossroads)
+"YO" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/seculton)
 "YP" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	dir = 8;
@@ -127509,7 +127589,7 @@ Ij
 Qx
 Ru
 OX
-ZO
+DN
 ZO
 Qs
 ZO
@@ -128280,7 +128360,7 @@ CD
 wV
 Hl
 Ij
-Qs
+XT
 ZO
 Qs
 Qs
@@ -128537,7 +128617,7 @@ CD
 CD
 CD
 st
-NK
+wy
 NK
 Qs
 Qs
@@ -128794,7 +128874,7 @@ YX
 CD
 CD
 st
-NK
+wy
 Qs
 NK
 Qs
@@ -129051,7 +129131,7 @@ CD
 CD
 CD
 Ij
-Qs
+qE
 ZO
 ZO
 ZO
@@ -129565,7 +129645,7 @@ CD
 sL
 CD
 Qx
-Qs
+YO
 ZO
 ZO
 Qs
@@ -129822,7 +129902,7 @@ Ij
 Ij
 Qx
 Qx
-ZO
+us
 ZO
 ZO
 Qs
@@ -130077,7 +130157,7 @@ wV
 Hp
 EM
 Ij
-ZO
+HW
 ZO
 ZO
 ZO
@@ -130591,7 +130671,7 @@ RU
 AH
 wV
 Qx
-ZO
+us
 ZO
 ZO
 ZO
@@ -130848,7 +130928,7 @@ Hp
 wV
 Hp
 mY
-NK
+wy
 Qs
 Qs
 Qs
@@ -131105,7 +131185,7 @@ wV
 wV
 Hp
 gB
-NK
+wy
 NK
 NK
 Qs
@@ -131362,7 +131442,7 @@ Hp
 Hp
 Um
 mY
-NK
+wy
 NK
 Qs
 Qs
@@ -131619,7 +131699,7 @@ zh
 wV
 Hp
 Qx
-ZO
+DN
 ZO
 ZO
 ZO
@@ -132133,7 +132213,7 @@ tX
 Hp
 Hp
 Qx
-ZO
+us
 ZO
 ZO
 ZO
@@ -132392,7 +132472,7 @@ Ij
 Ij
 Ij
 Ij
-ZO
+DN
 ZO
 ZO
 ZO
