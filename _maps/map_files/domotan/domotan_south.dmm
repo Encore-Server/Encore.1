@@ -2625,7 +2625,7 @@
 	},
 /obj/item/paper{
 	info = "I've informed the Templars. They're ecstatic that the fight is over and that they may return to their families. The night was full of merriment, a rare chance for them all to drink and relax, and a well-earned victory. Today, when they had all finished packing their belongings, we shared a solemn moment of silence and prayer for the valiant fighters that we lost along the way. May the Elementals carry their brave spirits unto Heaven, as we inter their flesh in the Mother Gani's soil.";
-	name = "knight-commander's musings #1"
+	name = "knight-commander's recount #2"
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
@@ -2976,7 +2976,7 @@
 	icon_state = "longtable"
 	},
 /obj/item/paper{
-	name = "knight-commander's musings #2";
+	name = "knight-commander's recount #3";
 	info = "I've sent the Templars to Old Doma, and from there unto home, or their next deployments. I stand alone, the final living soul in this fortress now. Perhaps now is not the time to wax poetic, but I believe I'm not sure what awaits me after this. For so long I've led these Templars against the tides of Hell. Still, there are more places in the Goblet to serve. I've taken stock of our supplies and left an acceptable amount, should the fortress need to be re-manned. I've sealed the Armoury, and will take the key with me. The last thing the countryside needs is a group of bandits raiding this place and making off with the equipment that we wielded righteously against Hell's fires. Finally, I spoke with the cleric of Visires before they were dismissed. The underground tunnel to our holdings in Mount Miracle proper has been collapsed, utterly. There should be no threat of daemonic forces coming through it, not unless - Elementals forbid - they manage to amass in frightening numbers within Mount Miracle..."
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -6208,7 +6208,7 @@
 "QX" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	dir = 4;
-	name = "Knight-Commander's Office"
+	name = "Knight Commander's Office"
 	},
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -6765,7 +6765,7 @@
 "VE" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
-	name = "Knight-Commander's Office"
+	name = "Armoury"
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort)
@@ -7044,7 +7044,7 @@
 	dir = 1
 	},
 /obj/item/paper{
-	name = "knight-commander's recount";
+	name = "knight-commander's recount #1";
 	info = "The Seculton Gate is complete, and has been sealed. With that, our long vigil at the gates of Hell can come to an end. The Katholikos has sent word that we are to leave the fortress as soon as possible and report for reassignment - as such a militant force on Domotan Island is no longer required - but they have also decreed that the fortress should be sealed and left in a state ready to resume holding a standing force at short notice. Should the Seculton Gate give way, or should Hell resume its march, we will answer the call of the Royal House once more and lend our aid. Whatever petty political differences there may be, Hell is bigger than all of us. We must remember this. Hell cannot win. It must not."
 	},
 /turf/open/floor/carpet/royalblack,
