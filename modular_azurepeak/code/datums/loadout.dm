@@ -203,3 +203,23 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/feather
 	name = "Feather"
 	path = /obj/item/natural/feather
+
+/datum/loadout_item/woodcross
+	name = "Wooden Cross"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood
+
+/datum/loadout_item/ganicross
+	name = "Wooden Amulet of Gani"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/gani
+
+/datum/loadout_item/mjallidhorncross
+	name = "Wooden Amulet of Mjallidhorn"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
+
+/datum/loadout_item/visirescross
+	name = "Wooden Amulet of Visires"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/visires
+
+/datum/loadout_item/akancross
+	name = "Wooden Amulet of Akan"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/akan

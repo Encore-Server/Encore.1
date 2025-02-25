@@ -615,6 +615,26 @@
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
 
+/datum/crafting_recipe/roguetown/ganicross
+	name = "wooden amulet of Gani"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/gani
+
+/datum/crafting_recipe/roguetown/mjallidhorncross
+	name = "wooden amulet of Mjallidhorn"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
+
+/datum/crafting_recipe/roguetown/visirescross
+	name = "wooden amulet of Visires"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/visires
+
+/datum/crafting_recipe/roguetown/akancross
+	name = "wooden amulet of Akan"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/akan
+
+/datum/crafting_recipe/roguetown/golerkanhcross
+	name = "wooden amulet of Goler Kanh"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
+
 /datum/crafting_recipe/roguetown/mantrap
 	name = "mantrap"
 	result = list(/obj/item/restraints/legcuffs/beartrap,
