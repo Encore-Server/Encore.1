@@ -6,7 +6,6 @@
 	faction = "Station"
 	total_positions = 99
 	spawn_positions = 99
-	f_title = "Princess"
 	allowed_races = RACES_ALL_KINDS //Maybe a system to force-pick lineage based on king and queen should be implemented.
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
@@ -61,7 +60,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)//No access to the regent's lichdom
 		H.change_stat("strength", 1)
 		H.change_stat("perception", 1)
