@@ -76,6 +76,7 @@
 
 //tablecrafting defines
 #define CAT_NONE	""
+#define CAT_AMULET	"Holy Amulets"
 
 #define RCD_FLOORWALL 1
 #define RCD_AIRLOCK 2

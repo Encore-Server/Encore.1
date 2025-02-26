@@ -180,6 +180,7 @@
 	sellprice = 10
 	experimental_onhip = TRUE
 	anvilrepair = /datum/skill/craft/armorsmithing
+	var/burns_rot = TRUE //Set FALSE if this symbol does not have the power to cure rot or zombification
 
 /obj/item/clothing/neck/roguetown/psicross/visires
 	name = "amulet of Visires"
@@ -210,26 +211,32 @@
 	name = "wooden cross"
 	icon_state = "psicrossw"
 	sellprice = 0
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/wood/gani
 	name = "wooden amulet of Gani"
 	icon_state = "dendor_w"
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
 	name = "wooden amulet of Mjallidhorn"
 	icon_state = "necra_w"
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/wood/visires
 	name = "wooden amulet of Visires"
 	icon_state = "astrata_w"
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/wood/akan
 	name = "wooden amulet of Akan"
 	icon_state = "noc_w"
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
 	name = "wooden amulet of Goler Kanh"
 	icon_state = "malum_w"
+	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
 
 /obj/item/clothing/neck/roguetown/psicross/silver
 	name = "silver cross"

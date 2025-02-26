@@ -614,36 +614,42 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/ganicross
 	name = "wooden amulet of Gani"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/gani
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/mjallidhorncross
 	name = "wooden amulet of Mjallidhorn"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/visirescross
 	name = "wooden amulet of Visires"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/visires
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/akancross
 	name = "wooden amulet of Akan"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/akan
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/golerkanhcross
 	name = "wooden amulet of Goler Kanh"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/mantrap
 	name = "mantrap"

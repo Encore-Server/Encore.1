@@ -3,6 +3,7 @@
 #define TOOL_HAND			"hand" //exclusively used for surgery validation
 #define TOOL_SHARP			"sharp"	//exclusively used for surgery validation
 #define TOOL_HOT			"hot" //exclusively used for surgery validation
+#define TOOL_HOLYSYMBOL		"holysymbol" //exclusively used for surgery validation
 #define TOOL_CROWBAR 		"crowbar"
 #define TOOL_MULTITOOL 		"multitool"
 #define TOOL_SCREWDRIVER 	"screwdriver"
