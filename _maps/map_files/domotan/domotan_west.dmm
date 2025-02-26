@@ -6562,8 +6562,8 @@
 	icon_state = "largetable";
 	dir = 8
 	},
-/obj/item/kitchen/ironspoon,
-/obj/item/kitchen/ironfork{
+/obj/item/kitchen/spoon/iron,
+/obj/item/kitchen/fork/iron{
 	pixel_x = 10
 	},
 /turf/open/floor/carpet/royalblack,
