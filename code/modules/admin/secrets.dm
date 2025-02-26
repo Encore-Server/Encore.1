@@ -301,12 +301,6 @@
 					var/mob/living/carbon/human/H = i
 					H.set_species(newtype)
 
-		if("tripleAI")
-			if(!check_rights(R_FUN))
-				return
-			usr.client.triple_ai()
-			SSblackbox.record_feedback("nested tally", "admin_secrets_fun_used", 1, list("Triple AI"))
-
 		if("power")
 			if(!check_rights(R_FUN))
 				return
