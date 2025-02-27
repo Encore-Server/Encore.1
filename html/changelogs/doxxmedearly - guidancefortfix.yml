@@ -1,0 +1,8 @@
+
+author: doxxmedearly
+
+delete-after: True
+
+
+changes:
+  - bugfix: "Fortitude spell actually provides fortitude. Guidance spell now works."
