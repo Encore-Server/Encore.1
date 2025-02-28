@@ -228,7 +228,7 @@
 		return FALSE
 
 	//Prevents "I conclude my prayer, I gained 0 devotion" message when clicking pray at max.
-	if(devotion.devotion >= devotion.max_devotion && devotion.progression >= CLERIC_REQ_4)
+	if(devotion.devotion >= devotion.max_devotion && devotion.progression >= devotion.max_progression)
 		to_chat(src, span_notice("I am fully in tune with [devotion.patron.name]. I do not need to pray at this time."))
 		return TRUE
 
@@ -236,7 +236,7 @@
 	visible_message("[src] kneels their head in prayer to the Gods.", "I kneel my head in prayer to [devotion.patron.name].")
 	for(var/i in 1 to 50)
 		//Stop only if we have both max devotion and max progression.
-		if(devotion.devotion >= devotion.max_devotion && devotion.progression >= CLERIC_REQ_4)
+		if(devotion.devotion >= devotion.max_devotion && devotion.progression >= devotion.max_progression)
 			to_chat(src, span_warning("I have reached the limit of my devotion..."))
 			break
 		if(!do_after(src, 30))
