@@ -220,7 +220,7 @@
 	charge_max = 10 SECONDS
 	warnie = "spellwarning"
 	no_early_release = TRUE
-	movement_interrupt = FALSE
+	movement_interrupt = TRUE
 	chargedloop = /datum/looping_sound/invokefire
 	cost = 5
 	xp_gain = TRUE
