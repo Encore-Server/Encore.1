@@ -205,7 +205,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	path = /obj/item/natural/feather
 
 /datum/loadout_item/woodcross
-	name = "Wooden Cross"
+	name = "Wooden Amulet of the All-Aspect"
 	path = /obj/item/clothing/neck/roguetown/psicross/wood
 
 /datum/loadout_item/ganicross
@@ -223,3 +223,11 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/akancross
 	name = "Wooden Amulet of Akan"
 	path = /obj/item/clothing/neck/roguetown/psicross/wood/akan
+
+/datum/loadout_item/golerkanhcross
+	name = "Wooden Amulet of Goler Kanh"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
+
+/datum/loadout_item/iliopecross
+	name = "Wooden Amulet of Iliope"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/iliope

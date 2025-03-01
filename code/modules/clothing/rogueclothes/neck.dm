@@ -208,7 +208,7 @@
 	icon_state = "malum"
 
 /obj/item/clothing/neck/roguetown/psicross/wood
-	name = "wooden cross"
+	name = "wooden amulet of the All-Aspect"
 	icon_state = "psicrossw"
 	sellprice = 0
 	burns_rot = FALSE //Curing rot and zombification should stay within the realm of the physician and church probably
@@ -232,6 +232,10 @@
 /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
 	name = "wooden amulet of Goler Kanh"
 	icon_state = "malum_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/iliope
+	name = "wooden amulet of Iliope"
+	icon_state = "ravox_w"
 
 /obj/item/clothing/neck/roguetown/psicross/silver
 	name = "silver cross"

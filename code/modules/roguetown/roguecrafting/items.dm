@@ -610,10 +610,11 @@
 	req_table = TRUE
 
 /datum/crafting_recipe/roguetown/woodcross
-	name = "wooden amulet"
+	name = "wooden amulet of the All-Aspect"
 	result = /obj/item/clothing/neck/roguetown/psicross/wood
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/ganicross
@@ -621,6 +622,7 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/gani
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/mjallidhorncross
@@ -628,6 +630,7 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/visirescross
@@ -635,6 +638,7 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/visires
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/akancross
@@ -642,6 +646,7 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/akan
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/golerkanhcross
@@ -649,6 +654,15 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
+	category = CAT_AMULET
+
+/datum/crafting_recipe/roguetown/iliopecross
+	name = "wooden amulet of Iliope"
+	result = /obj/item/clothing/neck/roguetown/psicross/wood/iliope
+	reqs = list(/obj/item/natural/fibers = 2,
+				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 	category = CAT_AMULET
 
 /datum/crafting_recipe/roguetown/mantrap
