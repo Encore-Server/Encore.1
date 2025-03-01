@@ -34,18 +34,15 @@ SUBSYSTEM_DEF(communications)
 	message_admins("[ADMIN_LOOKUPFLW(user)] has made a priority announcement.")
 
 /datum/controller/subsystem/communications/proc/send_message(datum/comm_message/sending,print = TRUE,unique = FALSE)
-	for(var/obj/machinery/computer/communications/C in GLOB.machines)
-		if(!(C.stat & (BROKEN|NOPOWER)) && is_station_level(C.z))
-			if(unique)
-				C.add_message(sending)
-			else //We copy the message for each console, answers and deletions won't be shared
-				var/datum/comm_message/M = new(sending.title,sending.content,sending.possible_answers.Copy())
-				C.add_message(M)
-			if(print)
-				var/obj/item/paper/P = new /obj/item/paper(C.loc)
-				P.name = "paper - '[sending.title]'"
-				P.info = sending.content
-				P.update_icon()
+	for(var/obj/structure/roguemachine/titan/T in SSroguemachine.titans)
+		T.say("A message arrives!")
+		playsound(T, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(T, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+		var/obj/item/paper/scroll/P = new /obj/item/paper/scroll(T.loc)
+		P.info = sending.content
+		P.update_icon()
+		//name last, name gets reset when icons are updated
+		P.name = "scroll - '[sending.title]'"
 
 #undef COMMUNICATION_COOLDOWN
 #undef COMMUNICATION_COOLDOWN_AI

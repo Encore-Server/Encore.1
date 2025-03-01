@@ -8,6 +8,7 @@ PROCESSING_SUBSYSTEM_DEF(roguemachine)
 	var/list/cameras = list()
 	var/list/scomm_machines = list()
 	var/list/stock_machines = list()
+	var/list/titans = list() //Yes there is usually only one, but in case there are multiple in future maps...
 	var/hermailermaster
 	var/list/death_queue = list()
 	var/last_death_report
