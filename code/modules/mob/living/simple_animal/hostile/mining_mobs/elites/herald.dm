@@ -66,13 +66,13 @@
 /datum/action/innate/elite_attack/herald_trishot
 	name = "Triple Shot"
 	button_icon_state = "herald_trishot"
-	chosen_message = span_boldwarning("I are now firing three shots in your chosen direction.")
+	chosen_message = span_boldwarning("I am now firing three shots in your chosen direction.")
 	chosen_attack_num = HERALD_TRISHOT
 
 /datum/action/innate/elite_attack/herald_directionalshot
 	name = "Circular Shot"
 	button_icon_state = "herald_directionalshot"
-	chosen_message = span_boldwarning("I are firing projectiles in all directions.")
+	chosen_message = span_boldwarning("I am firing projectiles in all directions.")
 	chosen_attack_num = HERALD_DIRECTIONALSHOT
 
 /datum/action/innate/elite_attack/herald_teleshot

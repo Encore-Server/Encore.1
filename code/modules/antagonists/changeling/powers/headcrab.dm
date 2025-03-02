@@ -21,7 +21,7 @@
 	explosion(get_turf(user), 0, 0, 2, 0, TRUE)
 	for(var/mob/living/carbon/human/H in range(2,user))
 		var/obj/item/organ/eyes/eyes = H.getorganslot(ORGAN_SLOT_EYES)
-		to_chat(H, span_danger("I are blinded by a shower of blood!"))
+		to_chat(H, span_danger("I am blinded by a shower of blood!"))
 		H.Stun(20)
 		H.blur_eyes(20)
 		eyes?.applyOrganDamage(5)
