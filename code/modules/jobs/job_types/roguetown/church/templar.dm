@@ -43,18 +43,16 @@
 	..()
 	neck = /obj/item/clothing/neck/roguetown/psicross/gani
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 			cloak = /obj/item/clothing/cloak/tabard/crusader/visires
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			cloak = /obj/item/clothing/cloak/tabard/crusader/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 	backl = /obj/item/storage/backpack/rogue/satchel
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -98,26 +96,23 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	backl = /obj/item/storage/backpack/rogue/satchel
@@ -191,26 +186,23 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	gloves = /obj/item/clothing/gloves/roguetown/chain
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
@@ -273,26 +265,23 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid

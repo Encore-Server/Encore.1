@@ -12,7 +12,7 @@
 	name = "burn rot"
 	implements = list(
 		TOOL_CAUTERY = 85,
-		/obj/item/clothing/neck/roguetown/psicross = 85,
+		TOOL_HOLYSYMBOL = 85,
 		TOOL_WELDER = 70,
 		TOOL_HOT = 35,
 	)
