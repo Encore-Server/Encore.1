@@ -37,7 +37,7 @@
 	possible_item_intents = list(SPEAR_BASH)
 	gripped_intents = list(SPEAR_BASH,/datum/intent/mace/smash/wood)
 	name = "wooden staff"
-	desc = "Not so heavy, perfect for beggars, pilgrims and mages."
+	desc = "Not so heavy- perfect for beggars, pilgrims and mages."
 	icon_state = "woodstaff"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	wlength = WLENGTH_LONG
@@ -73,7 +73,7 @@
 
 /obj/item/rogueweapon/woodstaff/aries
 	name = "staff of the shepherd"
-	desc = "This staff makes you look important to any peasante."
+	desc = "This staff makes you look important to any peasants."
 	force = 25
 	force_wielded = 28
 	icon_state = "aries"
@@ -102,7 +102,7 @@
 	possible_item_intents = list(SPEAR_THRUST, SPEAR_BASH) //bash is for nonlethal takedowns, only targets limbs
 	gripped_intents = list(SPEAR_THRUST, SPEAR_CUT, SPEAR_BASH)
 	name = "spear"
-	desc = "This iron spear is great to impale goblins."
+	desc = "This iron spear is great for impaling goblins."
 	icon_state = "spear"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	pixel_y = -16
@@ -138,7 +138,7 @@
 	force = 18
 	force_wielded = 22
 	name = "bone spear"
-	desc = "A spear made of bones..."
+	desc = "A spear made of bone."
 	icon_state = "bonespear"
 	pixel_y = -16
 	pixel_x = -16
@@ -260,7 +260,7 @@
 	possible_item_intents = list(/datum/intent/spear/thrust/eaglebeak, SPEAR_BASH) //bash is for nonlethal takedowns, only targets limbs
 	gripped_intents = list(/datum/intent/spear/thrust/eaglebeak, /datum/intent/mace/smash/eaglebeak, SPEAR_BASH)
 	name = "eagle's beak"
-	desc = "A reinforced pole affixed with an ornate steel eagle's head, of which it's beak is intended to pierce with great harm."
+	desc = "A reinforced pole affixed with an ornate steel eagle's head; its beak is intended to pierce with great harm."
 	icon_state = "eaglebeak"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	pixel_y = -16
@@ -382,7 +382,7 @@
 
 /obj/item/rogueweapon/estoc
 	name = "estoc"
-	desc = "A sword possessed of a quite long and tapered blade that is intended to be thrust between the \
+	desc = "A sword possessed of a long and tapered blade that is intended to be thrust between the \
 	gaps in an opponent's armor. The hilt is wrapped tight in black leather."
 	icon_state = "estoc"
 	icon = 'icons/roguetown/weapons/64.dmi'
