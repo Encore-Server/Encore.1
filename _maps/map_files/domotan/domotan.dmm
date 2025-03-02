@@ -9066,6 +9066,7 @@
 "jrm" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/machinery/light/rogue/torchholder/l,
+/obj/item/roguemachine/mastermail,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town)
 "jru" = (
