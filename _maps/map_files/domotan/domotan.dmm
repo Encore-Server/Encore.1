@@ -6394,7 +6394,7 @@
 "gEE" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = "dungeon"
+	lockid = "manor"
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/town/cell)
@@ -11845,7 +11845,7 @@
 "mlQ" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = "dungeon"
+	lockid = "manor"
 	},
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -15813,7 +15813,7 @@
 "qlp" = (
 /obj/structure/mineral_door/bars{
 	locked = 1;
-	lockid = "dungeon"
+	lockid = "manor"
 	},
 /obj/effect/decal/cobbleedge{
 	dir = 10;
