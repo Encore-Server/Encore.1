@@ -1,0 +1,371 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cW" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"dF" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/mountains)
+"fC" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"gB" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"hN" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/roguecoin/copper/pile,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"kd" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/mountains)
+"qv" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/item/fishingrod,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"sC" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Cw" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"Dd" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"Nu" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/mountains)
+"RY" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"TX" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/mountains)
+"Vs" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+KC
+yr
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+dE
+KC
+KC
+KC
+"}
+(2,1,1) = {"
+yr
+yr
+yr
+dE
+qK
+qK
+uj
+KC
+Cy
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(3,1,1) = {"
+yr
+KC
+yf
+qK
+qK
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+yf
+Cy
+dE
+"}
+(4,1,1) = {"
+qK
+KC
+GL
+qK
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+yr
+KC
+"}
+(5,1,1) = {"
+KC
+KC
+qK
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+KC
+KC
+"}
+(6,1,1) = {"
+KC
+KC
+qK
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+KC
+KC
+"}
+(7,1,1) = {"
+Cy
+KC
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+gB
+qv
+gB
+Vs
+KC
+"}
+(8,1,1) = {"
+Cy
+KC
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+cW
+cW
+cW
+fC
+KC
+"}
+(9,1,1) = {"
+KC
+qK
+uj
+uj
+KC
+uj
+uj
+KC
+uj
+uj
+uj
+uj
+uj
+KC
+yr
+"}
+(10,1,1) = {"
+qK
+qK
+uj
+uj
+Nu
+Nu
+kd
+kd
+Nu
+uj
+uj
+uj
+Cy
+yr
+yr
+"}
+(11,1,1) = {"
+qK
+qK
+uj
+uj
+Dd
+hN
+Cw
+AW
+TX
+uj
+uj
+uj
+Cy
+qC
+yr
+"}
+(12,1,1) = {"
+qK
+qK
+qK
+uj
+Dd
+RY
+Cw
+Cw
+sC
+yr
+yr
+yr
+yr
+yr
+yr
+"}
+(13,1,1) = {"
+KC
+YZ
+qK
+qK
+Dd
+AW
+Cw
+AW
+TX
+KC
+yr
+yr
+KC
+yr
+KC
+"}
+(14,1,1) = {"
+KC
+KC
+KC
+GL
+Nu
+Nu
+dF
+dF
+Nu
+Cy
+KC
+KC
+KC
+KC
+yr
+"}
+(15,1,1) = {"
+KC
+dE
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+Cy
+KC
+dE
+KC
+KC
+KC
+"}
