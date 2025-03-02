@@ -118,7 +118,8 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_spells_priest(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
-	H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
+	if(H.mind)
+		H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
