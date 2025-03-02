@@ -1,0 +1,8 @@
+
+author: doxxmedearly
+
+delete-after: True
+
+
+changes:
+  - bugfix: "Equipping headgear or masks to your hip slot no longer hides your hair, face, or ears."

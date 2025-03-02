@@ -90,3 +90,19 @@
 			new_flags |= thing.flags_inv
 	
 	obscured_flags = new_flags
+
+//Snowflake proc to prevent items equipped on hip from obscuring things in their regular slots, such as helmets and masks
+/mob/living/carbon/human/rebuild_obscured_flags()
+	var/list/equipped_items = get_equipped_items(FALSE)
+	var/new_flags = NONE
+	//Getting the left and right hip slots here so we don't check it a dozen times in the loop
+	var/belt_left = get_item_by_slot(SLOT_BELT_L)
+	var/belt_right = get_item_by_slot(SLOT_BELT_R)
+	for(var/obj/item/thing in equipped_items)
+		//Items equipped to the hip do not obscure
+		if(thing == belt_left || thing == belt_right)
+			continue
+		if(thing.flags_inv)
+			new_flags |= thing.flags_inv
+	
+	obscured_flags = new_flags
