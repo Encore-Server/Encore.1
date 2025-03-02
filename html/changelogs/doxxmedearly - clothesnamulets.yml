@@ -1,4 +1,4 @@
-author: Doxxmedearly
+author: Doxxmedearly, Furrycactus
 
 delete-after: True
 
@@ -7,3 +7,5 @@ changes:
   - rscadd: "Fixes classes not getting psicrosses for Goler Kanh and Iliope."
   - rscdel: "Removes ss13 wizard holdover for clothing requirements. System is still in place if we want spells restricted in the future."
   - code_imp: "Tidies up psicross equipping on job selection."
+  - rscadd: "Adds craftable wooden holy amulets."
+  - imageadd: "Adds new sprites for wooden amulets, courtesy of Furrycactus (Joshie)."

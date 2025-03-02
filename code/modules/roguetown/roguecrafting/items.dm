@@ -614,6 +614,7 @@
 	result = /obj/item/clothing/neck/roguetown/psicross/wood
 	reqs = list(/obj/item/natural/fibers = 2,
 				/obj/item/grown/log/tree/stick = 2)
+	tools = list(/obj/item/rogueweapon/huntingknife)
 
 /datum/crafting_recipe/roguetown/mantrap
 	name = "mantrap"
