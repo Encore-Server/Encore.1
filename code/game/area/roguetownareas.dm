@@ -219,6 +219,24 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/outdoors/woods/seculton
 	first_time_text = "SECULTON GATE"
 
+// Heavenscoast Church Fort, next to Seculton
+/area/rogue/outdoors/woods/churchfort
+	name = "fort_hellwatch"
+	icon_state = "indoors"
+	first_time_text = "FORT HELLWATCH"
+	droning_sound = 'sound/music/area/decap.ogg'
+
+/area/rogue/outdoors/woods/churchfort/basement
+	name = "hellwatch_basement"
+	icon_state = "cave"
+	droning_sound = 'sound/music/area/decap.ogg'
+
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack
+	name = "hellwatch_crack"
+	icon_state = "cavelava"
+	first_time_text = "THE CRACK"
+	droning_sound = 'sound/music/area/siege.ogg'
+
 /area/rogue/outdoors/woods/northplains
 	first_time_text = "NORTHPLAINS"
 
