@@ -150,7 +150,7 @@
 				belt = /obj/item/storage/belt/rogue/leather/rope
 				shoes = /obj/item/clothing/shoes/roguetown/sandals
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
-		C.passive_devotion_gain += 0.25
+		C.passive_devotion_gain += 0.5
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
 		C.grant_spells(H) // don't give churn as an extra spell to cloistered since they get their patron's full spell list (up to t3)
 		START_PROCESSING(SSobj, C)
@@ -158,6 +158,7 @@
 // HEARTHSTONE ADDITION END
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
+		C.passive_devotion_gain += 0.25
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
 		C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

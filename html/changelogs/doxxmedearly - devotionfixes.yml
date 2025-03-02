@@ -1,0 +1,10 @@
+
+author: doxxmedearly
+
+# Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
+delete-after: True
+
+changes:
+  - rscadd: "Holy characters can now pray even at max devotion if they still need to unlock spells."
+  - rscadd: "Added better feedback message if you try to pray at max devotion and progression."
+  - rscadd: "Adds a trickle of passive devotion gain to templars and all clerics. Cloistered devout passive devotion gain increased."
