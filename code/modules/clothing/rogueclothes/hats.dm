@@ -97,6 +97,21 @@
 	toggle_icon_state = TRUE
 	max_integrity = 100
 
+/obj/item/clothing/head/roguetown/roguehood/golerkanhhood
+	name = "verdant hood"
+	desc = "A hood worn by those who favor Goler Kanh."
+	color = null
+	icon_state = "warlockhood"
+	item_state = "warlockhood"
+	icon = 'icons/roguetown/clothing/head.dmi'
+	body_parts_covered = NECK
+	slot_flags = ITEM_SLOT_HEAD
+	dynamic_hair_suffix = ""
+	edelay_type = 1
+	adjustable = CAN_CADJUST
+	toggle_icon_state = TRUE
+	max_integrity = 100
+
 /obj/item/clothing/head/roguetown/akanhood
 	name = "air hood"
 	desc = "A hood worn by those who favor Akan with a mask in the shape of a crescent."
@@ -106,6 +121,14 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	dynamic_hair_suffix = ""
 	sewrepair = TRUE
+
+/obj/item/clothing/head/roguetown/roguehood/iliopehood
+	name = "fool's hood"
+	desc = "A hood worn by those who favor Iliope the Fool."
+	color = null
+	icon_state = "monkhood"
+	item_state = "monkhood"
+	slot_flags = ITEM_SLOT_HEAD
 
 /obj/item/clothing/head/roguetown/mjallidhornhood
 	name = "death shroud"
