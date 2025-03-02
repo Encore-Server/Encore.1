@@ -209,11 +209,9 @@
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort)
 "bE" = (
-/obj/structure/fluff/signage{
-	name = "OLD DOMA - EAST"
-	},
+/obj/item/natural/rock,
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/woods/seculton)
+/area/rogue/under/cave)
 "bJ" = (
 /obj/structure/chair/wood/rogue/chair3,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -2830,6 +2828,12 @@
 "te" = (
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort)
+"th" = (
+/obj/structure/fluff/signage{
+	name = "BEWARE MOUNT MIRACLE"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/seculton)
 "tj" = (
 /obj/item/roguegem,
 /turf/open/floor/rogue/cobble/mossy,
@@ -3148,6 +3152,12 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
+"uY" = (
+/obj/machinery/light/rogue/lanternpost{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cave)
 "uZ" = (
 /obj/item/fishingrod,
 /turf/open/floor/rogue/naturalstone,
@@ -3382,6 +3392,10 @@
 /obj/structure/ladder,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cavewet/bogcaves)
+"wH" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cave)
 "wI" = (
 /obj/item/roguegem/violet,
 /turf/open/floor/rogue/dirt/road,
@@ -4522,6 +4536,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"Ey" = (
+/obj/machinery/light/rogue/lanternpost{
+	pixel_y = 28
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cave)
 "Ez" = (
 /obj/structure/fermenting_barrel,
 /turf/open/floor/rogue/dirt,
@@ -5155,6 +5175,12 @@
 "IQ" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter/woods)
+"IS" = (
+/obj/structure/fluff/signage{
+	name = "OLD DOMA - EAST"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/seculton)
 "IT" = (
 /obj/structure/mineral_door/wood/window,
 /turf/open/floor/rogue/woodturned,
@@ -125035,7 +125061,7 @@ Qs
 Qs
 ZO
 ZO
-ZO
+NK
 ZO
 ZO
 ZO
@@ -125288,7 +125314,7 @@ ZO
 ZO
 Qs
 ZO
-ZO
+NK
 ZO
 Qs
 Qs
@@ -126056,7 +126082,7 @@ ZO
 Qs
 Qs
 ZO
-Qs
+NK
 ZO
 ZO
 ZO
@@ -126309,7 +126335,7 @@ Qs
 Qs
 ZO
 ZO
-ZO
+NK
 ZO
 Qs
 ZO
@@ -126822,7 +126848,7 @@ ZO
 ZO
 Qs
 ZO
-Qs
+NK
 ZO
 ZO
 ZO
@@ -127079,7 +127105,7 @@ ZO
 ZO
 Qs
 Qs
-ZO
+NK
 Qs
 ZO
 ZO
@@ -127334,7 +127360,7 @@ Qs
 kL
 ZO
 ZO
-Qs
+NK
 ZO
 Qs
 ZO
@@ -127351,13 +127377,13 @@ ZO
 ZO
 ZO
 ZO
-ZO
+IS
 df
 df
-bE
 df
 df
-ZO
+df
+th
 ZO
 ZO
 ZO
@@ -127591,7 +127617,7 @@ Ru
 OX
 DN
 ZO
-Qs
+NK
 ZO
 Qs
 ZO
@@ -127866,11 +127892,11 @@ AQ
 AQ
 AQ
 AQ
-lM
-lM
-lM
-lM
-lM
+KS
+KS
+KS
+KS
+wH
 AQ
 AQ
 AQ
@@ -128127,7 +128153,7 @@ KS
 KS
 KS
 KS
-KS
+AQ
 AQ
 AQ
 AQ
@@ -128379,12 +128405,12 @@ AQ
 AQ
 AQ
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -128636,12 +128662,12 @@ AQ
 AQ
 AQ
 AQ
+Ey
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -128893,12 +128919,12 @@ AQ
 AQ
 AQ
 AQ
+bE
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -129155,7 +129181,7 @@ KS
 KS
 KS
 KS
-KS
+AQ
 AQ
 AQ
 AQ
@@ -129393,7 +129419,7 @@ ZO
 ZO
 ZO
 Qs
-Qs
+NK
 ZO
 ZO
 ZO
@@ -129926,7 +129952,7 @@ KS
 KS
 KS
 KS
-KS
+uY
 AQ
 AQ
 AQ
@@ -130163,7 +130189,7 @@ ZO
 ZO
 ZO
 Qs
-Qs
+NK
 ZO
 ZO
 ZO
@@ -130436,8 +130462,8 @@ AQ
 AQ
 AQ
 AQ
-KS
-KS
+AQ
+wH
 KS
 KS
 KS
@@ -130675,9 +130701,9 @@ us
 ZO
 ZO
 ZO
+NK
 Qs
 Qs
-Qs
 ZO
 ZO
 ZO
@@ -130693,12 +130719,12 @@ AQ
 AQ
 AQ
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
+AQ
+KS
+KS
+KS
+bE
 AQ
 AQ
 AQ
@@ -130950,12 +130976,12 @@ AQ
 AQ
 AQ
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
 AQ
 AQ
@@ -131207,7 +131233,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+AQ
 KS
 KS
 KS
@@ -131464,7 +131490,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+bE
 KS
 KS
 KS
@@ -131978,7 +132004,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+Ey
 KS
 KS
 KS
@@ -132753,7 +132779,7 @@ KS
 KS
 KS
 KS
-KS
+wH
 AQ
 AQ
 AQ
@@ -133005,12 +133031,12 @@ AQ
 AQ
 AQ
 AQ
+wH
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -133262,12 +133288,12 @@ AQ
 AQ
 AQ
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -133519,12 +133545,12 @@ AQ
 AQ
 AQ
 AQ
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
+AQ
 AQ
 AQ
 AQ
@@ -133776,12 +133802,12 @@ AQ
 AQ
 AQ
 AQ
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
+AQ
 AQ
 AQ
 AQ
@@ -134033,12 +134059,12 @@ AQ
 AQ
 AQ
 AQ
+bE
+KS
+KS
+KS
+uY
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -134290,12 +134316,12 @@ AQ
 AQ
 AQ
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
 AQ
 AQ
@@ -135066,7 +135092,7 @@ KS
 KS
 KS
 KS
-KS
+bE
 AQ
 AQ
 AQ
@@ -135576,7 +135602,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+wH
 KS
 KS
 KS
@@ -135833,7 +135859,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+Ey
 KS
 KS
 KS
@@ -136095,7 +136121,7 @@ KS
 KS
 KS
 KS
-AQ
+wH
 AQ
 AQ
 AQ
@@ -136347,12 +136373,12 @@ AQ
 AQ
 AQ
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
 AQ
 AQ
@@ -136604,12 +136630,12 @@ AQ
 AQ
 AQ
 AQ
-KS
-KS
-KS
-KS
-KS
 AQ
+KS
+KS
+KS
+KS
+KS
 AQ
 AQ
 AQ
@@ -136866,7 +136892,7 @@ KS
 KS
 KS
 KS
-AQ
+KS
 AQ
 AQ
 AQ
@@ -137118,7 +137144,7 @@ AQ
 AQ
 AQ
 AQ
-KS
+bE
 KS
 KS
 KS
@@ -137379,7 +137405,7 @@ KS
 KS
 KS
 KS
-KS
+wH
 AQ
 AQ
 AQ
@@ -137636,7 +137662,7 @@ KS
 KS
 KS
 KS
-KS
+uY
 AQ
 AQ
 AQ
