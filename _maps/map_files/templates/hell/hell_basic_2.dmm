@@ -35,9 +35,17 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/mountains/decap/hell)
 "g" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"h" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/mountains/decap/hell)
 "j" = (
@@ -45,6 +53,11 @@
 	dir = 1;
 	icon_state = "border"
 	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/mountains/decap/hell)
+"k" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/mountains/decap/hell)
 "l" = (
@@ -313,7 +326,7 @@ W
 g
 w
 D
-q
+k
 y
 y
 y
@@ -361,7 +374,7 @@ N
 N
 y
 K
-A
+h
 r
 a
 a
@@ -385,7 +398,7 @@ d
 c
 A
 A
-A
+h
 Z
 g
 N
@@ -450,7 +463,7 @@ y
 N
 j
 b
-q
+k
 N
 N
 B

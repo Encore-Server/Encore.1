@@ -1,0 +1,490 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/item/ammo_casing/caseless/rogue/arrow/iron,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"aJ" = (
+/obj/item/ammo_casing/caseless/rogue/arrow/iron,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"bS" = (
+/obj/structure/spacevine,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"bX" = (
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dd" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dp" = (
+/obj/item/ammo_casing/caseless/rogue/arrow/iron,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"du" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"gd" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"gQ" = (
+/obj/structure/closet/dirthole/closed,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"gS" = (
+/obj/item/ammo_casing/caseless/rogue/arrow/iron,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"hC" = (
+/obj/item/rogueweapon/sword/gladius,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"jl" = (
+/obj/effect/decal/remains/human,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"lV" = (
+/obj/item/rogueweapon/sword/gladius,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"mZ" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"ny" = (
+/obj/item/natural/bundle/bone/full{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/natural/bone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"qE" = (
+/obj/item/natural/bundle/bone/full{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"rd" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"sb" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"tt" = (
+/obj/structure/spacevine,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"tS" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"uj" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"wR" = (
+/obj/item/clothing/head/helmet/skull,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"zU" = (
+/obj/item/rogueore/coal,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"zW" = (
+/obj/item/ammo_casing/caseless/rogue/arrow/iron,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Am" = (
+/obj/structure/closet/dirthole/closed,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/effect/decal/remains/xeno,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"Bj" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Ch" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"Cu" = (
+/obj/item/natural/bundle/bone/full{
+	pixel_y = 7;
+	pixel_x = -9
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"CY" = (
+/obj/item/rogueore/coal,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"GL" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"HF" = (
+/obj/item/natural/bone,
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Iy" = (
+/obj/item/rogueweapon/sword/gladius,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Jp" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ml" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Pu" = (
+/obj/structure/spacevine,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"PU" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"RS" = (
+/obj/item/clothing/head/helmet/skull,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"SC" = (
+/obj/item/rogueweapon/shield/tower,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Tn" = (
+/obj/item/rogueweapon/shield/tower,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Ud" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Vl" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"VE" = (
+/obj/item/natural/rock/coal,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"WI" = (
+/obj/effect/decal/remains/xeno,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"XD" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+YZ
+yf
+qK
+yf
+qK
+tS
+YZ
+YZ
+YZ
+yf
+qK
+yf
+du
+YZ
+YZ
+"}
+(2,1,1) = {"
+YZ
+KC
+sb
+GL
+Ch
+tS
+Vl
+YZ
+qK
+yf
+yf
+dd
+yf
+YZ
+YZ
+"}
+(3,1,1) = {"
+qK
+yf
+yf
+yf
+yf
+zW
+tS
+yf
+yf
+yf
+yf
+KC
+CY
+PU
+RS
+"}
+(4,1,1) = {"
+qK
+yf
+YZ
+uj
+yf
+dd
+gQ
+yf
+YZ
+qK
+yf
+qK
+qK
+lV
+PU
+"}
+(5,1,1) = {"
+yf
+yf
+XD
+hC
+yf
+qK
+YZ
+yf
+ny
+qK
+qK
+dE
+du
+aJ
+VE
+"}
+(6,1,1) = {"
+yf
+Cu
+YZ
+Vl
+du
+Tn
+YZ
+YZ
+YZ
+dd
+qK
+qK
+KC
+PU
+Ml
+"}
+(7,1,1) = {"
+qK
+yf
+YZ
+YZ
+qK
+qC
+YZ
+AW
+qK
+tS
+tS
+dd
+KC
+bS
+KC
+"}
+(8,1,1) = {"
+rd
+yf
+gS
+YZ
+yf
+qK
+YZ
+YZ
+qK
+tS
+qK
+tS
+yr
+Ch
+KC
+"}
+(9,1,1) = {"
+KC
+YZ
+qK
+yf
+qK
+qK
+qK
+qK
+tS
+zW
+qK
+Ud
+yf
+Ch
+KC
+"}
+(10,1,1) = {"
+PU
+Ch
+Jp
+yf
+dp
+yf
+qK
+HF
+qK
+qK
+qK
+qE
+yf
+tS
+YZ
+"}
+(11,1,1) = {"
+yf
+zU
+tS
+qK
+qK
+yf
+qK
+qK
+bX
+Iy
+YZ
+PU
+yf
+qC
+du
+"}
+(12,1,1) = {"
+KC
+yf
+WI
+yf
+yf
+yf
+Ml
+qC
+mZ
+wR
+XD
+SC
+ar
+tS
+qK
+"}
+(13,1,1) = {"
+qK
+yf
+Am
+tS
+jl
+PU
+PU
+tS
+Pu
+tS
+Ch
+yf
+Ch
+tS
+qK
+"}
+(14,1,1) = {"
+gd
+qK
+yf
+YZ
+YZ
+qK
+Bj
+Ml
+YZ
+KC
+tt
+Ch
+Ch
+YZ
+dE
+"}
+(15,1,1) = {"
+qK
+YZ
+YZ
+YZ
+yf
+yf
+yf
+yf
+KC
+KC
+dd
+YZ
+YZ
+YZ
+YZ
+"}

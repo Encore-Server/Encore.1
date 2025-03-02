@@ -1,0 +1,384 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"cs" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"cW" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"dE" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods)
+"dF" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"fC" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"gB" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"ht" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods)
+"hN" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"kd" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"nu" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"qv" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"qK" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"qX" = (
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"sC" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"yr" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"Ae" = (
+/obj/structure/fluff/railing/border,
+/obj/item/fishingrod,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods)
+"AW" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Cw" = (
+/turf/closed/wall/mineral/rogue/decowood,
+/area/rogue/indoors/shelter/woods)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"Dd" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"KC" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"Nu" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"RY" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"TX" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"Vs" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"YZ" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+YZ
+Nu
+Nu
+Nu
+Nu
+aJ
+Nu
+Nu
+hN
+Nu
+Nu
+Nu
+Nu
+Nu
+dF
+"}
+(2,1,1) = {"
+Nu
+Nu
+cs
+qC
+sC
+Nu
+uj
+Nu
+GL
+qC
+kd
+Dd
+aJ
+Nu
+Nu
+"}
+(3,1,1) = {"
+qC
+dF
+yf
+yr
+sC
+sC
+sC
+sC
+uj
+gB
+Cw
+Cw
+gB
+yf
+qC
+"}
+(4,1,1) = {"
+Nu
+Nu
+yf
+sC
+sC
+uj
+uj
+uj
+uj
+qv
+nu
+RY
+Cw
+hN
+Nu
+"}
+(5,1,1) = {"
+Nu
+hN
+sC
+uj
+sC
+uj
+uj
+uj
+sC
+Cw
+nu
+nu
+qv
+hN
+Nu
+"}
+(6,1,1) = {"
+hN
+kd
+sC
+uj
+ht
+Ae
+uj
+uj
+uj
+Cw
+nu
+nu
+Cw
+qC
+Nu
+"}
+(7,1,1) = {"
+Cy
+Vs
+uj
+uj
+ht
+dE
+uj
+uj
+sC
+gB
+AW
+qv
+gB
+Nu
+Nu
+"}
+(8,1,1) = {"
+Cy
+aJ
+uj
+uj
+ht
+dE
+uj
+sC
+uj
+uj
+hN
+hN
+hN
+fC
+hN
+"}
+(9,1,1) = {"
+hN
+hN
+sC
+uj
+hN
+hN
+Nu
+uj
+uj
+sC
+hN
+hN
+uj
+hN
+hN
+"}
+(10,1,1) = {"
+Nu
+hN
+sC
+sC
+kd
+hN
+kd
+Nu
+uj
+uj
+yr
+hN
+Cy
+hN
+hN
+"}
+(11,1,1) = {"
+Nu
+hN
+sC
+kd
+hN
+hN
+hN
+Nu
+TX
+kd
+dF
+hN
+Cy
+cW
+Nu
+"}
+(12,1,1) = {"
+Nu
+hN
+hN
+hN
+Dd
+hN
+hN
+hN
+hN
+hN
+Dd
+hN
+hN
+KC
+hN
+"}
+(13,1,1) = {"
+Nu
+cs
+Nu
+Nu
+kd
+Nu
+hN
+Nu
+yr
+hN
+hN
+hN
+cW
+qK
+hN
+"}
+(14,1,1) = {"
+Nu
+Nu
+Nu
+yf
+hN
+Nu
+Nu
+dF
+yf
+yf
+KC
+cs
+Nu
+yf
+qX
+"}
+(15,1,1) = {"
+Nu
+qC
+Nu
+Nu
+Nu
+Nu
+hN
+Dd
+Nu
+yf
+Nu
+Nu
+yf
+yf
+Nu
+"}

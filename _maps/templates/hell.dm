@@ -1,5 +1,8 @@
+//Basic dungeon templates
+//15x15
+//Located in Hell
 /obj/effect/landmark/map_load_mark/hell_basic
-	name = "Basic Hell Fun Rooms"
+	name = "Basic Hell Template"
 	templates = list("hell_basic_1", "hell_basic_2", "hell_basic_3", "hell_basic_4")
 
 /datum/map_template/hell_basic_1

@@ -1,0 +1,312 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"ht" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Dd" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+YZ
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+yr
+YZ
+YZ
+YZ
+qK
+YZ
+qK
+YZ
+"}
+(2,1,1) = {"
+qK
+qK
+YZ
+ht
+uj
+YZ
+yr
+yr
+GL
+yr
+YZ
+YZ
+aJ
+qK
+qK
+"}
+(3,1,1) = {"
+qK
+YZ
+GL
+yr
+uj
+uj
+uj
+yr
+uj
+uj
+yr
+yr
+yf
+Ae
+qC
+"}
+(4,1,1) = {"
+qK
+YZ
+GL
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+yr
+qK
+qK
+"}
+(5,1,1) = {"
+YZ
+YZ
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+yr
+YZ
+YZ
+"}
+(6,1,1) = {"
+YZ
+KC
+uj
+uj
+uj
+uj
+GL
+KC
+uj
+uj
+uj
+uj
+yr
+YZ
+YZ
+"}
+(7,1,1) = {"
+yf
+KC
+uj
+uj
+uj
+uj
+GL
+AW
+KC
+uj
+uj
+uj
+yr
+YZ
+YZ
+"}
+(8,1,1) = {"
+yf
+yr
+uj
+uj
+uj
+uj
+GL
+KC
+uj
+uj
+uj
+uj
+yr
+YZ
+YZ
+"}
+(9,1,1) = {"
+YZ
+yr
+uj
+uj
+uj
+uj
+yr
+ht
+uj
+uj
+uj
+uj
+YZ
+YZ
+qK
+"}
+(10,1,1) = {"
+YZ
+yr
+yr
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+YZ
+yf
+YZ
+qK
+"}
+(11,1,1) = {"
+YZ
+yr
+yr
+KC
+KC
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yf
+qC
+qK
+"}
+(12,1,1) = {"
+YZ
+yr
+yr
+yr
+Dd
+YZ
+YZ
+YZ
+uj
+uj
+YZ
+uj
+YZ
+qK
+qK
+"}
+(13,1,1) = {"
+qK
+YZ
+yr
+YZ
+yr
+yr
+YZ
+KC
+YZ
+YZ
+YZ
+YZ
+YZ
+qK
+YZ
+"}
+(14,1,1) = {"
+qK
+qK
+YZ
+yf
+YZ
+yr
+KC
+KC
+KC
+Cy
+KC
+YZ
+qK
+dE
+YZ
+"}
+(15,1,1) = {"
+YZ
+qC
+qK
+YZ
+YZ
+YZ
+YZ
+KC
+KC
+yf
+YZ
+YZ
+YZ
+YZ
+YZ
+"}
