@@ -158,7 +158,7 @@
 
 /datum/outfit/job/roguetown/templar/crusader/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Flail","Mace")
+	var/weapons = list("Bastard Sword","Flail","Mace","Zweihander","Lucerne")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Bastard Sword")
@@ -170,6 +170,15 @@
 		if("Mace")
 			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
+		if("Zweihander")
+			H.put_in_hands(new /obj/item/rogueweapon/greatsword/grenz(H), TRUE)
+			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		if("Lucerne")
+			H.put_in_hands(new /obj/item/rogueweapon/eaglebeak/lucerne(H), TRUE)
+			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+
 
 /datum/advclass/templar/heavyranger
 	name = "Ranger-Zealot"

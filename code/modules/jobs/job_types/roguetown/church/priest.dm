@@ -14,7 +14,7 @@
 	tutorial = "The Divine is all that matters in the Goblet now. The Elementals have cast the onus upon mortals to maintain order, as they hold the barrier against Hell itself for our sake. None may represent the Balance more stringently than the Aspects' worshippers, priests of the Katholikos."
 	whitelist_req = FALSE
 
-	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/howl/call_of_the_moon, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
+	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/self/convertrole/monk)
 	outfit = /datum/outfit/job/roguetown/priest
 
 	display_order = JDO_PRIEST
@@ -29,6 +29,15 @@
 /datum/outfit/job/roguetown/priest/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/psicross/gani
+	switch(H.patron?.type)
+		if(/datum/patron/elemental/visires)
+			neck = /obj/item/clothing/neck/roguetown/psicross/visires
+		if(/datum/patron/elemental/gani)
+			neck = /obj/item/clothing/neck/roguetown/psicross/gani
+		if(/datum/patron/elemental/mjallidhorn)
+			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+		if(/datum/patron/elemental/akan)
+			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 	head = /obj/item/clothing/head/roguetown/priestmask
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
 	pants = /obj/item/clothing/under/roguetown/tights/black

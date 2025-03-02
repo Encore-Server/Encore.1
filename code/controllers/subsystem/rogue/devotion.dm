@@ -130,7 +130,8 @@
 		for(var/S in patron.additional_spells)
 			spelllist += S
 	if(istype(patron,/datum/patron/elemental))
-		spelllist += /obj/effect/proc_holder/spell/invoked/lesser_heal
+		if(!istype(patron, /datum/patron/elemental/visires)) //Only clerics of visires should get healing
+			spelllist += /obj/effect/proc_holder/spell/invoked/lesser_heal
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue

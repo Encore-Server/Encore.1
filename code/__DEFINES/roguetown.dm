@@ -14,6 +14,7 @@
 	/datum/species/lizardfolk,\
 	/datum/species/tabaxi,\
 	/datum/species/lupian,\
+	/datum/species/demihuman,\
 
 #define RACES_TOLERATED \
 	/datum/species/elf/dark,\

@@ -22,7 +22,7 @@
 	name = "Acolyte"
 	jobtype = /datum/job/roguetown/monk
 
-	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_patrons = ALL_ACOLYTE_PATRONS
 
 
 /datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)

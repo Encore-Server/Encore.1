@@ -491,3 +491,11 @@
 	name = "naledian warstaff"
 	desc = "A staff carrying the crescent moon of Psydon's knowledge, as well as the black and gold insignia of the war scholars."
 	icon_state = "naledistaff"
+
+/obj/item/rogueweapon/woodstaff/wizard
+	name = "wizard staff"
+	desc = "A crackling staff tipped by a rare Thaumalogically charged crystal. Making one of these is a rite of passage for many Magi apprentices."
+	icon = 'icons/roguetown/weapons/64.dmi'
+	icon_state = "wizardstaff"
+	force = 25
+	force_wielded = 28

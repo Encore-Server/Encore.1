@@ -2143,17 +2143,15 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		slot_randomized = TRUE
 		random_character(gender, antagonist)
 
-	// Bandaid to undo no arm flaw prosthesis
+	// Bandaid to undo prosthesis
 	if(charflaw)
-		var/obj/item/bodypart/O = character.get_bodypart(BODY_ZONE_R_ARM)
-		if(O)
-			O.drop_limb()
-			qdel(O)
-		O = character.get_bodypart(BODY_ZONE_L_ARM)
-		if(O)
-			O.drop_limb()
-		character.regenerate_limb(BODY_ZONE_R_ARM)
-		character.regenerate_limb(BODY_ZONE_L_ARM)
+		var/list/bodyparts = list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+		for(var/B in bodyparts)
+			var/obj/item/bodypart/O = character.get_bodypart(B)
+			if(O)
+				O.drop_limb()
+				qdel(O)
+			character.regenerate_limb(B)
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type

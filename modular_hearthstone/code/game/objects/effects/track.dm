@@ -266,6 +266,15 @@
 			if(ARMOR_CLASS_MEDIUM)
 				bonus_weight = 0.5
 			else
+
+	var/obj/item/bodypart/rightleg = get_bodypart(BODY_ZONE_R_LEG)
+	if(rightleg?.heavy_steps)
+		bonus_weight += 0.5
+
+	var/obj/item/bodypart/leftleg = get_bodypart(BODY_ZONE_L_LEG)
+	if(leftleg?.heavy_steps)
+		bonus_weight += 0.5
+
 	switch(bonus_weight)
 		if(2 to INFINITY)
 			this_track.depth = "very deep"
@@ -315,14 +324,28 @@
 			if(ARMOR_CLASS_HEAVY)
 				bonus_weight += 0.5
 			if(ARMOR_CLASS_MEDIUM)
-				bonus_weight = 0.25
+				bonus_weight += 0.25
 			else
 	if(wear_shirt)
 		switch(wear_shirt.armor_class)
 			if(ARMOR_CLASS_HEAVY)
 				bonus_weight += 0.5
 			if(ARMOR_CLASS_MEDIUM)
-				bonus_weight = 0.25
+				bonus_weight += 0.25
+
+	var/obj/item/bodypart/rightleg = get_bodypart(BODY_ZONE_R_LEG)
+	if(rightleg)
+		if(rightleg.heavy_steps)
+			bonus_weight += 0.5
+		if(!rightleg.toes)
+			bonus_weight += 0.25 //not really a weight but you'll leave some unique tracks that are easy to spot, ie: peg legs
+			
+	var/obj/item/bodypart/leftleg = get_bodypart(BODY_ZONE_L_LEG)
+	if(leftleg)
+		if(leftleg.heavy_steps)
+			bonus_weight += 0.5
+		if(!leftleg.toes)
+			bonus_weight += 0.25 //not really a weight but you'll leave some unique tracks that are easy to spot, ie: peg legs
 	if(bonus_weight)
 		. *= (1 + bonus_weight)
 

@@ -28,8 +28,8 @@
 	worshippers = "Warriors, sellswords, justiciers and freedom fighters"
 	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_MJALLIDHORN_SWIM, TRAIT_DEATHSIGHT)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
-	t1 = /obj/effect/proc_holder/spell/invoked/avert
-	t2 = /obj/effect/proc_holder/spell/targeted/abrogation
+	t1 = /obj/effect/proc_holder/spell/targeted/abrogation
+	t2 = /obj/effect/proc_holder/spell/invoked/avert
 	t3 = /obj/effect/proc_holder/spell/targeted/soulspeak
 	t4 = /obj/effect/proc_holder/spell/targeted/burialrite
 	confess_lines = list(

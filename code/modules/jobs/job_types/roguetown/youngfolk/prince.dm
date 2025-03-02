@@ -4,8 +4,8 @@
 	flag = PRINCE
 	department_flag = YOUNGFOLK
 	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 99
+	spawn_positions = 99
 	f_title = "Princess"
 	allowed_races = RACES_ALL_KINDS //Maybe a system to force-pick lineage based on king and queen should be implemented.
 	allowed_sexes = list(MALE, FEMALE)
@@ -13,7 +13,7 @@
 	allowed_patrons = list(/datum/patron/heretic/jealous_god)
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
 
-	tutorial = "You’ve never felt the gnawing of the winter, never known the bite of hunger and certainly have never known a honest day's work. You are as free as any bird in the sky, and you may revel in your debauchery for as long as your parents remain upon the throne: But someday you’ll have to grow up, and that will be the day your carelessness will cost you more than a few mammons."
+	tutorial = "You’ve never felt the gnawing of the winter, never known the bite of hunger and certainly have never known an honest day's work. You are as free as any bird in the sky, and you may revel in your debauchery for as long as your parents remain upon the throne: But someday you’ll have to grow up, and that will be the day your carelessness will cost you more than a few mammons."
 
 	display_order = JDO_PRINCE
 	give_bank_account = 30

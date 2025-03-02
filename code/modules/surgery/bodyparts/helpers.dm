@@ -120,6 +120,9 @@
 		return TRUE
 	return FALSE
 
+/mob/living/carbon/human/dummy/get_leg_ignore() //Prevents falling down in character preview
+	return TRUE
+
 /mob/living/proc/get_missing_limbs()
 	return list()
 
