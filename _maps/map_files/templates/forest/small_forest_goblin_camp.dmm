@@ -1,0 +1,219 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"c" = (
+/mob/living/carbon/human/species/goblin/npc,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"h" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"i" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"j" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/woods)
+"l" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"n" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"o" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/woods)
+"p" = (
+/obj/structure/toilet,
+/mob/living/carbon/human/species/goblin/npc,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"z" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/woods)
+"F" = (
+/obj/structure/bed/rogue/inn/hay,
+/mob/living/carbon/human/species/goblin/npc,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"G" = (
+/obj/item/roguebin/water/gross,
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"J" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"L" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"M" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"O" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Q" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods)
+"R" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"T" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"U" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/woods)
+"W" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"Y" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Z" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+i
+J
+i
+h
+i
+W
+i
+i
+i
+i
+"}
+(2,1,1) = {"
+a
+j
+j
+a
+i
+i
+T
+i
+i
+i
+"}
+(3,1,1) = {"
+o
+R
+F
+U
+J
+J
+Z
+Z
+W
+i
+"}
+(4,1,1) = {"
+O
+c
+L
+O
+i
+n
+Z
+T
+i
+i
+"}
+(5,1,1) = {"
+o
+Y
+c
+U
+i
+i
+Z
+Z
+i
+l
+"}
+(6,1,1) = {"
+a
+z
+z
+a
+Q
+i
+i
+Z
+h
+i
+"}
+(7,1,1) = {"
+J
+M
+G
+i
+i
+i
+i
+i
+Z
+i
+"}
+(8,1,1) = {"
+i
+J
+i
+i
+a
+j
+a
+Z
+Z
+i
+"}
+(9,1,1) = {"
+i
+i
+i
+i
+o
+p
+O
+Z
+Z
+i
+"}
+(10,1,1) = {"
+i
+i
+W
+i
+a
+z
+a
+i
+i
+i
+"}

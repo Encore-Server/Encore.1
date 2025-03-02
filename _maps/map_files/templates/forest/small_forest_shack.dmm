@@ -1,0 +1,198 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"b" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/shelter/woods)
+"c" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"f" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"g" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/woods)
+"k" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"q" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/woods)
+"u" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/woods)
+"w" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"x" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"y" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/woods)
+"B" = (
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"E" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"H" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/shelter/woods)
+"M" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"N" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"T" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"V" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/woods)
+"W" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"X" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+k
+x
+x
+x
+x
+k
+x
+x
+a
+x
+"}
+(2,1,1) = {"
+X
+T
+u
+M
+H
+x
+x
+W
+x
+x
+"}
+(3,1,1) = {"
+x
+g
+B
+M
+b
+b
+u
+T
+k
+a
+"}
+(4,1,1) = {"
+x
+H
+M
+M
+T
+N
+N
+T
+x
+x
+"}
+(5,1,1) = {"
+x
+b
+H
+M
+g
+M
+f
+q
+x
+x
+"}
+(6,1,1) = {"
+x
+b
+H
+M
+g
+M
+M
+w
+x
+x
+"}
+(7,1,1) = {"
+x
+x
+b
+y
+g
+N
+E
+q
+a
+a
+"}
+(8,1,1) = {"
+x
+k
+T
+y
+T
+V
+V
+T
+c
+a
+"}
+(9,1,1) = {"
+x
+x
+T
+T
+T
+x
+k
+X
+a
+x
+"}
+(10,1,1) = {"
+x
+x
+k
+x
+x
+x
+x
+x
+x
+x
+"}

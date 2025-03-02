@@ -549,25 +549,25 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 /client/proc/cmd_admin_create_centcom_report()
 	set category = "Special Verbs"
-	set name = "Create Command Report"
+	set name = "Create IC Announcement"
 
 	if(!check_rights(R_ADMIN))
 		return
 
-	var/input = input(usr, "Enter a Command Report. Ensure it makes sense IC.", "What?", "") as message|null
+	var/input = input(usr, "Enter an announcement. Ensure it makes sense IC.", "What Say You?", "") as message|null
 	if(!input)
 		return
 
-	var/confirm = alert(src, "Do you want to announce the contents of the report to the crew?", "Announce", "Yes", "No", "Cancel")
+	var/confirm = alert(src, "Do you want to announce the contents of the report to the players? If not, it will only arrive as a written message at the throne.", "Announce", "Yes", "No", "Cancel")
 	var/announce_command_report = TRUE
 	switch(confirm)
 		if("Yes")
-			priority_announce(input, null, 'sound/blank.ogg')
+			priority_announce(input, "News Arrives!", 'sound/misc/bell.ogg')
 			announce_command_report = FALSE
 		if("Cancel")
 			return
 
-	print_command_report(input, "[announce_command_report ? "Classified " : ""][command_name()] Update", announce_command_report)
+	print_command_report(input, "", announce_command_report)
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report")

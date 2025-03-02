@@ -7,7 +7,6 @@
 	action_background_icon_state = "bg_demon"
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/construct/lesser/cult
-	clothes_req = TRUE
 	charge_max = 2500
 
 
@@ -94,7 +93,6 @@
 	summon_type = list(/obj/item/soulstone)
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone/cult
-	clothes_req = TRUE
 	charge_max = 3600
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/soulstone/noncult

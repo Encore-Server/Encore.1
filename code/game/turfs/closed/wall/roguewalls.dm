@@ -238,8 +238,8 @@
 /turf/closed/wall/mineral/rogue/decostone
 	name = "decorated stone wall"
 	desc = "The mason did an excellent job etching details into this wall."
-	icon = 'icons/turf/roguewall.dmi'
-	icon_state = "decostone-b"
+	icon = 'icons/turf/walls/decostone.dmi'
+	icon_state = "box"
 	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
 	max_integrity = 1800

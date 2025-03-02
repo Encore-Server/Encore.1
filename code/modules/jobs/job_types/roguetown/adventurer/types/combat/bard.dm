@@ -171,15 +171,8 @@
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife/idagger
-			switch(H.patron?.type)
-				if(/datum/patron/elemental/visires)
-					neck = /obj/item/clothing/neck/roguetown/psicross/visires
-				if(/datum/patron/elemental/akan)
-					neck = /obj/item/clothing/neck/roguetown/psicross/akan
-				if(/datum/patron/elemental/gani)
-					neck = /obj/item/clothing/neck/roguetown/psicross/gani
-				if(/datum/patron/elemental/mjallidhorn)
-					neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
+			if(H.patron?.amulet)
+				neck = H.patron.amulet
 			backpack_contents = list(/obj/item/lockpickring/one = 1)
 			H.change_stat("strength", 1)
 			H.change_stat("intelligence", 2)

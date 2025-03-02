@@ -7,6 +7,6 @@
 
 /datum/reagent/miasmagas/on_mob_life(mob/living/carbon/M)
 	if(!HAS_TRAIT(M, TRAIT_NOSTINK))
-		M.add_nausea(15)
+		M.add_nausea(10)
 		M.add_stress(/datum/stressevent/miasmagas)
 	return ..()

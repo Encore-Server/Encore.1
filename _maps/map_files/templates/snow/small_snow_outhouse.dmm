@@ -1,0 +1,214 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"b" = (
+/obj/structure/toilet,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter)
+"d" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"h" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"i" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter)
+"j" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"m" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"p" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"r" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"s" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"t" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter)
+"w" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"y" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"A" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"B" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"C" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter)
+"E" = (
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"K" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"N" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"P" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter)
+"X" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Z" = (
+/obj/structure/toilet,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter)
+
+(1,1,1) = {"
+a
+a
+r
+a
+a
+a
+d
+a
+d
+a
+"}
+(2,1,1) = {"
+r
+r
+j
+B
+p
+a
+a
+X
+d
+d
+"}
+(3,1,1) = {"
+r
+r
+p
+p
+p
+p
+p
+A
+K
+m
+"}
+(4,1,1) = {"
+a
+w
+t
+C
+t
+r
+r
+r
+d
+d
+"}
+(5,1,1) = {"
+E
+y
+P
+b
+h
+r
+N
+N
+s
+a
+"}
+(6,1,1) = {"
+r
+r
+t
+i
+t
+A
+r
+N
+p
+a
+"}
+(7,1,1) = {"
+r
+r
+r
+r
+r
+A
+p
+p
+p
+a
+"}
+(8,1,1) = {"
+r
+j
+t
+C
+t
+r
+A
+p
+p
+p
+"}
+(9,1,1) = {"
+r
+r
+P
+Z
+h
+A
+r
+a
+p
+d
+"}
+(10,1,1) = {"
+r
+r
+t
+i
+t
+r
+a
+A
+a
+K
+"}

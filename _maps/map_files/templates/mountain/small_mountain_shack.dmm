@@ -1,0 +1,192 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"b" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter)
+"e" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter)
+"g" = (
+/obj/item/rogueweapon/spear,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"q" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter)
+"u" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter)
+"w" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"x" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"y" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter)
+"B" = (
+/obj/structure/closet/crate/chest/old_crate,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"E" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"H" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter)
+"L" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"M" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"N" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"R" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"T" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter)
+"W" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/mountains)
+"Z" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+
+(1,1,1) = {"
+x
+R
+R
+R
+L
+x
+R
+R
+R
+R
+"}
+(2,1,1) = {"
+R
+T
+u
+u
+T
+R
+R
+W
+R
+R
+"}
+(3,1,1) = {"
+R
+b
+B
+Z
+T
+u
+u
+T
+x
+R
+"}
+(4,1,1) = {"
+x
+b
+Z
+M
+T
+N
+N
+T
+R
+R
+"}
+(5,1,1) = {"
+R
+b
+N
+Z
+Z
+Z
+Z
+q
+R
+R
+"}
+(6,1,1) = {"
+R
+T
+H
+Z
+g
+M
+Z
+w
+R
+R
+"}
+(7,1,1) = {"
+R
+x
+T
+y
+b
+N
+E
+q
+R
+R
+"}
+(8,1,1) = {"
+R
+x
+T
+e
+T
+H
+H
+T
+x
+R
+"}
+(9,1,1) = {"
+R
+R
+T
+T
+T
+R
+x
+R
+R
+R
+"}
+(10,1,1) = {"
+R
+R
+x
+R
+R
+R
+R
+R
+R
+L
+"}

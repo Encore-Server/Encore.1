@@ -4,7 +4,6 @@
 
 	school = "evocation"
 	charge_max = 200
-	clothes_req = TRUE
 	invocation = "FORTI GY AMA"
 	invocation_type = "shout"
 	range = 7
@@ -43,7 +42,6 @@
 
 	school = "transmutation"
 	charge_max = 400
-	clothes_req = TRUE
 	invocation = "BIRUZ BENNAR"
 	invocation_type = "shout"
 	range = -1
@@ -97,7 +95,6 @@
 	name = "Disable Tech"
 	desc = ""
 	charge_max = 400
-	clothes_req = TRUE
 	invocation = "NEC CANTIO"
 	invocation_type = "shout"
 	range = -1
@@ -114,7 +111,6 @@
 
 	school = "abjuration"
 	charge_max = 20
-	clothes_req = TRUE
 	invocation = "none"
 	invocation_type = "none"
 	range = -1
@@ -136,7 +132,6 @@
 	name = "quickstep"
 
 	charge_max = 100
-	clothes_req = TRUE
 
 /obj/effect/proc_holder/spell/targeted/area_teleport/teleport
 	name = "Teleport"
@@ -144,7 +139,6 @@
 
 	school = "abjuration"
 	charge_max = 600
-	clothes_req = TRUE
 	invocation = "SCYAR NILA"
 	invocation_type = "shout"
 	range = -1
@@ -168,7 +162,6 @@
 	name = "Stop Time"
 	desc = ""
 	charge_max = 500
-	clothes_req = TRUE
 	invocation = "TOKI YO TOMARE"
 	invocation_type = "shout"
 	range = 0
@@ -186,7 +179,6 @@
 
 	school = "conjuration"
 	charge_max = 1200
-	clothes_req = TRUE
 	invocation = "NOUK FHUNMM SACP RISSKA"
 	invocation_type = "shout"
 	range = 1
@@ -245,7 +237,6 @@
 
 /obj/effect/proc_holder/spell/aoe_turf/conjure/creature/cult
 	name = "Summon Creatures (DANGEROUS)"
-	clothes_req = TRUE
 	charge_max = 5000
 	summon_amt = 2
 
@@ -266,7 +257,6 @@
 	name = "Repulse"
 	desc = ""
 	charge_max = 400
-	clothes_req = TRUE
 	invocation = "GITTAH WEIGH"
 	invocation_type = "shout"
 	range = 5
@@ -365,7 +355,6 @@
 /obj/effect/proc_holder/spell/targeted/conjure_item/spellpacket
 	name = "Thrown Lightning"
 	desc = ""
-	clothes_req = TRUE
 	item_type = /obj/item/spellpacket/lightningbolt
 	charge_max = 10
 	action_icon_state = "thrownlightning"

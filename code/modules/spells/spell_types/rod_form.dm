@@ -1,7 +1,6 @@
 /obj/effect/proc_holder/spell/targeted/rod_form
 	name = "Rod Form"
 	desc = ""
-	clothes_req = TRUE
 	human_req = FALSE
 	charge_max = 250
 	cooldown_min = 100

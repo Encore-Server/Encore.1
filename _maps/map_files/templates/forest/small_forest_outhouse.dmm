@@ -1,0 +1,200 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"b" = (
+/obj/structure/toilet,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"d" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"h" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"i" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/woods)
+"m" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"p" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"r" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"s" = (
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"t" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"y" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"A" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"B" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"C" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/woods)
+"E" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"K" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"N" = (
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/woods)
+"P" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+r
+r
+r
+r
+r
+r
+r
+y
+r
+r
+"}
+(2,1,1) = {"
+A
+A
+r
+B
+s
+r
+a
+r
+r
+r
+"}
+(3,1,1) = {"
+A
+A
+E
+E
+K
+E
+E
+A
+A
+m
+"}
+(4,1,1) = {"
+r
+r
+t
+C
+t
+r
+r
+d
+r
+r
+"}
+(5,1,1) = {"
+E
+m
+N
+b
+h
+r
+A
+A
+r
+r
+"}
+(6,1,1) = {"
+y
+r
+t
+i
+t
+A
+r
+A
+E
+d
+"}
+(7,1,1) = {"
+r
+a
+r
+r
+r
+A
+E
+E
+E
+r
+"}
+(8,1,1) = {"
+A
+r
+r
+y
+A
+m
+A
+E
+p
+E
+"}
+(9,1,1) = {"
+A
+r
+P
+A
+r
+A
+r
+y
+E
+r
+"}
+(10,1,1) = {"
+A
+r
+r
+r
+r
+a
+r
+A
+r
+A
+"}

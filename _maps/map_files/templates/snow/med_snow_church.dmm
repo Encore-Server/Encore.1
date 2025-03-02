@@ -1,0 +1,538 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bz" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 8
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"cr" = (
+/obj/structure/fluff/statue/knightalt{
+	pixel_y = 27
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"eT" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"fN" = (
+/obj/structure/flora/roguetree/burnt,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"gV" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"iF" = (
+/obj/item/rogueweapon/sword/gladius,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"jy" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"jC" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"jF" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"kX" = (
+/obj/machinery/light/rogue/firebowl/church{
+	pixel_y = 14
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"lM" = (
+/obj/item/book_crafting_kit,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"mn" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/shelter/mountains)
+"mS" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"nl" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/indoors/shelter/mountains)
+"nU" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"oL" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"pi" = (
+/obj/item/rope,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"sR" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"tr" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/effect/decal/remains/saiga,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"vo" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"vA" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"vG" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 4
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"xx" = (
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"xH" = (
+/obj/structure/rack/rogue,
+/obj/item/rope/chain,
+/obj/item/rogueweapon/surgery/scalpel,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"yr" = (
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchrough,
+/area/rogue/indoors/shelter/mountains)
+"Ax" = (
+/obj/structure/spacevine,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"AG" = (
+/obj/structure/fluff/statue/knightalt{
+	pixel_y = 27
+	},
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"BO" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"BV" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Cn" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"CD" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"Df" = (
+/obj/structure/spacevine,
+/obj/structure/rack/rogue,
+/obj/item/rope/chain,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"DM" = (
+/obj/structure/chair/bench/church/r{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchrough,
+/area/rogue/indoors/shelter/mountains)
+"EW" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"Gy" = (
+/turf/open/floor/rogue/churchrough,
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/structure/chair/bench/church/mid{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchrough,
+/area/rogue/indoors/shelter/mountains)
+"Kj" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/concrete,
+/area/rogue/indoors/shelter/mountains)
+"Ko" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"KU" = (
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"LU" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"Nd" = (
+/obj/structure/table/church,
+/obj/item/candle/yellow{
+	pixel_y = 11
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/shelter/mountains)
+"QE" = (
+/obj/item/natural/rock,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"SC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ti" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"Tm" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"UO" = (
+/obj/structure/table/church/m,
+/obj/item/reagent_containers/glass/cup/golden{
+	pixel_y = 12;
+	pixel_x = 35
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/indoors/shelter/mountains)
+"Wa" = (
+/obj/item/storage/belt/rogue/pouch/coins/mid,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/indoors/shelter/mountains)
+"Ww" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"Xa" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"YA" = (
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"ZZ" = (
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains)
+
+(1,1,1) = {"
+qK
+qK
+qK
+qK
+sR
+qK
+qK
+qK
+qK
+KC
+qK
+qK
+qK
+qK
+qK
+"}
+(2,1,1) = {"
+qK
+Ko
+Ko
+YZ
+nl
+nl
+nl
+nl
+nl
+KC
+KC
+qK
+jy
+YZ
+qK
+"}
+(3,1,1) = {"
+Ko
+Ko
+YZ
+YZ
+nl
+xH
+xx
+xx
+nl
+LU
+YZ
+KC
+qK
+YZ
+eT
+"}
+(4,1,1) = {"
+YZ
+qK
+EW
+YZ
+nl
+Df
+xx
+xx
+nl
+LU
+LU
+KC
+KC
+Ko
+YZ
+"}
+(5,1,1) = {"
+qK
+Ko
+nl
+nl
+nl
+nl
+vG
+nl
+nl
+nl
+nl
+nl
+cr
+Ko
+QE
+"}
+(6,1,1) = {"
+qK
+qK
+nl
+CD
+CD
+KU
+YA
+YA
+YA
+tr
+iF
+nl
+Xa
+sR
+qK
+"}
+(7,1,1) = {"
+qK
+qK
+nl
+Nd
+lM
+KU
+Gy
+yr
+yr
+gV
+nU
+Tm
+Ww
+LU
+qK
+"}
+(8,1,1) = {"
+jC
+YZ
+nl
+UO
+kX
+KU
+Gy
+GL
+GL
+YA
+mS
+LU
+LU
+qK
+YZ
+"}
+(9,1,1) = {"
+Ko
+YZ
+nl
+mn
+Wa
+KU
+Gy
+DM
+DM
+oL
+Cn
+vo
+jF
+YZ
+LU
+"}
+(10,1,1) = {"
+Ko
+YZ
+nl
+CD
+Ti
+KU
+YA
+ZZ
+YA
+gV
+Ax
+nl
+Ww
+YZ
+YZ
+"}
+(11,1,1) = {"
+Ko
+qK
+nl
+nl
+nl
+nl
+nl
+bz
+nl
+nl
+nl
+nl
+AG
+SC
+qK
+"}
+(12,1,1) = {"
+KC
+QE
+SC
+KC
+nl
+pi
+xx
+xx
+nl
+LU
+LU
+KC
+qK
+SC
+qK
+"}
+(13,1,1) = {"
+qK
+Ko
+Ko
+KC
+nl
+Kj
+Kj
+vA
+nl
+LU
+LU
+qK
+qK
+fN
+KC
+"}
+(14,1,1) = {"
+YZ
+BO
+qK
+qK
+nl
+nl
+nl
+nl
+nl
+KC
+qK
+KC
+qK
+qK
+qK
+"}
+(15,1,1) = {"
+qK
+YZ
+YZ
+Ko
+Ko
+BV
+Ko
+qK
+qK
+qK
+qK
+qK
+qK
+qK
+qK
+"}

@@ -36,6 +36,8 @@ GLOBAL_LIST_EMPTY(preference_patrons)
 	var/t4
 	/// Any additional spells that should be granted on spawn. These will be immediately available to priests, clerics, monks, and templars. NOT churchlings. 
 	var/list/additional_spells = list()
+	//The psicross or other item its followers will spawn with
+	var/obj/item/clothing/neck/amulet = null
 
 /datum/patron/proc/on_gain(mob/living/pious)
 	for(var/trait in mob_traits)

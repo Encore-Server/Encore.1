@@ -22,7 +22,7 @@
 
 	cmode_music = 'sound/music/combat_knight.ogg'
 
-/datum/job/roguetown/knight/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/knight/after_spawn(mob/living/L, mob/M, latejoin)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
