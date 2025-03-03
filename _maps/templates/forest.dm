@@ -12,7 +12,7 @@
 /datum/map_template/med_forest_hunting_shack
 	name = "Verdant Hunting Shack"
 	id = "med_forest_hunting_shack"
-	mappath = "_maps/map_files/templates/forest/med_forest_hunting_shack.dmm"
+	mappath = "_maps/map_files/templates/forest/med_forest_huntingshack.dmm"
 
 ////Small 10x10 templates
 /obj/effect/landmark/map_load_mark/forest/small
