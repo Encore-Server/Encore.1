@@ -30,32 +30,40 @@
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/keyring/churchie
+	shoes = /obj/item/clothing/shoes/roguetown/sandals
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
 			head = /obj/item/clothing/head/roguetown/roguehood
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
-			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/visires
 		if(/datum/patron/elemental/akan)
 			head = /obj/item/clothing/head/roguetown/akanhood
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			wrists = /obj/item/clothing/wrists/roguetown/nocwrappings
-			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 		if(/datum/patron/elemental/gani)
 			head = /obj/item/clothing/head/roguetown/ganimask
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
 		if(/datum/patron/elemental/mjallidhorn)
 			head = /obj/item/clothing/head/roguetown/mjallidhornhood
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn
 			shirt = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
+		if(/datum/patron/elemental/golerkanh)
+			head = /obj/item/clothing/head/roguetown/roguehood/golerkanhhood
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
+			wrists = /obj/item/clothing/wrists/roguetown/wrappings
+		if(/datum/patron/elemental/iliope)
+			head = /obj/item/clothing/head/roguetown/roguehood/iliopehood
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
+			wrists = /obj/item/clothing/wrists/roguetown/wrappings
+			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+		
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
