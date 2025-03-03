@@ -106,12 +106,12 @@
 	if(istype(user))
 		if(istype(user.loc, /obj/effect/dummy/phased_mob/slaughter/))
 			if(valid_location(user))
-				to_chat(user, span_warning("I are now phasing in."))
+				to_chat(user, span_warning("I am now phasing in."))
 				if(do_mob(user,user,150))
 					if(valid_location(user))
 						user.infernalphasein()
 					else
-						to_chat(user, span_warning("I are no longer near a potential signer."))
+						to_chat(user, span_warning("I am no longer near a potential signer."))
 
 			else
 				to_chat(user, span_warning("I can only re-appear near a potential signer."))

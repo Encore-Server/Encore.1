@@ -312,7 +312,7 @@
 				trophy_message = chosen_plaque
 				to_chat(user, span_notice("I set the plaque's text."))
 			else
-				to_chat(user, span_warning("I are too far to set the plaque's text!"))
+				to_chat(user, span_warning("I am too far to set the plaque's text!"))
 
 		SSpersistence.SaveTrophy(src)
 		return TRUE

@@ -112,7 +112,7 @@
 						deadchat_broadcast(" has changed the security level to [security_level] with [src] at <span class='name'>[get_area_name(usr, TRUE)]</span>.", span_name("[usr.real_name]"), usr)
 					tmp_alertlevel = 0
 				else
-					to_chat(usr, span_warning("I are not authorized to do this!"))
+					to_chat(usr, span_warning("I am not authorized to do this!"))
 					playsound(src, 'sound/blank.ogg', 50, FALSE)
 					tmp_alertlevel = 0
 				state = STATE_DEFAULT

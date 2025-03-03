@@ -71,7 +71,7 @@
 	if(!channeling)
 		channeling = TRUE
 	else
-		to_chat(owner, span_cultitalic("I are already invoking blood magic!"))
+		to_chat(owner, span_cultitalic("I am already invoking blood magic!"))
 		return
 	if(do_after(owner, 100 - rune*60, target = owner))
 		if(ishuman(owner))
@@ -475,7 +475,7 @@
 
 		var/turf/T = get_turf(src)
 		if(is_away_level(T.z))
-			to_chat(user, span_cultitalic("I are not in the right dimension!"))
+			to_chat(user, span_cultitalic("I am not in the right dimension!"))
 			log_game("Teleport spell failed - user in away mission")
 			return
 
@@ -566,7 +566,7 @@
 /obj/item/melee/blood_magic/construction/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
 	if(proximity_flag && iscultist(user))
 		if(channeling)
-			to_chat(user, span_cultitalic("I are already invoking twisted construction!"))
+			to_chat(user, span_cultitalic("I am already invoking twisted construction!"))
 			return
 		var/turf/T = get_turf(target)
 		if(istype(target, /obj/item/stack/sheet/metal))

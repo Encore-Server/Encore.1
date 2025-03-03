@@ -161,7 +161,7 @@
 	return
 
 /obj/machinery/readybutton/attack_paw(mob/user as mob)
-	to_chat(user, span_warning("I are too primitive to use this device!"))
+	to_chat(user, span_warning("I am too primitive to use this device!"))
 	return
 
 /obj/machinery/readybutton/attackby(obj/item/W as obj, mob/user as mob, params)

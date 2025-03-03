@@ -232,8 +232,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	name = "recurve bow"
-	desc = "A medium length composite bow of glued horn, wood, and sinew with good shooting \
-	characteristics."
+	desc = "A medium-length composite bow of glued horn, wood, and sinew. An all-around balanced weapon."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "recurve_bow"
 	possible_item_intents = list(

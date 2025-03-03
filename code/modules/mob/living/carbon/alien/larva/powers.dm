@@ -12,7 +12,7 @@
 	if (user.layer != ABOVE_NORMAL_TURF_LAYER)
 		user.layer = ABOVE_NORMAL_TURF_LAYER
 		user.visible_message(span_name("[user] scurries to the ground!"), \
-						span_noticealien("I are now hiding."))
+						span_noticealien("I am now hiding."))
 	else
 		user.layer = MOB_LAYER
 		user.visible_message(span_notice("[user] slowly peeks up from the ground..."), \
@@ -37,7 +37,7 @@
 		return
 
 	if(L.amount_grown >= L.max_grown)	//TODO ~Carn
-		to_chat(L, span_name("I are growing into a beautiful alien! It is time to choose a caste."))
+		to_chat(L, span_name("I am growing into a beautiful alien! It is time to choose a caste."))
 		to_chat(L, span_info("There are three to choose from:"))
 		to_chat(L, span_name("Hunters</span> <span class='info'>are the most agile caste, tasked with hunting for hosts. They are faster than a human and can even pounce, but are not much tougher than a drone."))
 		to_chat(L, span_name("Sentinels</span> <span class='info'>are tasked with protecting the hive. With their ranged spit, invisibility, and high health, they make formidable guardians and acceptable secondhand hunters."))
@@ -59,5 +59,5 @@
 		L.alien_evolve(new_xeno)
 		return 0
 	else
-		to_chat(user, span_warning("I are not fully grown!"))
+		to_chat(user, span_warning("I am not fully grown!"))
 		return 0

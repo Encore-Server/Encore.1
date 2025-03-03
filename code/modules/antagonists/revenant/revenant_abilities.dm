@@ -20,7 +20,7 @@
 	if(!castcheck(0))
 		return
 	if(draining)
-		to_chat(src, span_revenwarning("I are already siphoning the essence of a soul!"))
+		to_chat(src, span_revenwarning("I am already siphoning the essence of a soul!"))
 		return
 	if(!target.stat)
 		to_chat(src, span_revennotice("[target.p_their(TRUE)] soul is too strong to harvest."))
@@ -93,7 +93,7 @@
 											   span_revenwarning("Violets lights, dancing in your vision, receding--"))
 				qdel(B)
 			else
-				to_chat(src, span_revenwarning("I are not close enough to siphon [target ? "[target]'s":"[target.p_their()]"] soul. The link has been broken."))
+				to_chat(src, span_revenwarning("I am not close enough to siphon [target ? "[target]'s":"[target.p_their()]"] soul. The link has been broken."))
 	draining = FALSE
 	essence_drained = 0
 

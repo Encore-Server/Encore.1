@@ -154,7 +154,7 @@
 	force = 15
 	force_wielded = 18
 	name = "wooden club"
-	desc = "A primitive cudgel carved of a stout piece of treefall."
+	desc = "A primitive cudgel carved from a stout piece of treefall."
 	icon_state = "club1"
 	//dropshrink = 0.75
 	wbalance = 0
@@ -195,7 +195,7 @@
 
 /obj/item/rogueweapon/mace/cudgel/justice
 	name = "'Justice'"
-	desc = "The icon of the right of office of the Marshal. While mostly ceremonial in design, it serves it's purpose in dishing out some much needed justice."
+	desc = "The icon of the right of office of the Marshal. While mostly ceremonial in design, it serves its purpose in dishing out some much needed justice."
 	force = 30
 	icon_state = "justice"
 	force_wielded = 30

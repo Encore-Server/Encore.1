@@ -41,7 +41,7 @@
 	UnregisterSignal(owner.current, COMSIG_MOVABLE_HEAR, PROC_REF(handle_hearing))
 	SSticker.mode.traitors -= owner
 	if(!silent && owner.current)
-		to_chat(owner.current,span_danger("I are no longer the [special_role]!"))
+		to_chat(owner.current,span_danger("I am no longer the [special_role]!"))
 	owner.special_role = null
 	return ..()
 
@@ -193,7 +193,7 @@
 			.=2
 
 /datum/antagonist/traitor/greet()
-	to_chat(owner.current, span_alertsyndie("I are the [owner.special_role]."))
+	to_chat(owner.current, span_alertsyndie("I am the [owner.special_role]."))
 	owner.announce_objectives()
 	if(should_give_codewords)
 		give_codewords()
