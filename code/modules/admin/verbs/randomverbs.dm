@@ -557,17 +557,18 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	var/input = input(usr, "Enter an announcement. Ensure it makes sense IC.", "What Say You?", "") as message|null
 	if(!input)
 		return
+	var/titled = input(usr, "Enter a title for this announcement or narration, or leave it blank.", "Let Them Hear!", "") as message|null
 
 	var/confirm = alert(src, "Do you want to announce the contents of the report to the players? If not, it will only arrive as a written message at the throne.", "Announce", "Yes", "No", "Cancel")
 	var/announce_command_report = TRUE
 	switch(confirm)
 		if("Yes")
-			priority_announce(input, "News Arrives!", 'sound/misc/bell.ogg')
+			priority_announce(input, titled, 'sound/misc/bell.ogg')
 			announce_command_report = FALSE
 		if("Cancel")
 			return
 
-	print_command_report(input, "", announce_command_report)
+	print_command_report(input, titled, announce_command_report)
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report")
