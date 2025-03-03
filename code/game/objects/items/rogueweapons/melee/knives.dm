@@ -125,7 +125,7 @@
 /obj/item/rogueweapon/huntingknife/cleaver/combat
 	force = 16
 	name = "combat knife"
-	desc = "A combat knife. Swift and deadly if you hit."
+	desc = "A combat knife. Swift and deadly."
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/chop/cleaver, )
 	icon_state = "combatknife"
 	icon = 'icons/roguetown/weapons/32.dmi'
@@ -176,13 +176,13 @@
 	force = 15
 	max_integrity = 100
 	name = "iron dagger"
-	desc = "This is a common dagger of iron."
+	desc = "A common dagger, made of iron."
 	icon_state = "idagger"
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/rogueweapon/huntingknife/idagger/steel
 	name = "steel dagger"
-	desc = "This is a dagger made of solid steel, more durable."
+	desc = "A common dagger, made of solid steel."
 	icon_state = "sdagger"
 	force = 20
 	max_integrity = 150
@@ -190,7 +190,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/dtace
 	name = "'De Tace'"
-	desc = "The right hand of the right hand, this narrow length of steel serves as a quick solution to petty greviences."
+	desc = "The right hand of the right hand; this narrow length of steel serves as a quick solution to petty grievances."
 	icon_state = "stiletto"
 	force = 25
 	max_integrity = 200
@@ -209,7 +209,7 @@
 
 /obj/item/rogueweapon/huntingknife/idagger/silver
 	name = "silver dagger"
-	desc = "This silver dagger can be the banishment of vampires and werewolves."
+	desc = "This silver dagger can be the bane of vampires and werewolves."
 	icon_state = "sildagger"
 	smeltresult = null
 	sellprice = 50
@@ -272,7 +272,7 @@
 /obj/item/rogueweapon/huntingknife/stoneknife
 	possible_item_intents = list(/datum/intent/dagger/cut,/datum/intent/dagger/chop)
 	name = "stone knife"
-	desc = "A crudely crafted knife made of stone."
+	desc = "A crudely crafted knife, made of stone."
 	icon_state = "stone_knife"
 	smeltresult = null
 	max_integrity = 50
@@ -283,7 +283,7 @@
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,  /datum/intent/dagger/thrust/pick)
 	name = "elvish dagger"
-	desc = "This beautiful dagger is of intricate, elvish design. Sharper, too."
+	desc = "This beautiful dagger is of intricate, elvish design."
 	force = 22
 	icon_state = "elfdagger"
 	item_state = "elfdag"
@@ -291,8 +291,8 @@
 	is_silver = TRUE
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/elvish/drow
-	name = "nite elf dagger"
-	desc = "This ominous, dark handled silver dagger was crafted by the assassin race of nite elves."
+	name = "dark elf dagger"
+	desc = "An ominous, dark-handled silver dagger."
 	force = 25
 	last_used = 0
 	is_silver = TRUE

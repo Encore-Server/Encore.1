@@ -105,7 +105,7 @@
 					L.electrocute_act(0)
 					L.visible_message(
 						span_danger("[L] was shocked by the lightning chain!"), \
-						span_danger("I are shocked by the lightning chain!"), \
+						span_danger("I am shocked by the lightning chain!"), \
 						span_hear("I hear a heavy electrical crack.") \
 					)
 				L.adjustFireLoss(1.2) //adds up very rapidly

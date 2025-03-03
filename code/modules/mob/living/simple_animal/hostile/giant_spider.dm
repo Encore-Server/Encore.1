@@ -461,7 +461,7 @@
 	if(E)
 		to_chat(S, span_warning("There is already a cluster of eggs here!"))
 	else if(!S.fed)
-		to_chat(S, span_warning("I are too hungry to do this!"))
+		to_chat(S, span_warning("I am too hungry to do this!"))
 	else if(S.busy != LAYING_EGGS)
 		S.busy = LAYING_EGGS
 		S.visible_message(span_notice("[S] begins to lay a cluster of eggs."),span_notice("I begin to lay a cluster of eggs."))

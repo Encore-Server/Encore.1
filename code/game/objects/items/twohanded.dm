@@ -45,7 +45,7 @@
 		if(iscyborg(user))
 			to_chat(user, span_notice("I free up your module."))
 		else
-			to_chat(user, span_notice("I are now carrying [src] with one hand."))
+			to_chat(user, span_notice("I am now carrying [src] with one hand."))
 	var/obj/item/twohanded/offhand/O = user.get_inactive_held_item()
 	if(O && istype(O))
 		O.unwield()

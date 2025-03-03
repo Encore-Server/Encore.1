@@ -42,7 +42,7 @@
 				update_icon()
 				user.update_inv_back()
 		else
-			to_chat(user, span_warning("I are already holding the gun!"))
+			to_chat(user, span_warning("I am already holding the gun!"))
 	else
 		..()
 

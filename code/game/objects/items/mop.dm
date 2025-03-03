@@ -68,7 +68,7 @@
 		J.mymop=src
 		J.update_icon()
 	else
-		to_chat(user, span_warning("I are unable to fit my [name] into the [J.name]."))
+		to_chat(user, span_warning("I am unable to fit my [name] into the [J.name]."))
 		return
 
 /obj/item/mop/cyborg

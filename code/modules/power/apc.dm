@@ -998,7 +998,7 @@
 	if(get_malf_status(malf) != 1)
 		return
 	if(malf.malfhacking)
-		to_chat(malf, span_warning("I are already hacking an APC!"))
+		to_chat(malf, span_warning("I am already hacking an APC!"))
 		return
 	to_chat(malf, span_notice("Beginning override of APC systems. This takes some time, and you cannot perform other actions during the process."))
 	malf.malfhack = src

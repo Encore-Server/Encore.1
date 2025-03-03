@@ -606,7 +606,7 @@
 /obj/item/nullrod/carp/attack_self(mob/living/user)
 	if(used_blessing)
 	else if(user.mind && (user.mind.isholy))
-		to_chat(user, span_boldnotice("I are blessed by Carp-Sie. Wild space carp will no longer attack you."))
+		to_chat(user, span_boldnotice("I am blessed by Carp-Sie. Wild space carp will no longer attack you."))
 		user.faction |= "carp"
 		used_blessing = TRUE
 

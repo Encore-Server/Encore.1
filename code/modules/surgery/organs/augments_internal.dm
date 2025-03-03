@@ -55,7 +55,7 @@
 
 		var/list/L = owner.get_empty_held_indexes()
 		if(LAZYLEN(L) == owner.held_items.len)
-			to_chat(owner, span_notice("I are not holding any items, my hands relax..."))
+			to_chat(owner, span_notice("I am not holding any items, my hands relax..."))
 			active = 0
 			stored_items = list()
 		else

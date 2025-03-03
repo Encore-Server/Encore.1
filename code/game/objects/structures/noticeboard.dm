@@ -26,7 +26,7 @@
 /obj/structure/noticeboard/attackby(obj/item/O, mob/user, params)
 	if(istype(O, /obj/item/paper) || istype(O, /obj/item/photo))
 		if(!allowed(user))
-			to_chat(user, span_warning("I are not authorized to add notices!"))
+			to_chat(user, span_warning("I am not authorized to add notices!"))
 			return
 		if(notices < 5)
 			if(!user.transferItemToLoc(O, src))

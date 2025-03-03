@@ -900,7 +900,7 @@
 		log_message("Permission denied (No keycode).", LOG_MECHA)
 		return
 	if(user.buckled)
-		to_chat(user, span_warning("I are currently buckled and cannot move."))
+		to_chat(user, span_warning("I am currently buckled and cannot move."))
 		log_message("Permission denied (Buckled).", LOG_MECHA)
 		return
 	if(user.has_buckled_mobs()) //mob attached to us
