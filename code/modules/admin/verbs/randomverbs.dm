@@ -548,7 +548,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Rejuvinate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_create_centcom_report()
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "Create IC Announcement"
 
 	if(!check_rights(R_ADMIN))

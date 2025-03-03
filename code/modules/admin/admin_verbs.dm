@@ -12,7 +12,6 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/admin_ghost,
 	/datum/admins/proc/start_vote,
 	/client/proc/toggle_autovote,
-	/datum/admins/proc/show_player_panel,
 	/datum/admins/proc/admin_heal,
 	/datum/admins/proc/admin_revive,
 	/datum/admins/proc/admin_sleep,
@@ -31,10 +30,7 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/delete_player_book,
 	/client/proc/amend_player_book,
 	/client/proc/pull_book_file_names,
-	/client/proc/adminwho,
-	// RATWOOD MODULAR START
-	/client/proc/bunker_bypass,
-	// RATWOOD MODULAR END
+	/client/proc/adminwho
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
