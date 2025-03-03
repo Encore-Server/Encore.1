@@ -215,7 +215,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 /client/proc/set_ooc(newColor as color)
 	set name = "Set Player OOC Color"
 	set desc = ""
-	set category = "Fun"
+	set category = "Admin"
 	set hidden = 1
 	if(!holder)
 		return
@@ -226,7 +226,7 @@ GLOBAL_VAR_INIT(normal_ooc_colour, "#002eb8")
 /client/proc/reset_ooc()
 	set name = "Reset Player OOC Color"
 	set desc = ""
-	set category = "Fun"
+	set category = "Admin"
 	set hidden = 1
 	if(!holder)
 		return

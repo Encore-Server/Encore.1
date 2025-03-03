@@ -34,13 +34,12 @@
 					M.playsound_local(M, s, 100)
 
 /proc/print_command_report(text = "", title = null, announce=TRUE)
-	if(!title)
-		title = "Classified Missive"
-
 	if(announce)
-		priority_announce("A missive has been sent to the keep.", "News Arrives!", 'sound/misc/bell.ogg')
+		priority_announce("A missive has been sent to the keep.", title, 'sound/misc/bell.ogg')
 
 	var/datum/comm_message/M  = new /datum/comm_message
+	if(!title)
+		title = "Classified Missive"
 	M.title = title
 	M.content =  text
 
