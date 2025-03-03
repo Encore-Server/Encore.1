@@ -123,6 +123,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 				/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager = 5)
 	soundenv = 17
 	converted_type = /area/rogue/indoors/shelter/mountains
+
 /area/rogue/indoors/shelter/mountains
 	icon_state = "mountains"
 	droning_sound = 'sound/music/area/townstreets.ogg'

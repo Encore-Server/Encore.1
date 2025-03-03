@@ -48,7 +48,7 @@
 							/obj/item/grown/log/tree/stick = 16,
 							/obj/structure/closet/dirthole/closed/loot=3,
 							/obj/structure/flora/roguegrass/pyroclasticflowers = 45)
-	spawnableTurfs = list(/turf/open/floor/rogue/snowpatchy=15,/turf/open/floor/rogue/snowrough=15,/turf/open/floor/rogue/snow=15)
+	spawnableTurfs = list()
 	allowed_areas = list(/area/rogue/outdoors/mountains)
 
 //mount miracle coast/"foothills" on zlevel 1 of east
@@ -67,7 +67,7 @@
 							/obj/item/grown/log/tree/stick = 16,
 							/obj/structure/closet/dirthole/closed/loot=3,
 							/obj/structure/flora/roguegrass/pyroclasticflowers = 45)
-	spawnableTurfs = list(/turf/open/water/ocean=35,/turf/open/water/ocean/deep=15)
+	spawnableTurfs = list()
 	allowed_areas = list(/area/rogue/outdoors/mountains/decap)
 
 //mount miracle caves
@@ -82,7 +82,7 @@
 							/obj/item/natural/stone = 43,
 							/obj/item/natural/rock = 23,
 							/obj/structure/closet/dirthole/closed/loot=15)
-	spawnableTurfs = list(/turf/open/lava=35,/turf/open/floor/rogue/volcanic=25)
+	spawnableTurfs = list(/turf/open/lava=5,/turf/open/floor/rogue/volcanic=5)
 	allowed_areas = list(/area/rogue/under/cavelava)
 
 //hell
