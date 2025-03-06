@@ -214,7 +214,7 @@
 	alpha = 100
 
 /atom/movable/screen/fullscreen/fade
-	icon = 'icons/mob/roguehudback2.dmi'
+	icon = 'icons/ui/hud/roguehudback2.dmi'
 	screen_loc = ui_backhudl
 	icon_state = "fade"
 	layer = 50

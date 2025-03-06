@@ -25,7 +25,7 @@
 	<b>Use</b>: Conjure forth an orbiting mote of magelight to light your way."
 	catchphrase = null
 	possible_item_intents = list(INTENT_HELP, INTENT_DISARM, /datum/intent/use)
-	icon = 'icons/mob/roguehudgrabs.dmi'
+	icon = 'icons/ui/hud/roguehudgrabs.dmi'
 	icon_state = "pulling"
 	icon_state = "grabbing_greyscale"
 	color = "#3FBAFD" // this produces green because the icon base is yellow but someone else can fix that if they want
@@ -562,7 +562,7 @@
 	desc = "Touch a creature to cover them in an anti-scrying shroud for 1 hour, consumes some ash as a catalyst."
 	catchphrase = null
 	possible_item_intents = list(INTENT_HELP)
-	icon = 'icons/mob/roguehudgrabs.dmi'
+	icon = 'icons/ui/hud/roguehudgrabs.dmi'
 	icon_state = "pulling"
 	icon_state = "grabbing_greyscale"
 	color = "#3FBAFD"
@@ -628,7 +628,7 @@
 	desc = "Touch a creature to grant them Darkvision for 15 minutes."
 	catchphrase = null
 	possible_item_intents = list(INTENT_HELP)
-	icon = 'icons/mob/roguehudgrabs.dmi'
+	icon = 'icons/ui/hud/roguehudgrabs.dmi'
 	icon_state = "pulling"
 	icon_state = "grabbing_greyscale"
 	color = "#3FBAFD"
