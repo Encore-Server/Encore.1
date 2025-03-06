@@ -30,21 +30,18 @@ Also given some non-combat skills that a peasent would have, just to support the
 	mask = /obj/item/clothing/mask/rogue/wildguard
 	neck = /obj/item/clothing/neck/roguetown/coif
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	id = /obj/item/scomstone/bad
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	beltl = /obj/item/storage/keyring/guard
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
 	backr = /obj/item/storage/backpack/rogue/satchel
-	backl = /obj/item/rogueweapon/spear
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/signal_horn = 1, /obj/item/flashlight/flare/torch/lantern = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/signal_horn = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/keyring/guard = 1)
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
@@ -63,6 +60,7 @@ Also given some non-combat skills that a peasent would have, just to support the
 		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)	//Peasent levy, so some skill
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)		//Peasent levy, so some skill
+		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
 		H.change_stat("strength", 1)
 		H.change_stat("perception", 2)
 		H.change_stat("constitution", 1)
@@ -72,3 +70,19 @@ Also given some non-combat skills that a peasent would have, just to support the
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
+/datum/outfit/job/roguetown/bogguardsman/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Crossbow", "Recurve Bow", "Buckler")
+	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	switch(weapon_choice)
+		if("Crossbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+		if("Recurve Bow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+		if("Buckler")
+			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler(H), FALSE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
