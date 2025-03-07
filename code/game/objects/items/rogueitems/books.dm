@@ -223,7 +223,6 @@
 	desc = ""
 	icon_state = "buff"
 
-
 /obj/item/book/rogue/law
 	name = "Tome of Justice"
 	desc = "The Tome of laws as passed by the Holy See to its many Ten-worshipping communities."
@@ -237,14 +236,6 @@
 	icon_state ="book_0"
 	base_icon_state = "book"
 	bookfile = "cooking.json"
-
-		//no more theif stole the books
-/obj/item/book/rogue/knowledge1
-	name = "Book of Knowledge"
-	desc = ""
-	icon_state ="book5_0"
-	base_icon_state = "book5"
-	bookfile = "knowledge.json"
 
 /obj/item/book/rogue/secret/iliope
 	name = "Book of Gold"
@@ -261,148 +252,13 @@
 	user.update_inv_hands()
 	to_chat(user, span_notice("You feel laughter echo in your head."))
 
-/obj/item/book/rogue/secret/thefireisgone
-	name = "THE FIRE IS GONE"
-	desc = "{<font color='red'><blink>AN ANCIENT TOME WRITTEN BY THE GODS' GREATEST FOOL</blink></font>}"
-	icon_state ="book6_0"
-	base_icon_state = "book6"
-	bookfile = "thefireisgone.json"
-
 //player made books
-/obj/item/book/rogue/tales1
-	name = "Assorted Tales From Yester Yils"
-	desc = "By Alamere J Wevensworth"
+/obj/item/book/rogue/hrundir_the_blue
+	name = "Saga of Hrundir the Blue"
+	desc = "By Hrol the Deaf"
 	icon_state ="book_0"
 	base_icon_state = "book"
-	bookfile = "tales1.json"
-
-/obj/item/book/rogue/festus
-	name = "Book of Festus"
-	desc = "Unknown Author"
-	icon_state ="book2_0"
-	base_icon_state = "book2"
-	bookfile = "tales2.json"
-
-
-/obj/item/book/rogue/tales3
-	name = "Myths & Legends of the Peaks & Beyond Volume I"
-	desc = "Arbalius The Younger"
-	icon_state ="book3_0"
-	base_icon_state = "book3"
-	bookfile = "tales3.json"
-
-/obj/item/book/rogue/bookofpriests
-	name = "Holy Book of Saphria"
-	desc = ""
-	icon_state ="knowledge_0"
-	base_icon_state = "knowledge"
-	bookfile = "holyguide.json"
-
-/obj/item/book/rogue/robber
-	name = "Reading for Robbers"
-	desc = "By Flavius of Dendor"
-	icon_state ="basic_book_0"
-	base_icon_state = "basic_book"
-	bookfile = "tales4.json"
-
-/obj/item/book/rogue/cardgame
-	name = "Graystone's Torment Basic Rules"
-	desc = "By Johnus of Doe"
-	icon_state ="basic_book_0"
-	base_icon_state = "basic_book"
-	bookfile = "tales5.json"
-
-/obj/item/book/rogue/blackmountain
-	name = "Zabrekalrek, The Black Mountain Saga: Part One"
-	desc = "Written by Gorrek Tale-Writer, translated by Hargrid Men-Speaker."
-	icon_state ="book6_0"
-	base_icon_state = "book6"
-	bookfile = "tales6.json"
-
-/obj/item/book/rogue/beardling
-	name = "Rock and Stone - ABC & Tales for Beardlings"
-	desc = "Distributed by the Dwarven Federation"
-	icon_state ="book8_0"
-	base_icon_state = "book8"
-	bookfile = "tales7.json"
-
-/obj/item/book/rogue/norts
-	name = "A Tale of Those Who Live At Sea"
-	desc = "By Bellum Aegir"
-	icon_state ="book2_0"
-	base_icon_state = "book2"
-	bookfile = "tales8.json"
-
-/obj/item/book/rogue/mjallidhorn
-	name = "Burial Rites for mjallidhorn"
-	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Mjallidhorn."
-	icon_state ="book6_0"
-	base_icon_state = "book6"
-	bookfile = "tales9.json"
-
-/obj/item/book/rogue/noc
-	name = "Dreamseeker"
-	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Mjallidhorn."
-	icon_state ="book6_0"
-	base_icon_state = "book6"
-	bookfile = "tales10.json"
-
-/obj/item/book/rogue/fishing
-	name = "Fontaine's Advanced Guide to Fishery"
-	desc = "By Ford Fontaine"
-	icon_state ="book2_0"
-	base_icon_state = "book2"
-	bookfile = "tales11.json"
-
-/obj/item/book/rogue/sword
-	name = "The Six Follies: How To Survive by the Sword"
-	desc = "By Theodore Spillguts"
-	icon_state ="book5_0"
-	base_icon_state = "book5"
-	bookfile = "tales12.json"
-
-/obj/item/book/rogue/arcyne
-	name = "Latent Magicks, where does Arcyne Power come from?"
-	desc = "By Kildren Birchwood, scholar of Magicks"
-	icon_state ="book4_0"
-	base_icon_state = "book4"
-	bookfile = "tales13.json"
-
-/obj/item/book/rogue/nitebeast
-	name = "Legend of the Nitebeast"
-	desc = "By Paquetto the Scholar"
-	icon_state ="book8_0"
-	base_icon_state = "book8"
-	bookfile = "tales14.json"
-
-/obj/item/book/rogue/naledi1
-	name = "The Path of the War Scholar Volume 1"
-	desc = "By Jatholemew von Rittensquatter, Esq"
-	icon_state = "knowledge_0"
-	base_icon_state = "knowledge"
-	bookfile = "naledi1.json"
-
-/obj/item/book/rogue/naledi2
-	name = "The Path of the War Scholar Volume 3"
-	desc = "By Jatholemew von Rittensquatter, Esq"
-	icon_state = "book8_0"
-	base_icon_state = "book8"
-	bookfile = "naledi2.json"
-
-/obj/item/book/rogue/naledi3
-	name = "The Path of the War Scholar Volume 7"
-	desc = "By Jatholemew von Rittensquatter, Esq"
-	icon_state = "book7_0"
-	base_icon_state = "book7"
-	bookfile = "naledi3.json"
-
-/obj/item/book/rogue/naledi4
-	name = "The Path of the War Scholar Volume 20"
-	desc = "By Jatholemew von Rittensquatter, Esq"
-	icon_state = "book6_0"
-	base_icon_state = "book6"
-	bookfile = "naledi4.json"
-
+	bookfile = "hrundir_the_blue.json"
 
 /obj/item/book/rogue/playerbook
 	var/player_book_text

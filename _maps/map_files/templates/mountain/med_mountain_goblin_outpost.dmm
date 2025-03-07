@@ -1,6 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ac" = (
 /obj/item/natural/bundle/cloth,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "aJ" = (
@@ -23,6 +24,7 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/mountains)
 "ht" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "hE" = (
@@ -31,6 +33,7 @@
 /area/rogue/outdoors/mountains)
 "jP" = (
 /obj/effect/decal/remains/human,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "lt" = (
@@ -42,6 +45,7 @@
 /area/rogue/outdoors/mountains)
 "ow" = (
 /obj/item/natural/bundle/stick,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "pj" = (
@@ -79,6 +83,7 @@
 	pixel_x = 17
 	},
 /obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "sX" = (
@@ -103,15 +108,18 @@
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "yf" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Ae" = (
@@ -119,6 +127,7 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/mountains)
 "AW" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
@@ -127,19 +136,23 @@
 /area/rogue/outdoors/mountains)
 "Dc" = (
 /obj/item/natural/bone,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
 /obj/item/natural/hide,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "DK" = (
 /obj/item/reagent_containers/glass/bowl,
 /obj/item/natural/bone,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "FI" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
@@ -147,6 +160,7 @@
 	dir = 4
 	},
 /obj/item/natural/bundle/stick,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "HD" = (
@@ -157,21 +171,25 @@
 /obj/machinery/light/rogue/torchholder/r{
 	dir = 4
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Jh" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "KC" = (
 /mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /obj/structure/bed/rogue/shit,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "KD" = (
 /mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "KT" = (
@@ -179,14 +197,17 @@
 	dir = 4
 	},
 /obj/structure/bed/rogue/shit,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "NG" = (
 /obj/item/rogueweapon/spear,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Qp" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "TD" = (
@@ -199,6 +220,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
 "Wf" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (
@@ -206,6 +228,7 @@
 /area/rogue/outdoors/mountains)
 "Ze" = (
 /obj/structure/bed/rogue/shit,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 

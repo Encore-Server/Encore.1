@@ -1,6 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "af" = (
 /obj/item/natural/stone,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "aJ" = (
@@ -9,24 +10,35 @@
 /area/rogue/outdoors/mountains)
 "dE" = (
 /obj/effect/mist,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "ei" = (
 /obj/item/rogueore/coal,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "ey" = (
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
+"eD" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
 "ht" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/snowrough,
 /area/rogue/outdoors/mountains)
+"jM" = (
+/obj/effect/roofing_helper/stone,
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/shelter/mountains)
 "qg" = (
 /obj/structure/bed/rogue/shit{
 	name = "makeshift bed"
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "qC" = (
@@ -37,6 +49,7 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "uj" = (
+/obj/effect/roofing_helper/snow,
 /turf/closed/mineral/random/rogue,
 /area/rogue/indoors/shelter/mountains)
 "yf" = (
@@ -56,6 +69,7 @@
 /area/rogue/outdoors/mountains)
 "AW" = (
 /obj/effect/mist,
+/obj/effect/roofing_helper/stone,
 /turf/open/water/pond{
 	name = "hotspring";
 	desc = "Bubbly and warm!"
@@ -71,6 +85,7 @@
 /area/rogue/outdoors/mountains)
 "Eu" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/roofing_helper/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
@@ -82,25 +97,55 @@
 /area/rogue/indoors/shelter/mountains)
 "Io" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "JS" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "KC" = (
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
+"Ne" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/snow,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Bubbly and warm!"
+	},
+/area/rogue/indoors/shelter/mountains)
+"Pk" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
 "Pn" = (
+/obj/effect/roofing_helper/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "Qu" = (
 /obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"Qz" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"RY" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "Wf" = (
 /obj/item/rogueore/coal,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (
@@ -148,10 +193,10 @@ GL
 Dd
 YZ
 uj
-uj
-uj
-uj
-uj
+jM
+jM
+jM
+jM
 YZ
 yr
 yf
@@ -165,10 +210,10 @@ GL
 uj
 uj
 uj
-uj
-uj
-uj
-uj
+jM
+jM
+jM
+jM
 uj
 uj
 uj
@@ -182,14 +227,14 @@ uj
 uj
 uj
 ei
-dE
+Pk
 Pn
-af
+Qz
+RY
 qg
-qg
 uj
-uj
-uj
+jM
+jM
 YZ
 "}
 (6,1,1) = {"
@@ -203,25 +248,25 @@ AW
 AW
 Eu
 Pn
-Pn
-qg
-uj
-uj
+eD
+RY
+jM
+jM
 YZ
 "}
 (7,1,1) = {"
 yf
 KC
 uj
-Pn
+eD
 dE
-AW
-AW
-AW
+Ne
+Ne
+Ne
 dE
 Qu
 ei
-Pn
+eD
 JS
 YZ
 YZ
@@ -230,7 +275,7 @@ YZ
 yf
 yr
 uj
-uj
+jM
 Pn
 AW
 AW
@@ -247,8 +292,8 @@ YZ
 YZ
 yr
 uj
-uj
-dE
+jM
+Pk
 AW
 AW
 AW
@@ -264,10 +309,10 @@ qK
 YZ
 yr
 uj
-uj
+jM
 Eu
-dE
-dE
+Pk
+Pk
 dE
 dE
 uj
@@ -281,9 +326,9 @@ qK
 YZ
 Dd
 yr
-uj
-uj
-uj
+jM
+jM
+jM
 Pn
 Wf
 uj

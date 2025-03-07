@@ -13,16 +13,19 @@
 /area/rogue/outdoors/mountains)
 "jP" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "lt" = (
 /obj/machinery/light/rogue/torchholder/r{
 	dir = 4
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "pj" = (
 /obj/item/natural/bone,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "qC" = (
@@ -55,6 +58,7 @@
 	pixel_x = 17
 	},
 /obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "sX" = (
@@ -78,12 +82,14 @@
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
 "AW" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
@@ -104,6 +110,7 @@
 /obj/structure/bed/rogue/shit{
 	name = "makeshift bed"
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
@@ -114,12 +121,14 @@
 /obj/structure/roguewindow/openclose{
 	dir = 8
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "KD" = (
 /obj/structure/roguewindow/openclose{
 	dir = 1
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 "KT" = (
@@ -131,12 +140,14 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
 "Wf" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/mountains)
 "Ze" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/mountains)
 

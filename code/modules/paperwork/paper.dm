@@ -445,6 +445,9 @@
 				user.put_in_inactive_hand(M)
 			. = ..()
 			return qdel(src)
+		else
+			to_chat(user, span_notice("Both pages need to be written upon if I am to make a proper manuscript."))
+			return
 
 	if(!P.can_be_package_wrapped())
 		return ..()
