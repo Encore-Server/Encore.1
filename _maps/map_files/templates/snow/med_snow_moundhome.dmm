@@ -205,10 +205,6 @@
 /obj/item/rogueweapon/stoneaxe/woodcut/pick,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
-"uj" = (
-/turf/closed/mineral/random/rogue,
-/turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/shelter/mountains)
 "vI" = (
 /obj/item/reagent_containers/glass/cup/wooden{
 	pixel_y = 5
@@ -519,8 +515,8 @@ YZ
 "}
 (6,1,1) = {"
 YZ
-uj
-uj
+Ae
+Ae
 xG
 xG
 Tn
@@ -531,13 +527,13 @@ tS
 Cy
 Cy
 Cy
-uj
+Ae
 YZ
 "}
 (7,1,1) = {"
 YZ
-uj
-uj
+Ae
+Ae
 xG
 gS
 SC
@@ -553,8 +549,8 @@ YZ
 "}
 (8,1,1) = {"
 qK
-uj
-uj
+Ae
+Ae
 Cy
 wR
 Cy
@@ -565,13 +561,13 @@ ny
 Cy
 Cy
 Cy
-uj
+Ae
 YZ
 "}
 (9,1,1) = {"
 qK
-uj
-uj
+Ae
+Ae
 Cy
 yf
 Cy
@@ -580,15 +576,15 @@ Cy
 ar
 CY
 Cy
-uj
-uj
-uj
+Ae
+Ae
+Ae
 YZ
 "}
 (10,1,1) = {"
 qK
-uj
-uj
+Ae
+Ae
 Cy
 rd
 HF
@@ -597,15 +593,15 @@ wR
 CY
 bX
 Cy
-uj
-uj
-uj
+Ae
+Ae
+Ae
 YZ
 "}
 (11,1,1) = {"
 YZ
-uj
-uj
+Ae
+Ae
 Cy
 qE
 Jp
@@ -614,15 +610,15 @@ Cy
 ZO
 Iy
 Cy
-uj
-uj
+Ae
+Ae
 YZ
 YZ
 "}
 (12,1,1) = {"
 YZ
 YZ
-uj
+Ae
 Cy
 Cy
 Cy
@@ -631,24 +627,24 @@ Cy
 zU
 vI
 Cy
-uj
-uj
+Ae
+Ae
 qK
 KC
 "}
 (13,1,1) = {"
 KC
 KC
-uj
-uj
-uj
-uj
-uj
+Ae
+Ae
+Ae
+Ae
+Ae
 Cy
 Cy
 Cy
 Cy
-uj
+Ae
 qK
 qK
 KC
@@ -657,14 +653,14 @@ KC
 KC
 PU
 YZ
-uj
-uj
-uj
-uj
-uj
-uj
-uj
-uj
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
 Ae
 KC
 KC
