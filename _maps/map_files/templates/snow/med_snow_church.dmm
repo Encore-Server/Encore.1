@@ -4,6 +4,7 @@
 	locked = 1;
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "cr" = (
@@ -26,6 +27,7 @@
 	icon_state = "border";
 	dir = 10
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "iF" = (
@@ -33,6 +35,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "jy" = (
@@ -53,25 +56,30 @@
 /obj/machinery/light/rogue/firebowl/church{
 	pixel_y = 14
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "lM" = (
 /obj/item/book_crafting_kit,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "mn" = (
 /obj/structure/table/church{
 	icon_state = "churchtable_end"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/shelter/mountains)
 "mS" = (
 /obj/structure/stairs/stone{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "nl" = (
+/obj/effect/roofing_helper,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/shelter/mountains)
 "nU" = (
@@ -81,17 +89,20 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "oL" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "pi" = (
 /obj/item/rope,
 /obj/structure/spacevine,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "qK" = (
@@ -106,16 +117,19 @@
 	dir = 6
 	},
 /obj/effect/decal/remains/saiga,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "vo" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
 "vA" = (
 /obj/structure/spacevine,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "vG" = (
@@ -123,21 +137,25 @@
 	locked = 1;
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "xx" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "xH" = (
 /obj/structure/rack/rogue,
 /obj/item/rope/chain,
 /obj/item/rogueweapon/surgery/scalpel,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
 /obj/structure/chair/bench/church{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/shelter/mountains)
 "Ax" = (
@@ -145,6 +163,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "AG" = (
@@ -169,10 +188,12 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "CD" = (
 /obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "Df" = (
@@ -180,12 +201,14 @@
 /obj/structure/rack/rogue,
 /obj/item/rope/chain,
 /obj/item/natural/bone,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "DM" = (
 /obj/structure/chair/bench/church/r{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/shelter/mountains)
 "EW" = (
@@ -193,16 +216,23 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "Gy" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
 /obj/structure/chair/bench/church/mid{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/shelter/mountains)
+"Jc" = (
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
 "Kj" = (
 /obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/shelter/mountains)
 "Ko" = (
@@ -213,6 +243,7 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "KU" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "LU" = (
@@ -223,6 +254,7 @@
 /obj/item/candle/yellow{
 	pixel_y = 11
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/shelter/mountains)
 "QE" = (
@@ -236,12 +268,14 @@
 /area/rogue/outdoors/mountains)
 "Ti" = (
 /obj/structure/spacevine,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "Tm" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
 "UO" = (
@@ -250,10 +284,12 @@
 	pixel_y = 12;
 	pixel_x = 35
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/indoors/shelter/mountains)
 "Wa" = (
 /obj/item/storage/belt/rogue/pouch/coins/mid,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/churchbrick,
 /area/rogue/indoors/shelter/mountains)
 "Ww" = (
@@ -269,6 +305,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
 "YA" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (
@@ -278,6 +315,7 @@
 /obj/item/natural/bundle/cloth{
 	pixel_x = 5
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/shelter/mountains)
 
@@ -412,7 +450,7 @@ GL
 GL
 YA
 mS
-LU
+Jc
 LU
 qK
 YZ

@@ -14,6 +14,7 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "dF" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
 	},
@@ -40,9 +41,11 @@
 "hN" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/roguecoin/copper/pile,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "kd" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
@@ -67,6 +70,7 @@
 /area/rogue/outdoors/mountains)
 "sC" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "uj" = (
@@ -85,9 +89,11 @@
 /area/rogue/outdoors/mountains)
 "AW" = (
 /obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Cw" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
@@ -95,6 +101,7 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "Dd" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},
@@ -107,13 +114,16 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "Nu" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/mountains)
 "RY" = (
 /obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "TX" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors/shelter/mountains)
 "Vs" = (

@@ -24,6 +24,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "gB" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/woods)
 "ht" = (
@@ -41,10 +42,12 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
 "nu" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "qv" = (
 /obj/structure/roguewindow,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "qC" = (
@@ -83,9 +86,11 @@
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods)
 "Cw" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/indoors/shelter/woods)
 "Cy" = (
@@ -112,6 +117,7 @@
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "TX" = (

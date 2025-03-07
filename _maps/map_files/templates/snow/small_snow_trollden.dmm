@@ -6,9 +6,11 @@
 /obj/effect/mist{
 	opacity = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "d" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "i" = (
@@ -16,6 +18,7 @@
 /area/rogue/outdoors/mountains)
 "j" = (
 /obj/item/natural/rock/gem,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "m" = (
@@ -30,6 +33,7 @@
 /area/rogue/outdoors/mountains)
 "r" = (
 /obj/item/natural/rock/copper,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "u" = (
@@ -37,6 +41,7 @@
 /obj/effect/mist{
 	opacity = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "C" = (
@@ -45,6 +50,7 @@
 /area/rogue/outdoors/mountains)
 "D" = (
 /obj/item/natural/rock/gold,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "E" = (
@@ -56,10 +62,12 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "I" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "J" = (
 /obj/item/natural/rock/copper,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "L" = (
@@ -68,6 +76,7 @@
 /area/rogue/outdoors/mountains)
 "O" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "Q" = (
@@ -76,17 +85,21 @@
 /area/rogue/outdoors/mountains)
 "R" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/cavetroll,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "S" = (
+/obj/effect/roofing_helper/snow,
 /turf/closed/mineral/random/rogue,
 /area/rogue/indoors/shelter/mountains)
 "T" = (
 /obj/item/natural/rock/gold,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter/mountains)
 "W" = (
 /mob/living/simple_animal/hostile/retaliate/rogue/cavetroll,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Y" = (

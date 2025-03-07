@@ -1,6 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ar" = (
 /obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "aJ" = (
@@ -10,9 +11,11 @@
 "bS" = (
 /obj/structure/closet/dirthole/closed/loot,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "bX" = (
+/obj/effect/roofing_helper/snow,
 /turf/closed/wall/mineral/rogue/stone/red_moss,
 /area/rogue/indoors/shelter/mountains)
 "dd" = (
@@ -28,6 +31,7 @@
 	locked = 1;
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "fC" = (
@@ -38,6 +42,7 @@
 /obj/structure/closet/dirthole/closed/loot,
 /mob/living/simple_animal/hostile/rogue/skeleton/guard,
 /obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "gQ" = (
@@ -47,6 +52,7 @@
 "gS" = (
 /obj/item/reagent_containers/powder/salt,
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "hh" = (
@@ -58,6 +64,7 @@
 	locked = 1;
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "jl" = (
@@ -72,15 +79,18 @@
 "jN" = (
 /obj/structure/closet/dirthole/closed/loot,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "kL" = (
 /obj/item/natural/stone,
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "mc" = (
 /obj/item/clothing/suit/roguetown/armor/plate/half/elven,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "mZ" = (
@@ -89,6 +99,7 @@
 /area/rogue/outdoors/mountains)
 "ny" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "ox" = (
@@ -101,10 +112,12 @@
 /area/rogue/outdoors/mountains)
 "qC" = (
 /obj/item/reagent_containers/powder/salt,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "qE" = (
 /obj/item/natural/stone,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "qK" = (
@@ -123,6 +136,7 @@
 	locked = 1;
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "tS" = (
@@ -130,11 +144,13 @@
 /obj/structure/fluff/railing/border{
 	dir = 5
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "uc" = (
 /obj/effect/decal/cleanable/ash/large,
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "uj" = (
@@ -145,26 +161,31 @@
 /obj/structure/fluff/railing/border{
 	dir = 9
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "wG" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "wR" = (
 /obj/structure/fluff/railing/border,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "xG" = (
 /obj/item/roguebin/water/gross,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "xX" = (
 /obj/structure/closet/dirthole/closed/loot,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "yf" = (
@@ -172,15 +193,18 @@
 	dir = 9
 	},
 /obj/item/clothing/head/roguetown/helmet/sallet/elven,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "yi" = (
 /obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
 /obj/item/natural/cloth,
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "yP" = (
@@ -188,15 +212,18 @@
 	locked = 1;
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "zq" = (
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "zU" = (
 /obj/structure/fluff/railing/border,
 /obj/effect/decal/cleanable/ash/large,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "zW" = (
@@ -204,6 +231,7 @@
 	dir = 1;
 	icon_state = "border"
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Ae" = (
@@ -222,9 +250,11 @@
 	dir = 5
 	},
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Bj" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/lava,
 /area/rogue/indoors/shelter/mountains)
 "Ch" = (
@@ -234,6 +264,7 @@
 "Co" = (
 /obj/item/natural/stone,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Cu" = (
@@ -246,9 +277,11 @@
 "CY" = (
 /obj/structure/fluff/railing/border,
 /obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
@@ -257,18 +290,22 @@
 /area/rogue/outdoors/mountains)
 "HF" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Id" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Iy" = (
 /mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "IE" = (
 /obj/item/reagent_containers/powder/salt,
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Jp" = (
@@ -279,6 +316,7 @@
 	icon_state = "border";
 	dir = 10
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "KC" = (
@@ -302,15 +340,18 @@
 	dir = 1;
 	icon_state = "border"
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Ox" = (
 /obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Pz" = (
 /obj/item/rogueweapon/hammer/stone,
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "PU" = (
@@ -330,16 +371,19 @@
 	icon_state = "border"
 	},
 /obj/item/burial_shroud,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Tn" = (
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "UJ" = (
 /obj/item/burial_shroud,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "UL" = (
@@ -347,14 +391,17 @@
 	dir = 1;
 	icon_state = "border"
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Vl" = (
 /obj/item/natural/stone,
 /mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "VE" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "WH" = (
@@ -370,6 +417,7 @@
 	locked = 1;
 	dir = 8
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (

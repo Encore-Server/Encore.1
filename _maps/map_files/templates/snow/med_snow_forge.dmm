@@ -16,6 +16,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "dE" = (
@@ -23,6 +24,7 @@
 	pixel_y = 16;
 	pixel_x = -2
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "fy" = (
@@ -62,10 +64,12 @@
 "kx" = (
 /obj/item/roguebin/water/gross,
 /obj/structure/fluff/railing/border,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "mD" = (
 /obj/machinery/anvil,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "nC" = (
@@ -74,10 +78,12 @@
 	dir = 10
 	},
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "oV" = (
 /obj/item/natural/stone,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "qv" = (
@@ -85,6 +91,7 @@
 	dir = 8
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "qC" = (
@@ -155,6 +162,7 @@
 /area/rogue/outdoors/mountains)
 "AW" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "BU" = (
@@ -173,6 +181,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "EX" = (
@@ -183,6 +192,7 @@
 /turf/open/floor/rogue/snowrough,
 /area/rogue/outdoors/mountains)
 "Fl" = (
+/obj/effect/roofing_helper,
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/indoors/shelter/mountains)
 "Fp" = (
@@ -198,6 +208,7 @@
 /area/rogue/outdoors/mountains)
 "HF" = (
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "JM" = (
@@ -231,19 +242,23 @@
 	dir = 10
 	},
 /obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Me" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "MD" = (
 /obj/machinery/light/rogue/smelter/great,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Nk" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Om" = (
@@ -255,6 +270,7 @@
 /area/rogue/outdoors/mountains)
 "OO" = (
 /obj/item/ingot/copper,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Pg" = (
@@ -266,6 +282,7 @@
 /area/rogue/outdoors/mountains)
 "Qw" = (
 /obj/machinery/light/rogue/smelter,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Ti" = (
@@ -281,6 +298,7 @@
 	dir = 8
 	},
 /obj/item/rogueore/coal,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Un" = (
@@ -289,11 +307,13 @@
 /area/rogue/outdoors/mountains)
 "Xi" = (
 /obj/machinery/light/rogue/forge,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Yx" = (
 /obj/structure/fluff/railing/border,
 /obj/item/roguebin/water/gross,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "YD" = (
