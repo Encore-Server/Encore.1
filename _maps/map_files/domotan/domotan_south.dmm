@@ -32,6 +32,14 @@
 "an" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
+"ap" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort)
+"ar" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort)
 "as" = (
 /obj/effect/decal/mossy{
 	dir = 8
@@ -63,6 +71,10 @@
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/churchfort)
+"aC" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort)
 "aD" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8
@@ -81,6 +93,11 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods/churchfort)
+"aI" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "aN" = (
 /obj/structure/gravemarker,
 /obj/structure/closet/dirthole/grave,
@@ -205,6 +222,12 @@
 /obj/machinery/light/rogue/wallfire/candle,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
+"by" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
 "bC" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/outdoors/woods/heavenscoast)
@@ -221,7 +244,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
 "bK" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/outdoors/woods/churchfort)
 "bM" = (
@@ -454,7 +477,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "di" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "dj" = (
@@ -515,6 +538,10 @@
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
+"dH" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "dL" = (
 /obj/structure/spider/stickyweb,
 /obj/effect/spawner/lootdrop/roguetown/sewers,
@@ -597,6 +624,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort)
 "ep" = (
@@ -876,6 +904,10 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
+"gg" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
 "gj" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/open/floor/rogue/church,
@@ -1016,6 +1048,10 @@
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
+"hf" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort)
 "hi" = (
 /obj/structure/fluff/railing/border{
 	dir = 4;
@@ -1028,7 +1064,7 @@
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/shelter/woods)
 "ho" = (
-/obj/item/reagent_containers/food/snacks/smallrat,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "hp" = (
@@ -1087,9 +1123,6 @@
 "hF" = (
 /obj/structure/fluff/walldeco/katholikos_banner{
 	pixel_y = 25
-	},
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
@@ -1467,6 +1500,10 @@
 	},
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/cave)
+"kl" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort)
 "kn" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -1523,7 +1560,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
 	name = "hell troll"
 	},
-/turf/open/floor/rogue/ruinedwood/turned,
+/turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort)
 "kL" = (
 /obj/item/natural/rock,
@@ -1791,6 +1828,10 @@
 /obj/effect/decal/cobbleedge,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/woods)
+"mr" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort)
 "mv" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
@@ -2012,7 +2053,7 @@
 	icon_state = "border";
 	dir = 10
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods/churchfort)
 "nT" = (
@@ -2049,7 +2090,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort)
 "ok" = (
@@ -2150,7 +2191,7 @@
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods/churchfort)
 "oT" = (
@@ -2180,6 +2221,10 @@
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
+"pd" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort)
 "pe" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -2323,6 +2368,10 @@
 /obj/structure/roguetent,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods)
+"pP" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
 "pQ" = (
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/mace/goden/steel{
@@ -2359,6 +2408,10 @@
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
+"qa" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort)
 "qf" = (
 /obj/item/natural/stone{
 	pixel_x = -5;
@@ -2473,6 +2526,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
+"qO" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort)
 "qQ" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Infirmary"
@@ -2535,10 +2592,10 @@
 /area/rogue/indoors/shelter/woods)
 "rm" = (
 /mob/living/simple_animal/hostile/rogue/dragger{
-	health = 3000;
-	maxHealth = 3000;
-	melee_damage_lower = 65;
-	melee_damage_upper = 95;
+	health = 4000;
+	maxHealth = 4000;
+	melee_damage_lower = 85;
+	melee_damage_upper = 125;
 	name = "Zalmalath the Tunneler";
 	desc = "CLAW AT THE SOIL! BREAK THE FIRMAMENT!"
 	},
@@ -2556,6 +2613,10 @@
 /area/rogue/under/cavewet/bogcaves)
 "rt" = (
 /obj/machinery/gear_painter,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
+"rz" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
 "rB" = (
@@ -2882,13 +2943,17 @@
 /obj/effect/spawner/lootdrop/roguetown/sewers,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
+"tu" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort)
 "tv" = (
 /obj/structure/bed/rogue/inn/hay,
 /obj/item/bedsheet/rogue/pelt,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort)
 "tx" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "ty" = (
@@ -2925,6 +2990,10 @@
 /obj/structure/fluff/statue/gargoyle,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
+"tM" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort)
 "tN" = (
 /obj/structure/bars/passage{
 	redstone_id = "church_keep_basement_gate";
@@ -3156,6 +3225,7 @@
 	info = "Tiw's Dae - I'm glad we came to Domotan, with all these ruins about the island it makes for some easy mammon to comb them over and sell any valuables within. Far as I can tell this looks to be an old holding that the Katholikos had, something to watch over the road to Mount Miracle. Well it's empty now, and surprisingly still intact. Lucky as well, my group and I are looking forward to sleeping in an actual bed instead of keeping watch for volfs.";
 	name = "adventurer diary fragment #1"
 	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort)
 "uX" = (
@@ -3248,7 +3318,6 @@
 	dir = 10;
 	icon_state = "largetable"
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort)
 "vC" = (
@@ -3363,6 +3432,7 @@
 "wB" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort)
 "wC" = (
@@ -3419,6 +3489,10 @@
 /obj/item/reagent_containers/glass/cup/wooden,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/shelter)
+"wN" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort)
 "wP" = (
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8;
@@ -3464,6 +3538,10 @@
 /mob/living/carbon/human/species/skeleton/npc/no_equipment,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
+"xa" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort)
 "xc" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -3534,6 +3612,10 @@
 /area/rogue/outdoors/woods/churchfort)
 "xB" = (
 /turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort)
+"xC" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort)
 "xD" = (
 /obj/effect/decal/mossy{
@@ -3855,6 +3937,10 @@
 	dir = 4
 	},
 /area/rogue/outdoors/woods/crossroads)
+"zT" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
 "zU" = (
 /obj/structure/fluff/railing/border{
 	dir = 4
@@ -3948,8 +4034,8 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/heavenscoast)
 "Ax" = (
-/mob/living/carbon/human/species/goblin/hell,
-/turf/open/floor/rogue/ruinedwood/turned,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort)
 "AF" = (
 /obj/structure/closet/crate/chest/old_crate,
@@ -4200,6 +4286,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
+"Cn" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort)
 "Co" = (
 /obj/item/roguecoin/copper,
 /turf/open/water/sewer,
@@ -4283,6 +4373,10 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort)
+"CL" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "CM" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/wood,
@@ -4292,6 +4386,7 @@
 /area/rogue/under/cave)
 "CP" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
 "CQ" = (
@@ -4398,9 +4493,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort)
 "Dr" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/turf/open/floor/rogue/blocks/green,
-/area/rogue/outdoors/woods/churchfort/basement)
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/blocks,
+/area/rogue/outdoors/woods/churchfort)
 "Dt" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -4788,6 +4883,10 @@
 /obj/item/roguegem/yellow,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"FX" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort)
 "FY" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -28
@@ -4867,6 +4966,12 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/heavenscoast)
+"GD" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
+	name = "hell troll"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort)
 "GE" = (
 /obj/structure/stairs/stone,
 /obj/structure/fluff/railing/border{
@@ -5077,6 +5182,7 @@
 "Ic" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort)
 "Id" = (
@@ -5416,7 +5522,6 @@
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort)
 "Ka" = (
@@ -5443,7 +5548,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "Km" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Ko" = (
@@ -5573,6 +5678,13 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
+"Lc" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Lg" = (
 /obj/structure/fluff/psycross/copper{
 	pixel_y = 24
@@ -6031,6 +6143,7 @@
 /area/rogue/indoors/shelter/woods)
 "Os" = (
 /obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/outdoors/woods/churchfort)
 "Ot" = (
@@ -6054,7 +6167,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "OB" = (
@@ -6105,6 +6218,10 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/woods/heavenscoast)
+"ON" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort)
 "OO" = (
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave)
@@ -6225,9 +6342,6 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "PV" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 6
 	},
@@ -6481,7 +6595,7 @@
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Ss" = (
 /obj/machinery/light/rogue/wallfire/candle,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods/churchfort)
 "St" = (
@@ -6895,10 +7009,10 @@
 /area/rogue/under/cavewet/bogcaves)
 "VE" = (
 /obj/structure/mineral_door/wood/donjon{
-	locked = 1;
-	name = "Armoury"
+	name = "Armoury";
+	dir = 1
 	},
-/turf/open/floor/rogue/blocks/bluestone,
+/turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort)
 "VH" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -7189,6 +7303,10 @@
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement)
+"Xx" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort)
 "Xz" = (
 /obj/item/natural/rock/salt,
 /obj/structure/spacevine,
@@ -7313,7 +7431,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 5
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort)
 "Yn" = (
@@ -7366,7 +7483,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 9
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "YM" = (
@@ -7548,6 +7665,10 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/mountains)
+"ZI" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort)
 "ZO" = (
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/seculton)
@@ -63135,7 +63256,7 @@ AQ
 pF
 Ad
 Hf
-Hf
+sZ
 Bo
 GM
 jf
@@ -63654,8 +63775,8 @@ Xu
 PZ
 GM
 Nu
-Dr
-jf
+GM
+Km
 GM
 pF
 jf
@@ -63908,8 +64029,8 @@ zQ
 Hf
 Hf
 Bo
-Dr
 GM
+ho
 jf
 GM
 GM
@@ -64167,7 +64288,7 @@ Hf
 Te
 GM
 jf
-aZ
+jf
 jf
 GM
 GM
@@ -64423,10 +64544,10 @@ Xu
 Xu
 pF
 PZ
-ho
 GM
+ho
 jf
-Km
+jf
 GM
 pF
 GM
@@ -65176,7 +65297,7 @@ or
 nw
 Wd
 oz
-tx
+CL
 oz
 Wd
 de
@@ -65683,7 +65804,7 @@ AQ
 AM
 OG
 wn
-wn
+OG
 wn
 wn
 wR
@@ -66453,7 +66574,7 @@ AQ
 AQ
 AQ
 AM
-wn
+OG
 AM
 OG
 AM
@@ -66975,7 +67096,7 @@ AQ
 AQ
 de
 or
-SQ
+Lc
 oz
 hS
 Jf
@@ -67233,7 +67354,7 @@ AQ
 nw
 bv
 pv
-jk
+aI
 Zy
 Rv
 MP
@@ -67489,7 +67610,7 @@ AQ
 AQ
 nw
 xS
-or
+dH
 oz
 hS
 or
@@ -68027,7 +68148,7 @@ AQ
 AQ
 Xu
 zn
-jf
+aZ
 jf
 jf
 GE
@@ -128155,15 +128276,15 @@ xs
 wV
 wV
 Hp
-Um
-CD
+wV
+tM
 CD
 lV
 Qx
 tv
 HY
 tv
-fm
+Cn
 tv
 HY
 tv
@@ -128410,7 +128531,7 @@ td
 Hp
 IV
 wV
-wV
+ar
 Hp
 wV
 CD
@@ -128667,10 +128788,10 @@ Hp
 Hp
 xs
 wV
-EJ
 Hp
 Hp
-Um
+qa
+wV
 CD
 lV
 Ij
@@ -128943,7 +129064,7 @@ Ij
 IA
 md
 CD
-YX
+ON
 CD
 CD
 st
@@ -129439,10 +129560,10 @@ AQ
 Qx
 bt
 CD
-Um
+mr
 CD
 CD
-YX
+CD
 CD
 Ij
 Hp
@@ -130468,7 +130589,7 @@ AQ
 AQ
 Ij
 Ng
-Um
+wV
 Hp
 VM
 mR
@@ -130725,8 +130846,8 @@ gU
 Ij
 Ij
 cI
-wV
-AH
+xC
+Hp
 Ij
 gQ
 gQ
@@ -130741,7 +130862,7 @@ gQ
 gQ
 Ij
 RU
-AH
+EJ
 wV
 Qx
 us
@@ -130981,19 +131102,19 @@ Ij
 xB
 hp
 tN
-oJ
+kl
 xz
 wB
 Gv
 oL
-gQ
+tu
 oL
 oL
 dl
 HB
 VC
 oL
-gQ
+tu
 oL
 oL
 jU
@@ -131240,16 +131361,16 @@ hp
 lZ
 pR
 eo
-EJ
+Hp
 Gv
 oL
 oL
 oL
-oL
+FX
 mc
 FE
 Po
-oL
+hf
 oL
 oL
 oL
@@ -131495,20 +131616,20 @@ Ij
 xB
 hp
 tN
-EJ
+wN
 AN
 Ic
 Gv
 oL
 oL
-gQ
+tu
 oL
 dx
 RP
 Sc
 oL
 oL
-gQ
+tu
 oL
 Dp
 Hp
@@ -132026,7 +132147,7 @@ gQ
 sY
 jF
 Hp
-Um
+oJ
 wV
 Qx
 sU
@@ -132266,7 +132387,7 @@ AQ
 AQ
 AQ
 Qx
-Um
+wV
 Uv
 Hp
 Ij
@@ -133040,7 +133161,7 @@ Ei
 Ei
 Ni
 CS
-CD
+ap
 CD
 Ij
 wV
@@ -133054,7 +133175,7 @@ Qx
 CD
 IE
 wV
-YX
+ON
 CD
 kv
 CD
@@ -133553,7 +133674,7 @@ jR
 Ei
 CD
 CD
-YX
+CD
 CD
 CD
 Ij
@@ -133810,7 +133931,7 @@ Ij
 Ij
 JY
 CD
-CD
+ap
 RS
 CD
 Ij
@@ -134069,7 +134190,7 @@ CD
 Rn
 cy
 gO
-Rn
+qO
 Ij
 WD
 fm
@@ -134079,10 +134200,10 @@ la
 KX
 si
 Ij
-YX
+ON
 OX
 CD
-CD
+ON
 CD
 OX
 kv
@@ -134322,7 +134443,7 @@ Nq
 Vv
 CD
 CD
-CD
+pd
 Rn
 rQ
 vA
@@ -134339,7 +134460,7 @@ Qx
 CD
 kv
 CD
-YX
+CD
 CD
 OX
 CD
@@ -134599,7 +134720,7 @@ CD
 sL
 CD
 OX
-YX
+ON
 Ij
 AQ
 AQ
@@ -193449,8 +193570,8 @@ Qx
 Ij
 HI
 wV
-VB
 HI
+Dr
 EE
 xB
 xB
@@ -193691,7 +193812,7 @@ Qx
 Hn
 te
 FR
-FR
+ZI
 bJ
 uk
 FR
@@ -194208,7 +194329,7 @@ Ij
 hF
 FR
 FR
-FR
+rz
 Ij
 zm
 Nq
@@ -194224,7 +194345,7 @@ aA
 HI
 uM
 HI
-VB
+Dr
 Ur
 an
 an
@@ -194462,9 +194583,9 @@ Qx
 FR
 Gc
 FR
-RF
+by
 jE
-kF
+FR
 FR
 Ij
 Ij
@@ -194725,11 +194846,11 @@ RF
 FR
 VE
 wV
-wV
+GD
 Hp
 YI
 Hp
-Hp
+kF
 wV
 Ij
 HI
@@ -194975,7 +195096,7 @@ Qc
 Qx
 IG
 Xv
-te
+Ax
 dq
 PV
 CP
@@ -194984,7 +195105,7 @@ Qx
 rR
 Hp
 wV
-wV
+GD
 Hp
 wV
 Hp
@@ -195249,7 +195370,7 @@ Qx
 HI
 wV
 xB
-Um
+oJ
 HI
 wV
 wV
@@ -196260,8 +196381,8 @@ oP
 pz
 dj
 Mn
-dj
-og
+aC
+jO
 Hp
 Qx
 xB
@@ -196519,7 +196640,7 @@ LY
 ex
 AY
 Uv
-wV
+mr
 Qx
 xB
 KW
@@ -196534,7 +196655,7 @@ xB
 KW
 wu
 HI
-VB
+Dr
 Ur
 Gi
 an
@@ -196776,7 +196897,7 @@ dj
 HO
 uG
 gH
-AH
+Hp
 VM
 xB
 KW
@@ -197033,7 +197154,7 @@ AY
 ze
 dj
 jO
-Hp
+Xx
 Ij
 xB
 KW
@@ -197047,7 +197168,7 @@ xB
 xB
 KW
 wu
-VB
+Dr
 HI
 wi
 Gi
@@ -197288,8 +197409,8 @@ nS
 sv
 dj
 Mn
-dj
-og
+xa
+jO
 wV
 Qx
 xB
@@ -198573,7 +198694,7 @@ Qc
 Qx
 VO
 FR
-vJ
+pP
 JC
 yg
 TW
@@ -198588,11 +198709,11 @@ Nq
 Nq
 Ij
 FR
-vJ
+gg
 FR
 FR
 FR
-vJ
+gg
 rU
 Qx
 Qc
@@ -198828,11 +198949,11 @@ Qc
 Qc
 Qc
 Ij
-Ax
 FR
 FR
 FR
 FR
+zT
 JC
 yg
 fh
@@ -199090,7 +199211,7 @@ vI
 MJ
 Jc
 FR
-vJ
+FR
 FR
 Qx
 Qx
@@ -199347,7 +199468,7 @@ Rn
 Rn
 Rn
 FR
-FR
+pP
 FR
 Ij
 Oh
@@ -199603,7 +199724,7 @@ bD
 bD
 Kv
 Kv
-vJ
+FR
 FR
 FS
 Qx
@@ -199612,8 +199733,8 @@ Os
 In
 Nq
 pl
-Um
 wV
+mr
 Ij
 Ij
 Qx
