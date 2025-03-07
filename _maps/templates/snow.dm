@@ -88,7 +88,7 @@
 //10x10
 /obj/effect/landmark/map_load_mark/snow/small
 	name = "Small Snow Template"
-	templates = list("small_snow_effigy", "small_snow_goblin_camp", "small_snow_outhouse", "small_snow_pond", "small_snow_shack", "small_snow_trollden", "small_snow_watchpost", "small_snow_wolfden")
+	templates = list("small_snow_effigy", "small_snow_goblin_camp", "small_snow_outhouse", "small_snow_pond", "small_snow_shack", "small_snow_trollden", "small_snow_wolfden")
 
 /datum/map_template/small_snow_effigy
 	name = "Frigid Effigy"
@@ -119,11 +119,6 @@
 	name = "Frigid Troll Den"
 	id = "small_snow_trollden"
 	mappath = "_maps/map_files/templates/snow/small_snow_trollden.dmm"
-
-/datum/map_template/small_snow_watchpost
-	name = "Frigid Watchpost"
-	id = "small_snow_watchpost"
-	mappath = "_maps/map_files/templates/snow/small_snow_watchpost.dmm"
 
 /datum/map_template/small_snow_wolfden
 	name = "Frigid Wolf Den"

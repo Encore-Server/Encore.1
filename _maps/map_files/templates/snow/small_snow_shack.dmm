@@ -3,6 +3,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "b" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},
@@ -13,19 +14,23 @@
 /area/rogue/outdoors/mountains)
 "e" = (
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter)
 "f" = (
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "g" = (
 /obj/item/rogueweapon/spear,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "h" = (
 /obj/structure/bed/rogue/inn/hay,
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "k" = (
@@ -33,6 +38,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "q" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors/shelter)
 "s" = (
@@ -40,12 +46,14 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "u" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
 /area/rogue/indoors/shelter)
 "w" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "x" = (
@@ -53,18 +61,22 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "y" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/shelter)
 "B" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "E" = (
 /obj/item/roguebin/water,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "H" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
 	},
@@ -75,16 +87,19 @@
 /area/rogue/outdoors/mountains)
 "M" = (
 /obj/effect/decal/remains/human,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "N" = (
 /obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "R" = (
 /turf/open/floor/rogue/snowrough,
 /area/rogue/outdoors/mountains)
 "T" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter)
 "V" = (
@@ -98,6 +113,7 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "Z" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 

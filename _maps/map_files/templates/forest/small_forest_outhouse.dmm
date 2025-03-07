@@ -7,6 +7,7 @@
 /obj/structure/toilet,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter/woods)
 "d" = (
@@ -15,9 +16,11 @@
 /area/rogue/outdoors/woods)
 "h" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods)
 "i" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
 	},
@@ -41,6 +44,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "t" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/woods)
 "y" = (
@@ -56,6 +60,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "C" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
@@ -68,6 +73,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods)
 "N" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},

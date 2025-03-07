@@ -4,6 +4,7 @@
 	dir = 10;
 	icon_state = "cobbleedge-e"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "bk" = (
@@ -16,6 +17,7 @@
 	icon_state = "largetable"
 	},
 /obj/item/clothing/mask/cigarette/pipe/westman,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "cL" = (
@@ -31,6 +33,7 @@
 	icon_state = "cobbleedge-n"
 	},
 /obj/machinery/light/rogue/torchholder/l,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "dF" = (
@@ -51,6 +54,7 @@
 	icon_state = "cobbleedge-n"
 	},
 /obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "gN" = (
@@ -72,11 +76,13 @@
 /obj/item/natural/bone,
 /obj/item/natural/cloth,
 /obj/item/rogueore/coal,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "iN" = (
 /obj/structure/bed/rogue/inn/wool,
 /obj/item/flashlight/flare/torch/lantern,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "iY" = (
@@ -95,6 +101,7 @@
 /area/rogue/outdoors/mountains)
 "lL" = (
 /obj/item/storage/roguebag,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "mZ" = (
@@ -110,6 +117,7 @@
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/item/reagent_containers/food/snacks/grown/apple,
 /obj/item/reagent_containers/food/snacks/grown/apple,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "qe" = (
@@ -119,6 +127,7 @@
 	},
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/mace/goden,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "qI" = (
@@ -130,6 +139,7 @@
 	dir = 10;
 	icon_state = "cobbleedge-w"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "qK" = (
@@ -148,6 +158,7 @@
 /area/rogue/outdoors/mountains)
 "uX" = (
 /obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "vz" = (
@@ -160,6 +171,7 @@
 	},
 /obj/structure/closet/crate/chest/crate,
 /obj/item/rogue/instrument/lute,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "vU" = (
@@ -182,6 +194,7 @@
 /obj/item/kitchen/spoon/plastic{
 	pixel_y = 3
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "xG" = (
@@ -189,6 +202,7 @@
 	dir = 10;
 	icon_state = "cobbleedge-n"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "xH" = (
@@ -212,6 +226,7 @@
 /obj/structure/mineral_door/wood{
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "BM" = (
@@ -228,6 +243,10 @@
 /obj/structure/flora/roguetree/burnt,
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
+"DU" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/mountains)
 "EB" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -243,6 +262,7 @@
 /area/rogue/outdoors/mountains)
 "GL" = (
 /obj/machinery/light/rogue/torchholder/l,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "HG" = (
@@ -254,6 +274,7 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "IH" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "JB" = (
@@ -262,6 +283,7 @@
 /area/rogue/outdoors/mountains)
 "JY" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Kf" = (
@@ -279,6 +301,7 @@
 /obj/item/paper,
 /obj/item/paper,
 /obj/item/paper,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "KC" = (
@@ -288,10 +311,12 @@
 /obj/structure/mineral_door/wood{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "MQ" = (
 /obj/structure/toilet,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "MY" = (
@@ -299,6 +324,7 @@
 /area/rogue/indoors/shelter/mountains)
 "NG" = (
 /obj/structure/bed/rogue/inn/wool,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "OB" = (
@@ -307,6 +333,7 @@
 /area/rogue/outdoors/mountains)
 "Rp" = (
 /obj/structure/fermenting_barrel/random/water,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "RF" = (
@@ -339,13 +366,16 @@
 /obj/machinery/light/rogue/hearth,
 /obj/item/cooking/pan,
 /obj/machinery/light/rogue/torchholder/c,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "WP" = (
 /obj/item/staff/broom,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Xn" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "XV" = (
@@ -359,6 +389,7 @@
 	pixel_x = 5
 	},
 /obj/structure/chair/wood/rogue/chair3,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "YI" = (
@@ -379,6 +410,7 @@
 /obj/structure/rack/rogue,
 /obj/item/clothing/head/roguetown/helmet/kettle,
 /obj/machinery/light/rogue/torchholder/c,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "ZH" = (
@@ -388,17 +420,18 @@
 	},
 /obj/item/kitchen/rollingpin,
 /obj/item/rogueweapon/huntingknife/chefknife,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 
 (1,1,1) = {"
 qK
-MY
-MY
-MY
-MY
-MY
-MY
+DU
+DU
+DU
+DU
+DU
+DU
 OB
 YZ
 VG
@@ -410,12 +443,12 @@ YZ
 "}
 (2,1,1) = {"
 qK
-MY
+DU
 ZH
 cF
 du
 iN
-MY
+DU
 YZ
 YZ
 vz
@@ -427,32 +460,32 @@ qW
 "}
 (3,1,1) = {"
 YZ
-MY
+DU
 WN
 qI
 IH
 NG
-MY
+DU
 YZ
 YZ
-MY
-MY
-MY
+DU
+DU
+DU
 YZ
 YZ
 YZ
 "}
 (4,1,1) = {"
 YZ
-MY
+DU
 Kf
 IH
 IH
 NG
-MY
+DU
 YZ
 YZ
-MY
+DU
 MQ
 JY
 YZ
@@ -461,29 +494,29 @@ YZ
 "}
 (5,1,1) = {"
 YZ
-MY
+DU
 XV
 IH
 WP
 uX
-MY
+DU
 YZ
 qK
-MY
-MY
-MY
+DU
+DU
+DU
 YZ
 YZ
 qK
 "}
 (6,1,1) = {"
 vz
-MY
+DU
 Ze
 aR
 aR
 vW
-MY
+DU
 YZ
 qK
 vU
@@ -495,12 +528,12 @@ qK
 "}
 (7,1,1) = {"
 YZ
-MY
+DU
 vD
 Xn
 Xn
 gd
-MY
+DU
 YZ
 YZ
 vU
@@ -512,12 +545,12 @@ YZ
 "}
 (8,1,1) = {"
 YZ
-MY
-MY
+DU
+DU
 zz
-MY
-MY
-MY
+DU
+DU
+DU
 YZ
 YZ
 vU
@@ -537,11 +570,11 @@ YI
 bk
 YZ
 YZ
-MY
-MY
-MY
-MY
-MY
+DU
+DU
+DU
+DU
+DU
 YZ
 "}
 (10,1,1) = {"
@@ -554,11 +587,11 @@ iY
 jQ
 yj
 yj
-MY
+DU
 qe
 GL
 IH
-MY
+DU
 YZ
 "}
 (11,1,1) = {"
@@ -575,7 +608,7 @@ Lw
 Xn
 xG
 lL
-MY
+DU
 KC
 "}
 (12,1,1) = {"
@@ -588,11 +621,11 @@ iY
 VP
 BM
 iY
-MY
+DU
 mZ
 gV
 Rp
-MY
+DU
 KC
 "}
 (13,1,1) = {"
@@ -605,11 +638,11 @@ iY
 cL
 qK
 RF
-MY
-MY
-MY
-MY
-MY
+DU
+DU
+DU
+DU
+DU
 KC
 "}
 (14,1,1) = {"
