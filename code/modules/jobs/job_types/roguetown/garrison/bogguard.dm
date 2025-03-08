@@ -173,7 +173,6 @@ Also given some non-combat skills that a peasent would have, just to support the
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		if("Buckler")
 			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 		if("Spear")
 			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
