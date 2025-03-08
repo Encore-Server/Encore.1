@@ -55,7 +55,7 @@ delete-after: True
 # Also, this gets changed to [] after reading.  Just remove the brackets when you add new shit.
 # Please surround your changes in  double quotes ("). It works without them, but if you use certain characters it screws up compiling. The quotes will not show up in the changelog.
 changes:
-  - rscadd: "Gives Wardens weapon selection similar to Templars, with a choice of Crossbow, Recurve Bow, or Buckler shield."
+  - rscadd: "Adds three new Warden subclasses - Hawk, Wolf, and Bear for Ranged, Balanced, and Melee combat specialisation respectively."
   - rscadd: "Gives Wardens an Apprentice level in Skincrafting, since they're Ranger types."
   - rscadd: "Nerfs the Bog Master somewhat, replacing their Steel gear with Iron (kyres request), renames it to Wild Master, and dropps their Master level wrestling to Expert."
   - rscadd: "Adds serfstones to several more Garrison and Nobility roles. Basically any military related job."
