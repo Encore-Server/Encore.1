@@ -42,6 +42,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/whip/antique
 	beltl = /obj/item/storage/keyring/dungeoneer
+	id = /obj/item/scomstone/bad
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
