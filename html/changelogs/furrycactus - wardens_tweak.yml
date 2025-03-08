@@ -57,4 +57,5 @@ delete-after: True
 changes:
   - rscadd: "Gives Wardens weapon selection similar to Templars, with a choice of Crossbow, Recurve Bow, or Buckler shield."
   - rscadd: "Gives Wardens an Apprentice level in Skincrafting, since they're Ranger types."
-  - rscadd: "Nerfs the Bog Master somewhat, replacing their Steel gear with Iron (kyres request), renames it to Wild Master, and dropps their Master level wrestling to Expert.""
+  - rscadd: "Nerfs the Bog Master somewhat, replacing their Steel gear with Iron (kyres request), renames it to Wild Master, and dropps their Master level wrestling to Expert."
+  - rscadd: "Adds serfstones to several more Garrison and Nobility roles. Basically any military related job."
