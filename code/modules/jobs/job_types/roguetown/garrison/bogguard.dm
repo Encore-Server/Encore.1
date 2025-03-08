@@ -21,6 +21,9 @@
 
 	cmode_music = 'sound/music/combat_bog.ogg'
 
+/datum/outfit/job/roguetown/bogguardsman
+	has_loadout = TRUE
+
 /datum/job/roguetown/bogguardsman/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
 	if(ishuman(L))
@@ -165,7 +168,7 @@ Also given some non-combat skills that a peasent would have, just to support the
 			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Recurve Bow")
-			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), TRUE)
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
 			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		if("Buckler")
