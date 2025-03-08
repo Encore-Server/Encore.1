@@ -141,6 +141,12 @@
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
 
+/obj/item/clothing/suit/roguetown/armor/plate/red
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "crimson half-plate"
+	desc = "A sinister red set of plate armor with pauldrons."
+	color = "#8f3547"
+
 /obj/item/clothing/suit/roguetown/armor/plate/full
 	name = "plate armor"
 	desc = "Full plate. Leg protecting tassets, groin cup, armored vambraces."
