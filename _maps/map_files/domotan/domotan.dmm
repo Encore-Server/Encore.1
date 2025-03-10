@@ -1582,7 +1582,6 @@
 /area/rogue/under/cavewet)
 "bGg" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/knowledge1,
 /obj/item/book/rogue/bibble,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/hexstone,
@@ -2191,11 +2190,13 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/basement)
 "cjI" = (
-/obj/structure/bookcase,
-/obj/item/book/rogue/arcyne,
-/obj/item/book/rogue/tales3,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/magician)
+/obj/structure/mineral_door/wood/violet{
+	lockid = "tavern";
+	name = "Staff";
+	dir = 1
+	},
+/turf/open/floor/rogue/wood,
+/area/rogue/indoors/town/tavern)
 "cjL" = (
 /obj/item/clothing/shoes/roguetown/boots,
 /turf/open/floor/rogue/cobble/mossy,
@@ -2443,8 +2444,6 @@
 /area/rogue/indoors/town/church)
 "cyh" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/nitebeast,
-/obj/item/book/rogue/noc,
 /obj/machinery/light/rogue/wallfire/candle/blue/l,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
@@ -3843,11 +3842,6 @@
 /obj/item/needle,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/physician)
-"dZc" = (
-/obj/structure/bookcase,
-/obj/item/book/rogue/sword,
-/turf/open/floor/rogue/hexstone,
-/area/rogue/indoors/town/magician)
 "dZu" = (
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/indoors/shelter/town/dwarf)
@@ -8623,7 +8617,6 @@
 /area/rogue/indoors/town/garrison)
 "iYD" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/cardgame,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
@@ -10314,7 +10307,6 @@
 /area/rogue/under/cave)
 "kMM" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/tales1,
 /obj/machinery/light/rogue/wallfire/candle/blue/r,
 /obj/item/book/rogue/yeoldecookingmanual,
 /turf/open/floor/rogue/hexstone,
@@ -14998,7 +14990,6 @@
 /obj/structure/closet/crate/drawer/random{
 	pixel_y = 0
 	},
-/obj/item/book/rogue/arcyne,
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/magician)
 "prl" = (
@@ -15543,7 +15534,6 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "pWM" = (
-/obj/item/book/rogue/fishing,
 /obj/structure/table/wood{
 	icon_state = "tablewood1"
 	},
@@ -16017,8 +16007,6 @@
 /area/rogue/outdoors/rtfield)
 "qvQ" = (
 /obj/structure/bookcase,
-/obj/item/book/rogue/fishing,
-/obj/item/book/rogue/blackmountain,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/indoors/town/magician)
 "qwb" = (
@@ -118169,7 +118157,7 @@ prN
 qtR
 tYM
 tYM
-cbo
+cjI
 uYe
 uYe
 uYe
@@ -189094,7 +189082,7 @@ bGg
 qvQ
 dPt
 cyh
-cjI
+qvQ
 vql
 odq
 odq
@@ -190379,7 +190367,7 @@ kMM
 iFR
 iFR
 iYD
-dZc
+qvQ
 vql
 vqH
 vqH
