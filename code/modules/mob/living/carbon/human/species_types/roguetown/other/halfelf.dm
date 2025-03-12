@@ -71,12 +71,26 @@
 
 /datum/species/human/halfelf/get_skin_list()
 	return list(
-		"Timber-Gronn" = SKIN_COLOR_TIMBER_GRONN,
-		"Giza-Azure" = SKIN_COLOR_GIZA_AZURE,
-		"Walnut-Stine" = SKIN_COLOR_WALNUT_STINE,
-		"Etrustcan-Dandelion" = SKIN_COLOR_ETRUSTCAN_DANDELION,
-		"Naledi-Born" = SKIN_COLOR_NALEDI_BORN,
-		"Kaze-Lotus" = SKIN_COLOR_KAZE_LOTUS
+		"Amber Lands" = SKIN_COLOR_GRENZELHOFT,
+		"Aelondan" = SKIN_COLOR_HAMMERHOLD,
+		"True Qadirid" = SKIN_COLOR_AVAR,
+		"Rinlette" = SKIN_COLOR_ROCKHILL,
+		"Nomablood" = SKIN_COLOR_OTAVA,
+		"Arnkin" = SKIN_COLOR_ETRUSCA,
+		"Wrestchilde" = SKIN_COLOR_GRONN,
+		"Jinman" = SKIN_COLOR_GIZA,
+		"Sunnite" = SKIN_COLOR_SHALVISTINE,
+		"Imperial Kui" = SKIN_COLOR_LALVESTINE,
+		"Ginsoyon" = SKIN_COLOR_NALEDI,
+		"Yi Freemen" = SKIN_COLOR_KAZENGUN,
+		"Sanct of Aelonda" = SKIN_COLOR_DANDELION_CREEK,
+		"Saint's Rest" = SKIN_COLOR_ROSEVEIL,
+		"Amberling" = SKIN_COLOR_AZUREGROVE,
+		"Nortmidst" = SKIN_COLOR_ARBORSHOME,
+		"Old Arnkin" = SKIN_COLOR_ALMONDVALLE,
+		"The Far Wild" = SKIN_COLOR_WALNUT_WOODS,
+		"Manesi Lowland" = SKIN_COLOR_TIMBERBORN,
+		"The Delve" = SKIN_COLOR_LOTUS_COAST
 	)
 
 /datum/species/human/halfelf/get_hairc_list()
