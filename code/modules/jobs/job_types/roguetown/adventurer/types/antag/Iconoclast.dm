@@ -2,7 +2,7 @@
 	name = "Iconoclast"
 	tutorial = "Trained by an ecclesial sect, you uphold the creed of a disruptive God somewhere far away. Make little of the Katholikos' grandeur and empower those who suffer at their hands."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = list(RACES_ALL_KINDS, /datum/species/tieberian, /datum/species/halforc)
 	outfit = /datum/outfit/job/roguetown/bandit/iconoclast
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 1 // We only want one of these.
