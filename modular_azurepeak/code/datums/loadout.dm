@@ -231,3 +231,39 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/iliopecross
 	name = "Wooden Amulet of Iliope"
 	path = /obj/item/clothing/neck/roguetown/psicross/wood/iliope
+
+/datum/loadout_item/lute
+	name = "Lute"
+	path = /obj/item/rogue/instrument/lute
+
+/datum/loadout_item/accordion
+	name = "Accordion"
+	path = /obj/item/rogue/instrument/accord
+
+/datum/loadout_item/guitar
+	name = "Guitar"
+	path = /obj/item/rogue/instrument/guitar
+
+/datum/loadout_item/harp
+	name = "Harp"
+	path = /obj/item/rogue/instrument/harp
+
+/datum/loadout_item/flute
+	name = "Flute"
+	path = /obj/item/rogue/instrument/flute
+
+/datum/loadout_item/drum
+	name = "Drum"
+	path = /obj/item/rogue/instrument/drum
+
+/datum/loadout_item/hurdygurdy
+	name = "Hurdy-Gurdy"
+	path = /obj/item/rogue/instrument/hurdygurdy
+
+/datum/loadout_item/viola
+	name = "Viola"
+	path = /obj/item/rogue/instrument/viola
+
+/datum/loadout_item/vocals
+	name = "Vocalist's Talisman"
+	path = /obj/item/rogue/instrument/vocals
