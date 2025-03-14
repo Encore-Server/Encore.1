@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 99//Uncapped basically
 	spawn_positions = 99
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	tutorial = "Fleeing misfortune you sail your way towards Domotan Island, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
 
 	outfit = null

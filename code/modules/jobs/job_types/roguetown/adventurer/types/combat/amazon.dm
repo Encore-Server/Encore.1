@@ -2,7 +2,7 @@
 	name = "Amazon"
 	tutorial = "Amazons are warrior-women from the mysterious isle of Issa. These rare fighters are so tough they can beat an average man!"
 	allowed_sexes = list(FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/amazon
 	category_tags = list(CTAG_ADVENTURER)
 
