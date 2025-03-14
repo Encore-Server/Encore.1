@@ -4,7 +4,7 @@
 	and those who aren't are usually treated as such anyway. \
 	The class has the choice between the thieving rogue, the shadowy assassin, or the more upfront duelist."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(RACES_ALL_KINDS, /datum/species/tieberian)
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT)
 	category_tags = list(CTAG_ADVENTURER)

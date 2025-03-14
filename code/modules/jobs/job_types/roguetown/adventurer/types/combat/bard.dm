@@ -7,7 +7,7 @@
 	the greatest adventures of the age and write amazing songs about them. \
 	The class has the option between the jack of all trades Bard, the martial-focused Skald, magic-equip arcanist, and the gospel Hymnist." //Azure peak updated for Hymnist
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(RACES_ALL_KINDS, /datum/species/tieberian)
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/bard
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT)
 	category_tags = list(CTAG_ADVENTURER)
