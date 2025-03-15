@@ -59,3 +59,4 @@ changes:
   - rscadd: "Adds the current combat music that Adjudicator has to Templar."
   - rscadd: "Adds some T1-4 spells for the All-Aspect, even though anything beyond T1 is redundant."
   - rscadd: "Swaps out some generic psycrosses for proper silver psycrosses, both on the map and on some Inquisition roles."
+  - rscadd: "Gives proper Inquisition keyrings to the Orthodoxist roles, otherwise they can't actually unlock the churchling quarters."
