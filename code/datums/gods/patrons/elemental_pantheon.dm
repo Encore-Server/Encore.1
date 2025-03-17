@@ -103,7 +103,7 @@
 	amulet = /obj/item/clothing/neck/roguetown/psicross/golerkanh
 	t0 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t1 = /obj/effect/proc_holder/spell/targeted/tesla
-	t2 = /obj/effect/proc_holder/spell/aoe_turf/knock
+	t2 = /obj/effect/proc_holder/spell/invoked/knock
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/fetch
 	t4 = /obj/effect/proc_holder/spell/targeted/projectile/magic_missile
 	confess_lines = list(
