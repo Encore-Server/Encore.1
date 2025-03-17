@@ -43,7 +43,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	backr = /obj/item/storage/backpack/rogue/satchel/black
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 
 /datum/advclass/veteran/battlemaster
 	name = "Veteran Battlemaster"
@@ -437,9 +436,9 @@
 	beltr = /obj/item/storage/keyring/guardcastle
 	head = /obj/item/clothing/head/roguetown/papakha
 	pants = /obj/item/clothing/under/roguetown/chainlegs
-	gloves = /obj/item/clothing/gloves/roguetown/plate
+	gloves = /obj/item/clothing/gloves/roguetown/leather
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
 	beltr = /obj/item/storage/keyring/guardcastle
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	r_hand = /obj/item/rogueweapon/spear
