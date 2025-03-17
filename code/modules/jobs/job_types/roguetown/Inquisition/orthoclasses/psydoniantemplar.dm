@@ -67,7 +67,7 @@
 			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		if("Zweihander")
-			H.put_in_hands(new /obj/item/rogueweapon/greatsword/grenz(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/greatsword/zwei(H), TRUE)
 			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		if("Lucerne")
