@@ -56,7 +56,6 @@
 		H.change_stat("speed", 1)
 		if(H.age == AGE_OLD)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 1, TRUE)
 		H.change_stat("intelligence", 1)
 		H.change_stat("endurance", 1)
 		H.change_stat("perception", -1)

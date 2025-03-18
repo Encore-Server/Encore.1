@@ -306,8 +306,12 @@ var/static/list/druid_forms = list(
 			shape.attack_verb_simple = "tear into"
 			shape.attack_sound = pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg')
 			shape.base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
-			shape.melee_damage_lower = 45
-			shape.melee_damage_upper = 65
+			shape.melee_damage_lower = 65
+			shape.melee_damage_upper = 75
+			shape.projectiletype = /obj/projectile/magic/aoe/dragon_breath
+			shape.ranged_ability = /obj/projectile/magic/aoe/dragon_breath
+			shape.ranged_cooldown_time = 20 SECONDS
+			shape.ranged = 1
 			shape.rot_type = null
 			caster.spawn_gibs(FALSE)
 			
@@ -376,17 +380,7 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_lower = 25
 			shape.melee_damage_upper = 35
 			shape.rot_type = null
-			
-		else // Default animal form setup
-			shape.attack_verb_continuous = "attacks"
-			shape.attack_verb_simple = "attack"
-			shape.attack_sound = pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg')
-			shape.base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
-			shape.melee_damage_lower = 15
-			shape.melee_damage_upper = 25
-			shape.rot_type = null
-	
-	switch(selected_form)
+		
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll)
 			shape.attack_verb_continuous = "claws"
 			shape.attack_verb_simple = "claw"
@@ -396,7 +390,6 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_upper = 35
 			shape.rot_type = null
 			
-	switch(selected_form)
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated)
 			shape.attack_verb_continuous = "bites"
 			shape.attack_verb_simple = "bite"
@@ -406,6 +399,16 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_upper = 40
 			shape.rot_type = null
 			caster.spawn_gibs(FALSE)
+			
+		else // Default animal form setup
+			shape.attack_verb_continuous = "attacks"
+			shape.attack_verb_simple = "attack"
+			shape.attack_sound = pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg')
+			shape.base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
+			shape.melee_damage_lower = 15
+			shape.melee_damage_upper = 25
+			shape.rot_type = null
+
 			
 	// Combat setup
 	shape.faction = list("rogueanimal")
