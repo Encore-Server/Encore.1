@@ -77,7 +77,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 		if(istype(H.patron, /datum/patron/elemental/gani))
 			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 		if(H.age == AGE_OLD)
