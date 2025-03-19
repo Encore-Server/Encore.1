@@ -51,7 +51,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/creacher/werewolf/Initialize()
 	. = ..()
 	regenerate_icons()
-	ADD_TRAIT(src, TRAIT_SIMPLE_WOUNDS, TRAIT_GENERIC)*/
+	ADD_TRAIT(src, TRAIT_SIMPLE_WOUNDS, TRAIT_GENERIC)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/creacher/werewolf/death(gibbed)
 	..()
