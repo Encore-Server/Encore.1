@@ -6,6 +6,7 @@
 	icon_living = "wwolf_m"
 	icon_dead = "wwolf_m"
 	emote_hear = null
+	speak_emote = null
 	emote_see = null
 	gender = MALE
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
@@ -32,8 +33,8 @@
 	held_items = list(null, null)
 	retreat_distance = 0
 	minimum_distance = 0
-	aggro_vision_range = 3
 	defprob = 25
+	deaggroprob = 0
 	defdrain = 10
 	food = 0
 	dodgetime = 0
