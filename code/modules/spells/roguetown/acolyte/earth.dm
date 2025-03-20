@@ -147,8 +147,8 @@ var/static/list/druid_forms = list(
 		"level" = 2
 	),
 	// Intermediate forms (Level 2-3)
-	"volf" = list(
-		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/wolf,
+	"mole" = list(
+		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/mole,
 		"level" = 2
 	),
 	"spider" = list(
@@ -159,21 +159,21 @@ var/static/list/druid_forms = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/mossback,
 		"level" = 3
 	),
-	"mole" = list(
-		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/mole,
+	"volf" = list(
+		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/wolf,
 		"level" = 3
 	),
 	"saiga" = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/saiga,
 		"level" = 3
 	),
-	"Bogtroll" = list(
-		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/bogtroll,
-		"level" = 4
-	),
 	"Skallax spider" = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
 		"level" = 4
+	),
+	"Bogtroll" = list(
+		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/bogtroll,
+		"level" = 5
 	),
 	
 	// Advanced forms (Level 6) - Commented out
@@ -386,8 +386,8 @@ var/static/list/druid_forms = list(
 			shape.attack_verb_simple = "claw"
 			shape.attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg')
 			shape.base_intents = list(/datum/intent/unarmed)
-			shape.melee_damage_lower = 30
-			shape.melee_damage_upper = 35
+			shape.melee_damage_lower = 50
+			shape.melee_damage_upper = 60
 			shape.rot_type = null
 			
 		if(/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated)
