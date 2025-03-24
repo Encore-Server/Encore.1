@@ -92,3 +92,5 @@
 		"Scroll" = /obj/item/paper/scroll,
 		"Book" = /obj/item/book/rogue/playerbook
 	)
+
+/datum/virtue/heretic

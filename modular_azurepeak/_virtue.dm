@@ -17,6 +17,7 @@ GLOBAL_LIST_EMPTY(virtues)
 	var/list/added_stats = list()
 	/// The cost of the virtue to apply in TRIUMPH points, if any.
 	var/triumph_cost = 0
+	var/custom_text
 
 /datum/virtue/New()
 	. = ..()
@@ -31,6 +32,7 @@ GLOBAL_LIST_EMPTY(virtues)
 		return
 	for(var/trait in added_traits)
 		ADD_TRAIT(recipient, trait, "[type]")
+		ADD_TRAIT(recipient, trait, TRAIT_VIRTUE)
 
 /datum/virtue/proc/handle_skills(mob/living/carbon/human/recipient)
 	if (!recipient.mind || !LAZYLEN(added_skills))
