@@ -51,19 +51,46 @@
 
 /*/datum/virtue/utility/deathless/apply_to_human(mob/living/carbon/human/recipient)
 	recipient.mob_biotypes |= MOB_UNDEAD*/
-
-/datum/virtue/utility/crafter
-	name = "Crafter's Apprentice"
-	desc = "In my youth, I worked for the Artisan's Guild in a variety of disciplines."
-	added_skills = list(list(/datum/skill/craft/crafting, 2, 5),
-						list(/datum/skill/craft/weaponsmithing, 2, 5),
-						list(/datum/skill/craft/armorsmithing, 2, 5),
-						list(/datum/skill/craft/blacksmithing, 2, 5),
-						list(/datum/skill/craft/carpentry, 2, 5),
-						list(/datum/skill/craft/masonry, 2, 5),
-						list(/datum/skill/craft/traps, 2, 5),
-						list(/datum/skill/craft/engineering, 2, 5),
-						list(/datum/skill/misc/sewing, 2, 5),
+/datum/virtue/utility/blacksmith
+	name = "Blacksmith's Apprentice"
+	desc = "In my youth, I worked under a skilled blacksmith, honing my skills with an anvil."
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
+						list(/datum/skill/craft/weaponsmithing, 2, 2),
+						list(/datum/skill/craft/armorsmithing, 2, 2),
+						list(/datum/skill/craft/blacksmithing, 2, 2),
+						list(/datum/skill/craft/smelting, 2, 2)
+	)
+/datum/virtue/utility/hunter
+	name = "Hunter's Apprentice"
+	desc = "In my youth, I trained under a skilled hunter, learning how to butcher animals and work with leather/hide."
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
+						list(/datum/skill/craft/traps, 2, 2),
+						list(/datum/skill/labor/butchering, 2, 2),
+						list(/datum/skill/misc/sewing, 2, 2),
+						list(/datum/skill/craft/tanning, 2, 2),
+						list(/datum/skill/misc/tracking, 2, 2)
+	)
+/datum/virtue/utility/artificer
+	name = "Artificer's Apprentice"
+	desc = "In my youth, I worked under a skilled artificer, studying construction and engineering."
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
+						list(/datum/skill/craft/carpentry, 2, 2),
+						list(/datum/skill/craft/masonry, 2, 2),
+						list(/datum/skill/craft/engineering, 2, 2),
+						list(/datum/skill/craft/smelting, 2, 2)
+	)
+/datum/virtue/utility/physician
+	name = "Physician's Apprentice"
+	desc = "In my youth, I worked under a skilled physician, studying medicine and alchemy."
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
+						list(/datum/skill/misc/alchemy, 2, 2),
+						list(/datum/skill/misc/medicine, 2, 2)
+	)
+/datum/virtue/utility/petty_thief
+	name = "Petty Thief"
+	desc = "You have spent time on the wrong side of the law, learning how to break locks and liberate posessions. "
+	added_skills = list(list(/datum/skill/misc/stealing, 2, 2),
+						list(/datum/skill/misc/lockpicking, 3, 3),
 	)
 
 /datum/virtue/utility/feral_appetite
@@ -93,4 +120,27 @@
 		"Book" = /obj/item/book/rogue/playerbook
 	)
 
-/datum/virtue/heretic
+/datum/virtue/utility/performer
+	name = "Performer"
+	desc = "I have always been drawn to music, art, and making people smile. I'm never far from my favored instrument and constantly have a song on my lips."
+	custom_text = "Comes with an instrument of your choice."
+	added_traits = list(TRAIT_EMPATH)
+	added_skills = list(list(/datum/skill/misc/music, 2, 6))
+
+/datum/virtue/utility/performer/apply_to_human(mob/living/carbon/human/recipient)
+    addtimer(CALLBACK(src, .proc/performer_apply, recipient), 50)
+
+/datum/virtue/utility/performer/proc/performer_apply(mob/living/carbon/human/recipient)
+    var/list/instruments = list()
+    for(var/instrument_type in subtypesof(/obj/item/rogue/instrument))
+        var/obj/item/rogue/instrument/instr = new instrument_type()
+        instruments[instr.name] = instrument_type
+        qdel(instr)  // Clean up the temporary instance
+        
+    var/chosen_name = input(recipient, "Which instrument calls to me?", "STASH") as null|anything in instruments
+    if(chosen_name)
+        var/instrument_type = instruments[chosen_name]
+        recipient.mind?.special_items[chosen_name] = instrument_type
+
+
+/datum/virtue/heretic // Virtues ablee to be taken by heretical worshipers only.
