@@ -133,6 +133,16 @@
 			if (THEY_THEM, THEY_THEM_F, IT_ITS)
 				. += span_beautiful_nb("[m1] good-looking!")
 
+	if (HAS_TRAIT(src, TRAIT_UGLY))
+		switch (pronouns)
+			if (HE_HIM)
+				. += span_redtext("[m1] revolting!")
+			if (SHE_HER)
+				. += span_redtext("[m1] repugnant!")
+			if (THEY_THEM, THEY_THEM_F, IT_ITS)
+				. += span_redtext("[m1] repulsive!")
+
+
 	if(user != src)
 		var/datum/mind/Umind = user.mind
 		if(Umind && mind)

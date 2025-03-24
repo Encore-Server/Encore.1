@@ -142,5 +142,17 @@
         var/instrument_type = instruments[chosen_name]
         recipient.mind?.special_items[chosen_name] = instrument_type
 
+/datum/virtue/utility/ugly
+	name = "Ugly"
+	desc = "Whether it was an unfortunate accident of birth or a heated shovel, you are repulsive. You are so used to being shunned that your best friends number only the dead."
+	added_traits = list(TRAIT_UGLY, TRAIT_NOSTINK)
 
-/datum/virtue/heretic // Virtues ablee to be taken by heretical worshipers only.
+/datum/virtue/utility/ugly/handle_traits(mob/living/carbon/human/recipient)
+	..()
+	if(HAS_TRAIT(recipient, TRAIT_BEAUTIFUL))
+		to_chat(recipient, "Your repulsiveness is cancelled out! You become normal.")
+		REMOVE_TRAIT(recipient, TRAIT_BEAUTIFUL, TRAIT_VIRTUE)
+		REMOVE_TRAIT(recipient, TRAIT_UGLY, TRAIT_VIRTUE)
+
+
+/datum/virtue/heretic // Virtues able to be taken by heretical worshipers only.
