@@ -21,8 +21,11 @@
 /obj/effect/roofing_helper/proc/build_roof()
 	var/turf/target = get_step_multiz(src, UP)
 	new roof_tile(target)
+
+/obj/effect/roofing_helper/proc/complete_roof()
 	qdel(src)
 
 /obj/effect/roofing_helper/Initialize()
 	. = ..()
 	build_roof()
+	complete_roof()

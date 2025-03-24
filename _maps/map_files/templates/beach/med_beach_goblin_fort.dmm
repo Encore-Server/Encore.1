@@ -1,0 +1,415 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/woods)
+"bf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"cy" = (
+/obj/effect/roofing_helper,
+/obj/machinery/light/rogue/torchholder/r{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"eH" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/indoors/shelter/woods)
+"fx" = (
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"gB" = (
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"ht" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"io" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"lt" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"lw" = (
+/obj/effect/roofing_helper,
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"nq" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/woods)
+"pj" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"pX" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/hide,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"qC" = (
+/obj/item/roguebin/water/gross,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"rN" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"sX" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"vf" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/woods)
+"wj" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"xQ" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/sand,
+/area/rogue/indoors/shelter/woods)
+"CZ" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Dd" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"DN" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Ea" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"FI" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"Gx" = (
+/obj/effect/roofing_helper,
+/obj/structure/roguetent,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"GI" = (
+/obj/effect/roofing_helper,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"GL" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Hf" = (
+/obj/effect/roofing_helper,
+/obj/item/rogueweapon/woodstaff,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"Ja" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"KC" = (
+/obj/structure/fermenting_barrel,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"KN" = (
+/obj/effect/roofing_helper,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"KT" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"MX" = (
+/obj/effect/roofing_helper,
+/obj/item/natural/hide,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+"Sf" = (
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Yn" = (
+/obj/structure/fermenting_barrel/water,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter/woods)
+
+(1,1,1) = {"
+KT
+KT
+Dd
+GL
+Dd
+KT
+KT
+KT
+GL
+GL
+GL
+GL
+GL
+KT
+GL
+"}
+(2,1,1) = {"
+GL
+KT
+ht
+GL
+GL
+Dd
+GL
+Dd
+Dd
+Dd
+GL
+KT
+Dd
+KT
+Dd
+"}
+(3,1,1) = {"
+GL
+pj
+GL
+GL
+GL
+GL
+DN
+GL
+vf
+GL
+Dd
+GL
+GL
+pj
+GL
+"}
+(4,1,1) = {"
+GL
+GL
+KT
+nq
+FI
+FI
+FI
+aJ
+nq
+nq
+nq
+nq
+nq
+GL
+GL
+"}
+(5,1,1) = {"
+GL
+nq
+nq
+nq
+sX
+Sf
+nq
+cy
+KC
+KC
+sX
+cy
+nq
+GL
+Dd
+"}
+(6,1,1) = {"
+Dd
+aJ
+cy
+Ja
+Yn
+GI
+nq
+Sf
+KN
+gB
+gB
+MX
+nq
+GL
+GL
+"}
+(7,1,1) = {"
+Dd
+aJ
+Yn
+fx
+Sf
+fx
+Gx
+gB
+Ea
+gB
+gB
+gB
+aJ
+Dd
+bf
+"}
+(8,1,1) = {"
+Dd
+FI
+FI
+GI
+rN
+pX
+nq
+gB
+gB
+io
+Hf
+gB
+nq
+Dd
+GL
+"}
+(9,1,1) = {"
+GL
+GL
+FI
+FI
+FI
+sX
+nq
+Sf
+gB
+gB
+Ea
+qC
+nq
+GL
+GL
+"}
+(10,1,1) = {"
+lt
+GL
+GL
+FI
+FI
+FI
+FI
+Ja
+gB
+Sf
+KN
+Sf
+nq
+GL
+GL
+"}
+(11,1,1) = {"
+Dd
+GL
+Dd
+GL
+GL
+Dd
+nq
+Sf
+nq
+nq
+nq
+Sf
+nq
+GL
+GL
+"}
+(12,1,1) = {"
+GL
+GL
+GL
+Dd
+wj
+GL
+nq
+Sf
+CZ
+eH
+nq
+nq
+nq
+GL
+wj
+"}
+(13,1,1) = {"
+nq
+nq
+nq
+GL
+GL
+GL
+nq
+nq
+nq
+Dd
+GL
+KT
+GL
+KT
+KT
+"}
+(14,1,1) = {"
+nq
+lw
+xQ
+GL
+GL
+GL
+KT
+GL
+Dd
+Dd
+Dd
+GL
+KT
+GL
+GL
+"}
+(15,1,1) = {"
+nq
+nq
+nq
+GL
+GL
+GL
+KT
+GL
+GL
+GL
+GL
+GL
+GL
+KT
+GL
+"}
