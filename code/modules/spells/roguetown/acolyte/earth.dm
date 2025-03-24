@@ -149,7 +149,7 @@ var/static/list/druid_forms = list(
 	// Intermediate forms (Level 2-3)
 	"mole" = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/mole,
-		"level" = 2
+		"level" = 3
 	),
 	"spider" = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/spider,
@@ -164,8 +164,8 @@ var/static/list/druid_forms = list(
 		"level" = 3
 	),
 	"saiga" = list(
-		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/saiga,
-		"level" = 3
+		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck,
+		"level" = 4
 	),
 	"Skallax spider" = list(
 		"path" = /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
@@ -353,11 +353,12 @@ var/static/list/druid_forms = list(
 			shape.melee_damage_upper = 20
 			shape.rot_type = null
 
-		if(/mob/living/simple_animal/pet/cat)
-			shape.attack_verb_continuous = "claws"
-			shape.attack_verb_simple = "claw"
+
+		if(/mob/living/simple_animal/hostile/retaliate/rogue/cat)
+			shape.attack_verb_continuous = "bite"
+			shape.attack_verb_simple = "bites"
 			shape.attack_sound = pick('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg')
-			shape.base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
+			shape.base_intents = list( /datum/intent/simple/bite)
 			shape.melee_damage_lower = 5
 			shape.melee_damage_upper = 10
 			shape.rot_type = null
@@ -372,11 +373,11 @@ var/static/list/druid_forms = list(
 			shape.rot_type = null
 			caster.spawn_gibs(FALSE)
 			
-		if(/mob/living/simple_animal/hostile/retaliate/rogue/saiga)
+		if(/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck)
 			shape.attack_verb_continuous = "rams"
 			shape.attack_verb_simple = "ram"
 			shape.attack_sound = list('sound/combat/wooshes/blunt/wooshhuge (1).ogg','sound/combat/wooshes/blunt/wooshhuge (2).ogg')
-			shape.base_intents = list(/datum/intent/unarmed/claw, /datum/intent/simple/bite)
+			shape.base_intents = list(/datum/intent/simple/headbutt)
 			shape.melee_damage_lower = 25
 			shape.melee_damage_upper = 35
 			shape.rot_type = null
@@ -478,6 +479,7 @@ var/static/list/druid_forms = list(
 		charge_counter = 0
 		charge_max = death_cooldown
 		recharging = TRUE  // Ensure recharging is set to true
+		saved_form = null
 	else
 		charge_counter = 0  // Start the normal cooldown
 		recharging = TRUE   // Enable recharging
