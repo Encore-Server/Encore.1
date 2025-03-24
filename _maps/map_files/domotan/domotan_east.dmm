@@ -795,7 +795,7 @@
 /obj/structure/stairs/stone{
 	dir = 1
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
 "Jf" = (
 /obj/structure/rack/rogue,
@@ -124183,8 +124183,8 @@ NQ
 NQ
 NQ
 oA
-sv
 IU
+cA
 cA
 cA
 cA
@@ -124440,8 +124440,8 @@ NQ
 NQ
 oA
 sv
-sv
 IU
+cA
 cA
 cA
 cA
