@@ -154,5 +154,29 @@
 		REMOVE_TRAIT(recipient, TRAIT_BEAUTIFUL, TRAIT_VIRTUE)
 		REMOVE_TRAIT(recipient, TRAIT_UGLY, TRAIT_VIRTUE)
 
+/datum/virtue/utility/horse_girl
+	name = "Saiga Tamer"
+	desc = "I've spent enough time around saiga to learn the basics of not getting bit or thrown."
+	added_skills = list(list(/datum/skill/misc/riding, 2, 4))
+
+/datum/virtue/utility/cook
+	name = "Cook"
+	desc = "I've spent so much time in the kitchen that wherever I go, food food follows."
+	added_skills = list(list(/datum/skill/craft/cooking, 3, 6))
+
+/datum/virtue/utility/mining
+	name = "Miner's Apprentice"
+	desc = "The dark shafts, the damp smells of ichor and the laboring hours are no stranger to me. I keep my pickaxe and lamptern close, and have been taught how to mine well."
+	added_stashed_items = list(
+		"Steel Pickaxe" = /obj/item/rogueweapon/pick/steel,
+		"Lamptern" = /obj/item/flashlight/flare/torch/lantern)
+	added_skills = list(list(/datum/skill/labor/mining, 3, 6))
+
+/datum/virtue/utility/keenears
+	name = "Keen Senses"
+	desc = "Cowering from authorities, loved ones or by a generous gift of the gods, you've adapted a keen sense of hearing, and can identify the speakers even when they are out of sight. Along with this, you've developed good eyes for tracking, letting you keep those you fear, or those you seek, in your sights."
+	added_traits = list(TRAIT_KEENEARS)
+	added_skills = list(list(/datum/skill/misc/tracking, 2, 6))
+
 
 /datum/virtue/heretic // Virtues able to be taken by heretical worshipers only.

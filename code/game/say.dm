@@ -90,19 +90,27 @@ GLOBAL_LIST_INIT(freqtospan, list(
 					arrowpart = " ⇙"
 				if(SOUTHEAST)
 					arrowpart = " ⇘"
-			if(istype(speaker, /mob/living/carbon/human))
-				var/mob/living/carbon/human/H = speaker
-				var/appellation
-				switch(H.voice_type)
-					if(VOICE_TYPE_FEM)
-						appellation = "Woman"
-					if(VOICE_TYPE_MASC)
-						appellation = "Man"
+
+			var/hidden = TRUE
+			if(HAS_TRAIT(src, TRAIT_KEENEARS))
+				if(ishuman(speaker) && ishuman(src))
+					var/mob/living/carbon/human/HS = speaker
+					var/mob/living/carbon/human/HL = src
+					if(length(HL.mind?.known_people))
+						if(HS.real_name in HL.mind?.known_people)	//We won't recognise people we don't know w/ Keen Ears
+							hidden = FALSE
 					else
-						appellation = "Person"
-				namepart = "Unknown [appellation]"
+						hidden = TRUE
+				else
+					hidden = FALSE
 			else
-				namepart = "Unknown"
+				hidden = TRUE
+			if(hidden)
+				if(istype(speaker, /mob/living))
+					var/mob/living/L = speaker
+					namepart = "Unknown [(L.gender == FEMALE) ? "Woman" : "Man"]"
+				else
+					namepart = "Unknown"
 			spanpart1 = "<span class='smallyell'>"
 
 	var/languageicon = ""

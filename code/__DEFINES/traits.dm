@@ -44,6 +44,7 @@
 #define TRAIT_TRAINED_SMITH "Trained Smith"
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
+#define TRAIT_KEENEARS	"Keen ears"
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
@@ -167,7 +168,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_HORDE = span_info("By blood and bone, I am of Hell's anointed! I feel the strength in others who are the same."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
-	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others.")
+	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
+	TRAIT_KEENEARS = span_info("I've a good pair of ears, and can tell who is speaking, even when they're out of sight."),
 ))
 
 // trait accessor defines
