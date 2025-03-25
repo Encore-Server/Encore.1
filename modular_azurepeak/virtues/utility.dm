@@ -89,7 +89,8 @@
 /datum/virtue/utility/petty_thief
 	name = "Petty Thief"
 	desc = "You have spent time on the wrong side of the law, learning how to break locks and liberate posessions. "
-	added_skills = list(list(/datum/skill/misc/stealing, 2, 2),
+	added_stashed_items = list(/obj/item/lockpickring)
+	added_skills = list(list(/datum/skill/misc/stealing, 3, 5),
 						list(/datum/skill/misc/lockpicking, 3, 3),
 	)
 

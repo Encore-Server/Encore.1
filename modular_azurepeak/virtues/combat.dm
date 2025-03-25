@@ -102,13 +102,44 @@
 		added_skills = list(list(/datum/skill/combat/wrestling, 1, 3))
 		handle_skills(recipient)
 
-/datum/virtue/combat/bowman
-	name = "Toxophilite"
-	desc = "I have studied underneath a bowman of considerable skill, and always have my trusty bow and a quiver of arrows close at hand."
-	added_skills = list(list(/datum/skill/combat/bows, 1, 4))
+/datum/virtue/combat/archer
+	name = "Archer's Apprentice"
+	desc = "I have trained under a skilled archer, and always have my trusty bow close at hand."
+	custom_text = "+1 to bows and crossbows, Up to Journeyman, Minimum Apprentice."
 	added_stashed_items = list("Recurve Bow" = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve,
-								"Quiver (Arrows)" = /obj/item/quiver/arrows
-	)
+								"Quiver (Arrows)" = /obj/item/quiver/arrows)
+
+/datum/virtue/combat/archer/apply_to_human(mob/living/carbon/human/recipient)
+	if(recipient.mind?.get_skill_level(/datum/skill/combat/bows) < SKILL_LEVEL_APPRENTICE)
+		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_APPRENTICE, silent = TRUE)
+	else
+		added_skills = list(list(/datum/skill/combat/bows, 1, 3))
+		handle_skills(recipient)
+	if(recipient.mind?.get_skill_level(/datum/skill/combat/crossbows) < SKILL_LEVEL_APPRENTICE)
+		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_APPRENTICE, silent = TRUE)
+	else
+		added_skills = list(list(/datum/skill/combat/crossbows, 1, 3))
+		handle_skills(recipient)
+
+
+/datum/virtue/combat/axeman
+	name = "Warden's Apprentice"
+	desc = "I have studied underneath an axeman of considerable skill, and always have my axe close to hand and have some basic tracking ability."
+	custom_text = "Increases axe skill by 1, minimum apprentice. Increases tracking by 1, minimum apprentice. Capped at journeyman."
+	added_stashed_items = list("Iron Axe" = /datum/supply_pack/rogue/weapons/axe,
+								)
+/datum/virtue/combat/archer/apply_to_human(mob/living/carbon/human/recipient)
+	if(recipient.mind?.get_skill_level(/datum/skill/combat/axes) < SKILL_LEVEL_APPRENTICE)
+		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_APPRENTICE, silent = TRUE)
+	else
+		added_skills = list(list(/datum/skill/combat/axes, 1, 3))
+		handle_skills(recipient)
+	if(recipient.mind?.get_skill_level(/datum/skill/misc/tracking) < SKILL_LEVEL_APPRENTICE)
+		recipient.mind?.adjust_skillrank_up_to(/datum/skill/misc/tracking, SKILL_LEVEL_APPRENTICE, silent = TRUE)
+	else
+		added_skills = list(list(/datum/skill/misc/tracking, 1, 3))
+		handle_skills(recipient)
+
 
 /*/datum/virtue/combat/tavern_brawler
 	name = "Tavern Brawler"
