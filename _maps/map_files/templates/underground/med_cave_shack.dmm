@@ -1,433 +1,453 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aJ" = (
+"aT" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"cC" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"cL" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"cQ" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"iB" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lS" = (
 /obj/structure/table/wood{
-	dir = 1;
-	icon_state = "longtable"
+	icon_state = "largetable";
+	dir = 4
 	},
-/obj/item/bait/sweet,
-/obj/item/bait/sweet,
-/obj/item/bait/sweet,
-/obj/item/bait/sweet,
-/obj/item/bait/sweet,
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"dE" = (
-/obj/structure/roguewindow/openclose{
-	dir = 8
+/obj/item/candle/yellow{
+	pixel_x = -11;
+	pixel_y = 5
 	},
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"ht" = (
-/obj/item/natural/thorn,
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"jP" = (
-/obj/effect/roofing_helper/twig,
-/turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/indoors/shelter/woods)
-"lt" = (
-/obj/structure/flora/roguegrass/bush,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"nq" = (
-/obj/structure/flora/roguetree/stump/log,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"pj" = (
-/obj/structure/flora/roguegrass,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"qC" = (
-/obj/item/natural/rock,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"qH" = (
-/obj/machinery/light/rogue/torchholder/c,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"qK" = (
-/obj/structure/flora/roguegrass/bush,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"lX" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"oL" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"pJ" = (
+/obj/effect/decal/mossy,
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"qF" = (
+/obj/machinery/light/rogue/oven/south,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"rB" = (
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
 "rN" = (
-/obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"sX" = (
-/obj/structure/flora/roguegrass/thorn_bush,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"uf" = (
-/turf/open/water/pond,
-/area/rogue/outdoors/woods)
-"uj" = (
-/obj/effect/spawner/lootdrop/roguetown/sewers,
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"xQ" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uc" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/item/natural/cloth{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uu" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"xj" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
 	},
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"yf" = (
-/obj/structure/table/wood{
-	icon_state = "longtable"
-	},
-/obj/item/bait/bloody,
-/obj/item/bait/bloody,
-/obj/item/bait/bloody,
-/obj/item/bait/bloody,
-/obj/item/bait/bloody,
-/obj/item/bait/bloody,
-/obj/item/bait{
-	pixel_x = 17
-	},
-/obj/item/bait{
-	pixel_x = 17
-	},
-/obj/item/bait{
-	pixel_x = 17
-	},
-/obj/item/bait{
-	pixel_x = 17
-	},
-/obj/structure/rack/rogue/shelf/big,
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"yr" = (
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"Ae" = (
-/obj/structure/flora/roguegrass,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"AW" = (
-/obj/item/natural/bone,
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"Cy" = (
-/obj/item/natural/dirtclod,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"Dc" = (
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"Dd" = (
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"FI" = (
-/obj/structure/chair/bench{
-	pixel_y = 16
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"GL" = (
-/obj/item/natural/dirtclod,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
-"Jh" = (
-/obj/structure/bed/rogue/shit{
-	name = "makeshift bed"
-	},
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"KC" = (
-/obj/item/natural/stone,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"KD" = (
-/obj/structure/roguewindow/openclose{
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"xX" = (
+/obj/effect/decal/mossy,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"ze" = (
+/obj/effect/decal/mossy{
 	dir = 1
 	},
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"KT" = (
-/obj/item/natural/hide,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"VW" = (
-/obj/structure/flora/ausbushes/ppflowers,
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"Wf" = (
-/obj/machinery/light/rogue/torchholder/r{
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"zh" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"AF" = (
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"Ci" = (
+/obj/item/natural/cloth{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"CB" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
 	dir = 4
 	},
-/obj/effect/roofing_helper/twig,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/indoors/shelter/woods)
-"YZ" = (
-/turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods)
-"Ze" = (
-/obj/structure/flora/roguegrass/water/reeds,
-/turf/open/water/pond,
-/area/rogue/outdoors/woods)
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"HH" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"II" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ju" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Jx" = (
+/obj/effect/decal/mossy,
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"JC" = (
+/obj/item/kitchen/spoon/plastic{
+	pixel_y = 3;
+	pixel_x = 10
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ki" = (
+/obj/structure/chair/stool/rogue,
+/obj/item/cooking/skewer,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"KC" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/cave)
+"KM" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Mz" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/cooking/pan,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"NC" = (
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/structure/fermenting_barrel/random/beer,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Oa" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"ST" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Xq" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Zo" = (
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
 
 (1,1,1) = {"
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-KC
-qK
-YZ
-YZ
-YZ
-YZ
-YZ
+uM
+uM
+uM
+uM
+uM
+rN
+kA
+rN
+rN
+rN
+rN
+rN
+uM
+uM
+rN
 "}
 (2,1,1) = {"
-YZ
-YZ
-YZ
-qC
-YZ
-YZ
-YZ
-Dd
-pj
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
+uM
+uM
+rN
+rN
+rN
+rN
+rN
+kA
+KC
+KC
+KC
+KC
+KC
+uM
+uM
 "}
 (3,1,1) = {"
-qK
-YZ
-pj
-YZ
-uf
-uf
-YZ
-YZ
-YZ
-YZ
-sX
-Dc
-pj
-pj
-qC
+uM
+rN
+rN
+kA
+rN
+rN
+rN
+YB
+KC
+cL
+AF
+AF
+KC
+uM
+YB
 "}
 (4,1,1) = {"
-YZ
-YZ
-pj
-Ze
-Ze
-uf
-Dc
-Dc
-GL
-YZ
-Dc
-Dc
+uM
+rN
+YB
 KC
-YZ
-YZ
+KC
+KC
+KC
+KC
+KC
+Xq
+AF
+AF
+KC
+uM
+rN
 "}
 (5,1,1) = {"
-YZ
-YZ
-uf
-uf
-uf
-Ze
-uf
-YZ
-Dc
-Dc
-Dc
-YZ
-YZ
-nq
-YZ
+rN
+rN
+uM
+KC
+NC
+YB
+kA
+lX
+iB
+Xq
+Xq
+cL
+KC
+rN
+rN
 "}
 (6,1,1) = {"
-YZ
-YZ
-VW
-YZ
-pj
-uf
-YZ
-VW
-YZ
-Dc
-Dc
-YZ
-YZ
-YZ
-YZ
+rN
+rN
+KC
+KC
+HH
+II
+rN
+KC
+KC
+KC
+KC
+KC
+KC
+rN
+rN
 "}
 (7,1,1) = {"
-pj
-pj
-Dc
 rN
-YZ
-pj
-pj
-YZ
-pj
-pj
-Dc
-Dc
-YZ
-sX
-YZ
+rN
+KC
+Mz
+Ju
+uc
+Xq
+rN
+KC
+CB
+lS
+KC
+rN
+rN
+rN
 "}
 (8,1,1) = {"
-pj
-Ae
-jP
-jP
-jP
-jP
-jP
-jP
-YZ
-pj
-Dc
-Dc
-YZ
-YZ
-lt
+rN
+rN
+KC
+qF
+Ju
+Ju
+uu
+Oa
+cC
+Zo
+pJ
+KC
+rN
+rN
+rN
 "}
 (9,1,1) = {"
-YZ
-Dc
-jP
-yf
-yr
-Wf
-AW
-xQ
-YZ
-Dc
-Dc
-YZ
-YZ
-YZ
-YZ
+kA
+rN
+KC
+Ju
+Ki
+ze
+aT
+Xq
+JC
+Jx
+zh
+KC
+rN
+rN
+kA
 "}
 (10,1,1) = {"
-YZ
-YZ
-jP
-aJ
-ht
-yr
-Jh
-jP
-FI
-Dc
-YZ
-YZ
-YZ
-YZ
-pj
+rN
+KC
+KC
+KC
+Ju
+uu
+Xq
+Xq
+Jx
+Ci
+Ju
+KC
+rN
+rN
+rN
 "}
 (11,1,1) = {"
-YZ
+uM
 KC
-jP
-uj
-yr
-yr
-Jh
-KD
-YZ
-YZ
-YZ
-VW
-YZ
-qC
-pj
+cQ
+oL
+KM
+Xq
+Xq
+xX
+ST
+Ju
+Ju
+KC
+rN
+rN
+uM
 "}
 (12,1,1) = {"
-YZ
-Dd
-jP
-dE
-jP
-jP
-jP
-jP
-qH
-pj
-pj
-YZ
-YZ
-Dd
-YZ
+uM
+KC
+Xq
+cC
+Xq
+KC
+Xq
+Xq
+KC
+KC
+KC
+KC
+rN
+uM
+uM
 "}
 (13,1,1) = {"
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-YZ
-nq
-pj
-YZ
-YZ
-YZ
-YZ
-KT
+uM
+KC
+rB
+Xq
+oL
+KC
+Xq
+Xq
+xj
+rN
+uM
+rN
+rN
+uM
+uM
 "}
 (14,1,1) = {"
-YZ
-sX
-YZ
-pj
-Cy
-YZ
-YZ
-pj
-YZ
-pj
+YB
 KC
-YZ
-qK
-YZ
-YZ
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+rN
+rN
+rN
+kA
+rN
+rN
 "}
 (15,1,1) = {"
-YZ
-qC
-YZ
-YZ
-YZ
-YZ
-pj
-YZ
-YZ
-pj
-YZ
-YZ
-YZ
-YZ
-YZ
+rN
+rN
+rN
+rN
+rN
+rN
+rN
+rN
+kA
+rN
+rN
+uM
+uM
+kA
+rN
 "}

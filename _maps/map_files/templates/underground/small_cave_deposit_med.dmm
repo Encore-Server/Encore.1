@@ -1,0 +1,158 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cX" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"jQ" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lo" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"xi" = (
+/obj/item/natural/rock/coal,
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"BR" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"FY" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"HW" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"NV" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qj" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+cX
+cX
+kd
+kd
+kd
+kd
+BR
+kd
+FY
+Qj
+"}
+(2,1,1) = {"
+cX
+kd
+FY
+HW
+HW
+kd
+kd
+cX
+NV
+kd
+"}
+(3,1,1) = {"
+Qj
+FY
+jQ
+HW
+HW
+HW
+kd
+cX
+cX
+kd
+"}
+(4,1,1) = {"
+kd
+FY
+HW
+lo
+lo
+HW
+FY
+cX
+cX
+cX
+"}
+(5,1,1) = {"
+cX
+FY
+HW
+lo
+lo
+HW
+FY
+FY
+cX
+cX
+"}
+(6,1,1) = {"
+kd
+FY
+HW
+lo
+HW
+HW
+FY
+FY
+kd
+kd
+"}
+(7,1,1) = {"
+BR
+FY
+HW
+HW
+HW
+xi
+kd
+cX
+cX
+FY
+"}
+(8,1,1) = {"
+cX
+kd
+kd
+HW
+NV
+BR
+kd
+kd
+kd
+Qj
+"}
+(9,1,1) = {"
+cX
+cX
+kd
+kd
+kd
+cX
+cX
+cX
+cX
+kd
+"}
+(10,1,1) = {"
+kd
+kd
+kd
+FY
+FY
+kd
+cX
+cX
+kd
+BR
+"}

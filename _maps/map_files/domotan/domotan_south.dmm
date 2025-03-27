@@ -554,12 +554,6 @@
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
-"go" = (
-/turf/closed/wall/mineral/rogue/wooddark/end{
-	dir = 4;
-	icon_state = "endwooddark"
-	},
-/area/rogue/under/cave)
 "gq" = (
 /obj/effect/decal/cobbleedge{
 	dir = 1
@@ -2560,11 +2554,6 @@
 /area/rogue/under/cave)
 "Dj" = (
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
-"Dk" = (
-/turf/closed/wall/mineral/rogue/wooddark/end{
-	dir = 8
-	},
 /area/rogue/under/cave)
 "Dn" = (
 /obj/structure/fluff/railing/border{
@@ -26540,7 +26529,7 @@ gL
 nv
 bM
 Jn
-go
+vL
 gL
 Rj
 ak
@@ -27054,7 +27043,7 @@ vt
 gL
 WH
 bk
-Dk
+vL
 yn
 ak
 rL
