@@ -6,7 +6,7 @@ GLOBAL_LIST_INIT(demon_aggro, world.file2list("strings/rt/npc/demonaggro.txt"))
 	race = /datum/species/tieberian/demon
 	aggressive=1
 	mode = AI_IDLE
-	faction = list("hell", "station")
+	faction = list("hell")
 	ambushable = FALSE
 	dodgetime = 10
 	possible_rmb_intents = list()
@@ -45,6 +45,7 @@ GLOBAL_LIST_INIT(demon_aggro, world.file2list("strings/rt/npc/demonaggro.txt"))
 	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOROGSTAM, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	equipOutfit(new /datum/outfit/job/roguetown/human/species/tieberian/demon)
 
 	if(src.dna && src.dna.species)
