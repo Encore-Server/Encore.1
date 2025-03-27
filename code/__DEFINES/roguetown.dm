@@ -29,6 +29,7 @@
 	/datum/species/anthromorphsmall,\
 	/datum/species/kobold\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/lizardfolk,\
 	/datum/species/tabaxi,\
 	/datum/species/lupian,\
@@ -73,6 +74,7 @@
 	/datum/species/elf/wood,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
@@ -95,6 +97,7 @@
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
@@ -111,6 +114,7 @@
 #define HUMANLIKE_RACE_TYPES list(\
 	/datum/species/human/northern,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\

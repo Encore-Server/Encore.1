@@ -693,6 +693,12 @@
 					H.update_inv_head()
 		user.update_fov_angles()
 
+/obj/item/clothing/head/roguetown/helmet/sallet/red
+	desc = "A steel helmet with a sinister red plating."
+	icon_state = "bascinet_novisor"
+	item_state = "bascinet_novisor"
+	color = "#8f3547"
+
 /obj/item/clothing/head/roguetown/helmet/sallet/elven
 	desc = "A steel helmet with a thin gold plating designed for Elven woodland guardians."
 	icon_state = "bascinet_novisor"

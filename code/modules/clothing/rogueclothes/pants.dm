@@ -203,6 +203,10 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
+/obj/item/clothing/under/roguetown/chainlegs/iron/red
+	name = "red iron chain chausses"
+	color = "#b81865"
+
 /obj/item/clothing/under/roguetown/platelegs
 	name = "steel plate chausses"
 	desc = "Reinforced armor to protect the legs."

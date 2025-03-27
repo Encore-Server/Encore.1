@@ -2,21 +2,9 @@
 	race = /datum/species/tieberian
 
 /datum/species/tieberian
-	name = "Tiefling"
+	name = "Demonkin"
 	id = "tiefling"
-	desc = "<b>Tiefling</b><br>\
-	Tieflings, also known as Infernal-Spawn by the Dwarves, are a relatively new species in Grimmoria\
-	Having shown up sometime within the past two centuries, very little is known about their culture \
-	as many seem to simply intergrate within whatever society they find themselves in. \
-	Tieflings usually cause strong disturbances with their presence, as their fiendish looks \
-	Many have claimed that they are the spawn of a succubus (Or incubus) laying with a mortal. \
-	In this, their species has suffered vast tragedy throughout their short history, \
-	Facing scrutiny, judgement and even genocide in the past. Wounding many tiefling psyche \
-	and leading to most seeking a solitary life outside the watchful eyes of others. \
-	Tiefling cannot reproduce with mortals, and so no half-breed exists. \
-	Tiefling tend to be extremely perceptive and paranoid, as luck is rarely on their side \
-	and their unique biology makes them extremely susceptible to injury. \
-	+1 Intelligence."
+	desc = "Tieflings, Daemonkin, Monsters, whatever they're called is irrelevant; to most, these are the spawn of the infernal Hells, the likeness of the Mad God embodied. These unfortunate folk are the offspring of demonkind and any living lifeform above the Firmament. Expect to be treated very badly if you play this!"
 
 	skin_tone_wording = "Progenitor"
 
@@ -105,15 +93,15 @@
 
 /datum/species/tieberian/get_skin_list()
 	return list(
-		"Jehoel" = SKIN_COLOR_JEHOEL,
-		"Urvix" = SKIN_COLOR_URVIX,
-		"Sarvyra" = SKIN_COLOR_SARVYRA,
-		"Vheslyn" = SKIN_COLOR_VHESLYN,
-		"Arlenneth" = SKIN_COLOR_ARLENNETH,
-		"Nessyss" = SKIN_COLOR_NESSYSS,
-		"Helixia" = SKIN_COLOR_HELIXIA,
-		"Nymsea" = SKIN_COLOR_NYMSEA,
-		"Calvus" = SKIN_COLOR_CALVUS
+		"First Sage" = SKIN_COLOR_LOVELOST,
+		"Second Sage" = SKIN_COLOR_MALEVOLEKET,
+		"Third Sage" = SKIN_COLOR_GARGANT,
+		"Fourth Sage" = SKIN_COLOR_LOSTURGE,
+		"Fifth Sage" = SKIN_COLOR_PROTOMOS,
+		"Sixth Sage" = SKIN_COLOR_HEAVEN,
+		"Seventh Sage" = SKIN_COLOR_VISTAMATRA,
+		"Artenfel" = SKIN_COLOR_AGATROS,
+		"Gemini" = SKIN_COLOR_GEMINI
 	)
 
 /datum/species/tieberian/get_hairc_list()
@@ -147,3 +135,10 @@
 
 /datum/species/tieberian/random_surname()
 	return " [pick(world.file2list("strings/rt/names/other/tieflast.txt"))]"
+
+//lesser demons
+//For use in specifically lesser demon npcs found in hell or otherwise
+/datum/species/tieberian/demon
+	name = "Lesser Demon"
+	limbs_icon_m = 'icons/roguetown/mob/monster/demon_mt.dmi'
+	limbs_icon_f = 'icons/roguetown/mob/monster/demon_fm.dmi'
