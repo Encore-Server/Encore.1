@@ -28,10 +28,6 @@
 //Races we are currently not using
 #define RACES_UNUSED\
 	/datum/species/goblinp,\
-	/datum/species/lizardfolk,\
-	/datum/species/tabaxi,\
-	/datum/species/lupian,\
-	/datum/species/demihuman,\
 	/datum/species/kobold\
 	/datum/species/anthromorphsmall,\
 
