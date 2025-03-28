@@ -44,6 +44,7 @@
 #define TRAIT_TRAINED_SMITH "Trained Smith"
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
+#define TRAIT_KEENEARS	"Keen ears"
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
@@ -77,6 +78,7 @@
 #define TRAIT_BAD_MOOD "Bad Mood"
 #define TRAIT_NIGHT_OWL "Night Owl"
 #define TRAIT_BEAUTIFUL "Beautiful"
+#define	TRAIT_UGLY	"Ugly"
 #define TRAIT_SIMPLE_WOUNDS "simple_wounds"
 #define TRAIT_BANDITCAMP "banditcamp"
 #define TRAIT_VAMPMANSION "vampiremansion"
@@ -107,6 +109,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_TOLERANT = span_info("I dream of an ideal future, one with peace between all races"),
 	TRAIT_NIGHT_OWL = span_info("I enjoy spending my time in the night"),
 	TRAIT_BEAUTIFUL = span_info("People love looking at my face"),
+	TRAIT_UGLY	=	span_info("I am so ugly I make others upset"),
 	TRAIT_BAD_MOOD = span_warning("Everything just seems to piss me off"),
 	TRAIT_LEAPER = "I can leap like a frog.",
 	TRAIT_NOSEGRAB = "I love to grab idiots by their noses!",
@@ -165,7 +168,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_HORDE = span_info("By blood and bone, I am of Hell's anointed! I feel the strength in others who are the same."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
-	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others.")
+	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
+	TRAIT_KEENEARS = span_info("I've a good pair of ears, and can tell who is speaking, even when they're out of sight."),
 ))
 
 // trait accessor defines
@@ -369,6 +373,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 // common trait sources
 #define TRAIT_GENERIC "generic"
+#define TRAIT_VIRTUE "virtue"
 #define UNCONSCIOUS_BLIND "unconscious_blind"
 #define EYE_DAMAGE "eye_damage"
 #define GENETIC_MUTATION "genetic"
