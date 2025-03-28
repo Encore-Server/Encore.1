@@ -18,6 +18,11 @@
 	if(istype(H.patron, /datum/patron/heretic/devil))
 		H.cmode_music = 'sound/music/combat_cult.ogg'
 		neck = /obj/item/roguekey/inhumen
+	
+// Add druidic skill for Gani followers
+	if(istype(H.patron, /datum/patron/elemental/gani))
+		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+		to_chat(H, span_notice("As a follower of Gani, you have innate knowledge of druidic magic."))
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)

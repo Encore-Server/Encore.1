@@ -2788,6 +2788,7 @@
 #include "code\modules\mob\living\simple_animal\rogue\rogueanimals.dm"
 #include "code\modules\mob\living\simple_animal\rogue\creacher\bigrat.dm"
 #include "code\modules\mob\living\simple_animal\rogue\creacher\bogtroll.dm"
+#include "code\modules\mob\living\simple_animal\rogue\creacher\cat.dm"
 #include "code\modules\mob\living\simple_animal\rogue\creacher\cavetroll.dm"
 #include "code\modules\mob\living\simple_animal\rogue\creacher\honeyspider.dm"
 #include "code\modules\mob\living\simple_animal\rogue\creacher\minotaur.dm"
