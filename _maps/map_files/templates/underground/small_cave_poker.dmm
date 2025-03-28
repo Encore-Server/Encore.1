@@ -1,0 +1,275 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ab" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"dB" = (
+/mob/living/simple_animal/hostile/rogue/skeleton,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"eT" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 8
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"jB" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 9
+	},
+/obj/item/clothing/mask/cigarette/rollie/nicotine,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nH" = (
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"nR" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"nV" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"ra" = (
+/obj/item/rogueweapon/stoneaxe,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uQ" = (
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"uU" = (
+/obj/item/natural/bundle/fibers/full,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"vI" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 10
+	},
+/obj/item/paper/scroll,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"xy" = (
+/obj/structure/closet/crate/chest/crate,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"Az" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 8
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"Bq" = (
+/mob/living/simple_animal/hostile/rogue/skeleton,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Cl" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Cy" = (
+/obj/item/natural/feather,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"CV" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"DN" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Gf" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/obj/item/clothing/mask/cigarette/rollie/nicotine,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"HY" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/under/cave)
+"In" = (
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"Io" = (
+/obj/structure/table/wood{
+	icon_state = "tablewood1"
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"ID" = (
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"KR" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 5
+	},
+/obj/item/dice/d6,
+/obj/item/dice/d20{
+	pixel_x = -14;
+	pixel_y = -10
+	},
+/obj/item/toy/cards/deck/syndicate{
+	pixel_y = -19
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/under/cave)
+"OP" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 4
+	},
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Qf" = (
+/obj/item/rogueweapon/shovel,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RA" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Tc" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YZ" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 1
+	},
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+kd
+kd
+kd
+kd
+ab
+kd
+kd
+DN
+RA
+Cl
+"}
+(2,1,1) = {"
+RA
+HY
+HY
+HY
+HY
+HY
+HY
+Cl
+ab
+kd
+"}
+(3,1,1) = {"
+DN
+HY
+Io
+uQ
+Bq
+xy
+HY
+HY
+kd
+Cl
+"}
+(4,1,1) = {"
+kd
+HY
+Bq
+OP
+uU
+Cy
+nV
+HY
+ra
+Cl
+"}
+(5,1,1) = {"
+kd
+HY
+nH
+jB
+vI
+ID
+ID
+CV
+Tc
+RA
+"}
+(6,1,1) = {"
+Tc
+HY
+nH
+KR
+Gf
+YZ
+dB
+HY
+Cl
+ab
+"}
+(7,1,1) = {"
+kd
+HY
+nR
+Az
+eT
+dB
+In
+HY
+Cl
+Tc
+"}
+(8,1,1) = {"
+kd
+HY
+HY
+HY
+HY
+HY
+HY
+HY
+kd
+kd
+"}
+(9,1,1) = {"
+ab
+kd
+kd
+Qf
+DN
+Cl
+Cl
+Cl
+ab
+Cl
+"}
+(10,1,1) = {"
+Cl
+Cl
+Cl
+Tc
+RA
+kd
+DN
+kd
+kd
+Cl
+"}

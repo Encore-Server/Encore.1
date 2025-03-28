@@ -1,0 +1,235 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bv" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/roguegem/yellow,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"fj" = (
+/obj/item/natural/stone,
+/mob/living/simple_animal/hostile/retaliate/rogue/mole,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ik" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"je" = (
+/obj/item/rogueore/coal,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mj" = (
+/obj/item/natural/stone,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nC" = (
+/obj/item/rogueore/coal,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"pF" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"vf" = (
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/mole,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"vB" = (
+/obj/item/roguegem/green,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wm" = (
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wE" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xR" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yw" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"AG" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mole,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Cr" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Cs" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"CO" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"DA" = (
+/obj/item/roguegem/amethyst,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ii" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/mole,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qw" = (
+/obj/item/roguegem/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RD" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"SP" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ye" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Zf" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Cr
+Ye
+wE
+yw
+wE
+pF
+pF
+wE
+kd
+Cr
+"}
+(2,1,1) = {"
+pF
+Zf
+pF
+pF
+pF
+pF
+pF
+pF
+je
+wE
+"}
+(3,1,1) = {"
+pF
+kd
+pF
+DA
+kd
+kd
+pF
+pF
+pF
+pF
+"}
+(4,1,1) = {"
+pF
+xR
+AG
+xR
+pF
+kd
+wm
+AG
+kd
+pF
+"}
+(5,1,1) = {"
+pF
+pF
+pF
+pF
+pF
+pF
+kd
+pF
+kd
+pF
+"}
+(6,1,1) = {"
+wE
+pF
+SP
+Ye
+vB
+AG
+Zf
+pF
+kd
+kd
+"}
+(7,1,1) = {"
+kd
+pF
+Qw
+CO
+kd
+kd
+pF
+pF
+kd
+vf
+"}
+(8,1,1) = {"
+fj
+RD
+kd
+pF
+pF
+kd
+Ii
+pF
+pF
+kd
+"}
+(9,1,1) = {"
+pF
+pF
+nC
+pF
+kd
+Cs
+pF
+pF
+pF
+mj
+"}
+(10,1,1) = {"
+pF
+pF
+Cr
+kd
+bv
+pF
+pF
+pF
+pF
+ik
+"}

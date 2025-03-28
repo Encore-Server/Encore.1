@@ -39,3 +39,16 @@
 	id = "small_forest_shack"
 	mappath = "_maps/map_files/templates/forest/small_forest_shack.dmm"
 
+//Multi-Z exclusive templates below
+//FOUR ZLEVELS MAXIMUM with any effect/roofing_helper
+//if you use 5zlevels, do not use roof generators!!! Shit will explode
+//These should only exist on z-level 1 of domotan_north.dmm, or domotan_east.dmm
+//15x15
+/obj/effect/landmark/map_load_mark/Forest/multiz
+	name = "Tall Forest Template"
+	templates = list("tall_forest_crags")
+
+/datum/map_template/tall_forest_crags
+	name = "Tall Verdant Rock Formation"
+	id = "tall_forest_crags"
+	mappath = "_maps/map_files/templates/forest/tall_forest_crags.dmm"
