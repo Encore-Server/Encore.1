@@ -45,6 +45,7 @@
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
 #define TRAIT_KEENEARS	"Keen ears"
+#define	TRAIT_MAGE_ARMOR	"Mage armor"
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
@@ -170,6 +171,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
 	TRAIT_KEENEARS = span_info("I've a good pair of ears, and can tell who is speaking, even when they're out of sight."),
+	TRAIT_MAGE_ARMOR	=	span_info("My magic instinctually shields me from harm, much like a second, easily breakable skin"),
 ))
 
 // trait accessor defines

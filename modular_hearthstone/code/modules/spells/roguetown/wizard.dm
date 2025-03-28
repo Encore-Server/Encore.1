@@ -223,6 +223,7 @@
 		/obj/effect/proc_holder/spell/invoked/snap_freeze,
 		/obj/effect/proc_holder/spell/invoked/projectile/frostbolt,
 		/obj/effect/proc_holder/spell/invoked/poisonspray,
+		/obj/effect/proc_holder/spell/invoked/gravity,
 	)
 	for(var/i = 1, i <= spell_choices.len, i++)
 		choices["[spell_choices[i].name]: [spell_choices[i].cost]"] = spell_choices[i]
@@ -1113,7 +1114,7 @@
 			new /obj/effect/temp_visual/snap_freeze(get_turf(L))
 	qdel(src)
 
-/obj/effect/proc_holder/spell/invoked/poisonspray5e
+/obj/effect/proc_holder/spell/invoked/poisonspray
 	name = "Aerosolize" //once again renamed to fit better :)
 	desc = "Turns a container of liquid into a smoke containing the reagents of that liquid."
 	overlay_state = "null"
@@ -1168,7 +1169,60 @@
 		revert_cast()
 
 
+/obj/effect/proc_holder/spell/invoked/gravity // to do: get scroll icon
+	name = "Gravity"
+	desc = "Weighten space around someone, crushing them and knocking them to the floor. Stronger opponets will resist and be off-balanced."
+	cost = 2
+	xp_gain = TRUE
+	releasedrain = 20
+	chargedrain = 1
+	chargetime = 7
+	charge_max = 15 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 2
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	var/delay = 3
+	var/damage = 0 // damage based off your str 
+	var/area_of_effect = 0
 
+
+
+/obj/effect/proc_holder/spell/invoked/gravity/cast(list/targets, mob/user)
+	var/turf/T = get_turf(targets[1])
+
+	for(var/turf/affected_turf in view(area_of_effect, T))
+		if(affected_turf.density)
+			continue
+
+
+	for(var/turf/affected_turf in view(area_of_effect, T))
+		new /obj/effect/temp_visual/gravity(affected_turf)
+		playsound(T, 'sound/magic/gravity.ogg', 80, TRUE, soundping = FALSE)
+		for(var/mob/living/L in affected_turf.contents) 
+			if(L.STASTR <= 11)
+				L.adjustBruteLoss(30)
+				L.Knockdown(5)
+				to_chat(L, "<span class='userdanger'>You're magically weighed down and lose your footing!</span>")
+			else
+				L.OffBalance(10)
+				L.adjustBruteLoss(15)
+				to_chat(L, "<span class='userdanger'>You're magically weighed down, your strength resist!</span>")
+
+
+
+/obj/effect/temp_visual/gravity
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "hierophant_squares"
+	name = "gravity magic"
+	desc = "Get out of the way!"
+	randomdir = FALSE
+	duration = 3 SECONDS
+	layer = MASSIVE_OBJ_LAYER
+	light_range = 2
+	light_color = COLOR_PALE_PURPLE_GRAY
 
 #undef PRESTI_CLEAN
 #undef PRESTI_SPARK
