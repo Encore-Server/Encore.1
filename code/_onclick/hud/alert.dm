@@ -91,7 +91,7 @@
 #define ALERT_BUFF		2
 
 /atom/movable/screen/alert
-	icon = 'icons/mob/screen_alert.dmi'
+	icon = 'icons/ui/hud/screen_alert.dmi'
 	icon_state = "status"
 	name = "Alert"
 	desc = ""
@@ -329,7 +329,7 @@
 
 /atom/movable/screen/alert/bloodsense/Initialize()
 	. = ..()
-	narnar = new('icons/mob/screen_alert.dmi', "mini_nar")
+	narnar = new('icons/ui/hud/screen_alert.dmi', "mini_nar")
 	START_PROCESSING(SSprocessing, src)
 
 /atom/movable/screen/alert/bloodsense/Destroy()

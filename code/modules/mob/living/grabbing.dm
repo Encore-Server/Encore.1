@@ -2,7 +2,7 @@
 /obj/item/grabbing
 	name = "pulling"
 	icon_state = "pulling"
-	icon = 'icons/mob/roguehudgrabs.dmi'
+	icon = 'icons/ui/hud/roguehudgrabs.dmi'
 	w_class = WEIGHT_CLASS_HUGE
 	possible_item_intents = list(/datum/intent/grab/upgrade)
 	item_flags = ABSTRACT
