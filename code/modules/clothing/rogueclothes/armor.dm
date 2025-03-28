@@ -96,7 +96,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel half-plate"
-	desc = "\'Adventurer-fit\' plate armor with pauldrons."
+	desc = "Plate armor with pauldrons, fit for royal service."
 	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "halfplate"
 	item_state = "halfplate"
@@ -111,6 +111,15 @@
 	equip_delay_self = 4 SECONDS
 	unequip_delay_self = 4 SECONDS
 	armor_class = ARMOR_CLASS_HEAVY
+	smelt_bar_num = 3
+
+/obj/item/clothing/suit/roguetown/armor/plate/iron
+	name = "iron half-plate"
+	desc = "\'Adventurer-fit\' plate armor with pauldrons.
+	icon_state = "halfplate_iron"
+	item_state = "halfplate_iron"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 200
 	smelt_bar_num = 3
 
 /obj/item/clothing/suit/roguetown/armor/plate/bikini
@@ -142,14 +151,27 @@
 	smelt_bar_num = 2
 
 /obj/item/clothing/suit/roguetown/armor/plate/full
-	name = "plate armor"
-	desc = "Full plate. Leg protecting tassets, groin cup, armored vambraces."
+	name = "steel plate armor"
+	desc = "Full steel plate. Leg protecting tassets, groin cup, armored vambraces."
 	icon_state = "plate"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 12 SECONDS
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
+	smelt_bar_num = 4
+
+/obj/item/clothing/suit/roguetown/armor/plate/full/iron
+	name = "iron plate armor"
+	desc = "Full iron plate. Leg protecting tassets, groin cup, armored vambraces."
+	icon_state = "plate"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
+	equip_delay_self = 12 SECONDS
+	unequip_delay_self = 12 SECONDS
+	equip_delay_other = 3 SECONDS
+	strip_delay = 6 SECONDS
+	max_integrity = 200
+	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 4
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/bikini
