@@ -276,3 +276,8 @@
 	stressadd = 1
 	desc = span_red("Eating such a meal without a table? Churlish.")
 	timer = 2 MINUTES
+
+/datum/stressevent/ugly
+	stressadd = 3
+	desc = span_red("They look like the stuff of nightmares!")
+	timer = 5 MINUTES

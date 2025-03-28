@@ -21,8 +21,20 @@
 /obj/effect/roofing_helper/proc/build_roof()
 	var/turf/target = get_step_multiz(src, UP)
 	new roof_tile(target)
+
+/obj/effect/roofing_helper/proc/complete_roof()
 	qdel(src)
 
 /obj/effect/roofing_helper/Initialize()
 	. = ..()
 	build_roof()
+	complete_roof()
+
+/obj/effect/landmark/map_load_mark/testing_tower
+	name = "Testing Tower Template"
+	templates = list("testing_tower")
+
+/datum/map_template/testing_tower
+	name = "Testing Tower"
+	id = "testing_tower"
+	mappath = "_maps/map_files/templates/testing/testing_tower.dmm"

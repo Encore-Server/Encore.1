@@ -77,8 +77,11 @@
 		if(GLOB.lord_titles[name])
 			. += span_notice("[m3] been granted the title of \"[GLOB.lord_titles[name]]\".")
 
-		if(HAS_TRAIT(src, TRAIT_NOBLE) && HAS_TRAIT(user, TRAIT_NOBLE))
-			. += span_notice("A fellow noble.")
+		if(HAS_TRAIT(src, TRAIT_NOBLE))
+			if(HAS_TRAIT(user, TRAIT_NOBLE))
+				. += span_notice("A fellow noble.")
+			else
+				. += span_notice("A noble!")
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
@@ -129,6 +132,16 @@
 				. += span_beautiful_fem("[m1] beautiful!")
 			if (THEY_THEM, THEY_THEM_F, IT_ITS)
 				. += span_beautiful_nb("[m1] good-looking!")
+
+	if (HAS_TRAIT(src, TRAIT_UGLY))
+		switch (pronouns)
+			if (HE_HIM)
+				. += span_redtext("[m1] revolting!")
+			if (SHE_HER)
+				. += span_redtext("[m1] repugnant!")
+			if (THEY_THEM, THEY_THEM_F, IT_ITS)
+				. += span_redtext("[m1] repulsive!")
+
 
 	if(user != src)
 		var/datum/mind/Umind = user.mind

@@ -2,7 +2,7 @@
 #define CREDIT_SPAWN_SPEED 50
 #define CREDIT_ANIMATE_HEIGHT (14 * world.icon_size)
 #define CREDIT_EASE_DURATION 22
-#define CREDITS_PATH "icons/fullblack.dmi"
+#define CREDITS_PATH "icons/ui/title/end_title.dmi"
 
 /client/proc/RollCredits()
 	set waitfor = FALSE

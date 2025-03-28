@@ -14,7 +14,7 @@
 /datum/mapGeneratorModule/east_highlands
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
 	allowed_turfs = list(/turf/open/floor/rogue/grass, /turf/open/floor/rogue/grassyel, /turf/open/floor/rogue/dirt)
-	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
+	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/roguetree = 30,
 							/obj/structure/flora/newtree = 10,
 							/obj/structure/flora/roguetree/stump/log = 11,
@@ -35,7 +35,7 @@
 /datum/mapGeneratorModule/east_snow
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
 	allowed_turfs = list(/turf/open/floor/rogue/grasscold, /turf/open/floor/rogue/snow, /turf/open/floor/rogue/snowrough, /turf/open/floor/rogue/snowpatchy, /turf/open/floor/rogue/dirt)
-	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
+	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/roguetree/burnt = 30,
 							/obj/structure/flora/newtree = 30,
 							/obj/structure/flora/roguetree/stump/log = 11,
@@ -56,7 +56,7 @@
 /datum/mapGeneratorModule/east_coast
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
 	allowed_turfs = list(/turf/open/floor/rogue/grassred, /turf/open/floor/rogue/sand, /turf/open/floor/rogue/grassyel, /turf/open/floor/rogue/naturalstone, /turf/open/floor/rogue/dirt, /turf/open/floor/rogue/grass)
-	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
+	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/roguetree/burnt = 30,
 							/obj/structure/flora/roguetree/stump/burnt = 11,
 							/obj/structure/flora/roguegrass/bush = 25,
@@ -75,7 +75,7 @@
 /datum/mapGeneratorModule/east_caves
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
 	allowed_turfs = list(/turf/open/floor/rogue/naturalstone, /turf/open/floor/rogue/dirt)
-	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
+	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/rogueshroom=20,
 							/obj/structure/roguerock=25,
 							/obj/structure/flora/roguegrass/maneater = 43,
@@ -90,7 +90,7 @@
 /datum/mapGeneratorModule/hell
 	clusterCheckFlags = CLUSTER_CHECK_DIFFERENT_ATOMS
 	allowed_turfs = list(/turf/open/floor/rogue/naturalstone, /turf/open/floor/rogue/dirt, /turf/open/floor/rogue/volcanic)
-	excluded_turfs = list(/turf/open/floor/rogue/dirt/road)
+	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/rogueshroom=20,
 							/obj/structure/roguerock=25,
 							/obj/item/natural/stone = 43)

@@ -1,0 +1,304 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"dk" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/bottle/rogue/water,
+/obj/item/reagent_containers/glass/bottle/rogue/water,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"eS" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/axe,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"fo" = (
+/obj/structure/closet/crate/chest/crate,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"fV" = (
+/obj/item/rogueore/coal,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"iP" = (
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kx" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/bottle/rogue/redwine,
+/obj/item/reagent_containers/glass/bottle/rogue/redwine{
+	pixel_x = -9
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"kH" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lw" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/obj/item/book_crafting_kit,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"lY" = (
+/obj/structure/roguerock,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mx" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/cave)
+"pg" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1;
+	locked = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"qt" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/obj/structure/fermenting_barrel/beer,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"rg" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"vs" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wW" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"yu" = (
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = -6;
+	pixel_y = 15
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"zM" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"CE" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ft" = (
+/obj/structure/spacevine,
+/obj/structure/fermenting_barrel/beer,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"HE" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"JL" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/bottle/rogue/elfred,
+/obj/item/reagent_containers/glass/bottle/rogue/elfred{
+	pixel_x = -7
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"MU" = (
+/obj/structure/fermenting_barrel/beer,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"OG" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Pr" = (
+/obj/structure/spacevine,
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"SK" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"TP" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/bottle/rogue/whitewine,
+/obj/item/reagent_containers/glass/bottle/rogue/whitewine{
+	pixel_x = -11
+	},
+/obj/item/reagent_containers/glass/bottle/rogue/whitewine{
+	pixel_x = 7
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"WQ" = (
+/obj/structure/spacevine,
+/mob/living/simple_animal/hostile/rogue/skeleton/axe,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Yu" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ZD" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/obj/item/rogueweapon/whip,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+wW
+wW
+kH
+kd
+fV
+vs
+kd
+kd
+wW
+wW
+"}
+(2,1,1) = {"
+kd
+kd
+vs
+vs
+lY
+wW
+wW
+kd
+kH
+wW
+"}
+(3,1,1) = {"
+kd
+mx
+mx
+mx
+wW
+wW
+wW
+wW
+Yu
+wW
+"}
+(4,1,1) = {"
+kd
+mx
+Pr
+ZD
+MU
+wW
+wW
+wW
+vs
+vs
+"}
+(5,1,1) = {"
+OG
+mx
+eS
+HE
+yu
+HE
+rg
+mx
+vs
+iP
+"}
+(6,1,1) = {"
+iP
+mx
+MU
+fo
+CE
+HE
+HE
+pg
+kd
+wW
+"}
+(7,1,1) = {"
+vs
+wW
+lw
+dk
+kx
+qt
+WQ
+mx
+kd
+Yu
+"}
+(8,1,1) = {"
+vs
+wW
+wW
+TP
+zM
+JL
+Ft
+mx
+kH
+wW
+"}
+(9,1,1) = {"
+kd
+kH
+wW
+mx
+mx
+mx
+mx
+mx
+OG
+wW
+"}
+(10,1,1) = {"
+wW
+kd
+kd
+fV
+kd
+OG
+vs
+SK
+wW
+wW
+"}
