@@ -14,6 +14,7 @@
 #include "_maps\templates\hell.dm"
 #include "_maps\templates\hellwatch.dm"
 #include "_maps\templates\mountain.dm"
+#include "_maps\templates\multiz.dm"
 #include "_maps\templates\sewers.dm"
 #include "_maps\templates\smalldungeons.dm"
 #include "_maps\templates\snow.dm"

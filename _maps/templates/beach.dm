@@ -79,3 +79,17 @@
 	name = "Arid Ruin Large"
 	id = "large_beach_ruin"
 	mappath = "_maps/map_files/templates/beach/large_beach_ruin.dmm"
+
+//Multi-Z exclusive templates below
+//TWO ZLEVELS MAXIMUM with any effect/roofing_helper
+//if you use 3zlevels, do not use roof generators!!! Shit will explode
+//These should only exist on z-level 1 of domotan_south.dmm, or domotan_west.dmm
+//15x15
+/obj/effect/landmark/map_load_mark/beach/multiz
+	name = "Tall Beach Template"
+	templates = list("tall_beach_crags")
+
+/datum/map_template/tall_beach_crags
+	name = "Tall Arid Rock Formation"
+	id = "tall_beach_crags"
+	mappath = "_maps/map_files/templates/beach/tall_beach_crags.dmm"
