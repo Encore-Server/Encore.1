@@ -43,7 +43,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	backr = /obj/item/storage/backpack/rogue/satchel/black
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 
 /datum/advclass/veteran/battlemaster
 	name = "Veteran Battlemaster"
@@ -418,3 +417,59 @@
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.cmode_music = 'sound/music/combat_fancy.ogg'
+
+/datum/advclass/veteran/lancer
+	name = "Steppe Lancer"
+	tutorial = "Your finest memories involve rolling plains, your staiga, your lance, and the rush of victory. Nowadays your joints creak when you mount up and you miss the country of your birth. Nonetheless there are few ways to kill a man from mounted combat you do not know and the next generation awaits."
+	outfit = /datum/outfit/job/roguetown/vet/lancer
+	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/tame/saddled
+
+	category_tags = list(CTAG_VETERAN)
+
+// You get a SAIGA. Saigas are pretty good, you lose out on your legendary weapon skills and you suck more on foot though.
+
+/datum/outfit/job/roguetown/vet/lancer/pre_equip(mob/living/carbon/human/H)
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+	beltl = /obj/item/rogueweapon/sword/sabre
+	beltr = /obj/item/storage/keyring/guardcastle
+	head = /obj/item/clothing/head/roguetown/papakha
+	pants = /obj/item/clothing/under/roguetown/chainlegs
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	shoes = /obj/item/clothing/shoes/roguetown/ridingboots
+	beltr = /obj/item/storage/keyring/guardcastle
+	backr = /obj/item/storage/backpack/rogue/satchel/black
+	r_hand = /obj/item/rogueweapon/spear
+
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/clothing/head/roguetown/helmet/sallet = 1, /obj/item/clothing/neck/roguetown/chaincoif = 1)
+	if(H.mind)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE) 
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/riding, 5, TRUE)
+		H.change_stat("perception", 1)
+		H.change_stat("intelligence", 1)
+		H.change_stat("endurance", 2)
+		H.change_stat("constitution", 2)
+		H.change_stat("speed", -1)
+		if(H.age == AGE_OLD)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE) // You get a lot of weapon skills, but none are legendary. Jack of all trades, master of none. This is probably worse than just having legendary in one, as people rarely swap weapons mid-combat.
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
+	H.verbs |= /mob/proc/haltyell
+	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
