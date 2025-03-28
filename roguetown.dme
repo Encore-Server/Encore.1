@@ -3339,6 +3339,7 @@
 #include "code\modules\spells\roguetown\acolyte\general.dm"
 #include "code\modules\spells\roguetown\acolyte\healing.dm"
 #include "code\modules\spells\roguetown\acolyte\illusion.dm"
+#include "code\modules\spells\roguetown\acolyte\other.dm"
 #include "code\modules\spells\roguetown\acolyte\undead.dm"
 #include "code\modules\spells\spell_types\aimed.dm"
 #include "code\modules\spells\spell_types\area_teleport.dm"

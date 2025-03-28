@@ -224,7 +224,9 @@
 		/obj/effect/proc_holder/spell/invoked/projectile/frostbolt,
 		/obj/effect/proc_holder/spell/invoked/poisonspray,
 		/obj/effect/proc_holder/spell/invoked/gravity,
+		/obj/effect/proc_holder/spell/invoked/projectile/repel,
 	)
+	
 	for(var/i = 1, i <= spell_choices.len, i++)
 		choices["[spell_choices[i].name]: [spell_choices[i].cost]"] = spell_choices[i]
 
@@ -360,6 +362,7 @@
 			playsound(get_turf(L), 'sound/magic/magic_nulled.ogg', 100)
 			return
 		L.Immobilize(duration)
+		L.OffBalance(duration)
 		L.visible_message("<span class='warning'>[L] is held by tendrils of arcyne force!</span>")
 		new /obj/effect/temp_visual/slowdown_spell_aoe/long(get_turf(L))
 
@@ -1088,6 +1091,7 @@
 	name = "Gravity"
 	desc = "Weighten space around someone, crushing them and knocking them to the floor. Stronger opponets will resist and be off-balanced."
 	cost = 2
+	overlay_state = "hierophant"
 	xp_gain = TRUE
 	releasedrain = 20
 	chargedrain = 1
@@ -1126,8 +1130,6 @@
 				L.adjustBruteLoss(15)
 				to_chat(L, "<span class='userdanger'>You're magically weighed down, your strength resist!</span>")
 
-
-
 /obj/effect/temp_visual/gravity
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "hierophant_squares"
@@ -1138,6 +1140,52 @@
 	layer = MASSIVE_OBJ_LAYER
 	light_range = 2
 	light_color = COLOR_PALE_PURPLE_GRAY
+
+/obj/effect/proc_holder/spell/invoked/projectile/repel
+	name = "Repel"
+	desc = "Shoot out a magical bolt that pushes the target struck away from the caster."
+	clothes_req = FALSE
+	range = 10
+	projectile_type = /obj/projectile/magic/repel
+	overlay_state = ""
+	sound = list('sound/magic/unmagnet.ogg')
+	active = FALSE
+	releasedrain = 7
+	chargedrain = 0
+	chargetime = 0
+	warnie = "spellwarning"
+	overlay_state = "fetch"
+	no_early_release = TRUE
+	charging_slowdown = 1
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	cost = 1
+	xp_gain = TRUE
+
+/obj/projectile/magic/repel
+	name = "bolt of repeling"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "curseblob"
+	range = 15
+
+/obj/projectile/magic/repel/on_hit(target)
+
+	var/atom/throw_target = get_edge_target_turf(firer, get_dir(firer, target)) //ill be real I got no idea why this worked.
+	if(isliving(target))
+		var/mob/living/L = target
+		if(L.anti_magic_check() || !firer)
+			L.visible_message(span_warning("[src] vanishes on contact with [target]!"))
+			return BULLET_ACT_BLOCK
+		L.throw_at(throw_target, 7, 4)
+	else
+		if(isitem(target))
+			var/obj/item/I = target
+			var/mob/living/carbon/human/carbon_firer
+			if (ishuman(firer))
+				carbon_firer = firer
+				if (carbon_firer?.can_catch_item())
+					throw_target = get_edge_target_turf(firer, get_dir(firer, target))
+			I.throw_at(throw_target, 7, 4)
 
 #undef PRESTI_CLEAN
 #undef PRESTI_SPARK
