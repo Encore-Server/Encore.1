@@ -23374,6 +23374,11 @@
 	icon_state = "longtable_mid";
 	dir = 1
 	},
+/obj/item/scomstone,
+/obj/item/scomstone,
+/obj/item/scomstone/bad,
+/obj/item/scomstone/bad,
+/obj/item/scomstone/bad,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/vault)
 "ydh" = (
