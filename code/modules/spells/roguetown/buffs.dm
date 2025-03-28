@@ -193,6 +193,7 @@
 	to_chat(owner, span_warning("My limbs move with uncanny swiftness."))
 
 /datum/status_effect/buff/haste/on_remove()
+	. = ..()
 	owner.remove_filter(HASTE_FILTER)
 	to_chat(owner, span_warning("My body move slowly again..."))
 

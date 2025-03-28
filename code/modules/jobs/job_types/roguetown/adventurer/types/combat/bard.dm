@@ -62,6 +62,7 @@
 			H.change_stat("perception", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", 2)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
 		if("Skald") // Less skilled, better martial prowess. Also a sword!
@@ -86,6 +87,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/music, 5, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			head = /obj/item/clothing/head/roguetown/bardhat
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/tights/random
@@ -125,6 +127,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			H.mind.adjust_spellpoints(1) // total of 3
 			head = /obj/item/clothing/head/roguetown/physician
 			shoes = /obj/item/clothing/shoes/roguetown/boots
@@ -160,6 +163,7 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
 			head = /obj/item/clothing/head/roguetown/bardhat
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			pants = /obj/item/clothing/under/roguetown/tights/black

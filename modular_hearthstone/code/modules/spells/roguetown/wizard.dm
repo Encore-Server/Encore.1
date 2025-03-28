@@ -225,6 +225,8 @@
 		/obj/effect/proc_holder/spell/invoked/poisonspray,
 		/obj/effect/proc_holder/spell/invoked/gravity,
 		/obj/effect/proc_holder/spell/invoked/projectile/repel,
+		/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt,
+		/obj/effect/proc_holder/spell/invoked/blink,
 	)
 	
 	for(var/i = 1, i <= spell_choices.len, i++)
@@ -1186,6 +1188,178 @@
 				if (carbon_firer?.can_catch_item())
 					throw_target = get_edge_target_turf(firer, get_dir(firer, target))
 			I.throw_at(throw_target, 7, 4)
+
+/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt //makes you confused for 2 seconds,
+	name = "Arcyne Bolt"
+	desc = "Shoot out a rapid bolt of arcyne magic that hits on impact. Little damage, but disorienting."
+	clothes_req = FALSE
+	range = 12
+	projectile_type = /obj/projectile/energy/rogue3
+	overlay_state = "force_dart"
+	sound = list('sound/magic/vlightning.ogg')
+	active = FALSE
+	releasedrain = 20
+	chargedrain = 1
+	chargetime = 7
+	charge_max = 20 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	cost = 1
+
+/obj/projectile/energy/rogue3
+	name = "Arcyne Bolt"
+	icon_state = "arcane_barrage"
+	damage = 30
+	damage_type = BRUTE
+	armor_penetration = 10
+	woundclass = BCLASS_SMASH
+	nodamage = FALSE
+	flag = "bullet"
+	hitsound = 'sound/combat/hits/blunt/shovel_hit2.ogg'
+	speed = 1
+
+/obj/projectile/energy/rogue3/on_hit(target)
+	. = ..()
+	if(ismob(target))
+		var/mob/living/carbon/M = target
+		if(M.anti_magic_check())
+			visible_message(span_warning("[src] fizzles on contact with [target]!"))
+			playsound(get_turf(target), 'sound/magic/magic_nulled.ogg', 100)
+			qdel(src)
+			return BULLET_ACT_BLOCK
+		M.confused += 3
+		playsound(get_turf(target), 'sound/combat/hits/blunt/shovel_hit2.ogg', 100) //CLANG
+	else
+		return
+
+
+
+
+/obj/effect/proc_holder/spell/invoked/blink
+	name = "Blink"
+	desc = "Teleport to a targeted location within your field of view. Limited to a range of 5 tiles. Only works on the same plane as the caster."
+	school = "conjuration"
+	cost = 1
+	releasedrain = 30
+	chargedrain = 1
+	chargetime = 1.5 SECONDS
+	charge_max = 10 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 2
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune6"
+	xp_gain = TRUE
+	var/max_range = 5
+	var/phase = /obj/effect/temp_visual/blink
+
+/obj/effect/temp_visual/blink
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "hierophant_blast"
+	name = "teleportation magic"
+	desc = "Get out of the way!"
+	randomdir = FALSE
+	duration = 4 SECONDS
+	layer = MASSIVE_OBJ_LAYER
+	light_color = COLOR_PALE_PURPLE_GRAY
+
+/obj/effect/temp_visual/blink/Initialize(mapload, new_caster)
+	. = ..()
+	var/turf/src_turf = get_turf(src)
+	playsound(src_turf,'sound/magic/blink.ogg', 65, TRUE, -5)
+
+/obj/effect/proc_holder/spell/invoked/blink/cast(list/targets, mob/user = usr)
+	var/turf/T = get_turf(targets[1])
+	var/turf/start = get_turf(user)
+	
+	if(!T)
+		to_chat(user, span_warning("Invalid target location!"))
+		revert_cast()
+		return
+
+	if(T.z != start.z)
+		to_chat(user, span_warning("I can only teleport on the same plane!"))
+		revert_cast()
+		return
+	
+	if(istransparentturf(T))
+		to_chat(user, span_warning("I cannot teleport to the open air!"))
+		revert_cast()
+		return
+
+	if(T.density)
+		to_chat(user, span_warning("I cannot teleport into a wall!"))
+		revert_cast()
+		return
+
+	// Check range limit
+	var/distance = get_dist(start, T)
+	if(distance > max_range)
+		to_chat(user, span_warning("That location is too far away! I can only blink up to [max_range] tiles."))
+		revert_cast()
+		return
+	
+	// Display a more obvious preparation message
+	user.visible_message(span_warning("<b>[user]'s body begins to shimmer with arcane energy as [user.p_they()] prepare[user.p_s()] to blink!</b>"), 
+						span_notice("<b>I focus my arcane energy, preparing to blink across space!</b>"))
+		
+	// Check if there's a wall in the way, but exclude the target turf
+	var/list/turf_list = getline(start, T)
+	// Remove the last turf (target location) from the check
+	if(length(turf_list) > 0)
+		turf_list.len--
+	
+	for(var/turf/turf in turf_list)
+		if(turf.density)
+			to_chat(user, span_warning("I cannot blink through walls!"))
+			revert_cast()
+			return
+			
+	// Check for doors and bars in the path
+	for(var/turf/traversal_turf in turf_list)
+		// Check for mineral doors
+		for(var/obj/structure/mineral_door/door in (traversal_turf.contents + T.contents))
+			if(door.density)
+				to_chat(user, span_warning("I cannot blink through doors!"))
+				revert_cast()
+				return
+				
+		// Check for windows
+		for(var/obj/structure/roguewindow/window in (traversal_turf.contents + T.contents))
+			if(window.density && !window.climbable)
+				to_chat(user, span_warning("I cannot blink through windows!"))
+				revert_cast()
+				return
+				
+		// Check for bars
+		for(var/obj/structure/bars/bars in (traversal_turf.contents + T.contents))
+			if(bars.density)
+				to_chat(user, span_warning("I cannot blink through bars!"))
+				revert_cast()
+				return
+
+		// Check for gates
+		for (var/obj/structure/gate/gate in (traversal_turf.contents + T.contents))
+			if(gate.density)
+				to_chat(user, span_warning("I cannot blink through gates!"))
+				revert_cast()
+				return
+
+	var/obj/spot_one = new phase(start, user.dir)
+	var/obj/spot_two = new phase(T, user.dir)
+
+	spot_one.Beam(spot_two, "purple_lightning", time = 1.5 SECONDS)
+
+	do_teleport(user, T, channel = TELEPORT_CHANNEL_MAGIC)
+	
+	user.visible_message(span_danger("<b>[user] vanishes in a mysterious purple flash!</b>"), span_notice("<b>I blink through space in an instant!</b>"))
+	return TRUE
 
 #undef PRESTI_CLEAN
 #undef PRESTI_SPARK
