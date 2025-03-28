@@ -652,66 +652,6 @@
 		attached_spell.remove_hand()
 	return
 
-/obj/effect/proc_holder/spell/invoked/featherfall
-	name = "Featherfall"
-	desc = "Grant yourself and any creatures adjacent to you some defense against falls."
-	cost = 1
-	xp_gain = TRUE
-	school = "transmutation"
-	releasedrain = 50
-	chargedrain = 0
-	chargetime = 10 SECONDS
-	charge_max = 2 MINUTES
-	warnie = "spellwarning"
-	no_early_release = TRUE
-	movement_interrupt = TRUE
-	charging_slowdown = 2
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-	overlay_state = "jump"
-
-/obj/effect/proc_holder/spell/invoked/featherfall/cast(list/targets, mob/user = usr)
-
-	user.visible_message("[user] mutters an incantation and a dim pulse of light radiates out from them.")
-
-	for(var/mob/living/L in range(1, usr))
-		L.apply_status_effect(/datum/status_effect/buff/featherfall)
-
-	return TRUE
-
-/obj/effect/proc_holder/spell/invoked/haste
-	name = "Haste"
-	desc = "Cause a target to be magically hastened."
-	cost = 2
-	xp_gain = TRUE
-	releasedrain = 60
-	chargedrain = 1
-	chargetime = 1 SECONDS
-	charge_max = 1.5 MINUTES
-	warnie = "spellwarning"
-	school = "transmutation"
-	no_early_release = TRUE
-	movement_interrupt = FALSE
-	charging_slowdown = 2
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-
-/obj/effect/proc_holder/spell/invoked/haste/cast(list/targets, mob/user)
-	var/atom/A = targets[1]
-	if(!isliving(A))
-		revert_cast()
-		return
-
-	var/mob/living/spelltarget = A
-	spelltarget.apply_status_effect(/datum/status_effect/buff/haste)
-	playsound(get_turf(spelltarget), 'sound/magic/haste.ogg', 80, TRUE, soundping = TRUE)
-
-	if(spelltarget != user)
-		user.visible_message("[user] mutters an incantation and [spelltarget] briefly shines yellow.")
-	else
-		user.visible_message("[user] mutters an incantation and they briefly shine yellow.")
-
-	return TRUE
 
 /obj/effect/proc_holder/spell/invoked/knock
 	name = "Knock"
@@ -752,31 +692,6 @@
 /obj/effect/proc_holder/spell/invoked/knock/proc/open_window(obj/structure/roguewindow/openclose/W)
 	if(istype(W))
 		W.force_open()
-
-/obj/effect/proc_holder/spell/invoked/longstrider
-	name = "Longstrider"
-	desc = "Grant yourself and any creatures adjacent to you free movement through rough terrain."
-	cost = 1
-	xp_gain = TRUE
-	school = "transmutation"
-	releasedrain = 50
-	chargedrain = 0
-	chargetime = 4 SECONDS
-	charge_max = 1.5 MINUTES
-	warnie = "spellwarning"
-	no_early_release = TRUE
-	charging_slowdown = 1
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-
-/obj/effect/proc_holder/spell/invoked/longstrider/cast(list/targets, mob/user = usr)
-
-	user.visible_message("[user] mutters an incantation and a dim pulse of light radiates out from them.")
-
-	for(var/mob/living/L in range(1, usr))
-		L.apply_status_effect(/datum/status_effect/buff/longstrider)
-
-	return TRUE
 
 //ports -- todo: sfx
 
