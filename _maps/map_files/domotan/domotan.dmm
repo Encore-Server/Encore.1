@@ -6790,7 +6790,6 @@
 /obj/item/roguekey/dungeon,
 /obj/item/roguekey/graveyard,
 /obj/item/roguekey/garrison,
-/obj/item/roguekey/mercenary,
 /obj/item/roguekey/tavern,
 /obj/item/roguekey/merchant,
 /obj/item/roguekey/physician,

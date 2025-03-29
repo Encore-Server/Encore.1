@@ -315,7 +315,7 @@
 	icon_state = "brownkey"
 	lockid = "nightmaiden"
 
-/obj/item/roguekey/mercenary
+/obj/item/roguekey/mercenary // Currently unused for anything, as the adventurer's guild in the tavern is unlocked for the public
 	name = "mercenary key"
 	desc = "Why, a mercenary would not kick doors down."
 	icon_state = "greenkey"

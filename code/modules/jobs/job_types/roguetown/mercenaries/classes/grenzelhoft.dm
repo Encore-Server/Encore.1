@@ -77,6 +77,6 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backl = /obj/item/gwstrap
 
-	backpack_contents = list(/obj/item/roguekey/mercenary)
+	backpack_contents = list()
 
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)

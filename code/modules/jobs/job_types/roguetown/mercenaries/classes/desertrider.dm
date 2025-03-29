@@ -85,5 +85,5 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	H.grant_language(/datum/language/celestial)
 
-	backpack_contents = list(/obj/item/roguekey/mercenary, /obj/item/rogueweapon/huntingknife/idagger/navaja, /obj/item/clothing/neck/roguetown/shalal)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/navaja, /obj/item/clothing/neck/roguetown/shalal)
 
