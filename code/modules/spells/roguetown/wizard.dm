@@ -17,7 +17,7 @@
 	charging_slowdown = 3
 	chargedloop = /datum/looping_sound/invokelightning
 	associated_skill = /datum/skill/magic/arcane
-	cost = 2
+	cost = 1
 	xp_gain = TRUE
 
 /obj/projectile/magic/lightning
@@ -48,9 +48,11 @@
 		if(isliving(target))
 			var/mob/living/L = target
 			if(L.STACON <= 14)
-				L.electrocute_act(3, src)
+				L.electrocute_act(2, src, 2, SHOCK_NOSTUN)
+				L.Paralyze(10)
 			else
-				L.electrocute_act(2, src)
+				L.electrocute_act(1, src, 1, SHOCK_NOSTUN)
+				L.Paralyze(10)
 	qdel(src)
 
 /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning

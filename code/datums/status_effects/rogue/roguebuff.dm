@@ -197,20 +197,6 @@
 	to_chat(owner, span_warning("The darkness returns to normal."))
 	REMOVE_TRAIT(owner, TRAIT_DARKVISION, MAGIC_TRAIT)
 
-/atom/movable/screen/alert/status_effect/buff/haste
-	name = "Haste"
-	desc = "I am magically hastened."
-	icon_state = "buff"
-
-/datum/status_effect/buff/haste
-	id = "haste"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/haste
-	effectedstats = list("speed" = 5)
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/haste/nextmove_modifier()
-	return 0.85
-
 /atom/movable/screen/alert/status_effect/buff/longstrider
 	name = "Longstrider"
 	desc = "I can easily walk through rough terrain."
@@ -321,39 +307,25 @@
 	alert_type = /atom/movable/screen/alert/status_effect/buff/fortify
 	duration = 1 MINUTES
 
-/datum/status_effect/buff/fortitude
-	id = "fortitude"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/fortitude
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/fortitude/on_apply()
-	. = ..()
-	to_chat(owner, span_warning("My body feels lighter..."))
-	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
-
-/datum/status_effect/buff/fortitude/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
-	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
-
-/atom/movable/screen/alert/status_effect/buff/guidance
-	name = "Guidance"
-	desc = "Arcyne assistance guides my hands."
-	icon_state = "buff"
-
-/datum/status_effect/buff/guidance
-	id = "guidance"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/guidance
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/guidance/on_apply()
-	. = ..()
-	to_chat(owner, span_warning("I have better control over my accuracy!"))
-	ADD_TRAIT(owner, TRAIT_GUIDANCE, MAGIC_TRAIT)
-
-/datum/status_effect/buff/guidance/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("My feeble mind muddies my warcraft once more."))
-	REMOVE_TRAIT(owner, TRAIT_GUIDANCE, MAGIC_TRAIT)
-
 #undef MIRACLE_HEALING_FILTER
+
+// Mage Armor
+/atom/movable/screen/alert/status_effect/buff/magearmor
+	name = "Weakened Barrier"
+	desc = "My magical barrier is weakened."
+	icon_state = "stressvg"
+
+/datum/status_effect/buff/magearmor
+	id = "magearmor"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/magearmor
+
+/datum/status_effect/buff/magearmor/on_apply()
+	. = ..()
+	playsound(owner, 'sound/magic/magearmordown.ogg', 75, FALSE)
+	duration = (7-owner.mind.get_skill_level(/datum/skill/magic/arcane)) MINUTES
+
+/datum/status_effect/buff/magearmor/on_remove()
+	. = ..()
+	to_chat(owner, span_warning("My magical barrier reforms."))
+	playsound(owner, 'sound/magic/magearmorup.ogg', 75, FALSE)
+	owner.magearmor = 0
