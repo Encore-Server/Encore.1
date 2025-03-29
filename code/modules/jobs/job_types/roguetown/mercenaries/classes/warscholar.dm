@@ -74,7 +74,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/hierophant
 			shirt = /obj/item/clothing/suit/roguetown/shirt/robe/hierophant
 			pants = /obj/item/clothing/under/roguetown/trou/leather
-			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife)
 
 		if("Pontifex")//TBD-Class Overhaul
 			H.set_blindness(0)
@@ -101,7 +101,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/pontifex
 			shirt = /obj/item/clothing/suit/roguetown/shirt/robe/pointfex
 			pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex
-			backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife)
 
 		if("Vizier")//TBD-Class Overhaul
 			H.set_blindness(0)
@@ -142,7 +142,7 @@
 			else
 				shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord // FUCK YOU ZETH, WHY DOESN'T THE ARMING JACKET GET WOMEN SPRITES.
 
-				backpack_contents = list(/obj/item/roguekey/mercenary,/obj/item/rogueweapon/huntingknife)
+				backpack_contents = list(/obj/item/rogueweapon/huntingknife)
 
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
 			C.grant_spells_templar(H)
