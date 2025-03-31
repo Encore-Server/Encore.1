@@ -62,7 +62,7 @@
 	invocation_type = "shout"
 	associated_skill = /datum/skill/magic/holy
 	antimagic_allowed = TRUE
-	charge_max = 5 MINUTES
+	charge_max = 10 MINUTES
 	chargetime = 2 SECONDS
 	miracle = TRUE
 	charging_slowdown = 3
@@ -350,7 +350,7 @@ var/global/list/anvil_recipe_prices[][]
 
 /obj/effect/proc_holder/spell/invoked/hammerfall/cast(list/targets, mob/user = usr)
 	var/turf/fallzone = null
-	var/const/damage = 1000 //Structural damage the spell does. At 250, it would take 4 casts (8 minutes and 320 devotion) to destroy a normal door.
+	var/const/damage = 1500 //Structural damage the spell does. At 250, it would take 4 casts (8 minutes and 320 devotion) to destroy a normal door.
 	var/const/radius = 1 //Radius of the spell
 	var/const/shakeradius = 14 //Radius of the quake
 	var/diceroll = 0
@@ -384,60 +384,12 @@ var/global/list/anvil_recipe_prices[][]
 		aoemining.lastminer = usr
 		aoemining.take_damage(damage,BRUTE,"blunt",1)
 
-/obj/effect/proc_holder/spell/invoked/goler_Kanh_rogue
-	name = "Goler Kanh's Fire"
-	overlay_state = "sacredflame"
-	releasedrain = 15
-	chargedrain = 0
-	chargetime = 0
-	range = 15
-	warnie = "sydwarning"
-	movement_interrupt = FALSE
-	chargedloop = null
-	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
-	sound = 'sound/magic/heal.ogg'
-	invocation = "Flame."
-	invocation_type = "whisper"
-	associated_skill = /datum/skill/magic/holy
-	antimagic_allowed = TRUE
-	charge_max = 15 SECONDS
-	miracle = TRUE
-	devotion_cost = 15
-
-/obj/effect/proc_holder/spell/invoked/malum_flame_rogue/cast(list/targets, mob/user = usr)
-	. = ..()
-	if(isliving(targets[1]))
-		var/mob/living/L = targets[1]
-		user.visible_message("<font color='yellow'>[user] points at [L]!</font>")
-		if(L.anti_magic_check(TRUE, TRUE))
-			return FALSE
-		L.adjust_fire_stacks(1)
-		L.IgniteMob()
-		return TRUE
-
-	// Spell interaction with ignitable objects (burn wooden things, light torches up)
-	else if(isobj(targets[1]))
-		var/obj/O = targets[1]
-		if(O.fire_act())
-			user.visible_message("<font color='yellow'>[user] points at [O], igniting it with sacred flames!</font>")
-			return TRUE
-		else
-			to_chat(user, span_warning("You point at [O], but it fails to catch fire."))
-			return FALSE
-	return FALSE
-
-
-/obj/effect/temp_visual/lavastaff
-	icon_state = "lavastaff_warn"
-	duration = 50
-
-
 
 /obj/effect/proc_holder/spell/invoked/mockery
 	name = "Vicious Mockery"
 	releasedrain = 50
 	associated_skill = /datum/skill/misc/music
-	charge_max = 1 
+	charge_max = 2 MINUTES
 	range = 7
 
 /obj/effect/proc_holder/spell/invoked/mockery/cast(list/targets, mob/user = usr)
@@ -450,6 +402,7 @@ var/global/list/anvil_recipe_prices[][]
 			revert_cast()
 			return FALSE
 		target.apply_status_effect(/datum/status_effect/debuff/viciousmockery)	
+		target.add_stress(/datum/stressevent/mockery)
 		return TRUE
 	revert_cast()
 	return FALSE
@@ -732,7 +685,7 @@ var/global/list/anvil_recipe_prices[][]
 			target.apply_status_effect(/datum/status_effect/debuff/call_to_arms)	//Debuffs heretics.
 			return
 		if(istype(target.patron, /datum/patron/elemental))
-			to_chat(target, span_danger("You feel a hot-wave wash over you, leaving as quickly as it came.."))	//No effect on Psydonians!
+			to_chat(target, span_danger("You feel a hot-wave wash over you, leaving as quickly as it came.."))	//No effect on elementals!
 			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
 			return
 	return ..()
@@ -769,7 +722,7 @@ var/global/list/anvil_recipe_prices[][]
 //Revel in Slaughter - Self-healing by consuming blood around you; large healing, has delay though.
 /obj/effect/proc_holder/spell/invoked/revel_in_slaughter
 	name = "Revel in Slaughter"
-	desc = "The blood of your enemy shall boil, their skin feeling as if it's being ripped apart! Gaggar demands their blood must FLOW!!!."
+	desc = "The blood of your enemy shall boil, their skin feeling as if it's being ripped apart! Hell demands their blood must FLOW!!!."
 	overlay_state = "bloodsteal"
 	charge_max = 5 MINUTES
 	invocation = "YOUR BLOOD WILL BOIL TILL IT'S SPILLED!"

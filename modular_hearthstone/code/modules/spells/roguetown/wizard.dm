@@ -1197,7 +1197,7 @@
 	releasedrain = 35
 	chargedrain = 1
 	chargetime = 30
-	charge_max = 120 SECONDS
+	charge_max = 240 SECONDS
 	warnie = "spellwarning"
 	no_early_release = TRUE
 	movement_interrupt = FALSE
@@ -1214,7 +1214,7 @@
 			return
 		ADD_TRAIT(target, TRAIT_ZJUMP, MAGIC_TRAIT)
 		to_chat(target, span_warning("My legs feel stronger! I feel like I can jump up high!"))
-		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 20 SECONDS)
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 15 SECONDS)
 		return TRUE
 
 
@@ -1261,7 +1261,7 @@
 	name = "Repel"
 	desc = "Shoot out a magical bolt that pushes the target struck away from the caster."
 	clothes_req = FALSE
-	range = 10
+	range = 4
 	projectile_type = /obj/projectile/magic/repel
 	overlay_state = ""
 	sound = list('sound/magic/unmagnet.ogg')
@@ -1269,6 +1269,7 @@
 	releasedrain = 7
 	chargedrain = 0
 	chargetime = 0
+	charge_max = 40 SECONDS
 	warnie = "spellwarning"
 	overlay_state = "fetch"
 	no_early_release = TRUE
@@ -1345,7 +1346,7 @@
 			playsound(get_turf(target), 'sound/magic/magic_nulled.ogg', 100)
 			qdel(src)
 			return BULLET_ACT_BLOCK
-		M.confused += 3
+		M.confused += 4
 		playsound(get_turf(target), 'sound/combat/hits/blunt/shovel_hit2.ogg', 100) //CLANG
 	else
 		return

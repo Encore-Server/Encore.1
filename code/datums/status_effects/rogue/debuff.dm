@@ -289,6 +289,6 @@
 
 /atom/movable/screen/alert/status_effect/debuff/call_to_slaughter
 	name = "Call to Slaughter"
-	desc = "A putrid rotting scent fills your nose as Graggar's call for slaughter rattles you to your core.."
+	desc = "A putrid rotting scent fills your nose as hell's call for slaughter rattles you to your core.."
 	icon_state = "call_to_slaughter"
 

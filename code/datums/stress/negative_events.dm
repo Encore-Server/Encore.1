@@ -281,3 +281,8 @@
 	stressadd = 3
 	desc = span_red("They look like the stuff of nightmares!")
 	timer = 5 MINUTES
+
+/datum/stressevent/mockery
+	stressadd = 8
+	desc = span_red("How dare they utter such a thing!?")
+	timer = 5 MINUTES
