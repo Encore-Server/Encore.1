@@ -1174,6 +1174,7 @@
 		target.transform = target.transform.Scale(1.25, 1.25)
 		target.transform = target.transform.Translate(0, (0.25 * 16))
 		target.update_transform()
+		target.apply_status_effect(/datum/status_effect/buff/enlarge)
 		to_chat(target, span_warning("I feel taller than usual, and like I could run through a door!"))
 		target.visible_message("[target]'s body grows in size!")
 		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 60 SECONDS)
@@ -1185,6 +1186,7 @@
 	target.transform = target.transform.Translate(0, -(0.25 * 16))
 	target.transform = target.transform.Scale(1/1.25, 1/1.25)      
 	target.update_transform()
+	target.remove_status_effect(/datum/status_effect/buff/enlarge)
 	to_chat(target, span_warning("I feel smaller all of a sudden."))
 	target.visible_message("[target]'s body shrinks quickly!")
 
@@ -1201,7 +1203,7 @@
 	movement_interrupt = FALSE
 	charging_slowdown = 3
 	associated_skill = /datum/skill/magic/arcane
-	overlay_state = "rune5"
+	overlay_state = "rune3"
 
 /obj/effect/proc_holder/spell/invoked/leap/cast(list/targets, mob/user = usr)
 	if(isliving(targets[1]))

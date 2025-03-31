@@ -254,3 +254,41 @@
 	name = "Chilled"
 	desc = "I can barely feel my limbs!"
 	icon_state = "chilled"
+
+/datum/status_effect/debuff/call_to_arms
+	id = "call_to_arms"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/call_to_arms
+	duration = 1 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/call_to_arms
+	name = "Call to Arms"
+	desc = "His voice keeps ringing in your ears, rocking your soul.."
+	icon_state = "call_to_arms"
+
+/datum/status_effect/debuff/chained_burden
+	id = "chained_burden"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/chained_burden
+	effectedstats = list("speed" = -2, "endurance" = -3)
+	duration = 12 SECONDS
+
+/atom/movable/screen/alert/status_effect/debuff/chained_burden
+	name = "Chained Burden"
+	desc = "My arms and legs are restrained by divine chains!\n"
+	icon_state = "restrained"
+
+/atom/movable/screen/alert/status_effect/debuff/chained_burden
+	name = "Chained Burden"
+	desc = "My arms and legs are restrained by divine chains!\n"
+	icon_state = "restrained"
+
+/datum/status_effect/debuff/call_to_slaughter
+	id = "call_to_slaughter"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/call_to_slaughter
+	effectedstats = list("endurance" = -2, "constitution" = -2)
+	duration = 2.5 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = "A putrid rotting scent fills your nose as Graggar's call for slaughter rattles you to your core.."
+	icon_state = "call_to_slaughter"
+

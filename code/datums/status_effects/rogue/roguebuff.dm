@@ -296,11 +296,33 @@
 
 /datum/status_effect/buff/healing/on_remove()
 	owner.remove_filter(MIRACLE_HEALING_FILTER)
+
+
+/atom/movable/screen/alert/status_effect/buff/convergence
+	name = "Convergence Miracle"
+	desc = "My body converges to whence it found strength and health."
+	icon_state = "buff"
+
+/atom/movable/screen/alert/status_effect/buff/stasis
+	name = "Stasis Miracle"
+	desc = "A part of me has been put in stasis."
+	icon_state = "buff"
 	
 /atom/movable/screen/alert/status_effect/buff/fortify
 	name = "Fortifying Miracle"
 	desc = "Divine intervention bolsters me and aids my recovery."
 	icon_state = "buff"
+
+/datum/status_effect/buff/convergence //Increases all healing while it lasts.
+	id = "convergence"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/convergence
+	duration = 1 MINUTES
+
+/datum/status_effect/buff/stasis //Increases all healing while it lasts.
+	id = "stasis"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/stasis
+	duration = 10 SECONDS
+
 
 /datum/status_effect/buff/fortify //Increases all healing while it lasts.
 	id = "fortify"
@@ -329,3 +351,35 @@
 	to_chat(owner, span_warning("My magical barrier reforms."))
 	playsound(owner, 'sound/magic/magearmorup.ogg', 75, FALSE)
 	owner.magearmor = 0
+
+/datum/status_effect/buff/call_to_arms
+	id = "call_to_arms"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_arms
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_arms
+	name = "Call to Arms"
+	desc = span_bloody("FOR GLORY AND HONOR!")
+	icon_state = "call_to_arms"
+
+/datum/status_effect/buff/call_to_slaughter
+	id = "call_to_slaughter"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = span_bloody("LAMBS TO THE SLAUGHTER!")
+	icon_state = "call_to_slaughter"
+
+/datum/status_effect/buff/enlarge
+	id = "enlarge_buff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/enlarge
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/enlarge
+	name = "Enlarge Buff"
+	icon_state = "muscle"

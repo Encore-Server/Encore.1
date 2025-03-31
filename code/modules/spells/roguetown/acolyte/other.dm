@@ -1,3 +1,5 @@
+// Stuff Currently Unsorted
+
 /obj/effect/proc_holder/spell/invoked/vigorousexchange
 	name = "Vigorous Exchange"
 	overlay_state = "vigorousexchange"
@@ -348,9 +350,9 @@ var/global/list/anvil_recipe_prices[][]
 
 /obj/effect/proc_holder/spell/invoked/hammerfall/cast(list/targets, mob/user = usr)
 	var/turf/fallzone = null
-	var/const/damage = 250 //Structural damage the spell does. At 250, it would take 4 casts (8 minutes and 320 devotion) to destroy a normal door.
+	var/const/damage = 1000 //Structural damage the spell does. At 250, it would take 4 casts (8 minutes and 320 devotion) to destroy a normal door.
 	var/const/radius = 1 //Radius of the spell
-	var/const/shakeradius = 7 //Radius of the quake
+	var/const/shakeradius = 14 //Radius of the quake
 	var/diceroll = 0
 	var/const/dc = 42 //Code will roll 2d20 and add target's perception and Speed then compare to this to see if they fall down or not. 42 Means they need to roll 2x 20 with Speed and Perception at I
 	var/const/delay = 2 SECONDS // Delay between the ground marking appearing and the effect playing.
@@ -382,7 +384,7 @@ var/global/list/anvil_recipe_prices[][]
 		aoemining.lastminer = usr
 		aoemining.take_damage(damage,BRUTE,"blunt",1)
 
-/obj/effect/proc_holder/spell/invoked/goler_Kanh_flame_rogue
+/obj/effect/proc_holder/spell/invoked/goler_Kanh_rogue
 	name = "Goler Kanh's Fire"
 	overlay_state = "sacredflame"
 	releasedrain = 15
@@ -402,7 +404,7 @@ var/global/list/anvil_recipe_prices[][]
 	miracle = TRUE
 	devotion_cost = 15
 
-/obj/effect/proc_holder/spell/invoked/goler_kanh_flame_rogue/cast(list/targets, mob/user = usr)
+/obj/effect/proc_holder/spell/invoked/malum_flame_rogue/cast(list/targets, mob/user = usr)
 	. = ..()
 	if(isliving(targets[1]))
 		var/mob/living/L = targets[1]
@@ -430,26 +432,31 @@ var/global/list/anvil_recipe_prices[][]
 	duration = 50
 
 
+
 /obj/effect/proc_holder/spell/invoked/mockery
 	name = "Vicious Mockery"
 	releasedrain = 50
 	associated_skill = /datum/skill/misc/music
-	charge_max = 10 MINUTES
+	charge_max = 1 
 	range = 7
 
-/obj/effect/proc_holder/spell/invoked/mockery/cast(list/targets, mob/living/user)
+/obj/effect/proc_holder/spell/invoked/mockery/cast(list/targets, mob/user = usr)
 	playsound(get_turf(user), 'sound/magic/mockery.ogg', 40, FALSE)
-	for(var/mob/living/listener in hearers(7))
-		if(listener.can_hear()) // Vicious mockery requires people to be able to hear you.
-			listener.apply_status_effect(/datum/status_effect/debuff/viciousmockery)
-		else
-			return // No debuff for good guys
+	if(isliving(targets[1]))
+		var/mob/living/target = targets[1]
+		if(target.anti_magic_check(TRUE, TRUE))
+			return FALSE
+		if(!target.can_hear()) // Vicious mockery requires people to be able to hear you.
+			revert_cast()
+			return FALSE
+		target.apply_status_effect(/datum/status_effect/debuff/viciousmockery)	
+		return TRUE
+	revert_cast()
+	return FALSE
 
 /obj/effect/proc_holder/spell/invoked/mockery/invocation(mob/user = usr)
-	var/input = input(user, "Destroy that ego!")
-	if(!input)
-		revert_cast()
-		return
+	var/input = input(user, "What do you wish to say?")
+	user.say(input)
 
 /datum/status_effect/debuff/viciousmockery
 	id = "viciousmockery"
@@ -461,3 +468,335 @@ var/global/list/anvil_recipe_prices[][]
 	name = "Vicious Mockery"
 	desc = "<span class='warning'>THAT ARROGANT BARD! ARGH!</span>\n"
 	icon_state = "muscles"
+
+
+
+/obj/effect/proc_holder/spell/invoked/regression
+	name = "Regression"
+	overlay_state = "regression"
+	releasedrain = 30
+	chargedrain = 0
+	chargetime = 0
+	range = 4
+	warnie = "sydwarning"
+	movement_interrupt = FALSE
+	//sound = list('sound/magic/regression1.ogg','sound/magic/regression2.ogg','sound/magic/regression3.ogg','sound/magic/regression4.ogg')
+	invocation_type = "none"
+	associated_skill = /datum/skill/magic/holy
+	antimagic_allowed = TRUE
+	charge_max = 10 SECONDS
+	miracle = TRUE
+	devotion_cost = 10
+
+/obj/effect/proc_holder/spell/invoked/regression/cast(list/targets, mob/living/user)
+	. = ..()
+	if(isliving(targets[1]))
+		var/mob/living/target = targets[1]
+		target.visible_message(span_info("Order filled magic rewind [target]'s wounds!"), span_notice("My wounds, undone!"))
+		var/healing = 2.5
+		if(target.has_status_effect(/datum/status_effect/buff/stasis))
+			healing += 2.5
+		target.apply_status_effect(/datum/status_effect/buff/healing, healing)
+		return TRUE
+	revert_cast()
+	return FALSE
+
+/obj/effect/proc_holder/spell/invoked/convergence
+	name = "Convergence"
+	overlay_state = "convergence"
+	releasedrain = 30
+	chargedrain = 0
+	chargetime = 0
+	range = 4
+	warnie = "sydwarning"
+	movement_interrupt = FALSE
+//	chargedloop = /datum/looping_sound/invokeholy
+	chargedloop = null
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
+	//sound = list('sound/magic/convergence1.ogg','sound/magic/convergence2.ogg','sound/magic/convergence3.ogg','sound/magic/convergence4.ogg')
+	invocation_type = "none"
+	associated_skill = /datum/skill/magic/holy
+	antimagic_allowed = TRUE
+	charge_max = 20 SECONDS
+	miracle = TRUE
+	devotion_cost = 20
+
+/obj/effect/proc_holder/spell/invoked/convergence/cast(list/targets, mob/living/user)
+	. = ..()
+	if(isliving(targets[1]))
+		var/mob/living/target = targets[1]
+		target.visible_message(span_info("A convergence of fates surrounds [target]!"), span_notice("My past and present converge as one!"))
+		if(iscarbon(target))
+			var/mob/living/carbon/C = target
+			C.apply_status_effect(/datum/status_effect/buff/convergence)
+			C.apply_status_effect(/datum/status_effect/buff/fortify)
+		else
+			target.adjustBruteLoss(-50)
+			target.adjustFireLoss(-50)
+		return TRUE
+	revert_cast()
+	return FALSE
+
+
+/obj/effect/proc_holder/spell/invoked/stasis
+	name = "Stasis"
+	desc = "You capture your target's current state in time, reverting them to such a state several seconds later."
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 60 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	//sound = 'sound/magic/timeforward.ogg'
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/holy
+	overlay_state = "sands_of_time"
+	var/brute = 0
+	var/burn = 0
+	var/oxy = 0
+	var/toxin = 0
+	var/turf/origin
+	var/firestacks = 0
+	var/blood = 0
+	miracle = TRUE
+	devotion_cost = 30
+
+/obj/effect/proc_holder/spell/invoked/stasis/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		var/mob/living/carbon/C = target
+		C.apply_status_effect(/datum/status_effect/buff/stasis)
+		brute = target.getBruteLoss()
+		burn = target.getFireLoss()
+		oxy = target.getOxyLoss()
+		toxin = target.getToxLoss()
+		origin = get_turf(target)
+		firestacks = target.fire_stacks
+		blood = target.blood_volume
+		to_chat(target, span_warning("I feel a part of me was left behind..."))
+		//play_indicator(target,'icons/mob/overhead_effects.dmi', "timestop", 100, OBJ_LAYER)
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 10 SECONDS)
+		return TRUE
+
+
+/obj/effect/proc_holder/spell/invoked/stasis/proc/remove_buff(mob/living/carbon/target)
+	do_teleport(target, origin, no_effects=TRUE)
+	target.adjust_fire_stacks(target.fire_stacks*-1 + firestacks)
+	var/brutenew = target.getBruteLoss()
+	var/burnnew = target.getFireLoss()
+	var/oxynew = target.getOxyLoss()
+	var/toxinnew = target.getToxLoss()
+	if(target.has_status_effect(/datum/status_effect/buff/convergence))
+		if(brutenew>brute)
+			target.adjustBruteLoss(brutenew*-1 + brute)
+		if(burnnew>burn)
+			target.adjustFireLoss(burnnew*-1 + burn)
+		if(oxynew>oxy)
+			target.adjustOxyLoss(oxynew*-1 + oxy)
+		if(toxinnew>toxin)
+			target.adjustToxLoss(target.getToxLoss()*-1 + toxin)
+		if(target.blood_volume<blood)
+			target.blood_volume = blood
+	else
+		target.adjustBruteLoss(brutenew*-1 + brute)
+		target.adjustFireLoss(burnnew*-1 + burn)
+		target.adjustOxyLoss(oxynew*-1 + oxy)
+		target.adjustToxLoss(target.getToxLoss()*-1 + toxin)
+		target.blood_volume = blood
+	//playsound(target.loc, 'sound/magic/timereverse.ogg', 100, FALSE)
+
+/obj/effect/proc_holder/spell/invoked/stasis/proc/play_indicator(mob/living/carbon/target, icon_path, overlay_name, clear_time, overlay_layer)
+	if(!ishuman(target))
+		return
+	if(target.stat != DEAD)
+		var/mob/living/carbon/humie = target
+		var/datum/species/species =	humie.dna.species
+		var/list/offset_list
+		if(humie.gender == FEMALE)
+			offset_list = species.offset_features[OFFSET_HEAD_F]
+		else
+			offset_list = species.offset_features[OFFSET_HEAD]
+			var/mutable_appearance/appearance = mutable_appearance(icon_path, overlay_name, overlay_layer)
+			if(offset_list)
+				appearance.pixel_x += (offset_list[1])
+				appearance.pixel_y += (offset_list[2]+12)
+			appearance.appearance_flags = RESET_COLOR
+			target.overlays_standing[OBJ_LAYER] = appearance
+			target.apply_overlay(OBJ_LAYER)
+			update_icon()
+			addtimer(CALLBACK(humie, PROC_REF(clear_overhead_indicator), appearance, target), clear_time)
+
+/obj/effect/proc_holder/spell/invoked/stasis/proc/clear_overhead_indicator(appearance,mob/living/carbon/target)
+	target.remove_overlay(OBJ_LAYER)
+	cut_overlay(appearance, TRUE)
+	qdel(appearance)
+	update_icon()
+	return
+
+
+//Divine Strike - Enhance your held weapon to have the next strike do extra damage and slow the target. Undead debuffed more.
+/obj/effect/proc_holder/spell/self/divine_strike
+	name = "Divine Strike"
+	overlay = "createlight"
+	charge_max = 1 MINUTES
+	movement_interrupt = FALSE
+	chargedrain = 0
+	chargetime = 1 SECONDS
+	charging_slowdown = 2
+	chargedloop = null
+	associated_skill = /datum/skill/magic/holy
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
+	sound = 'sound/magic/timestop.ogg'
+	invocation = "By Mjallidhorn, stand and fight!"
+	invocation_type = "shout"
+	antimagic_allowed = TRUE
+	miracle = TRUE
+	devotion_cost = 30
+
+/obj/effect/proc_holder/spell/self/divine_strike/cast(mob/living/user)
+	if(!isliving(user))
+		return FALSE
+	user.apply_status_effect(/datum/status_effect/divine_strike, user.get_active_held_item())
+	return ..()
+
+/datum/status_effect/divine_strike
+	id = "divine_strike"
+	status_type = STATUS_EFFECT_UNIQUE
+	duration = 15 SECONDS
+	alert_type = /atom/movable/screen/alert/status_effect/buff/divine_strike
+	on_remove_on_mob_delete = TRUE
+	var/datum/weakref/buffed_item
+
+/datum/status_effect/divine_strike/on_creation(mob/living/new_owner, obj/item/I)
+	. = ..()
+	if(!.)
+		return
+	if(istype(I) && !(I.item_flags & ABSTRACT))
+		// buffed_item = WEAKREF(I)
+		//if(!I.light_outer_range && I.light_system == STATIC_LIGHT) We do not currently use this lighting system
+		//	I.set_light(1)
+		RegisterSignal(I, COMSIG_ITEM_AFTERATTACK, PROC_REF(item_afterattack))
+	else
+		RegisterSignal(owner, COMSIG_MOB_ATTACK_HAND, PROC_REF(hand_attack))
+
+/datum/status_effect/divine_strike/on_remove()
+	. = ..()
+	UnregisterSignal(owner, COMSIG_MOB_ATTACK_HAND)
+	if(buffed_item)
+		var/obj/item/I = buffed_item.resolve()
+		if(istype(I))
+			I.set_light(0)
+		UnregisterSignal(I, COMSIG_ITEM_AFTERATTACK)
+
+/datum/status_effect/divine_strike/proc/item_afterattack(obj/item/source, atom/target, mob/user, proximity_flag, click_parameters)
+	if(!proximity_flag)
+		return
+	if(!isliving(target))
+		return
+	var/mob/living/living_target = target
+	living_target.apply_status_effect(/datum/status_effect/debuff/chained_burden)
+	living_target.visible_message(span_warning("The strike from [user]'s weapon causes [living_target] to go stiff!"), vision_distance = COMBAT_MESSAGE_RANGE)
+	qdel(src)
+
+/datum/status_effect/divine_strike/proc/hand_attack(datum/source, mob/living/carbon/human/M, mob/living/carbon/human/H, datum/martial_art/attacker_style)
+	if(!istype(M))
+		return
+	if(!istype(H))
+		return
+	if(!istype(M.used_intent, INTENT_HARM))
+		return
+	H.apply_status_effect(/datum/status_effect/debuff/chained_burden)
+	H.visible_message(span_warning("The strike from [M]'s fist causes [H] to go stiff!"), vision_distance = COMBAT_MESSAGE_RANGE)
+	qdel(src)
+
+//Call to Arms - AoE buff for all people surrounding you.
+//Call to Arms - AoE buff for all people surrounding you.
+/obj/effect/proc_holder/spell/self/call_to_arms
+	name = "Call to Arms"
+	desc = "Grants you and all allies nearby a buff to their strength, endurance, and constitution."
+	overlay_state = "call_to_arms"
+	charge_max = 5 MINUTES
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
+	invocation = "FOR DEATH AND GLORY!"
+	invocation_type = "shout"
+	sound = 'sound/magic/timestop.ogg'
+	releasedrain = 30
+	miracle = TRUE
+	devotion_cost = 40
+
+/obj/effect/proc_holder/spell/self/call_to_arms/cast(list/targets,mob/living/user = usr)
+	for(var/mob/living/carbon/target in view(3, get_turf(user)))
+		if(istype(target.patron, /datum/patron/heretic))
+			target.apply_status_effect(/datum/status_effect/debuff/call_to_arms)	//Debuffs heretics.
+			return
+		if(istype(target.patron, /datum/patron/elemental))
+			to_chat(target, span_danger("You feel a hot-wave wash over you, leaving as quickly as it came.."))	//No effect on Psydonians!
+			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
+			return
+	return ..()
+
+/atom/movable/screen/alert/status_effect/buff/divine_strike
+	name = "Divine Strike"
+	desc = "Your next attack deals additional damage and slows your target."
+	icon_state = "stressvg"
+
+/obj/effect/proc_holder/spell/self/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = "Grants you and all allies nearby a buff to their strength, endurance, and constitution."
+	overlay_state = "call_to_slaughter"
+	charge_max = 5 MINUTES
+	invocation = "LAMBS TO THE SLAUGHTER!"
+	invocation_type = "shout"
+	sound = 'sound/magic/timestop.ogg'
+	releasedrain = 30
+	miracle = TRUE
+	devotion_cost = 40
+
+/obj/effect/proc_holder/spell/self/call_to_slaughter/cast(list/targets,mob/living/user = usr)
+	for(var/mob/living/carbon/target in view(3, get_turf(user)))
+		if(istype(target.patron, /datum/patron/heretic))
+			target.apply_status_effect(/datum/status_effect/buff/call_to_slaughter)	//Buffs inhumens
+			return
+		if(!user.faction_check_mob(target))
+			continue
+		if(target.mob_biotypes & MOB_UNDEAD)
+			continue
+		target.apply_status_effect(/datum/status_effect/debuff/call_to_slaughter)	//Debuffs non-inhumens/psydonians
+	return ..()
+
+//Revel in Slaughter - Self-healing by consuming blood around you; large healing, has delay though.
+/obj/effect/proc_holder/spell/invoked/revel_in_slaughter
+	name = "Revel in Slaughter"
+	desc = "The blood of your enemy shall boil, their skin feeling as if it's being ripped apart! Gaggar demands their blood must FLOW!!!."
+	overlay_state = "bloodsteal"
+	charge_max = 5 MINUTES
+	invocation = "YOUR BLOOD WILL BOIL TILL IT'S SPILLED!"
+	invocation_type = "shout"
+	sound = 'sound/magic/antimagic.ogg'
+	releasedrain = 30
+	miracle = TRUE
+	devotion_cost = 70
+
+/obj/effect/proc_holder/spell/invoked/revel_in_slaughter/cast(atom/A, list/targets, mob/living/user = usr)
+	. = ..()
+	var/success = 0
+	for(var/obj/effect/decal/cleanable/blood/B in view(3, user))
+		success++
+		qdel(B)
+	if(!success)	//Checks if there's blood around you. It's NEEEEEDED!!!
+		to_chat(user, span_warning("I need blood around me to !"))
+		return FALSE
+	if(isliving(targets[1]))
+		var/mob/living/target = targets[1]
+		if(ishuman(target)) //BLEED AND PAIN
+			var/mob/living/carbon/human/human_target = target
+			var/datum/physiology/phy = human_target.physiology
+			phy.bleed_mod *= 1.5
+			phy.pain_mod *= 1.5
+			addtimer(VARSET_CALLBACK(phy, bleed_mod, phy.bleed_mod /= 1.5), 25 SECONDS)
+			addtimer(VARSET_CALLBACK(phy, pain_mod, phy.pain_mod /= 1.5), 15 SECONDS)
+			human_target.visible_message(span_danger("[target]'s wounds become inflammed as their vitality is sapped away!"))
+			to_chat(target, span_warning("My skins feels like pins and needles, as if something were ripping and tearing at me!"))
+			return ..()
