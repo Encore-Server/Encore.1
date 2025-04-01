@@ -1,4 +1,4 @@
-// Stuff Currently Unsorted
+// Stuff Currently Unsorted - Massive credit to AP and Vanderlin for all their work here
 
 /obj/effect/proc_holder/spell/invoked/vigorousexchange
 	name = "Vigorous Exchange"
