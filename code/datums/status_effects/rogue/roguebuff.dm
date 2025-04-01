@@ -378,7 +378,7 @@
 	id = "enlarge_buff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/enlarge
 	duration = 2.5 MINUTES
-	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+	effectedstats = list("strength" = 3, "endurance" = -2, "constitution" = 1, "speed" = -2)
 
 /atom/movable/screen/alert/status_effect/buff/enlarge
 	name = "Enlarge Buff"
