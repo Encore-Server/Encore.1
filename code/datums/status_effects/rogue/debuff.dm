@@ -210,37 +210,37 @@
 
 /// SURRENDERING DEBUFFS
 
-/datum/status_effect/debuff/breedable
-	id = "breedable"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/breedable
+/datum/status_effect/debuff/yield
+	id = "yield"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/yield
 	duration = 30 SECONDS
 
-/datum/status_effect/debuff/breedable/on_apply()
+/datum/status_effect/debuff/yield/on_apply()
 	. = ..()
 	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, id)
 
-/datum/status_effect/debuff/breedable/on_remove()
+/datum/status_effect/debuff/yield/on_remove()
 	. = ..()
 	REMOVE_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, id)
 
-/atom/movable/screen/alert/status_effect/debuff/breedable
+/atom/movable/screen/alert/status_effect/debuff/yield
 	name = "Obedient"
 	desc = "They won't hurt me too much..."
 
-/datum/status_effect/debuff/submissive
-	id = "submissive"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/submissive
+/datum/status_effect/debuff/surrender
+	id = "surrender"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/surrender
 	duration = 60 SECONDS
 
-/datum/status_effect/debuff/submissive/on_apply()
+/datum/status_effect/debuff/surrender/on_apply()
 	. = ..()
-	owner.add_movespeed_modifier("SUBMISSIVE", multiplicative_slowdown = 4)
+	owner.add_movespeed_modifier("SURRENDER", multiplicative_slowdown = 4)
 
-/datum/status_effect/debuff/submissive/on_remove()
+/datum/status_effect/debuff/surrender/on_remove()
 	. = ..()
-	owner.remove_movespeed_modifier("SUBMISSIVE")
+	owner.remove_movespeed_modifier("SURRENDER")
 
-/atom/movable/screen/alert/status_effect/debuff/submissive
+/atom/movable/screen/alert/status_effect/debuff/surrender
 	name = "Compliant"
 	desc = "Falling in line is my only choice."
 
