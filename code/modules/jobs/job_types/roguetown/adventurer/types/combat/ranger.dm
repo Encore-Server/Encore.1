@@ -103,16 +103,16 @@
 		if("Ranger-Knight")
 			to_chat(H, span_warning("Ranger-Knights are the select few who have elected to diversify their skills with medium armor, melee weaponry and ranged warfare - at the cost of being lesser than dedicated followers of those arts."))
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-			gloves = /obj/item/clothing/gloves/roguetown/chain
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 			belt = /obj/item/storage/belt/rogue/leather
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 			cloak = /obj/item/clothing/cloak/tabard
 			beltr = /obj/item/flashlight/flare/torch/lantern
 			beltl = /obj/item/rogueweapon/sword/short
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)

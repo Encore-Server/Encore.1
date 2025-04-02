@@ -55,6 +55,7 @@
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
+	max_integrity = 1250
 	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron
@@ -62,6 +63,7 @@
 	name = "iron chainmaille"
 	desc = "A chain vest made of heavy iron rings. Better than nothing."
 	body_parts_covered = CHEST|GROIN|VITALS
+	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
@@ -81,16 +83,23 @@
 	icon_state = "ichainmail"
 	name = "iron hauberk"
 	desc = "A longer iron maille that protects the legs."
-	icon_state = "ihauberk"
+	icon_state = "iron_hauberk"
 	item_state = "ihauberk"
+	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
-	name = "fluted hauberk"
-	desc = "A steel maille, of a pattern popularized by Otavan templars."
+	name = "steel fluted hauberk"
+	desc = "A steel maille, of a pattern popularized by Aelondan templars."
 	icon_state = "flutedhauberk"
 	item_state = "flutedhauberk"
 
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
+	name = "iron fluted hauberk"
+	desc = "An iron maille, of a pattern popularized by Aelondan templars."
+	icon_state = "iron_flutedhauberk"
+	item_state = "iron_flutedhauberk"
+	max_integrity = 1150
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 	name = "steel chainmail bikini"
@@ -105,8 +114,9 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini/iron
 	name = "iron chainmail bikini"
 	desc = "Not very comfortable against the skin."
-	icon_state = "ichainkini"
+	icon_state = "iron_chainkini"
 	item_state = "ichainkini"
+	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/plate
@@ -131,8 +141,8 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/iron
 	name = "iron half-plate"
-	desc = "\'Adventurer-fit\' plate armor with pauldrons.
-	icon_state = "halfplate_iron"
+	desc = "Adventurer-fit plate armor with pauldrons."
+	icon_state = "halfplate_iron"	
 	item_state = "halfplate_iron"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 1150
@@ -151,9 +161,10 @@
 /obj/item/clothing/suit/roguetown/armor/plate/bikini/iron
 	name = "iron half-plate bikini"
 	desc = "Half plate in bikini form, still just as protective somehow. Save for the stomach."
-	icon_state = "ihalfplatekini"
+	icon_state = "iron_halfplatekini"
 	item_state = "ihalfplatekini"
 	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
 
 /obj/item/clothing/suit/roguetown/armor/plate/half
 	slot_flags = ITEM_SLOT_ARMOR
@@ -177,6 +188,7 @@
 	name = "steel plate armor"
 	desc = "Full steel plate. Leg protecting tassets, groin cup, armored vambraces."
 	icon_state = "plate"
+	item_state = "plate"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 12 SECONDS
 	unequip_delay_self = 12 SECONDS
@@ -188,7 +200,8 @@
 /obj/item/clothing/suit/roguetown/armor/plate/full/iron
 	name = "iron plate armor"
 	desc = "Full iron plate. Leg protecting tassets, groin cup, armored vambraces."
-	icon_state = "plate"
+	icon_state = "iron_plate"
+	item_state = "plate_iron"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 12 SECONDS
 	unequip_delay_self = 12 SECONDS
@@ -202,6 +215,7 @@
 	name = "steel fullplate bikini"
 	desc = "Full plate in bikini form, full package and full exposure."
 	icon_state = "platekini"
+	item_state = "platekini"
 	allowed_sex = list(FEMALE)
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	equip_delay_self = 8 SECONDS
@@ -213,8 +227,10 @@
 /obj/item/clothing/suit/roguetown/armor/plate/full/bikini/iron
 	name = "iron fullplate bikini"
 	desc = "Full plate in bikini form, full package and full exposure."
-	icon_state = "iplatekini"
+	icon_state = "iron_platekini"
+	item_state = "iplatekini"
 	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1200
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	name = "iron breastplate"
@@ -248,7 +264,8 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "iron scalemail"
 	desc = "Iron scales interwoven intricately to form flexible protection!"
-	icon_state = "ilamellar"
+	icon_state = "iron_lamellar"
+	item_state = "ilamellar"
 	max_integrity = 1100
 	smeltresult = /obj/item/ingot/iron
 
@@ -375,7 +392,8 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "iron coat of plates"
 	desc = "A leather coat with iron plates attached to it to increase protection while retaining mobility"
-	icon_state = "icoat_of_plates"
+	icon_state = "iron_coat_of_plates"
+	item_state = "icoat_of_plates"
 	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 

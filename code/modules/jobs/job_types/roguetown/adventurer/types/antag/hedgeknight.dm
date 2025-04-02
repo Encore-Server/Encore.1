@@ -10,15 +10,15 @@
 
 /datum/outfit/job/roguetown/bandit/hedgeknight/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
-	gloves = /obj/item/clothing/gloves/roguetown/chain/blk
-	pants = /obj/item/clothing/under/roguetown/chainlegs/blk
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron/blk
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron/blk
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron/blk
 	cloak = /obj/item/clothing/cloak/tabard/blkknight
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blkknight
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blkknight
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron/blk
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron/blk
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/sword/long/death // ow the edge. it's just spraypainted. no weapon choice you MUST use a sword
 	backr = /obj/item/storage/backpack/rogue/satchel/black
