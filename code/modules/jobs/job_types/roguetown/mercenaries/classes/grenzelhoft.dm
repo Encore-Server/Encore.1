@@ -63,7 +63,7 @@
 			r_hand = /obj/item/rogueweapon/halberd/bardiche
 
 	//General gear regardless of class.
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor

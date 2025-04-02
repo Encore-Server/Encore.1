@@ -101,27 +101,27 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	backl = /obj/item/storage/backpack/rogue/satchel
-	gloves = /obj/item/clothing/gloves/roguetown/chain
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltr = /obj/item/storage/keyring/puritan
@@ -191,25 +191,25 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
 	beltr = /obj/item/flashlight/flare/torch/lantern
 	beltl = /obj/item/rogueweapon/sword/short
@@ -270,23 +270,23 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	pants= /obj/item/clothing/under/roguetown/trou/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
