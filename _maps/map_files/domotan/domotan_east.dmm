@@ -456,7 +456,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/sewer)
 "ty" = (
-/turf/open/lava,
+/turf/open/floor/rogue/hay,
 /area/rogue/outdoors/mountains/decap/hell)
 "tE" = (
 /obj/structure/fluff/railing/rampart,
