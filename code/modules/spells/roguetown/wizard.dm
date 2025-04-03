@@ -309,8 +309,8 @@
 	associated_skill = /datum/skill/magic/arcane
 	cost = 2
 	xp_gain = TRUE
-	charge_max = 2 MINUTES
-	invocation = "MENTIS NEXUS!"
+	charge_max = 15 MINUTES
+	invocation = "Be as one"
 	invocation_type = "whisper"
 	
 	// Charged spell variables
@@ -363,7 +363,7 @@
 	to_chat(first_target, span_notice("A mindlink has been established with [second_target]! Use ,y before a message to communicate telepathically."))
 	to_chat(second_target, span_notice("A mindlink has been established with [first_target]! Use ,y before a message to communicate telepathically."))
 	
-	addtimer(CALLBACK(src, PROC_REF(break_link), link), 3 MINUTES)
+	addtimer(CALLBACK(src, PROC_REF(break_link), link), 20 MINUTES)
 	return TRUE
 
 /obj/effect/proc_holder/spell/invoked/mindlink/proc/break_link(datum/mindlink/link)
