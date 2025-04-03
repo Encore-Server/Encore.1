@@ -60,7 +60,7 @@
 				if("Bastard Sword")	
 					beltr = /obj/item/rogueweapon/sword/long
 				if("Flail")
-					beltr = /obj/item/rogueweapon/flail/sflail
+					beltr = /obj/item/rogueweapon/flail
 				if("Spear")
 					r_hand = /obj/item/rogueweapon/spear
 
@@ -105,7 +105,7 @@
 				if("Bastard Sword")	
 					beltr = /obj/item/rogueweapon/sword/long
 				if("Flail")
-					beltr = /obj/item/rogueweapon/flail/sflail
+					beltr = /obj/item/rogueweapon/flail
 				if("Spear")
 					r_hand = /obj/item/rogueweapon/spear
 

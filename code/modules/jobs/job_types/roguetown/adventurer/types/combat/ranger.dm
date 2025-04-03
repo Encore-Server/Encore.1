@@ -111,7 +111,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 			cloak = /obj/item/clothing/cloak/tabard
 			beltr = /obj/item/flashlight/flare/torch/lantern
-			beltl = /obj/item/rogueweapon/sword/short
+			beltl = /obj/item/rogueweapon/sword/iron/short
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)

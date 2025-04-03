@@ -84,7 +84,7 @@
 	name = "iron hauberk"
 	desc = "A longer iron maille that protects the legs."
 	icon_state = "iron_hauberk"
-	item_state = "ihauberk"
+	item_state = "iron_hauberk"
 	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
@@ -115,7 +115,7 @@
 	name = "iron chainmail bikini"
 	desc = "Not very comfortable against the skin."
 	icon_state = "iron_chainkini"
-	item_state = "ichainkini"
+	item_state = "iron_chainkini"
 	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
@@ -143,7 +143,7 @@
 	name = "iron half-plate"
 	desc = "Adventurer-fit plate armor with pauldrons."
 	icon_state = "iron_halfplate"	
-	item_state = "halfplate_iron"
+	item_state = "iron_halfplate"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 1150
 	smelt_bar_num = 3
@@ -162,7 +162,7 @@
 	name = "iron half-plate bikini"
 	desc = "Half plate in bikini form, still just as protective somehow. Save for the stomach."
 	icon_state = "iron_halfplatekini"
-	item_state = "ihalfplatekini"
+	item_state = "iron_halfplatekini"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 1150
 
@@ -201,7 +201,7 @@
 	name = "iron plate armor"
 	desc = "Full iron plate. Leg protecting tassets, groin cup, armored vambraces."
 	icon_state = "iron_plate"
-	item_state = "plate_iron"
+	item_state = "iron_plate"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 12 SECONDS
 	unequip_delay_self = 12 SECONDS
@@ -228,7 +228,7 @@
 	name = "iron fullplate bikini"
 	desc = "Full plate in bikini form, full package and full exposure."
 	icon_state = "iron_platekini"
-	item_state = "iplatekini"
+	item_state = "iron_platekini"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 1200
 
@@ -265,7 +265,7 @@
 	name = "iron scalemail"
 	desc = "Iron scales interwoven intricately to form flexible protection!"
 	icon_state = "iron_lamellar"
-	item_state = "ilamellar"
+	item_state = "iron_lamellar"
 	max_integrity = 1100
 	smeltresult = /obj/item/ingot/iron
 
@@ -393,7 +393,7 @@
 	name = "iron coat of plates"
 	desc = "A leather coat with iron plates attached to it to increase protection while retaining mobility"
 	icon_state = "iron_coat_of_plates"
-	item_state = "icoat_of_plates"
+	item_state = "iron_coat_of_plates"
 	max_integrity = 1150
 	smeltresult = /obj/item/ingot/iron
 
