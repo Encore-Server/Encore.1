@@ -37,7 +37,7 @@
 	switch(weapon_choice)
 		if("Sword")
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-			beltr = /obj/item/rogueweapon/sword
+			beltr = /obj/item/rogueweapon/sword/iron
 		if("Spear")
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			r_hand = /obj/item/rogueweapon/spear

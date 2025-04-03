@@ -92,12 +92,12 @@
 
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/platelegs/blk/death
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blkknight
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blk/death
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blkknight/death
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/blk/death
 	gloves = /obj/item/clothing/gloves/roguetown/plate/blk/death
 	backl = /obj/item/rogueweapon/sword/long/death
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/blk/death
 
 	H.change_stat("intelligence", 3)
 	H.change_stat("strength", 2)
@@ -110,14 +110,17 @@
 	var/datum/antagonist/new_antag = new /datum/antagonist/skeleton/knight()
 	H.mind.add_antag_datum(new_antag)
 
-/obj/item/clothing/suit/roguetown/armor/plate/blkknight/death
+/obj/item/clothing/suit/roguetown/armor/plate/blk/death
 	color = CLOTHING_BLACK
 
-/obj/item/clothing/shoes/roguetown/boots/armor/blkknight/death
+/obj/item/clothing/shoes/roguetown/boots/armor/blk/death
 	color = CLOTHING_BLACK
 
 /obj/item/clothing/gloves/roguetown/plate/blk/death
 	color = CLOTHING_BLACK
 
 /obj/item/clothing/under/roguetown/platelegs/blk/death
+	color = CLOTHING_BLACK
+
+/obj/item/clothing/head/roguetown/helmet/heavy/knight/blk/death
 	color = CLOTHING_BLACK

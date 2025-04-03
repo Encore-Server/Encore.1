@@ -36,12 +36,12 @@
 	H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	armor = /obj/item/clothing/cloak/stabard/crusader
 	cloak = /obj/item/clothing/cloak/cape/crusader
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/rogueweapon/sword/decorated

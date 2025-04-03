@@ -21,7 +21,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/chainmail
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/mid
-	beltl = /obj/item/rogueweapon/sword
+	beltl = /obj/item/rogueweapon/sword/iron
 	backr = /obj/item/rogueweapon/shovel
 	head = /obj/item/clothing/head/roguetown/puritan
 	if(H.mind)

@@ -65,7 +65,7 @@
 			H.change_stat("endurance", 2) // 7 stat points total as a low-skill martial role without magic. Compared to Pally with 5 points.
 			H.change_stat("constitution", 2)
 			H.change_stat("speed", 1)
-			armor = /obj/item/clothing/suit/roguetown/armor/plate
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 			head = /obj/item/clothing/head/roguetown/helmet/skullcap
 
 		if("Monster Hunter")
@@ -93,7 +93,7 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", 1)
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale // No helms for monster hunters.
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/iron // No helms for monster hunters.
 			var/weapons = list("Bastard Sword & Shield","Greatsword","Mace & Shield","Billhook","Battle Axe")
 			var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 			H.set_blindness(0)
