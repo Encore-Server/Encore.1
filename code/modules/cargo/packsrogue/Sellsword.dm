@@ -110,9 +110,9 @@
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
 /datum/supply_pack/rogue/Sellsword/ssword
-	name = "Steel Sword"
+	name = "Iron Sword"
 	cost = 20
-	contains = list(/obj/item/rogueweapon/sword)
+	contains = list(/obj/item/rogueweapon/sword/iron)
 
 /datum/supply_pack/rogue/Sellsword/bsword
 	name = "Bastard Sword"

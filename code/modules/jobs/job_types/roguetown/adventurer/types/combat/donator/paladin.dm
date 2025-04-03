@@ -69,7 +69,7 @@
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife
 			id = /obj/item/clothing/ring/silver
-			backr = /obj/item/rogueweapon/sword
+			backr = /obj/item/rogueweapon/sword/iron
 			backl = /obj/item/storage/backpack/rogue/satchel
 		if("Battle Master")
 			H.set_blindness(0)
