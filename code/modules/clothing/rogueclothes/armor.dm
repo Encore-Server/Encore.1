@@ -80,7 +80,6 @@
 	smelt_bar_num = 2
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
-	icon_state = "ichainmail"
 	name = "iron hauberk"
 	desc = "A longer iron maille that protects the legs."
 	icon_state = "iron_hauberk"
