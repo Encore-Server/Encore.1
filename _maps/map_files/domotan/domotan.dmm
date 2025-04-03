@@ -1661,12 +1661,6 @@
 	},
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
-"bGg" = (
-/obj/structure/stairs/stone{
-	dir = 1
-	},
-/turf/closed,
-/area/rogue/indoors/town/church)
 "bGy" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/flare/torch/lantern,
@@ -8554,9 +8548,9 @@
 /area/rogue/under/town/basement)
 "iww" = (
 /obj/structure/stairs/stone{
-	dir = 8
+	dir = 4
 	},
-/turf/open/transparent/openspace,
+/turf/open/floor/rogue/church,
 /area/rogue/outdoors/town/roofs)
 "iwV" = (
 /obj/structure/bars/cemetery,
@@ -11938,7 +11932,9 @@
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/town/tavern)
 "lDk" = (
-/obj/structure/bars/shop,
+/obj/structure/bars/shop{
+	density = 0
+	},
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/town)
 "lDE" = (
@@ -14714,7 +14710,7 @@
 /area/rogue/indoors/town)
 "nWy" = (
 /obj/structure/stairs/stone{
-	dir = 8
+	dir = 4
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -20463,10 +20459,10 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "twQ" = (
-/obj/structure/stairs/stone{
-	dir = 8
-	},
 /obj/structure/fluff/railing/wood,
+/obj/structure/stairs/stone{
+	dir = 4
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
 "twY" = (
@@ -59813,7 +59809,7 @@ hNU
 xea
 aUD
 dBv
-bGg
+ihY
 iIk
 iIk
 cKU
@@ -60070,7 +60066,7 @@ dBv
 dBv
 dBv
 dBv
-bGg
+ihY
 iIk
 iIk
 dBv
