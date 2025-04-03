@@ -9,6 +9,7 @@
 	dynamic_hair_suffix = "+generic"
 	bloody_icon_state = "helmetblood"
 	experimental_onhip = TRUE
+	max_integrity = 1000
 
 /obj/item/clothing/head/roguetown/equipped(mob/user, slot)
 	. = ..()
@@ -29,7 +30,6 @@
 	body_parts_covered = HEAD|HAIR|EARS|NECK
 	slot_flags = ITEM_SLOT_HEAD
 	dynamic_hair_suffix = ""
-	max_integrity = 100
 	armor = list("blunt" = 16, "slash" = 19, "stab" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_TWIST)
 	anvilrepair = null
@@ -53,7 +53,6 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 100
 	sewrepair = TRUE
 
 /obj/item/clothing/head/roguetown/roguehood/shalal
@@ -76,7 +75,6 @@
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	blocksound = SOFTHIT
-	max_integrity = 100
 	sewrepair = TRUE
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/black
@@ -95,7 +93,6 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 100
 
 /obj/item/clothing/head/roguetown/roguehood/golerkanhhood
 	name = "verdant hood"
@@ -110,7 +107,6 @@
 	edelay_type = 1
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
-	max_integrity = 100
 
 /obj/item/clothing/head/roguetown/akanhood
 	name = "air hood"
@@ -483,7 +479,6 @@
 	armor = list("blunt" = 35, "slash" = 15, "stab" = 25, "bullet" = 1, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT)
 	blocksound = SOFTHIT
-	max_integrity = 75
 	color = "#463C2B"
 	sewrepair = TRUE
 
@@ -505,7 +500,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	blocksound = PLATEHIT
-	max_integrity = 200
+	max_integrity = 1200
 
 /obj/item/clothing/head/roguetown/helmet/skullcap
 	name = "skull cap"
@@ -711,13 +706,22 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_RIGHT|FOV_LEFT
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = 400
+	max_integrity = 1250
 
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
-	name = "katholikos barbute"
+	name = "steel katholikos barbute"
 	desc = "A barbute styled with Katholikos imagery."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
+
+
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
+	name = "iron katholikos barbute"
+	desc = "A barbute styled with Katholikos imagery."
+	icon_state = "iron_psydonbarbute"
+	item_state = "iron_psydonbarbute"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard
 	name = "savoyard"
@@ -740,7 +744,7 @@
 	smelt_bar_num = 2
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight
-	name = "knight's helmet"
+	name = "steel knight's helmet"
 	desc = "A noble knight's helm in the current style popular with nobility. Add a feather to show the colors of your family or allegiance."
 	icon_state = "knight"
 	item_state = "knight"
@@ -751,15 +755,47 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/knight/black
-	color = CLOTHING_GREY
-
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/items/visor.ogg", 100, TRUE, -1)
 		if(adjustable == CAN_CADJUST)
 			adjustable = CADJUSTED
 			icon_state = "knightum"
+			body_parts_covered = HEAD|HAIR|EARS
+			flags_inv = HIDEEARS
+			flags_cover = null
+			emote_environment = 0
+			update_icon()
+			if(ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_head()
+			block2add = null
+		else if(adjustable == CADJUSTED)
+			ResetAdjust(user)
+			emote_environment = 3
+			update_icon()
+			if(user)
+				if(ishuman(user))
+					var/mob/living/carbon/H = user
+					H.update_inv_head()
+		user.update_fov_angles()
+
+/obj/item/clothing/head/roguetown/helmet/heavy/knight/iron
+	name = "iron knight's helmet"
+	icon_state = "iron_knight"
+	item_state = "iron_knight"
+	smeltresult = /obj/item/ingot/iron
+	smelt_bar_num = 2
+
+/obj/item/clothing/head/roguetown/helmet/heavy/knight/iron/blk
+	color = CLOTHING_GREY
+
+/obj/item/clothing/head/roguetown/helmet/heavy/knight/iron/AdjustClothes(mob/user)
+	if(loc == user)
+		playsound(user, "sound/items/visor.ogg", 100, TRUE, -1)
+		if(adjustable == CAN_CADJUST)
+			adjustable = CADJUSTED
+			icon_state = "iron_knightum"
 			body_parts_covered = HEAD|HAIR|EARS
 			flags_inv = HIDEEARS
 			flags_cover = null
@@ -869,24 +905,45 @@
 		add_overlay(pic)
 
 /obj/item/clothing/head/roguetown/helmet/heavy/visireshelm
-	name = "visires helmet"
+	name = "steel visires helmet"
 	desc = "Headwear commonly worn by Templars in service to Visires. The devil child's light will forever shine on within its crest."
 	icon_state = "astratahelm"
 	item_state = "astratahelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
+	max_integrity = 1250
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm/iron
+	name = "iron visires helmet"
+	icon_state = "iron_astratahelm"
+	item_state = "iron_astratahelm"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
+
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
-	name ="aspect armet"
+	name ="steel aspect armet"
 	desc = "Headwear commonly worn by Templars in service to the Inquisition of the Katholikos."
 	icon_state = "psydonarmet"
 	item_state = "psydonarmet"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_RIGHT|FOV_LEFT
+	max_integrity = 1250
+	smeltresult = /obj/item/ingot/steel
+	smelt_bar_num = 2
+
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
+	name ="iron aspect armet"
+	icon_state = "iron_psydonarmet"
+	item_state = "iron_psydonarmet"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/akan
-	name = "helmet of skies"
+	name = "steel helmet of skies"
 	desc = "Headwear commonly worn by Templars in service to Akan. As light as a feather, as free as can be."
 	icon_state = "nochelm"
 	item_state = "nochelm"
@@ -894,30 +951,54 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS|HIDEHAIR
 	block2add = FOV_BEHIND
+	max_integrity = 1250
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
+/obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
+	name = "iron helmet of skies"
+	icon_state = "iron_nochelm"
+	item_state = "iron_nochelm"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
+
 /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
-	name = "mjallidhorn helmet"
+	name = "steel mjallidhorn helmet"
 	desc = "Headwear commonly worn by Templars in service to Mjallidhorn. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
 	icon_state = "necrahelm"
 	item_state = "necrahelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
+	max_integrity = 1250
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
+	name = "iron mjallidhorn helmet"
+	icon_state = "necrahelm"
+	item_state = "necrahelm"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
+
 /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
-	name = "earthen helmet"
+	name = "steel earthen helmet"
 	desc = "Headwear commonly worn by Templars in service to Gani. Its protrusions almost resemble branches. Take root in the earth, and you will never be moved."
 	icon_state = "dendorhelm"
 	item_state = "dendorhelm"
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
+	max_integrity = 1250
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
+
+/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
+	name = "iron earthen helmet"
+	icon_state = "iron_dendorhelm"
+	item_state = "iron_dendorhelm"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 1150
 
 /obj/item/clothing/head/roguetown/helmet/bascinet
 	name = "bascinet"
@@ -1235,7 +1316,6 @@
 	slot_flags = ITEM_SLOT_HEAD
 	detail_tag = "_detail"
 	dynamic_hair_suffix = ""
-	max_integrity = 150
 	armor = list("blunt" = 15, "slash" = 20, "stab" = 15, "bullet" = 1, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	sewrepair = TRUE
 	var/picked = FALSE
@@ -1328,7 +1408,7 @@
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = 425
+	max_integrity = 1450
 	smeltresult = /obj/item/ingot/blacksteel
 	smelt_bar_num = 2
 

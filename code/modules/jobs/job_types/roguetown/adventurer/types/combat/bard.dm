@@ -56,7 +56,7 @@
 				cloak = /obj/item/clothing/cloak/raincloak/red
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-			beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+			beltr = /obj/item/rogueweapon/huntingknife/idagger
 			backpack_contents = list(/obj/item/lockpickring/one = 1)
 			H.change_stat("intelligence", 1)
 			H.change_stat("perception", 2)
@@ -98,7 +98,7 @@
 				cloak = /obj/item/clothing/cloak/raincloak/red
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltl = /obj/item/rogueweapon/sword/iron
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel, /obj/item/storage/belt/rogue/pouch/coins/mid)
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger, /obj/item/storage/belt/rogue/pouch/coins/mid)
 			H.change_stat("constitution", 2)
 			H.change_stat("strength", 1)
 			H.change_stat("speed", 1)

@@ -6,35 +6,35 @@
 
 
 
-/datum/supply_pack/rogue/Iconoclast/coif/steel
-	name = "Steel Coif"
+/datum/supply_pack/rogue/Iconoclast/coif/iron
+	name = "Iron Coif"
 	cost = 20
-	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
+	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/iron)
 
-/datum/supply_pack/rogue/Iconoclast/bracers
-	name = "Steel Bracers"
+/datum/supply_pack/rogue/Iconoclast/bracers/iron
+	name = "Iron Bracers"
 	cost = 10
-	contains = list(/obj/item/clothing/wrists/roguetown/bracers)
+	contains = list(/obj/item/clothing/wrists/roguetown/bracers/iron)
 
-/datum/supply_pack/rogue/Iconoclast/plategaunt
-	name = "Plate Gauntlets"
+/datum/supply_pack/rogue/Iconoclast/plategaunt/iron
+	name = "Iron Plate Gauntlets"
 	cost = 20
-	contains = list(/obj/item/clothing/gloves/roguetown/plate)
+	contains = list(/obj/item/clothing/gloves/roguetown/plate/iron)
 
 /datum/supply_pack/rogue/Iconoclast/brigandine
 	name = "Brigandine"
 	cost = 50
 	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine)
 
-/datum/supply_pack/rogue/Iconoclast/halfplate
-	name = "Half-Plate"
+/datum/supply_pack/rogue/Iconoclast/halfplate/iron
+	name = "Iron Half-Plate"
 	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/iron)
 
-/datum/supply_pack/rogue/Iconoclast/coatofplates
-	name = "Coat of plates"
+/datum/supply_pack/rogue/Iconoclast/coatofplates/iron
+	name = "Iron Coat of plates"
 	cost = 50
-	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine/coatplates)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine/coatplates/iron)
 
 /datum/supply_pack/rogue/Iconoclast/barhelmet
 	name = "Barred Helmet"
@@ -57,27 +57,27 @@
 	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
-/datum/supply_pack/rogue/Iconoclast/platechausses
-	name = "Plate Chausses"
+/datum/supply_pack/rogue/Iconoclast/platechausses/iron
+	name = "Iron Plate Chausses"
 	cost = 40
-	contains = list(/obj/item/clothing/under/roguetown/platelegs)
+	contains = list(/obj/item/clothing/under/roguetown/platelegs/iron)
 
 
-/datum/supply_pack/rogue/Iconoclast/boots
-	name = "Steel Boots"
+/datum/supply_pack/rogue/Iconoclast/boots/iron
+	name = "Iron Boots"
 	cost = 10
-	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
+	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor/iron)
 
 
-/datum/supply_pack/rogue/Iconoclast/hauberk
-	name = "Hauberk"
+/datum/supply_pack/rogue/Iconoclast/hauberk/iron
+	name = "Iron Hauberk"
 	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron)
 
-/datum/supply_pack/rogue/Iconoclast/Haubergeon
-	name = "Haubergeon"
+/datum/supply_pack/rogue/Iconoclast/Haubergeon/iron
+	name = "Iron Haubergeon"
 	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/iron)
 
 
 /datum/supply_pack/rogue/Iconoclast/Bevor
@@ -101,11 +101,6 @@
 	cost = 10
 	contains = list(/obj/item/rogueweapon/mace)
 
-/datum/supply_pack/rogue/Iconoclast/steelmace
-	name = "Steel Mace"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/mace/steel)
-
 /datum/supply_pack/rogue/Iconoclast/cudgel
 	name = "Cudgel"
 	cost = 20
@@ -115,11 +110,6 @@
 	name = "Billhook"
 	cost = 10
 	contains = list(/obj/item/rogueweapon/spear/billhook)
-
-/datum/supply_pack/rogue/Iconoclast/halberd
-	name = "Halberd"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/halberd)
 
 /datum/supply_pack/rogue/Iconoclast/kiteshield
 	name = "Kite Shield"
