@@ -142,7 +142,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/iron
 	name = "iron half-plate"
 	desc = "Adventurer-fit plate armor with pauldrons."
-	icon_state = "halfplate_iron"	
+	icon_state = "iron_halfplate"	
 	item_state = "halfplate_iron"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 1150
@@ -194,7 +194,7 @@
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
-	max_integrity = 1300
+	max_integrity = 1350
 	smelt_bar_num = 4
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/iron
@@ -207,7 +207,7 @@
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
-	max_integrity = 1200
+	max_integrity = 1250
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 4
 

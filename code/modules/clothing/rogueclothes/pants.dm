@@ -249,6 +249,15 @@
 	body_parts_covered = GROIN
 	armor_class = ARMOR_CLASS_LIGHT
 
+/obj/item/clothing/under/roguetown/platelegs/skirt/iron
+	name = "iron plate skirt"
+	desc = "Reinforced armor that doesn't even protect the legs."
+	icon_state = "iron_plate_skirt"
+	item_state = "iron_plate_skirt"
+	max_integrity = 1250
+	body_parts_covered = GROIN
+	armor_class = ARMOR_CLASS_LIGHT
+
 /obj/item/clothing/under/roguetown/loincloth
 	name = "loincloth"
 	desc = ""
