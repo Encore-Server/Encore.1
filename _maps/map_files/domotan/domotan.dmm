@@ -125,12 +125,10 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/town/roofs/keep)
 "afp" = (
-/obj/structure/handcart{
-	dir = 8
-	},
-/obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/blocks/green,
-/area/rogue/under/town/basement)
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/indoors/town/church/chapel)
 "agA" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/cobblerock,
@@ -7686,7 +7684,6 @@
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
 /obj/item/reagent_containers/food/snacks/grown/wheat,
-/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/town/church)
 "huE" = (
@@ -10670,6 +10667,7 @@
 /area/rogue/indoors/town/church)
 "kvf" = (
 /obj/structure/plough,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/town/basement)
 "kvA" = (
@@ -10910,6 +10908,7 @@
 /obj/effect/decal/cobble/mossy{
 	dir = 1
 	},
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/church)
 "kEA" = (
@@ -56490,7 +56489,7 @@ ylR
 cGF
 fvL
 fQk
-afp
+jyd
 kvf
 ocB
 pBC
@@ -256677,7 +256676,7 @@ jVy
 jVy
 jVy
 erp
-oLO
+afp
 jVy
 lvm
 lvm
@@ -258219,7 +258218,7 @@ hEj
 bXH
 bXH
 erp
-erp
+lMC
 jVy
 lvm
 lvm
@@ -258472,7 +258471,7 @@ jVy
 tPt
 erp
 oLO
-erp
+lMC
 erp
 oLO
 oLO
@@ -258984,7 +258983,7 @@ lvm
 lvm
 lvm
 jVy
-erp
+lMC
 xeM
 rdd
 jVy
