@@ -2835,6 +2835,7 @@
 	},
 /obj/item/reagent_containers/glass/bottle/rogue/elfred,
 /obj/item/reagent_containers/glass/bottle/rogue/elfred,
+/obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/church)
 "cLr" = (
@@ -20394,6 +20395,7 @@
 /obj/item/rope,
 /obj/item/rope,
 /obj/structure/closet/crate/chest/neu_iron,
+/obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "tux" = (
@@ -61349,7 +61351,7 @@ lJT
 uwD
 dBv
 jvx
-aQL
+nlf
 aQL
 dBv
 lph
