@@ -46,6 +46,7 @@
 		/obj/item/natural/worms/leech/cheele = 1, //little buddy
 	)
 	ADD_TRAIT(H, TRAIT_CHOSEN, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
@@ -57,6 +58,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 5, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/magic/ritual, 6, TRUE)
 		if(istype(H.patron, /datum/patron/elemental/gani))
 			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 4, TRUE)
 		if(H.age == AGE_OLD)
