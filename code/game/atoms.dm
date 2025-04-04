@@ -955,6 +955,7 @@
 					message_admins(span_notice("[key_name(usr)] has added [amount] units of [chosen_id] to [src]"))
 	if(href_list[VV_HK_TRIGGER_EXPLOSION] && check_rights(R_FUN))
 		usr.client.cmd_admin_explosion(src)
+	
 	if(href_list[VV_HK_TRIGGER_EMP] && check_rights(R_FUN))
 		usr.client.cmd_admin_emp(src)
 	if(href_list[VV_HK_MODIFY_TRANSFORM] && check_rights(R_VAREDIT))
@@ -1341,3 +1342,13 @@
 	// force_no_gravity has been removed because this is Roguetown code
 	// it'd be trivial to readd if you needed it, though
 	return SSmapping.gravity_by_z_level["[gravity_turf.z]"] || turf_area.has_gravity
+
+
+/**
+* Instantiates the AI controller of this atom. Override this if you want to assign variables first.
+*
+* This will work fine without manually passing arguments.
++*/
+/atom/proc/InitializeAIController()
+	if(ai_controller)
+		ai_controller = new ai_controller(src)
