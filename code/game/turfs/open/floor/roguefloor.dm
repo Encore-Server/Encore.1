@@ -1027,6 +1027,19 @@
 	icon_state = "cobblestone_edges"
 	mouse_opacity = 0
 
+/obj/effect/decal/edge
+	name = ""
+	desc = ""
+	icon = 'icons/turf/roguefloor.dmi'
+	icon_state = "curb"
+	mouse_opacity = 0
+
+/obj/effect/decal/edge/natural
+	icon_state = "natural_ledge"
+
+/obj/effect/decal/edge/natural/half
+	icon_state = "natural_halfledge"
+
 /turf/open/floor/rogue/tile
 	icon_state = "chess"
 	landsound = 'sound/foley/jumpland/tileland.wav'
