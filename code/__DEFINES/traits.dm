@@ -444,3 +444,5 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TIMESTOP_TRAIT "timestop"
 #define HUGBOX_TRAIT "hugbox"
 #define ADVENTURER_TRAIT "adventurer"
+//for ai
+#define TRAIT_SUBTREE_REQUIRED_OPERATIONAL_DATUM "element-required"
