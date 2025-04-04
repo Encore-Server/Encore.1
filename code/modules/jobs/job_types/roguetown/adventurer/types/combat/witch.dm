@@ -1,6 +1,6 @@
-/datum/advclass/witch // All have decent magic but pretty much zero combat stats. Support role. 
+/datum/advclass/witch // All have decent magic but pretty much zero combat stats. Support role. Free food to goblins/skeletons.
 	name = "Witch"
-	tutorial = "Witches are experts in alchemy and the occult, often serving their preferred area through non-traditional ways."
+	tutorial = "Witches are experts in alchemy and the occult, often serving in the grey margins between folklore and heresy."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
 	vampcompat = FALSE
@@ -17,6 +17,23 @@
 	if(istype(H.patron, /datum/patron/heretic/devil))
 		H.cmode_music = 'sound/music/combat_cult.ogg'
 		neck = /obj/item/roguekey/inhumen
+
+	cloak = null
+	beltr = null
+	wrists = null
+	l_hand = /obj/item/ritechalk
+	gloves = /obj/item/clothing/gloves/roguetown/leather/black
+	beltl = /obj/item/rogueweapon/huntingknife/idagger/silver
+	backr = /obj/item/storage/backpack/rogue/satchel/black
+	belt = /obj/item/storage/belt/rogue/leather
+	pants = /obj/item/clothing/under/roguetown/tights
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/black
+	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
+	shoes = /obj/item/clothing/shoes/roguetown/boots
+	mask = /obj/item/clothing/mask/rogue/skullmask
+	head = /obj/item/clothing/head/roguetown/witchhat
+	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
+
 	
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
@@ -43,7 +60,7 @@
 			H.change_stat("strength", -1)
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", -1)
-		if("Ritualist")
+		if("Ritualist") // Ritual expert. Medium magic. Everything else suffers.
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a witch specialising in rituals. Unfortunately arduous study has left you weak in other areas."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -77,8 +94,6 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation) 
 			H.change_stat("intelligence", 2)
 			H.change_stat("strength", -1)
@@ -91,8 +106,7 @@
 	if (classchoice == "Heretic")
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
 		C.passive_devotion_gain += 0.5
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
-		C.grant_spells(H) // don't give churn as an extra spell to cloistered since they get their patron's full spell list (up to t3)
+		C.grant_spells(H) 
 		START_PROCESSING(SSobj, C)
 	else
 // HEARTHSTONE ADDITION END

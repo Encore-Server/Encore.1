@@ -490,49 +490,61 @@
 
 
 
-/atom/movable/screen/alert/status_effect/buff/undermaidenbargain
+/atom/movable/screen/alert/status_effect/buff/horribledeal
 	name = "Undermaiden's Bargain"
 	desc = "A horrible deal was struck in my name..."
 	icon_state = "buff"
 
-/datum/status_effect/buff/undermaidenbargain
-	id = "undermaidenbargain"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/undermaidenbargain
+/datum/status_effect/buff/horribledeal
+	id = "horribledeal"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/horribledeal
 	duration = 30 MINUTES
 
-/datum/status_effect/buff/undermaidenbargain/on_apply()
+/datum/status_effect/buff/horribledeal/on_apply()
 	. = ..()
 	to_chat(owner, span_danger("You feel as though some horrible deal has been prepared in your name. May you never see it fulfilled..."))
 	playsound(owner, 'sound/misc/bell.ogg', 100, FALSE, -1)
 	ADD_TRAIT(owner, TRAIT_DEATHBARGAIN, TRAIT_GENERIC)
 
-/datum/status_effect/buff/undermaidenbargain/on_remove()
+/datum/status_effect/buff/horribledeal/on_remove()
 	. = ..()
 	REMOVE_TRAIT(owner, TRAIT_DEATHBARGAIN, TRAIT_GENERIC)
 
 
 /datum/status_effect/buff/horribledeal/on_apply()
 	. = ..()
-	owner.remove_status_effect(/datum/status_effect/buff/undermaidenbargain)
-	to_chat(owner, span_warning("You feel the deal struck in your name is being fulfilled..."))
-	playsound(owner, 'sound/misc/deadbell.ogg', 100, FALSE, -1)
-	ADD_TRAIT(owner, TRAIT_NODEATH, TRAIT_GENERIC)
-	var/dirgeline = rand(1,6)
-	spawn(15)
-		switch(dirgeline)
-			if(1)
-				to_chat(owner, span_cultsmall("She watches the city skyline as her crimson pours into the drain."))
-			if(2)
-				to_chat(owner, span_cultsmall("He only wanted more for his family. He feels comfort on the pavement, the Watchman's blade having met its mark."))
-			if(3)
-				to_chat(owner, span_cultsmall("A sailor's leg is caught in naval rope. Their last thoughts are of home."))
-			if(4)
-				to_chat(owner, span_cultsmall("She sobbed over the vulpkian's corpse. The Brigand's mace stemmed her tears."))
-			if(5)
-				to_chat(owner, span_cultsmall("A farm son chokes up his last. At his bedside, a sister and mother weep."))
-			if(6)
-				to_chat(owner, span_cultsmall("A woman begs at a Headstone. It is your fault."))
+	if(!owner)
+		return
 
+	to_chat(owner, span_danger("You feel as though some horrible deal has been prepared in your name. May you never see it fulfilled..."))
+	playsound(owner, 'sound/misc/bell.ogg', 100, FALSE, -1)
+	ADD_TRAIT(owner, TRAIT_DEATHBARGAIN, TRAIT_GENERIC)
+
+	// Optional: delay the "fulfillment" part so we don't nuke it instantly
+	spawn(10) // delay 1 second to ensure proper setup
+		if(owner) // double-check still valid
+			to_chat(owner, span_warning("You feel the deal struck in your name is being fulfilled..."))
+			playsound(owner, 'sound/misc/deadbell.ogg', 100, FALSE, -1)
+			owner.remove_status_effect(/datum/status_effect/buff/horribledeal)
+			ADD_TRAIT(owner, TRAIT_NODEATH, TRAIT_GENERIC)
+
+			var/dirgeline = rand(1,6)
+			spawn(15)
+				if(!owner) return
+				switch(dirgeline)
+					if(1)
+						to_chat(owner, span_cultsmall("She watches the city skyline as her crimson pours into the drain."))
+					if(2)
+						to_chat(owner, span_cultsmall("He only wanted more for his family. He feels comfort on the pavement, the Watchman's blade having met its mark."))
+					if(3)
+						to_chat(owner, span_cultsmall("A sailor's leg is caught in naval rope. Their last thoughts are of home."))
+					if(4)
+						to_chat(owner, span_cultsmall("She sobbed over the vulpkian's corpse. The Brigand's mace stemmed her tears."))
+					if(5)
+						to_chat(owner, span_cultsmall("A farm son chokes up his last. At his bedside, a sister and mother weep."))
+					if(6)
+						to_chat(owner, span_cultsmall("A woman begs at a Headstone. It is your fault."))
+						
 /datum/status_effect/buff/horribledeal/on_remove()
 	. = ..()
 	to_chat(owner, span_warning("The Bargain struck in my name has been fulfilled... I am thrown from Necra's embrace, another in my place..."))

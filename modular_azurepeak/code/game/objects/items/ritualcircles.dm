@@ -295,15 +295,15 @@
 						user.say("Forgive me, the bargain is intoned!!")
 						to_chat(user,span_cultsmall("My devotion to the Undermaiden has allowed me to strike a bargain for these souls...."))
 						playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
-						undermaidenbargain(src)
+						horribledeal(src)
 						user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
 						spawn(120)
 							icon_state = "necra_chalky"
 
-/obj/structure/ritualcircle/necra/proc/undermaidenbargain(src)
+/obj/structure/ritualcircle/necra/proc/horribledeal(src)
 	var/ritualtargets = view(7, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
-		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
+		target.apply_status_effect(/datum/status_effect/buff/horribledeal)
 
 
 /obj/structure/ritualcircle/eora
