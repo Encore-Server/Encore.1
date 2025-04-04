@@ -110,6 +110,28 @@
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	//Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
-	C.grant_spells_templar(H)
+	C.passive_devotion_gain += 0.1
+	C.grant_spells_templar(H) //Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/guidance)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/fortitude)
+	if(H.patron?.type == /datum/patron/all_aspect)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_arms)
+	if(H.patron?.type == /datum/patron/heretic/jealous_god)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_link)
+	if(H.patron?.type == /datum/patron/heretic/devil)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_slaughter)
+	if(H.patron?.type == /datum/patron/heretic/otherkind)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

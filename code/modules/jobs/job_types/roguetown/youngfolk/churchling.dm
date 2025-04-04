@@ -48,5 +48,9 @@
 	H.change_stat("speed", 2)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1 //Most other church roles have a 0.25 passive gain, but as a baby church role, I think they should get the same as the militant roles.
 	C.grant_spells_churchling(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All non-combat church roles get Miracle, plus Inquisitor.
+		if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Non-militant Akan and Gani clergy are supposed to have Fortify too
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
