@@ -13,6 +13,7 @@
 
 /datum/skill/craft/weaponsmithing
 	name = "Weaponsmithing"
+	learnable = FALSE//Should only be accessible via virtue or via selecting appropriate role, and should not be improved via training
 	dreams = list(
 		"...tempered in gold and void, sharpened only by the sun and moon, your creation is finally complete. This one... This one will pierce the heavens...",
 		"...sweat drips down your brow and your arms ache with every strike, but at last, the blade is forged. A masterpiece of steel and gold, adorned with rontz gems...",
@@ -21,6 +22,7 @@
 
 /datum/skill/craft/armorsmithing
 	name = "Armorsmithing"
+	learnable = FALSE//Should only be accessible via virtue or via selecting appropriate role, and should not be improved via training
 	dreams = list(
 		"...you stand amidst the deadite horde, their tooth and claw unable to dent your armor. Your creation. Your masterpiece...",
 		"...the veteran's armor, battered beyond recognition, mirrors the scars upon his body. Yet, without your craft, he'd have fallen long ago. With skilled hands and a half a day's work, the armor is reborn - stronger than the day it was forged..."
@@ -28,6 +30,7 @@
 
 /datum/skill/craft/blacksmithing
 	name = "Blacksmithing"
+	learnable = FALSE//Should only be accessible via virtue or via selecting appropriate role, and should not be improved via training
 	dreams = list(
 		"...you bow your head to the old master who scolds you for your wastefulness having left the forges unattended through the night...",
 		"...you hammer away at a strange blue metal. It tempts you, begging to be formed into a crown of secrets...",

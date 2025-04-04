@@ -3,6 +3,9 @@
 	var/name = "Skill"
 	var/desc = ""
 
+	var/learnable = TRUE//Should the skill be learned by anyone?
+	var/dream_cost_unlearnable = 1000//Shitty way of rendering skills unlearnable temporarily
+
 	var/dream_cost_base = 2
 	var/dream_cost_per_level = 0.5
 	var/dream_legendary_extra_cost = 1
@@ -19,6 +22,8 @@
 	var/cost = FLOOR(dream_cost_base + (dream_cost_per_level * (level - 1)), 1)
 	if(level == SKILL_LEVEL_LEGENDARY)
 		cost += dream_legendary_extra_cost
+	if(learnable == FALSE)
+		cost += dream_cost_unlearnable
 	return cost
 
 /datum/skill/proc/get_random_dream()

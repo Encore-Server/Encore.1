@@ -28,6 +28,9 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)//Yeomen receive basic armor repair skills since they're otherwise impossible to learn
+		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 	head = /obj/item/clothing/head/roguetown/hatfur
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/hatblu

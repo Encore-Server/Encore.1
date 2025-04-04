@@ -17,6 +17,9 @@
 	H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/stealing, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)//Yeomen receive basic armor repair skills since they're otherwise impossible to learn
+	H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
 	armor = /obj/item/clothing/suit/roguetown/armor/armordress

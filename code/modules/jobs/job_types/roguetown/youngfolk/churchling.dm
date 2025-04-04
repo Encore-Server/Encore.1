@@ -30,6 +30,9 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)//Churchlings receive basic armor repair skills since they're otherwise impossible to learn
+		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 	neck = /obj/item/clothing/neck/roguetown/psicross
 	if(H.pronouns == SHE_HER || H.pronouns == THEY_THEM_F)
 		head = /obj/item/clothing/head/roguetown/armingcap

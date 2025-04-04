@@ -77,6 +77,9 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 1, TRUE)//Churchlings receive basic armor repair skills since they're otherwise impossible to learn
+		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 1, TRUE)
 		if(istype(H.patron, /datum/patron/elemental/gani))
 			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 		if(H.age == AGE_OLD)
