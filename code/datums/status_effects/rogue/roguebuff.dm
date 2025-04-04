@@ -197,20 +197,6 @@
 	to_chat(owner, span_warning("The darkness returns to normal."))
 	REMOVE_TRAIT(owner, TRAIT_DARKVISION, MAGIC_TRAIT)
 
-/atom/movable/screen/alert/status_effect/buff/haste
-	name = "Haste"
-	desc = "I am magically hastened."
-	icon_state = "buff"
-
-/datum/status_effect/buff/haste
-	id = "haste"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/haste
-	effectedstats = list("speed" = 5)
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/haste/nextmove_modifier()
-	return 0.85
-
 /atom/movable/screen/alert/status_effect/buff/longstrider
 	name = "Longstrider"
 	desc = "I can easily walk through rough terrain."
@@ -310,54 +296,42 @@
 
 /datum/status_effect/buff/healing/on_remove()
 	owner.remove_filter(MIRACLE_HEALING_FILTER)
+
+
+/atom/movable/screen/alert/status_effect/buff/convergence
+	name = "Convergence Miracle"
+	desc = "My body converges to whence it found strength and health."
+	icon_state = "buff"
+
+/atom/movable/screen/alert/status_effect/buff/stasis
+	name = "Stasis Miracle"
+	desc = "A part of me has been put in stasis."
+	icon_state = "buff"
 	
 /atom/movable/screen/alert/status_effect/buff/fortify
 	name = "Fortifying Miracle"
 	desc = "Divine intervention bolsters me and aids my recovery."
 	icon_state = "buff"
 
+/datum/status_effect/buff/convergence //Increases all healing while it lasts.
+	id = "convergence"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/convergence
+	duration = 1 MINUTES
+
+/datum/status_effect/buff/stasis //Increases all healing while it lasts.
+	id = "stasis"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/stasis
+	duration = 10 SECONDS
+
+
 /datum/status_effect/buff/fortify //Increases all healing while it lasts.
 	id = "fortify"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/fortify
 	duration = 1 MINUTES
 
-/datum/status_effect/buff/fortitude
-	id = "fortitude"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/fortitude
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/fortitude/on_apply()
-	. = ..()
-	to_chat(owner, span_warning("My body feels lighter..."))
-	ADD_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
-
-/datum/status_effect/buff/fortitude/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("The weight of the world rests upon my shoulders once more."))
-	REMOVE_TRAIT(owner, TRAIT_FORTITUDE, MAGIC_TRAIT)
-
-/atom/movable/screen/alert/status_effect/buff/guidance
-	name = "Guidance"
-	desc = "Arcyne assistance guides my hands."
-	icon_state = "buff"
-
-/datum/status_effect/buff/guidance
-	id = "guidance"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/guidance
-	duration = 1 MINUTES
-
-/datum/status_effect/buff/guidance/on_apply()
-	. = ..()
-	to_chat(owner, span_warning("I have better control over my accuracy!"))
-	ADD_TRAIT(owner, TRAIT_GUIDANCE, MAGIC_TRAIT)
-
-/datum/status_effect/buff/guidance/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("My feeble mind muddies my warcraft once more."))
-	REMOVE_TRAIT(owner, TRAIT_GUIDANCE, MAGIC_TRAIT)
-
 #undef MIRACLE_HEALING_FILTER
 
+<<<<<<< HEAD
 /// Rituals
 
 
@@ -585,3 +559,57 @@
 	. = ..()
 	to_chat(owner, span_warning("My mind is my own again, no longer awash with foggy peace!"))
 	REMOVE_TRAIT(owner, TRAIT_PACIFISM, TRAIT_GENERIC)
+=======
+// Mage Armor
+/atom/movable/screen/alert/status_effect/buff/magearmor
+	name = "Weakened Barrier"
+	desc = "My magical barrier is weakened."
+	icon_state = "stressvg"
+
+/datum/status_effect/buff/magearmor
+	id = "magearmor"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/magearmor
+
+/datum/status_effect/buff/magearmor/on_apply()
+	. = ..()
+	playsound(owner, 'sound/magic/magearmordown.ogg', 75, FALSE)
+	duration = (7-owner.mind.get_skill_level(/datum/skill/magic/arcane)) MINUTES
+
+/datum/status_effect/buff/magearmor/on_remove()
+	. = ..()
+	to_chat(owner, span_warning("My magical barrier reforms."))
+	playsound(owner, 'sound/magic/magearmorup.ogg', 75, FALSE)
+	owner.magearmor = 0
+
+/datum/status_effect/buff/call_to_arms
+	id = "call_to_arms"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_arms
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_arms
+	name = "Call to Arms"
+	desc = span_bloody("FOR GLORY AND HONOR!")
+	icon_state = "call_to_arms"
+
+/datum/status_effect/buff/call_to_slaughter
+	id = "call_to_slaughter"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = span_bloody("LAMBS TO THE SLAUGHTER!")
+	icon_state = "call_to_slaughter"
+
+/datum/status_effect/buff/enlarge
+	id = "enlarge_buff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/enlarge
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 3, "endurance" = -2, "constitution" = 1, "speed" = -2)
+
+/atom/movable/screen/alert/status_effect/buff/enlarge
+	name = "Enlarge Buff"
+	icon_state = "muscle"
+>>>>>>> master
