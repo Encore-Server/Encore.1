@@ -533,7 +533,7 @@ var/static/list/druid_forms = list(
 		return FALSE
 	return TRUE
 
-/obj/effect/proc_holder/spell/self/dendor_shapeshift/proc/handle_death(mob/living/shape)
+/obj/effect/proc_holder/spell/self/dendor_shapeshift/proc/handle_death(mob/living/shape) // I don't know why this is throwing an error but it seems harmless?
 	SIGNAL_HANDLER
 	
 	var/obj/shapeshift_holder/H = locate() in shape

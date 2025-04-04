@@ -1089,8 +1089,8 @@
 	vis_contents += flaggy
 	Stun(300)
 	Knockdown(300)
-	apply_status_effect(/datum/status_effect/debuff/breedable)
-	apply_status_effect(/datum/status_effect/debuff/submissive)
+	apply_status_effect(/datum/status_effect/debuff/yield)
+	apply_status_effect(/datum/status_effect/debuff/surrender)
 	src.visible_message(span_notice("[src] yields!"))
 	playsound(src, 'sound/misc/surrender.ogg', 100, FALSE, -1, ignore_walls=TRUE)
 	update_vision_cone()

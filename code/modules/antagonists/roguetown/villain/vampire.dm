@@ -280,27 +280,27 @@
 	if(VD.vitae < 100)
 		to_chat(src, span_warning("Not enough vitae blood."))
 		return
-	if(has_status_effect(/datum/status_effect/buff/fortitude))
+	if(has_status_effect(/datum/status_effect/buff/blood_fortitude))
 		to_chat(src, span_warning("Already active."))
 		return
 	VD.vitae -= 100
 	rogstam_add(2000)
-	apply_status_effect(/datum/status_effect/buff/fortitude)
+	apply_status_effect(/datum/status_effect/buff/blood_fortitude)
 	to_chat(src, span_greentext("! ARMOR OF DARKNESS !"))
 	src.playsound_local(get_turf(src), 'sound/misc/vampirespell.ogg', 100, FALSE, pressure_affected = FALSE)
 
-/datum/status_effect/buff/fortitude
-	id = "fortitude"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/fortitude
+/datum/status_effect/buff/blood_fortitude
+	id = "blood_fortitude"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/blood_fortitude
 	effectedstats = list("endurance" = 20,"constitution" = 20)
 	duration = 30 SECONDS
 
-/atom/movable/screen/alert/status_effect/buff/fortitude
+/atom/movable/screen/alert/status_effect/buff/blood_fortitude
 	name = "Armor of Darkness"
 	desc = ""
 	icon_state = "bleed1"
 
-/datum/status_effect/buff/fortitude/on_apply()
+/datum/status_effect/buff/blood_fortitude/on_apply()
 	. = ..()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
@@ -308,7 +308,7 @@
 		H.skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/vampire_fortitude(H)
 	owner.add_stress(/datum/stressevent/weed)
 
-/datum/status_effect/buff/fortitude/on_remove()
+/datum/status_effect/buff/blood_fortitude/on_remove()
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		if(istype(H.skin_armor, /obj/item/clothing/suit/roguetown/armor/skin_armor/vampire_fortitude))
