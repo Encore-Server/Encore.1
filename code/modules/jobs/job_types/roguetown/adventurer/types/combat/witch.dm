@@ -1,6 +1,6 @@
-/datum/advclass/witch
+/datum/advclass/witch // All have decent magic but pretty much zero combat stats. Support role. 
 	name = "Witch"
-	tutorial = "Witches are experts in alchemy and the occult."
+	tutorial = "Witches are experts in alchemy and the occult, often serving their preferred area through non-traditional ways."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_TOLERATED_UP
 	vampcompat = FALSE
@@ -35,9 +35,9 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/ritual, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
 			H.change_stat("intelligence", 2) // Higher intelligence but poor combat stats.
 			H.change_stat("perception", 1)
 			H.change_stat("strength", -1)
@@ -89,37 +89,6 @@
 
 	// HEARTHSTONE ADD: cloistered devout custom outfits
 	if (classchoice == "Heretic")
-		// do the generic stuff first then replace it w/ patron specific things... if it exists
-		// for reference, cloistered devouts are lightly armored/unarmored but get patron-specific stuff (if applicable) and a devo regen
-		head = /obj/item/clothing/head/roguetown/roguehood/black
-		armor = /obj/item/clothing/suit/roguetown/shirt/robe
-		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
-		wrists = null
-		beltr = null
-		backr = /obj/item/rogueweapon/woodstaff
-		pants = /obj/item/clothing/under/roguetown/tights
-		shoes = /obj/item/clothing/shoes/roguetown/boots
-		// apply patron-specific outfit alterations
-		switch(H.patron?.type)
-			if(/datum/patron/elemental/visires)
-				head = /obj/item/clothing/head/roguetown/roguehood
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/visires
-				beltr = /obj/item/flashlight/flare/torch/lantern // you are the lightbringer
-			if(/datum/patron/elemental/akan)
-				head =  /obj/item/clothing/head/roguetown/akanhood
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
-				pants = /obj/item/clothing/under/roguetown/tights/black
-				belt = /obj/item/storage/belt/rogue/leather/black
-			if(/datum/patron/elemental/mjallidhorn)
-				head = /obj/item/clothing/head/roguetown/mjallidhornhood
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn
-				pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-			if(/datum/patron/elemental/gani)
-				head = /obj/item/clothing/head/roguetown/ganimask
-				armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
-				pants = /obj/item/clothing/under/roguetown/loincloth
-				belt = /obj/item/storage/belt/rogue/leather/rope
-				shoes = /obj/item/clothing/shoes/roguetown/sandals
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
 		C.passive_devotion_gain += 0.5
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle

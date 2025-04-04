@@ -255,17 +255,6 @@
 	desc = "I can barely feel my limbs!"
 	icon_state = "chilled"
 
-<<<<<<< HEAD
-/datum/status_effect/debuff/ritesexpended
-	id = "ritesexpended"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/ritesexpended
-	duration = 30 MINUTES
-
-/atom/movable/screen/alert/status_effect/debuff/ritesexpended
-	name = "Rites Complete"
-	desc = "It will take time before I can next perform a rite."
-	icon_state = "ritesexpended"
-=======
 /datum/status_effect/debuff/call_to_arms
 	id = "call_to_arms"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/call_to_arms
@@ -303,4 +292,12 @@
 	desc = "A putrid rotting scent fills your nose as hell's call for slaughter rattles you to your core.."
 	icon_state = "call_to_slaughter"
 
->>>>>>> master
+/datum/status_effect/debuff/ritesexpended
+	id = "ritesexpended"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/ritesexpended
+	duration = 30 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/ritesexpended
+	name = "Rites Complete"
+	desc = "It will take time before I can next perform a rite."
+	icon_state = "ritesexpended"

@@ -45,12 +45,9 @@
 #define TRAIT_GUARDSMAN "Vigilant Guardsman"
 #define TRAIT_KNIGHTSMAN "Royal Defiance"
 #define TRAIT_KEENEARS	"Keen ears"
-<<<<<<< HEAD
+#define	TRAIT_MAGE_ARMOR	"Mage armor"
 #define TRAIT_DEATHBARGAIN "Death Bargain" // Used by UNDERMAIDEN'S BARGAIN
 #define TRAIT_RITUALIST "Ritualist"  // Allows use of ritual chalk
-=======
-#define	TRAIT_MAGE_ARMOR	"Mage armor"
->>>>>>> master
 
 //Hearthstone port (Tracking)
 #define TRAIT_PERFECT_TRACKER "Perfect Tracker" //Will always find any tracks and analyzes them perfectly.
@@ -178,14 +175,11 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_GUIDANCE = span_info("Arcyne assistance guides my weapons."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
 	TRAIT_KEENEARS = span_info("I've a good pair of ears, and can tell who is speaking, even when they're out of sight."),
-<<<<<<< HEAD
-	TRAIT_DEATHBARGAIN = span_info("A horrible deal has been prepared in your name. May you never see it fulfilled..."),
-	TRAIT_RITUALIST = span_info("I am skilled in art of using rituals."),
-=======
 	TRAIT_MAGE_ARMOR	=	span_info("My magic instinctually shields me from harm, much like a second, easily breakable skin"),
 	TRAIT_COUNTERCOUNTERSPELL = span_info("I automatically know when to counter Counterspells, and can do so without even thinking about it."),
 	TRAIT_BIGGUY = span_info("My immense frame and size allows me to smash through wooden doors, and throw people more easily."),
->>>>>>> master
+	TRAIT_DEATHBARGAIN = span_info("A horrible deal has been prepared in your name. May you never see it fulfilled..."),
+	TRAIT_RITUALIST = span_info("I am skilled in art of using rituals."),
 ))
 
 // trait accessor defines

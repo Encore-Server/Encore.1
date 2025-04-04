@@ -331,9 +331,58 @@
 
 #undef MIRACLE_HEALING_FILTER
 
-<<<<<<< HEAD
-/// Rituals
+// Mage Armor
+/atom/movable/screen/alert/status_effect/buff/magearmor
+	name = "Weakened Barrier"
+	desc = "My magical barrier is weakened."
+	icon_state = "stressvg"
 
+/datum/status_effect/buff/magearmor
+	id = "magearmor"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/magearmor
+
+/datum/status_effect/buff/magearmor/on_apply()
+	. = ..()
+	playsound(owner, 'sound/magic/magearmordown.ogg', 75, FALSE)
+	duration = (7-owner.mind.get_skill_level(/datum/skill/magic/arcane)) MINUTES
+
+/datum/status_effect/buff/magearmor/on_remove()
+	. = ..()
+	to_chat(owner, span_warning("My magical barrier reforms."))
+	playsound(owner, 'sound/magic/magearmorup.ogg', 75, FALSE)
+	owner.magearmor = 0
+
+/datum/status_effect/buff/call_to_arms
+	id = "call_to_arms"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_arms
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_arms
+	name = "Call to Arms"
+	desc = span_bloody("FOR GLORY AND HONOR!")
+	icon_state = "call_to_arms"
+
+/datum/status_effect/buff/call_to_slaughter
+	id = "call_to_slaughter"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
+
+/atom/movable/screen/alert/status_effect/buff/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = span_bloody("LAMBS TO THE SLAUGHTER!")
+	icon_state = "call_to_slaughter"
+
+/datum/status_effect/buff/enlarge
+	id = "enlarge_buff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/enlarge
+	duration = 2.5 MINUTES
+	effectedstats = list("strength" = 3, "endurance" = -2, "constitution" = 1, "speed" = -2)
+
+/atom/movable/screen/alert/status_effect/buff/enlarge
+	name = "Enlarge Buff"
+	icon_state = "muscle"
 
 #define BLESSINGOFSUN_FILTER "sun_glow"
 /atom/movable/screen/alert/status_effect/buff/guidinglight
@@ -559,57 +608,3 @@
 	. = ..()
 	to_chat(owner, span_warning("My mind is my own again, no longer awash with foggy peace!"))
 	REMOVE_TRAIT(owner, TRAIT_PACIFISM, TRAIT_GENERIC)
-=======
-// Mage Armor
-/atom/movable/screen/alert/status_effect/buff/magearmor
-	name = "Weakened Barrier"
-	desc = "My magical barrier is weakened."
-	icon_state = "stressvg"
-
-/datum/status_effect/buff/magearmor
-	id = "magearmor"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/magearmor
-
-/datum/status_effect/buff/magearmor/on_apply()
-	. = ..()
-	playsound(owner, 'sound/magic/magearmordown.ogg', 75, FALSE)
-	duration = (7-owner.mind.get_skill_level(/datum/skill/magic/arcane)) MINUTES
-
-/datum/status_effect/buff/magearmor/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("My magical barrier reforms."))
-	playsound(owner, 'sound/magic/magearmorup.ogg', 75, FALSE)
-	owner.magearmor = 0
-
-/datum/status_effect/buff/call_to_arms
-	id = "call_to_arms"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_arms
-	duration = 2.5 MINUTES
-	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
-
-/atom/movable/screen/alert/status_effect/buff/call_to_arms
-	name = "Call to Arms"
-	desc = span_bloody("FOR GLORY AND HONOR!")
-	icon_state = "call_to_arms"
-
-/datum/status_effect/buff/call_to_slaughter
-	id = "call_to_slaughter"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/call_to_slaughter
-	duration = 2.5 MINUTES
-	effectedstats = list("strength" = 1, "endurance" = 2, "constitution" = 1)
-
-/atom/movable/screen/alert/status_effect/buff/call_to_slaughter
-	name = "Call to Slaughter"
-	desc = span_bloody("LAMBS TO THE SLAUGHTER!")
-	icon_state = "call_to_slaughter"
-
-/datum/status_effect/buff/enlarge
-	id = "enlarge_buff"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/enlarge
-	duration = 2.5 MINUTES
-	effectedstats = list("strength" = 3, "endurance" = -2, "constitution" = 1, "speed" = -2)
-
-/atom/movable/screen/alert/status_effect/buff/enlarge
-	name = "Enlarge Buff"
-	icon_state = "muscle"
->>>>>>> master
