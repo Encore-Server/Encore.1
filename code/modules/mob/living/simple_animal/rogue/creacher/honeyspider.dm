@@ -18,15 +18,18 @@
 	faction = list("spiders")
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	attack_sound = 'sound/combat/wooshes/punch/punchwoosh (2).ogg'
-	health = 65
-	maxHealth = 65
+	health = HONEYSPIDER_HEALTH
+	maxHealth = HONEYSPIDER_HEALTH
 	melee_damage_lower = 17
 	melee_damage_upper = 21
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
-	food_type = list(/obj/item/bodypart, /obj/item/organ, /obj/item/reagent_containers/food/snacks/rogue/meat)
+	food_type = list(/obj/item/reagent_containers/food/snacks/rogue/meat, 
+					//obj/item/bodypart, 
+					/obj/item/organ, 
+	)
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	pooptype = null
 	STACON = 6
@@ -39,7 +42,10 @@
 	retreat_health = 0.3
 	attack_sound = list('sound/vo/mobs/spider/attack (1).ogg','sound/vo/mobs/spider/attack (2).ogg','sound/vo/mobs/spider/attack (3).ogg','sound/vo/mobs/spider/attack (4).ogg')
 	aggressive = 1
-	stat_attack = UNCONSCIOUS
+	//new ai, old ai off
+	AIStatus = AI_OFF
+	can_have_ai = FALSE
+	ai_controller = /datum/ai_controller/spider
 
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated
 	icon = 'icons/roguetown/mob/monster/spider.dmi'
@@ -59,7 +65,7 @@
 	if(prob(33))
 		gender = FEMALE
 	update_icon()
-
+	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/spider/AttackingTarget()
 	. = ..()
@@ -157,3 +163,5 @@
 			return "foreleg"
 	return ..()
 
+/datum/intent/simple/bite/honeyspider
+	clickcd = HONEYSPIDER_ATTACK_SPEED
