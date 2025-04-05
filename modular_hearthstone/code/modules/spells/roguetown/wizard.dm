@@ -218,11 +218,10 @@
 		/obj/effect/proc_holder/spell/invoked/blindness,
 		/obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e,
 //		/obj/effect/proc_holder/spell/invoked/frostbite5e,
-		/obj/effect/proc_holder/spell/invoked/guidance,
-		/obj/effect/proc_holder/spell/invoked/fortitude,
 		/obj/effect/proc_holder/spell/invoked/snap_freeze,
-		/obj/effect/proc_holder/spell/invoked/projectile/frostbolt
+		/obj/effect/proc_holder/spell/invoked/projectile/frostbolt,
 	)
+	
 	for(var/i = 1, i <= spell_choices.len, i++)
 		choices["[spell_choices[i].name]: [spell_choices[i].cost]"] = spell_choices[i]
 
@@ -358,6 +357,7 @@
 			playsound(get_turf(L), 'sound/magic/magic_nulled.ogg', 100)
 			return
 		L.Immobilize(duration)
+		L.OffBalance(duration)
 		L.visible_message("<span class='warning'>[L] is held by tendrils of arcyne force!</span>")
 		new /obj/effect/temp_visual/slowdown_spell_aoe/long(get_turf(L))
 
@@ -650,66 +650,6 @@
 		attached_spell.remove_hand()
 	return
 
-/obj/effect/proc_holder/spell/invoked/featherfall
-	name = "Featherfall"
-	desc = "Grant yourself and any creatures adjacent to you some defense against falls."
-	cost = 1
-	xp_gain = TRUE
-	school = "transmutation"
-	releasedrain = 50
-	chargedrain = 0
-	chargetime = 10 SECONDS
-	charge_max = 2 MINUTES
-	warnie = "spellwarning"
-	no_early_release = TRUE
-	movement_interrupt = TRUE
-	charging_slowdown = 2
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-	overlay_state = "jump"
-
-/obj/effect/proc_holder/spell/invoked/featherfall/cast(list/targets, mob/user = usr)
-
-	user.visible_message("[user] mutters an incantation and a dim pulse of light radiates out from them.")
-
-	for(var/mob/living/L in range(1, usr))
-		L.apply_status_effect(/datum/status_effect/buff/featherfall)
-
-	return TRUE
-
-/obj/effect/proc_holder/spell/invoked/haste
-	name = "Haste"
-	desc = "Cause a target to be magically hastened."
-	cost = 2
-	xp_gain = TRUE
-	releasedrain = 60
-	chargedrain = 1
-	chargetime = 1 SECONDS
-	charge_max = 1.5 MINUTES
-	warnie = "spellwarning"
-	school = "transmutation"
-	no_early_release = TRUE
-	movement_interrupt = FALSE
-	charging_slowdown = 2
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-
-/obj/effect/proc_holder/spell/invoked/haste/cast(list/targets, mob/user)
-	var/atom/A = targets[1]
-	if(!isliving(A))
-		revert_cast()
-		return
-
-	var/mob/living/spelltarget = A
-	spelltarget.apply_status_effect(/datum/status_effect/buff/haste)
-	playsound(get_turf(spelltarget), 'sound/magic/haste.ogg', 80, TRUE, soundping = TRUE)
-
-	if(spelltarget != user)
-		user.visible_message("[user] mutters an incantation and [spelltarget] briefly shines yellow.")
-	else
-		user.visible_message("[user] mutters an incantation and they briefly shine yellow.")
-
-	return TRUE
 
 /obj/effect/proc_holder/spell/invoked/knock
 	name = "Knock"
@@ -750,31 +690,6 @@
 /obj/effect/proc_holder/spell/invoked/knock/proc/open_window(obj/structure/roguewindow/openclose/W)
 	if(istype(W))
 		W.force_open()
-
-/obj/effect/proc_holder/spell/invoked/longstrider
-	name = "Longstrider"
-	desc = "Grant yourself and any creatures adjacent to you free movement through rough terrain."
-	cost = 1
-	xp_gain = TRUE
-	school = "transmutation"
-	releasedrain = 50
-	chargedrain = 0
-	chargetime = 4 SECONDS
-	charge_max = 1.5 MINUTES
-	warnie = "spellwarning"
-	no_early_release = TRUE
-	charging_slowdown = 1
-	chargedloop = /datum/looping_sound/invokegen
-	associated_skill = /datum/skill/magic/arcane
-
-/obj/effect/proc_holder/spell/invoked/longstrider/cast(list/targets, mob/user = usr)
-
-	user.visible_message("[user] mutters an incantation and a dim pulse of light radiates out from them.")
-
-	for(var/mob/living/L in range(1, usr))
-		L.apply_status_effect(/datum/status_effect/buff/longstrider)
-
-	return TRUE
 
 //ports -- todo: sfx
 
@@ -1112,6 +1027,444 @@
 			new /obj/effect/temp_visual/snap_freeze(get_turf(L))
 	qdel(src)
 
+/obj/effect/proc_holder/spell/invoked/poisonspray
+	name = "Aerosolize" //once again renamed to fit better :)
+	desc = "Turns a container of liquid into a smoke containing the reagents of that liquid."
+	overlay_state = "null"
+	releasedrain = 50
+	chargetime = 3
+	charge_max = 20 SECONDS
+	//chargetime = 10
+	//charge_max = 30 SECONDS
+	range = 6
+	warnie = "spellwarning"
+	movement_interrupt = FALSE
+	no_early_release = FALSE
+	chargedloop = null
+	sound = 'sound/magic/whiteflame.ogg'
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane //can be arcane, druidic, blood, holy
+	cost = 1
+
+	xp_gain = TRUE
+	miracle = FALSE
+
+	invocation = ""
+	invocation_type = "shout" //can be none, whisper, emote and shout
+
+/obj/effect/proc_holder/spell/invoked/poisonspray/cast(list/targets, mob/living/user)
+	var/turf/T = get_turf(targets[1]) //check for turf
+	if(T)
+		var/obj/item/held_item = user.get_active_held_item() //get held item
+		var/obj/item/reagent_containers/con = held_item //get held item
+		if(con)
+			if(con.spillable)
+				if(con.reagents.total_volume > 0)
+					var/datum/reagents/R = con.reagents
+					var/datum/effect_system/smoke_spread/chem/smoke = new
+					smoke.set_up(R, 1, T, FALSE)
+					smoke.start()
+
+					user.visible_message(span_warning("[user] sprays the contents of the [held_item], creating a cloud!"), span_warning("You spray the contents of the [held_item], creating a cloud!"))
+					con.reagents.clear_reagents() //empty the container
+					playsound(user, 'sound/magic/webspin.ogg', 100)
+				else
+					to_chat(user, "<span class='warning'>The [held_item] is empty!</span>")
+					revert_cast()
+			else
+				to_chat(user, "<span class='warning'>I can't get access to the contents of this [held_item]!</span>")
+				revert_cast()
+		else
+			to_chat(user, "<span class='warning'>I need to hold a container to cast this!</span>")
+			revert_cast()
+	else
+		to_chat(user, "<span class='warning'>I couldn't find a good place for this!</span>")
+		revert_cast()
+
+
+/obj/effect/proc_holder/spell/invoked/gravity // to do: get scroll icon
+	name = "Gravity"
+	desc = "Weighten space around someone, crushing them and knocking them to the floor. Stronger opponets will resist and be off-balanced."
+	cost = 2
+	overlay_state = "hierophant"
+	xp_gain = TRUE
+	releasedrain = 20
+	chargedrain = 1
+	chargetime = 7
+	charge_max = 15 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 2
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	var/delay = 3
+	var/damage = 0 // damage based off your str 
+	var/area_of_effect = 0
+
+/obj/effect/proc_holder/spell/invoked/counterspell
+	name = "Counterspell"
+	desc = "Briefly nullify the arcyne energy surrounding a target. Either preventing magic from being used outright, or preventing most magics from affecting the subject."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 80 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune2"
+
+/obj/effect/proc_holder/spell/invoked/counterspell/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		if(HAS_TRAIT(target, TRAIT_COUNTERCOUNTERSPELL))
+			to_chat(user, "<span class='warning'>They've counterspelled my counterspell immediately! It's not going to work on them!</span>")
+			revert_cast()
+			return
+		ADD_TRAIT(target, TRAIT_SPELLCOCKBLOCK, MAGIC_TRAIT)
+		ADD_TRAIT(target, TRAIT_ANTIMAGIC, MAGIC_TRAIT)
+		to_chat(target, span_warning("I feel as if my connection to the Arcyne disappears entirely. The air feels still..."))
+		target.visible_message("[target]'s arcyne aura seems to fade.")
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 20 SECONDS)
+		return TRUE
+
+
+/obj/effect/proc_holder/spell/invoked/counterspell/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_SPELLCOCKBLOCK, MAGIC_TRAIT)
+	REMOVE_TRAIT(target, TRAIT_ANTIMAGIC, MAGIC_TRAIT)
+	to_chat(target, span_warning("I feel my connection to the arcyne surround me once more."))
+	target.visible_message("[target]'s arcyne aura seems to return once more.")
+
+/obj/effect/proc_holder/spell/invoked/enlarge
+	name = "Enlarge Person"
+	desc = "For a time, enlarges your target to a giant hulking version of themselves capable of bashing into doors. Does not work on folk who are already large."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 120 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune1"
+
+/obj/effect/proc_holder/spell/invoked/enlarge/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		if(HAS_TRAIT(target,TRAIT_BIGGUY))
+			to_chat(user, "<span class='warning'>They're too big to enlarge!</span>")
+			revert_cast()
+			return
+		ADD_TRAIT(target, TRAIT_BIGGUY, MAGIC_TRAIT)
+		target.transform = target.transform.Scale(1.25, 1.25)
+		target.transform = target.transform.Translate(0, (0.25 * 16))
+		target.update_transform()
+		target.apply_status_effect(/datum/status_effect/buff/enlarge)
+		to_chat(target, span_warning("I feel taller than usual, and like I could run through a door!"))
+		target.visible_message("[target]'s body grows in size!")
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 60 SECONDS)
+		return TRUE
+
+
+/obj/effect/proc_holder/spell/invoked/enlarge/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_BIGGUY, MAGIC_TRAIT)
+	target.transform = target.transform.Translate(0, -(0.25 * 16))
+	target.transform = target.transform.Scale(1/1.25, 1/1.25)      
+	target.update_transform()
+	target.remove_status_effect(/datum/status_effect/buff/enlarge)
+	to_chat(target, span_warning("I feel smaller all of a sudden."))
+	target.visible_message("[target]'s body shrinks quickly!")
+
+/obj/effect/proc_holder/spell/invoked/leap
+	name = "Leap"
+	desc = "You empower your target's legs to allow them to leap to great heights. This allows your target to jump up floor levels, however does not prevent the damage from falling down one."
+	cost = 1
+	releasedrain = 35
+	chargedrain = 1
+	chargetime = 30
+	charge_max = 240 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune3"
+
+/obj/effect/proc_holder/spell/invoked/leap/cast(list/targets, mob/user = usr)
+	if(isliving(targets[1]))
+		var/mob/living/carbon/target = targets[1]
+		if(HAS_TRAIT(target,TRAIT_ZJUMP))
+			to_chat(user, "<span class='warning'>They're already able to jump that high!</span>")
+			revert_cast()
+			return
+		ADD_TRAIT(target, TRAIT_ZJUMP, MAGIC_TRAIT)
+		to_chat(target, span_warning("My legs feel stronger! I feel like I can jump up high!"))
+		addtimer(CALLBACK(src, PROC_REF(remove_buff), target), wait = 15 SECONDS)
+		return TRUE
+
+
+/obj/effect/proc_holder/spell/invoked/leap/proc/remove_buff(mob/living/carbon/target)
+	REMOVE_TRAIT(target, TRAIT_ZJUMP, MAGIC_TRAIT)
+	to_chat(target, span_warning("My legs feel remarkably weaker."))
+	target.Immobilize(5)
+
+
+
+/obj/effect/proc_holder/spell/invoked/gravity/cast(list/targets, mob/user)
+	var/turf/T = get_turf(targets[1])
+
+	for(var/turf/affected_turf in view(area_of_effect, T))
+		if(affected_turf.density)
+			continue
+
+
+	for(var/turf/affected_turf in view(area_of_effect, T))
+		new /obj/effect/temp_visual/gravity(affected_turf)
+		playsound(T, 'sound/magic/gravity.ogg', 80, TRUE, soundping = FALSE)
+		for(var/mob/living/L in affected_turf.contents) 
+			if(L.STASTR <= 11)
+				L.adjustBruteLoss(30)
+				L.Knockdown(5)
+				to_chat(L, "<span class='userdanger'>You're magically weighed down and lose your footing!</span>")
+			else
+				L.OffBalance(10)
+				L.adjustBruteLoss(15)
+				to_chat(L, "<span class='userdanger'>You're magically weighed down, your strength resist!</span>")
+
+/obj/effect/temp_visual/gravity
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "hierophant_squares"
+	name = "gravity magic"
+	desc = "Get out of the way!"
+	randomdir = FALSE
+	duration = 3 SECONDS
+	layer = MASSIVE_OBJ_LAYER
+	light_range = 2
+	light_color = COLOR_PALE_PURPLE_GRAY
+
+/obj/effect/proc_holder/spell/invoked/projectile/repel
+	name = "Repel"
+	desc = "Shoot out a magical bolt that pushes the target struck away from the caster."
+	clothes_req = FALSE
+	range = 4
+	projectile_type = /obj/projectile/magic/repel
+	overlay_state = ""
+	sound = list('sound/magic/unmagnet.ogg')
+	active = FALSE
+	releasedrain = 7
+	chargedrain = 0
+	chargetime = 0
+	charge_max = 40 SECONDS
+	warnie = "spellwarning"
+	overlay_state = "fetch"
+	no_early_release = TRUE
+	charging_slowdown = 1
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	cost = 1
+	xp_gain = TRUE
+
+/obj/projectile/magic/repel
+	name = "bolt of repeling"
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "curseblob"
+	range = 15
+
+/obj/projectile/magic/repel/on_hit(target)
+
+	var/atom/throw_target = get_edge_target_turf(firer, get_dir(firer, target)) //ill be real I got no idea why this worked.
+	if(isliving(target))
+		var/mob/living/L = target
+		if(L.anti_magic_check() || !firer)
+			L.visible_message(span_warning("[src] vanishes on contact with [target]!"))
+			return BULLET_ACT_BLOCK
+		L.throw_at(throw_target, 7, 4)
+	else
+		if(isitem(target))
+			var/obj/item/I = target
+			var/mob/living/carbon/human/carbon_firer
+			if (ishuman(firer))
+				carbon_firer = firer
+				if (carbon_firer?.can_catch_item())
+					throw_target = get_edge_target_turf(firer, get_dir(firer, target))
+			I.throw_at(throw_target, 7, 4)
+
+/obj/effect/proc_holder/spell/invoked/projectile/arcynebolt //makes you confused for 2 seconds,
+	name = "Arcyne Bolt"
+	desc = "Shoot out a rapid bolt of arcyne magic that hits on impact. Little damage, but disorienting."
+	clothes_req = FALSE
+	range = 12
+	projectile_type = /obj/projectile/energy/rogue3
+	overlay_state = "force_dart"
+	sound = list('sound/magic/vlightning.ogg')
+	active = FALSE
+	releasedrain = 20
+	chargedrain = 1
+	chargetime = 7
+	charge_max = 20 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 3
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	cost = 1
+
+/obj/projectile/energy/rogue3
+	name = "Arcyne Bolt"
+	icon_state = "arcane_barrage"
+	damage = 30
+	damage_type = BRUTE
+	armor_penetration = 10
+	woundclass = BCLASS_SMASH
+	nodamage = FALSE
+	flag = "bullet"
+	hitsound = 'sound/combat/hits/blunt/shovel_hit2.ogg'
+	speed = 1
+
+/obj/projectile/energy/rogue3/on_hit(target)
+	. = ..()
+	if(ismob(target))
+		var/mob/living/carbon/M = target
+		if(M.anti_magic_check())
+			visible_message(span_warning("[src] fizzles on contact with [target]!"))
+			playsound(get_turf(target), 'sound/magic/magic_nulled.ogg', 100)
+			qdel(src)
+			return BULLET_ACT_BLOCK
+		M.confused += 4
+		playsound(get_turf(target), 'sound/combat/hits/blunt/shovel_hit2.ogg', 100) //CLANG
+	else
+		return
+
+
+
+
+/obj/effect/proc_holder/spell/invoked/blink
+	name = "Blink"
+	desc = "Teleport to a targeted location within your field of view. Limited to a range of 5 tiles. Only works on the same plane as the caster."
+	school = "conjuration"
+	cost = 1
+	releasedrain = 30
+	chargedrain = 1
+	chargetime = 1.5 SECONDS
+	charge_max = 10 SECONDS
+	warnie = "spellwarning"
+	no_early_release = TRUE
+	movement_interrupt = FALSE
+	charging_slowdown = 2
+	chargedloop = /datum/looping_sound/invokegen
+	associated_skill = /datum/skill/magic/arcane
+	overlay_state = "rune6"
+	xp_gain = TRUE
+	var/max_range = 5
+	var/phase = /obj/effect/temp_visual/blink
+
+/obj/effect/temp_visual/blink
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "hierophant_blast"
+	name = "teleportation magic"
+	desc = "Get out of the way!"
+	randomdir = FALSE
+	duration = 4 SECONDS
+	layer = MASSIVE_OBJ_LAYER
+	light_color = COLOR_PALE_PURPLE_GRAY
+
+/obj/effect/temp_visual/blink/Initialize(mapload, new_caster)
+	. = ..()
+	var/turf/src_turf = get_turf(src)
+	playsound(src_turf,'sound/magic/blink.ogg', 65, TRUE, -5)
+
+/obj/effect/proc_holder/spell/invoked/blink/cast(list/targets, mob/user = usr)
+	var/turf/T = get_turf(targets[1])
+	var/turf/start = get_turf(user)
+	
+	if(!T)
+		to_chat(user, span_warning("Invalid target location!"))
+		revert_cast()
+		return
+
+	if(T.z != start.z)
+		to_chat(user, span_warning("I can only teleport on the same plane!"))
+		revert_cast()
+		return
+	
+	if(istransparentturf(T))
+		to_chat(user, span_warning("I cannot teleport to the open air!"))
+		revert_cast()
+		return
+
+	if(T.density)
+		to_chat(user, span_warning("I cannot teleport into a wall!"))
+		revert_cast()
+		return
+
+	// Check range limit
+	var/distance = get_dist(start, T)
+	if(distance > max_range)
+		to_chat(user, span_warning("That location is too far away! I can only blink up to [max_range] tiles."))
+		revert_cast()
+		return
+	
+	// Display a more obvious preparation message
+	user.visible_message(span_warning("<b>[user]'s body begins to shimmer with arcane energy as [user.p_they()] prepare[user.p_s()] to blink!</b>"), 
+						span_notice("<b>I focus my arcane energy, preparing to blink across space!</b>"))
+		
+	// Check if there's a wall in the way, but exclude the target turf
+	var/list/turf_list = getline(start, T)
+	// Remove the last turf (target location) from the check
+	if(length(turf_list) > 0)
+		turf_list.len--
+	
+	for(var/turf/turf in turf_list)
+		if(turf.density)
+			to_chat(user, span_warning("I cannot blink through walls!"))
+			revert_cast()
+			return
+			
+	// Check for doors and bars in the path
+	for(var/turf/traversal_turf in turf_list)
+		// Check for mineral doors
+		for(var/obj/structure/mineral_door/door in (traversal_turf.contents + T.contents))
+			if(door.density)
+				to_chat(user, span_warning("I cannot blink through doors!"))
+				revert_cast()
+				return
+				
+		// Check for windows
+		for(var/obj/structure/roguewindow/window in (traversal_turf.contents + T.contents))
+			if(window.density && !window.climbable)
+				to_chat(user, span_warning("I cannot blink through windows!"))
+				revert_cast()
+				return
+				
+		// Check for bars
+		for(var/obj/structure/bars/bars in (traversal_turf.contents + T.contents))
+			if(bars.density)
+				to_chat(user, span_warning("I cannot blink through bars!"))
+				revert_cast()
+				return
+
+		// Check for gates
+		for (var/obj/structure/gate/gate in (traversal_turf.contents + T.contents))
+			if(gate.density)
+				to_chat(user, span_warning("I cannot blink through gates!"))
+				revert_cast()
+				return
+
+	var/obj/spot_one = new phase(start, user.dir)
+	var/obj/spot_two = new phase(T, user.dir)
+
+	spot_one.Beam(spot_two, "purple_lightning", time = 1.5 SECONDS)
+
+	do_teleport(user, T, channel = TELEPORT_CHANNEL_MAGIC)
+	
+	user.visible_message(span_danger("<b>[user] vanishes in a mysterious purple flash!</b>"), span_notice("<b>I blink through space in an instant!</b>"))
+	return TRUE
 
 #undef PRESTI_CLEAN
 #undef PRESTI_SPARK
