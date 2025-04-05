@@ -1,7 +1,7 @@
 /datum/patron/elemental
 	name = null
 	associated_faith = /datum/faith/elemental
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
+	t0 = null
 
 /datum/patron/elemental/gani
 	name = "Gani"
@@ -10,12 +10,11 @@
 	worshippers = "All Earthly things, the farms, the huntsmen and matriarchs"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/gani
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
+	t0 = null
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
 	t3 = /obj/effect/proc_holder/spell/self/dendor_shapeshift
 	t4 = /obj/effect/proc_holder/spell/invoked/revive
-	additional_spells = list(/obj/effect/proc_holder/spell/invoked/heal)
 	confess_lines = list(
 		"GOLDEN GREENING!",
 		"WE SPROUT ANEW!",
@@ -29,7 +28,7 @@
 	worshippers = "Warriors, sellswords, justiciers and freedom fighters"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 	mob_traits = list(TRAIT_SOUL_EXAMINE, TRAIT_MJALLIDHORN_SWIM, TRAIT_DEATHSIGHT)
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
+	t0 = null
 	t1 = /obj/effect/proc_holder/spell/targeted/abrogation
 	t2 = /obj/effect/proc_holder/spell/invoked/avert
 	t3 = /obj/effect/proc_holder/spell/targeted/soulspeak
@@ -47,7 +46,7 @@
 	worshippers = "Nomads, scholars and the forever-free"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/akan
 	mob_traits = list(TRAIT_EMPATH, TRAIT_NIGHT_OWL, TRAIT_AKANSIGHT)
-	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
+	t0 = null
 	t1 = /obj/effect/proc_holder/spell/invoked/diagnose
 	t2 = /obj/effect/proc_holder/spell/invoked/attach_bodypart
 	t3 = /obj/effect/proc_holder/spell/invoked/cure_rot

@@ -157,6 +157,8 @@
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
 		C.passive_devotion_gain += 0.5
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
+		if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Here's where it starts getting messy
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
 		C.grant_spells(H) // don't give churn as an extra spell to cloistered since they get their patron's full spell list (up to t3)
 		START_PROCESSING(SSobj, C)
 	else
@@ -165,5 +167,7 @@
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
 		C.passive_devotion_gain += 0.25
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
+		if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Non-militant Akan and Gani clergy are supposed to have Fortify too
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
 		C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
