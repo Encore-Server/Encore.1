@@ -251,34 +251,14 @@
 	name = "Rune of Storm"
 	desc = "A Holy Rune of Abyssor"
 
+
 /obj/structure/ritualcircle/necra
 	name = "Rune of Death"
 	desc = "A Holy Rune of Necra"
 	icon_state = "necra_chalky"
 	var/deathrites = list("Undermaiden's Bargain")
 
-
 /obj/structure/ritualcircle/necra/attack_hand(mob/living/user)
-	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
-		to_chat(user, span_smallred("I don't know the proper rites for this..."))
-		return
-
-	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
-		to_chat(user, span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
-		return
-
-	var/ritual_level = user.mind?.get_skill_level(/datum/skill/magic/ritual) || 0
-
-	// Skill check from ritechoices
-	var/rune_data = ritechoices["Rune of Death"]
-	if (!rune_data)
-		to_chat(user, span_warning("This rune is incomplete or unregistered."))
-		return
-
-	var/required_level = rune_data["level"]
-	if (ritual_level < required_level)
-		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
-		return
 	var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
 	switch(riteselection) // put ur rite selection here
 		if("Undermaiden's Bargain")
@@ -305,6 +285,18 @@
 	var/ritualtargets = view(7, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /obj/structure/ritualcircle/eora
