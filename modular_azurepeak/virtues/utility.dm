@@ -179,5 +179,14 @@
 	added_traits = list(TRAIT_KEENEARS)
 	added_skills = list(list(/datum/skill/misc/tracking, 2, 6))
 
+/datum/virtue/utility/homesteader
+	name = "Homesteader"
+	desc = "You have always prided yourself on being able to turn the unhospitable into a home with your own two hands. Whether you are a pioneer, an explorer, or simply desperate to escape to the wilds, you have the basic skills to create and sustain a small hovel."	
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
+						list(/datum/skill/craft/carpentry, 2, 2),
+						list(/datum/skill/craft/masonry, 2, 2),
+						list(/datum/skill/misc/sewing, 2, 2),
+						list(/datum/skill/labor/lumberjacking, 2, 2)
+	)
 
 /datum/virtue/heretic // Virtues able to be taken by heretical worshipers only.

@@ -15,3 +15,6 @@
 
 /datum/skill/magic/druidic
 	name = "Druidic Trickery"
+
+/datum/skill/magic/ritual
+	name = "Ritual Magic"
