@@ -1,3 +1,6 @@
+// These are generally designed to be more creepy, but could do lighter stuff too. Please do not hand the ritual skill out to too many roles - they should be unique and special.
+//Massive credit to Onutsio (🏳️‍⚧️). 
+
 /obj/structure/ritualcircle
 	name = "ritual circle"
 	desc = ""
@@ -252,36 +255,46 @@
 	desc = "A Holy Rune of Abyssor"
 
 
-/obj/structure/ritualcircle/necra
+/obj/structure/ritualcircle/death
 	name = "Rune of Death"
-	desc = "A Holy Rune of Necra"
+	desc = "A Rue of Death. Looking at it makes you feel uncomfortable."
 	icon_state = "necra_chalky"
 	var/deathrites = list("Undermaiden's Bargain")
 
-/obj/structure/ritualcircle/necra/attack_hand(mob/living/user)
-	var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
-	switch(riteselection) // put ur rite selection here
-		if("Undermaiden's Bargain")
-			loc.visible_message(span_warning("[user] sways before the rune, they open their mouth, though no words come out..."))
-			playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
-			if(do_after(user, 60))
-				loc.visible_message(span_warning("[user] silently weeps, yet their tears do not flow..."))
-				playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
-				if(do_after(user, 60))
-					loc.visible_message(span_warning("[user] locks up, as though someone had just grabbed them..."))
-					to_chat(user,span_danger("You feel cold breath on the back of your neck..."))
-					playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
-					if(do_after(user, 20))
-						icon_state = "necra_active"
-						user.say("Forgive me, the bargain is intoned!!")
-						to_chat(user,span_cultsmall("My devotion to the Undermaiden has allowed me to strike a bargain for these souls...."))
-						playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
-						undermaidenbargain(src)
-						user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
-						spawn(120)
-							icon_state = "necra_chalky"
+/obj/structure/ritualcircle/death/attack_hand(mob/living/user)
+    var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
+    
+    switch(riteselection) // put ur rite selection here
+        if("Undermaiden's Bargain")
+            loc.visible_message(span_warning("[user] sways before the rune, they open their mouth, though no words come out..."))
+            playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
+            
+            if(do_after(user, 60)) 
+                loc.visible_message(span_warning("[user] silently weeps, yet their tears do not flow..."))
+                playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
+                
+                if(do_after(user, 60)) 
+                    loc.visible_message(span_warning("[user] shudders, the scent of dirt filling the air."))
+                    to_chat(user,span_danger("You feel cold breath on the back of your neck..."))
+                    playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
+                    
+                    if(do_after(user, 60))
+                        loc.visible_message(span_warning("[user]'s eyes roll back into their head. Was this a good idea?"))
+                        to_chat(user,span_cultsmall("A whisper. A scream. A pact has been made."))
+                        playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
+                        
+                        if(do_after(user, 20)) 
+                            icon_state = "necra_active"
+                            user.say("Forgive me, the bargain is intoned!")
+                            to_chat(user,span_cultsmall("My devotion to the dark has allowed me to strike a bargain for these souls, but who will pay the price?"))
+                            playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+                            undermaidenbargain(src)
+                            user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
+                            
+                            spawn(120)
+                                icon_state = "necra_chalky"
 
-/obj/structure/ritualcircle/necra/proc/undermaidenbargain(src)
+/obj/structure/ritualcircle/death/proc/undermaidenbargain(src)
 	var/ritualtargets = view(7, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)

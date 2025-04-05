@@ -33,7 +33,7 @@ var/ritechoices = list(
 		"level" = 3
 	),
 	"Rune of Death" = list(
-		"path" = /obj/structure/ritualcircle/necra,
+		"path" = /obj/structure/ritualcircle/death,
 		"level" = 3
 	),
 	"Rune of Plague" = list(
@@ -69,17 +69,17 @@ var/ritechoices = list(
 	var/turf/step_turf = get_step(get_turf(user), user.dir)
 	switch(runeselection)
 		if("Rune of Sun")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Radiance..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of cold Radiance..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/astrata(step_turf)
 		if("Rune of Moon")
-			to_chat(user, span_cultsmall("I begin inscribing the rune of His Wisdom"))
+			to_chat(user, span_cultsmall("I begin inscribing the rune of bitter Wisdom"))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/noc(step_turf)
 		if("Rune of Beasts")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Madness"))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of feral Madness"))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/dendor(step_turf)
@@ -89,7 +89,7 @@ var/ritechoices = list(
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/malum(step_turf)
 		if("Rune of Trickery")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of His Trickery..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of quiet Trickery..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/xylix(step_turf)
@@ -97,7 +97,7 @@ var/ritechoices = list(
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Embrace..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
-				new /obj/structure/ritualcircle/necra(step_turf)
+				new /obj/structure/ritualcircle/death(step_turf)
 		if("Rune of Plague")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Plague..."))
 			if(do_after(user, 30, src))

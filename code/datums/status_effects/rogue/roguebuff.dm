@@ -499,11 +499,55 @@
 	alert_type = /atom/movable/screen/alert/status_effect/buff/undermaidenbargain
 	duration = 30 MINUTES
 
+
+
 /datum/status_effect/buff/undermaidenbargain/on_apply()
-	. = ..()
-	to_chat(owner, span_danger("You feel as though some horrible deal has been prepared in your name. May you never see it fulfilled..."))
-	playsound(owner, 'sound/misc/bell.ogg', 100, FALSE, -1)
-	ADD_TRAIT(owner, TRAIT_DEATHBARGAIN, TRAIT_GENERIC)
+    . = ..()
+    to_chat(owner, span_danger("You feel as though some horrible deal has been prepared in your name. May you never see it fulfilled and may the Gods forgive you..."))
+    playsound(owner, 'sound/misc/bell.ogg', 100, FALSE, -1)
+    ADD_TRAIT(owner, TRAIT_DEATHBARGAIN, TRAIT_GENERIC)
+    // There has to be a neater way of doing this?
+    start_deal_phases(owner)
+
+/proc/start_deal_phases(mob/living/owner)
+    var/pactline = rand(1,9)
+
+    if (do_after(owner, 480))  // 8 minutes
+        if (owner.has_status_effect(/datum/status_effect/buff/undermaidenbargain))
+            pactline = rand(1, 3)
+            switch(pactline)
+                if (1)
+                    to_chat(owner, span_cultsmall("You hear a whisper at the back of your mind. What did she say?"))
+                if (2)
+                    to_chat(owner, span_cultsmall("Was that laughter, or the wind?"))
+                if (3)
+                    to_chat(owner, span_cultsmall("You feel eyes crawling over the back of your neck"))
+
+    if (do_after(owner, 800))
+        if (owner.has_status_effect(/datum/status_effect/buff/undermaidenbargain))
+            pactline = rand(4, 6)
+            switch(pactline)
+                if (4)
+                    to_chat(owner, span_cultsmall("For a moment you look out from behind eyes that are not yours. You see nothing but shadows."))
+                if (5)
+                    to_chat(owner, span_cultsmall("For a moment you see a gravestone. You are not sure if it's yours."))
+                if (6)
+                    to_chat(owner, span_cultsmall("You hear a voice. You miss the words, but it is familiar."))
+
+    if (do_after(owner, 1000))
+        if (owner.has_status_effect(/datum/status_effect/buff/undermaidenbargain))
+            pactline = rand(7, 9)
+            switch(pactline)
+                if (7)
+                    to_chat(owner, span_cultsmall("You hear the chanting of a dirge."))
+                if (8)
+                    to_chat(owner, span_cultsmall("You feel unclean. Your soul has started to itch."))
+                if (9)
+                    to_chat(owner, span_cultsmall("Even if your pact goes unfulfilled, what happens to the one destined to take your place?"))
+
+/proc/phase_message(mob/living/owner, message, sound_path)
+    to_chat(owner, span_warning(message))
+    playsound(owner, sound_path, 100, FALSE, -1)
 
 /datum/status_effect/buff/undermaidenbargain/on_remove()
 	. = ..()
@@ -516,7 +560,7 @@
 	to_chat(owner, span_warning("You feel the deal struck in your name is being fulfilled..."))
 	playsound(owner, 'sound/misc/deadbell.ogg', 100, FALSE, -1)
 	ADD_TRAIT(owner, TRAIT_NODEATH, TRAIT_GENERIC)
-	var/dirgeline = rand(1,6)
+	var/dirgeline = rand(1,9)
 	spawn(15)
 		switch(dirgeline)
 			if(1)
@@ -526,15 +570,21 @@
 			if(3)
 				to_chat(owner, span_cultsmall("A sailor's leg is caught in naval rope. Their last thoughts are of home."))
 			if(4)
-				to_chat(owner, span_cultsmall("She sobbed over the vulpkian's corpse. The Brigand's mace stemmed her tears."))
+				to_chat(owner, span_cultsmall("She sobbed over her husband's corpse. The Brigand's mace stemmed her tears."))
 			if(5)
 				to_chat(owner, span_cultsmall("A farm son chokes up his last. At his bedside, a sister and mother weep."))
 			if(6)
 				to_chat(owner, span_cultsmall("A woman begs at a Headstone. It is your fault."))
+			if(7)
+				to_chat(owner, span_cultsmall("It was nothing more than a dare, but the rocks gave way. She barely had time to scream."))
+			if(8)
+				to_chat(owner, span_cultsmall("He pushed for confession slightly too hard. No matter. Bring in the next."))
+			if(9)
+				to_chat(owner, span_cultsmall("The last of their supplies are rotten. How did the pests get in?"))
 
 /datum/status_effect/buff/undermaidenbargainheal/on_remove()
 	. = ..()
-	to_chat(owner, span_warning("The Bargain struck in my name has been fulfilled... I am thrown from Necra's embrace, another in my place..."))
+	to_chat(owner, span_warning("The Bargain struck in my name has been fulfilled... I am thrown from death's embrace, another in my place..."))
 	playsound(owner, 'sound/misc/deadbell.ogg', 100, FALSE, -1)
 	REMOVE_TRAIT(owner, TRAIT_NODEATH, TRAIT_GENERIC)
 
@@ -568,6 +618,8 @@
 	name = "Blessing of the Lesser Wolf"
 	desc = "I swell with the embuement of a predator..."
 	icon_state = "buff"
+
+
 
 /datum/status_effect/buff/lesserwolf
 	id = "lesserwolf"
