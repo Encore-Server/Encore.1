@@ -1000,37 +1000,44 @@
 		hud_used.internals.icon_state = "internal[internal_state]"
 
 /mob/living/carbon/update_stat()
-	if(status_flags & GODMODE)
-		return
-	if(stat != DEAD)
-		if(health <= HEALTH_THRESHOLD_NEARDEATH && HAS_TRAIT(src, TRAIT_DEATHBARGAIN))
-			src.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
-			return
-		if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
-			emote("deathgurgle")
-			death()
-			cure_blind(UNCONSCIOUS_BLIND)
-			return
-		if(((blood_volume in -INFINITY to BLOOD_VOLUME_SURVIVE) && !HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE)) || IsUnconscious() || IsSleeping() || getOxyLoss() > 75 || (HAS_TRAIT(src, TRAIT_DEATHCOMA)) || (health <= HEALTH_THRESHOLD_FULLCRIT && !HAS_TRAIT(src, TRAIT_NOHARDCRIT)))
-			stat = UNCONSCIOUS
-			become_blind(UNCONSCIOUS_BLIND)
-			if(CONFIG_GET(flag/near_death_experience) && health <= HEALTH_THRESHOLD_NEARDEATH && !HAS_TRAIT(src, TRAIT_NODEATH))
-				ADD_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
-			else
-				REMOVE_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
-		else
-			if(health <= crit_threshold && !HAS_TRAIT(src, TRAIT_NOSOFTCRIT))
-				stat = SOFT_CRIT
-			else
-				stat = CONSCIOUS
-			cure_blind(UNCONSCIOUS_BLIND)
-			REMOVE_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
-		update_mobility()
-	update_damage_hud()
-	update_health_hud()
-//	update_tod_hud()
-	update_spd()
-	med_hud_set_status()
+    if(status_flags & GODMODE)
+        return
+    if(stat != DEAD)
+        // Check if the health is near death and the player has the death bargain
+        if(health <= HEALTH_THRESHOLD_NEARDEATH && HAS_TRAIT(src, TRAIT_DEATHBARGAIN))
+            src.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
+            return
+
+        // Prevent death if the player has TRAIT_DEATHBARGAIN
+        if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
+            if(HAS_TRAIT(src, TRAIT_DEATHBARGAIN)) // Don't die if the bargain exists
+                return // Keep the player alive so healing can occur
+            emote("deathgurgle")
+            death()
+            cure_blind(UNCONSCIOUS_BLIND)
+            return
+
+        if(((blood_volume in -INFINITY to BLOOD_VOLUME_SURVIVE) && !HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE)) || IsUnconscious() || IsSleeping() || getOxyLoss() > 75 || (HAS_TRAIT(src, TRAIT_DEATHCOMA)) || (health <= HEALTH_THRESHOLD_FULLCRIT && !HAS_TRAIT(src, TRAIT_NOHARDCRIT)))
+            stat = UNCONSCIOUS
+            become_blind(UNCONSCIOUS_BLIND)
+            if(CONFIG_GET(flag/near_death_experience) && health <= HEALTH_THRESHOLD_NEARDEATH && !HAS_TRAIT(src, TRAIT_NODEATH))
+                ADD_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
+            else
+                REMOVE_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
+        else
+            if(health <= crit_threshold && !HAS_TRAIT(src, TRAIT_NOSOFTCRIT))
+                stat = SOFT_CRIT
+            else
+                stat = CONSCIOUS
+            cure_blind(UNCONSCIOUS_BLIND)
+            REMOVE_TRAIT(src, TRAIT_SIXTHSENSE, "near-death")
+        
+        update_mobility()
+        update_damage_hud()
+        update_health_hud()
+        // update_tod_hud()  
+        update_spd()
+        med_hud_set_status()
 
 //called when we get cuffed/uncuffed
 /mob/living/carbon/proc/update_handcuffed()
