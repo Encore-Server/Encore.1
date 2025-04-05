@@ -21,7 +21,7 @@
 /obj/structure/ritualcircle/astrata
 	name = "Rune of the Sun" // defines name of the circle itself
 	icon_state = "astrata_chalky" // the icon state, so, the sprite the runes use on the floor. As of making, we have 6, each needs an active/inactive state. 
-	desc = "A Holy Rune of Astrata" // description on examine
+	desc = "A Sun Rune. Reading it leaves you feeling warm." // description on examine
 	var/solarrites = list("Guiding Light") // This is important - This is the var which stores every ritual option available to a ritualist - Ideally, we'd have like, 3 for each God. Right now, just 1.
 
 /obj/structure/ritualcircle/astrata/attack_hand(mob/living/user) 
@@ -123,14 +123,6 @@
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		target.apply_status_effect(/datum/status_effect/buff/moonlightdance)
 
-/obj/structure/ritualcircle/xylix
-	name = "Rune of Trickery"
-	desc = "A Holy Rune of Xylix"
-
-/obj/structure/ritualcircle/ravox
-	name = "Rune of the Warrior"
-	desc = "A Holy Rune of Ravox"
-
 /obj/structure/ritualcircle/pestra
 	name = "Rune of Plague"
 	desc = "A Holy Rune of Pestra"
@@ -223,10 +215,10 @@
 	switch(riteselection) // put ur rite selection here
 		if("Rite of the Lesser Wolf")
 			if(do_after(user, 50))
-				user.say("RRRGH GRRRHHHG GRRRRRHH!!")
+				user.say("Beast brothers, answer my call!")
 				playsound(loc, 'sound/vo/mobs/vw/idle (1).ogg', 100, FALSE, -1)
 				if(do_after(user, 50))
-					user.say("GRRRR GRRRRHHHH!!")
+					user.say("All of you, strong, tough, or small!")
 					playsound(loc, 'sound/vo/mobs/vw/idle (4).ogg', 100, FALSE, -1)
 					if(do_after(user, 50))
 						loc.visible_message(span_warning("[user] snaps and snarls at the rune. Drool runs down their lip..."))
@@ -245,16 +237,6 @@
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		target.apply_status_effect(/datum/status_effect/buff/lesserwolf)
 
-
-/obj/structure/ritualcircle/malum
-	name = "Rune of Forge"
-	desc = "A Holy Rune of Malum"
-
-/obj/structure/ritualcircle/abyssor
-	name = "Rune of Storm"
-	desc = "A Holy Rune of Abyssor"
-
-
 /obj/structure/ritualcircle/death
 	name = "Rune of Death"
 	desc = "A Rue of Death. Looking at it makes you feel uncomfortable."
@@ -262,37 +244,58 @@
 	var/deathrites = list("Undermaiden's Bargain")
 
 /obj/structure/ritualcircle/death/attack_hand(mob/living/user)
-    var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
-    
-    switch(riteselection) // put ur rite selection here
-        if("Undermaiden's Bargain")
-            loc.visible_message(span_warning("[user] sways before the rune, they open their mouth, though no words come out..."))
-            playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
-            
-            if(do_after(user, 60)) 
-                loc.visible_message(span_warning("[user] silently weeps, yet their tears do not flow..."))
-                playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
-                
-                if(do_after(user, 60)) 
-                    loc.visible_message(span_warning("[user] shudders, the scent of dirt filling the air."))
-                    to_chat(user,span_danger("You feel cold breath on the back of your neck..."))
-                    playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
-                    
-                    if(do_after(user, 60))
-                        loc.visible_message(span_warning("[user]'s eyes roll back into their head. Was this a good idea?"))
-                        to_chat(user,span_cultsmall("A whisper. A scream. A pact has been made."))
-                        playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
-                        
-                        if(do_after(user, 20)) 
-                            icon_state = "necra_active"
-                            user.say("Forgive me, the bargain is intoned!")
-                            to_chat(user,span_cultsmall("My devotion to the dark has allowed me to strike a bargain for these souls, but who will pay the price?"))
-                            playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
-                            undermaidenbargain(src)
-                            user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
-                            
-                            spawn(120)
-                                icon_state = "necra_chalky"
+	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
+		to_chat(user, span_smallred("I don't know the proper rites for this..."))
+		return
+
+	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
+		to_chat(user, span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
+		return
+
+	var/ritual_level = user.mind?.get_skill_level(/datum/skill/magic/ritual) || 0
+
+	// Skill check from ritechoices
+	var/rune_data = ritechoices["Rune of Death"]
+	if (!rune_data)
+		to_chat(user, span_warning("This rune is incomplete or unregistered."))
+		return
+
+	var/required_level = rune_data["level"]
+	if (ritual_level < required_level)
+		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
+		return
+
+	var/riteselection = input(user, "Rituals of Death", src) as null|anything in deathrites
+
+	switch(riteselection)
+		if("Undermaiden's Bargain")
+			loc.visible_message(span_warning("[user] sways before the rune, they open their mouth, though no words come out..."))
+			playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
+
+			if(do_after(user, 60))
+				loc.visible_message(span_warning("[user] silently weeps, yet their tears do not flow..."))
+				playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
+
+				if(do_after(user, 60))
+					loc.visible_message(span_warning("[user] shudders, the scent of dirt filling the air."))
+					to_chat(user, span_danger("You feel cold breath on the back of your neck..."))
+					playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
+
+					if(do_after(user, 60))
+						loc.visible_message(span_warning("[user]'s eyes roll back into their head. Was this a good idea?"))
+						to_chat(user, span_cultsmall("A whisper. A scream. A pact has been made."))
+						playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
+
+						if(do_after(user, 20))
+							icon_state = "necra_active"
+							user.say("Forgive me, the bargain is intoned!")
+							to_chat(user, span_cultsmall("My devotion to the dark has allowed me to strike a bargain for these souls, but who will pay the price?"))
+							playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+							undermaidenbargain(src)
+							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
+
+							spawn(120)
+								icon_state = "necra_chalky"
 
 /obj/structure/ritualcircle/death/proc/undermaidenbargain(src)
 	var/ritualtargets = view(7, loc)
@@ -300,23 +303,10 @@
 		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /obj/structure/ritualcircle/eora
 	name = "Rune of Love"
 	desc = "A Holy Rune of Eora"
 	icon_state = "eora_chalky"
-
 	var/peacerites = list("Rite of Pacification")
 
 /obj/structure/ritualcircle/eora/attack_hand(mob/living/user)
@@ -363,4 +353,86 @@
 		target.visible_message(span_green("I feel the burdens of my heart lifting. Something feels very wrong... I don't mind at all..."))
 		target.apply_status_effect(/datum/status_effect/buff/pacify)
 
-// TIME FOR THE ASCENDANT. These can be stronger. As they are pretty much antag exclusive - Iconoclast for Matthios, Lich for ZIZO. ZIZO!
+// Rune of War
+
+
+/obj/structure/ritualcircle/war
+	name = "Rune of War"
+	desc = "A Rune of War. Looking at it brings the sound of battle and scent of blood."
+	icon_state = "zizo_chalky"
+	var/warrites = list("Warrior's Call")
+
+/obj/structure/ritualcircle/war/attack_hand(mob/living/user)
+	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
+		to_chat(user, span_smallred("I don't know the proper rites for this..."))
+		return
+
+	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
+		to_chat(user, span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
+		return
+
+	var/ritual_level = user.mind?.get_skill_level(/datum/skill/magic/ritual) || 0
+
+	var/rune_data = ritechoices["Rune of War"]
+	if (!rune_data)
+		to_chat(user, span_warning("This rune is incomplete or unregistered."))
+		return
+
+	var/required_level = rune_data["level"]
+	if (ritual_level < required_level)
+		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
+		return
+
+	var/riteselection = input(user, "Rituals of War", src) as null|anything in warrites
+
+	switch(riteselection)
+		if("Warrior's Call")
+			loc.visible_message(span_warning("[user] raises a hand toward the circle. The skin splits and blood drips..."))
+			playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
+
+			if(do_after(user, 60))
+				loc.visible_message(span_warning("[user] shudders, blood pouring from the wound."))
+				playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
+
+				if(do_after(user, 60))
+					user.say("Blood calls!! Blood must answer!!")
+					to_chat(user, span_danger("The sounds of battle drift on the wind. Screams fill your ears."))
+					playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
+
+					if(do_after(user, 60))
+						loc.visible_message(span_warning("[user]'s blood continues to splatter onto the rune. How is there any left?"))
+						to_chat(user, span_cultsmall("A grunt. A thud. Metal against metal."))
+						playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
+
+						if(do_after(user, 20))
+							icon_state = "zizo_active"
+							user.say("It is done.")
+							loc.visible_message(span_warning("[user] finally pulls their hand away. Anger, rage, hunger fill your heart."))
+							playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+							warriorsrite(src)
+							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
+
+
+							spawn(120)
+								icon_state = "zizo_chalky"
+
+/obj/structure/ritualcircle/war/proc/warriorsrite(src)
+	var/ritualtargets = view(7, loc)
+	for(var/mob/living/carbon/human/target in ritualtargets)
+		target.apply_status_effect(/datum/status_effect/buff/warriorsrite)
+
+
+
+// Unused
+
+/obj/structure/ritualcircle/xylix
+	name = "Rune of Trickery"
+	desc = "A Holy Rune of Xylix"
+
+/obj/structure/ritualcircle/malum
+	name = "Rune of Forge"
+	desc = "A Holy Rune of Malum"
+
+/obj/structure/ritualcircle/abyssor
+	name = "Rune of Storm"
+	desc = "A Holy Rune of Abyssor"
