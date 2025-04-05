@@ -71,6 +71,14 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All non-combat church roles get Miracle, plus Inquisitor
 	if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Non-militant Akan and Gani clergy are supposed to have Fortify too
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
+	if(H.patron?.type == /datum/patron/elemental/gani) //Gani grants fervent clergy the ability to cure someone of any ailment by taking it on in their stead, dismemberment and death included
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/affliction_transfer)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) //Mjallidhorn grants fervent clergy the ability to suffer wounds that would be sustained during combat by someone else in their stead
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_transfer)
+	if(H.patron?.type == /datum/patron/elemental/akan) //Akan grants fervent clergy the ability to teleport and swap places with another, relieving them of their burdens by taking them on instead, not including dismemberment and death
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/burden_exchange)
+	if(H.patron?.type == /datum/patron/elemental/visires) //Visires grants fervent clergy the ability to transfer their own suffering and wounds onto someone else
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_link)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 	H.verbs |= /mob/living/carbon/human/proc/churchexcommunicate
@@ -89,7 +97,7 @@
 			return FALSE
 		if(inputty in GLOB.excommunicated_players)
 			GLOB.excommunicated_players -= inputty
-			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Elementals!", sound = 'sound/misc/bell.ogg')
 			for(var/mob/living/carbon/human/H in GLOB.player_list)
 				if(H.real_name == inputty)
 					H.remove_stress(/datum/stressevent/psycurse)
