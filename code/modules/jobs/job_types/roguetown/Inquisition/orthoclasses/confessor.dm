@@ -39,10 +39,10 @@
 	H.change_stat("endurance", 3)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 3) 
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC) 
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
-		var/datum/devotion/C = new /datum/devotion(H, H.patron)
-		C.passive_devotion_gain += 0.1
-		C.grant_spells_templar(H)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility) //Confessor is the one church role dedicated to skullduggery. They should get a little treat for their sneaky, spy ways. This comment is approved by true Iliope-pilled sneaker-cels.
-		H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
+	C.grant_spells_templar(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility) //Confessor is the one church role dedicated to skullduggery. They should get a little treat for their sneaky, spy ways. This comment is approved by true Iliope-pilled sneaker-cels.
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
