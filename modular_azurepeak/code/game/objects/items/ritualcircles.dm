@@ -257,6 +257,7 @@
 	icon_state = "necra_chalky"
 	var/deathrites = list("Undermaiden's Bargain")
 
+
 /obj/structure/ritualcircle/necra/attack_hand(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
 		to_chat(user, span_smallred("I don't know the proper rites for this..."))
@@ -295,15 +296,15 @@
 						user.say("Forgive me, the bargain is intoned!!")
 						to_chat(user,span_cultsmall("My devotion to the Undermaiden has allowed me to strike a bargain for these souls...."))
 						playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
-						horribledeal(src)
+						undermaidenbargain(src)
 						user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
 						spawn(120)
 							icon_state = "necra_chalky"
 
-/obj/structure/ritualcircle/necra/proc/horribledeal(src)
+/obj/structure/ritualcircle/necra/proc/undermaidenbargain(src)
 	var/ritualtargets = view(7, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
-		target.apply_status_effect(/datum/status_effect/buff/horribledeal)
+		target.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
 
 
 /obj/structure/ritualcircle/eora

@@ -1004,7 +1004,7 @@
 		return
 	if(stat != DEAD)
 		if(health <= HEALTH_THRESHOLD_NEARDEATH && HAS_TRAIT(src, TRAIT_DEATHBARGAIN))
-			src.apply_status_effect(/datum/status_effect/buff/horribledeal)
+			src.apply_status_effect(/datum/status_effect/buff/undermaidenbargain)
 			return
 		if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
 			emote("deathgurgle")
