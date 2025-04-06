@@ -355,7 +355,7 @@
 
 // Rune of War
 
-
+/*
 /obj/structure/ritualcircle/war
 	name = "Rune of War"
 	desc = "A Rune of War. Looking at it brings the sound of battle and scent of blood."
@@ -419,11 +419,11 @@
 /obj/structure/ritualcircle/war/proc/warriorsrite(src)
 	var/ritualtargets = view(7, loc)
 	for(var/mob/living/carbon/human/target in ritualtargets)
-		target.apply_status_effect(/datum/status_effect/buff/warriorsrite)
+//		target.apply_status_effect(/datum/status_effect/buff/warriorsrite) So the witches can test
 
+*/
 
-
-// Unused
+ //Unused
 
 /obj/structure/ritualcircle/xylix
 	name = "Rune of Trickery"
@@ -436,3 +436,4 @@
 /obj/structure/ritualcircle/abyssor
 	name = "Rune of Storm"
 	desc = "A Holy Rune of Abyssor"
+

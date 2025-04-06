@@ -44,15 +44,16 @@ var/ritechoices = list(
 		"path" = /obj/structure/ritualcircle/eora,
 		"level" = 4
 	),
-	"Rune of War" = list(
+/*	"Rune of War" = list(
 		"path" = /obj/structure/ritualcircle/war,
 		"level" = 5
 	),
 	"Rune of Storm" = list(
 		"path" = /obj/structure/ritualcircle/abyssor,
 		"level" = 6
+*/
 	)
-)
+
 
 /obj/item/ritechalk/attack_self(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -108,11 +109,11 @@ var/ritechoices = list(
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/eora(step_turf)
-		if("Rune of War")
+/*		if("Rune of War")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of His Prowess..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
-				new /obj/structure/ritualcircle/war(step_turf)
+				new /obj/structure/ritualcircle/war(step_turf) */
 		if("Rune of Storm")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of His Storm..."))
 			if(do_after(user, 30, src))
