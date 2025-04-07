@@ -1,4 +1,4 @@
-name: "Process Changelog Files"
+name: "Process Changelog Files Test"
 on:
   pull_request:
     types:
@@ -7,8 +7,6 @@ on:
 # - pull_request_target    
     
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
   build:
     runs-on: ubuntu-latest
     steps:
