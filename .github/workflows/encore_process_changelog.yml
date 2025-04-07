@@ -1,14 +1,14 @@
 name: "Process Changelog Files"
-# on:
-#   pull_request:
-#     types:
-#       - closed
 on:
-- pull_request_target    
+  pull_request:
+    types:
+      - closed
+# on:
+# - pull_request_target    
     
 jobs:
-  # if_merged:
-  #   if: github.event.pull_request.merged == true
+  if_merged:
+    if: github.event.pull_request.merged == true
   build:
     runs-on: ubuntu-latest
     steps:
