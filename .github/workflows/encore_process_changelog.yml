@@ -32,3 +32,4 @@ jobs:
       run: |
         python encore_changelog.py
       working-directory: ../../tools
+    - uses: stefanzweifel/git-auto-commit-action@v4
