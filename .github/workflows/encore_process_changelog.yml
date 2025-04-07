@@ -1,4 +1,4 @@
-name: Process Changelog Files
+name: "Process Changelog Files"
 # on:
 #   pull_request:
 #     types:
