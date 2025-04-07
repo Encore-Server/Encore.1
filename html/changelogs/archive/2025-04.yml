@@ -78,6 +78,9 @@
       so it isn't permanently lost if they have something in their hand already.
   - rscadd: Regular bait can now also be made from two sets of oat grains.
   - rscadd: Renamed the original bait recipe to 'bait (wheat)'
+  Jb1361:
+  - admin: Implement Github actions change log processing.
+  - admin: Tweak existing python to process changelogs.
   Peppermint:
   - rscadd: Adds a ton of virtue changes. Many ports. Credits in the PR.
   - rscadd: Gives ranger higher tracking skill.
