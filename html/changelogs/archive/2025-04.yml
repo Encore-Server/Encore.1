@@ -1,0 +1,166 @@
+2025-04-07:
+  ? ''
+  : - rscadd: Removes the requirement of a table for repairing cloth or leather armour.
+  Doxxmedearly:
+  - rscadd: Extends time between vomit checks, reduces nausea more when vomiting,
+      and adds a constitution check to hold back from vomiting, if your constitution
+      is 11 or higher.
+  - rscadd: Reduces how much nausea rot gives you per life tick.
+  Doxxmedearly, Furrycactus:
+  - rscadd: Fixes classes not getting psicrosses for Goler Kanh and Iliope.
+  - rscdel: Removes ss13 wizard holdover for clothing requirements. System is still
+      in place if we want spells restricted in the future.
+  - code_imp: Tidies up psicross equipping on job selection.
+  - rscadd: Adds craftable wooden holy amulets.
+  - imageadd: Adds new sprites for wooden amulets, courtesy of Furrycactus (Joshie).
+  Furrycactus:
+  - rscadd: Unlocks the Inn backroom. It can still be locked if an Innkeeper character
+      decides to, but they're so rare they might as well not exist. If I had a dollar
+      for every time the door got broken down I'd have more money than the One Envy.
+  - rscadd: Adds small and large banners for the Elementals and All-Aspect.
+  - rscadd: Adds musical instruments to the loadout.
+  - rscadd: Twig floors can now be built on any solid form of turf, not only on dirt/grass
+      derivatives.
+  - rscadd: Swaps around the Borrowed Time and Abrogation miracles for Mjallidhorn
+      clergy, so Templars of Mjallidhorn can actually use the Undead-hunter spell,
+      while only Clerics and Priests can make use of the more healing-oriented spell.
+  - rscadd: Adds three new Warden subclasses - Hawk, Wolf, and Bear for Ranged, Balanced,
+      and Melee combat specialisation respectively.
+  - rscadd: Gives Wardens an Apprentice level in Skincrafting, since they're Ranger
+      types.
+  - rscadd: Nerfs the Bog Master somewhat, replacing their Steel gear with Iron (kyres
+      request), renames it to Wild Master, and dropps their Master level wrestling
+      to Expert.
+  - rscadd: Adds serfstones to several more Garrison and Nobility roles. Basically
+      any military related job.
+  - rscadd: Spider Honey is now a guaranteed drop when you butcher Beespiders.
+  - rscadd: Fixes several duplicated item path errors for the alt Goler Kahn, Frost,
+      and Fire tabards.
+  - rscadd: Mapped in the missing Air, Frost, Fire, and Goler Kahn tabards for templars.
+  - rscadd: Moved the Iliope tabard from the Mjallidhorn chest to the Akan chest.
+  - rscadd: Mapped in the alt Helmet of Visires to the Visires chest.
+  - rscadd: An ill wind blows from Fort Hellwatch, coming from the direction of Mount
+      Miracle.
+  - rscadd: Adds two new weapons to Templar weapon selection - the Zweihander and
+      the Lucerne, a greatsword and a polearm. Being large weapons, this means a Templar
+      that selects them will have to forego their kite shield entirely to use them
+      effectively.
+  - rscadd: Added a clock to the spawn boat. Finally you can collect your loadout
+      item before leaving.
+  - rscadd: Gives Half-Elves more lore-compliant skin tone selection instead of Azure
+      Peak ones, and allows them to pick any of the selections available to Humans
+      or Elves.
+  - rscadd: Remaps the Church and Mage Tower.
+  - rscadd: Adds a crafting recipe for the dark wood walls variant.
+  - rscadd: Removes the item requirements on the Eyebite and Conjure Web spells, as
+      Heretical God followers were almost entirely unable to aquire the necessary
+      items to use them (necromancer robes, psycross).
+  - rscadd: Correctly sets a Templar's skill level with Polearms to the bumped up
+      level it's supposed to be if selected.
+  - rscadd: Adds the current weapon selection that Templar has to Adjudicator.
+  - rscadd: Adds some T1-4 spells for the All-Aspect, even though anything beyond
+      T1 is redundant.
+  - rscadd: Swaps out some generic psycrosses for proper silver psycrosses, both on
+      the map and on some Inquisition roles.
+  - rscadd: Gives proper Inquisition keyrings to the Orthodoxist roles, otherwise
+      they can't actually unlock the churchling quarters.
+  - rscadd: Adds a new large dungeon to Southern Domotan, just north of where the
+      Seculton Gate will be.
+  - rscadd: Seals off the lava tube into Hell from Mount Miracle for now.
+  Hepatica:
+  - rscadd: I added 2 scomstones and 3 serfstones to the treasury
+  Hocka:
+  - rscadd: Allows bait to trigger animal spawns off of regular trees instead of the
+      weird ones with faces.
+  - rscadd: Added an additional check to make sure bait cannot be used inside the
+      town of Doma itself.
+  - bugfix: Changed how Ranger-Knight type classes are handed their chosen equipment,
+      so it isn't permanently lost if they have something in their hand already.
+  - rscadd: Regular bait can now also be made from two sets of oat grains.
+  - rscadd: Renamed the original bait recipe to 'bait (wheat)'
+  Peppermint:
+  - rscadd: Adds a ton of virtue changes. Many ports. Credits in the PR.
+  - rscadd: Gives ranger higher tracking skill.
+  - rscadd: Ports shapeshifting AP (1594 by FreekyGaming).
+  - rscadd: Enables tiefling and half-orc to limited jobs.
+  - rscadd: Enables the other two races that should already have been on.
+  - rscadd: Updated  the armory layout and provided some clothes
+  - rscadd: Upgrades the druid house  to a druid home.
+  - rscadd: Fixes werewolf AI.
+  - rscdel: Removes the hunger sounds.
+  Peppermint96:
+  - rscadd: Ports a bunch of spells from AP and vanderlin.
+  doxxmedearly:
+  - rscadd: Automated stockpiler now accepts fish as a bounty.
+  - rscadd: Campfires, ovens, and hearths that burn long enough now produce ash. This
+      can be removed when the fire is out by clicking it with an empty hand.
+  - rscadd: Slightly reworded descriptions when examining fires that are not lit with
+      regard to their remaining fuel.
+  - rscadd: You have a little more time to warm your hands over a brazier before it
+      burns you.
+  - rscadd: Adds peg legs and bronze prosthetic legs, with crafting recipes and surgery
+      steps.
+  - rscadd: Peg legs provide a slight slowdown, bronze legs do not. Both make you
+      more likely to leave tracks.
+  - rscadd: Adds the option to start with a peg leg as a vice.
+  - code_imp: Cleans up code for prosthetics as a vice, adds helper procs, adds flexible
+      icon_state setting for prosthetics.
+  - imageadd: Mob sprites and icons for peg legs and bronze prosthetic legs.
+  - bugfix: Fixes leg sprite for muscular body.
+  - rscadd: All clerics are given the Miracle spell.
+  - rscdel: Visires templars no longer have miracle.
+  - rscdel: Call of Gani has been removed from priests.
+  - bugfix: Fortitude spell actually provides fortitude. Guidance spell now works.
+  - bugfix: Knights should now have their titles apply properly on spawn.
+  - rscadd: Added murkminnows, a new type of bait. These can be caught while fishing,
+      using minced fish as bait.
+  - rscadd: Added muckcrabs, a smaller variant of mudcrabs. Less danger, less meat.
+  - rscadd: Mudcrabs and muckcrabs can be caught while fishing.
+  - rscadd: Added a way to safely kill crabs, if you have something that can stab.
+      Grab them and use the item on them, but be careful!
+  - rscadd: Rods can be de-baited with right click.
+  - rscadd: Added restrictions to water that can contain fish. Shouldn't affect the
+      current map, but good for the future.
+  - rscdel: Removed the buggy worm-gathering feature.
+  - bugfix: Mudcrabs can actually do damage now.
+  - bugfix: Fixed weird behavior with bait stacking and separating stacks of bait.
+      Should work better now.
+  - rscadd: Added craftable bone arrows and needles. Bone arrows are similar to stone,
+      but cooler. Bone needles are better than thorn but also require a knife to craft.
+  - rscadd: Thorn needles now have less integrity than their metal cousins.
+  - bugfix: Equipping headgear or masks to your hip slot no longer hides your hair,
+      face, or ears.
+  - bugfix: Acolytes of Goler Kanh and Iliope no longer spawn butt-ass naked.
+  - rscadd: Added a helper verb to view the chat commands for emoting and whispering
+      and such.
+  - rscadd: Holy characters can now pray even at max devotion if they still need to
+      unlock spells.
+  - rscadd: Added better feedback message if you try to pray at max devotion and progression.
+  - rscadd: Adds a trickle of passive devotion gain to templars and all clerics. Cloistered
+      devout passive devotion gain increased.
+  - bugfix: Invisibility actually lasts 45 seconds now.
+  - rscadd: Added a way to limit spells to priests, and to add patron spells outside
+      of their tiered ones.
+  - bugfix: Clerics and Templars of Visires no longer have access to Explosion. It
+      is priest-only.
+  - bugfix: Clerics and Templars of Gani have access to fortify once more.
+  hocka:
+  - rscadd: Added the Ranger-Zealot and Scout-Templar subclasses to Templar, a heavier
+      unit with access to a steel shortsword and a longbow/crossbow and a lighter
+      unit that foregoes a sword at all respectively, in exchange for more muted skills
+      and less carrying capacity.
+  - rscadd: Added a subtype of the black leather belts to allow Scout-Templars and
+      Ranger-Zealots to spawn with the church keyring in their belt, on account of
+      their drastically lowered free inventory spots.
+  - rscadd: Added the Ranger-Knight subclass to Ranger (adventurer), essentially a
+      copy of the Ranger-Zealot but without access to Miracles and is able to choose
+      between a Recurve, Longbow or Crossbow.
+  - rscadd: Shuffled around the vars for determining the pants that are equipped on
+      all subclasses of Ranger (adventurer), mostly for the benefit of the Ranger-Knight's
+      slightly heavy armour set.
+  - rscadd: Reworded 'lux' to 'thauma' in the transfusion surgery text prompts.
+  - rscadd: Changed the name of the 'lux' item to 'thauma'.
+  kyres1:
+  - bugfix: Fixes a type of chair turning sideways and looking silly.
+  - rscadd: Opened access to western Domotan, including the Weeping Wood and its seven-or-so
+      internal areas.

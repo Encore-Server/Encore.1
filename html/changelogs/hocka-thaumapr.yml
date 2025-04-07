@@ -1,8 +1,0 @@
-
-author: "hocka"
-
-delete-after: True
-
-changes:
-  - rscadd: "Reworded 'lux' to 'thauma' in the transfusion surgery text prompts."
-  - rscadd: "Changed the name of the 'lux' item to 'thauma'."
