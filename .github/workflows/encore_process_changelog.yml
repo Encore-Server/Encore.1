@@ -7,7 +7,7 @@ on:
 # - pull_request_target    
     
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,5 +22,5 @@ jobs:
       - name: Process Changelog
         working-directory: ./tools
         run: |
-          python encore_changelog.py    
+          python encore_changelog.py ../html/changelogs/
       - uses: stefanzweifel/git-auto-commit-action@v4
