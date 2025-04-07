@@ -1,0 +1,185 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"cW" = (
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"ht" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"hN" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"qv" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"qC" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"yf" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Cy" = (
+/obj/structure/statue/bone/rib{
+	dir = 4;
+	desc = "Something beyond mortal compare once dwelled here. Its reign is no more."
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"GL" = (
+/obj/structure/statue/bone/rib{
+	dir = 8;
+	desc = "Something beyond mortal compare once dwelled here. Its reign is no more."
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Kk" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Nu" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"RY" = (
+/obj/structure/statue/bone/rib{
+	dir = 4;
+	desc = "Something beyond mortal compare once dwelled here. Its reign is no more."
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+
+(1,1,1) = {"
+aJ
+sC
+qC
+qC
+cW
+aJ
+GL
+aJ
+aJ
+aJ
+"}
+(2,1,1) = {"
+sC
+Dd
+qC
+aJ
+GL
+aJ
+ht
+sC
+sC
+Dd
+"}
+(3,1,1) = {"
+Dd
+Dd
+aJ
+sC
+aJ
+Dd
+Dd
+ht
+qv
+Cy
+"}
+(4,1,1) = {"
+Dd
+aJ
+GL
+sC
+qC
+Dd
+qC
+aJ
+aJ
+sC
+"}
+(5,1,1) = {"
+aJ
+Nu
+yf
+ht
+qC
+ht
+sC
+sC
+Cy
+sC
+"}
+(6,1,1) = {"
+cW
+aJ
+qC
+qC
+hN
+qC
+aJ
+cW
+aJ
+sC
+"}
+(7,1,1) = {"
+aJ
+GL
+ht
+qC
+aJ
+aJ
+Cy
+aJ
+aJ
+sC
+"}
+(8,1,1) = {"
+aJ
+aJ
+RY
+qC
+Cy
+aJ
+aJ
+qC
+Dd
+sC
+"}
+(9,1,1) = {"
+aJ
+qC
+aJ
+qC
+qC
+aJ
+qC
+Dd
+Dd
+Nu
+"}
+(10,1,1) = {"
+Dd
+sC
+aJ
+aJ
+Kk
+aJ
+qC
+aJ
+qC
+aJ
+"}

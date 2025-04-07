@@ -375,7 +375,7 @@
 /atom/movable/screen/act_intent/rogintent
 	name = ""
 	desc = ""
-	icon = 'icons/mob/rogueintentbase.dmi'
+	icon = 'icons/ui/hud/rogueintentbase.dmi'
 	icon_state = "intentbase"
 	screen_loc = rogueui_intents
 	var/intent1
@@ -392,7 +392,7 @@
 		return
 	else
 		var/lol = 0
-//		intent1 = image(icon='icons/mob/rogueintentbase.dmi',icon_state="intentbase")
+//		intent1 = image(icon='icons/ui/hud/rogueintentbase.dmi',icon_state="intentbase")
 //		add_overlay(intent1, TRUE)
 		var/list/used = intentsr
 		if(hud.mymob.active_hand_index == 1)
@@ -401,16 +401,16 @@
 			lol++
 			switch(lol)
 				if(1)
-					intent1 = image(icon='icons/mob/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 64, pixel_y = 16, layer = layer+0.02)
+					intent1 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 64, pixel_y = 16, layer = layer+0.02)
 					add_overlay(intent1, TRUE)
 				if(2)
-					intent2 = image(icon='icons/mob/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 96, pixel_y = 16, layer = layer+0.02)
+					intent2 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 96, pixel_y = 16, layer = layer+0.02)
 					add_overlay(intent2, TRUE)
 				if(3)
-					intent3 = image(icon='icons/mob/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 64, layer = layer+0.02)
+					intent3 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 64, layer = layer+0.02)
 					add_overlay(intent3, TRUE)
 				if(4)
-					intent4 = image(icon='icons/mob/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 96, layer = layer+0.02)
+					intent4 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=intenty.icon_state, pixel_x = 96, layer = layer+0.02)
 					add_overlay(intent4, TRUE)
 		if(ismob(usr))
 			var/mob/M = usr
@@ -432,22 +432,22 @@
 			other = r_index
 		switch(used_index)
 			if(1)
-				border1 = image(icon='icons/mob/roguehud.dmi',icon_state="intentselected", pixel_x = 64, pixel_y = 16, layer = layer+0.01)
+				border1 = image(icon='icons/ui/hud/roguehud.dmi',icon_state="intentselected", pixel_x = 64, pixel_y = 16, layer = layer+0.01)
 			if(2)
-				border1 = image(icon='icons/mob/roguehud.dmi',icon_state="intentselected", pixel_x = 96, pixel_y = 16, layer = layer+0.01)
+				border1 = image(icon='icons/ui/hud/roguehud.dmi',icon_state="intentselected", pixel_x = 96, pixel_y = 16, layer = layer+0.01)
 			if(3)
-				border1 = image(icon='icons/mob/roguehud.dmi',icon_state="intentselected", pixel_x = 64, layer = layer+0.01)
+				border1 = image(icon='icons/ui/hud/roguehud.dmi',icon_state="intentselected", pixel_x = 64, layer = layer+0.01)
 			if(4)
-				border1 = image(icon='icons/mob/roguehud.dmi',icon_state="intentselected", pixel_x = 96, layer = layer+0.01)
+				border1 = image(icon='icons/ui/hud/roguehud.dmi',icon_state="intentselected", pixel_x = 96, layer = layer+0.01)
 		switch(other)
 			if(1)
-				border2 = image(icon='icons/mob/roguehud.dmi',icon_state=used, pixel_x = 64, pixel_y = 16, layer = layer+0.01)
+				border2 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=used, pixel_x = 64, pixel_y = 16, layer = layer+0.01)
 			if(2)
-				border2 = image(icon='icons/mob/roguehud.dmi',icon_state=used, pixel_x = 96, pixel_y = 16, layer = layer+0.01)
+				border2 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=used, pixel_x = 96, pixel_y = 16, layer = layer+0.01)
 			if(3)
-				border2 = image(icon='icons/mob/roguehud.dmi',icon_state=used, pixel_x = 64, layer = layer+0.01)
+				border2 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=used, pixel_x = 64, layer = layer+0.01)
 			if(4)
-				border2 = image(icon='icons/mob/roguehud.dmi',icon_state=used, pixel_x = 96, layer = layer+0.01)
+				border2 = image(icon='icons/ui/hud/roguehud.dmi',icon_state=used, pixel_x = 96, layer = layer+0.01)
 		add_overlay(border2, TRUE)
 		add_overlay(border1, TRUE)
 
@@ -536,7 +536,7 @@
 /atom/movable/screen/quad_intents
 	name = "mmb intents"
 	icon_state = "mmbintents0"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	screen_loc = rogueui_quad
 
 /atom/movable/screen/quad_intents/proc/switch_intent(input)
@@ -567,7 +567,7 @@
 /atom/movable/screen/give_intent
 	name = "give/take"
 	icon_state = "take0"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	screen_loc = rogueui_give
 	var/giving = 0
 
@@ -598,7 +598,7 @@
 /atom/movable/screen/def_intent
 	name = "defense intent"
 	icon_state = "def1n"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	screen_loc = rogueui_def
 
 /atom/movable/screen/def_intent/update_icon()
@@ -616,7 +616,7 @@
 /atom/movable/screen/cmode
 	name = "combat mode"
 	icon_state = "combat0"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	screen_loc = rogueui_cmode
 
 /atom/movable/screen/cmode/update_icon()
@@ -723,7 +723,7 @@
 
 /atom/movable/screen/rogmove
 	name = "sneak mode"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "sneak0"
 	screen_loc = rogueui_moves
 
@@ -749,7 +749,7 @@
 
 /atom/movable/screen/rogmove/sprint
 	name = "sprint mode"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "sprint0"
 	screen_loc = rogueui_moves
 
@@ -819,7 +819,7 @@
 
 /atom/movable/screen/eye_intent
 	name = "eye intent"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "eye"
 
 /atom/movable/screen/eye_intent/Click(location,control,params)
@@ -1001,7 +1001,7 @@
 	name = "damage zone"
 	icon_state = "m-zone_sel"
 	screen_loc = rogueui_targetdoll
-	var/overlay_icon = 'icons/mob/roguehud64.dmi'
+	var/overlay_icon = 'icons/ui/hud/roguehud64.dmi'
 	var/static/list/hover_overlays_cache = list()
 	var/hovering
 	var/arrowheight = 0
@@ -1060,7 +1060,7 @@
 	vis_contents += overlay_object
 
 /obj/effect/overlay/zone_sel
-	icon = 'icons/mob/roguehud64.dmi'
+	icon = 'icons/ui/hud/roguehud64.dmi'
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	alpha = 128
 	anchored = TRUE
@@ -1338,7 +1338,7 @@
 			if(BP.body_zone in H.get_missing_limbs())
 				continue
 			if(HAS_TRAIT(H, TRAIT_NOPAIN))
-				var/mutable_appearance/limby = mutable_appearance('icons/mob/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]")
+				var/mutable_appearance/limby = mutable_appearance('icons/ui/hud/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]")
 				limby.color = "#78a8ba"
 				. += limby
 				continue
@@ -1346,14 +1346,14 @@
 			if(damage > BP.max_damage)
 				damage = BP.max_damage
 			var/comparison = (damage/BP.max_damage)
-			. += mutable_appearance('icons/mob/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]") //apply healthy limb
-			var/mutable_appearance/limby = mutable_appearance('icons/mob/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]w-[BP.body_zone]") //apply wounded overlay
+			. += mutable_appearance('icons/ui/hud/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]") //apply healthy limb
+			var/mutable_appearance/limby = mutable_appearance('icons/ui/hud/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]w-[BP.body_zone]") //apply wounded overlay
 			limby.alpha = (comparison*255)*2
 			. += limby
 			if(BP.get_bleed_rate())
-				. += mutable_appearance('icons/mob/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]-bleed") //apply healthy limb
+				. += mutable_appearance('icons/ui/hud/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[BP.body_zone]-bleed") //apply healthy limb
 		for(var/X in H.get_missing_limbs())
-			var/mutable_appearance/limby = mutable_appearance('icons/mob/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[X]") //missing limb
+			var/mutable_appearance/limby = mutable_appearance('icons/ui/hud/roguehud64.dmi', "[H.gender == "male" ? "m" : "f"]-[X]") //missing limb
 			limby.color = "#2f002f"
 			. += limby
 
@@ -1464,7 +1464,7 @@
 	name = "life"
 	icon_state = "blood100"
 	screen_loc = rogueui_blood
-	icon = 'icons/mob/rogueheat.dmi'
+	icon = 'icons/ui/hud/rogueheat.dmi'
 
 /atom/movable/screen/healths/blood/Click(location, control, params)
 	var/list/modifiers = params2list(params)
@@ -1490,7 +1490,7 @@
 	var/fucme = TRUE
 
 /atom/movable/screen/splash/credits
-	icon = 'icons/fullblack.dmi'
+	icon = 'icons/ui/title/end_title.dmi'
 	icon_state = ""
 	screen_loc = ui_backhudl
 	layer = SPLASHSCREEN_LAYER
@@ -1584,7 +1584,7 @@
 //Roguehud objects
 
 /atom/movable/screen/backhudl
-	icon = 'icons/mob/roguehudback2.dmi'
+	icon = 'icons/ui/hud/roguehudback2.dmi'
 	icon_state = ""
 	name = " "
 	screen_loc = ui_backhudl
@@ -1597,15 +1597,15 @@
 
 /atom/movable/screen/backhudl/ghost
 	icon_state = "dead"
-	icon = 'icons/mob/roguehudbackghost.dmi'
+	icon = 'icons/ui/hud/roguehudbackghost.dmi'
 
 /atom/movable/screen/backhudl/obs
 	icon_state = "obs"
-	icon = 'icons/mob/roguehudbackghost.dmi'
+	icon = 'icons/ui/hud/roguehudbackghost.dmi'
 
 /atom/movable/screen/aim
 	name = ""
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "aimbg"
 	layer = HUD_LAYER
 	plane = HUD_PLANE
@@ -1637,7 +1637,7 @@
 
 /atom/movable/screen/stress
 	name = "sanity"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "stressback"
 
 /atom/movable/screen/stress/update_icon()
@@ -1730,7 +1730,7 @@
 
 /atom/movable/screen/rmbintent
 	name = "alt intents"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "rmbintent"
 	var/list/shown_intents = list()
 	var/showing = FALSE
@@ -1741,7 +1741,7 @@
 	if(isliving(hud?.mymob))
 		var/mob/living/L = hud.mymob
 		if(L.rmb_intent)
-//			var/image/I = image(icon='icons/mob/roguehud.dmi',icon_state="[L.rmb_intent.icon_state]_x", layer = layer+0.01)
+//			var/image/I = image(icon='icons/ui/hud/roguehud.dmi',icon_state="[L.rmb_intent.icon_state]_x", layer = layer+0.01)
 			add_overlay("[L.rmb_intent.icon_state]_x")
 			name = L.rmb_intent.name
 			desc = L.rmb_intent.desc
@@ -1802,7 +1802,7 @@
 
 /atom/movable/screen/rintent_selection
 	name = "rmb intent"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = "rmbaimed"
 	var/stored_intent
 	var/stored_name
@@ -1902,21 +1902,21 @@
 	name = "stamina"
 	desc = "How winded I am. I need only a moment to catch my breath."
 	icon_state = "fat100"
-	icon = 'icons/mob/rogueheat.dmi'
+	icon = 'icons/ui/hud/rogueheat.dmi'
 	screen_loc = rogueui_fat
 
 /atom/movable/screen/rogstam
 	name = "fatigue"
 	desc = "My long-term weariness. Rest will be needed to recover this."
 	icon_state = "stam100"
-	icon = 'icons/mob/rogueheat.dmi'
+	icon = 'icons/ui/hud/rogueheat.dmi'
 	screen_loc = rogueui_fat
 
 /atom/movable/screen/heatstamover
 	name = ""
 	mouse_opacity = 0
 	icon_state = "heatstamover"
-	icon = 'icons/mob/rogueheat.dmi'
+	icon = 'icons/ui/hud/rogueheat.dmi'
 	screen_loc = rogueui_fat
 	layer = HUD_LAYER+0.1
 
@@ -1932,7 +1932,7 @@
 	blend_mode = 4
 
 /atom/movable/screen/scannies
-	icon = 'icons/mob/roguehudback2.dmi'
+	icon = 'icons/ui/hud/roguehudback2.dmi'
 	icon_state = "crt"
 	name = ""
 	screen_loc = ui_backhudl

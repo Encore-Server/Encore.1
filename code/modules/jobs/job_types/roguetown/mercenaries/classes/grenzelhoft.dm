@@ -38,7 +38,7 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("perception", 1)
 			H.change_stat("speed", -1)		//They get heavy armor now + sword option; so lower speed.
-			r_hand = /obj/item/rogueweapon/greatsword/grenz
+			r_hand = /obj/item/rogueweapon/greatsword/zwei
 		if("Halberdier")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Halberdier from Grenzelhoft, a skilled user of polearms and axes. Though you prefer them combined.."))
@@ -60,17 +60,17 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("perception", 1)
 			H.change_stat("speed", 1)
-			r_hand = /obj/item/rogueweapon/halberd
+			r_hand = /obj/item/rogueweapon/halberd/bardiche
 
 	//General gear regardless of class.
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/flashlight/flare/torch
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	shirt = /obj/item/clothing/suit/roguetown/shirt/grenzelhoft
 	head = /obj/item/clothing/head/roguetown/grenzelhofthat
-	armor = /obj/item/clothing/suit/roguetown/armor/blacksteel/cuirass
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/grenzelgloves

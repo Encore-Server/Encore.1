@@ -17,4 +17,5 @@
 
 /datum/statpack/wildcard/virtuous
 	name = "Virtuous"
-	desc = "The breadth of my being is one of a singular, defining virtue. \n (Allows access to 'virtues', special traits/quirks that replace the bonus normally given by a statpack.)"
+	desc = "The breadth of my being is one of many defining virtues. \n (Allows access to 'virtues', special traits/quirks that replace the bonus normally given by a statpack.)"
+

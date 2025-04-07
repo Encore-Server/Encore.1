@@ -4,7 +4,7 @@
 	and those who aren't are usually treated as such anyway. \
 	The class has the choice between the thieving rogue, the shadowy assassin, or the more upfront duelist."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT)
 	category_tags = list(CTAG_ADVENTURER)
@@ -58,7 +58,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	cloak = /obj/item/clothing/cloak/raincloak/mortus
 	backl = /obj/item/storage/backpack/rogue/satchel
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/steel
+	beltr = /obj/item/rogueweapon/huntingknife/idagger
 	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
 	backpack_contents = list(/obj/item/lockpickring/mundane)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

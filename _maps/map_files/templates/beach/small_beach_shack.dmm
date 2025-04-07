@@ -1,0 +1,233 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"cW" = (
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"dE" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/woods)
+"dF" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"fC" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"gB" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"ht" = (
+/obj/effect/roofing_helper/twig,
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"hN" = (
+/obj/item/roguebin/water/gross,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"kd" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"nu" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"qv" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
+"qC" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"qX" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/woods)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"yf" = (
+/obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Ae" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
+/obj/item/grown/log/tree/stake,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"AW" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Cy" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"GL" = (
+/obj/machinery/light/rogue/torchholder/c,
+/obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Kk" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"Nu" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"RY" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"Sz" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
+/obj/item/natural/feather,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"TX" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/woods)
+
+(1,1,1) = {"
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+dF
+aJ
+"}
+(2,1,1) = {"
+aJ
+kd
+TX
+kd
+kd
+kd
+sC
+aJ
+gB
+aJ
+"}
+(3,1,1) = {"
+sC
+kd
+qv
+Ae
+Sz
+TX
+Dd
+aJ
+aJ
+Cy
+"}
+(4,1,1) = {"
+Nu
+kd
+GL
+Kk
+dE
+TX
+Dd
+Dd
+sC
+aJ
+"}
+(5,1,1) = {"
+aJ
+kd
+yf
+ht
+fC
+nu
+aJ
+aJ
+sC
+sC
+"}
+(6,1,1) = {"
+aJ
+TX
+qX
+qv
+hN
+kd
+Dd
+aJ
+Dd
+sC
+"}
+(7,1,1) = {"
+aJ
+kd
+kd
+kd
+kd
+kd
+Dd
+Dd
+Nu
+sC
+"}
+(8,1,1) = {"
+aJ
+qC
+RY
+qC
+Dd
+Dd
+aJ
+aJ
+aJ
+aJ
+"}
+(9,1,1) = {"
+gB
+Nu
+qC
+qC
+cW
+aJ
+AW
+dF
+aJ
+Nu
+"}
+(10,1,1) = {"
+qC
+gB
+aJ
+aJ
+aJ
+sC
+sC
+sC
+Dd
+gB
+"}
