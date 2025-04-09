@@ -9,7 +9,7 @@
 	desc = "Gani, the Mother, embodies the fundamental element of earth. They are an ancient spirit made divine as they would personify the very essence of the stern, immovable and protective Aspect of Stone. Gani is the world beneath the feet of all. She is the only God of the Four whose omnipresence extends beyond her domain."
 	worshippers = "All Earthly things, the farms, the huntsmen and matriarchs"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/gani
-	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
+	mob_traits = list(TRAIT_EMPATH, TRAIT_KNEESTINGER_IMMUNITY)
 	t0 = null
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
@@ -45,7 +45,7 @@
 	desc = "Akan, the Elder, embodies the fundamental element of air. They are an ancient spirit made divine as they would personify the very essence of the wistful, everlasting and free Aspect of the Sky."
 	worshippers = "Nomads, scholars and the forever-free"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/akan
-	mob_traits = list(TRAIT_EMPATH, TRAIT_NIGHT_OWL, TRAIT_AKANSIGHT)
+	mob_traits = list(TRAIT_NIGHT_OWL, TRAIT_AKANSIGHT)
 	t0 = null
 	t1 = /obj/effect/proc_holder/spell/invoked/diagnose
 	t2 = /obj/effect/proc_holder/spell/invoked/attach_bodypart
@@ -82,10 +82,10 @@
 	mob_traits = list(TRAIT_ILIOPE)
 	amulet = /obj/item/clothing/neck/roguetown/psicross/iliope
 	t0 = /obj/effect/proc_holder/spell/invoked/blindness/miracle
-	t1 = /obj/effect/proc_holder/spell/invoked/invisibility/miracle
-	t2 = /obj/effect/proc_holder/spell/targeted/forcewall//real mime shit
-	t3 = /obj/effect/proc_holder/spell/targeted/ethereal_jaunt
-	t4 = /obj/effect/proc_holder/spell/targeted/smoke
+	t1 = /obj/effect/proc_holder/spell/targeted/smoke
+	t2 = /obj/effect/proc_holder/spell/invoked/invisibility/miracle
+	t3 = /obj/effect/proc_holder/spell/targeted/forcewall//real mime shit
+	t4 = /obj/effect/proc_holder/spell/targeted/ethereal_jaunt
 	confess_lines = list(
 		"VISIRES IS MY LIGHT!",
 		"AKAN FLIES FREE AND TOO FAR FROM ME!",
@@ -101,10 +101,10 @@
 	worshippers = "Smiths, engineers and tinkerers"
 	amulet = /obj/item/clothing/neck/roguetown/psicross/golerkanh
 	t0 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
-	t1 = /obj/effect/proc_holder/spell/targeted/tesla
+	t1 = /obj/effect/proc_holder/spell/invoked/heatmetal
 	t2 = /obj/effect/proc_holder/spell/invoked/knock
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/fetch
-	t4 = /obj/effect/proc_holder/spell/targeted/projectile/magic_missile
+	t4 = /obj/effect/proc_holder/spell/invoked/craftercovenant
 	confess_lines = list(
 		"IN MY HAND IS ALL MORTAL POWER!",
 		"WITH GANI'S EDGE I STRIKE!",

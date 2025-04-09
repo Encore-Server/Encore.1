@@ -9,17 +9,17 @@
 		"THE HIGHEST COURT MUST FALL!",
 	)
 
-/datum/patron/heretic/jealous_god
+/datum/patron/heretic/jealous_god // The One Envy considers those not of the Shirleigh dynasty to be beneath her notice, beyond carrying out occasional acts of capciciousness for her own amusement. She does not grant miracles to those not of Alyssandrine and Malryck's blood.
 	name = "The Jealous God"
 	domain = "Domotan Island, and seemingly little else"
 	desc = "She whose name is unknown, she whose agenda is lost; the Jealous God embodies no elemental aspect, and serves neither the divine nor ilk of Hell. Her solemn devotees are the royal family of Etgard itself, the Shirleigh Dynasty and their constituents. They are the only divine to lay absolute claim over Domotan Island, and is thus praised only in hushed tones beyond the walls of Etgard Keep."
 	worshippers = "The Shirleigh Dynasty, the brainwashed and the desperate"
 	mob_traits = list(TRAIT_CABAL, TRAIT_SEEPRICES_SHITTY)
-	t0 = /obj/effect/proc_holder/spell/invoked/eyebite
-	t1 = /obj/effect/proc_holder/spell/invoked/bonechill
-	t2 = /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle
-	t3 = /obj/effect/proc_holder/spell/invoked/raise_undead
-	t4 = /obj/effect/proc_holder/spell/invoked/rituos/miracle
+	t0 = null
+	t1 = null
+	t2 = null
+	t3 = null
+	t4 = null
 	confess_lines = list(
 		"SHE SEES! SHE LAUGHS!",
 		"SHE LAUGHS! SHE SEES!",

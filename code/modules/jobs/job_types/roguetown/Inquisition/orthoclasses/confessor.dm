@@ -44,5 +44,5 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility) //Confessor is the one church role dedicated to skullduggery. They should get a little treat for their sneaky, spy ways. This comment is approved by true Iliope-pilled sneaker-cels.
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility/miracle) //Confessor is the one church role dedicated to skullduggery. They should get a little treat for their sneaky, spy ways. This comment is approved by true Iliope-pilled sneaker-cels.
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
