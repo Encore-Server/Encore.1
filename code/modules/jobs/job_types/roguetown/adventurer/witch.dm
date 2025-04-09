@@ -111,7 +111,6 @@
 	name = "Heretic"
 	tutorial = "As a follower of forbidden gods, you have been branded a heretic by the Church. Whilst dangerous, your study brings you gifts of forbidden spells and miracles both. Let us hope you do not attract the attention of the Inquisition."
 	outfit = /datum/outfit/job/roguetown/witch/heretic
-	allowed_patrons = ALL_HERETIC_PATRONS
 
 	category_tags = list(CTAG_WITCH)
 
