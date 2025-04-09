@@ -1,6 +1,0 @@
-author: "kyres1"
-
-delete-after: True
-
-changes:
-  - bugfix: "Fixes a type of chair turning sideways and looking silly."

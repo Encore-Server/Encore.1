@@ -208,16 +208,44 @@ GLOBAL_VAR(restart_counter)
 /world/Topic(T, addr, master, key)
 	TGS_TOPIC //redirect to server tools if necessary
 	..()
+	
+	var/list/input = params2list(T)
+
+
+	// Handles encore-discord-bot
+	if("status" in input)
+		var/list/s = list()
+		var/list/admins = list()
+		s["players"] = list()
+		s["roundtime"] = worldtime2text()
+		s["status"] = "Online"		
+		var/player_count = 0
+		var/admin_count = 0
+
+		for(var/client/C in GLOB.clients)
+			if(C.holder)
+				if(C.holder.fakekey)
+					continue
+				admin_count++
+				admins += list(list(C.key, C.holder.rank))
+			s["player[player_count]"] = C.key
+			player_count++
+		s["players"] = player_count
+		s["admins"] = admin_count
+		s["map_name"] = "Domotan"
+
+		return list2params(s)
+
+
 
 	var/static/list/topic_handlers = TopicHandlers()
 
-	var/list/input = params2list(T)
 	var/datum/world_topic/handler
 	for(var/I in topic_handlers)
 		if(I in input)
 			handler = topic_handlers[I]
 			break
-
+		
 	if((!handler || initial(handler.log)) && config && CONFIG_GET(flag/log_world_topic))
 		log_topic("\"[T]\", from:[addr], master:[master], key:[key]")
 
