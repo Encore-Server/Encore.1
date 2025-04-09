@@ -85,8 +85,16 @@
 /obj/structure/trap/stun
 	name = "shock trap"
 	desc = ""
-	icon_state = "trap-shock"
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "shocker1"
 	var/stun_time = 100
+
+/obj/structure/trap/stun/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/stun/update_icon()
+	icon_state = "shocker[rand(1, 3)]"
 
 /obj/structure/trap/stun/trap_effect(mob/living/L)
 	L.electrocute_act(30, src, flags = SHOCK_NOGLOVES) // electrocute act does a message.
@@ -187,21 +195,6 @@
 	L.adjust_bodytemperature(-300)
 	L.apply_status_effect(/datum/status_effect/freon)
 
-
-/obj/structure/trap/damage
-	name = "earth trap"
-	desc = ""
-	icon_state = "trap-earth"
-
-
-/obj/structure/trap/damage/trap_effect(mob/living/L)
-	to_chat(L, span_danger("<B>The ground quakes beneath your feet!</B>"))
-	L.Paralyze(100)
-	L.adjustBruteLoss(35)
-	var/obj/structure/flora/rock/giant_rock = new(get_turf(src))
-	QDEL_IN(giant_rock, 200)
-
-
 /obj/structure/trap/ward
 	name = "divine ward"
 	desc = ""
@@ -223,3 +216,47 @@
 	L.electrocute_act(10, src, flags = SHOCK_NOGLOVES) // electrocute act does a message.
 	L.Paralyze(20)
 	QDEL_IN(src, 30)
+
+/obj/structure/trap/damage
+	name = "uneasy earth"
+	desc = "This patch of earth seems particularly weak. Traversing it is probably very dangerous."
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "cracks1"
+	alpha = 255
+
+/obj/structure/trap/damage/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/damage/update_icon()
+	icon_state = "cracks[rand(1, 3)]"
+
+/obj/structure/trap/damage/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>The uneasy ground trembles, shaking free a boulder from above!</B>"))
+	L.Paralyze(150)
+	L.adjustBruteLoss(45)
+	var/obj/structure/flora/rock/giant_rock = new(get_turf(src))
+	playsound(src, 'sound/combat/hits/onstone/wallhit3.ogg', 100, TRUE)
+	QDEL_IN(giant_rock, 200)
+
+/obj/structure/trap/skeleton
+	name = "eerie remains"
+	desc = ""
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "boner1"//hehe
+	alpha = 255
+	var/ambush_mob = /mob/living/carbon/human/species/skeleton/npc/ambush
+
+/obj/structure/trap/skeleton/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/skeleton/update_icon()
+	icon_state = "boner[rand(1, 3)]"
+
+/obj/structure/trap/skeleton/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>The soft ground below the remains crumble, and denizens of undeath rise to face you!</B>"))
+	L.Paralyze(15)//Just enough to get a hit or two off on the victim
+	new ambush_mob(get_turf(src))
+	playsound(src, 'sound/combat/hits/onstone/stonedeath.ogg', 100, TRUE)
+	qdel(src)

@@ -1,0 +1,299 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"dw" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"pm" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"sW" = (
+/obj/structure/handcart{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"AJ" = (
+/obj/item/natural/rock/copper,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"FJ" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Nk" = (
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RV" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+rN
+rN
+kA
+AJ
+rN
+rN
+rN
+pm
+pm
+uM
+uM
+"}
+(2,1,1) = {"
+uM
+uM
+rN
+rN
+rN
+rN
+rN
+rN
+dw
+rN
+rN
+pm
+pm
+pm
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+rN
+rN
+uM
+RV
+sW
+Nk
+RV
+RV
+rN
+rN
+rN
+pm
+pm
+"}
+(4,1,1) = {"
+uM
+rN
+FJ
+uM
+uM
+pm
+RV
+RV
+RV
+RV
+RV
+RV
+rN
+rN
+pm
+"}
+(5,1,1) = {"
+uM
+uM
+rN
+rN
+RV
+pm
+pm
+RV
+RV
+pm
+RV
+RV
+RV
+rN
+rN
+"}
+(6,1,1) = {"
+uM
+uM
+RV
+RV
+RV
+RV
+RV
+uM
+pm
+pm
+pm
+RV
+RV
+dw
+rN
+"}
+(7,1,1) = {"
+rN
+RV
+RV
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+RV
+RV
+YB
+"}
+(8,1,1) = {"
+rN
+RV
+RV
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+pm
+RV
+RV
+rN
+"}
+(9,1,1) = {"
+kA
+rN
+RV
+RV
+pm
+pm
+pm
+pm
+pm
+pm
+RV
+RV
+RV
+rN
+kA
+"}
+(10,1,1) = {"
+rN
+rN
+rN
+RV
+RV
+RV
+RV
+pm
+pm
+pm
+RV
+RV
+RV
+rN
+rN
+"}
+(11,1,1) = {"
+rN
+rN
+rN
+rN
+rN
+RV
+RV
+RV
+RV
+RV
+RV
+RV
+rN
+rN
+rN
+"}
+(12,1,1) = {"
+rN
+RV
+RV
+RV
+dw
+rN
+rN
+RV
+RV
+RV
+RV
+RV
+RV
+RV
+rN
+"}
+(13,1,1) = {"
+rN
+RV
+RV
+RV
+rN
+rN
+rN
+rN
+rN
+rN
+RV
+RV
+RV
+rN
+rN
+"}
+(14,1,1) = {"
+YB
+RV
+RV
+RV
+RV
+RV
+rN
+rN
+rN
+rN
+RV
+RV
+kA
+rN
+uM
+"}
+(15,1,1) = {"
+uM
+uM
+RV
+RV
+RV
+RV
+rN
+rN
+kA
+rN
+rN
+AJ
+rN
+kA
+uM
+"}
