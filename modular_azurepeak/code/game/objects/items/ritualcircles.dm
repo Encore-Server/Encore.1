@@ -307,7 +307,7 @@
 	name = "Rune of Love"
 	desc = "A Holy Rune of Eora"
 	icon_state = "eora_chalky"
-	var/peacerites = list("Rite of Pacification")
+	var/peacerites = list("Rite of Pacification", "Rite of Oblivion") // Added Rite of Oblivion
 
 /obj/structure/ritualcircle/eora/attack_hand(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
@@ -330,9 +330,10 @@
 	if (ritual_level < required_level)
 		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
 		return
+
 	var/riteselection = input(user, "Rituals of Love", src) as null|anything in peacerites
-	switch(riteselection) // put ur rite selection here
-		if("Rite of Pacification")
+	switch(riteselection)
+		if("Rite of Pacification") // Rite of Pacification Logic
 			if(do_after(user, 50))
 				user.say("#Blessed be your weary head...")
 				if(do_after(user, 50))
@@ -341,17 +342,83 @@
 						user.say("#Let Her ease your fear...")
 						if(do_after(user, 50))
 							icon_state = "eora_active"
-							pacify(src)
+							pacify(src) // Apply Pacify Effect
 							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
 							spawn(120)
 								icon_state = "eora_chalky"
+		if("Rite of Oblivion")
+			loc.visible_message(span_warning("[user] 's eyes roll back as they begin to chant, the air thickening around them.'"))
+			playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
 
+			if(do_after(user, 60))
+				user.say("Slip through cracks where time won't tread")
+				playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
+				to_chat(user, span_danger("Your worst memories come flooding back - why do they seem suddenly sweet?"))
+
+				if(do_after(user, 60))
+					user.say("With velvet voice and rose-thorn grace.")
+					to_chat(user, span_danger("You feel cold breath on the back of your neck..."))
+					playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
+
+					if(do_after(user, 60))
+						user.say("Unlace the love, erase the face.")
+						loc.visible_message(span_warning("[user]'s voice grows fuzzy and faint."))
+						loc.visible_message(span_warning("An image of a laughing woman enters your mind. Old and young and wrong."))
+						playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
+
+						if(do_after(user, 20))
+							icon_state = "eora_active"
+							user.say("Hush now… hush… it's gone, it's done—")
+							loc.visible_message(span_warning("Is she laughing or crying? A hand stretches out. The fingers clench around something."))
+							playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+
+							if(do_after(user, 20))
+								user.say("The name, the touch, the setting sun.")
+
+								// Emotion Change
+								var/emotion_to_change = input(user, "Which emotion do you wish to alter?", "Emotion Selection") as null|text
+								if(!emotion_to_change) return
+
+								var/memory_suggestion = input(user, "What memory or thought do you wish to impart?", "Memory Suggestion") as null|text
+								if(!memory_suggestion) return
+
+								to_chat(user, span_cultsmall("It is done, but will it take? And who is it who accepts these memories cut free?"))
+								playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+
+								// Allows for the memory suggestion
+								rite_of_oblivion(src, user, emotion_to_change, memory_suggestion)
+								user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
+
+							spawn(120)
+								icon_state = "eora_chalky"
+// Define the Rite of Pacification effect with range
 /obj/structure/ritualcircle/eora/proc/pacify(src)
-	var/ritualtargets = view(0, loc)
+	var/ritualtargets = view(0, loc) // Affects players within a 5-tile radius of the user
 	for(var/mob/living/carbon/human/target in ritualtargets)
 		loc.visible_message(span_warning("[target] sways like windchimes in the wind..."))
 		target.visible_message(span_green("I feel the burdens of my heart lifting. Something feels very wrong... I don't mind at all..."))
 		target.apply_status_effect(/datum/status_effect/buff/pacify)
+
+// Define the Rite of Oblivion effect
+/obj/structure/ritualcircle/eora/proc/rite_of_oblivion(obj/structure/ritualcircle/eora/src, mob/living/user, emotion_to_change, memory_suggestion)
+	var/ritualtargets = view(0, loc)
+
+	for(var/mob/living/carbon/human/target in ritualtargets)
+		loc.visible_message(span_warning("[target] seems to fade from existence, their mind clearing of all burdens..."))
+		target.visible_message(span_blue("You feel an eerie calm... Something stirs—a thought not your own."))
+
+		// Ask the target if they accept the memory
+		var/choice = input(target, "A foreign memory whispers into your thoughts. It seeks to alter your [emotion_to_change]. Do you accept it?", "Memory Intrusion") in list("Accept", "Reject")
+
+		if(choice == "Accept")
+			to_chat(target, span_green("You embrace the feeling... Something new has taken root within."))
+			to_chat(user, span_notice("[target.real_name] accepted your memory about '[emotion_to_change]'."))
+			// Optional: Apply a memory/mental buff or log it
+			target.apply_status_effect(/datum/status_effect/buff/guidance)
+
+		else
+			to_chat(target, span_warning("You shudder and push the thought away—it wasn’t yours."))
+			to_chat(user, span_warning("[target.real_name] rejected your memory about '[emotion_to_change]'."))
 
 // Rune of War
 
