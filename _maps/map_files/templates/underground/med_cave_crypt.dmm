@@ -7,7 +7,7 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
 "bd" = (
-/obj/structure/trap/damage,
+/obj/effect/spawner/trap,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
 "db" = (
@@ -96,7 +96,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/cave)
 "lr" = (
-/obj/structure/trap/damage,
+/obj/effect/spawner/trap,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
 "lK" = (
@@ -275,7 +275,7 @@ rN
 rN
 rN
 rN
-rN
+bd
 uM
 uM
 uM
@@ -405,9 +405,9 @@ lc
 ff
 "}
 (10,1,1) = {"
-rN
-uM
 bd
+uM
+rN
 Ns
 gu
 fW
@@ -484,7 +484,7 @@ uM
 uM
 uM
 uM
-bd
+rN
 kA
 rN
 uM
@@ -497,7 +497,7 @@ rN
 rN
 uM
 rN
-rN
+bd
 kA
 rN
 uM

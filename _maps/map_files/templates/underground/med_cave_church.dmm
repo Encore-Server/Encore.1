@@ -103,6 +103,10 @@
 "yp" = (
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/under/cave)
+"zk" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "Ag" = (
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/under/cave)
@@ -226,7 +230,7 @@ uM
 (2,1,1) = {"
 uM
 uM
-rN
+zk
 rN
 rN
 Yx
@@ -289,7 +293,7 @@ Ag
 oe
 vo
 rN
-rN
+zk
 "}
 (6,1,1) = {"
 uM
@@ -429,7 +433,7 @@ rN
 "}
 (14,1,1) = {"
 YB
-rN
+zk
 uM
 uM
 uM
@@ -438,7 +442,7 @@ rN
 rN
 uM
 uM
-rN
+zk
 rN
 kA
 rN

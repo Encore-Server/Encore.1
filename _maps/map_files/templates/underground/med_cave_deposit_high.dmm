@@ -26,6 +26,21 @@
 /obj/item/natural/rock/copper,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"AK" = (
+/obj/structure/trap/damage,
+/obj/item/natural/stone{
+	pixel_y = -8
+	},
+/obj/item/natural/stone{
+	pixel_y = 10;
+	pixel_x = 11
+	},
+/obj/item/natural/stone{
+	pixel_y = 2;
+	pixel_x = -7
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "FJ" = (
 /obj/item/natural/rock/salt,
 /turf/open/floor/rogue/naturalstone,
@@ -71,7 +86,7 @@ rN
 dw
 rN
 rN
-pm
+rN
 pm
 pm
 uM
@@ -87,7 +102,7 @@ sW
 Nk
 RV
 RV
-rN
+AK
 rN
 rN
 pm
@@ -180,7 +195,7 @@ rN
 "}
 (9,1,1) = {"
 kA
-rN
+AK
 RV
 RV
 pm
@@ -225,7 +240,7 @@ RV
 RV
 RV
 RV
-rN
+AK
 rN
 rN
 "}
@@ -236,7 +251,7 @@ RV
 RV
 dw
 rN
-rN
+AK
 RV
 RV
 RV
