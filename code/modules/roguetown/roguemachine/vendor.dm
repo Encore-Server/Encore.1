@@ -1,5 +1,5 @@
 /obj/structure/roguemachine/vendor
-	name = "PEDDLER"
+	name = "peddler machina"
 	desc = "The stomach of this thing can been stuffed with fun things for you to buy."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "streetvendor1"
