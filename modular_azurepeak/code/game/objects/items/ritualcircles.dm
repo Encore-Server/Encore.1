@@ -310,14 +310,17 @@
     var/peacerites = list("Rite of Pacification", "Rite of Oblivion") // Added Rite of Oblivion
 
 /obj/structure/ritualcircle/eora/attack_hand(mob/living/user)
+    // Check if user has the correct trait
     if(!HAS_TRAIT(user, TRAIT_RITUALIST))
         to_chat(user, span_smallred("I don't know the proper rites for this..."))
         return
 
+    // Check if the user has already performed enough rituals for the day
     if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
         to_chat(user, span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
         return
 
+    // Check user's ritual skill level
     var/ritual_level = user.mind?.get_skill_level(/datum/skill/magic/ritual) || 0
 
     // Skill check from ritechoices
@@ -331,6 +334,7 @@
         to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
         return
 
+    // Ritual selection
     var/riteselection = input(user, "Rituals of Love", src) as null|anything in peacerites
     switch(riteselection)
         if("Rite of Pacification") // Rite of Pacification Logic
@@ -359,7 +363,7 @@
 
                 if(do_after(user, 60))
                     user.say("With velvet voice and rose-thorn grace.")
-                    to_chat(user, span_danger("You feel cold breath on the back of your neck..."))
+                    to_chat(user, span_danger("You feel warm laughter brush across your cheeks..."))
                     playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
 
                     if(do_after(user, 60))
@@ -376,44 +380,48 @@
 
                             if(do_after(user, 20))
                                 user.say("The name, the touch, the setting sun.")
-								target.flash_fullscreen("redflash3")
-								target.emote("agony")
-								target.Stun(200)
-								target.Knockdown(200)
-                                
-                                // EMOTION PHASE - This is where things get a bit more complex
-                                var/emotion_to_change = input(user, "Which emotion do you wish to alter?", "Emotion Selection") as null|text
-                                if(!emotion_to_change) return
 
-                                // Notify all potential targets early, to let them feel it coming
-                                var/ritualtargets = view(0, loc)
-                                for(var/mob/living/carbon/human/target in ritualtargets)
-                                    to_chat(target, span_warning("A strange pull tugs at your [emotion_to_change]... a woman's fingers against your thoughts."))
+                            // EMOTION PHASE
+                            var/emotion_to_change = input(user, "Which emotion do you wish to alter?", "Emotion Selection") as null|text
+                            if(!emotion_to_change)
+                                to_chat(user, "You must select an emotion to alter.")
+                                return
 
-                                // Wait for a moment before saying the next line
-                                do_after(20, user, "[user] begins to speak, their voice tinged with power...")
-                                do_after(30, user, "I reach into the heart of [emotion_to_change]...")
-                                do_after(40, user, "With threads unseen, I begin to weave...")
-                                do_after(50, user, "Soft and slow, through the soul I cleave...")
+                            // Notify all potential targets
+                            var/ritualtargets = view(0, loc)
+                            for(var/mob/living/carbon/human/target in ritualtargets) // Check if the target is a valid human mob
+                                to_chat(target, span_warning("A strange pull tugs at your [emotion_to_change]... a woman's fingers against your thoughts."))
 
-                                // MEMORY PHASE
-                                // After the emotion phase, give time for the ritualist to prepare for the memory suggestion
-                                do_after(60, user, "Now, I will plant a seed in your mind...")
-                                do_after(60, user, "It is time to turn one memory into a different kind...")
+                            // Begin Emotion Phase
+                            if(do_after(user, 20))
+                                user.say("[user] begins to speak, their voice tinged with power...")
+                                if(do_after(user, 30))
+                                    user.say("I reach into the heart of [emotion_to_change]...")
+                                    if(do_after(user, 40))
+                                        user.say("With threads unseen, I begin to weave...")
+                                        if(do_after(user, 50))
+                                            user.say("Soft and slow, through the soul I cleave...")
 
-                                // Prompt the ritualist to enter the memory suggestion
+                            // MEMORY PHASE
+                            if(do_after(user, 60))
+                                user.say("Now, I will plant a seed in your mind...")
+                                if(do_after(user, 60))
+                                    user.say("It is time to turn one memory into a different kind...")
+
+                                // Prompt user for memory suggestion
                                 var/memory_suggestion = input(user, "What memory or thought do you wish to impart?", "Memory Suggestion") as null|text
-                                if(!memory_suggestion) return
+                                if(!memory_suggestion)
+                                    return
 
-                                // After everything is ready, trigger the final phase of the ritual
-                                do_after(60, user, "It is done, but will it take? And who is it who accepts these memories cut free?")
-                                playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
+                                // Final phase of the ritual
+                                if(do_after(user, 60))
+                                    user.say("It is done, but will it take? And who is it who accepts these memories cut free?")
+                                    playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
 
-                                rite_of_oblivion(src, user, emotion_to_change, memory_suggestion)
+                                    rite_of_oblivion(src, user, emotion_to_change, memory_suggestion)
 
-                                spawn(120)
-                                    icon_state = "eora_chalky"
-
+                                    spawn(120)
+                                        icon_state = "eora_chalky"
 // Define the Rite of Pacification effect with range
 /obj/structure/ritualcircle/eora/proc/pacify(src)
     var/ritualtargets = view(0, loc) 
