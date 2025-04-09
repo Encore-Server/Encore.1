@@ -11,10 +11,10 @@
 		to_chat(user, span_smallred("I don't know what I'm doing with this..."))
 		return
 
-var/ritechoices = list( 
+var/ritechoices = list(
 	"Rune of Sun" = list(
 		"path" = /obj/structure/ritualcircle/astrata,
-		"level" = 6
+		"level" = 3
 	),
 	"Rune of Moon" = list(
 		"path" = /obj/structure/ritualcircle/noc,
@@ -24,25 +24,25 @@ var/ritechoices = list(
 		"path" = /obj/structure/ritualcircle/dendor,
 		"level" = 2
 	),
-	"Rune of Forge" = list(
+	/*"Rune of Forge" = list(
 		"path" = /obj/structure/ritualcircle/malum,
 		"level" = 2
 	),
 	"Rune of Trickery" = list(
 		"path" = /obj/structure/ritualcircle/xylix,
-		"level" = 3
-	),
+		"level" = 3 
+	),*/
 	"Rune of Death" = list(
 		"path" = /obj/structure/ritualcircle/death,
 		"level" = 3
 	),
 	"Rune of Plague" = list(
 		"path" = /obj/structure/ritualcircle/pestra,
-		"level" = 4
+		"level" = 3
 	),
 	"Rune of Love" = list(
 		"path" = /obj/structure/ritualcircle/eora,
-		"level" = 4
+		"level" = 5
 	),
 /*	"Rune of War" = list(
 		"path" = /obj/structure/ritualcircle/war,
@@ -70,7 +70,7 @@ var/ritechoices = list(
 	var/turf/step_turf = get_step(get_turf(user), user.dir)
 	switch(runeselection)
 		if("Rune of Sun")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of cold Radiance..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of cold Radiance...light will guide them."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/astrata(step_turf)
@@ -80,7 +80,7 @@ var/ritechoices = list(
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/noc(step_turf)
 		if("Rune of Beasts")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of feral Madness"))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of feral Madness...a way to transform others into beasts."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/dendor(step_turf)
@@ -95,17 +95,17 @@ var/ritechoices = list(
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/xylix(step_turf)
 		if("Rune of Death")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Embrace..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Embrace...I will keep them from death's door."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/death(step_turf)
 		if("Rune of Plague")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Plague..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Plague...rot brings cleansing."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/pestra(step_turf)
 		if("Rune of Love")
-			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Love..."))
+			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Love...I will change those who will not change themselves"))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
 				new /obj/structure/ritualcircle/eora(step_turf)

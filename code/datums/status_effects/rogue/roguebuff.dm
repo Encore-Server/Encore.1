@@ -387,7 +387,7 @@
 #define BLESSINGOFSUN_FILTER "sun_glow"
 /atom/movable/screen/alert/status_effect/buff/guidinglight
 	name = "Guiding Light"
-	desc = "Astrata's gaze follows me, lighting the path!"
+	desc = "A warm gaze follows me, lighting the path!"
 	icon_state = "stressvg"
 
 /datum/status_effect/buff/guidinglight // Hey did u follow us from ritualcircles? Cool, okay this stuff is pretty simple yeah? Most ritual circles use some sort of status effects to get their effects ez.
@@ -440,7 +440,7 @@
 
 /datum/status_effect/buff/moonlightdance/on_remove()
 	. = ..()
-	to_chat(owner, span_warning("Noc's silver leaves my"))
+	to_chat(owner, span_warning("The moon's silver leaves me"))
 	REMOVE_TRAIT(owner, TRAIT_DARKVISION, MAGIC_TRAIT)
 
 
@@ -448,7 +448,7 @@
 
 /atom/movable/screen/alert/status_effect/buff/flylordstriage
 	name = "Flylord's Triage"
-	desc = "Pestra's servants crawl through my pores and wounds!"
+	desc = "Rot's servants crawl through my pores and wounds!"
 	icon_state = "buff"
 
 /datum/status_effect/buff/flylordstriage
@@ -634,12 +634,12 @@
 
 /datum/status_effect/buff/lesserwolf/on_remove()
 	. = ..()
-	to_chat(owner, span_warning("I feel Dendor's blessing leave my body..."))
+	to_chat(owner, span_warning("I feel nature's blessing leave my body..."))
 	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 	ADD_TRAIT(owner, TRAIT_STRONGBITE, TRAIT_GENERIC)
 
 /atom/movable/screen/alert/status_effect/buff/pacify
-	name = "Blessing of Eora"
+	name = "Blessing of Pacification"
 	desc = "I feel my heart as light as feathers. All my worries have washed away."
 	icon_state = "buff"
 
