@@ -1,5 +1,5 @@
 // These are generally designed to be more creepy, but could do lighter stuff too. Please do not hand the ritual skill out to too many roles.
-//Massive credit to Onutsio (🏳️‍⚧️). 
+//Massive credit to Onutsio (🏳️‍⚧️).
 
 /obj/structure/ritualcircle
 	name = "ritual circle"
@@ -24,7 +24,7 @@
 	desc = "A Sun Rune. Reading it leaves you feeling warm." // description on examine
 	var/solarrites = list("Guiding Light") // This is important - This is the var which stores every ritual option available to a ritualist - Ideally, we'd have like, 3 for each God. Right now, just 1.
 
-/obj/structure/ritualcircle/astrata/attack_hand(mob/living/user) 
+/obj/structure/ritualcircle/astrata/attack_hand(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
 		to_chat(user, span_smallred("I don't know the proper rites for this..."))
 		return
@@ -45,7 +45,7 @@
 	if (ritual_level < required_level)
 		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
 		return
-		
+
 	var/riteselection = input(user, "Rituals of the Sun", src) as null|anything in solarrites // When you use a open hand on a rune, It'll give you a selection of all the rites available from that rune
 	switch(riteselection) // rite selection goes in this section, try to do something fluffy. Presentation is most important here, truthfully.
 		if("Guiding Light") // User selects Guiding Light, begins the stuff for it
@@ -55,7 +55,7 @@
 					user.say("To bring Order to a world of naught!!")
 					if(do_after(user, 50))
 						user.say("Place your gaze upon me, oh Radiant one!!")
-						to_chat(user,span_danger("You feel the eye of Astrata turned upon you. Her warmth dances upon your cheek. You feel yourself warming up...")) // A bunch of flavor stuff, slow incanting.
+						to_chat(user,span_danger("You feel the eye of the Sun turned upon you. Her warmth dances upon your cheek. You feel yourself warming up...")) // A bunch of flavor stuff, slow incanting.
 						icon_state = "astrata_active"
 						loc.visible_message(span_warning("[user]'s bursts to flames! Embraced by Her Warmth wholly!"))
 						playsound(loc, 'sound/combat/hits/burn (1).ogg', 100, FALSE, -1)
@@ -125,7 +125,7 @@
 
 /obj/structure/ritualcircle/pestra
 	name = "Rune of Plague"
-	desc = "A Holy Rune of Pestra"
+	desc = "A Rune of Disease. Looking at it makes you feel sick."
 	icon_state = "pestra_chalky"
 	var/plaguerites = list("Flylord's Triage")
 
@@ -151,22 +151,22 @@
 	if (ritual_level < required_level)
 		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
 		return
-	
+
 	var/riteselection = input(user, "Rituals of Plague", src) as null|anything in plaguerites
 	switch(riteselection) // put ur rite selection here
 		if("Flylord's Triage")
 			if(do_after(user, 50))
-				user.say("Buboes, phlegm, blood and guts!!")
+				user.say("O Queen of Blight, whose breath is plague,")
 				if(do_after(user, 50))
-					user.say("Boils, bogeys, rots and pus!!")
+					user.say("Whose kiss is rot, whose will is vague.")
 					if(do_after(user, 50))
-						user.say("Blisters, fevers, weeping sores!!")
-						to_chat(user,span_danger("You feel something crawling up your throat, humming and scratching..."))
+						user.say("Let blood run thin and pulses cease,")
+						to_chat(user,span_danger("A hush falls. You feel the world reel — as if something ancient stirs beneath your skin...."))
 						if(do_after(user, 30))
 							icon_state = "pestra_active"
-							user.say("From your wounds, the fester pours!!")
+							user.say("And birth through me thy swarm's release")
 							to_chat(user,span_cultsmall("My devotion to the Plague Queen allowing, her servants crawl up from my throat. Come now, father fly..."))
-							loc.visible_message(span_warning("[user] opens their mouth, disgorging a great swarm of flies!"))
+							loc.visible_message(span_warning("[user] gasps — and a torrent of flies erupts from their throat, wings screaming like bells of pestilence!"))
 							playsound(loc, 'sound/misc/fliesloop.ogg', 100, FALSE, -1)
 							flylordstriage(src)
 							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
@@ -438,33 +438,32 @@
         if (choice == "Accept")
             to_chat(target, span_green("You embrace the feeling... Something new has taken root within."))
             to_chat(user, span_notice("[target.real_name] accepted your memory about '[memory_suggestion]'."))
-            
+
 
         else
             to_chat(target, span_warning("You shudder and push the thought away—it wasn’t yours."))
             to_chat(user, span_warning("[target.real_name] rejected your memory about '[emotion_to_change]'."))
 
-// Rune of War
+/* Trickery Ritual - Functional but incredibly janky
 
-/*
-/obj/structure/ritualcircle/war
-	name = "Rune of War"
-	desc = "A Rune of War. Looking at it brings the sound of battle and scent of blood."
-	icon_state = "zizo_chalky"
-	var/warrites = list("Warrior's Call")
+/obj/structure/ritualcircle/trickery
+	name = "Rune of the Faceless"
+	desc = "A Mysterious Rune of the Faceless One"
+	icon_state = "noc_chalky"
+	var/list/facelessrites = list("Rite of Mirrored Souls")
 
-/obj/structure/ritualcircle/war/attack_hand(mob/living/user)
-	if(!HAS_TRAIT(user, TRAIT_RITUALIST))
+/obj/structure/ritualcircle/trickery/attack_hand(mob/living/user)
+	if (!HAS_TRAIT(user, TRAIT_RITUALIST))
 		to_chat(user, span_smallred("I don't know the proper rites for this..."))
 		return
 
-	if(user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
+	if (user.has_status_effect(/datum/status_effect/debuff/ritesexpended))
 		to_chat(user, span_smallred("I have performed enough rituals for the day... I must rest before communing more."))
 		return
 
 	var/ritual_level = user.mind?.get_skill_level(/datum/skill/magic/ritual) || 0
 
-	var/rune_data = ritechoices["Rune of War"]
+	var/rune_data = ritechoices["Rune of Trickery"]
 	if (!rune_data)
 		to_chat(user, span_warning("This rune is incomplete or unregistered."))
 		return
@@ -474,48 +473,37 @@
 		to_chat(user, span_smallred("I lack the knowledge to invoke this rite."))
 		return
 
-	var/riteselection = input(user, "Rituals of War", src) as null|anything in warrites
-
+	var/riteselection = input(user, "Rituals of the Faceless", src) as null | anything in facelessrites
 	switch(riteselection)
-		if("Warrior's Call")
-			loc.visible_message(span_warning("[user] raises a hand toward the circle. The skin splits and blood drips..."))
-			playsound(user, 'sound/vo/mobs/ghost/whisper (3).ogg', 100, FALSE, -1)
-
-			if(do_after(user, 60))
-				loc.visible_message(span_warning("[user] shudders, blood pouring from the wound."))
-				playsound(user, 'sound/vo/mobs/ghost/whisper (1).ogg', 100, FALSE, -1)
-
-				if(do_after(user, 60))
-					user.say("Blood calls!! Blood must answer!!")
-					to_chat(user, span_danger("The sounds of battle drift on the wind. Screams fill your ears."))
-					playsound(user, 'sound/vo/mobs/ghost/death.ogg', 100, FALSE, -1)
-
-					if(do_after(user, 60))
-						loc.visible_message(span_warning("[user]'s blood continues to splatter onto the rune. How is there any left?"))
-						to_chat(user, span_cultsmall("A grunt. A thud. Metal against metal."))
-						playsound(user, 'sound/vo/mobs/ghost/whisper (2).ogg', 100, FALSE, -1)
-
-						if(do_after(user, 20))
-							icon_state = "zizo_active"
-							user.say("It is done.")
-							loc.visible_message(span_warning("[user] finally pulls their hand away. Anger, rage, hunger fill your heart."))
-							playsound(loc, 'sound/vo/mobs/ghost/moan (1).ogg', 100, FALSE, -1)
-							warriorsrite(src)
+		if ("Rite of Mirrored Souls")
+			if (do_after(user, 50))
+				user.say("I call upon the Faceless One...")
+				if (do_after(user, 50))
+					user.say("To blur the lines between self and other...")
+					if (do_after(user, 50))
+						user.say("Let our essences intertwine and mirror each other...")
+						if (do_after(user, 50))
+							icon_state = "noc_active"
+							src.mirrored_souls(user)
 							user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
-
-
 							spawn(120)
-								icon_state = "zizo_chalky"
+								icon_state = "noc_chalky"
 
-/obj/structure/ritualcircle/war/proc/warriorsrite(src)
-	var/ritualtargets = view(7, loc)
-	for(var/mob/living/carbon/human/target in ritualtargets)
-//		target.apply_status_effect(/datum/status_effect/buff/warriorsrite) So the witches can test
+/proc/swap_attributes(mob/living/A, mob/living/B)
+    // Swap real names
+    var/temp_name = A.real_name
+    A.real_name = B.real_name
+    B.real_name = temp_name
+
+    // Swap appearances
+    var/appearance/temp_appearance = A.appearance
+    A.appearance = B.appearance
+    B.appearance = temp_appearance
+
+user.apply_status_effect(/datum/status_effect/buff/mirroredsouls, target)
+target.apply_status_effect(/datum/status_effect/buff/mirroredsouls, user)
 
 */
-
- //Unused
-
 /obj/structure/ritualcircle/xylix
 	name = "Rune of Trickery"
 	desc = "A Holy Rune of Xylix"

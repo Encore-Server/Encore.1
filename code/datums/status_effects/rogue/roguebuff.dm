@@ -390,34 +390,56 @@
 	desc = "A warm gaze follows me, lighting the path!"
 	icon_state = "stressvg"
 
-/datum/status_effect/buff/guidinglight // Hey did u follow us from ritualcircles? Cool, okay this stuff is pretty simple yeah? Most ritual circles use some sort of status effects to get their effects ez.
+/datum/status_effect/buff/guidinglight
 	id = "guidinglight"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/guidinglight
-	duration = 30 MINUTES // Lasts for 30 minutes, roughly an ingame day. This should be the gold standard for rituals, unless its some particularly powerul effect or one-time effect(Flylord's triage)
+	duration = 30 MINUTES
 	status_type = STATUS_EFFECT_REFRESH
-	effectedstats = list("perception" = 2) // This is for basic stat effects, I would consider these a 'little topping' and not what you should rlly aim for for rituals. Ideally we have cool flavor boons, rather than combat stims.
+	effectedstats = list("perception" = 2)
 	examine_text = "SUBJECTPRONOUN walks with Her Light!"
+	var/outline_colour = "#fdfbd3"
+	var/potency = 6
 	var/list/mobs_affected
-	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj
-	var/outline_colour = "#ffffff"
 
 /datum/status_effect/buff/guidinglight/on_apply()
 	. = ..()
-	if (!.)
+	if (!. || !isliving(owner))
 		return
+
 	to_chat(owner, span_notice("Light blossoms into being around me!"))
-	var/filter = owner.get_filter(BLESSINGOFSUN_FILTER)
-	if (!filter)
-		owner.add_filter(BLESSINGOFSUN_FILTER, 2, list("type" = "outline", "color" = outline_colour, "alpha" = 60, "size" = 1))
-	mob_light_obj = owner.mob_light("#fdfbd3", 10, 10)
+
+	// Visual outline glow
+	if (!owner.get_filter(BLESSINGOFSUN_FILTER))
+		owner.add_filter(BLESSINGOFSUN_FILTER, 2, list(
+			"type" = "outline",
+			"color" = outline_colour,
+			"alpha" = 60,
+			"size" = 1
+		))
+
+	// Add actual light object
+	add_light(owner)
 	return TRUE
 
+/datum/status_effect/buff/guidinglight/proc/add_light(mob/living/source)
+	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = source.mob_light(potency)
+	LAZYSET(mobs_affected, source, mob_light_obj)
+	RegisterSignal(source, COMSIG_PARENT_QDELETING, PROC_REF(on_living_holder_deletion))
+
+/datum/status_effect/buff/guidinglight/proc/remove_light(mob/living/source)
+	UnregisterSignal(source, COMSIG_PARENT_QDELETING)
+	var/obj/effect/dummy/lighting_obj/moblight/mob_light_obj = LAZYACCESS(mobs_affected, source)
+	LAZYREMOVE(mobs_affected, source)
+	if (mob_light_obj)
+		qdel(mob_light_obj)
+
+/datum/status_effect/buff/guidinglight/proc/on_living_holder_deletion(mob/living/M)
+	remove_light(M)
 
 /datum/status_effect/buff/guidinglight/on_remove()
-	playsound(owner, 'sound/items/firesnuff.ogg', 75, FALSE)
 	to_chat(owner, span_notice("The miraculous light surrounding me has fled..."))
 	owner.remove_filter(BLESSINGOFSUN_FILTER)
-	QDEL_NULL(mob_light_obj)
+	remove_light(owner)
 
 #undef BLESSINGOFSUN_FILTER
 /datum/status_effect/buff/moonlightdance
@@ -658,3 +680,30 @@
 	. = ..()
 	to_chat(owner, span_warning("My mind is my own again, no longer awash with foggy peace!"))
 	REMOVE_TRAIT(owner, TRAIT_PACIFISM, TRAIT_GENERIC)
+
+/datum/status_effect/buff/mirroredsouls
+	id = "mirroredsouls"
+	duration = 20 MINUTES
+	status_type = STATUS_EFFECT_REFRESH
+	var/mob/living/linked_mob
+
+/datum/status_effect/buff/mirroredsouls/on_creation(mob/living/owner, mob/living/other)
+	linked_mob = other
+
+/datum/status_effect/buff/mirroredsouls/on_remove()
+	. = ..()
+	if (!linked_mob || !owner || !ismob(linked_mob) || !ismob(owner))
+		return
+
+	to_chat(owner, span_warning("Your reflection breaks. You remember yourself."))
+	to_chat(linked_mob, span_warning("The mask fades. The name is yours again."))
+
+	// Swap back names
+	var/temp_name = owner.real_name
+	owner.real_name = linked_mob.real_name
+	linked_mob.real_name = temp_name
+
+	// Swap back appearance
+	var/temp_appearance = owner.appearance
+	owner.appearance = linked_mob.appearance
+	linked_mob.appearance = temp_appearance

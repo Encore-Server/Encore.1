@@ -24,17 +24,9 @@ var/ritechoices = list(
 		"path" = /obj/structure/ritualcircle/dendor,
 		"level" = 2
 	),
-	/*"Rune of Forge" = list(
-		"path" = /obj/structure/ritualcircle/malum,
-		"level" = 2
-	),
-	"Rune of Trickery" = list(
-		"path" = /obj/structure/ritualcircle/xylix,
-		"level" = 3 
-	),*/
 	"Rune of Death" = list(
 		"path" = /obj/structure/ritualcircle/death,
-		"level" = 3
+		"level" = 5
 	),
 	"Rune of Plague" = list(
 		"path" = /obj/structure/ritualcircle/pestra,
@@ -50,9 +42,14 @@ var/ritechoices = list(
 	),
 	"Rune of Storm" = list(
 		"path" = /obj/structure/ritualcircle/abyssor,
-		"level" = 6
+		"level" = 6 )
+
+	),
+	"Rune of Trickery" = list(
+		"path" = /obj/structure/ritualcircle/trickery,
+		"level" = 3
 */
-	)
+)
 
 
 /obj/item/ritechalk/attack_self(mob/living/user)
@@ -93,7 +90,7 @@ var/ritechoices = list(
 			to_chat(user,span_cultsmall("I begin inscribing the rune of quiet Trickery..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
-				new /obj/structure/ritualcircle/xylix(step_turf)
+				new /obj/structure/ritualcircle/trickery(step_turf)
 		if("Rune of Death")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Embrace...I will keep them from death's door."))
 			if(do_after(user, 30, src))
