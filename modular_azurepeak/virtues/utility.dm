@@ -189,4 +189,12 @@
 						list(/datum/skill/labor/lumberjacking, 2, 2)
 	)
 
+/datum/virtue/utility/fisherman
+	name = "Fisherman's Apprentice"
+	desc = "You have spent enough time around fisherman for some of their skills to be picked up. Whether it was a family business, a friend, or just long hours at the pond, the fish have come to fear you."
+	added_stashed_items = /obj/item/fishingrod
+	added_skills = list(list(/datum/skill/labor/fishing 2, 5),
+						list(/datum/skill/labor/butchering, 2, 2),
+						list(/datum/skill/misc/swimming, 2, 2),)
+
 /datum/virtue/heretic // Virtues able to be taken by heretical worshipers only.
