@@ -1,0 +1,508 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bc" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"bd" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"db" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"ed" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ej" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/item/natural/worms,
+/obj/item/natural/worms,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave)
+"ff" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"fW" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"gu" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ig" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/obj/item/natural/bundle/stick,
+/obj/item/flint{
+	pixel_x = -1;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"it" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"jI" = (
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"jU" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"ka" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lc" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1;
+	locked = 1
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"le" = (
+/obj/item/rogueweapon/huntingknife/idagger/silver{
+	pixel_x = 2;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"lr" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"lK" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"mj" = (
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mA" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mG" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 8
+	},
+/obj/item/burial_shroud{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/burial_shroud,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"mJ" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"pE" = (
+/obj/item/flashlight/flare/torch/lantern,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"rK" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tc" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"tZ" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"uY" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"vE" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"vF" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xp" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xW" = (
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"Fb" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Fc" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Il" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ki" = (
+/obj/structure/closet/crate/chest/neu,
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ns" = (
+/obj/effect/decal/cobble/mossy,
+/obj/structure/mineral_door/wood/deadbolt{
+	locked = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"OZ" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"PI" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Rz" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Xe" = (
+/obj/structure/handcart{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+rN
+rN
+kA
+rN
+uM
+uM
+uM
+uM
+rN
+uM
+uM
+"}
+(2,1,1) = {"
+uM
+uM
+rN
+rN
+rN
+rN
+bd
+uM
+uM
+uM
+kA
+uM
+rN
+rN
+uM
+"}
+(3,1,1) = {"
+rN
+rN
+rN
+rN
+uM
+uM
+uM
+uM
+rN
+ed
+Fc
+uM
+bd
+rN
+YB
+"}
+(4,1,1) = {"
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+rK
+rN
+uM
+uM
+uM
+uM
+rN
+rN
+"}
+(5,1,1) = {"
+uM
+uM
+uM
+pE
+mA
+lK
+Xe
+rK
+tZ
+tZ
+tZ
+uM
+uM
+uM
+uM
+"}
+(6,1,1) = {"
+rN
+uM
+Fb
+mj
+ff
+bc
+rK
+rK
+PI
+uY
+Rz
+tc
+uM
+uM
+uM
+"}
+(7,1,1) = {"
+rN
+uM
+uM
+rK
+ff
+OZ
+xp
+ff
+mJ
+rN
+mA
+db
+db
+rK
+uM
+"}
+(8,1,1) = {"
+rN
+uM
+uM
+rK
+ff
+rK
+rK
+ka
+ff
+Il
+vE
+ff
+ff
+rK
+lr
+"}
+(9,1,1) = {"
+kA
+uM
+uM
+rK
+PI
+fW
+rK
+le
+rK
+xW
+ff
+PI
+ff
+lc
+ff
+"}
+(10,1,1) = {"
+bd
+uM
+rN
+Ns
+gu
+fW
+jU
+jU
+rK
+jI
+vF
+it
+gu
+rK
+uM
+"}
+(11,1,1) = {"
+rN
+rN
+rN
+rK
+rK
+mG
+ig
+tc
+rK
+tZ
+tZ
+ej
+rK
+rK
+uM
+"}
+(12,1,1) = {"
+rN
+rN
+uM
+uM
+uM
+uM
+uM
+ed
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+"}
+(13,1,1) = {"
+rN
+rN
+uM
+uM
+uM
+uM
+Ki
+rN
+rN
+uM
+uM
+uM
+rN
+rN
+rN
+"}
+(14,1,1) = {"
+YB
+rN
+uM
+rN
+rN
+uM
+uM
+uM
+uM
+uM
+uM
+rN
+kA
+rN
+uM
+"}
+(15,1,1) = {"
+uM
+rN
+rN
+rN
+rN
+uM
+rN
+bd
+kA
+rN
+uM
+rN
+rN
+kA
+uM
+"}

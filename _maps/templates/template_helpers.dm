@@ -18,6 +18,10 @@
 	name = "Twig Roof Builder"
 	roof_tile = /turf/open/floor/rogue/twig
 
+/obj/effect/roofing_helper/open_space//basically just opens the above turf, useful for collapsed caves and stuff
+	name = "Open Above Turf"
+	roof_tile = /turf/open/transparent/openspace
+
 /obj/effect/roofing_helper/proc/build_roof()
     var/turf/target = get_step_multiz(src, UP)
     if (!target || target.z > world.maxz)

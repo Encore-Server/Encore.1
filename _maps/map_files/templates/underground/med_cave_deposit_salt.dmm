@@ -1,0 +1,317 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bB" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lW" = (
+/obj/structure/trap/damage,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ny" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"rk" = (
+/obj/effect/decal/cleanable/food/salt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ry" = (
+/turf/closed/mineral/rogue/salt,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"rQ" = (
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"yt" = (
+/obj/structure/trap/damage,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Dr" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Gc" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Md" = (
+/obj/structure/handcart,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"TK" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"VE" = (
+/obj/effect/decal/cleanable/food/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+rN
+yt
+kA
+rN
+rN
+yt
+ry
+rN
+rN
+uM
+Gc
+"}
+(2,1,1) = {"
+uM
+uM
+rN
+Gc
+rN
+rN
+kA
+rN
+rN
+ry
+ry
+ry
+rN
+uM
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+Gc
+ry
+ry
+ry
+rN
+Gc
+Gc
+VE
+ry
+rN
+rN
+Gc
+TK
+"}
+(4,1,1) = {"
+Gc
+Gc
+Gc
+ry
+ry
+rN
+rN
+Dr
+rN
+rN
+rN
+ny
+kA
+rk
+rN
+"}
+(5,1,1) = {"
+uM
+uM
+kA
+rN
+rN
+Gc
+kA
+rN
+ry
+ry
+rN
+rN
+rN
+rN
+rN
+"}
+(6,1,1) = {"
+uM
+yt
+rN
+Gc
+rk
+Gc
+rN
+ry
+ry
+uM
+uM
+rN
+rN
+rN
+rN
+"}
+(7,1,1) = {"
+rN
+rN
+ry
+rN
+ny
+rN
+uM
+ry
+ry
+ry
+ry
+ry
+rN
+rN
+lW
+"}
+(8,1,1) = {"
+rN
+ry
+ry
+ry
+rN
+uM
+uM
+uM
+ry
+ry
+ry
+ry
+rN
+Gc
+Gc
+"}
+(9,1,1) = {"
+kA
+ry
+ry
+ry
+rN
+rN
+ry
+ry
+ry
+uM
+rQ
+rN
+VE
+Gc
+bB
+"}
+(10,1,1) = {"
+rN
+rN
+ry
+ry
+rN
+rN
+uM
+ry
+ry
+Md
+ny
+Gc
+Gc
+Dr
+Gc
+"}
+(11,1,1) = {"
+rN
+VE
+rN
+rN
+rN
+kA
+rN
+rN
+rN
+rN
+rN
+ry
+ry
+rN
+rN
+"}
+(12,1,1) = {"
+rN
+ny
+uM
+rN
+rN
+Gc
+yt
+VE
+rN
+ry
+ry
+ry
+rN
+rN
+rN
+"}
+(13,1,1) = {"
+yt
+rN
+uM
+uM
+bB
+Gc
+Gc
+rN
+Gc
+rk
+ry
+ry
+rN
+Gc
+rN
+"}
+(14,1,1) = {"
+YB
+rN
+uM
+Gc
+Gc
+rN
+rN
+rN
+ny
+rN
+rN
+rN
+bB
+Gc
+uM
+"}
+(15,1,1) = {"
+uM
+rN
+rN
+Gc
+rN
+uM
+rN
+Gc
+kA
+Gc
+Gc
+Gc
+Gc
+kA
+uM
+"}
