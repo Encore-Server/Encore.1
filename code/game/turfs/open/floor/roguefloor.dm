@@ -522,6 +522,22 @@
 	landsound = 'sound/foley/jumpland/dirtland.wav'
 	baseturfs = /turf/open/floor/rogue/sand
 	slowdown = 0
+	smooth = SMOOTH_TRUE
+	neighborlay = "sandedge"
+	canSmoothWith = list(/turf/open/floor/rogue/dirt,
+						/turf/open/floor/rogue/grass,
+						/turf/open/floor/rogue/grassred, 
+						/turf/open/floor/rogue/grassyel, 
+						/turf/open/floor/rogue/grasscold,
+						/turf/open/floor/rogue/snowpatchy,
+						/turf/open/floor/rogue/snow,
+						/turf/open/floor/rogue/snowrough,
+						/turf/open/water/ocean,
+						/turf/open/water/ocean/deep,
+						/turf/open/water/pond)
+
+/turf/open/floor/rogue/sand/cardinal_smooth(adjacencies)
+	roguesmooth(adjacencies)
 
 /turf/open/floor/rogue/sand/Initialize(mapload)
 	. = ..()
