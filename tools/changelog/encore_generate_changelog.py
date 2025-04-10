@@ -52,18 +52,21 @@ all_changelog_entries = {}
 validPrefixes = [
     'bugfix',
     'wip',
-    'tweak',
+    'qol',
     'soundadd',
     'sounddel',
-    'rscdel',
     'rscadd',
+    'rscdel',
     'imageadd',
     'imagedel',
     'maptweak',
     'spellcheck',
     'experiment',
-    'balance'
+    'balance',
+    'refactor',
+    'admin'
 ]
+
 
 
 def dictToTuples(inp):
