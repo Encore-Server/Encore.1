@@ -1,13 +1,154 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ai" = (
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"ax" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/glass/mortar,
+/obj/item/pestle,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"cz" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"fs" = (
+/obj/structure/fluff/alch,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"jp" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"jL" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "kA" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"kW" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"mD" = (
+/obj/structure/closet/crate/chest/crate,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
 "rN" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"sg" = (
+/obj/structure/closet/crate/chest/crate,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"sk" = (
+/obj/structure/table/wood,
+/obj/item/rogueweapon/huntingknife/chefknife,
+/obj/item/cooking/pan,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"uF" = (
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
 "uM" = (
 /turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"xe" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"zx" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/item/flashlight/flare/torch/lantern/bronzelamptern,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"BE" = (
+/obj/structure/roguetent,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Dc" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"DD" = (
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"Er" = (
+/turf/closed/wall/mineral/rogue/decostone,
+/area/rogue/under/cave)
+"Fx" = (
+/obj/structure/bookcase,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"FZ" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Ht" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"HH" = (
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"If" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"IQ" = (
+/obj/structure/chair/stool/rogue,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"MU" = (
+/obj/structure/telescope,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"Pw" = (
+/obj/structure/closet/crate/coffin,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Qf" = (
+/obj/item/roguebin/water,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"QY" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RC" = (
+/obj/structure/globe,
+/turf/open/floor/rogue/churchrough,
+/area/rogue/under/cave)
+"Ut" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"US" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"VC" = (
+/obj/structure/bookcase,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Yd" = (
+/obj/structure/closet/crate/chest/neu_iron,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/under/cave)
 "YB" = (
 /obj/item/natural/rock,
@@ -22,7 +163,7 @@ rN
 rN
 rN
 kA
-rN
+uM
 rN
 rN
 rN
@@ -33,16 +174,16 @@ uM
 "}
 (2,1,1) = {"
 uM
+rN
+rN
+rN
+uM
+uM
+uM
+uM
 uM
 rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+uM
 rN
 rN
 rN
@@ -51,202 +192,202 @@ uM
 (3,1,1) = {"
 uM
 rN
-rN
-rN
+Er
+Er
+Er
+Er
+Er
+Er
 uM
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+uM
+uM
+QY
 rN
 rN
 YB
 "}
 (4,1,1) = {"
-rN
-rN
+YB
+QY
+Er
+fs
+xe
+RC
+Fx
+Yd
+Er
+Er
+Er
+Er
 rN
 uM
-uM
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
 rN
 "}
 (5,1,1) = {"
 rN
+uM
+Er
+ax
+Ht
+Ht
+ai
+MU
+Er
+VC
+FZ
+Er
 rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+uM
 rN
 "}
 (6,1,1) = {"
 rN
-rN
-rN
-rN
-rN
-rN
-rN
 uM
-uM
+Er
+sk
+ai
+Ht
+HH
+Qf
+Er
+uF
+uF
+Er
 rN
-rN
-rN
-rN
-rN
+YB
 rN
 "}
 (7,1,1) = {"
 rN
-rN
-rN
-rN
-rN
-rN
+uM
+Er
+Er
+Er
+DD
+ai
+jp
+Er
+uF
 uM
 uM
 uM
-rN
-rN
-rN
-rN
 rN
 rN
 "}
 (8,1,1) = {"
-rN
-rN
-rN
-rN
-rN
 uM
 uM
 uM
 uM
+Er
+zx
+Ht
+Ht
+Er
+uF
+sg
+Er
 uM
-rN
-rN
-rN
-rN
+uM
 rN
 "}
 (9,1,1) = {"
-kA
-rN
-rN
-rN
-rN
-rN
 uM
+Pw
+Ut
+Ut
+BE
+ai
+jp
+Ht
+Er
+Ut
+uF
+Er
 uM
-uM
-uM
-rN
-rN
-rN
 rN
 kA
 "}
 (10,1,1) = {"
-rN
-rN
-rN
-rN
-rN
-rN
 uM
+kW
+kW
 uM
-uM
+Er
+mD
+ai
+Ht
+Dc
+jp
+uF
+jL
 rN
 rN
-rN
-rN
-rN
-rN
+QY
 "}
 (11,1,1) = {"
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+uM
+US
+YB
+uM
+Er
+If
+IQ
+cz
+Er
+ai
+Ut
+uM
+uM
 rN
 rN
 "}
 (12,1,1) = {"
-rN
-rN
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
 uM
 rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+YB
 "}
 (13,1,1) = {"
 rN
-rN
 uM
 uM
-rN
-rN
-rN
-rN
-rN
-rN
-rN
+uM
+uM
+uM
+uM
+uM
+uM
+uM
+uM
 rN
 rN
 rN
 rN
 "}
 (14,1,1) = {"
-YB
 rN
+rN
+uM
 uM
 rN
 rN
 rN
-rN
-rN
-rN
-rN
-rN
+uM
+uM
+uM
+uM
 rN
 kA
 rN
@@ -264,7 +405,7 @@ rN
 kA
 rN
 rN
-rN
+QY
 rN
 kA
 uM
