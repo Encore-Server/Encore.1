@@ -210,37 +210,37 @@
 
 /// SURRENDERING DEBUFFS
 
-/datum/status_effect/debuff/breedable
-	id = "breedable"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/breedable
+/datum/status_effect/debuff/yield
+	id = "yield"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/yield
 	duration = 30 SECONDS
 
-/datum/status_effect/debuff/breedable/on_apply()
+/datum/status_effect/debuff/yield/on_apply()
 	. = ..()
 	ADD_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, id)
 
-/datum/status_effect/debuff/breedable/on_remove()
+/datum/status_effect/debuff/yield/on_remove()
 	. = ..()
 	REMOVE_TRAIT(owner, TRAIT_CRITICAL_RESISTANCE, id)
 
-/atom/movable/screen/alert/status_effect/debuff/breedable
+/atom/movable/screen/alert/status_effect/debuff/yield
 	name = "Obedient"
 	desc = "They won't hurt me too much..."
 
-/datum/status_effect/debuff/submissive
-	id = "submissive"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/submissive
+/datum/status_effect/debuff/surrender
+	id = "surrender"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/surrender
 	duration = 60 SECONDS
 
-/datum/status_effect/debuff/submissive/on_apply()
+/datum/status_effect/debuff/surrender/on_apply()
 	. = ..()
-	owner.add_movespeed_modifier("SUBMISSIVE", multiplicative_slowdown = 4)
+	owner.add_movespeed_modifier("SURRENDER", multiplicative_slowdown = 4)
 
-/datum/status_effect/debuff/submissive/on_remove()
+/datum/status_effect/debuff/surrender/on_remove()
 	. = ..()
-	owner.remove_movespeed_modifier("SUBMISSIVE")
+	owner.remove_movespeed_modifier("SURRENDER")
 
-/atom/movable/screen/alert/status_effect/debuff/submissive
+/atom/movable/screen/alert/status_effect/debuff/surrender
 	name = "Compliant"
 	desc = "Falling in line is my only choice."
 
@@ -254,3 +254,41 @@
 	name = "Chilled"
 	desc = "I can barely feel my limbs!"
 	icon_state = "chilled"
+
+/datum/status_effect/debuff/call_to_arms
+	id = "call_to_arms"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/call_to_arms
+	duration = 1 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/call_to_arms
+	name = "Call to Arms"
+	desc = "His voice keeps ringing in your ears, rocking your soul.."
+	icon_state = "call_to_arms"
+
+/datum/status_effect/debuff/chained_burden
+	id = "chained_burden"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/chained_burden
+	effectedstats = list("speed" = -2, "endurance" = -3)
+	duration = 12 SECONDS
+
+/atom/movable/screen/alert/status_effect/debuff/chained_burden
+	name = "Chained Burden"
+	desc = "My arms and legs are restrained by divine chains!\n"
+	icon_state = "restrained"
+
+/atom/movable/screen/alert/status_effect/debuff/chained_burden
+	name = "Chained Burden"
+	desc = "My arms and legs are restrained by divine chains!\n"
+	icon_state = "restrained"
+
+/datum/status_effect/debuff/call_to_slaughter
+	id = "call_to_slaughter"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/call_to_slaughter
+	effectedstats = list("endurance" = -2, "constitution" = -2)
+	duration = 2.5 MINUTES
+
+/atom/movable/screen/alert/status_effect/debuff/call_to_slaughter
+	name = "Call to Slaughter"
+	desc = "A putrid rotting scent fills your nose as hell's call for slaughter rattles you to your core.."
+	icon_state = "call_to_slaughter"
+

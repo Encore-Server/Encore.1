@@ -41,5 +41,6 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		H.mind.adjust_spellpoints(1)
+	ADD_TRAIT(H, TRAIT_MAGE_ARMOR, TRAIT_GENERIC)
 	H.change_stat("intelligence", 2)
 	H.change_stat("speed", 1)

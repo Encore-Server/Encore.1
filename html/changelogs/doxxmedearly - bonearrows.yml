@@ -1,7 +1,0 @@
-author: doxxmedearly
-
-delete-after: True
-
-changes:
-  - rscadd: "Added craftable bone arrows and needles. Bone arrows are similar to stone, but cooler. Bone needles are better than thorn but also require a knife to craft."
-  - rscadd: "Thorn needles now have less integrity than their metal cousins."
