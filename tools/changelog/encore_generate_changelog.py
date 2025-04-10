@@ -1,8 +1,8 @@
 '''
 Usage:
-    $ python ss13_genchangelog.py [--dry-run] html/changelog.html html/changelogs/
+    $ python encore_generate_changelog.py [--dry-run] html/changelog.html html/changelogs/
 
-ss13_genchangelog.py - Generate changelog from YAML.
+encore_generate_changelog.py - Generate changelog from YAML.
 
 Copyright 2013 Rob "N3X15" Nelson <nexis@7chan.org>
 
