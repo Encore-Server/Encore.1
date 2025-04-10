@@ -25,22 +25,18 @@
 #     - (adds an image or sprite)
 #   imagedel
 #     - (removes an image or sprite)
+#   maptweak
+#     - (map updates/tweaks)
 #   spellcheck
 #     - (fixes spelling or grammar)
 #   experiment
 #     - (experimental change)
 #   balance
 #     - (balance changes)
-#   code_imp
-#     - (misc internal code change)
 #   refactor
 #     - (refactors code)
-#   config
-#     - (makes a change to the config files)
 #   admin
 #     - (makes changes to administrator tools)
-#   server
-#     - (miscellaneous changes to server)
 #################################
 
 # Your name.
