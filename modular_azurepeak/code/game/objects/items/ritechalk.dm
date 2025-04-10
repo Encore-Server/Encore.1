@@ -90,7 +90,7 @@ var/ritechoices = list(
 			to_chat(user,span_cultsmall("I begin inscribing the rune of quiet Trickery..."))
 			if(do_after(user, 30, src))
 				playsound(src, 'sound/foley/scribble.ogg', 40, TRUE)
-				new /obj/structure/ritualcircle/trickery(step_turf)
+			//	new /obj/structure/ritualcircle/trickery(step_turf)
 		if("Rune of Death")
 			to_chat(user,span_cultsmall("I begin inscribing the rune of Her Embrace...I will keep them from death's door."))
 			if(do_after(user, 30, src))
