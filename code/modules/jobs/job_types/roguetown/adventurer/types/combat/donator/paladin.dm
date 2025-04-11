@@ -4,7 +4,7 @@
 	name = "Paladin"
 	tutorial = "Paladins are holy warriors who have taken sacred vows to uphold justice and righteousness. Often, they were promised redemption for past sins if they crusaded in the name of the gods."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/paladin
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	category_tags = list(CTAG_ADVENTURER)
@@ -62,14 +62,14 @@
 			H.change_stat("strength", 2)
 			H.change_stat("constitution", 2) // Classic paladin is faster then the battle master.
 			H.change_stat("endurance", 1)
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife
 			id = /obj/item/clothing/ring/silver
-			backr = /obj/item/rogueweapon/sword
+			backr = /obj/item/rogueweapon/sword/iron
 			backl = /obj/item/storage/backpack/rogue/satchel
 		if("Battle Master")
 			H.set_blindness(0)
@@ -96,8 +96,8 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", -1)
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor

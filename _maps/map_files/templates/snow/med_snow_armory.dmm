@@ -30,17 +30,20 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "dp" = (
 /obj/item/rogueweapon/sword/gladius,
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/flail,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "du" = (
 /obj/item/rogueweapon/pitchfork,
 /obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "dE" = (
@@ -48,6 +51,7 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "gd" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "gQ" = (
@@ -55,10 +59,12 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "gS" = (
 /obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "ht" = (
@@ -78,11 +84,13 @@
 	dir = 10;
 	icon_state = "cobbleedge-w"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "lV" = (
 /obj/item/rogueweapon/sword/short,
 /obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "mZ" = (
@@ -118,6 +126,7 @@
 /obj/item/rogueweapon/spear/billhook,
 /obj/structure/rack/rogue,
 /obj/machinery/light/rogue/torchholder/r,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "tt" = (
@@ -146,6 +155,7 @@
 /obj/item/clothing/head/roguetown/helmet,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "wR" = (
@@ -165,6 +175,7 @@
 "yf" = (
 /obj/item/rogueweapon/mace,
 /obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
@@ -175,6 +186,7 @@
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "zU" = (
@@ -186,6 +198,7 @@
 	dir = 10;
 	icon_state = "cobbleedge-e"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Am" = (
@@ -200,6 +213,7 @@
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Bj" = (
@@ -207,6 +221,7 @@
 /obj/item/clothing/suit/roguetown/armor/leather,
 /obj/item/clothing/neck/roguetown/gorget,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Ch" = (
@@ -227,12 +242,14 @@
 /obj/structure/rack/rogue,
 /obj/item/quiver/arrows,
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Ef" = (
@@ -246,6 +263,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
+"EM" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/mountains)
 "GL" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/grasscold,
@@ -288,6 +309,7 @@
 	icon_state = "cobbleedge-sread"
 	},
 /obj/structure/chair/wood/rogue/chair3,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "PU" = (
@@ -307,6 +329,7 @@
 /area/rogue/outdoors/mountains)
 "SC" = (
 /obj/item/rope,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Tn" = (
@@ -323,6 +346,7 @@
 /obj/item/rogueweapon/sword/short,
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/shield/wood,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "VE" = (
@@ -339,6 +363,7 @@
 	dir = 10;
 	icon_state = "cobbleedge-n"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "XD" = (
@@ -354,6 +379,7 @@
 /obj/item/flashlight/flare/torch/lantern,
 /obj/machinery/light/rogue/torchholder/r,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 
@@ -385,10 +411,10 @@ mZ
 rd
 YZ
 Ud
-Tn
-Tn
-Tn
-Tn
+EM
+EM
+EM
+EM
 Cu
 "}
 (3,1,1) = {"
@@ -402,10 +428,10 @@ qK
 xG
 bX
 tt
-Tn
+EM
 vy
 Pu
-Tn
+EM
 mZ
 "}
 (4,1,1) = {"
@@ -419,38 +445,38 @@ Cu
 xG
 bX
 RS
-Tn
+EM
 ZO
 gQ
-Tn
+EM
 mZ
 "}
 (5,1,1) = {"
 KC
-Tn
-Tn
-Tn
-Tn
-Tn
-Tn
-Tn
+EM
+EM
+EM
+EM
+EM
+EM
+EM
 bX
 tt
-Tn
-Tn
+EM
+EM
 zL
-Tn
+EM
 qK
 "}
 (6,1,1) = {"
 KC
-Tn
+EM
 CY
 yf
 Vl
 dp
 WI
-Tn
+EM
 Ox
 tt
 tt
@@ -461,7 +487,7 @@ Cu
 "}
 (7,1,1) = {"
 KC
-Tn
+EM
 gS
 jl
 jl
@@ -478,13 +504,13 @@ Cu
 "}
 (8,1,1) = {"
 KC
-Tn
+EM
 zW
 zW
 gd
 SC
 Dd
-Tn
+EM
 wR
 tt
 aJ
@@ -495,13 +521,13 @@ hC
 "}
 (9,1,1) = {"
 uj
-Tn
+EM
 Bj
 sb
 dd
 du
 lV
-Tn
+EM
 ny
 tt
 Jp
@@ -512,13 +538,13 @@ qK
 "}
 (10,1,1) = {"
 uj
-Tn
-Tn
-Tn
-Tn
-Tn
-Tn
-Tn
+EM
+EM
+EM
+EM
+EM
+EM
+EM
 PU
 tt
 tt

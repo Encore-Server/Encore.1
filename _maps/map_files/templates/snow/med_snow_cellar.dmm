@@ -9,6 +9,7 @@
 /area/rogue/outdoors/mountains)
 "bX" = (
 /obj/structure/fermenting_barrel/blackgoat,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "dd" = (
@@ -16,14 +17,17 @@
 	dir = 8
 	},
 /obj/item/rogueweapon/sword/iron/short/chipped,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "dp" = (
 /obj/structure/fermenting_barrel/hagwoodbitter,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "du" = (
 /obj/structure/fermenting_barrel/random/beer,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "dE" = (
@@ -37,11 +41,13 @@
 "gQ" = (
 /obj/structure/fermenting_barrel/hagwoodbitter,
 /obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "gS" = (
 /obj/structure/rack/rogue,
 /obj/item/rope,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "ht" = (
@@ -52,11 +58,13 @@
 /obj/effect/decal/mossy{
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "hC" = (
 /obj/structure/rack/rogue,
 /obj/item/storage/belt/rogue/pouch/food,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "jl" = (
@@ -106,12 +114,14 @@
 	pixel_x = -9;
 	pixel_y = 12
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "lV" = (
 /obj/structure/flora/roguetree/stump/log{
 	pixel_x = -10
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/indoors/shelter/mountains)
 "ny" = (
@@ -123,10 +133,12 @@
 	dir = 4
 	},
 /obj/structure/bed/rogue/shit,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "qC" = (
 /obj/item/natural/bundle/cloth,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "qE" = (
@@ -140,6 +152,7 @@
 "sb" = (
 /obj/structure/fermenting_barrel/random/beer,
 /obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "tt" = (
@@ -147,6 +160,7 @@
 /obj/effect/decal/mossy{
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "tS" = (
@@ -154,6 +168,7 @@
 /obj/effect/decal/mossy{
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "uj" = (
@@ -164,11 +179,13 @@
 	dir = 4
 	},
 /obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "xG" = (
 /obj/structure/rack/rogue,
 /obj/item/reagent_containers/glass/cup/steel,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "yf" = (
@@ -181,10 +198,12 @@
 /obj/effect/decal/mossy{
 	dir = 8
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "zW" = (
 /obj/structure/bed/rogue/shit,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "AW" = (
@@ -193,6 +212,7 @@
 	icon_state = "tablewood1"
 	},
 /obj/item/needle/thorn,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Bj" = (
@@ -202,6 +222,7 @@
 /obj/effect/decal/mossy{
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Ch" = (
@@ -211,12 +232,14 @@
 "Cu" = (
 /obj/structure/fermenting_barrel/zagul,
 /obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
 /obj/effect/decal/mossy{
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "CY" = (
@@ -227,23 +250,28 @@
 	dir = 8
 	},
 /obj/structure/fluff/dryingrack,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
 /obj/effect/decal/cleanable/ash/large,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Ef" = (
+/obj/effect/roofing_helper/snow,
 /turf/closed/wall/mineral/rogue/stone/blue_moss,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
 /obj/structure/rack/rogue,
 /obj/item/natural/silk,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Iy" = (
 /obj/structure/rack/rogue,
 /obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Jp" = (
@@ -255,6 +283,7 @@
 /area/rogue/outdoors/mountains)
 "Ox" = (
 /obj/item/natural/stone,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "PU" = (
@@ -263,6 +292,7 @@
 /area/rogue/outdoors/mountains)
 "RS" = (
 /obj/structure/rack/rogue,
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "SC" = (
@@ -280,15 +310,18 @@
 /obj/effect/decal/mossy{
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "Vl" = (
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "VE" = (
 /obj/structure/fluff/millstone{
 	pixel_y = 7
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "WI" = (
@@ -298,6 +331,7 @@
 /obj/effect/decal/mossy{
 	dir = 4
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (
@@ -308,6 +342,7 @@
 /obj/structure/stairs/stone{
 	dir = 1
 	},
+/obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
 

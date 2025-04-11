@@ -1,0 +1,170 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bf" = (
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"hr" = (
+/obj/effect/decal/cleanable/food/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ll" = (
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"oj" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"oZ" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qC" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"yy" = (
+/turf/closed/mineral/rogue/salt,
+/area/rogue/under/cave)
+"zx" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"JI" = (
+/obj/effect/decal/cleanable/food/salt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Mh" = (
+/obj/item/natural/rock/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"PB" = (
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RX" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+oj
+zx
+zx
+zx
+kd
+ll
+oZ
+kd
+zx
+kd
+"}
+(2,1,1) = {"
+zx
+zx
+kd
+kd
+Mh
+yy
+yy
+RX
+zx
+zx
+"}
+(3,1,1) = {"
+zx
+zx
+kd
+ll
+yy
+yy
+yy
+hr
+kd
+zx
+"}
+(4,1,1) = {"
+kd
+RX
+oZ
+JI
+yy
+yy
+yy
+yy
+PB
+kd
+"}
+(5,1,1) = {"
+zx
+kd
+JI
+yy
+yy
+yy
+yy
+yy
+yy
+kd
+"}
+(6,1,1) = {"
+kd
+PB
+yy
+yy
+yy
+yy
+yy
+yy
+qC
+kd
+"}
+(7,1,1) = {"
+kd
+yy
+yy
+yy
+yy
+yy
+JI
+ll
+oZ
+kd
+"}
+(8,1,1) = {"
+oZ
+Mh
+yy
+yy
+bf
+JI
+oZ
+oZ
+RX
+zx
+"}
+(9,1,1) = {"
+zx
+hr
+kd
+kd
+PB
+kd
+zx
+zx
+zx
+zx
+"}
+(10,1,1) = {"
+zx
+zx
+zx
+RX
+qC
+oj
+zx
+zx
+zx
+kd
+"}

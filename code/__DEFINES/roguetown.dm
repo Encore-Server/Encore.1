@@ -17,27 +17,20 @@
 	/datum/species/demihuman,\
 
 #define RACES_TOLERATED \
-	/datum/species/elf/dark,\
-	/datum/species/tieberian,\
-	/datum/species/lizardfolk,\
-	/datum/species/tabaxi,\
-	/datum/species/lupian,\
+/datum/species/tieberian,\
 
 //Shunned races are strictly foreign or antagonistic
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
-	/datum/species/anthromorphsmall,\
-	/datum/species/kobold\
 	/datum/species/tieberian,\
 	/datum/species/tieberian/demon,\
-	/datum/species/lizardfolk,\
-	/datum/species/tabaxi,\
-	/datum/species/lupian,\
-	/datum/species/demihuman,\
 
-//Despised races are strictly antagonistic
-#define RACES_DESPISED \
+
+//Races we are currently not using
+#define RACES_UNUSED\
 	/datum/species/goblinp,\
+	/datum/species/kobold\
+	/datum/species/anthromorphsmall,\
 
 #define RACES_ALL_KINDS list(RACES_RESPECTED)//temporary because I can not be assed to categorize over 150 entries rn
 
@@ -221,6 +214,8 @@ GLOBAL_LIST_EMPTY(round_join_times)
 #define CTAG_SENESCHAL		"CAT_SENESCHAL"		// Seneschal's aesthetic choices. 
 #define CTAG_SERVANT		"CAT_SERVANT"		// Servant's aesthetic choices.
 #define CTAG_CAPTAIN		"CAT_CAPTAIN"		// Handles Captain class selector 
+#define CTAG_WARDEN			"CAT_WARDEN"		// Handles Warden class selector
+#define CTAG_WITCH			"CAT_WITCH"			// Handles Witch class selector.
 
 /*
 	Defines for the triumph buy datum categories

@@ -3,7 +3,7 @@
 	name = "Cleric"
 	tutorial = "Clerics are wandering warriors of the Gods, an asset to any party."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	vampcompat = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric
 	category_tags = list(CTAG_ADVENTURER)
@@ -18,6 +18,11 @@
 	if(istype(H.patron, /datum/patron/heretic/devil))
 		H.cmode_music = 'sound/music/combat_cult.ogg'
 		neck = /obj/item/roguekey/inhumen
+	
+// Add druidic skill for Gani followers
+	if(istype(H.patron, /datum/patron/elemental/gani))
+		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+		to_chat(H, span_notice("As a follower of Gani, you have innate knowledge of druidic magic."))
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
@@ -104,7 +109,7 @@
 			H.change_stat("speed", 1)
 		// HEARTHSTONE ADDITION END
 
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather

@@ -4,9 +4,10 @@
 	icon = 'icons/obj/hand_of_god_structures.dmi'
 	icon_state = "trap"
 	density = FALSE
+	layer = BELOW_OPEN_DOOR_LAYER
 	anchored = TRUE
 	alpha = 30 //initially quite hidden when not "recharging"
-	var/flare_message = span_warning("the trap flares brightly!")
+	var/flare_message = span_warning("the trap f appears more visible!")
 	var/last_trigger = 0
 	var/time_between_triggers = 600 //takes a minute to recharge
 	var/charges = INFINITY
@@ -20,7 +21,7 @@
 
 /obj/structure/trap/Initialize(mapload)
 	. = ..()
-	flare_message = span_warning("[src] flares brightly!")
+	flare_message = span_warning("[src] appears more visible!")
 	spark_system = new
 	spark_system.set_up(4,1,src)
 	spark_system.attach(src)
@@ -85,8 +86,17 @@
 /obj/structure/trap/stun
 	name = "shock trap"
 	desc = ""
-	icon_state = "trap-shock"
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "shocker1"
+	alpha = 255
 	var/stun_time = 100
+
+/obj/structure/trap/stun/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/stun/update_icon()
+	icon_state = "shocker[rand(1, 3)]"
 
 /obj/structure/trap/stun/trap_effect(mob/living/L)
 	L.electrocute_act(30, src, flags = SHOCK_NOGLOVES) // electrocute act does a message.
@@ -187,21 +197,6 @@
 	L.adjust_bodytemperature(-300)
 	L.apply_status_effect(/datum/status_effect/freon)
 
-
-/obj/structure/trap/damage
-	name = "earth trap"
-	desc = ""
-	icon_state = "trap-earth"
-
-
-/obj/structure/trap/damage/trap_effect(mob/living/L)
-	to_chat(L, span_danger("<B>The ground quakes beneath your feet!</B>"))
-	L.Paralyze(100)
-	L.adjustBruteLoss(35)
-	var/obj/structure/flora/rock/giant_rock = new(get_turf(src))
-	QDEL_IN(giant_rock, 200)
-
-
 /obj/structure/trap/ward
 	name = "divine ward"
 	desc = ""
@@ -223,3 +218,108 @@
 	L.electrocute_act(10, src, flags = SHOCK_NOGLOVES) // electrocute act does a message.
 	L.Paralyze(20)
 	QDEL_IN(src, 30)
+
+/obj/structure/trap/damage
+	name = "uneasy earth"
+	desc = "This patch of earth seems particularly weak. Traversing it is probably very dangerous."
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "cracks1"
+	sparks = FALSE
+	alpha = 165
+
+/obj/structure/trap/damage/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/damage/update_icon()
+	icon_state = "cracks[rand(1, 3)]"
+
+/obj/structure/trap/damage/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>The uneasy ground trembles, shaking free a boulder from above!</B>"))
+	L.Paralyze(50)
+	L.adjustBruteLoss(95)//oopsies
+	L.emote("scream")
+	var/obj/structure/flora/rock/giant_rock = new(get_turf(src))
+	playsound(src, 'sound/combat/hits/onstone/wallhit3.ogg', 100, TRUE)
+	QDEL_IN(giant_rock, 200)
+
+/obj/structure/trap/inert//For the random trap spawner, gives a chance to just not even spawn a trap for extra unpredictability
+
+/obj/structure/trap/inert/Initialize()
+	qdel(src)
+
+/obj/structure/trap/lava
+	name = "magmatic mantle"
+	desc = "This rock and dirt looks like it's moments away from crumbling. A gentle heat radiates from below..."
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "lava1"//hehe
+	sparks = FALSE
+	alpha = 175
+	var/new_turf = /turf/open/lava
+
+/obj/structure/trap/lava/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/lava/update_icon()
+	icon_state = "lava[rand(1, 3)]"
+
+/obj/structure/trap/lava/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>The floor crumbles, slowly uncovering blazing magma below.</B>"))
+	playsound(src, 'sound/combat/hits/onstone/stonedeath.ogg', 100, TRUE)
+	sleep(3 SECONDS)
+	new new_turf(get_turf(src))
+	qdel(src)
+
+//Mob traps
+/obj/structure/trap/skeleton
+	name = "eerie remains"
+	desc = ""
+	icon = 'icons/roguetown/items/traps.dmi'
+	icon_state = "boner1"//hehe
+	sparks = FALSE
+	alpha = 255
+	var/ambush_mob = null
+
+/obj/structure/trap/skeleton/Initialize()
+	ambush_mob = pick(list(
+		/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+		/mob/living/simple_animal/hostile/rogue/skeleton/spear,
+		/mob/living/simple_animal/hostile/rogue/skeleton/axe,
+		/mob/living/simple_animal/hostile/rogue/skeleton))
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/skeleton/update_icon()
+	icon_state = "boner[rand(1, 3)]"
+
+/obj/structure/trap/skeleton/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>The soft ground below the remains crumble, and denizens of undeath rise to face you!</B>"))
+	new ambush_mob(get_turf(src))
+	playsound(src, 'sound/combat/hits/onstone/stonedeath.ogg', 100, TRUE)
+	qdel(src)
+
+/obj/structure/trap/spider
+	name = "suspicious webs"
+	desc = "Something is tugging ever so gently at these mesmerizing silken weaves..."
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "stickyweb1"//hehe
+	sparks = FALSE
+	alpha = 255
+	var/ambush_mob = null
+
+/obj/structure/trap/spider/Initialize()
+	ambush_mob = pick(list(
+		/mob/living/simple_animal/hostile/retaliate/rogue/spider,
+		/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated))
+	update_icon()
+	. = ..()
+
+/obj/structure/trap/spider/update_icon()
+	icon_state = "stickyweb[rand(1, 2)]"
+
+/obj/structure/trap/spider/trap_effect(mob/living/L)
+	to_chat(L, span_danger("<B>Skittering! Hissing! A grotesque arachnid reveals itself!</B>"))
+	new ambush_mob(get_turf(src))
+	playsound(src, 'sound/vo/mobs/spider/pain.ogg', 100, TRUE)
+	qdel(src)

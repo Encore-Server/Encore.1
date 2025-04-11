@@ -4,6 +4,7 @@
 /area/rogue/outdoors/mountains)
 "c" = (
 /mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "h" = (
@@ -15,6 +16,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "j" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
@@ -24,6 +26,7 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "m" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},
@@ -47,6 +50,7 @@
 /turf/open/floor/rogue/snowpatchy,
 /area/rogue/outdoors/mountains)
 "z" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
 	},
@@ -54,11 +58,13 @@
 "D" = (
 /obj/structure/toilet,
 /mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter)
 "F" = (
 /obj/structure/bed/rogue/inn/hay,
 /mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "G" = (
@@ -81,6 +87,7 @@
 /area/rogue/outdoors/mountains)
 "L" = (
 /obj/effect/decal/remains/human,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "M" = (
@@ -89,6 +96,7 @@
 /area/rogue/outdoors/mountains)
 "O" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "P" = (
@@ -102,6 +110,7 @@
 "R" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "S" = (
@@ -113,6 +122,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "U" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue/indoors/shelter)
 "V" = (
@@ -124,9 +134,11 @@
 /area/rogue/outdoors/mountains)
 "Y" = (
 /obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "Z" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter)
 

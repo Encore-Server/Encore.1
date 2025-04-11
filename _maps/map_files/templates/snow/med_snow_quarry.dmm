@@ -3,6 +3,7 @@
 /obj/structure/handcart{
 	dir = 8
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "aJ" = (
@@ -11,6 +12,7 @@
 /area/rogue/outdoors/mountains)
 "bS" = (
 /obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "bX" = (
@@ -53,6 +55,7 @@
 	},
 /obj/item/natural/cloth,
 /obj/item/natural/cloth,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "hC" = (
@@ -61,6 +64,7 @@
 /area/rogue/outdoors/mountains)
 "jl" = (
 /obj/structure/chair/wood/rogue/chair3,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "lV" = (
@@ -71,10 +75,12 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
 "ny" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "qC" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "qK" = (
@@ -92,6 +98,7 @@
 /obj/item/reagent_containers/glass/bucket/wooden{
 	pixel_x = 6
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "uj" = (
@@ -109,6 +116,7 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "yf" = (
@@ -116,6 +124,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
 "yr" = (
+/obj/effect/roofing_helper,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/mountains)
 "zU" = (
@@ -145,6 +154,7 @@
 /obj/item/candle/yellow,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Bj" = (
@@ -165,6 +175,7 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Ch" = (
@@ -176,10 +187,12 @@
 /area/rogue/outdoors/mountains)
 "CY" = (
 /obj/structure/fermenting_barrel/water,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "GL" = (
@@ -216,6 +229,7 @@
 /obj/item/rogueweapon/shovel,
 /obj/item/rogueweapon/pick,
 /obj/item/rogueweapon/pick,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "PU" = (
@@ -225,6 +239,7 @@
 "SC" = (
 /obj/machinery/light/rogue/torchholder/r,
 /obj/item/roguebin/water,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "Tn" = (
@@ -233,6 +248,7 @@
 	icon_state = "longtable_mid"
 	},
 /obj/item/flint,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Ud" = (
@@ -250,9 +266,11 @@
 /obj/item/storage/roguebag{
 	pixel_x = 12
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "VE" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (
@@ -272,6 +290,7 @@
 /obj/item/natural/bundle/silk,
 /obj/item/natural/fibers,
 /obj/item/natural/fibers,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 

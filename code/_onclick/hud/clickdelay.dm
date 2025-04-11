@@ -23,7 +23,7 @@
 
 /atom/movable/screen/action_bar/clickdelay
 	name = "click delay"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = ""
 	mouse_opacity = 0
 	layer = 22.1
@@ -55,7 +55,7 @@
 
 /atom/movable/screen/action_bar/resistdelay
 	name = "resist delay"
-	icon = 'icons/mob/roguehud.dmi'
+	icon = 'icons/ui/hud/roguehud.dmi'
 	icon_state = ""
 
 /atom/movable/screen/action_bar/resistdelay/update_to_mob(mob/living/L)

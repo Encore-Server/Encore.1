@@ -56,9 +56,9 @@ SUBSYSTEM_DEF(mapping)
 		config = load_map_config(error_if_missing = FALSE)
 #endif
 
-/datum/controller/subsystem/mapping/proc/spawn_random_travel_tiles()
-	spawn_random_travel_transition("vampexit", "vampin", TRAIT_VAMPMANSION)
-	spawn_random_travel_transition("banditexit", "banditin", TRAIT_BANDITCAMP)
+// /datum/controller/subsystem/mapping/proc/spawn_random_travel_tiles()
+// 	spawn_random_travel_transition("vampexit", "vampin", TRAIT_VAMPMANSION)
+// 	spawn_random_travel_transition("banditexit", "banditin", TRAIT_BANDITCAMP)
 
 /datum/controller/subsystem/mapping/proc/spawn_random_travel_transition(travel_id, travel_goes_to_id, required_trait)
 	var/atom/location = get_free_travel_spawn_point()
@@ -124,7 +124,7 @@ SUBSYSTEM_DEF(mapping)
 	initialize_reserved_level(transit.z_value)
 	generate_z_level_linkages()
 	calculate_default_z_level_gravities()
-	spawn_random_travel_tiles()
+	// spawn_random_travel_tiles()//No need for this presently, as the only two options are disabled temporarily
 	return ..()
 
 /datum/controller/subsystem/mapping/proc/calculate_default_z_level_gravities()

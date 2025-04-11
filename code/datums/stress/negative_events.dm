@@ -112,11 +112,6 @@
 	stressadd = 5
 	desc = span_boldred("Oh no! I've received divine punishment!")
 
-/datum/stressevent/virginchurch
-	timer = 999 MINUTES
-	stressadd = 10
-	desc = span_boldred("I have broken my oath of chastity to The Gods!")
-
 /datum/stressevent/badmeal
 	timer = 3 MINUTES
 	stressadd = 2
@@ -135,16 +130,6 @@
 	max_stacks = 3
 	stressadd_per_extra_stack = 2
 	desc = span_red("I puked on myself!")
-
-/datum/stressevent/cumbad
-	timer = 5 MINUTES
-	stressadd = 5
-	desc = span_boldred("I was violated.")
-
-/datum/stressevent/cumcorpse
-	timer = 1 MINUTES
-	stressadd = 10
-	desc = span_boldred("What have I done?")
 
 /datum/stressevent/blueb
 	timer = 1 MINUTES
@@ -276,3 +261,13 @@
 	stressadd = 1
 	desc = span_red("Eating such a meal without a table? Churlish.")
 	timer = 2 MINUTES
+
+/datum/stressevent/ugly
+	stressadd = 3
+	desc = span_red("They look like the stuff of nightmares!")
+	timer = 5 MINUTES
+
+/datum/stressevent/mockery
+	stressadd = 8
+	desc = span_red("How dare they utter such a thing!?")
+	timer = 5 MINUTES

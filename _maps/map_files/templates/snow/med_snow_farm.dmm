@@ -21,6 +21,7 @@
 	pixel_y = 13;
 	pixel_x = 2
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "dd" = (
@@ -45,6 +46,7 @@
 /obj/item/natural/fibers,
 /obj/item/natural/bundle/silk,
 /obj/item/cooking/skewer,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "dp" = (
@@ -71,6 +73,7 @@
 /obj/item/rogueweapon/shovel/small{
 	pixel_x = 6
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "dE" = (
@@ -91,6 +94,7 @@
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 4
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "hC" = (
@@ -101,10 +105,12 @@
 	dir = 10;
 	icon_state = "cobbleedge-e"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "lV" = (
 /obj/structure/chair/wood/rogue/chair3,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "mZ" = (
@@ -114,9 +120,11 @@
 	},
 /obj/item/natural/cloth,
 /obj/machinery/light/rogue/torchholder/l,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "ny" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "qE" = (
@@ -133,6 +141,7 @@
 "tt" = (
 /obj/structure/bed/rogue/inn,
 /obj/item/bedsheet/rogue/pelt,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "tS" = (
@@ -148,9 +157,11 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "yr" = (
+/obj/effect/roofing_helper,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/mountains)
 "zU" = (
@@ -164,6 +175,7 @@
 	icon_state = "longtable"
 	},
 /obj/item/rogueweapon/stoneaxe/woodcut,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Ae" = (
@@ -175,6 +187,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "AW" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "Bj" = (
@@ -199,6 +212,7 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
@@ -208,16 +222,19 @@
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "CY" = (
 /obj/machinery/light/rogue/wallfire{
 	pixel_y = 32
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "Dd" = (
 /obj/item/natural/bundle/cloth,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "HF" = (
@@ -244,10 +261,12 @@
 	pixel_y = 3;
 	pixel_x = 10
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Iy" = (
 /obj/structure/fermenting_barrel/water,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Jp" = (
@@ -264,6 +283,7 @@
 /obj/item/candle/yellow,
 /obj/item/candle/yellow,
 /obj/structure/closet/crate/roguecloset/inn,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "KC" = (
@@ -277,6 +297,7 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "Pu" = (
@@ -289,6 +310,7 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "PU" = (
@@ -300,9 +322,11 @@
 	icon_state = "cobbleedge-sread"
 	},
 /obj/structure/roguetent,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "Vl" = (
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/mountains)
 "VE" = (
@@ -311,6 +335,7 @@
 /area/rogue/outdoors/mountains)
 "WI" = (
 /obj/machinery/light/rogue/hearth,
+/obj/effect/roofing_helper,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "YZ" = (

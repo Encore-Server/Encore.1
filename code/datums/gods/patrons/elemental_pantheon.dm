@@ -12,8 +12,8 @@
 	mob_traits = list(TRAIT_KNEESTINGER_IMMUNITY)
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
-	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
-	t3 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
+	t2 = /obj/effect/proc_holder/spell/targeted/conjure_glowshroom
+	t3 = /obj/effect/proc_holder/spell/self/dendor_shapeshift
 	t4 = /obj/effect/proc_holder/spell/invoked/revive
 	additional_spells = list(/obj/effect/proc_holder/spell/invoked/heal)
 	confess_lines = list(
@@ -103,7 +103,7 @@
 	amulet = /obj/item/clothing/neck/roguetown/psicross/golerkanh
 	t0 = /obj/effect/proc_holder/spell/invoked/sacred_flame_rogue
 	t1 = /obj/effect/proc_holder/spell/targeted/tesla
-	t2 = /obj/effect/proc_holder/spell/aoe_turf/knock
+	t2 = /obj/effect/proc_holder/spell/invoked/knock
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/fetch
 	t4 = /obj/effect/proc_holder/spell/targeted/projectile/magic_missile
 	confess_lines = list(
@@ -111,3 +111,4 @@
 		"WITH GANI'S EDGE I STRIKE!",
 		"I AM AN INSTRUMENT OF CREATION!",
 	)
+/obj/effect/proc_holder/spell/invoked/blink

@@ -6,6 +6,7 @@
 /obj/structure/toilet,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter)
 "d" = (
@@ -13,9 +14,11 @@
 /area/rogue/outdoors/mountains)
 "h" = (
 /obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "i" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 4
 	},
@@ -39,6 +42,7 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "t" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter)
 "w" = (
@@ -58,6 +62,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains)
 "C" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 8
 	},
@@ -78,6 +83,7 @@
 /turf/open/floor/rogue/snowrough,
 /area/rogue/outdoors/mountains)
 "P" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/tent{
 	dir = 1
 	},
@@ -89,6 +95,7 @@
 "Z" = (
 /obj/structure/toilet,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors/shelter)
 

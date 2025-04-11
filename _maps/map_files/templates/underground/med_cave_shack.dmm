@@ -1,0 +1,453 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aT" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"cC" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"cL" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"cQ" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"iB" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lS" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/candle/yellow{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"lX" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"oL" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"pJ" = (
+/obj/effect/decal/mossy,
+/obj/item/reagent_containers/powder/salt,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"qF" = (
+/obj/machinery/light/rogue/oven/south,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"rB" = (
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uc" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/item/natural/cloth{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uu" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"xj" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"xX" = (
+/obj/effect/decal/mossy,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"ze" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"zh" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"AF" = (
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"Ci" = (
+/obj/item/natural/cloth{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"CB" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"HH" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"II" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ju" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Jx" = (
+/obj/effect/decal/mossy,
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"JC" = (
+/obj/item/kitchen/spoon/plastic{
+	pixel_y = 3;
+	pixel_x = 10
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ki" = (
+/obj/structure/chair/stool/rogue,
+/obj/item/cooking/skewer,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"KC" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/cave)
+"KM" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Mz" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/cooking/pan,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"NC" = (
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/structure/fermenting_barrel/random/beer,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Oa" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"ST" = (
+/obj/item/reagent_containers/glass/bucket/wooden,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Xq" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Zo" = (
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+uM
+uM
+rN
+kA
+rN
+rN
+rN
+rN
+rN
+uM
+uM
+rN
+"}
+(2,1,1) = {"
+uM
+uM
+rN
+rN
+rN
+rN
+rN
+kA
+KC
+KC
+KC
+KC
+KC
+uM
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+rN
+kA
+rN
+rN
+rN
+YB
+KC
+cL
+AF
+AF
+KC
+uM
+YB
+"}
+(4,1,1) = {"
+uM
+rN
+YB
+KC
+KC
+KC
+KC
+KC
+KC
+Xq
+AF
+AF
+KC
+uM
+rN
+"}
+(5,1,1) = {"
+rN
+rN
+uM
+KC
+NC
+YB
+kA
+lX
+iB
+Xq
+Xq
+cL
+KC
+rN
+rN
+"}
+(6,1,1) = {"
+rN
+rN
+KC
+KC
+HH
+II
+rN
+KC
+KC
+KC
+KC
+KC
+KC
+rN
+rN
+"}
+(7,1,1) = {"
+rN
+rN
+KC
+Mz
+Ju
+uc
+Xq
+rN
+KC
+CB
+lS
+KC
+rN
+rN
+rN
+"}
+(8,1,1) = {"
+rN
+rN
+KC
+qF
+Ju
+Ju
+uu
+Oa
+cC
+Zo
+pJ
+KC
+rN
+rN
+rN
+"}
+(9,1,1) = {"
+kA
+rN
+KC
+Ju
+Ki
+ze
+aT
+Xq
+JC
+Jx
+zh
+KC
+rN
+rN
+kA
+"}
+(10,1,1) = {"
+rN
+KC
+KC
+KC
+Ju
+uu
+Xq
+Xq
+Jx
+Ci
+Ju
+KC
+rN
+rN
+rN
+"}
+(11,1,1) = {"
+uM
+KC
+cQ
+oL
+KM
+Xq
+Xq
+xX
+ST
+Ju
+Ju
+KC
+rN
+rN
+uM
+"}
+(12,1,1) = {"
+uM
+KC
+Xq
+cC
+Xq
+KC
+Xq
+Xq
+KC
+KC
+KC
+KC
+rN
+uM
+uM
+"}
+(13,1,1) = {"
+uM
+KC
+rB
+Xq
+oL
+KC
+Xq
+Xq
+xj
+rN
+uM
+rN
+rN
+uM
+uM
+"}
+(14,1,1) = {"
+YB
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+rN
+rN
+rN
+kA
+rN
+rN
+"}
+(15,1,1) = {"
+rN
+rN
+rN
+rN
+rN
+rN
+rN
+rN
+kA
+rN
+rN
+uM
+uM
+kA
+rN
+"}

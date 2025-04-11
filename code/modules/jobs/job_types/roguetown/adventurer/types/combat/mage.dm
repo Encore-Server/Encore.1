@@ -2,7 +2,7 @@
 	name = "Mage"
 	tutorial = "Mages are usually grown-up apprentices of wizards. They are seeking adventure, using their arcyne knowledge to aid or ward off other adventurers."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/mage
 	category_tags = list(CTAG_ADVENTURER)
 
@@ -50,6 +50,7 @@
 		H.change_stat("endurance", -1)
 		H.mind.adjust_spellpoints(1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
+		ADD_TRAIT(H, TRAIT_MAGE_ARMOR, TRAIT_GENERIC)
 		switch(H.patron?.type)
 			if(/datum/patron/heretic/devil)
 				H.cmode_music = 'sound/music/combat_cult.ogg'

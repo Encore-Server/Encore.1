@@ -9,19 +9,23 @@
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
 /obj/item/bait/sweet,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "dE" = (
 /obj/structure/roguewindow/openclose{
 	dir = 8
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "ht" = (
 /obj/item/natural/thorn,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "jP" = (
+/obj/effect/roofing_helper/twig,
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter/woods)
 "lt" = (
@@ -61,12 +65,14 @@
 /area/rogue/outdoors/woods)
 "uj" = (
 /obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "xQ" = (
 /obj/structure/mineral_door/wood/deadbolt{
 	dir = 1
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "yf" = (
@@ -92,9 +98,11 @@
 	pixel_x = 17
 	},
 /obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "yr" = (
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "Ae" = (
@@ -103,6 +111,7 @@
 /area/rogue/outdoors/woods)
 "AW" = (
 /obj/item/natural/bone,
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "Cy" = (
@@ -130,6 +139,7 @@
 /obj/structure/bed/rogue/shit{
 	name = "makeshift bed"
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "KC" = (
@@ -140,6 +150,7 @@
 /obj/structure/roguewindow/openclose{
 	dir = 1
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "KT" = (
@@ -154,6 +165,7 @@
 /obj/machinery/light/rogue/torchholder/r{
 	dir = 4
 	},
+/obj/effect/roofing_helper/twig,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "YZ" = (

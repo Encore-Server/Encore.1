@@ -2,7 +2,7 @@
 	name = "Rogue Mage"
 	tutorial = "Those fools at the academy laughed at you and cast you from the ivory tower of higher learning and magickal practice. No matter - you will ascend to great power one day, but first you need wealth - vast amounts of it. Show those fools in the town what REAL magic looks like."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/bandit/roguemage
 	category_tags = list(CTAG_BANDIT)
 	cmode_music = 'sound/music/combat_bandit_mage.ogg'
@@ -51,5 +51,6 @@
 		H.change_stat("endurance", -1)
 		H.change_stat("fortune", 2)
 		H.change_stat("speed", 1) //ohhh sweetie this is NOT gonna help
+		ADD_TRAIT(H, TRAIT_MAGE_ARMOR, TRAIT_GENERIC)
 		H.mind.adjust_spellpoints(1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)

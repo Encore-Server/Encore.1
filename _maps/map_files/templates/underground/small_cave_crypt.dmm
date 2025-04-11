@@ -1,0 +1,278 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bD" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"bK" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"cj" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"et" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	locked = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"fJ" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kM" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"la" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"mJ" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nM" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"nV" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"qr" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"tj" = (
+/obj/structure/closet/dirthole/grave,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/item/natural/worms,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"tQ" = (
+/obj/item/natural/worms,
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"xY" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"zw" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+"HE" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Ik" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/closet/dirthole/closed/loot,
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	pixel_y = -1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Pb" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"PJ" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Rf" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Si" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"Sz" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"SJ" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+HE
+HE
+HE
+kd
+kd
+mJ
+kd
+kd
+HE
+HE
+"}
+(2,1,1) = {"
+HE
+kd
+kd
+kd
+kd
+Rf
+Rf
+Rf
+HE
+HE
+"}
+(3,1,1) = {"
+kd
+mJ
+HE
+HE
+HE
+HE
+HE
+Rf
+Rf
+kd
+"}
+(4,1,1) = {"
+kd
+HE
+HE
+bD
+Sz
+HE
+HE
+HE
+PJ
+kd
+"}
+(5,1,1) = {"
+kd
+HE
+la
+bK
+tQ
+nM
+SJ
+HE
+HE
+kd
+"}
+(6,1,1) = {"
+Rf
+HE
+tj
+kM
+nV
+cj
+zw
+et
+kd
+kd
+"}
+(7,1,1) = {"
+Rf
+HE
+la
+qr
+Si
+xY
+Ik
+HE
+HE
+Rf
+"}
+(8,1,1) = {"
+Rf
+HE
+HE
+HE
+Pb
+Si
+HE
+HE
+HE
+Rf
+"}
+(9,1,1) = {"
+Rf
+Rf
+fJ
+HE
+HE
+Ol
+HE
+HE
+Rf
+kd
+"}
+(10,1,1) = {"
+kd
+mJ
+kd
+HE
+HE
+HE
+HE
+HE
+Rf
+mJ
+"}

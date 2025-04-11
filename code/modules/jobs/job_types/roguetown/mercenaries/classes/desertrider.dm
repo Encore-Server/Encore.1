@@ -41,11 +41,11 @@
 			H.change_stat("intelligence", 1)
 			H.change_stat("speed", 2)
 			backl = /obj/item/rogueweapon/shield/wood
-			r_hand = /obj/item/rogueweapon/mace/steel
-			neck = /obj/item/clothing/neck/roguetown/chaincoif/full
+			r_hand = /obj/item/rogueweapon/mace
+			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 
 		if("Blade Dancer")
 			H.set_blindness(0)

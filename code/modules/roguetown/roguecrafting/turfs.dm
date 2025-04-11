@@ -51,6 +51,22 @@
 		return
 	return TRUE
 
+/datum/crafting_recipe/roguetown/turfs/darkwoodwall
+	name = "dark wood wall"
+	result = /turf/closed/wall/mineral/rogue/wooddark
+	reqs = list(/obj/item/grown/log/tree/small = 2)
+	skillcraft = /datum/skill/craft/carpentry
+	verbage_simple = "construct"
+	verbage = "constructs"
+	craftdiff = 2
+
+/datum/crafting_recipe/roguetown/turfs/darkwoodwall/TurfCheck(mob/user, turf/T)
+	if(isclosedturf(T))
+		return
+	if(!istype(T, /turf/open/floor/rogue))
+		return
+	return TRUE
+
 /datum/crafting_recipe/roguetown/turfs/fancywwall
 	name = "fancy wooden wall"
 	result = /turf/closed/wall/mineral/rogue/decowood
@@ -250,9 +266,8 @@
 /datum/crafting_recipe/roguetown/turfs/twig/TurfCheck(mob/user, turf/T)
 	if(isclosedturf(T))
 		return
-	if(!istype(T, /turf/open/floor/rogue/dirt))
-		if(!(istype(T, /turf/open/floor/rogue/grass) || istype(T, /turf/open/floor/rogue/grassred) || istype(T, /turf/open/floor/rogue/grassyel) || istype(T, /turf/open/floor/rogue/grasscold)))
-			return
+	if(!istype(T, /turf/open/floor/rogue))
+		return
 	return TRUE
 
 /datum/crafting_recipe/roguetown/turfs/twigplatform

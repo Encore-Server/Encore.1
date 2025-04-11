@@ -1,3 +1,4 @@
+//uncomment FASTLOAD to change to a much faster loading debugging map
 #ifndef TESTING
 //    #define FASTLOAD
 //    #define DEPLOY_TEST
