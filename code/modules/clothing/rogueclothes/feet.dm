@@ -157,6 +157,10 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
+/obj/item/clothing/shoes/roguetown/boots/armor/iron/red
+	name = "red iron plated boots"
+	color = "#b81865"
+
 /obj/item/clothing/shoes/roguetown/jester
 	name = "funny shoes"
 	icon_state = "jestershoes"
