@@ -789,25 +789,36 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet)
 "aLW" = (
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-e"
+/obj/item/rogueweapon/huntingknife/idagger/steel,
+/obj/item/rogueweapon/huntingknife/idagger/silver,
+/obj/item/rogueweapon/huntingknife/cleaver/combat,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/neck/roguetown/psicross/wood/katholikos,
+/obj/item/clothing/neck/roguetown/psicross,
+/obj/item/clothing/neck/roguetown/psicross/g,
+/obj/structure/closet/crate/chest/neu_iron{
+	name = "Katholikos chest"
 	},
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-w"
-	},
-/obj/structure/rack/rogue,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/obj/item/flashlight/flare/torch/lantern,
-/turf/open/floor/rogue/cobble,
-/area/rogue/indoors/town/garrison)
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron,
+/obj/item/clothing/neck/roguetown/psicross/silver,
+/obj/item/clothing/neck/roguetown/psicross/silver,
+/obj/item/clothing/cloak/all_aspect/alt,
+/obj/item/clothing/cloak/all_aspect/alt,
+/obj/item/clothing/cloak/all_aspect,
+/obj/item/clothing/cloak/all_aspect,
+/obj/item/clothing/cloak/templar/all_aspect,
+/obj/item/clothing/cloak/templar/all_aspect,
+/obj/item/clothing/under/roguetown/heavy_leather_pants,
+/obj/item/clothing/under/roguetown/heavy_leather_pants,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/indoors/town/church)
 "aLY" = (
 /obj/structure/stairs{
 	dir = 4
@@ -9438,6 +9449,15 @@
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
 	},
+/obj/structure/rack/rogue,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "jny" = (
@@ -9581,22 +9601,21 @@
 /obj/item/clothing/neck/roguetown/psicross/visires,
 /obj/item/clothing/cloak/templar/visires,
 /obj/item/clothing/cloak/templar/visires,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
-/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm{
-	name = "helmet of visires"
-	},
-/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm{
-	name = "helmet of visires"
-	},
-/obj/item/clothing/head/roguetown/helmet/heavy/visires,
-/obj/item/clothing/head/roguetown/helmet/heavy/visires,
 /obj/item/clothing/cloak/templar/visires/fire,
 /obj/item/clothing/cloak/templar/visires/fire,
 /obj/structure/closet/crate/chest/neu_iron{
 	name = "Fire chest"
 	},
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/visires/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/visires/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "jvI" = (
@@ -15047,6 +15066,11 @@
 	dir = 10;
 	icon_state = "cobbleedge-w"
 	},
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/greatsword/grenz,
+/obj/item/rogueweapon/mace/goden/steel,
+/obj/item/gwstrap,
+/obj/item/gwstrap,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "oqp" = (
@@ -15351,11 +15375,6 @@
 "oDq" = (
 /obj/item/clothing/neck/roguetown/psicross/akan,
 /obj/item/clothing/neck/roguetown/psicross/akan,
-/obj/item/clothing/head/roguetown/helmet/heavy/akan,
-/obj/item/clothing/head/roguetown/helmet/heavy/akan,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
 /obj/item/clothing/cloak/templar/akan,
 /obj/item/clothing/cloak/templar/akan,
 /obj/item/clothing/cloak/templar/iliope,
@@ -15363,6 +15382,14 @@
 /obj/structure/closet/crate/chest/neu_iron{
 	name = "Air chest"
 	},
+/obj/item/clothing/head/roguetown/helmet/heavy/akan/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/akan/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "oDu" = (
@@ -16016,19 +16043,22 @@
 /obj/item/clothing/cloak/templar/golerkanh,
 /obj/item/clothing/cloak/templar/gani,
 /obj/item/clothing/cloak/templar/gani,
-/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm,
-/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm,
 /obj/item/clothing/head/roguetown/ganimask,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
-/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh,
-/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh,
 /obj/item/clothing/cloak/templar/golerkanh/earth,
 /obj/item/clothing/cloak/templar/golerkanh/earth,
 /obj/structure/closet/crate/chest/neu_iron{
 	name = "Earth chest"
 	},
+/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/golerkanh/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "poH" = (
@@ -17244,20 +17274,21 @@
 /obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn,
 /obj/item/clothing/head/roguetown/mjallidhornhood,
 /obj/item/clothing/head/roguetown/mjallidhornhood,
-/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn,
-/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn,
 /obj/item/clothing/cloak/templar/mjallidhorn,
 /obj/item/clothing/cloak/templar/mjallidhorn,
-/obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
-/obj/item/clothing/cloak/tabard/crusader/mjallidhorn,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
 /obj/item/clothing/cloak/templar/mjallidhorn/frost,
 /obj/item/clothing/cloak/templar/mjallidhorn/frost,
 /obj/structure/closet/crate/chest/neu_iron{
 	name = "Frost chest"
 	},
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron,
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/under/roguetown/chainlegs/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "qBo" = (
@@ -23331,25 +23362,10 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/manor)
 "wov" = (
-/obj/item/rogueweapon/huntingknife/idagger/steel,
-/obj/item/rogueweapon/huntingknife/idagger/silver,
-/obj/item/rogueweapon/huntingknife/cleaver/combat,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect,
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/under/roguetown/chainlegs/iron,
-/obj/item/clothing/under/roguetown/heavy_leather_pants,
-/obj/item/clothing/cloak/templar/all_aspect,
-/obj/item/clothing/cloak/all_aspect,
-/obj/item/clothing/cloak/all_aspect/alt,
-/obj/item/clothing/neck/roguetown/psicross/wood/katholikos,
-/obj/item/clothing/neck/roguetown/psicross,
-/obj/item/clothing/neck/roguetown/psicross/g,
-/obj/item/clothing/neck/roguetown/psicross/silver,
-/obj/structure/closet/crate/chest/neu_iron{
-	name = "Katholikos chest"
-	},
+/obj/structure/rack/rogue,
+/obj/item/gwstrap,
+/obj/item/rogueweapon/greatsword/zwei,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/church)
 "woW" = (
@@ -62102,7 +62118,7 @@ qjW
 dBv
 oDq
 sXf
-wov
+aLW
 dBv
 dBv
 dBv
@@ -129653,7 +129669,7 @@ seW
 gZR
 jOs
 jnh
-aLW
+hLo
 opP
 apg
 sHx

@@ -672,7 +672,7 @@ var/global/list/anvil_recipe_prices[][]
 	overlay_state = "call_to_arms"
 	charge_max = 5 MINUTES
 	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
-	invocation = "FOR DEATH AND GLORY!"
+	invocation = "FOR THE ASPECTS!"
 	invocation_type = "shout"
 	sound = 'sound/magic/timestop.ogg'
 	releasedrain = 30
@@ -681,13 +681,29 @@ var/global/list/anvil_recipe_prices[][]
 
 /obj/effect/proc_holder/spell/self/call_to_arms/cast(list/targets,mob/living/user = usr)
 	for(var/mob/living/carbon/target in view(3, get_turf(user)))
-		if(istype(target.patron, /datum/patron/heretic))
-			target.apply_status_effect(/datum/status_effect/debuff/call_to_arms)	//Debuffs heretics.
-			return
-		if(istype(target.patron, /datum/patron/elemental))
-			to_chat(target, span_danger("You feel a hot-wave wash over you, leaving as quickly as it came.."))	//No effect on elementals!
+		if(istype(target.patron, ((/datum/patron/elemental))))
+			to_chat(target, span_danger("You feel the Elementals turn their gaze upon you, briefly empowering you."))	//Buffs Elemental and All-Aspect
 			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
 			return
+		if(istype(target.patron, ((/datum/patron/all_aspect))))
+			to_chat(target, span_danger("You feel the Elementals turn their gaze upon you, briefly empowering you."))	//Buffs Elemental and All-Aspect
+			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
+			return
+		if(istype(target.patron, /datum/patron/heretic/jealous_god))
+			if((target.job == "Prince Regent") || (target.job == "Prince"))
+				to_chat(target, span_danger("<font color='yellow'>You feel the hair on the back of your neck prickle as the Elementals' judgement is brought to bear - but the One Envy obscures you from their ire...</font>"))	//Jealous God protects the Shirleighs
+				return
+			else if(istype(target.patron, /datum/patron/heretic/jealous_god))
+				to_chat(target, span_danger("<font color='yellow'>The One Envy cares not to shield you as the gaze of the Elementals draws near.</font>"))	//But She doesn't give a shit otherwise
+			continue
+		if(istype(target.patron, /datum/patron/heretic/otherkind))
+			to_chat(target, span_danger("<font color='yellow'>Your enigmatic patron recoils, seeking to remain unseen as the Elementals turn their gaze near.</font>"))	//Secret Gods are caught unprepared
+			continue
+		if(istype(target.patron, /datum/patron/heretic/devil))
+			to_chat(target, span_danger("<font color='yellow'>You feel yourself wither as the gaze of the Elementals falls upon you. They are angry. Judgement comes.</font>"))	//Elemental and All-Aspect are Hell's biggest rivals
+			continue
+		if(istype(target.patron, /datum/patron/heretic))
+			target.apply_status_effect(/datum/status_effect/debuff/call_to_arms)	//Debuffs heretics.
 	return ..()
 
 /atom/movable/screen/alert/status_effect/buff/divine_strike
@@ -709,12 +725,29 @@ var/global/list/anvil_recipe_prices[][]
 
 /obj/effect/proc_holder/spell/self/call_to_slaughter/cast(list/targets,mob/living/user = usr)
 	for(var/mob/living/carbon/target in view(3, get_turf(user)))
-		if(istype(target.patron, /datum/patron/heretic))
-			target.apply_status_effect(/datum/status_effect/buff/call_to_slaughter)	//Buffs inhumens
+		if(istype(target.patron, /datum/patron/heretic/devil))
+			to_chat(target, span_danger("You feel the ancient roiling madness call to you from beneath the Firmament, briefly empowering you."))
+			target.apply_status_effect(/datum/status_effect/buff/call_to_slaughter)	//Buffs Archdevil worshippers
 			return
+		if(istype(target.patron, /datum/patron/heretic/jealous_god))
+			if((target.job == "Prince Regent") || (target.job == "Prince"))
+				to_chat(target, span_danger("<font color='yellow'>You feel a wash of heat and the scent of iron rush past you - but the One Envy pulls you apart from it...</font>"))	//Jealous God protects the Shirleighs
+				return
+			else if(istype(target.patron, /datum/patron/heretic/jealous_god))
+				to_chat(target, span_danger("<font color='yellow'>The One Envy cares not to shield you from the maddened blood-call of the Hells.</font>"))	//But She doesn't give a shit otherwise
+			continue
+		if(istype(target.patron, /datum/patron/heretic/otherkind))
+			to_chat(target, span_danger("<font color='yellow'>Your enigmatic patron recoils, caught unprepared by the vicious call of demonic hunger.</font>"))	//Secret Gods are caught unprepared
+			continue
+		if(istype(target.patron, ((/datum/patron/elemental))))
+			to_chat(target, span_danger("<font color='yellow'>You smell rot and taste bile as the reeking madness of the Hells crashes into you, ravenous for Flesh and Thauma. Yours.</font>"))	//Elemental and All-Aspect are Hell's biggest rivals
+			continue
+		if(istype(target.patron, ((/datum/patron/all_aspect))))
+			to_chat(target, span_danger("<font color='yellow'>You smell rot and taste bile as the reeking madness of the Hells crashes into you, ravenous for Flesh and Thauma. Yours.</font>"))	//Elemental and All-Aspect are Hell's biggest rivals
+			continue
 		if(!user.faction_check_mob(target))
 			continue
 		if(target.mob_biotypes & MOB_UNDEAD)
 			continue
-		target.apply_status_effect(/datum/status_effect/debuff/call_to_slaughter)	//Debuffs non-inhumens/psydonians
+		target.apply_status_effect(/datum/status_effect/debuff/call_to_slaughter)	//Debuffs all non-Archdevil worshippers
 	return ..()
