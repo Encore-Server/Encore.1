@@ -1,7 +1,0 @@
-author: Doxxmedearly
-
-delete-after: True
-
-changes:
-  - rscadd: "Extends time between vomit checks, reduces nausea more when vomiting, and adds a constitution check to hold back from vomiting, if your constitution is 11 or higher."
-  - rscadd: "Reduces how much nausea rot gives you per life tick."

@@ -253,10 +253,6 @@
 /obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/mountains)
-"Bj" = (
-/obj/effect/roofing_helper/snow,
-/turf/open/lava,
-/area/rogue/indoors/shelter/mountains)
 "Ch" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/snow,
@@ -533,7 +529,7 @@ bX
 tS
 ny
 CY
-Bj
+VE
 zW
 Id
 qC
@@ -546,11 +542,11 @@ qK
 (8,1,1) = {"
 GL
 bX
-Bj
+VE
 Om
 ny
 zU
-Bj
+VE
 UL
 yi
 Dd
@@ -563,11 +559,11 @@ Ae
 (9,1,1) = {"
 KC
 bX
-Bj
+VE
 zW
 Pz
 wR
-Bj
+VE
 SC
 ar
 Ox

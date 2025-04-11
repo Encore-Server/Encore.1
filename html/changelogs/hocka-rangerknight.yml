@@ -1,9 +1,0 @@
-author: "hocka"
-
-delete-after: True
-
-changes:
-  - rscadd: "Added the Ranger-Zealot and Scout-Templar subclasses to Templar, a heavier unit with access to a steel shortsword and a longbow/crossbow and a lighter unit that foregoes a sword at all respectively, in exchange for more muted skills and less carrying capacity."
-  - rscadd: "Added a subtype of the black leather belts to allow Scout-Templars and Ranger-Zealots to spawn with the church keyring in their belt, on account of their drastically lowered free inventory spots."
-  - rscadd: "Added the Ranger-Knight subclass to Ranger (adventurer), essentially a copy of the Ranger-Zealot but without access to Miracles and is able to choose between a Recurve, Longbow or Crossbow."
-  - rscadd: "Shuffled around the vars for determining the pants that are equipped on all subclasses of Ranger (adventurer), mostly for the benefit of the Ranger-Knight's slightly heavy armour set."

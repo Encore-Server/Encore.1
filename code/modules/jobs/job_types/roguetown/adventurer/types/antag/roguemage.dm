@@ -51,5 +51,6 @@
 		H.change_stat("endurance", -1)
 		H.change_stat("fortune", 2)
 		H.change_stat("speed", 1) //ohhh sweetie this is NOT gonna help
+		ADD_TRAIT(H, TRAIT_MAGE_ARMOR, TRAIT_GENERIC)
 		H.mind.adjust_spellpoints(1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)

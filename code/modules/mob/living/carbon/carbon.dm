@@ -1003,8 +1003,11 @@
 	if(status_flags & GODMODE)
 		return
 	if(stat != DEAD)
+		if(health <= HEALTH_THRESHOLD_NEARDEATH && HAS_TRAIT(src, TRAIT_DEATHBARGAIN))
+			src.apply_status_effect(/datum/status_effect/buff/undermaidenbargainheal)
+			return
 		if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
-			emote("deathgurgle")
+			INVOKE_ASYNC(src, PROC_REF(emote), "deathgurgle")
 			death()
 			cure_blind(UNCONSCIOUS_BLIND)
 			return
@@ -1027,7 +1030,6 @@
 	update_health_hud()
 //	update_tod_hud()
 	update_spd()
-	med_hud_set_status()
 
 //called when we get cuffed/uncuffed
 /mob/living/carbon/proc/update_handcuffed()

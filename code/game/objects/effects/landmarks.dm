@@ -91,7 +91,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
-	name = "Bandit"
+	name = "Banditlate"
 	icon_state = "arrow"
 	jobspawn_override = list("Bandit")
 	delete_after_roundstart = FALSE
@@ -236,6 +236,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 /obj/effect/landmark/start/druid
 	name = "Druid"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/witch
+	name = "Witch"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/templar
