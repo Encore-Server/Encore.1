@@ -1,0 +1,222 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aR" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ba" = (
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"cR" = (
+/obj/item/natural/bone,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"eP" = (
+/obj/item/roguegem/random,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"iu" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nq" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tB" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"wA" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xx" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yj" = (
+/obj/item/rogueore/coal,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Br" = (
+/obj/item/rogueore/gold,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qf" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"So" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ta" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"UV" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/wolf,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+Yn
+XV
+XV
+Yn
+Yn
+kd
+Ol
+wA
+"}
+(2,1,1) = {"
+Yn
+kd
+kd
+wA
+Yn
+Yn
+Yn
+Yn
+Yn
+kd
+"}
+(3,1,1) = {"
+Yn
+Yn
+KE
+Yn
+Yn
+kd
+Ta
+qp
+Yn
+Yn
+"}
+(4,1,1) = {"
+Yn
+Yn
+Yn
+Yn
+kd
+aR
+Yn
+cR
+kd
+Yn
+"}
+(5,1,1) = {"
+nq
+Yn
+Br
+rf
+UV
+aR
+Yn
+So
+yj
+kd
+"}
+(6,1,1) = {"
+iu
+Yn
+xx
+UV
+cR
+tB
+Yn
+Yn
+Yn
+wA
+"}
+(7,1,1) = {"
+RF
+Yn
+Yn
+Yn
+Yn
+nq
+Yn
+nV
+Yn
+Yn
+"}
+(8,1,1) = {"
+wA
+Yn
+Yn
+Qf
+kd
+xx
+kd
+ba
+eP
+Yn
+"}
+(9,1,1) = {"
+qp
+Yn
+Yn
+RF
+xx
+Yn
+Yn
+Yn
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+XV
+"}

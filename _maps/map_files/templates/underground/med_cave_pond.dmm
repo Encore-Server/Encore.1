@@ -62,12 +62,6 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/sand,
 /area/rogue/under/cave)
-"nf" = (
-/obj/structure/flora/roguetree,
-/obj/structure/flora/roguetree,
-/obj/effect/roofing_helper/open_space,
-/turf/open/floor/rogue/grass,
-/area/rogue/under/cave)
 "oi" = (
 /obj/effect/roofing_helper/open_space,
 /turf/open/floor/rogue/naturalstone,
@@ -304,7 +298,7 @@ fE
 pw
 IQ
 Bc
-nf
+Ty
 VJ
 uM
 uM

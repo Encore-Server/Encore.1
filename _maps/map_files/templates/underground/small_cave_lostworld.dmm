@@ -1,0 +1,256 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cL" = (
+/obj/structure/flora/roguegrass/water,
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"eW" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"fA" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cave)
+"fV" = (
+/obj/structure/crabnest,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"gk" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"hq" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"hA" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lB" = (
+/obj/effect/roofing_helper/open_space,
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"mD" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"oK" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qQ" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"rY" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"wr" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"yy" = (
+/obj/effect/roofing_helper/open_space,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"zK" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"zP" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"zQ" = (
+/obj/structure/statue/bone/rib,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"Fz" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"IU" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Mc" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"Ol" = (
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Se" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"XN" = (
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+wr
+xx
+wr
+Yn
+Yn
+Yn
+rf
+Ol
+gk
+"}
+(2,1,1) = {"
+XN
+XN
+qQ
+Mc
+rf
+Yn
+kd
+Ol
+Ol
+gk
+"}
+(3,1,1) = {"
+wr
+XN
+fA
+qQ
+XN
+Yn
+Se
+Ol
+gk
+Yn
+"}
+(4,1,1) = {"
+oK
+XN
+XN
+wr
+eW
+zP
+lB
+cR
+Yn
+Yn
+"}
+(5,1,1) = {"
+IU
+oK
+oK
+eW
+lB
+yy
+Yn
+Yn
+Yn
+Se
+"}
+(6,1,1) = {"
+gk
+Ol
+Ol
+rY
+rY
+hA
+zP
+gk
+KE
+qp
+"}
+(7,1,1) = {"
+Se
+Ol
+zQ
+Fz
+fV
+zK
+zQ
+nV
+Se
+Se
+"}
+(8,1,1) = {"
+Ol
+Ol
+Ol
+hq
+zQ
+zK
+cL
+Se
+XV
+Yn
+"}
+(9,1,1) = {"
+qp
+Ol
+Yn
+RF
+Se
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+mD
+Se
+Fz
+kd
+Yn
+kd
+Yn
+XV
+"}

@@ -1,0 +1,353 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bK" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"cn" = (
+/obj/structure/well,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"cR" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"is" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"jk" = (
+/obj/machinery/light/rogue/torchholder/l,
+/obj/structure/fermenting_barrel/random/water,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ld" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/town/basement)
+"nl" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/town/basement)
+"nV" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"oA" = (
+/obj/structure/bed/rogue/inn/wool,
+/obj/item/flashlight/flare/torch/lantern,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qx" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/closet/crate/chest/crate,
+/obj/item/rogueweapon/shovel,
+/obj/item/rogueweapon/shovel,
+/obj/item/rope,
+/obj/item/rope,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"uj" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/basement)
+"ut" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yK" = (
+/obj/structure/rack/rogue/shelf,
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 37;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 37;
+	pixel_x = 5
+	},
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Dm" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Jy" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/structure/closet/crate/chest/crate,
+/obj/item/rogue/instrument/lute,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Lz" = (
+/obj/structure/mineral_door/wood/deadbolt,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement)
+"MB" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/structure/bed/rogue/inn/wool,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Ol" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Ov" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/bone,
+/obj/item/natural/cloth,
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Oy" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/town/basement)
+"OH" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/town/basement)
+"Pk" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/rack/rogue,
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"PU" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/head/roguetown/helmet/kettle,
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Sf" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Yo" = (
+/obj/structure/closet/crate/roguecloset,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/soap,
+/obj/item/cooking/platter,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/item/paper/scroll,
+/obj/item/natural/feather,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/town/basement)
+"Zq" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/basement)
+
+(1,1,1) = {"
+Yn
+kd
+ld
+Zq
+uj
+Yn
+Yn
+Yn
+Yn
+Yn
+"}
+(2,1,1) = {"
+Yn
+xx
+ld
+cn
+cR
+cR
+ld
+ld
+ld
+ld
+"}
+(3,1,1) = {"
+ld
+ld
+ld
+ld
+ld
+cR
+ld
+Pk
+jk
+ld
+"}
+(4,1,1) = {"
+ld
+Yo
+Ol
+oA
+ld
+cR
+Lz
+cR
+Sf
+ld
+"}
+(5,1,1) = {"
+ld
+yK
+is
+MB
+ld
+OH
+ld
+qx
+Ov
+ld
+"}
+(6,1,1) = {"
+ld
+PU
+Dm
+Dm
+bK
+ut
+ld
+ld
+ld
+ld
+"}
+(7,1,1) = {"
+ld
+Jy
+cR
+cR
+ld
+Oy
+nl
+nV
+XV
+rf
+"}
+(8,1,1) = {"
+ld
+ld
+ld
+ld
+ld
+ld
+ld
+XV
+qp
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+kd
+Yn
+Yn
+KE
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+KE
+XV
+kd
+xx
+kd
+Yn
+kd
+Yn
+XV
+"}
