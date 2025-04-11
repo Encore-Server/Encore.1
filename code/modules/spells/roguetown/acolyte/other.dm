@@ -681,9 +681,14 @@ var/global/list/anvil_recipe_prices[][]
 
 /obj/effect/proc_holder/spell/self/call_to_arms/cast(list/targets,mob/living/user = usr)
 	for(var/mob/living/carbon/target in view(3, get_turf(user)))
-		if(istype(target.patron, ((/datum/patron/elemental) || (/datum/patron/all_aspect))))
+		if(istype(target.patron, ((/datum/patron/elemental))))
 			to_chat(target, span_danger("You feel the Elementals turn their gaze upon you, briefly empowering you."))	//Buffs Elemental and All-Aspect
 			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
+			return
+		if(istype(target.patron, ((/datum/patron/all_aspect))))
+			to_chat(target, span_danger("You feel the Elementals turn their gaze upon you, briefly empowering you."))	//Buffs Elemental and All-Aspect
+			target.apply_status_effect(/datum/status_effect/buff/call_to_arms)
+			return
 		if(istype(target.patron, /datum/patron/heretic/jealous_god))
 			if((target.job == "Prince Regent") || (target.job == "Prince"))
 				to_chat(target, span_danger("<font color='yellow'>You feel the hair on the back of your neck prickle as the Elementals' judgement is brought to bear - but the One Envy obscures you from their ire...</font>"))	//Jealous God protects the Shirleighs
@@ -734,7 +739,10 @@ var/global/list/anvil_recipe_prices[][]
 		if(istype(target.patron, /datum/patron/heretic/otherkind))
 			to_chat(target, span_danger("<font color='yellow'>Your enigmatic patron recoils, caught unprepared by the vicious call of demonic hunger.</font>"))	//Secret Gods are caught unprepared
 			continue
-		if(istype(target.patron, ((/datum/patron/elemental) || (/datum/patron/all_aspect))))
+		if(istype(target.patron, ((/datum/patron/elemental))))
+			to_chat(target, span_danger("<font color='yellow'>You smell rot and taste bile as the reeking madness of the Hells crashes into you, ravenous for Flesh and Thauma. Yours.</font>"))	//Elemental and All-Aspect are Hell's biggest rivals
+			continue
+		if(istype(target.patron, ((/datum/patron/all_aspect))))
 			to_chat(target, span_danger("<font color='yellow'>You smell rot and taste bile as the reeking madness of the Hells crashes into you, ravenous for Flesh and Thauma. Yours.</font>"))	//Elemental and All-Aspect are Hell's biggest rivals
 			continue
 		if(!user.faction_check_mob(target))

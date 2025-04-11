@@ -112,12 +112,13 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H) //Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
-	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
-	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
-	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
 	if(H.patron?.type == /datum/patron/elemental/visires)

@@ -7,7 +7,7 @@
 	tutorial = "Templars are warriors who have forsaken wealth and title in lieu of service to the church, due to either zealotry or a past shame. They guard the church and its priest while keeping a watchful eye against heresy and nite-creechers. Within troubled dreams, they wonder if the blood they shed makes them holy or stained."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh) // Core Elemental Pantheon only, All-Aspect Templars should play the Adjudicator subclass for Orthodoxist
 	outfit = /datum/outfit/job/roguetown/templar
 	min_pq = -999
 	max_pq = null
@@ -84,12 +84,13 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
-	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
-	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
-	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
 	if(H.patron?.type == /datum/patron/elemental/visires)
@@ -165,12 +166,13 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
-	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
-	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
-	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
 	if(H.patron?.type == /datum/patron/elemental/visires)
@@ -264,12 +266,13 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
-	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
-	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
-	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
 	if(H.patron?.type == /datum/patron/elemental/visires)
@@ -359,12 +362,13 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
-	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they're missing out on two extra spells compared to the others
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
-	if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
-	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they're missing out on two extra spells compared to the others
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
 	if(H.patron?.type == /datum/patron/elemental/visires)
