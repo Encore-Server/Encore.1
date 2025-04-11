@@ -22,21 +22,27 @@ GLOBAL_VAR_INIT(forecast, FALSE)
 GLOBAL_VAR_INIT(todoverride, FALSE)
 GLOBAL_VAR_INIT(dayspassed, FALSE)
 
+
+
 /proc/settod()
 	var/time = station_time()
 	var/oldtod = GLOB.tod
-	if(time >= SSnightshift.nightshift_start_time || time <= SSnightshift.nightshift_dawn_start)
-		GLOB.tod = "night"
-//		testing("set [tod]")
 	if(time > SSnightshift.nightshift_dawn_start && time <= SSnightshift.nightshift_day_start)
 		GLOB.tod = "dawn"
-//		testing("set [tod]")
+		SSticker.station_time_rate_multiplier = 6
+
 	if(time > SSnightshift.nightshift_day_start && time <= SSnightshift.nightshift_dusk_start)
 		GLOB.tod = "day"
-//		testing("set [tod]")
+		SSticker.station_time_rate_multiplier = 2
+		
 	if(time > SSnightshift.nightshift_dusk_start && time <= SSnightshift.nightshift_start_time)
 		GLOB.tod = "dusk"
-//		testing("set [tod]")
+		SSticker.station_time_rate_multiplier = 6
+		
+	if(time > SSnightshift.nightshift_start_time && time <= SSnightshift.nightshift_end_time)
+		GLOB.tod = "night"
+		SSticker.station_time_rate_multiplier = 2	
+
 	if(GLOB.todoverride)
 		GLOB.tod = GLOB.todoverride
 	if((GLOB.tod != oldtod) && !GLOB.todoverride && (GLOB.dayspassed>1)) //weather check on tod changes
