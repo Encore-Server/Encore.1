@@ -6,8 +6,8 @@
 #define TAB_LOG 6
 
 /obj/structure/roguemachine/steward
-	name = "nerve master"
-	desc = "The stewards most trusted friend."
+	name = "prime stockhead"
+	desc = "A machine used by the Treasury to accurately account for its contents, and requisition pre-ordained materials from far away."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "steward_machine"
 	density = TRUE
@@ -43,7 +43,7 @@
 		to_chat(user, span_warning("Wrong key."))
 		return
 	if(istype(P, /obj/item/roguecoin))
-		SStreasury.give_money_treasury(P.get_real_price(), "NERVE MASTER deposit")
+		SStreasury.give_money_treasury(P.get_real_price(), "Treasury Deposit")
 		qdel(P)
 		playsound(src, 'sound/misc/coininsert.ogg', 100, FALSE, -1)
 		return
@@ -153,7 +153,7 @@
 					return
 				if(newtax < 1)
 					return
-				SStreasury.give_money_account(newtax, A, "NERVE MASTER")
+				SStreasury.give_money_account(newtax, A, "TREASURY")
 				break
 	if(href_list["fineaccount"])
 		var/X = locate(href_list["fineaccount"])
@@ -170,7 +170,7 @@
 					return
 				if(newtax < 1)
 					return
-				SStreasury.give_money_account(-newtax, A, "NERVE MASTER")
+				SStreasury.give_money_account(-newtax, A, "TREASURY")
 				break
 	if(href_list["payroll"])
 		var/list/L = list(GLOB.noble_positions) + list(GLOB.garrison_positions) + list(GLOB.courtier_positions) + list(GLOB.church_positions) + list(GLOB.yeoman_positions) + list(GLOB.peasant_positions) + list(GLOB.youngfolk_positions) + list(GLOB.inquisition_positions)
@@ -194,7 +194,7 @@
 			return
 		for(var/mob/living/carbon/human/H in GLOB.human_list)
 			if(H.job == job_to_pay)
-				SStreasury.give_money_account(amount_to_pay, H, "NERVE MASTER")
+				SStreasury.give_money_account(amount_to_pay, H, "TREASURY")
 	if(href_list["compact"])
 		compact = !compact
 	return attack_hand(usr)
@@ -235,7 +235,7 @@
 	var/contents
 	switch(current_tab)
 		if(TAB_MAIN)
-			contents += "<center>NERVE MASTER<BR>"
+			contents += "<center>TREASURY<BR>"
 			contents += "--------------<BR>"
 			contents += "<a href='?src=\ref[src];switchtab=[TAB_BANK]'>\[Bank\]</a><BR>"
 			contents += "<a href='?src=\ref[src];switchtab=[TAB_STOCK]'>\[Stockpile\]</a><BR>"

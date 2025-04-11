@@ -578,10 +578,10 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/indoors/shelter/town)
 "aAm" = (
-/obj/structure/roguemachine/vendor{
-	keycontrol = "tailor"
+/obj/structure/roguemachine/stockpile{
+	pixel_y = 27
 	},
-/turf/closed/wall/mineral/rogue/decowood/vert,
+/turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "aAn" = (
 /obj/structure/closet/crate/chest/crate,
@@ -5152,6 +5152,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
+"eYa" = (
+/obj/structure/roguemachine/bounty{
+	density = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "eZe" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/telescope,
@@ -5183,7 +5189,9 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet)
 "faT" = (
-/obj/structure/roguemachine/steward,
+/obj/structure/roguemachine/steward{
+	pixel_y = 11
+	},
 /turf/open/floor/rogue/herringbone,
 /area/rogue/indoors/town)
 "fbg" = (
@@ -5740,6 +5748,10 @@
 /obj/structure/table/wood,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/town)
+"fCh" = (
+/obj/structure/roguemachine/merchantvend,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/town/shop)
 "fCj" = (
 /obj/structure/fluff/railing/border,
 /turf/open/transparent/openspace,
@@ -7080,7 +7092,8 @@
 /obj/item/roguekey/shop,
 /obj/item/roguekey/nightmaiden,
 /obj/structure/roguemachine/atm{
-	mammonsiphoned = 250
+	mammonsiphoned = 250;
+	pixel_y = 25
 	},
 /obj/structure/closet/crate/chest/crate,
 /turf/open/floor/carpet/royalblack,
@@ -7378,16 +7391,15 @@
 	},
 /area/rogue/indoors/town/dwarfin)
 "hid" = (
-/obj/structure/roguemachine/withdraw,
-/obj/effect/decal/cobbleedge{
-	dir = 1
+/obj/structure/bars/passage/shutter/open{
+	redstone_id = "tailor_shutter"
 	},
-/obj/effect/decal/cobbleedge{
-	dir = 10;
-	icon_state = "cobbleedge-e"
+/obj/structure/roguemachine/vendor{
+	keycontrol = "tailor";
+	pixel_y = 32
 	},
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/town)
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town)
 "hif" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors)
@@ -12090,7 +12102,6 @@
 	icon_state = "longtable";
 	dir = 1
 	},
-/obj/structure/roguemachine/merchantvend,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/shop)
 "lHL" = (
@@ -15284,7 +15295,9 @@
 /turf/open/water/ocean/deep,
 /area/rogue/under/cavewet)
 "oAM" = (
-/obj/structure/roguemachine/stockpile,
+/obj/structure/roguemachine/stockpile{
+	pixel_y = 27
+	},
 /obj/effect/decal/cobbleedge{
 	dir = 1
 	},
@@ -15439,7 +15452,9 @@
 /area/rogue/indoors/shelter/town)
 "oFK" = (
 /obj/structure/roguemachine/atm{
-	mammonsiphoned = 250
+	mammonsiphoned = 250;
+	pixel_y = 27;
+	pixel_x = 10
 	},
 /obj/effect/decal/cobbleedge{
 	dir = 1
@@ -17640,8 +17655,12 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/mountains)
 "qRN" = (
-/obj/structure/roguemachine/steward,
-/obj/structure/roguemachine/withdraw,
+/obj/structure/roguemachine/steward{
+	pixel_y = 13
+	},
+/obj/structure/roguemachine/withdraw{
+	pixel_y = 37
+	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town)
 "qSx" = (
@@ -24169,9 +24188,15 @@
 /turf/open/floor/rogue/tile,
 /area/rogue/under/town/basement/keep)
 "xfp" = (
-/obj/structure/roguemachine/bounty,
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/indoors/town)
+/obj/effect/decal/cobbleedge{
+	dir = 1
+	},
+/obj/structure/roguemachine/withdraw{
+	pixel_y = 27;
+	pixel_x = -6
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/town)
 "xfQ" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/concrete,
@@ -124626,7 +124651,7 @@ qzX
 qzX
 qzX
 ubT
-qzX
+eYa
 qzX
 nQm
 nQm
@@ -125605,8 +125630,8 @@ gUy
 dFu
 hrt
 lCv
+eLL
 xfp
-tqp
 olg
 aKA
 kcp
@@ -125863,7 +125888,7 @@ eLL
 eLL
 eLL
 eLL
-hid
+qYy
 jBy
 jBy
 fbS
@@ -126895,7 +126920,7 @@ jBy
 jBy
 jin
 uGf
-iQw
+fCh
 dMp
 dMp
 uPH
@@ -127120,7 +127145,7 @@ cxD
 cxD
 bMD
 jOs
-rwR
+aAm
 rwR
 rwR
 rwR
@@ -186787,8 +186812,8 @@ aHx
 lvm
 ikR
 ikR
-gnJ
-aAm
+hid
+ikR
 nOk
 oBr
 ikR
