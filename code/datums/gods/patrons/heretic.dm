@@ -51,7 +51,7 @@
 	t0 = /obj/effect/proc_holder/spell/aoe_turf/conjure/the_traps
 	t1 = /obj/effect/proc_holder/spell/targeted/spiderconjur//weaving a web of LIES
 	t3 = /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning//Secret gods have to be a little higher level to start getting aggressive
-	t4 = /obj/effect/proc_holder/spell/targeted/shapeshift//freakyyyy
+	t4 = /obj/effect/proc_holder/spell/self/dendor_shapeshift//freakyyyy
 	confess_lines = list(
 		"THE DECEIVERS FLEE! SEE THEIR LIES!",
 		"A PANTHEON EXISTS BEYOND YOUR OWN!",

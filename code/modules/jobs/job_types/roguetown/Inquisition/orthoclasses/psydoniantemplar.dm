@@ -56,7 +56,7 @@
 
 /datum/outfit/job/roguetown/katholikostemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Flail","Mace","Spear")
+	var/weapons = list("Bastard Sword","Zweihander","Flail","Mace","Spear")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Bastard Sword")
