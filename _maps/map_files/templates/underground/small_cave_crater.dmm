@@ -1,0 +1,212 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"eZ" = (
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"hI" = (
+/obj/effect/roofing_helper/open_space,
+/obj/effect/decal/cleanable/ash/large,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/effect/roofing_helper/open_space,
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"pb" = (
+/obj/effect/roofing_helper/open_space,
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rj" = (
+/obj/item/natural/rock/iron,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"tA" = (
+/obj/item/natural/rock/iron,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Bd" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Cf" = (
+/obj/effect/roofing_helper/open_space,
+/obj/structure/roguerock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Fb" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Nu" = (
+/obj/effect/decal/cleanable/ash/large,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Oa" = (
+/obj/effect/roofing_helper/open_space,
+/obj/item/natural/rock/iron,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Ol" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"RF" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Ys" = (
+/obj/effect/roofing_helper/open_space,
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+Yn
+Yn
+Yn
+RF
+Yn
+kd
+"}
+(2,1,1) = {"
+RF
+kd
+kd
+kd
+rf
+Nu
+tA
+Ol
+RF
+Yn
+"}
+(3,1,1) = {"
+RF
+Yn
+tA
+Yn
+Bd
+pb
+cR
+qp
+RF
+Yn
+"}
+(4,1,1) = {"
+RF
+RF
+tA
+Ys
+Cf
+Fb
+nV
+cR
+Yn
+rj
+"}
+(5,1,1) = {"
+Ol
+Ol
+Bd
+pb
+nV
+Oa
+Fb
+Fb
+Bd
+kd
+"}
+(6,1,1) = {"
+RF
+Ol
+hI
+nV
+Oa
+Oa
+Fb
+Cf
+KE
+qp
+"}
+(7,1,1) = {"
+RF
+Ol
+Ol
+Bd
+Oa
+Fb
+pb
+nV
+Yn
+Yn
+"}
+(8,1,1) = {"
+kd
+RF
+RF
+Ol
+Yn
+Bd
+Fb
+eZ
+Yn
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+RF
+RF
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+Yn
+kd
+Yn
+Yn
+"}

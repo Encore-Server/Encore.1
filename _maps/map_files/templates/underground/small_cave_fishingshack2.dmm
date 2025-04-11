@@ -1,0 +1,236 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/item/roguestatue/iron,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"bs" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"cR" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/under/cave)
+"dV" = (
+/obj/structure/fluff/statue/gargoyle,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"fD" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/structure/roguetent,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"gv" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"hZ" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/ocean/deep,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kG" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"nV" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/under/cave)
+"qg" = (
+/obj/structure/roguetent,
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"uB" = (
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"wG" = (
+/obj/item/fishingrod,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Fk" = (
+/turf/open/water/ocean/deep,
+/area/rogue/under/cave)
+"Ft" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/ocean/deep,
+/area/rogue/under/cave)
+"Jl" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Le" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/water/ocean/deep,
+/area/rogue/under/cave)
+"Te" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ve" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+Yn
+Yn
+Ft
+hZ
+Fk
+Yn
+Yn
+Ol
+XV
+"}
+(2,1,1) = {"
+Yn
+Yn
+dV
+Fk
+uB
+hZ
+Fk
+Yn
+bs
+XV
+"}
+(3,1,1) = {"
+kd
+kd
+uB
+Le
+Ve
+uB
+uB
+XV
+XV
+Yn
+"}
+(4,1,1) = {"
+kd
+uB
+cR
+cR
+cR
+Yn
+Yn
+rf
+Yn
+Yn
+"}
+(5,1,1) = {"
+uB
+uB
+nV
+Jl
+fD
+gv
+Te
+bs
+Yn
+Yn
+"}
+(6,1,1) = {"
+uB
+uB
+nV
+ar
+qg
+Fk
+kG
+XV
+Fk
+Fk
+"}
+(7,1,1) = {"
+Fk
+kd
+cR
+cR
+cR
+uB
+wG
+XV
+XV
+KE
+"}
+(8,1,1) = {"
+Ol
+kd
+Le
+uB
+hZ
+uB
+uB
+uB
+kd
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+Fk
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+Yn
+kd
+Yn
+XV
+"}

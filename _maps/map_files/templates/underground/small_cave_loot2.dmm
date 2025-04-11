@@ -1,0 +1,206 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cP" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"cR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/saiga,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"nV" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qy" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"zt" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Jy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/bone,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Nw" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"Sc" = (
+/obj/structure/closet/crate/chest/neu_fancy{
+	locked = 1
+	},
+/obj/effect/spawner/lootdrop/roguetown/dungeon,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"UY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+Yn
+Yn
+Yn
+kd
+Ol
+kd
+"}
+(2,1,1) = {"
+Yn
+kd
+kd
+kd
+rf
+kd
+kd
+kd
+XV
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+kd
+kd
+Yn
+Yn
+XV
+qp
+kd
+Yn
+"}
+(4,1,1) = {"
+kd
+Ol
+kd
+Yn
+Yn
+Yn
+XV
+XV
+kd
+Yn
+"}
+(5,1,1) = {"
+kd
+RF
+RF
+RF
+RF
+RF
+kd
+kd
+Yn
+Yn
+"}
+(6,1,1) = {"
+kd
+RF
+qy
+UY
+kO
+RF
+kd
+kd
+KE
+qp
+"}
+(7,1,1) = {"
+kd
+RF
+Sc
+cR
+Nw
+nV
+kd
+Yn
+Yn
+zt
+"}
+(8,1,1) = {"
+kd
+RF
+Jy
+cR
+cP
+RF
+kd
+kd
+Yn
+Yn
+"}
+(9,1,1) = {"
+qp
+RF
+RF
+RF
+RF
+RF
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+kd
+kd
+XV
+Ol
+xx
+kd
+Yn
+kd
+Yn
+XV
+"}

@@ -1,0 +1,225 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"jf" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qF" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yy" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Fl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"GU" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"JX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/natural/bone,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ll" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"LT" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"QR" = (
+/obj/structure/closet/crate/chest/neu_fancy{
+	locked = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll{
+	name = "chest troll"
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll{
+	name = "chest troll"
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll{
+	name = "chest troll"
+	},
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"RF" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Wm" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/under/cave)
+"WR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/remains/saiga,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+Yn
+Yn
+Yn
+kd
+xx
+kd
+"}
+(2,1,1) = {"
+Yn
+kd
+kd
+kd
+rf
+kd
+kd
+kd
+Ol
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+nV
+nV
+nV
+nV
+nV
+XV
+kd
+Yn
+"}
+(4,1,1) = {"
+Yn
+Yn
+nV
+LT
+Fl
+WR
+nV
+cR
+kd
+Yn
+"}
+(5,1,1) = {"
+kd
+Yn
+nV
+QR
+qF
+GU
+Wm
+kd
+Yn
+Yn
+"}
+(6,1,1) = {"
+kd
+Yn
+nV
+JX
+qF
+RF
+nV
+kd
+KE
+qp
+"}
+(7,1,1) = {"
+jf
+kd
+nV
+nV
+nV
+nV
+nV
+kd
+XV
+Ol
+"}
+(8,1,1) = {"
+kd
+kd
+kd
+XV
+kd
+kd
+kd
+XV
+XV
+Yn
+"}
+(9,1,1) = {"
+qp
+yy
+Yn
+kd
+kd
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+jf
+Yn
+kd
+Yn
+Ll
+"}

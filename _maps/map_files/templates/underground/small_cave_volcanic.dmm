@@ -1,0 +1,185 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cb" = (
+/obj/item/natural/rock,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"cR" = (
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"fg" = (
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"IK" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Mn" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"QP" = (
+/turf/open/lava/smooth,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+IK
+IK
+XV
+Yn
+Yn
+QP
+IK
+Ol
+IK
+"}
+(2,1,1) = {"
+Yn
+IK
+cR
+IK
+rf
+kd
+IK
+IK
+cR
+Yn
+"}
+(3,1,1) = {"
+Yn
+XV
+cR
+cR
+IK
+QP
+Yn
+Yn
+cR
+Yn
+"}
+(4,1,1) = {"
+Yn
+Yn
+Mn
+cR
+QP
+QP
+QP
+Yn
+cR
+XV
+"}
+(5,1,1) = {"
+kd
+IK
+IK
+Yn
+Yn
+QP
+QP
+cR
+kd
+kd
+"}
+(6,1,1) = {"
+IK
+IK
+QP
+QP
+Yn
+Yn
+cR
+cR
+KE
+Mn
+"}
+(7,1,1) = {"
+kd
+QP
+QP
+QP
+xx
+cR
+cR
+nV
+QP
+QP
+"}
+(8,1,1) = {"
+kd
+cR
+cR
+cR
+kd
+fg
+kd
+QP
+QP
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+IK
+Yn
+Yn
+cb
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+IK
+IK
+IK
+XV
+"}
