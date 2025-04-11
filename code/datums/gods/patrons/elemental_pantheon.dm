@@ -110,3 +110,4 @@
 		"WITH GANI'S EDGE I STRIKE!",
 		"I AM AN INSTRUMENT OF CREATION!",
 	)
+/obj/effect/proc_holder/spell/invoked/blink

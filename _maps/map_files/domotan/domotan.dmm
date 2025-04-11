@@ -659,8 +659,9 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet)
 "aCW" = (
-/turf/closed/mineral/rogue/salt,
-/area/rogue/under/cave)
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cavewet)
 "aDs" = (
 /obj/effect/landmark/map_load_mark/forest/small,
 /turf/open/floor/rogue/metal,
@@ -1187,17 +1188,13 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/garrison)
-"bcK" = (
-/obj/effect/decal/cleanable/food/salt,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
 "bcW" = (
 /turf/open/transparent/openspace,
 /area/rogue/under/cavewet)
 "bdn" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cavewet)
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "bdz" = (
 /obj/structure/mineral_door/wood/donjon{
 	locked = 1;
@@ -5501,11 +5498,6 @@
 /obj/structure/mirror,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
-"fqQ" = (
-/obj/structure/bed/rogue/inn/hay,
-/mob/living/carbon/human/species/goblin/npc/ambush/sea,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cavewet)
 "fqS" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/fluff/railing/border{
@@ -6844,10 +6836,9 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "gJU" = (
-/obj/item/natural/rock/salt,
-/obj/item/reagent_containers/powder/salt,
+/obj/effect/spawner/trap,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
+/area/rogue/under/cavewet)
 "gJX" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/cobblerock,
@@ -8502,7 +8493,6 @@
 /area/rogue/indoors/town/garrison)
 "isE" = (
 /obj/structure/chair/stool/rogue,
-/mob/living/carbon/human/species/goblin/npc/ambush/sea,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "isM" = (
@@ -10112,8 +10102,8 @@
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/town/garrison)
 "jSi" = (
-/obj/item/reagent_containers/powder/salt,
-/turf/open/floor/rogue/dirt/road,
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/blocks,
 /area/rogue/under/cave)
 "jTp" = (
 /obj/structure/fluff/railing/border{
@@ -13109,11 +13099,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement)
-"mFR" = (
-/obj/structure/chair/stool/rogue,
-/mob/living/carbon/human/species/goblin/npc/ambush,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cavewet)
 "mGf" = (
 /obj/structure/table/wood{
 	icon_state = "longtable_mid";
@@ -14201,9 +14186,9 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/physician)
 "nCi" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/turf/open/floor/rogue/blocks,
-/area/rogue/under/cave)
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavewet)
 "nCw" = (
 /obj/structure/fluff/railing/border{
 	dir = 10
@@ -16154,10 +16139,6 @@
 /obj/item/ingot/iron,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/shelter/town/dwarf)
-"ptG" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/cavewet)
 "ptX" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -23087,7 +23068,6 @@
 /area/rogue/outdoors/exposed/town/keep)
 "vZJ" = (
 /obj/structure/chair/stool/rogue,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet)
 "vZN" = (
@@ -72766,7 +72746,7 @@ loh
 loh
 loh
 gnw
-apT
+nCi
 apT
 coJ
 coJ
@@ -74592,7 +74572,7 @@ apT
 apT
 apT
 apT
-apT
+nCi
 apT
 apT
 apT
@@ -74608,7 +74588,7 @@ apT
 lmW
 apT
 gnw
-apT
+nCi
 apT
 uih
 uih
@@ -75360,7 +75340,7 @@ loh
 coJ
 coJ
 tLg
-ptG
+gnw
 gnw
 tCM
 ufH
@@ -75620,7 +75600,7 @@ tLg
 tnP
 oNq
 nun
-ptG
+gnw
 coJ
 coJ
 coJ
@@ -75878,7 +75858,7 @@ oNq
 gnw
 tnP
 oNq
-nun
+gJU
 gnw
 lmW
 qlY
@@ -77162,13 +77142,13 @@ tnP
 tLg
 oNq
 lmW
-bdn
 oNq
 oNq
+oNq
+aCW
 myb
 myb
-myb
-mFR
+huE
 oUL
 nnv
 pmX
@@ -77414,7 +77394,7 @@ coJ
 tnP
 oNq
 gnw
-nun
+gJU
 coJ
 nsQ
 oNq
@@ -77431,7 +77411,7 @@ pjF
 pmX
 pmX
 xgI
-tEP
+bdn
 tEP
 uih
 uih
@@ -77678,7 +77658,7 @@ oNq
 eyV
 oNq
 apT
-fqQ
+dRP
 nsQ
 coJ
 bOH
@@ -78190,7 +78170,7 @@ tLg
 nsQ
 apT
 lmW
-fqQ
+dRP
 huE
 dRP
 tLg
@@ -78710,7 +78690,7 @@ oNq
 ubd
 dmv
 jIj
-nCi
+jIj
 bDq
 jIj
 eot
@@ -78960,7 +78940,7 @@ jwr
 qlY
 tLg
 gqv
-apT
+nCi
 gdS
 gdS
 oNq
@@ -79213,7 +79193,7 @@ uih
 wfB
 jfe
 pUu
-nCi
+jIj
 jIj
 mUn
 bWk
@@ -79740,7 +79720,7 @@ uih
 qoy
 qoy
 ilH
-jIj
+jSi
 paz
 eNS
 mUn
@@ -79998,7 +79978,7 @@ uih
 qoy
 cek
 oJI
-nCi
+jIj
 tcp
 mUn
 mUn
@@ -85400,10 +85380,10 @@ uih
 uih
 uih
 uih
-aCW
-aCW
+uih
+uih
 tTY
-aCW
+uih
 rcb
 rcb
 rcb
@@ -85656,12 +85636,12 @@ uih
 uih
 uih
 uih
-aCW
-aCW
-aCW
-bcK
+uih
+uih
+uih
 oJI
-jSi
+oJI
+oJI
 rcb
 rcb
 rcb
@@ -85913,10 +85893,10 @@ uih
 uih
 uih
 uih
-aCW
-aCW
-aCW
-jSi
+uih
+uih
+uih
+uih
 tTY
 oJI
 rcb
@@ -86169,14 +86149,14 @@ uih
 mUn
 uih
 uih
-aCW
-aCW
-aCW
-aCW
+uih
+uih
+uih
+uih
+uih
+uih
 oJI
 oJI
-oJI
-jSi
 rcb
 rcb
 rcb
@@ -86425,14 +86405,14 @@ uih
 uih
 uih
 uih
-aCW
-aCW
-aCW
-aCW
-aCW
-tTY
-gJU
-bcK
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
 tTY
 mUn
 mUn
@@ -86681,16 +86661,16 @@ mUn
 uih
 uih
 mUn
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
 uih
 uih
 uih
@@ -86938,16 +86918,16 @@ mUn
 uih
 uih
 uih
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
 mUn
 uih
 uih
@@ -87195,14 +87175,14 @@ uih
 uih
 uih
 uih
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
+uih
+uih
+uih
+uih
+uih
+uih
+uih
+uih
 uih
 mUn
 uih
@@ -87453,13 +87433,13 @@ uih
 uih
 mUn
 uih
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
-aCW
+uih
+uih
+uih
+uih
+uih
+uih
+uih
 uih
 uih
 uih
@@ -87712,9 +87692,9 @@ uih
 mUn
 uih
 uih
-aCW
-aCW
-aCW
+uih
+uih
+uih
 uih
 uih
 mUn

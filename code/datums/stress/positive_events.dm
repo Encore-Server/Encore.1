@@ -162,3 +162,8 @@
 	stressadd = -3
 	desc = span_blue("An absolutely exquisite vintage. Indubitably.")
 	timer = 10 MINUTES
+
+/datum/stressevent/pacified
+	timer = 30 MINUTES
+	stressadd = -5
+	desc = span_green("All my problems have washed away!")
