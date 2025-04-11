@@ -1,0 +1,178 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"cW" = (
+/obj/item/grown/log/tree,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"dE" = (
+/obj/effect/spawner/mobspawner,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"dF" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"fC" = (
+/turf/open/water/ocean/deep,
+/area/rogue/outdoors/woods/heavenscoast)
+"qv" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Cy" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"Hd" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"PX" = (
+/obj/effect/spawner/mobspawner,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Sz" = (
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"TX" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Xo" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+"ZP" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/heavenscoast)
+
+(1,1,1) = {"
+aJ
+aJ
+aJ
+aJ
+aJ
+Hd
+aJ
+aJ
+Hd
+Hd
+"}
+(2,1,1) = {"
+aJ
+TX
+PX
+Hd
+Sz
+Hd
+Xo
+aJ
+dF
+aJ
+"}
+(3,1,1) = {"
+sC
+Cy
+qv
+Hd
+Dd
+Dd
+Hd
+qv
+Hd
+Cy
+"}
+(4,1,1) = {"
+aJ
+aJ
+Sz
+Dd
+Dd
+Dd
+Dd
+Sz
+Hd
+aJ
+"}
+(5,1,1) = {"
+aJ
+sC
+Hd
+Dd
+fC
+fC
+Dd
+Dd
+Xo
+aJ
+"}
+(6,1,1) = {"
+sC
+Hd
+Dd
+Dd
+Dd
+Dd
+Dd
+Hd
+Hd
+aJ
+"}
+(7,1,1) = {"
+aJ
+Hd
+Hd
+Hd
+Dd
+Sz
+Xo
+Hd
+Hd
+sC
+"}
+(8,1,1) = {"
+sC
+aJ
+aJ
+Hd
+Hd
+Hd
+Hd
+dE
+aJ
+aJ
+"}
+(9,1,1) = {"
+Hd
+ZP
+aJ
+sC
+aJ
+cW
+Hd
+aJ
+TX
+aJ
+"}
+(10,1,1) = {"
+aJ
+Hd
+Hd
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+"}

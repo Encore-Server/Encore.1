@@ -1,0 +1,195 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"dE" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mossback,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"dF" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"ht" = (
+/obj/item/natural/rock/gem,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"hN" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"nu" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"qv" = (
+/obj/item/natural/rock/gem,
+/mob/living/simple_animal/hostile/retaliate/rogue/mossback,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"qC" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"qX" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Cy" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"Mj" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"Nu" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"PX" = (
+/obj/effect/roofing_helper/stone,
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/shelter/woods)
+"RY" = (
+/obj/effect/mist{
+	opacity = 1
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter/woods)
+"Sz" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+
+(1,1,1) = {"
+aJ
+sC
+sC
+aJ
+aJ
+aJ
+qC
+qX
+aJ
+aJ
+"}
+(2,1,1) = {"
+aJ
+qC
+PX
+Sz
+aJ
+PX
+PX
+aJ
+dF
+aJ
+"}
+(3,1,1) = {"
+qX
+qC
+PX
+PX
+PX
+PX
+PX
+PX
+qC
+Cy
+"}
+(4,1,1) = {"
+Mj
+Dd
+PX
+hN
+dE
+nu
+hN
+PX
+Dd
+aJ
+"}
+(5,1,1) = {"
+aJ
+PX
+PX
+ht
+hN
+hN
+PX
+PX
+sC
+sC
+"}
+(6,1,1) = {"
+sC
+PX
+PX
+dE
+hN
+hN
+RY
+RY
+aJ
+sC
+"}
+(7,1,1) = {"
+aJ
+Dd
+PX
+nu
+qv
+PX
+PX
+PX
+Dd
+sC
+"}
+(8,1,1) = {"
+sC
+aJ
+PX
+PX
+PX
+PX
+PX
+PX
+Dd
+aJ
+"}
+(9,1,1) = {"
+qC
+aJ
+aJ
+Dd
+Sz
+Dd
+Dd
+sC
+aJ
+Nu
+"}
+(10,1,1) = {"
+qC
+qC
+aJ
+aJ
+aJ
+sC
+sC
+sC
+qC
+qC
+"}
