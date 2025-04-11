@@ -1,0 +1,245 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"b" = (
+/obj/structure/flora/roguegrass/bush,
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"c" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"d" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"f" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"g" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"i" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"k" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"m" = (
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"r" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"v" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"y" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"D" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"E" = (
+/obj/effect/spawner/mobspawner,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"G" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"H" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"K" = (
+/obj/item/rogueweapon/hoe/stone,
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"N" = (
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"O" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"T" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"V" = (
+/obj/structure/flora/roguetree/stump/log,
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cobble/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"X" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+r
+f
+O
+O
+G
+r
+O
+O
+O
+g
+"}
+(2,1,1) = {"
+m
+N
+K
+c
+c
+V
+c
+c
+c
+v
+"}
+(3,1,1) = {"
+r
+N
+c
+c
+D
+y
+c
+D
+c
+v
+"}
+(4,1,1) = {"
+r
+N
+c
+c
+c
+y
+c
+c
+c
+v
+"}
+(5,1,1) = {"
+T
+d
+c
+D
+c
+y
+c
+K
+c
+b
+"}
+(6,1,1) = {"
+T
+r
+H
+H
+H
+X
+H
+H
+H
+r
+"}
+(7,1,1) = {"
+r
+r
+r
+r
+E
+r
+r
+T
+T
+k
+"}
+(8,1,1) = {"
+k
+r
+r
+r
+T
+k
+T
+T
+r
+r
+"}
+(9,1,1) = {"
+r
+X
+r
+r
+T
+r
+a
+r
+f
+r
+"}
+(10,1,1) = {"
+i
+T
+r
+T
+T
+r
+r
+r
+m
+r
+"}

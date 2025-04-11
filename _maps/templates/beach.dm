@@ -33,7 +33,7 @@
 //10x10
 /obj/effect/landmark/map_load_mark/beach/small
 	name = "Small Beach Template"
-	templates = list("small_beach_cargo", "small_beach_effigy", "small_beach_leviathan", "small_beach_shack", "small_beach_tomb")
+	templates = list("small_beach_cargo", "small_beach_effigy", "small_beach_leviathan", "small_beach_shack", "small_beach_tomb", "small_beach_lobster_den", "small_beach_oasis")
 
 /datum/map_template/small_beach_cargo
 	name = "Arid Lost Cargo"
@@ -59,6 +59,17 @@
 	name = "Arid Tomb"
 	id = "small_beach_tomb"
 	mappath = "_maps/map_files/templates/beach/small_beach_tomb.dmm"
+
+/datum/map_template/small_beach_lobster_den
+	name = "Arid Lobster Den Small"
+	id = "small_beach_lobster_den"
+	mappath = "_maps/map_files/templates/beach/small_beach_lobster_den.dmm"
+
+/datum/map_template/small_beach_oasis
+	name = "Arid Oasis Small"
+	id = "small_beach_oasis"
+	mappath = "_maps/map_files/templates/beach/small_beach_oasis.dmm"
+
 
 //25x25
 /obj/effect/landmark/map_load_mark/beach/large
