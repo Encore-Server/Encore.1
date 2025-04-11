@@ -296,7 +296,7 @@
 	icon = 'icons/roguetown/weapons/64.dmi'
 	sharpness = IS_BLUNT
 	//dropshrink = 0.75
-	wlength = WLENGTH_LONG
+	wlength = WLENGTH_GREAT
 	w_class = WEIGHT_CLASS_BULKY
 	associated_skill = /datum/skill/combat/maces
 	smeltresult = /obj/item/ash
