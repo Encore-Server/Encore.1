@@ -365,7 +365,7 @@
 		water_top_overlay.dir = dir
 
 /turf/open/water/river/Initialize()
-	icon_state = "rock"
+	icon_state = "water"
 	.  = ..()
 
 /turf/open/water/river/Entered(atom/movable/AM, atom/oldLoc)

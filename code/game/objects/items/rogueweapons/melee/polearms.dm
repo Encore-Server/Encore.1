@@ -111,7 +111,7 @@
 	inhand_y_dimension = 64
 	bigboy = TRUE
 	gripsprite = TRUE
-	wlength = WLENGTH_GREAT
+	wlength = WLENGTH_LONG
 	w_class = WEIGHT_CLASS_BULKY
 	minstr = 8
 	max_blade_int = 100
@@ -146,7 +146,7 @@
 	inhand_y_dimension = 64
 	bigboy = TRUE
 	gripsprite = TRUE
-	wlength = WLENGTH_GREAT
+	wlength = WLENGTH_LONG
 	w_class = WEIGHT_CLASS_BULKY
 	minstr = 6
 	max_blade_int = 70

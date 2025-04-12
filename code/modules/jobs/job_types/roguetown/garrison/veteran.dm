@@ -286,11 +286,11 @@
 	H.set_blindness(0)
 	switch(weapon_choice)
 		if("Zweihander")
-			r_hand = /obj/item/rogueweapon/greatsword/grenz
+			r_hand = /obj/item/rogueweapon/greatsword/zwei
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Halberd")
-			r_hand = /obj/item/rogueweapon/halberd	
+			r_hand = /obj/item/rogueweapon/halberd/bardiche
 			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE) // SO, fun fact. The description of the grenzel halbardier says they specialize in axes, but they get no axe skill. Maybe this guy is where that rumor came from.
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 

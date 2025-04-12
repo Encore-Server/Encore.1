@@ -1,6 +1,6 @@
 /obj/structure/roguemachine/withdraw
-	name = "vomitorium"
-	desc = ""
+	name = "depositierre machina"
+	desc = "A complex series of valves and hissing machinery that swiftly delivers items of substance from a stockpile nearby."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "submit"
 	density = FALSE
@@ -41,7 +41,7 @@
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	playsound(loc, 'sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
-	var/contents = withdraw_tab.get_contents("VOMITORIUM", FALSE)
+	var/contents = withdraw_tab.get_contents("DEPOSTIERRE", FALSE)
 	var/datum/browser/popup = new(user, "VENDORTHING", "", 370, 800)
 	popup.set_content(contents)
 	popup.open()

@@ -102,7 +102,7 @@
 
 /obj/structure/flora/roguetree/wise
 	name = "sacred tree"
-	desc = "A blessed primordial tree, ancient beyond years. Said to be the very embodiment of the Tree Father himself--his very presence imbuing druids with wild energies."
+	desc = "A blessed primordial tree, ancient beyond years. Said to be the very embodiment of the Earth Mother herself--its very presence imbuing druids with wild energies."
 	icon_state = "mystical"
 	max_integrity = 400
 

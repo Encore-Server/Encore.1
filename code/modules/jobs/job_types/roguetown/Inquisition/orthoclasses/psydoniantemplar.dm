@@ -48,17 +48,23 @@
 
 		H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
+		C.passive_devotion_gain += 0.1
 		C.grant_spells_templar(H)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_arms) // All-Aspect Templar equivalent role, automatically get this.
 		H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 
 /datum/outfit/job/roguetown/katholikostemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Flail","Mace","Zweihander","Lucerne")
+	var/weapons = list("Bastard Sword","Zweihander","Flail","Mace","Spear")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Bastard Sword")
-			H.put_in_hands(new /obj/item/rogueweapon/sword/long(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/sword/long/exe(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		if("Zweihander")
+			H.put_in_hands(new /obj/item/rogueweapon/greatsword/zwei(H), TRUE)
+			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		if("Flail")
 			H.put_in_hands(new /obj/item/rogueweapon/flail(H), TRUE)
@@ -66,11 +72,6 @@
 		if("Mace")
 			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		if("Zweihander")
-			H.put_in_hands(new /obj/item/rogueweapon/greatsword/zwei(H), TRUE)
-			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-		if("Lucerne")
-			H.put_in_hands(new /obj/item/rogueweapon/eaglebeak/lucerne(H), TRUE)
-			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+		if("Spear")
+			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)

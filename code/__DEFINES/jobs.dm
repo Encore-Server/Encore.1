@@ -165,6 +165,7 @@
 #define LUNATIC		(1<<17)
 #define MIGRANT		(1<<18)
 #define BANDIT		(1<<19)
+#define	WITCH		(1<<20)
 
 #define YOUNGFOLK	(1<<6)
 
@@ -282,6 +283,7 @@
 #define JDO_PILGRIM 30.2
 #define JDO_MIGRANT 32.3
 #define JDO_BANDIT 31.3
+#define JDO_WITCH 31.4
 
 #define JDO_MERCENARY 31
 #define JDO_GRENZELHOFT 31.1
@@ -372,7 +374,8 @@
 	/datum/job/roguetown/adventurer,\
 	/datum/job/roguetown/mercenary/desert_rider,\
 	/datum/job/roguetown/mercenary/grenzelhoft,\
-	/datum/job/roguetown/bandit
+	/datum/job/roguetown/bandit, \
+	/datum/job/roguetown/witch
 
 #define GARRISON_ROLES \
 	/datum/job/roguetown/bogguardsman,\

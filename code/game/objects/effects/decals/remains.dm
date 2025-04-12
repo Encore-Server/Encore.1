@@ -11,7 +11,15 @@
 
 /obj/effect/decal/remains/human
 	desc = ""
-	icon_state = "remains"
+	icon = 'icons/roguetown/items/traps.dmi'//since this looks the same as traps, best to share icons so people have to actually examine bones 
+	icon_state = "boner1"//hehe
+
+/obj/effect/decal/remains/human/Initialize()
+	update_icon()
+	. = ..()
+
+/obj/effect/decal/remains/human/update_icon()
+	icon_state = "boner[rand(1, 3)]"
 
 /obj/effect/decal/remains/plasma
 	icon_state = "remainsplasma"

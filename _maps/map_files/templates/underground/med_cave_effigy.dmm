@@ -1,0 +1,680 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"em" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/item/candle/yellow/lit,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"et" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/obj/item/burial_shroud,
+/obj/item/burial_shroud{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"fx" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"fF" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/closet/crate/coffin,
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -8
+	},
+/obj/item/candle/yellow,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"gZ" = (
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ib" = (
+/obj/item/clothing/head/peaceflower{
+	pixel_x = 3
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"is" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"iB" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"kc" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kZ" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ln" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"mZ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"oC" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"oW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"sB" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/natural/bundle/stick,
+/obj/item/flint{
+	pixel_x = -1;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"tj" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/item/candle/yellow/lit,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tq" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tw" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tQ" = (
+/obj/item/candle/yellow/lit,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"tR" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/rogueweapon/shovel/small,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"uT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"vb" = (
+/obj/item/clothing/head/peaceflower{
+	pixel_x = 3
+	},
+/obj/item/clothing/head/peaceflower{
+	pixel_x = -6;
+	pixel_y = 14
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"vP" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
+"xs" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"yg" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"CA" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ED" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Fb" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Gm" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"GL" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/item/natural/cloth{
+	pixel_x = 7
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ia" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"If" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/item/clothing/head/peaceflower{
+	pixel_x = -6
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Il" = (
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"Is" = (
+/obj/structure/fluff/statue/knightalt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"IK" = (
+/obj/structure/fluff/statue/knightalt/r,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Jo" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"Ka" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/item/candle/yellow/lit,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"Lm" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Mz" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"NS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
+"Oy" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"Pa" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Rm" = (
+/obj/item/clothing/head/peaceflower{
+	pixel_x = -1
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"RS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"SK" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Uv" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/item/natural/cloth{
+	pixel_x = 7
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Vt" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/item/natural/cloth{
+	pixel_x = 7
+	},
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+"Wa" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/fluff/statue/femalestatue{
+	pixel_y = 6
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"Xz" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YK" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YX" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Zs" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/churchbrick,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+uM
+uM
+kA
+YX
+rN
+uM
+uM
+uM
+rN
+uM
+uM
+"}
+(2,1,1) = {"
+uM
+uM
+rN
+rN
+rN
+rN
+tq
+rN
+uM
+uM
+uM
+tq
+rN
+rN
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+rN
+rN
+uM
+tw
+oC
+SK
+rN
+Pa
+kc
+oC
+ED
+rN
+YB
+"}
+(4,1,1) = {"
+rN
+Pa
+rN
+uM
+uM
+vP
+vP
+Oy
+uM
+vP
+tw
+oC
+xs
+Pa
+rN
+"}
+(5,1,1) = {"
+gZ
+Pa
+tq
+vP
+sB
+et
+Fb
+oC
+oC
+vP
+rN
+oW
+Pa
+uM
+rN
+"}
+(6,1,1) = {"
+uM
+kc
+oC
+vP
+Jo
+GL
+tj
+Lm
+Gm
+vP
+IK
+Pa
+uM
+uM
+rN
+"}
+(7,1,1) = {"
+uM
+uM
+oW
+vP
+NS
+If
+vb
+Mz
+Ka
+Oy
+oC
+SK
+Pa
+rN
+rN
+"}
+(8,1,1) = {"
+uM
+mZ
+tq
+vP
+vP
+Il
+Wa
+fF
+iB
+Oy
+tQ
+oC
+ED
+uM
+uM
+"}
+(9,1,1) = {"
+Xz
+oC
+oC
+vP
+vP
+ib
+Rm
+is
+oC
+Oy
+CA
+yg
+uM
+uM
+kA
+"}
+(10,1,1) = {"
+rN
+YK
+oC
+uM
+Zs
+ln
+ln
+em
+Uv
+vP
+Is
+rN
+rN
+tq
+rN
+"}
+(11,1,1) = {"
+uM
+tw
+oC
+vP
+tR
+fx
+Vt
+fx
+RS
+vP
+rN
+Pa
+uT
+Ia
+ED
+"}
+(12,1,1) = {"
+uM
+rN
+uM
+vP
+vP
+vP
+Oy
+Oy
+vP
+vP
+Pa
+tw
+oC
+oC
+ED
+"}
+(13,1,1) = {"
+YX
+rN
+uM
+uM
+rN
+tw
+oC
+oC
+kZ
+uM
+Pa
+Pa
+yg
+yg
+rN
+"}
+(14,1,1) = {"
+YB
+rN
+uM
+rN
+rN
+uM
+yg
+yg
+rN
+uM
+uM
+uM
+kA
+rN
+uM
+"}
+(15,1,1) = {"
+uM
+rN
+rN
+rN
+uM
+uM
+uM
+YX
+kA
+rN
+rN
+rN
+rN
+kA
+uM
+"}
