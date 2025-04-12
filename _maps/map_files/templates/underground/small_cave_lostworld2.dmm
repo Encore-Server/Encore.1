@@ -1,0 +1,206 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"dx" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"eu" = (
+/obj/machinery/light/roguestreet{
+	dir = 1
+	},
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"iK" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1;
+	locked = 1;
+	desc = "It looks battered from the inside. Blood is seeping from below. It might be best to leave this one alone..."
+	},
+/obj/structure/bars/passage/steel,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"jX" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"kd" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"nV" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"qp" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"rf" = (
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"rj" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"wp" = (
+/obj/machinery/light/roguestreet,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yd" = (
+/obj/structure/flora/roguetree/evil,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cave)
+"EK" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"Ol" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"Pu" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/bars/pipe,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"RF" = (
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/under/cave)
+"Tx" = (
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+XV
+xx
+XV
+XV
+XV
+Yn
+XV
+Yn
+Yn
+"}
+(2,1,1) = {"
+XV
+XV
+XV
+XV
+XV
+qp
+qp
+Ol
+Ol
+Ol
+"}
+(3,1,1) = {"
+XV
+XV
+XV
+RF
+cR
+dx
+qp
+qp
+qp
+Ol
+"}
+(4,1,1) = {"
+Ol
+rj
+dx
+Pu
+kd
+nV
+rf
+cR
+Yn
+Ol
+"}
+(5,1,1) = {"
+Ol
+Ol
+RF
+RF
+RF
+RF
+RF
+kd
+dx
+Ol
+"}
+(6,1,1) = {"
+cR
+Ol
+RF
+Tx
+wp
+jX
+RF
+rj
+KE
+Ol
+"}
+(7,1,1) = {"
+kd
+nV
+RF
+Tx
+yd
+Tx
+iK
+nV
+cR
+Yn
+"}
+(8,1,1) = {"
+rj
+nV
+RF
+Tx
+eu
+jX
+RF
+rf
+cR
+Yn
+"}
+(9,1,1) = {"
+XV
+EK
+RF
+RF
+RF
+RF
+RF
+rf
+cR
+Yn
+"}
+(10,1,1) = {"
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+dx
+Yn
+Yn
+"}

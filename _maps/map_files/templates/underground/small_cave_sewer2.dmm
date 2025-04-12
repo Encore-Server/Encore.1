@@ -1,0 +1,233 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/town/sewer)
+"fP" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"hd" = (
+/turf/open/floor/rogue/metal,
+/area/rogue/under/town/sewer)
+"ib" = (
+/obj/structure/bars/pipe,
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"ip" = (
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kK" = (
+/obj/effect/decal/remains/bigrat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"lt" = (
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"nk" = (
+/obj/structure/roguerock,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/sewer)
+"nV" = (
+/turf/open/water/sewer,
+/area/rogue/under/town/sewer)
+"pe" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/town/sewer)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/town/sewer)
+"rE" = (
+/obj/structure/trap/spider,
+/turf/open/water/sewer,
+/area/rogue/under/town/sewer)
+"td" = (
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/sewer)
+"tk" = (
+/obj/item/flashlight/flare/torch/metal,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"we" = (
+/obj/effect/decal/remains/bigrat,
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ef" = (
+/obj/machinery/light/rogue/torchholder/c,
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Il" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Iy" = (
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"KE" = (
+/obj/item/natural/stone,
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/sewer)
+"NC" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Ol" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/sewer)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XV" = (
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Yt" = (
+/obj/structure/bars/pipe,
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+
+(1,1,1) = {"
+Yn
+fP
+xx
+lt
+Yn
+nV
+cR
+hd
+Ol
+cR
+"}
+(2,1,1) = {"
+Yn
+xx
+XV
+XV
+cR
+nV
+nV
+pe
+nV
+cR
+"}
+(3,1,1) = {"
+lt
+lt
+cR
+XV
+ib
+kK
+nV
+cR
+nV
+nV
+"}
+(4,1,1) = {"
+Yn
+cR
+cR
+NC
+Yt
+Il
+nV
+cR
+cR
+nV
+"}
+(5,1,1) = {"
+td
+NC
+XV
+Iy
+cR
+Ef
+tk
+Il
+nV
+nV
+"}
+(6,1,1) = {"
+nV
+cR
+nV
+nV
+pe
+XV
+XV
+XV
+KE
+cR
+"}
+(7,1,1) = {"
+cR
+cR
+cR
+XV
+cR
+XV
+cR
+nV
+XV
+nk
+"}
+(8,1,1) = {"
+ip
+RF
+cR
+Iy
+XV
+XV
+Yt
+we
+pe
+cR
+"}
+(9,1,1) = {"
+qp
+kd
+cR
+cR
+XV
+rf
+Yt
+XV
+NC
+cR
+"}
+(10,1,1) = {"
+Yn
+RF
+rE
+cR
+nV
+nV
+rf
+nV
+rf
+cR
+"}

@@ -69,3 +69,48 @@
 	name = "beartrap"
 	probby = 50
 	spawned = list(/obj/item/restraints/legcuffs/beartrap/armed/camouflage)
+
+/obj/effect/spawner/mobspawner
+	name = "mob spawner"
+	icon = 'icons/obj/hand_of_god_structures.dmi'
+	icon_state = "trap-cult"
+
+/obj/effect/spawner/mobspawner/Initialize(mapload)
+	..()
+	var/new_type = pick(list(
+		/mob/living/simple_animal/hostile/retaliate/rogue/chicken,
+		/mob/living/simple_animal/hostile/retaliate/rogue/goat,
+		/mob/living/simple_animal/hostile/retaliate/rogue/mudcrab,
+		/mob/living/simple_animal/hostile/retaliate/rogue/saiga,
+		/obj/effect/decal/remains/saiga))
+	new new_type(get_turf(src))
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/spawner/mobspawner/troll/Initialize(mapload)
+	..()
+	var/new_type = pick(list(
+		/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll,
+		/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll,
+		/obj/effect/decal/remains/saiga))
+	new new_type(get_turf(src))
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/spawner/mobspawner/skeleton/Initialize(mapload)
+	..()
+	var/new_type = pick(list(
+		/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+		/mob/living/simple_animal/hostile/rogue/skeleton/spear,
+		/mob/living/simple_animal/hostile/rogue/skeleton/axe,
+		/mob/living/simple_animal/hostile/rogue/skeleton,
+		/obj/effect/decal/remains/human))
+	new new_type(get_turf(src))
+	return INITIALIZE_HINT_QDEL
+
+/obj/effect/spawner/mobspawner/wolf/Initialize(mapload)
+	..()
+	var/new_type = pick(list(
+		/mob/living/simple_animal/hostile/retaliate/rogue/wolf,
+		/obj/effect/decal/remains/saiga))
+	new new_type(get_turf(src))
+	return INITIALIZE_HINT_QDEL
+

@@ -1,0 +1,220 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"eR" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mm" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mv" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rW" = (
+/turf/open/water/river{
+	icon_state = "rockwd";
+	dir = 1
+	},
+/area/rogue/under/cave)
+"wF" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"wK" = (
+/turf/open/water/river{
+	icon_state = "rockwd";
+	dir = 4
+	},
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Al" = (
+/obj/item/natural/rock,
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"GL" = (
+/turf/open/water/river{
+	icon_state = "rockwd";
+	dir = 8
+	},
+/area/rogue/under/cave)
+"GX" = (
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"MQ" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"PG" = (
+/obj/structure/flora/rogueshroom,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Xx" = (
+/turf/open/water/ocean,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+Yn
+Yn
+Yn
+kd
+Ol
+Yn
+"}
+(2,1,1) = {"
+Yn
+kd
+mm
+kd
+rf
+kd
+kd
+kd
+wF
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+kd
+MQ
+mv
+mv
+Xx
+Al
+kd
+XV
+"}
+(4,1,1) = {"
+Yn
+kd
+kd
+Xx
+mv
+wK
+rW
+Xx
+Xx
+XV
+"}
+(5,1,1) = {"
+kd
+kd
+kd
+kd
+Xx
+GX
+GL
+mv
+mv
+Xx
+"}
+(6,1,1) = {"
+kd
+Yn
+Yn
+kd
+Xx
+Xx
+Xx
+mv
+KE
+qp
+"}
+(7,1,1) = {"
+kd
+kd
+Yn
+Yn
+kd
+kd
+kd
+nV
+cR
+XV
+"}
+(8,1,1) = {"
+Yn
+kd
+kd
+XV
+eR
+MQ
+kd
+XV
+PG
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+kd
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+Yn
+kd
+Yn
+XV
+"}

@@ -1,0 +1,285 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aX" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"bm" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/town/basement)
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"cT" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lS" = (
+/obj/item/lockpick,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/basement)
+"mA" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"nj" = (
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"nV" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/basement)
+"oK" = (
+/obj/effect/roguerune{
+	name = "seventh seal";
+	desc = "The birthplace of a new wrong in the world."
+	},
+/obj/item/reagent_containers/powder/health,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ro" = (
+/obj/structure/table/church,
+/obj/item/clothing/neck/roguetown/skullamulet,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"rD" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/basement)
+"ts" = (
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"uB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/basement)
+"vh" = (
+/obj/structure/table/church/m,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yk" = (
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"CO" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Du" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"La" = (
+/obj/item/natural/bone,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"LV" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/town/basement)
+"LW" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/obj/item/natural/bone,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"MF" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"Nm" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/basement)
+"Qh" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"QN" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"RB" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/basement)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Tu" = (
+/obj/structure/trap/skeleton,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"UB" = (
+/obj/effect/decal/remains/saiga,
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"WV" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"ZW" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/church,
+/area/rogue/under/town/basement)
+
+(1,1,1) = {"
+Yn
+cT
+xx
+Yn
+kd
+kd
+cT
+Yn
+kd
+Qh
+"}
+(2,1,1) = {"
+Yn
+kd
+kd
+Du
+rf
+LV
+bm
+bm
+Yn
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+kd
+Qh
+LV
+LV
+aX
+RB
+bm
+bm
+"}
+(4,1,1) = {"
+Yn
+Yn
+XV
+CO
+ZW
+MF
+oK
+Ol
+LV
+LV
+"}
+(5,1,1) = {"
+cR
+Yn
+XV
+Yn
+LV
+ro
+LW
+Tu
+La
+lS
+"}
+(6,1,1) = {"
+XV
+XV
+cR
+Yn
+LV
+vh
+UB
+nj
+KE
+uB
+"}
+(7,1,1) = {"
+kd
+mA
+XV
+XV
+LV
+WV
+ts
+nV
+rD
+Ol
+"}
+(8,1,1) = {"
+kd
+kd
+kd
+QN
+LV
+LV
+yk
+LV
+LV
+Yn
+"}
+(9,1,1) = {"
+qp
+cT
+Yn
+RF
+Qh
+LV
+LV
+LV
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+Nm
+Yn
+kd
+Yn
+XV
+"}

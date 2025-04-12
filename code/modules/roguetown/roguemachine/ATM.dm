@@ -1,6 +1,6 @@
 /obj/structure/roguemachine/atm
-	name = "MEISTER"
-	desc = "Stores and withdraws currency for accounts managed by Etgard Keep."
+	name = "bankhead machina"
+	desc = "A woefully expensive Truetech machine used by nobles around the Goblet. A sliver of fractured air inside gives this object life, and its steam-powered guts work tirelessly to accurately and fairly serve as the face of your trusty bankers."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "atm"
 	density = FALSE
@@ -19,8 +19,8 @@
 			if(!HAS_TRAIT(H, TRAIT_COMMIE))
 				var/def_zone = "[(H.active_hand_index == 2) ? "r" : "l" ]_arm"
 				playsound(src, 'sound/items/beartrap.ogg', 100, TRUE)
-				to_chat(user, "<font color='red'>The meister craves my Noble blood!</font>")
-				loc.visible_message(span_warning("The meister snaps onto [H]'s arm!"))
+				to_chat(user, "<font color='red'>The automata reviles my Noble blood!</font>")
+				loc.visible_message(span_warning("The bankhead recepticle snaps onto [H]'s arm!"))
 				H.Stun(80)
 				H.apply_damage(50, BRUTE, def_zone)
 				H.emote("agony")
@@ -66,11 +66,8 @@
 			return
 		budget2change(coin_amt*mod, user, selection)
 	else
-		to_chat(user, span_warning("The machine bites my finger."))
-		if(!drilled)
-			icon_state = "atm-b"
-		H.flash_fullscreen("redflash3")
-		playsound(H, 'sound/combat/hits/bladed/genstab (1).ogg', 100, FALSE, -1)
+		to_chat(user, span_warning("The machine surveys my face, storing it in recognition."))
+		playsound(H, 'sound/misc/gold_license.ogg', 100, FALSE, -1)
 		SStreasury.create_bank_account(H)
 		if(H.mind)
 			var/datum/job/target_job = SSjob.GetJob(H.mind.assigned_role)
@@ -113,15 +110,15 @@
 				to_chat(user, "<font color='red'>This one has already been siphoned dry...</font>")
 				return
 			else
-				user.visible_message(span_warning("[user] is mounting the Crown onto the meister!"))
+				user.visible_message(span_warning("[user] is mounting the Crown onto the bankhead!"))
 				if(do_after(user, 50))
 					if(!drilling)
-						user.visible_message(span_warning("[user] mounts the Crown atop the meister!"))
+						user.visible_message(span_warning("[user] mounts the Crown atop the bankhead!"))
 						icon_state = "crown_meister"
 						drilling = TRUE
 						drill(src)
 						qdel(P)
-						message_admins("[usr.key] has applied the Crustacean to a MEISTER.")
+						message_admins("[usr.key] has applied the Crustacean to a bankhead.")
 						return
 		else
 			say("No account found. Submit your fingers for inspection.")
@@ -137,14 +134,14 @@
 		return
 	if(SStreasury.treasury_value <50)
 		new /obj/item/coveter(loc)
-		loc.visible_message(span_warning("The Crown grinds to a halt as the last of the treasury spills from the meister!"))
+		loc.visible_message(span_warning("The Crown grinds to a halt as the last of the treasury spills from the bankhead!"))
 		playsound(src, 'sound/misc/DrillDone.ogg', 70, TRUE)
 		icon_state = "atm"
 		drilling = FALSE
 		return
 	if(mammonsiphoned >499) // The cap variable for siphoning. 
 		new /obj/item/coveter(loc)
-		loc.visible_message(span_warning("Maximum withdrawal reached! The meister weeps."))
+		loc.visible_message(span_warning("Maximum withdrawal reached! The bankhead weeps."))
 		playsound(src, 'sound/misc/DrillDone.ogg', 70, TRUE)
 		icon_state = "meister_broken"
 		drilled = TRUE
@@ -154,7 +151,7 @@
 		loc.visible_message(span_warning("A horrible scraping sound emanates from the Crown as it does its work..."))
 		playsound(src, 'sound/misc/TheDrill.ogg', 70, TRUE)
 		spawn(100) // The time it takes to complete an interval. If you adjust this, please adjust the sound too. It's 'about' perfect at 100. Anything less It'll start overlapping.
-			loc.visible_message(span_warning("The meister spills its bounty!"))
+			loc.visible_message(span_warning("The bankhead spills its bounty!"))
 			SStreasury.treasury_value -= 50 // Takes from the treasury
 			mammonsiphoned += 50
 			budget2change(50, null, "SILVER")
@@ -164,7 +161,7 @@
 
 /obj/structure/roguemachine/atm/attack_right(mob/living/carbon/human/user)
 	if(drilling)
-		to_chat(user,"<font color='yellow'>I begin dismounting the Crown from the meister...</font>" )
+		to_chat(user,"<font color='yellow'>I begin dismounting the Crown from the bankhead...</font>" )
 		if(do_after(user, 30, src))
 			if(!drilling)
 				return
@@ -177,7 +174,7 @@
 
 /obj/item/coveter
 	name = "Covetous Crown"
-	desc = "A Crown which craves the brow of meisters. The Covetous Crab"
+	desc = "A Crown which craves the brow of bankheads. The Covetous Crab"
 	icon = 'icons/roguetown/items/misc.dmi'
 	icon_state = "crown_object"
 	force = 10

@@ -1,0 +1,196 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bp" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"jn" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/medical,
+/obj/structure/closet/crate/chest/crate,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"vn" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"HO" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/decal/remains/saiga,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Sh" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Zu" = (
+/obj/structure/handcart{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+kd
+XV
+Yn
+Yn
+Yn
+kd
+kd
+kd
+"}
+(2,1,1) = {"
+Yn
+kd
+kd
+kd
+rf
+Yn
+kd
+bp
+Yn
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+kd
+Yn
+kd
+nV
+cR
+qp
+XV
+XV
+"}
+(4,1,1) = {"
+Yn
+Yn
+bp
+Yn
+Yn
+jn
+XV
+cR
+kd
+Yn
+"}
+(5,1,1) = {"
+kd
+Yn
+kd
+HO
+Yn
+Zu
+Sh
+kd
+Yn
+Yn
+"}
+(6,1,1) = {"
+kd
+bp
+kd
+kd
+kd
+Ol
+kd
+kd
+KE
+qp
+"}
+(7,1,1) = {"
+Yn
+Yn
+kd
+kd
+kd
+Sh
+kd
+nV
+XV
+vn
+"}
+(8,1,1) = {"
+kd
+kd
+kd
+XV
+kd
+kd
+HO
+XV
+Yn
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+bp
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+bp
+XV
+kd
+xx
+Yn
+Yn
+kd
+Yn
+XV
+"}

@@ -1,6 +1,6 @@
 /obj/effect/sunlight
-	var/brightness = 10
-	light_power = 5
+	var/brightness = 30
+	light_power = 30
 	light_color = "#2f1313"
 	layer = BELOW_MOB_LAYER
 	icon = 'icons/effects/effects.dmi'
