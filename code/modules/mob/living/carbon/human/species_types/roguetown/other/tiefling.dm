@@ -140,5 +140,6 @@
 //For use in specifically lesser demon npcs found in hell or otherwise
 /datum/species/tieberian/demon
 	name = "Lesser Demon"
+	desc = "Demons! Progenitors of Hell, inhabitants far beneath the Firmament whose sole motivator is the conquering of our world. This race is not currently accessible in standard gameplay."
 	limbs_icon_m = 'icons/roguetown/mob/monster/demon_mt.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/monster/demon_fm.dmi'
