@@ -1,0 +1,378 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"cl" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"fX" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mU" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"oE" = (
+/obj/item/natural/stone,
+/obj/item/natural/stone{
+	pixel_y = 10;
+	pixel_x = 11
+	},
+/obj/item/natural/stone{
+	pixel_y = 2;
+	pixel_x = -7
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tz" = (
+/obj/structure/closet/dirthole/closed,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"ws" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"wu" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wQ" = (
+/turf/closed/mineral/random/rogue/high,
+/area/rogue/under/cave)
+"za" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"zr" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"EE" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"EY" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"Gy" = (
+/obj/structure/closet/crate/chest/crate{
+	name = "produce crate"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ir" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"NZ" = (
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Ot" = (
+/obj/item/natural/stone,
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Pr" = (
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"Rg" = (
+/obj/item/natural/thorn,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"RO" = (
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RY" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
+"Sc" = (
+/obj/structure/closet/dirthole/closed/loot,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Tn" = (
+/obj/item/rogueweapon/shovel/small,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"TA" = (
+/obj/item/natural/stone,
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"TM" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+rN
+uM
+uM
+TM
+RY
+TM
+ws
+TM
+rN
+rN
+rN
+rN
+rN
+uM
+uM
+"}
+(2,1,1) = {"
+uM
+uM
+TM
+TM
+TM
+TM
+uM
+uM
+uM
+uM
+uM
+uM
+rN
+rN
+uM
+"}
+(3,1,1) = {"
+TM
+TM
+TM
+EY
+uM
+uM
+uM
+uM
+uM
+EY
+EY
+EY
+uM
+rN
+YB
+"}
+(4,1,1) = {"
+EY
+rN
+EY
+EY
+EY
+uM
+Sc
+EE
+Pr
+zr
+wu
+wQ
+EY
+uM
+rN
+"}
+(5,1,1) = {"
+uM
+uM
+EY
+EY
+Tn
+cl
+za
+EY
+Pr
+tz
+ws
+wQ
+wQ
+EY
+rN
+"}
+(6,1,1) = {"
+RY
+RY
+RY
+RY
+Ot
+EY
+rN
+uM
+ac
+RY
+za
+EY
+uM
+uM
+TM
+"}
+(7,1,1) = {"
+RY
+Sc
+NZ
+RY
+RY
+RY
+Pr
+RY
+fX
+uM
+EY
+EY
+TM
+TM
+TM
+"}
+(8,1,1) = {"
+RY
+Pr
+Ir
+Pr
+Pr
+mU
+Pr
+RY
+wu
+Rg
+oE
+RO
+kA
+RY
+RY
+"}
+(9,1,1) = {"
+RY
+NZ
+Ot
+NZ
+RY
+RY
+Pr
+uM
+Gy
+uM
+uM
+uM
+rN
+RY
+RY
+"}
+(10,1,1) = {"
+RY
+RY
+RY
+RY
+RY
+TA
+NZ
+EY
+EY
+uM
+uM
+uM
+rN
+TM
+TM
+"}
+(11,1,1) = {"
+TM
+EY
+EY
+EY
+EY
+EY
+EY
+EY
+uM
+uM
+rN
+rN
+rN
+uM
+uM
+"}
+(12,1,1) = {"
+TM
+rN
+EY
+EY
+uM
+uM
+EY
+uM
+zr
+rN
+rN
+rN
+uM
+uM
+TM
+"}
+(13,1,1) = {"
+EY
+rN
+uM
+uM
+TM
+rN
+rN
+rN
+rN
+RY
+RY
+rN
+rN
+TM
+TM
+"}
+(14,1,1) = {"
+YB
+rN
+uM
+TM
+TM
+EY
+EY
+rN
+rN
+RY
+RY
+TM
+kA
+rN
+uM
+"}
+(15,1,1) = {"
+uM
+TM
+TM
+TM
+uM
+EY
+rN
+rN
+kA
+TM
+TM
+TM
+TM
+kA
+uM
+"}

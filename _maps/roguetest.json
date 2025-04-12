@@ -1,7 +1,8 @@
 {
-    "map_name": "Roguetest",
+    "map_name": "Debug Island",
     "map_path": "map_files/Roguetest",
     "map_file": "Roguetest.dmm",
+	"traits": [{"Name": "Central Domotan", "Up": true}, {"Down": true}],
 	"minetype": null,
 	"space_empty_levels": 0,
 	"space_ruin_levels": 0,

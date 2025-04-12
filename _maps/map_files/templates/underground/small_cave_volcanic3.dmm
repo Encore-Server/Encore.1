@@ -1,0 +1,176 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bb" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"cR" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"rx" = (
+/turf/open/lava/smooth,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Pi" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+KE
+Yn
+rx
+Yn
+Pi
+Ol
+kd
+"}
+(2,1,1) = {"
+Yn
+kd
+KE
+KE
+rf
+rx
+KE
+KE
+KE
+Yn
+"}
+(3,1,1) = {"
+Yn
+KE
+KE
+rx
+rx
+rx
+KE
+qp
+KE
+KE
+"}
+(4,1,1) = {"
+kd
+KE
+Yn
+Yn
+rx
+rx
+KE
+cR
+rx
+Yn
+"}
+(5,1,1) = {"
+kd
+KE
+Yn
+rx
+rx
+KE
+rf
+rx
+rx
+Yn
+"}
+(6,1,1) = {"
+kd
+KE
+rx
+rx
+rx
+KE
+Pi
+rx
+rf
+bb
+"}
+(7,1,1) = {"
+kd
+KE
+rx
+rx
+KE
+rf
+Pi
+nV
+KE
+XV
+"}
+(8,1,1) = {"
+kd
+KE
+KE
+KE
+KE
+Pi
+rx
+rx
+rx
+rx
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+KE
+rx
+rx
+rx
+Yn
+rx
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+bb
+KE
+Yn
+rx
+Yn
+XV
+"}

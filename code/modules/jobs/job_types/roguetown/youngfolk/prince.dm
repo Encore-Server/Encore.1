@@ -71,6 +71,11 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_spells_priest(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/rituos/miracle)
 	if(H.mind)
 		H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
 
@@ -122,6 +127,9 @@
 		H.change_stat("speed", 1)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_spells_priest(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/profane/miracle)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	if(H.mind)
 		H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao

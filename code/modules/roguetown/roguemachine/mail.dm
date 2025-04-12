@@ -1,8 +1,8 @@
 
 
 /obj/structure/roguemachine/mail
-	name = "HERMES"
-	desc = "Carrier zads have fallen severely out of fashion ever since the advent of this hydropneumatic mail system."
+	name = "speaking machina"
+	desc = "A Truetech machine of pipes and cleverly-placed aqueducts which ferry your mail to any one of its labelled constituents."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "mail"
 	density = FALSE
@@ -36,13 +36,13 @@
 	if(!coin_loaded)
 		to_chat(user, span_warning("The machine doesn't respond. It needs a coin."))
 		return
-	var/send2place = input(user, "Where to? (Person or #number)", "ROGUETOWN", null)
+	var/send2place = input(user, "Where to? (Person or #number)", "ENCORE", null)
 	if(!send2place)
 		return
-	var/sentfrom = input(user, "Who is this letter from?", "ROGUETOWN", null)
+	var/sentfrom = input(user, "Who is this letter from?", "ENCORE", null)
 	if(!sentfrom)
 		sentfrom = "Anonymous"
-	var/t = stripped_multiline_input("Write Your Letter", "ROGUETOWN", no_trim=TRUE)
+	var/t = stripped_multiline_input("Write Your Letter", "ENCORE", no_trim=TRUE)
 	if(t)
 		if(length(t) > 2000)
 			to_chat(user, span_warning("Too long. Try again."))
@@ -125,8 +125,8 @@
 		return
 	if(istype(P, /obj/item/paper) || istype(P, /obj/item/smallDelivery))
 		if(alert(user, "Send Mail?",,"YES","NO") == "YES")
-			var/send2place = input(user, "Where to? (Person or #number)", "ROGUETOWN", null)
-			var/sentfrom = input(user, "Who is this from?", "ROGUETOWN", null)
+			var/send2place = input(user, "Where to? (Person or #number)", "ENCORE", null)
+			var/sentfrom = input(user, "Who is this from?", "ENCORE", null)
 			if(!sentfrom)
 				sentfrom = "Anonymous"
 			if(findtext(send2place, "#"))
@@ -238,12 +238,12 @@
 		else
 			dat += "#[X.ournum] [capitalize(get_area_name(X))]<br>"
 
-	var/datum/browser/popup = new(user, "hermes_directory", "<center>HERMES DIRECTORY</center>", 387, 420)
+	var/datum/browser/popup = new(user, "hermes_directory", "<center>SPEAKER DIRECTORY</center>", 387, 420)
 	popup.set_content(dat)
 	popup.open(FALSE)
 
 /obj/item/roguemachine/mastermail
-	name = "MASTER OF MAILS"
+	name = "master of mails"
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "mailspecial"
 	pixel_y = 32

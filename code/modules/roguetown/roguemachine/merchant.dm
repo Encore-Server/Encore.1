@@ -109,8 +109,8 @@
 #define UPGRADE_ALCOHOLS	(1<<5)
 
 /obj/structure/roguemachine/merchantvend
-	name = "GOLDFACE"
-	desc = "Gilded tombs do worms enfold."
+	name = "mercantile machina"
+	desc = "A merchant's viewing piece into the world of riches and luxury."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "streetvendor1"
 	density = TRUE
