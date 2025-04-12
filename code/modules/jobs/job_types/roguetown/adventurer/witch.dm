@@ -67,12 +67,17 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/ritual, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/magic/holy, 3, TRUE)
 	H.change_stat("intelligence", 2) // Higher intelligence but poor combat stats.
 	H.change_stat("perception", 1)
 	H.change_stat("strength", -1)
 	H.change_stat("constitution", 2)
 	H.change_stat("endurance", -1)
 	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.grant_spells_priest(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Whilst you are weaker in these arts than other witches around you, remember that your ritual magic is frowned upon at best and hunted at worst."))
 
 /datum/advclass/witch/ritualist
@@ -96,17 +101,21 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/ritual, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 		H.change_stat("intelligence", 2)
 		H.change_stat("strength", -1)
 		H.change_stat("endurance", 2)
 	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.grant_spells_priest(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Remember that your ritual magic is frowned upon at best and hunted at worst. Be careful as to who witnesses it."))
 
 /datum/advclass/witch/heretic
 	name = "Heretic"
 	tutorial = "As a follower of forbidden gods, you have been branded a heretic by the Church. Whilst dangerous, your study brings you gifts of forbidden spells and miracles both. Let us hope you do not attract the attention of the Inquisition."
 	outfit = /datum/outfit/job/roguetown/witch/heretic
-	allowed_patrons = ALL_HERETIC_PATRONS
 
 	category_tags = list(CTAG_WITCH)
 
@@ -133,6 +142,7 @@
 	ADD_TRAIT(H, TRAIT_RITUALIST, TRAIT_GENERIC)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_priest(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Remember that your ritual magic is frowned upon at best and hunted at worst. Be careful as to who witnesses it."))
 
