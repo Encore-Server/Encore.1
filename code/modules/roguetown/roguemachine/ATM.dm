@@ -67,7 +67,7 @@
 		budget2change(coin_amt*mod, user, selection)
 	else
 		to_chat(user, span_warning("The machine surveys my face, storing it in recognition."))
-		playsound(H, 'sound/combat/misc/gold_license.ogg', 100, FALSE, -1)
+		playsound(H, 'sound/misc/gold_license.ogg', 100, FALSE, -1)
 		SStreasury.create_bank_account(H)
 		if(H.mind)
 			var/datum/job/target_job = SSjob.GetJob(H.mind.assigned_role)
