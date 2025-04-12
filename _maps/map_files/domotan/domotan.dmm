@@ -868,16 +868,12 @@
 	dir = 4;
 	icon_state = "border"
 	},
-/obj/effect/mist{
-	opacity = 1;
-	density = 1;
-	name = "prevailing mist";
-	desc = "You can't seem to get your way through!"
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
 	},
-/turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 1
-	},
+/obj/structure/fluff/railing/border,
+/turf/open/transparent/openspace,
 /area/rogue/under/town/basement/keep)
 "aPK" = (
 /obj/structure/stairs/stone{
@@ -6645,16 +6641,8 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/tavern)
 "gym" = (
-/obj/structure/fluff/railing/border{
-	dir = 1
-	},
-/obj/effect/mist{
-	opacity = 1;
-	density = 1;
-	name = "prevailing mist";
-	desc = "You can't seem to get your way through!"
-	},
-/turf/open/transparent/openspace,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "gyn" = (
 /obj/structure/bed/rogue,
@@ -15487,6 +15475,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
+"oHO" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement/keep)
 "oIh" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -15535,6 +15527,7 @@
 	icon_state = "border";
 	dir = 8
 	},
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "oJp" = (
@@ -124044,11 +124037,11 @@ dbx
 dbx
 qjW
 qjW
-oJi
+mJr
 oJi
 dpm
 mJr
-mJr
+oHO
 mJr
 mJr
 xXp
