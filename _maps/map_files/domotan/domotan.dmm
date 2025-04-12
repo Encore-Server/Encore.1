@@ -6128,6 +6128,7 @@
 /area/rogue/indoors/town/manor)
 "fWq" = (
 /obj/structure/rack/rogue,
+/obj/item/rogue/instrument/lute,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "fWB" = (
@@ -6846,13 +6847,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods)
-"gJL" = (
-/obj/structure/roguemachine/vendor/inn{
-	pixel_y = -25;
-	density = 0
-	},
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/town/tavern)
 "gJU" = (
 /obj/effect/spawner/trap,
 /turf/open/floor/rogue/dirt/road,
@@ -7386,15 +7380,12 @@
 	},
 /area/rogue/indoors/town/dwarfin)
 "hid" = (
-/obj/structure/bars/passage/shutter/open{
-	redstone_id = "tailor_shutter"
+/obj/structure/roguemachine/vendor/inn{
+	density = 0;
+	pixel_y = 45
 	},
-/obj/structure/roguemachine/vendor{
-	keycontrol = "tailor";
-	pixel_y = 32
-	},
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/town)
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/town/tavern)
 "hif" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/indoors)
@@ -10840,9 +10831,9 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
-/obj/item/needle,
-/obj/item/needle{
-	pixel_x = 10
+/obj/structure/roguemachine/vendor{
+	keycontrol = "tailor";
+	pixel_y = 14
 	},
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town)
@@ -13918,6 +13909,10 @@
 "noN" = (
 /obj/item/clothing/cloak/apron/waist/brown,
 /obj/structure/table/wood,
+/obj/item/needle{
+	pixel_x = 10
+	},
+/obj/item/needle,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/town)
 "noT" = (
@@ -15292,11 +15287,12 @@
 /turf/open/water/ocean/deep,
 /area/rogue/under/cavewet)
 "oAM" = (
-/obj/structure/roguemachine/stockpile{
-	pixel_y = 27
-	},
 /obj/effect/decal/cobbleedge{
 	dir = 1
+	},
+/obj/structure/roguemachine/stockpile{
+	pixel_y = 27;
+	pixel_x = 16
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
@@ -15448,13 +15444,17 @@
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/shelter/town)
 "oFK" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
 /obj/structure/roguemachine/atm{
 	mammonsiphoned = 250;
 	pixel_y = 27;
-	pixel_x = 10
-	},
-/obj/effect/decal/cobbleedge{
-	dir = 1
+	pixel_x = 2
 	},
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/town)
@@ -19076,7 +19076,6 @@
 	pixel_y = 37;
 	pixel_x = 5
 	},
-/obj/item/rogue/instrument/lute,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/town/tavern)
 "sjC" = (
@@ -125123,7 +125122,7 @@ anB
 anB
 eLL
 eLL
-oFK
+xfp
 vce
 aYx
 pHd
@@ -125637,7 +125636,7 @@ dFu
 hrt
 lCv
 eLL
-xfp
+tqp
 olg
 aKA
 kcp
@@ -125894,7 +125893,7 @@ eLL
 eLL
 eLL
 eLL
-qYy
+oFK
 jBy
 jBy
 fbS
@@ -185782,7 +185781,7 @@ tYM
 hhL
 iKH
 sit
-vEl
+hid
 vEl
 vEl
 lBB
@@ -186041,7 +186040,7 @@ iKH
 cSA
 vEl
 vEl
-gJL
+vEl
 iKH
 xgG
 lvm
@@ -186818,7 +186817,7 @@ aHx
 lvm
 ikR
 ikR
-hid
+gnJ
 ikR
 nOk
 oBr
