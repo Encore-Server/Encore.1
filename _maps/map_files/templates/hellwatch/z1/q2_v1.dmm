@@ -1,27 +1,90 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"dg" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = -6;
+	pixel_y = 15
+	},
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qa" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qy" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
+	name = "hell troll"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
 "CW" = (
-/turf/open/floor/rogue/naturalstone,
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Gv" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Gw" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JX" = (
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "KC" = (
-/turf/open/floor/rogue/metal/barograte,
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"PQ" = (
+/obj/structure/mirror,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UH" = (
+/turf/open/water/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UQ" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/soap,
+/obj/item/soap,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UY" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 
 (1,1,1) = {"
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+Gw
+Gw
 KC
 CW
 CW
-KC
-KC
 CW
-KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
 "}
 (2,1,1) = {"
 CW
@@ -31,14 +94,14 @@ CW
 CW
 CW
 CW
-KC
 CW
 CW
-KC
 CW
-KC
 CW
-KC
+CW
+CW
+CW
+CW
 "}
 (3,1,1) = {"
 CW
@@ -48,14 +111,14 @@ CW
 CW
 CW
 CW
-KC
 CW
-KC
-KC
 CW
-KC
 CW
-KC
+CW
+CW
+CW
+CW
+CW
 "}
 (4,1,1) = {"
 CW
@@ -66,13 +129,13 @@ CW
 CW
 CW
 CW
-KC
-KC
 CW
 CW
-KC
 CW
-KC
+CW
+CW
+CW
+CW
 "}
 (5,1,1) = {"
 CW
@@ -89,109 +152,109 @@ CW
 CW
 CW
 CW
-KC
+CW
 "}
 (6,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+KC
 KC
 KC
 KC
 CW
 CW
-KC
+CW
+CW
+CW
+CW
+CW
+CW
 "}
 (7,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
+UH
+UH
+UH
 KC
 CW
-KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
 "}
 (8,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+dg
+qa
+qa
 KC
 KC
 KC
 CW
 CW
-KC
+CW
+CW
+CW
+CW
 "}
 (9,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
+PQ
+qy
+JX
+JX
+UY
+KC
+CW
+CW
+CW
+CW
+CW
+CW
 "}
 (10,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+UQ
+Gv
+JX
+KC
+KC
 KC
 CW
 CW
 CW
-KC
 CW
-KC
+CW
+CW
 "}
 (11,1,1) = {"
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-KC
 KC
 KC
 KC
 KC
 KC
 CW
-KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
 "}
 (12,1,1) = {"
 CW
@@ -206,9 +269,9 @@ CW
 CW
 CW
 CW
-KC
 CW
-KC
+CW
+CW
 "}
 (13,1,1) = {"
 CW
@@ -225,7 +288,7 @@ CW
 CW
 CW
 CW
-KC
+CW
 "}
 (14,1,1) = {"
 CW
@@ -242,22 +305,22 @@ CW
 CW
 CW
 CW
-KC
+CW
 "}
 (15,1,1) = {"
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
 "}

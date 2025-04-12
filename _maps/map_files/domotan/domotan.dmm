@@ -496,7 +496,7 @@
 	dir = 1;
 	icon_state = "borderfall"
 	},
-/turf/closed/wall/mineral/rogue/stonebrick,
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town/manor)
 "awY" = (
 /obj/structure/fluff/signage{
@@ -868,16 +868,12 @@
 	dir = 4;
 	icon_state = "border"
 	},
-/obj/effect/mist{
-	opacity = 1;
-	density = 1;
-	name = "prevailing mist";
-	desc = "You can't seem to get your way through!"
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
 	},
-/turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 1
-	},
+/obj/structure/fluff/railing/border,
+/turf/open/transparent/openspace,
 /area/rogue/under/town/basement/keep)
 "aPK" = (
 /obj/structure/stairs/stone{
@@ -3346,7 +3342,7 @@
 /area/rogue/indoors/town/church)
 "dia" = (
 /obj/machinery/light/rogue/torchholder/r,
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "dit" = (
 /obj/structure/bed/rogue/inn/wool,
@@ -3944,7 +3940,7 @@
 	dir = 1;
 	icon_state = "borderfall"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "dRT" = (
 /obj/effect/decal/mossy{
@@ -5065,7 +5061,7 @@
 	icon_state = "borderfall"
 	},
 /obj/machinery/light/rogue/firebowl/church,
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "eTb" = (
 /obj/item/reagent_containers/glass/bucket,
@@ -5558,6 +5554,10 @@
 "fuY" = (
 /turf/open/floor/carpet/red,
 /area/rogue/under/cavewet)
+"fvu" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/town/manor)
 "fvL" = (
 /turf/open/floor/rogue/blocks/stonered,
 /area/rogue/indoors/shelter/town)
@@ -6207,6 +6207,9 @@
 	},
 /turf/open/floor/rogue/sand,
 /area/rogue/indoors/shelter/town)
+"gaS" = (
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/town/manor)
 "gbl" = (
 /obj/structure/bars/passage/shutter/open{
 	redstone_id = "armourer_shutter"
@@ -6638,16 +6641,8 @@
 /turf/open/transparent/openspace,
 /area/rogue/indoors/town/tavern)
 "gym" = (
-/obj/structure/fluff/railing/border{
-	dir = 1
-	},
-/obj/effect/mist{
-	opacity = 1;
-	density = 1;
-	name = "prevailing mist";
-	desc = "You can't seem to get your way through!"
-	},
-/turf/open/transparent/openspace,
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "gyn" = (
 /obj/structure/bed/rogue,
@@ -7021,8 +7016,8 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/town/roofs/keep)
 "gSc" = (
-/obj/structure/fluff/statue/knight/r,
-/turf/open/floor/rogue/blocks/paving,
+/obj/structure/fluff/statue/knightalt/r,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "gSj" = (
 /obj/structure/fluff/railing/border,
@@ -7833,7 +7828,7 @@
 /area/rogue/indoors/shelter/town)
 "hEA" = (
 /obj/machinery/light/rogue/torchholder/l,
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "hEO" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
@@ -10379,7 +10374,7 @@
 	dir = 10;
 	icon_state = "borderfall"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "kic" = (
 /obj/structure/mineral_door/wood/fancywood{
@@ -11841,9 +11836,7 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/exposed/town/keep)
 "lwG" = (
-/obj/structure/chair/wood/rogue,
-/obj/structure/roguemachine/scomm/l,
-/turf/open/floor/rogue/ruinedwood,
+/turf/closed/wall/mineral/rogue/decostone,
 /area/rogue/indoors/town/manor)
 "lxQ" = (
 /obj/structure/bed/rogue/shit{
@@ -12824,7 +12817,7 @@
 	pixel_x = -7;
 	redstone_id = "thronegate"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "mqn" = (
 /obj/structure/fluff/railing/border{
@@ -14306,6 +14299,10 @@
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town)
+"nFm" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/town/manor)
 "nFy" = (
 /obj/structure/flora/newleaf,
 /obj/machinery/light/rogue/torchholder/r,
@@ -15478,6 +15475,10 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/rogue/indoors/town/manor)
+"oHO" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/town/basement/keep)
 "oIh" = (
 /obj/effect/decal/cobbleedge{
 	dir = 10;
@@ -15526,6 +15527,7 @@
 	icon_state = "border";
 	dir = 8
 	},
+/obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "oJp" = (
@@ -16304,7 +16306,7 @@
 /obj/effect/landmark/events/testportal{
 	aportalloc = "manor"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "pAC" = (
 /obj/structure/fluff/railing/wood,
@@ -16405,7 +16407,7 @@
 /area/rogue/indoors/shelter/woods)
 "pGn" = (
 /obj/effect/landmark/start/manorguardsman,
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "pGH" = (
 /obj/structure/flora/newtree,
@@ -16622,8 +16624,8 @@
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/rtfield)
 "pSz" = (
-/obj/structure/fluff/statue/knight,
-/turf/open/floor/rogue/blocks/paving,
+/obj/structure/fluff/statue/knightalt,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "pSP" = (
 /obj/structure/chair/wood/rogue{
@@ -19324,7 +19326,7 @@
 	dir = 6;
 	icon_state = "borderfall"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "suF" = (
 /turf/open/floor/rogue/sand,
@@ -19852,7 +19854,7 @@
 /area/rogue/indoors/town/magician)
 "sQU" = (
 /obj/effect/landmark/start/knight,
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "sRc" = (
 /obj/structure/fluff/railing/border{
@@ -20277,7 +20279,7 @@
 	dir = 8;
 	icon_state = "borderfall"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "toB" = (
 /obj/structure/fluff/railing/border,
@@ -20650,7 +20652,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement/keep)
 "tCy" = (
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "tCz" = (
 /obj/structure/stairs/stone,
@@ -21711,7 +21713,7 @@
 /obj/structure/roguemachine/mail{
 	mailtag = "Throne Room"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/churchrough,
 /area/rogue/indoors/town/manor)
 "uER" = (
 /obj/structure/fluff/railing/border{
@@ -23285,6 +23287,10 @@
 "wkd" = (
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/beach)
+"wkj" = (
+/obj/structure/roguemachine/scomm,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/town/manor)
 "wkm" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -24974,7 +24980,7 @@
 	dir = 4;
 	icon_state = "borderfall"
 	},
-/turf/open/floor/rogue/blocks/paving,
+/turf/open/floor/rogue/church,
 /area/rogue/indoors/town/manor)
 "xUB" = (
 /obj/structure/fluff/railing/border{
@@ -124031,11 +124037,11 @@ dbx
 dbx
 qjW
 qjW
-oJi
+mJr
 oJi
 dpm
 mJr
-mJr
+oHO
 mJr
 mJr
 xXp
@@ -187507,19 +187513,19 @@ lvm
 lvm
 lvm
 lvm
-jkg
+lwG
 xIv
-jkg
-jkg
-jkg
-jkg
-jkg
+lwG
+lwG
+lwG
+lwG
+lwG
 oAy
-jkg
-jkg
+lwG
+lwG
 oAy
-jkg
-jkg
+lwG
+lwG
 nbQ
 jkg
 jkg
@@ -187766,7 +187772,7 @@ lvm
 lvm
 qXP
 tuS
-lwG
+rJL
 sus
 dRS
 pSz
@@ -187775,7 +187781,7 @@ tCy
 pSz
 mqi
 tCy
-jkg
+lwG
 syY
 pob
 crx
@@ -188021,8 +188027,8 @@ lvm
 lvm
 lvm
 lvm
-tJE
-tuS
+lwG
+wkj
 rJL
 sus
 dRS
@@ -188032,7 +188038,7 @@ tCy
 tCy
 tCy
 tCy
-jkg
+lwG
 rNl
 vLe
 vzS
@@ -188284,12 +188290,12 @@ dPc
 vKI
 dRS
 tCy
-jkg
+lwG
 tCy
 tCy
-jkg
+lwG
 tCy
-jkg
+lwG
 jyu
 vLe
 bKJ
@@ -188540,13 +188546,13 @@ kgv
 lJW
 too
 suE
-tCy
-hEA
-tCy
-tCy
-hEA
-tCy
-jkg
+gaS
+fvu
+gaS
+gaS
+fvu
+gaS
+lwG
 tcD
 xuA
 xZg
@@ -188796,14 +188802,14 @@ wgq
 kgv
 lJW
 eSS
-tCy
+gaS
 pAm
 sQU
-tCy
+gaS
 pGn
 pGn
-tCy
-jkg
+gaS
+lwG
 tcD
 vLe
 fcc
@@ -189049,7 +189055,7 @@ lvm
 lvm
 lvm
 lvm
-jkg
+lwG
 djF
 soP
 uEa
@@ -189306,7 +189312,7 @@ lvm
 lvm
 lvm
 lvm
-jkg
+lwG
 tmY
 ryX
 hFj
@@ -189563,7 +189569,7 @@ lvm
 lvm
 lvm
 lvm
-jkg
+lwG
 djF
 wQQ
 fez
@@ -189824,14 +189830,14 @@ qXP
 kgv
 lJW
 eSS
-tCy
-tCy
+gaS
+gaS
 sQU
-tCy
+gaS
 pGn
 pGn
-tCy
-jkg
+gaS
+lwG
 tcD
 pob
 crx
@@ -190082,13 +190088,13 @@ kgv
 lJW
 xTo
 khQ
-tCy
-dia
-tCy
-tCy
-dia
-tCy
-jkg
+gaS
+nFm
+gaS
+gaS
+nFm
+gaS
+lwG
 tcD
 mQu
 kPF
@@ -190340,12 +190346,12 @@ csY
 rzI
 dRS
 tCy
-jkg
+lwG
 uEf
 tCy
-jkg
+lwG
 tCy
-jkg
+lwG
 oKU
 pob
 iOU
@@ -190602,7 +190608,7 @@ tCy
 tCy
 tCy
 tCy
-jkg
+lwG
 tcD
 pob
 nzZ
@@ -190859,7 +190865,7 @@ tCy
 gSc
 dia
 tCy
-jkg
+lwG
 czO
 pob
 jkg
@@ -191105,19 +191111,19 @@ lvm
 lvm
 lvm
 lvm
-jkg
+lwG
 vWB
-jkg
-jkg
+lwG
+lwG
 awN
-jkg
-jkg
+lwG
+lwG
 mvu
-jkg
-jkg
+lwG
+lwG
 mvu
-jkg
-jkg
+lwG
+lwG
 kic
 jkg
 sAF
@@ -191367,7 +191373,7 @@ khb
 khb
 khb
 khb
-jkg
+lwG
 vPt
 vPt
 vPt

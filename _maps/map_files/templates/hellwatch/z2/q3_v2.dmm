@@ -1,263 +1,594 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/pelt,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"aF" = (
+/obj/machinery/light/rogue/smelter,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bs" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bU" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 1;
+	name = "North-West Tower"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ce" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"cD" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eO" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fx" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"gw" = (
+/obj/machinery/light/rogue/smelter,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"iI" = (
+/obj/machinery/light/rogue/smelter/great,
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kF" = (
+/obj/structure/bars/tough,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kJ" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kT" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"od" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pg" = (
+/obj/structure/fluff/grindwheel,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"po" = (
+/obj/structure/fluff/statue/tdummy,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pz" = (
+/obj/structure/bars/grille{
+	max_integrity = 5000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sW" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vx" = (
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xh" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zs" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"AX" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BO" = (
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cp" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cx" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_courtyard_gate_2";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
 "CW" = (
-/turf/open/floor/rogue/naturalstone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"FP" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/ingot/iron,
+/obj/item/ingot/iron,
+/obj/item/ingot/copper,
+/obj/item/ingot/copper,
+/obj/item/ingot/bronze{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/ingot/bronze{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/clothing/neck/roguetown/psicross/golerkanh,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"GB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hp" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hz" = (
+/obj/machinery/anvil/crafted,
+/obj/item/rogueweapon/sword/iron,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Id" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ie" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/rogueweapon/hoe,
+/obj/item/rogueweapon/sickle,
+/obj/item/rogueweapon/pitchfork,
+/obj/item/rogueweapon/thresher,
+/obj/item/storage/roguebag,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JQ" = (
+/obj/structure/lever{
+	name = "gate lever";
+	redstone_id = "church_keep_basement_gate";
+	pixel_y = 22
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JZ" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_basement_gate";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Kp" = (
+/obj/effect/decal/mossy,
+/turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/churchfort/basement)
 "KC" = (
-/turf/open/floor/rogue/metal/barograte,
+/obj/machinery/light/rogue/forge,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KT" = (
+/obj/structure/composter/full,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KV" = (
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LJ" = (
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ns" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NJ" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qw" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "North-West Tower"
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qx" = (
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"So" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Sw" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SI" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ST" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"TC" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Us" = (
+/obj/structure/mineral_door/bars{
+	locked = 1;
+	lockid = "blacksmith"
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Vo" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"VA" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wc" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"WX" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"WZ" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XE" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XP" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZF" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZG" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_basement_gate";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZY" = (
+/obj/structure/table/wood/bar,
+/obj/item/rogueweapon/hammer,
+/obj/item/rogueweapon/tongs,
+/obj/item/rogueweapon/shield/wood,
+/obj/item/rogueweapon/spear/bonespear,
+/obj/item/rogueweapon/stoneaxe/boneaxe,
+/obj/item/rogueweapon/mace/woodclub,
+/obj/item/rogueweapon/mace/spiked,
+/turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 
 (1,1,1) = {"
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
+od
+od
+od
+od
+SI
+bs
+SI
+SI
+SI
+bs
+bs
+SI
+SI
+od
+od
 "}
 (2,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+od
+SI
+bs
+SI
+SI
+FP
+gw
+aF
+pg
+Cp
+Hp
+KV
+SI
+SI
+SI
 "}
 (3,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-KC
-CW
-KC
-CW
-CW
-CW
+od
+SI
+Cp
+Cp
+kF
+Cp
+Cp
+LJ
+Cp
+cD
+KV
+po
+bs
+ad
+WX
 "}
 (4,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-KC
-CW
-CW
-KC
-CW
-CW
+od
+bs
+iI
+LJ
+Us
+Cp
+ZF
+LJ
+Cp
+KV
+KV
+KV
+SI
+Vo
+zs
 "}
 (5,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-KC
-CW
-CW
-KC
-CW
-CW
+od
+bs
+LJ
+LJ
+kF
+Cp
+LJ
+LJ
+oB
+Cp
+KV
+po
+SI
+bs
+bs
 "}
 (6,1,1) = {"
+od
+SI
+SI
+SI
+bs
+ZY
+kJ
+Hz
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-KC
-KC
-CW
-CW
-CW
+Cp
+KV
+KV
+fx
+Wc
+xh
 "}
 (7,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+od
+od
+od
+od
+SI
+KV
+Cp
+KV
+KV
+KV
+KV
+KV
+bU
+Cp
+LJ
 "}
 (8,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-KC
-KC
-CW
-CW
-CW
+od
+od
+od
+od
+bs
+Sw
+KV
+So
+KV
+KV
+KV
+KV
+fx
+LJ
+Cp
 "}
 (9,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-KC
-CW
-CW
+od
+od
+od
+od
+bs
+VA
+NJ
+KV
+KV
+KV
+NJ
+KV
+SI
+SI
+pz
 "}
 (10,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-KC
-KC
-CW
-CW
-CW
+od
+od
+od
+od
+SI
+SI
+SI
+fx
+Qw
+fx
+bs
+bs
+SI
+Kp
+BO
 "}
 (11,1,1) = {"
-KC
+od
+od
+od
+od
+od
+od
+SI
+LJ
+LJ
+Cp
+bs
+Ie
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+AX
 "}
 (12,1,1) = {"
-KC
+od
+od
+od
+od
+od
+od
+SI
+ce
+Cp
+LJ
+pz
+KT
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-CW
-KC
-KC
 CW
 CW
 "}
 (13,1,1) = {"
-KC
+od
+od
+od
+SI
+vx
+SI
+SI
+JQ
+TC
+LJ
+SI
 CW
 CW
 CW
-CW
-CW
-CW
-KC
-CW
-CW
-KC
-CW
-KC
-CW
-CW
+XP
 "}
 (14,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-KC
-KC
-CW
-KC
-CW
-CW
+od
+od
+od
+SI
+Qx
+ST
+ZG
+Ns
+XE
+Id
+Cx
+XP
+eO
+XP
+XP
 "}
 (15,1,1) = {"
-KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-KC
-CW
-CW
-KC
-CW
-CW
+od
+od
+od
+vx
+WZ
+ST
+JZ
+sW
+kT
+LJ
+Cx
+XP
+XP
+XP
+GB
 "}
