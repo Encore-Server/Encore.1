@@ -77,6 +77,7 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_priest(H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Whilst you are weaker in these arts than other witches around you, remember that your ritual magic is frowned upon at best and hunted at worst."))
 
@@ -109,6 +110,7 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_priest(H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/lightningbolt)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Remember that your ritual magic is frowned upon at best and hunted at worst. Be careful as to who witnesses it."))
 
@@ -143,6 +145,7 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_spells_priest(H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Remember that your ritual magic is frowned upon at best and hunted at worst. Be careful as to who witnesses it."))
 
