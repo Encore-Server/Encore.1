@@ -146,6 +146,7 @@
 	C.grant_spells_priest(H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/bloodlightning)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	to_chat(H, span_danger("Remember that your ritual magic is frowned upon at best and hunted at worst. Be careful as to who witnesses it."))
 
