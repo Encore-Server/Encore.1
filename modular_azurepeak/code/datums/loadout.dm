@@ -4,18 +4,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	var/name = "Parent loadout datum"
 	var/desc
 	var/path
-	var/customitem			//autoset on new if null
-	var/list/ckeywhitelist
 
-/datum/loadout_item/New()
-	if(isnull(customitem))
-		if(ckeywhitelist)
-			customitem = TRUE
-
-/datum/loadout_item/proc/donator_ckey_check(key)
-	if(ckeywhitelist && ckeywhitelist.Find(key))
-		return TRUE
-	return
 
 //HATS
 /datum/loadout_item/shalal
@@ -65,18 +54,6 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/hood
 	name = "Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood
-
-/datum/loadout_item/hood
-	name = "Papakha"
-	path = /obj/item/clothing/head/roguetown/papakha
-
-/datum/loadout_item/flathat
-	name = "Flat hat"
-	path = /obj/item/clothing/head/roguetown/flathat
-
-/datum/loadout_item/nun_hat
-	name = "Nun's veil"
-	path = /obj/item/clothing/head/roguetown/nun
 
 //CLOAKS
 /datum/loadout_item/tabard
@@ -290,14 +267,3 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/vocals
 	name = "Vocalist's Talisman"
 	path = /obj/item/rogue/instrument/vocals
-
-/datum/loadout_item/ring
-	name ="Gold ring"
-	path = /obj/item/clothing/ring/gold
-
-
-
-
-
-
-// Custom Items Here. Just add ckeywhitelist = list to the standard format

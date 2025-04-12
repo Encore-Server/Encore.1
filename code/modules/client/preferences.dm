@@ -159,8 +159,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/char_accent = "No accent"
 
 	var/datum/loadout_item/loadout
-	var/datum/loadout_item/loadout2
-	var/datum/loadout_item/loadout3
 
 	var/flavortext
 
@@ -428,8 +426,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			dat += "<br><b>OOC Notes:</b> <a href='?_src_=prefs;preference=ooc_notes;task=input'>Change</a>"
 
 			dat += "<br><b>Loadout Item:</b> <a href='?_src_=prefs;preference=loadout_item;task=input'>[loadout ? loadout.name : "None"]</a>"
-			dat += "<br><b>Loadout Item:</b> <a href='?_src_=prefs;preference=loadout_item;task=input'>[loadout ? loadout2.name : "None"]</a>"
-			dat += "<br><b>Loadout Item:</b> <a href='?_src_=prefs;preference=loadout_item;task=input'>[loadout ? loadout3.name : "None"]</a>"
+			dat += "</td>"
 
 
 			dat += "</tr></table>"
@@ -1681,9 +1678,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var/list/loadouts_available = list("None")
 					for (var/path as anything in GLOB.loadout_items)
 						var/datum/loadout_item/loadout = GLOB.loadout_items[path]
-						var/customitem = loadout.customitem
-						if(customitem && !loadout.customitem_ckey_check(user.ckey))
-							continue
 						if (!loadout.name)
 							continue
 						loadouts_available[loadout.name] = loadout
@@ -1698,49 +1692,8 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							to_chat(user, "<font color='yellow'><b>[loadout.name]</b></font>")
 							if(loadout.desc)
 								to_chat(user, "[loadout.desc]")
-				if("loadout_item2")
-					var/list/loadouts_available = list("None")
-					for (var/path as anything in GLOB.loadout_items)
-						var/datum/loadout_item/loadout2 = GLOB.loadout_items[path]
-						var/customitem = loadout2.customitem
-						if(customitem && !loadout.donator_ckey_check(user.ckey))
-							continue
-						if (!loadout2.name)
-							continue
-						loadouts_available[loadout2.name] = loadout2
-
-					var/loadout_input2 = input(user, "Choose your character's loadout item. RMB a tree, statue or clock to collect. I cannot stress this enough. YOU DON'T SPAWN WITH THESE. YOU HAVE TO MANUALLY PICK THEM UP!!", "LOADOUT THAT YOU GET FROM A TREE OR STATUE OR CLOCK") as null|anything in loadouts_available
-					if(loadout_input2)
-						if(loadout_input2 == "None")
-							loadout2 = null
-							to_chat(user, "Who needs stuff anyway?")
-						else
-							loadout2 = loadouts_available[loadout_input2]
-							to_chat(user, "<font color='yellow'><b>[loadout2.name]</b></font>")
-							if(loadout2.desc)
-								to_chat(user, "[loadout2.desc]")
-				if("loadout_item3")
-					var/list/loadouts_available = list("None")
-					for (var/path as anything in GLOB.loadout_items)
-						var/datum/loadout_item/loadout3 = GLOB.loadout_items[path]
-						var/customitem = loadout3.customitem
-						if(customitem && !loadout.donator_ckey_check(user.ckey))
-							continue
-						if (!loadout3.name)
-							continue
-						loadouts_available[loadout3.name] = loadout3
-
-					var/loadout_input3 = input(user, "Choose your character's loadout item. RMB a tree, statue or clock to collect. I cannot stress this enough. YOU DON'T SPAWN WITH THESE. YOU HAVE TO MANUALLY PICK THEM UP!!", "LOADOUT THAT YOU GET FROM A TREE OR STATUE OR CLOCK") as null|anything in loadouts_available
-					if(loadout_input3)
-						if(loadout_input3 == "None")
-							loadout3 = null
-							to_chat(user, "Who needs stuff anyway?")
-						else
-							loadout3 = loadouts_available[loadout_input3]
-							to_chat(user, "<font color='yellow'><b>[loadout3.name]</b></font>")
-							if(loadout3.desc)
-								to_chat(user, "[loadout3.desc]")
 				if("species")
+
 					var/list/crap = list()
 					for(var/A in GLOB.roundstart_races)
 						var/datum/species/bla = GLOB.species_list[A]
