@@ -15,14 +15,13 @@
 	/datum/species/tabaxi,\
 	/datum/species/lupian,\
 	/datum/species/demihuman,\
-	/datum/species/tieberian,\
 
 #define RACES_TOLERATED \
+	/datum/species/tieberian,\
 
 //Shunned races are strictly foreign or antagonistic
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
-	/datum/species/tieberian,\
 
 
 //Races we are currently not using
