@@ -1,9 +1,0 @@
-author: "kyres1, The Lancer"
-
-delete-after: True
-
-changes:
-  - rscadd: "Adds new sprites for the gate in the throneroom."
-  - rscadd: "Remaps the throne room slightly to fit new colors."
-  - rscadd: "Adds a new description for the lesser demon race."
-  - rscadd: "Adds new machines."

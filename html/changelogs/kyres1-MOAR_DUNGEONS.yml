@@ -1,7 +1,0 @@
-author: "kyres1"
-
-delete-after: True
-
-changes:
-  - rscadd: "Adds forty-eight new underground template spawners."
-  - rscdel: "Adds randomized mob spawners for mapping."
