@@ -1,0 +1,7 @@
+
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - rscadd: "Adds a new title screen."
