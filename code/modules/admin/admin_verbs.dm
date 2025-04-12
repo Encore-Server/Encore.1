@@ -30,7 +30,9 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/delete_player_book,
 	/client/proc/amend_player_book,
 	/client/proc/pull_book_file_names,
-	/client/proc/adminwho
+	/client/proc/adminwho,
+	/client/proc/admin_set_time,
+	/client/proc/admin_add_time
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
@@ -265,7 +267,9 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/client/proc/toggle_nuke,
 	/client/proc/cmd_display_del_log,
 	/client/proc/toggle_combo_hud,
-	/client/proc/debug_huds
+	/client/proc/debug_huds,
+	/client/proc/admin_set_time,
+	/client/proc/admin_add_time
 	))
 GLOBAL_PROTECT(admin_verbs_hideable)
 
@@ -859,3 +863,21 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		message_admins("[src] has amended [book_title]'s [amend_type] to [amend_text]")
 	else
 		to_chat(src, span_notice("Either the book file doesn't exist or you have failed to type something in properly (you can look up the file name by the verb 'database book file names'"))
+
+/client/proc/admin_add_time()
+	set category = "Admin"
+	set name = "Time: Add Time"
+	set desc= ""
+	var/add_time_value = input("Add Time: 0-864000 (negative number to go back in time)") as null|num
+	if(add_time_value)
+		add_time(add_time_value)		
+		world << "[ckey] has set the time to [station_time_timestamp()]."	
+
+/client/proc/admin_set_time()
+	set category = "Admin"
+	set name = "Time: Set Time"
+	set desc= ""
+	var/set_time_value = input("Set Time: 0-864000") as null|num
+	if(set_time_value)
+		set_time(set_time_value)		
+		world << "[ckey] has set the time to [station_time_timestamp()]."	
