@@ -15,15 +15,14 @@
 	/datum/species/tabaxi,\
 	/datum/species/lupian,\
 	/datum/species/demihuman,\
+	/datum/species/tieberian,\
 
 #define RACES_TOLERATED \
-/datum/species/tieberian,\
 
 //Shunned races are strictly foreign or antagonistic
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
 	/datum/species/tieberian,\
-	/datum/species/tieberian/demon,\
 
 
 //Races we are currently not using
@@ -31,6 +30,7 @@
 	/datum/species/goblinp,\
 	/datum/species/kobold\
 	/datum/species/anthromorphsmall,\
+	/datum/species/tieberian/demon,\
 
 #define RACES_ALL_KINDS list(RACES_RESPECTED)//temporary because I can not be assed to categorize over 150 entries rn
 
