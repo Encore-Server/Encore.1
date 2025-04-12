@@ -71,7 +71,7 @@
 #endif
 
 #ifdef TRAVISTESTING
-// #define TESTING
+#define TESTING
 #endif
 
 // A reasonable number of maximum overlays an object needs
