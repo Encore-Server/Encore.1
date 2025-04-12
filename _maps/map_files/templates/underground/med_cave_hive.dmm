@@ -1,9 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"bK" = (
-/obj/structure/trap/spider,
-/mob/living/simple_animal/hostile/retaliate/rogue/spider,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
 "hi" = (
 /obj/structure/trap/spider,
 /turf/open/floor/rogue/naturalstone,
@@ -16,17 +11,7 @@
 /obj/item/natural/stone,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
-"lw" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/retaliate/rogue/spider,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
 "rN" = (
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
-"rW" = (
-/obj/structure/spider/stickyweb,
-/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
 "uM" = (
@@ -183,8 +168,8 @@ hU
 hU
 uM
 uM
-rW
-bK
+hU
+hi
 uM
 hU
 hi
@@ -200,8 +185,8 @@ uM
 hU
 hU
 uM
-lw
-bK
+hU
+hi
 uM
 hU
 hi
