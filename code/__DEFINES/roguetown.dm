@@ -23,6 +23,7 @@
 #define RACES_SHUNNED \
 	/datum/species/halforc,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 
 
 //Races we are currently not using
@@ -66,6 +67,7 @@
 	/datum/species/elf/wood,\
 	/datum/species/dwarf/mountain,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
@@ -88,6 +90,7 @@
 	/datum/species/elf/dark,\
 	/datum/species/elf/wood,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\
@@ -104,6 +107,7 @@
 #define HUMANLIKE_RACE_TYPES list(\
 	/datum/species/human/northern,\
 	/datum/species/tieberian,\
+	/datum/species/tieberian/demon,\
 	/datum/species/aasimar,\
 	/datum/species/lizardfolk,\
 	/datum/species/lupian,\

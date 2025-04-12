@@ -1,0 +1,218 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/effect/mist{
+	opacity = 1
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nb" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"uY" = (
+/obj/item/natural/rock/gold,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"uZ" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"vv" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ct" = (
+/obj/item/natural/rock/gold,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"FR" = (
+/obj/effect/spawner/mobspawner/troll,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Kt" = (
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"KB" = (
+/obj/item/natural/rock/gold,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qf" = (
+/obj/effect/spawner/mobspawner/troll,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Su" = (
+/obj/effect/decal/remains/saiga,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XJ" = (
+/obj/effect/mist{
+	opacity = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+kd
+XV
+Yn
+Yn
+Yn
+kd
+Ol
+kd
+"}
+(2,1,1) = {"
+Yn
+xx
+kd
+kd
+rf
+kd
+kd
+Su
+XV
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+kd
+Yn
+Yn
+Yn
+uZ
+qp
+kd
+Yn
+"}
+(4,1,1) = {"
+Yn
+Yn
+Yn
+Yn
+Qf
+Yn
+Yn
+Yn
+vv
+XJ
+"}
+(5,1,1) = {"
+Yn
+KB
+Qf
+Yn
+kd
+Ct
+kd
+Yn
+cR
+Yn
+"}
+(6,1,1) = {"
+Yn
+Ol
+kd
+Yn
+nb
+kd
+kd
+Qf
+KE
+Yn
+"}
+(7,1,1) = {"
+Yn
+Yn
+XV
+Yn
+cR
+Yn
+Qf
+nV
+XV
+Yn
+"}
+(8,1,1) = {"
+kd
+Yn
+FR
+XV
+kd
+Yn
+kd
+uY
+Yn
+Yn
+"}
+(9,1,1) = {"
+qp
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+Yn
+"}
+(10,1,1) = {"
+XV
+RF
+Kt
+RF
+xx
+kd
+Yn
+Yn
+Yn
+XV
+"}

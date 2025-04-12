@@ -1,9 +1,7 @@
 
 /datum/advclass/puritan
 	name = "Witch Hunter"
-	tutorial = "Witch Hunters belong to a special sect of the One-God Church that believe all magyk \
-	use is inherently sinful. They are extremely devoted to hunting necromancers and often preach \
-	to magyk users to end their sinful ways."
+	tutorial = "Witch Hunters are extremists, unaffiliated with the Church, that believe all arcane magic use is inherently sinful. They are extremely devoted to hunting necromancers, witches, and rogue mages that could fall to heretical sorcery, and often preach to arcane magic users to end their sinful ways. The actions of these independent agents is a cause for hot debate among the Katholikos. Some decry them as unsanctioned vigilantees - a thorn in the side of the Inquisition - while others suggest their work is an overall gain to the cause, lightening the burden of hunting heresy. You must walk a careful line, as you do not have the same political leeway afforded to the Katholikos."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/adventurer/puritan
@@ -11,7 +9,7 @@
 	category_tags = list(CTAG_ADVENTURER)
 
 /datum/outfit/job/roguetown/adventurer/puritan
-	allowed_patrons = list(/datum/patron/all_aspect)
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh, /datum/patron/all_aspect, /datum/faith/godless)
 
 /datum/outfit/job/roguetown/adventurer/puritan/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -59,3 +57,9 @@
 
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
+
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
+	C.grant_spells_templar(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All non-combat church roles get Miracle, plus Inquisitor.
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

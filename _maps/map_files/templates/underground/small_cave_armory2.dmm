@@ -1,0 +1,255 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bN" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"cR" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"fa" = (
+/obj/structure/rack/rogue,
+/obj/structure/rack/rogue/shelf,
+/obj/item/quiver/bolts,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"fp" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kY" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"lq" = (
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"lu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/rack/rogue,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"pJ" = (
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/suit/roguetown/armor/leather,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"wI" = (
+/obj/item/clothing/suit/roguetown/armor/leather/heavy/belted,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Bk" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Ds" = (
+/obj/item/clothing/suit/roguetown/armor/gambeson,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"DD" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Mo" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Np" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/quiver/arrows,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 4;
+	locked = 1;
+	lockid = "garrison"
+	},
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Ow" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/natural/bowstring,
+/obj/item/clothing/suit/roguetown/armor/leather/hide,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Sy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Tl" = (
+/obj/structure/rack/rogue,
+/obj/structure/rack/rogue/shelf,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Uk" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+kd
+Yn
+Yn
+RF
+kd
+kd
+"}
+(2,1,1) = {"
+Yn
+xx
+Yn
+Mo
+rf
+kd
+kd
+kd
+XV
+Yn
+"}
+(3,1,1) = {"
+Yn
+kd
+Yn
+cR
+cR
+cR
+cR
+cR
+Mo
+Yn
+"}
+(4,1,1) = {"
+kd
+kd
+Yn
+cR
+lu
+wI
+Ds
+cR
+kY
+fp
+"}
+(5,1,1) = {"
+xx
+cR
+cR
+cR
+Bk
+rT
+bN
+cR
+kY
+kd
+"}
+(6,1,1) = {"
+kd
+cR
+Tl
+Sy
+Uk
+Np
+cR
+cR
+KE
+qp
+"}
+(7,1,1) = {"
+kd
+cR
+fa
+Ow
+lq
+cR
+cR
+nV
+pJ
+XV
+"}
+(8,1,1) = {"
+kd
+cR
+cR
+cR
+Ol
+cR
+cR
+XV
+DD
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+kd
+kd
+kd
+Mo
+kd
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+Mo
+Yn
+Yn
+xx
+Yn
+Yn
+kd
+Yn
+XV
+"}

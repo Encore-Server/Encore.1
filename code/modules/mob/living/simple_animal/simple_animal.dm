@@ -62,6 +62,8 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	///Temperature effect.
 	var/minbodytemp = 250
 	var/maxbodytemp = 350
+	//Resistance flags, same function as for objects
+	var/resistance_flags
 
 	///Healable by medical stacks? Defaults to yes.
 	var/healable = 1

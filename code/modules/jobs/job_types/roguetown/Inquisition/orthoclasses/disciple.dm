@@ -38,5 +38,7 @@
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_arms) // All-Aspect Templar equivalent role, automatically get this.
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
