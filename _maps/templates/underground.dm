@@ -110,6 +110,16 @@
 	id = "small_cave_goblin_den"
 	mappath = "_maps/map_files/templates/underground/small_cave_goblin_den.dmm"
 
+/datum/map_template/small_cave_temptation
+	name = "Cave Temptation Small"
+	id = "small_cave_temptation"
+	mappath = "_maps/map_files/templates/underground/small_cave_temptation.dmm"
+
+/datum/map_template/small_cave_trollden
+	name = "Cave Troll Den Small"
+	id = "small_cave_trollden"
+	mappath = "_maps/map_files/templates/underground/small_cave_trollden.dmm"
+
 /datum/map_template/small_cave_deposit_scarce
 	name = "Small Cave Deposit Scarce"
 	id = "small_cave_deposit_scarce"
