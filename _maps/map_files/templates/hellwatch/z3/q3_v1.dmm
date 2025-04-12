@@ -1,9 +1,461 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aD" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/suit/roguetown/armor/plate/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/iron,
+/obj/item/clothing/neck/roguetown/chaincoif/iron,
+/obj/item/clothing/neck/roguetown/chaincoif/iron,
+/obj/item/clothing/neck/roguetown/chaincoif/iron,
+/obj/item/clothing/neck/roguetown/chaincoif/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"aU" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/structure/fluff/walldeco/katholikos_banner/visires{
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bb" = (
+/obj/structure/fluff/walldeco/katholikos_banner/akan{
+	pixel_x = -31
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"be" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dh" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dn" = (
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eu" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eZ" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fo" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fA" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"gZ" = (
+/obj/structure/mineral_door/wood/donjon{
+	name = "Armoury";
+	dir = 1
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ia" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 4;
+	name = "Knight Commander's Office"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"id" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jf" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jh" = (
+/obj/structure/bookcase/random/archive,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kI" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"lq" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mf" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mD" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 9
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mF" = (
+/obj/structure/bars/passage/shutter{
+	max_integrity = 9000;
+	redstone_id = "ruined_tower_armoury_gate"
+	},
+/turf/open/floor/rogue/metal,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mG" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nf" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nI" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"py" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pD" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pH" = (
+/obj/structure/table/church,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qb" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"rF" = (
+/obj/structure/bookcase/random/archive,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"su" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sJ" = (
+/obj/structure/table/church/m,
+/obj/item/reagent_containers/glass/cup/steel{
+	pixel_y = 12
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sY" = (
+/obj/structure/roguewindow/openclose{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ty" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"uy" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/churchfort/basement)
+"uG" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vq" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xv" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yf" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yE" = (
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"AX" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Bd" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/gloves/roguetown/plate/iron,
+/obj/item/clothing/gloves/roguetown/plate/iron,
+/obj/item/clothing/gloves/roguetown/plate/iron,
+/obj/item/clothing/gloves/roguetown/plate/iron,
+/obj/item/clothing/shoes/roguetown/boots/armor/iron,
+/obj/item/clothing/shoes/roguetown/boots/armor/iron,
+/obj/item/clothing/shoes/roguetown/boots/armor/iron,
+/obj/item/clothing/shoes/roguetown/boots/armor/iron,
+/obj/item/clothing/under/roguetown/platelegs/iron,
+/obj/item/clothing/under/roguetown/platelegs/iron,
+/obj/item/clothing/under/roguetown/platelegs/iron,
+/obj/item/clothing/under/roguetown/platelegs/iron,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BN" = (
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ci" = (
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cn" = (
+/obj/structure/rack/rogue,
+/obj/item/gwstrap,
+/obj/item/gwstrap,
+/obj/item/gwstrap,
+/obj/effect/decal/cleanable/cobweb,
+/obj/item/rogueweapon/mace/goden,
+/obj/item/rogueweapon/greatsword/zwei,
+/obj/item/rogueweapon/eaglebeak/lucerne,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
 "CW" = (
-/turf/open/floor/rogue/naturalstone,
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Fh" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Fw" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"GZ" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hd" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/paper{
+	name = "knight-commander's recount #3";
+	info = "I've sent the Templars to Old Doma, and from there unto home, or their next deployments. I stand alone, the final living soul in this fortress now. Perhaps now is not the time to wax poetic, but I believe I'm not sure what awaits me after this. For so long I've led these Templars against the tides of Hell. Still, there are more places in the Goblet to serve. I've taken stock of our supplies and left an acceptable amount, should the fortress need to be re-manned. I've sealed the Armoury, and will take the key with me. The last thing the countryside needs is a group of bandits raiding this place and making off with the equipment that we wielded righteously against Hell's fires. Finally, I spoke with the cleric of Visires before they were dismissed. The underground tunnel to our holdings in Mount Miracle proper has been collapsed, utterly. There should be no threat of daemonic forces coming through it, not unless - Elementals forbid - they manage to amass in frightening numbers within Mount Miracle..."
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hv" = (
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HC" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HQ" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/book/rogue/bibble,
+/obj/item/clothing/neck/roguetown/psicross/silver{
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HZ" = (
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"IE" = (
+/obj/structure/bookcase/random/archive,
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JZ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Kc" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "KC" = (
-/turf/open/floor/rogue/metal/barograte,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ln" = (
+/obj/structure/fluff/psycross/copper{
+	pixel_y = 24
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Lo" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LO" = (
+/obj/structure/table/wood{
+	icon_state = "longtable_mid";
+	dir = 1
+	},
+/obj/item/paper{
+	name = "knight-commander's recount #1";
+	info = "The Seculton Gate is complete, and has been sealed. With that, our long vigil at the gates of Hell can come to an end. The Katholikos has sent word that we are to leave the fortress as soon as possible and report for reassignment - as such a militant force on Domotan Island is no longer required - but they have also decreed that the fortress should be sealed and left in a state ready to resume holding a standing force at short notice. Should the Seculton Gate give way, or should Hell resume its march, we will answer the call of the Royal House once more and lend our aid. Whatever petty political differences there may be, Hell is bigger than all of us. We must remember this. Hell cannot win. It must not."
+	},
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LW" = (
+/obj/structure/fluff/littlebanners/elemental,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Mh" = (
+/obj/structure/chair/wood/rogue/chair3,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Nz" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NA" = (
+/obj/structure/chair/bench/church/mid,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qq" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Rz" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SK" = (
+/obj/structure/chair/wood/rogue/fancy,
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Tj" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Uo" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"VE" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/carpet/royalblack,
+/area/rogue/outdoors/woods/churchfort/basement)
+"VN" = (
+/obj/machinery/light/rogue/torchholder/c,
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wx" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Zp" = (
+/obj/structure/roguewindow/openclose{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZD" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZI" = (
+/obj/structure/chair/bench/church/r,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZT" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/paper{
+	info = "I've informed the Templars. They're ecstatic that the fight is over and that they may return to their families. The night was full of merriment, a rare chance for them all to drink and relax, and a well-earned victory. Today, when they had all finished packing their belongings, we shared a solemn moment of silence and prayer for the valiant fighters that we lost along the way. May the Elementals carry their brave spirits unto Heaven, as we inter their flesh in the Mother Gani's soil.";
+	name = "knight-commander's recount #2"
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZU" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 
 (1,1,1) = {"
@@ -11,253 +463,253 @@ KC
 KC
 KC
 KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
-KC
+ty
+CW
+CW
+ty
+ty
+CW
+CW
+ty
+ty
 KC
 KC
 "}
 (2,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+KC
+KC
+ty
+jh
+uG
+dn
+dn
+dn
+Rz
+dn
+ty
 CW
 CW
 "}
 (3,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
+KC
+KC
 KC
 CW
-KC
-CW
-KC
-CW
-CW
-CW
+rF
+BN
+dn
+AX
+Mh
+Hd
+dn
+ty
+Cn
+mG
 "}
 (4,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
 KC
-CW
 KC
-CW
-CW
 KC
+ty
+IE
+su
+dn
+dn
+Mh
+ZT
+dn
 CW
-CW
+aD
+Wx
 "}
 (5,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
 KC
-CW
 KC
-CW
-CW
 KC
+ty
 CW
-CW
+ty
+ty
+nI
+dn
+dn
+AX
+ty
+Bd
+Wx
 "}
 (6,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
-CW
 KC
 KC
 CW
-CW
-CW
+dn
+Rz
+dn
+py
+jf
+dn
+dn
+ty
+ty
+mF
 "}
 (7,1,1) = {"
 KC
+KC
+KC
+KC
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+BN
+HQ
+BN
+dn
+kI
+qb
+dn
+gZ
+Uo
+Kc
 "}
 (8,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
 KC
 KC
 CW
+SK
+LO
+fo
+mD
+GZ
+pD
+dn
 CW
-CW
+ZD
+yE
 "}
 (9,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
+uy
 KC
+ty
+VE
+nf
+BN
+dh
+ZU
+dn
+dn
 CW
-CW
+ty
+Zp
 "}
 (10,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
 KC
 KC
 KC
+ty
+ty
+ty
+ty
+ia
 CW
 CW
-CW
+ty
+ty
+Ci
+Ci
 "}
 (11,1,1) = {"
 KC
+ty
 CW
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+ty
+HC
+bb
+HZ
+Tj
+Lo
+ty
+Ci
+LW
+Ci
+Ci
 "}
 (12,1,1) = {"
 KC
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-CW
-CW
-KC
-CW
-CW
+ty
+xv
+aU
+Fh
+HZ
+Hv
+HZ
+yf
+yE
+sY
+Ci
+LW
+Ci
+Ci
 "}
 (13,1,1) = {"
 KC
+ty
+lq
+eZ
+mf
+HZ
+NA
+Nz
+yf
+yE
 CW
-CW
-CW
-CW
-CW
-CW
-KC
-KC
-KC
-KC
-KC
-KC
-CW
-CW
+Ci
+LW
+Ci
+Ci
 "}
 (14,1,1) = {"
 KC
 CW
+VN
+pH
+eu
+id
+ZI
+be
+Tj
+fA
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-KC
-CW
-CW
+Ci
+LW
+Ci
+Ci
 "}
 (15,1,1) = {"
 KC
 CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
-CW
+Ln
+sJ
+JZ
+HZ
+Fw
+Qq
+vq
+yE
+sY
+Ci
+LW
+Ci
+Ci
 "}
