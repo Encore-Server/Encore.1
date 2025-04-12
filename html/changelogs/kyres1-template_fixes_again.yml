@@ -1,0 +1,8 @@
+
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - bugfix: "Corrects missing paths for the troll dens and lava pits underground. This caused templates to not spawn correctly."
+  - bugfix: "Fixes some of the cave templates being completely blocked in by rocks. Oops."
