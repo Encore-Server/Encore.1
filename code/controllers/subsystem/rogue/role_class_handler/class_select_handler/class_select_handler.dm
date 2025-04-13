@@ -214,6 +214,7 @@
 		return
 	//Opening tags and empty head
 	var/data = {"
+	<!DOCTYPE html>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<html>
@@ -267,6 +268,7 @@
 /datum/class_select_handler/proc/class_select_slop()
 
 	var/data = {"
+	<!DOCTYPE html>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<html>

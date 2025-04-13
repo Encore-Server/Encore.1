@@ -386,6 +386,7 @@
 		banhtml += stickyban_gethtml(ckey)
 
 	var/html = {"
+	<!DOCTYPE html>
 	<head>
 		<title>Sticky Bans</title>
 	</head>
