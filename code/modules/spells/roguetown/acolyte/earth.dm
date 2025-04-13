@@ -534,23 +534,23 @@ var/static/list/druid_forms = list(
 	return TRUE
 
 /obj/effect/proc_holder/spell/self/dendor_shapeshift/proc/handle_death(mob/living/shape) // I don't know why this is throwing an error but it seems harmless?
-	// SIGNAL_HANDLER
+	SIGNAL_HANDLER
 
-	// var/obj/shapeshift_holder/H = locate() in shape
-	// if(!H)
-	// 	return
+	var/obj/shapeshift_holder/H = locate() in shape
+	if(!H)
+		return
 	
-	// // Set cooldown before restoration
-	// charge_counter = 0
-	// charge_max = death_cooldown  // Set to long cooldown
-	// recharging = TRUE  // Ensure recharging is set to true
-	// START_PROCESSING(SSfastprocess, src)  // Ensure the spell is being processed
+	// Set cooldown before restoration
+	charge_counter = 0
+	charge_max = death_cooldown  // Set to long cooldown
+	recharging = TRUE  // Ensure recharging is set to true
+	START_PROCESSING(SSfastprocess, src)  // Ensure the spell is being processed
 	
-	// if(action)
-	// 	action.UpdateButtonIcon()  // Update the button to show recharging
+	if(action)
+		action.UpdateButtonIcon()  // Update the button to show recharging
 	
-	// // Restore form and notify
-	// to_chat(H.stored, span_warning("The strain of your form's death leaves you unable to shapeshift again for some time!"))
-	// do_restore(shape)
+	// Restore form and notify
+	to_chat(H.stored, span_warning("The strain of your form's death leaves you unable to shapeshift again for some time!"))
+	do_restore(shape)
 	
-	// UnregisterSignal(shape, COMSIG_LIVING_DEATH)
+	UnregisterSignal(shape, COMSIG_LIVING_DEATH)
