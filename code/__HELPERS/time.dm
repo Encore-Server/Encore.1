@@ -1,3 +1,11 @@
+GLOBAL_VAR_INIT(tod, FALSE)
+GLOBAL_VAR_INIT(forecast, FALSE)
+GLOBAL_VAR_INIT(todoverride, FALSE)
+GLOBAL_VAR_INIT(dayspassed, FALSE)
+
+var/tickRate = 60
+var/currentStationTime = 0
+
 //Returns the world time in english
 /proc/worldtime2text()
 	return gameTimestamp("hh:mm:ss", world.time)
@@ -11,32 +19,42 @@
 		wtime = world.time
 	return time2text(wtime - GLOB.timezoneOffset, format)
 
-/proc/station_time(display_only = FALSE, wtime=world.time)
-	return ((((wtime - SSticker.round_start_time) * SSticker.station_time_rate_multiplier) + SSticker.gametime_offset) % 864000) - (display_only? GLOB.timezoneOffset : 0)
+// Do not call this function elsewhere, it is called in the time subsystem, if you call this then you will screw up time tick rate
+/proc/process_station_time()
+	if(currentStationTime >= MIDNIGHT_ROLLOVER)
+		currentStationTime = 0
+	currentStationTime += tickRate
 
-/proc/station_time_timestamp(format = "hh:mm:ss", wtime)
-	return time2text(station_time(TRUE, wtime), format)
+/proc/station_time()
+	return currentStationTime
 
-GLOBAL_VAR_INIT(tod, FALSE)
-GLOBAL_VAR_INIT(forecast, FALSE)
-GLOBAL_VAR_INIT(todoverride, FALSE)
-GLOBAL_VAR_INIT(dayspassed, FALSE)
+/proc/station_time_timestamp(format = "hh:mm:ss")
+	return time2text(currentStationTime, format)
+
+/proc/add_time(addtime)
+	currentStationTime += addtime	
+
+/proc/set_time(settime)
+	currentStationTime = settime	
 
 /proc/settod()
-	var/time = station_time()
 	var/oldtod = GLOB.tod
-	if(time >= SSnightshift.nightshift_start_time || time <= SSnightshift.nightshift_dawn_start)
-		GLOB.tod = "night"
-//		testing("set [tod]")
-	if(time > SSnightshift.nightshift_dawn_start && time <= SSnightshift.nightshift_day_start)
+	if(currentStationTime > SSnightshift.nightshift_dawn_start && currentStationTime <= SSnightshift.nightshift_day_start)
 		GLOB.tod = "dawn"
-//		testing("set [tod]")
-	if(time > SSnightshift.nightshift_day_start && time <= SSnightshift.nightshift_dusk_start)
+		tickRate = 60
+
+	if(currentStationTime > SSnightshift.nightshift_day_start && currentStationTime <= SSnightshift.nightshift_dusk_start)
 		GLOB.tod = "day"
-//		testing("set [tod]")
-	if(time > SSnightshift.nightshift_dusk_start && time <= SSnightshift.nightshift_start_time)
+		tickRate = 20
+		
+	if(currentStationTime > SSnightshift.nightshift_dusk_start && currentStationTime <= SSnightshift.nightshift_start_time)
 		GLOB.tod = "dusk"
-//		testing("set [tod]")
+		tickRate = 60
+		
+	if(currentStationTime > SSnightshift.nightshift_start_time && currentStationTime <= SSnightshift.nightshift_end_time)
+		GLOB.tod = "night"
+		tickRate = 20	
+
 	if(GLOB.todoverride)
 		GLOB.tod = GLOB.todoverride
 	if((GLOB.tod != oldtod) && !GLOB.todoverride && (GLOB.dayspassed>1)) //weather check on tod changes

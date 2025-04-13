@@ -27,7 +27,7 @@
 		to_chat(usr, span_warning("I seem to be selecting a mob that doesn't exist anymore."))
 		return
 
-	var/body = "<html><head><title>Options for [M.key]</title></head>"
+	var/body = "<!DOCTYPE html><html><head><title>Options for [M.key]</title></head>"
 	body += "<body>Options panel for <b>[M]</b>"
 	if(M.client)
 		body += " played by <b>[M.client]</b> "
@@ -507,6 +507,7 @@
 		return
 
 	var/dat = {"
+		<!DOCTYPE html>
 		<center><B>Game Panel</B></center><hr>\n
 		<A href='?src=[REF(src)];[HrefToken()];c_mode=1'>Change Game Mode</A><br>
 		"}
