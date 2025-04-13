@@ -755,7 +755,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 		qdel(src)
 
 /mob/dead/new_player/proc/ViewManifest()
-	var/dat = "<html><body>"
+	var/dat = "<!DOCTYPE html><html><body>"
 	dat += "<h4>Crew Manifest</h4>"
 	dat += GLOB.data_core.get_manifest(OOC = 1)
 
