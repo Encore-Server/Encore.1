@@ -31,7 +31,7 @@
 	canparry = TRUE
 	d_intent = INTENT_PARRY
 	defprob = 50
-	defdrain = 20
+	defdrain = 30
 	speak_emote = list("grunts")
 	speak = list("WAAAGH!", "KRUSH AND KILL!", "Never should have come here!", "Slaughter them all!", "Kill everything!", "Hahaha! Die!")
 	loot = list(/obj/effect/mob_spawn/human/orc/corpse/savageorc,
@@ -39,6 +39,7 @@
 			/obj/effect/decal/cleanable/blood)
 	faction = list("orcs")
 	footstep_type = FOOTSTEP_MOB_BAREFOOT
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	del_on_death = TRUE
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 3,
 						/obj/item/natural/hide = 2, /obj/item/natural/bundle/bone/full = 1)
@@ -59,12 +60,19 @@
 	icon_dead = "orcmarauder"
 	melee_damage_lower = 30
 	melee_damage_upper = 35
-	armor_penetration = 35
+	armor_penetration = 65
 	maxHealth = 200
 	health = 200
 	loot = list(/obj/effect/mob_spawn/human/orc/corpse/orcmarauder,
 			/obj/item/rogueweapon/sword/iron/messer,
 			/obj/effect/decal/cleanable/blood)
+
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NOPAIN, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BASHDOORS, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear
 	icon_state = "orcmarauder_spear"
@@ -81,7 +89,8 @@
 	icon_dead = "orcravager"
 	melee_damage_lower = 40
 	melee_damage_upper = 50
-	armor_penetration = 40
+	defdrain = 45
+	armor_penetration = 80
 	maxHealth = 500
 	health = 500
 	loot = list(/obj/effect/mob_spawn/human/orc/corpse/orcravager,
@@ -205,6 +214,8 @@
 	projectiletype = /obj/projectile/bullet/reusable/arrow/orc
 	projectilesound = 'sound/combat/Ranged/flatbow-shot-01.ogg'
 	ranged = 1
+	vision_range = 15
+	aggro_vision_range = 15//just beyond immediate visual distance
 	retreat_distance = 2
 	minimum_distance = 5
 	ranged_cooldown_time = 60

@@ -37,7 +37,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	max_integrity = 1000
+	max_integrity = 350
 	experimental_onhip = TRUE
 	nodismemsleeves = TRUE
 	flags_inv = HIDEBOOB|HIDECROTCH
@@ -55,7 +55,7 @@
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = 1250
+	max_integrity = 450
 	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron
@@ -63,7 +63,7 @@
 	name = "iron chainmaille"
 	desc = "A chain vest made of heavy iron rings. Better than nothing."
 	body_parts_covered = CHEST|GROIN|VITALS
-	max_integrity = 1150
+	max_integrity = 230
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
@@ -84,7 +84,7 @@
 	desc = "A longer iron maille that protects the legs."
 	icon_state = "iron_hauberk"
 	item_state = "iron_hauberk"
-	max_integrity = 1150
+	max_integrity = 230
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
@@ -98,7 +98,7 @@
 	desc = "An iron maille, of a pattern popularized by Aelondan templars."
 	icon_state = "iron_flutedhauberk"
 	item_state = "iron_flutedhauberk"
-	max_integrity = 1150
+	max_integrity = 230
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 	name = "steel chainmail bikini"
@@ -115,7 +115,7 @@
 	desc = "Not very comfortable against the skin."
 	icon_state = "iron_chainkini"
 	item_state = "iron_chainkini"
-	max_integrity = 1150
+	max_integrity = 125
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/plate
@@ -128,7 +128,7 @@
 	armor = list("blunt" = 80, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	nodismemsleeves = TRUE
-	max_integrity = 1250
+	max_integrity = 400
 	allowed_sex = list(MALE, FEMALE)
 	do_sound_plate = TRUE
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -144,7 +144,7 @@
 	icon_state = "iron_halfplate"	
 	item_state = "iron_halfplate"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 255
 	smelt_bar_num = 3
 
 /obj/item/clothing/suit/roguetown/armor/plate/bikini
@@ -163,7 +163,7 @@
 	icon_state = "iron_halfplatekini"
 	item_state = "iron_halfplatekini"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 125
 
 /obj/item/clothing/suit/roguetown/armor/plate/half
 	slot_flags = ITEM_SLOT_ARMOR
@@ -177,7 +177,7 @@
 	nodismemsleeves = TRUE
 	do_sound_plate = TRUE
 	blocking_behavior = null
-	max_integrity = 1200
+	max_integrity = 430
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
@@ -199,7 +199,7 @@
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
-	max_integrity = 1350
+	max_integrity = 550
 	smelt_bar_num = 4
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/iron
@@ -212,7 +212,7 @@
 	unequip_delay_self = 12 SECONDS
 	equip_delay_other = 3 SECONDS
 	strip_delay = 6 SECONDS
-	max_integrity = 1250
+	max_integrity = 280
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 4
 
@@ -235,13 +235,13 @@
 	icon_state = "iron_platekini"
 	item_state = "iron_platekini"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1200
+	max_integrity = 150
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	name = "iron breastplate"
 	desc = "A basic cuirass of iron, protective and moderately durable."
 	icon_state = "ibreastplate"
-	max_integrity = 1100
+	max_integrity = 215
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
@@ -258,7 +258,7 @@
 	body_parts_covered = CHEST|VITALS|GROIN|LEGS
 	allowed_sex = list(MALE, FEMALE)
 	icon_state = "lamellar"
-	max_integrity = 1150
+	max_integrity = 385
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 4 SECONDS
@@ -271,7 +271,7 @@
 	desc = "Iron scales interwoven intricately to form flexible protection!"
 	icon_state = "iron_lamellar"
 	item_state = "iron_lamellar"
-	max_integrity = 1100
+	max_integrity = 185
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/heartfelt/lord
@@ -286,7 +286,7 @@
 	allowed_sex = list(MALE, FEMALE)
 	nodismemsleeves = TRUE
 	blocking_behavior = null
-	max_integrity = 1200
+	max_integrity = 450
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
@@ -304,7 +304,7 @@
 	allowed_sex = list(MALE, FEMALE)
 	nodismemsleeves = TRUE
 	blocking_behavior = null
-	max_integrity = 1200
+	max_integrity = 250
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
@@ -321,7 +321,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	allowed_sex = list(MALE, FEMALE)
 	nodismemsleeves = TRUE
-	max_integrity = 1150
+	max_integrity = 400
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 4 SECONDS
@@ -387,7 +387,7 @@
 	body_parts_covered = CHEST|GROIN|VITALS|ARMS
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
-	max_integrity = 1200
+	max_integrity = 520
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_HEAVY
@@ -399,7 +399,7 @@
 	desc = "A leather coat with iron plates attached to it to increase protection while retaining mobility"
 	icon_state = "iron_coat_of_plates"
 	item_state = "iron_coat_of_plates"
-	max_integrity = 1150
+	max_integrity = 280
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/armordress
@@ -484,7 +484,7 @@
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
 	nodismemsleeves = TRUE
-	max_integrity = 1000
+	max_integrity = 230
 	sellprice = 20
 	armor_class = ARMOR_CLASS_LIGHT
 
@@ -492,7 +492,7 @@
 	name = "hide armor"
 	desc = "A light armor of wildbeast hide. Far more durable than leather."
 	icon_state = "hidearmor"
-	max_integrity = 1050
+	max_integrity = 300
 	armor_class = ARMOR_CLASS_LIGHT
 
 /obj/item/clothing/suit/roguetown/armor/leather/studded
@@ -505,7 +505,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
 	nodismemsleeves = TRUE
 	body_parts_covered = CHEST|GROIN|VITALS
-	max_integrity = 1100
+	max_integrity = 300
 	smeltresult = /obj/item/ingot/iron
 	sellprice = 25
 	armor_class = ARMOR_CLASS_LIGHT
@@ -518,7 +518,7 @@
 	item_state = "roguearmor"
 	armor = list("blunt" = 70, "slash" = 50, "stab" = 60, "bullet" = 15, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
-	max_integrity = 1100
+	max_integrity = 300
 	sellprice = 25
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/belted
@@ -528,7 +528,7 @@
 	item_state = "roguearmor_belt"
 	armor = list("blunt" = 70, "slash" = 50, "stab" = 60, "bullet" = 15, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
-	max_integrity = 1100
+	max_integrity = 300
 	sellprice = 25
 
 /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat
@@ -539,7 +539,7 @@
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS
 	armor = list("blunt" = 70, "slash" = 50, "stab" = 60, "bullet" = 15, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT, BCLASS_CHOP)
-	max_integrity = 1100
+	max_integrity = 300
 	sellprice = 25
 
 /obj/item/clothing/suit/roguetown/armor/leather/bikini
@@ -692,7 +692,7 @@
 	sewrepair = TRUE
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	sleevetype = "shirt"
-	max_integrity = 1000
+	max_integrity = 150
 	sellprice = 50
 	armor_class = ARMOR_CLASS_LIGHT
 	allowed_sex = list(MALE, FEMALE)
@@ -718,7 +718,7 @@
 	nodismemsleeves = TRUE
 	do_sound_plate = TRUE
 	blocking_behavior = null
-	max_integrity = 1400
+	max_integrity = 700
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	armor_class = ARMOR_CLASS_HEAVY
@@ -740,7 +740,7 @@
 	allowed_race = CLOTHED_RACES_TYPES
 	nodismemsleeves = TRUE
 	blocking_behavior = null
-	max_integrity = 1350
+	max_integrity = 300
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/blacksteel
 	armor_class = ARMOR_CLASS_MEDIUM

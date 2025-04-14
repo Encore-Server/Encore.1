@@ -4,7 +4,7 @@
 	icon = 'icons/roguetown/clothing/wrists.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/wrists.dmi'
 	sleevetype = "shirt"
-	max_integrity = 1000
+	max_integrity = 100
 
 /obj/item/clothing/wrists/roguetown/bracers
 	name = "steel bracers"
@@ -16,7 +16,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
-	max_integrity = 1250
+	max_integrity = 250
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 
@@ -24,7 +24,7 @@
 	name = "iron bracers"
 	icon_state = "iron_bracers"
 	item_state = "iron_bracers"
-	max_integrity = 1150
+	max_integrity = 150
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -38,7 +38,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
-	max_integrity = 1000
+	max_integrity = 150
 	anvilrepair = null
 	sewrepair = TRUE
 

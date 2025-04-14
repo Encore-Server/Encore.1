@@ -1,0 +1,13 @@
+
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - rscadd: "Adjusts armor values to be roughly the original stats with an extra hit or two worth of integrity."
+  - rscadd: "Gives greater orcs like marauders and ravagers better armor piercing."
+  - rscadd: "Gives fiends armor piercing capability."
+  - rscadd: "Allows very few ranged mobs to target players from beyond the line of sight."
+  - rscadd: "Gives dragons one hundred percent armor piercing."
+  - rscadd: "Gives a bunch of different mobs the ability to smash environmental objects and circumvent chokepoints."
+  - rscadd: "Adds resistance against bleeding to most mobs. This will prevent unintended behavior with cutting weapons bleeding boss mobs to death in seconds."

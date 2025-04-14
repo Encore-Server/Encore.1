@@ -7,7 +7,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/gloves.dmi'
 	bloody_icon_state = "bloodyhands"
 	sleevetype = "shirt"
-	max_integrity = 1000
+	max_integrity = 80
 	max_heat_protection_temperature = 361
 
 /obj/item/clothing/gloves/roguetown/leather
@@ -53,7 +53,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT)
 	resistance_flags = FIRE_PROOF
 	blocksound = SOFTHIT
-	max_integrity = 1050
+	max_integrity = 100
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
@@ -83,7 +83,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT)
 	resistance_flags = FIRE_PROOF
 	blocksound = CHAINHIT
-	max_integrity = 1250
+	max_integrity = 150
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
@@ -99,7 +99,7 @@
 	icon_state = "icgloves"
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 115
 
 //rogtodo sprites for this
 /obj/item/clothing/gloves/roguetown/plate
@@ -110,7 +110,7 @@
 	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
 	resistance_flags = FIRE_PROOF
 	blocksound = PLATEHIT
-	max_integrity = 1250
+	max_integrity = 200
 	blade_dulling = DULLING_BASH
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
@@ -119,7 +119,7 @@
 
 /obj/item/clothing/gloves/roguetown/plate/iron
 	name = "iron plate gauntlets"
-	max_integrity = 1150
+	max_integrity = 135
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/gloves/roguetown/grenzelgloves
@@ -154,7 +154,7 @@
 	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
 	resistance_flags = FIRE_PROOF
 	blocksound = PLATEHIT
-	max_integrity = 1450
+	max_integrity = 350
 	blade_dulling = DULLING_BASH
 	break_sound = 'sound/foley/breaksound.ogg'
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
