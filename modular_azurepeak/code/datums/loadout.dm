@@ -182,6 +182,16 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Leather Vest"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/vest
 
+// GLOVES
+
+/datum/loadout_item/leather_gloves
+	name = "Leather gloves"
+	path = /obj/item/clothing/gloves/roguetown/leather
+
+/datum/loadout_item/fingerless_gloves
+	name = "Fingerless gloves"
+	path = /obj/item/clothing/gloves/roguetown/fingerless
+
 /datum/loadout_item/nun_habit
 	name = "Nun Habit"
 	path = /obj/item/clothing/suit/roguetown/shirt/robe/nun
