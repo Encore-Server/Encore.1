@@ -10,7 +10,6 @@
 	pixel_x = -9
 	emote_hear = list("cackles obnoxiously!")
 	turns_per_move = 2
-	see_in_dark = 10
 	move_to_delay = 2
 	base_intents = list(/datum/intent/simple/bite)
 	faction = list("hell")
@@ -20,12 +19,14 @@
 	maxHealth = 155
 	melee_damage_lower = 15
 	melee_damage_upper = 25
+	armor_penetration = 95
 	ranged = 1
 	projectiletype = /obj/projectile/magic/fetch//God's most annoying demon
 	projectilesound = 'sound/magic/magnet.ogg'
 	ranged_cooldown_time = 50
-	vision_range = 3
-	aggro_vision_range = 4
+	see_in_dark = 25
+	vision_range = 35
+	aggro_vision_range = 35
 	mob_biotypes = MOB_SPIRIT
 	environment_smash = ENVIRONMENT_SMASH_NONE
 	movement_type = FLYING
@@ -123,7 +124,7 @@
 	melee_damage_lower = 35
 	melee_damage_upper = 55
 	ranged = 1
-	projectiletype = /obj/projectile/bullet/reusable/arrow/iron
+	projectiletype = /obj/projectile/bullet/reusable/bolt//for armor piercing effect
 	projectilesound = 'sound/combat/wooshes/whip_crack3.ogg'
 	ranged_cooldown_time = 7
 	movement_type = GROUND
@@ -137,7 +138,7 @@
 	deaggroprob = 0
 	defprob = 35
 	defdrain = 13
-	retreat_health = 75
+	retreat_health = 254
 	food = 0
 	attack_sound = list('sound/combat/hits/bladed/largeslash (1).ogg','sound/combat/hits/bladed/largeslash (2).ogg','sound/combat/hits/bladed/largeslash (3).ogg')
 

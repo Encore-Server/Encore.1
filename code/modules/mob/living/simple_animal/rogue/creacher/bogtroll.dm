@@ -22,7 +22,7 @@
 	melee_damage_upper = 70
 	vision_range = 2
 	aggro_vision_range = 3
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
@@ -42,6 +42,11 @@
 	dodgetime = 0
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
+
+/mob/living/simple_animal/hostile/retaliate/rogue/bogtroll/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BASHDOORS, TRAIT_GENERIC)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/bogtroll/death(gibbed)
 	..()

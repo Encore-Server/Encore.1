@@ -9,7 +9,7 @@
 	dynamic_hair_suffix = "+generic"
 	bloody_icon_state = "helmetblood"
 	experimental_onhip = TRUE
-	max_integrity = 1000
+	max_integrity = 70
 
 /obj/item/clothing/head/roguetown/equipped(mob/user, slot)
 	. = ..()
@@ -500,7 +500,7 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	blocksound = PLATEHIT
-	max_integrity = 1200
+	max_integrity = 250
 
 /obj/item/clothing/head/roguetown/helmet/skullcap
 	name = "skull cap"
@@ -712,7 +712,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH, BCLASS_TWIST, BCLASS_PICK)
 	block2add = FOV_RIGHT|FOV_LEFT
 	smeltresult = /obj/item/ingot/steel
-	max_integrity = 1250
+	max_integrity = 250
 
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
 	name = "steel katholikos barbute"
@@ -727,7 +727,7 @@
 	icon_state = "iron_psydonbarbute"
 	item_state = "iron_psydonbarbute"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard
 	name = "savoyard"
@@ -918,7 +918,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = 1250
+	max_integrity = 275
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -927,7 +927,7 @@
 	icon_state = "iron_astratahelm"
 	item_state = "iron_astratahelm"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
 	name ="steel aspect armet"
@@ -937,7 +937,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = 1250
+	max_integrity = 275
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -946,7 +946,7 @@
 	icon_state = "iron_psydonarmet"
 	item_state = "iron_psydonarmet"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/akan
 	name = "steel helmet of skies"
@@ -957,7 +957,7 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS|HIDEHAIR
 	block2add = FOV_BEHIND
-	max_integrity = 1250
+	max_integrity = 275
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -966,7 +966,7 @@
 	icon_state = "iron_nochelm"
 	item_state = "iron_nochelm"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 	name = "steel mjallidhorn helmet"
@@ -976,7 +976,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = 1250
+	max_integrity = 275
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -985,7 +985,7 @@
 	icon_state = "necrahelm"
 	item_state = "necrahelm"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 	name = "steel earthen helmet"
@@ -995,7 +995,7 @@
 	emote_environment = 3
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	block2add = FOV_RIGHT|FOV_LEFT
-	max_integrity = 1250
+	max_integrity = 250
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
@@ -1004,7 +1004,7 @@
 	icon_state = "iron_dendorhelm"
 	item_state = "iron_dendorhelm"
 	smeltresult = /obj/item/ingot/iron
-	max_integrity = 1150
+	max_integrity = 150
 
 /obj/item/clothing/head/roguetown/helmet/bascinet
 	name = "bascinet"

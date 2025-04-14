@@ -18,11 +18,13 @@
 	maxHealth = 65
 	melee_damage_lower = 25
 	melee_damage_upper = 70
-	vision_range = 3
+	armor_penetration = 65
+	see_in_dark = 20
+	vision_range = 20
+	aggro_vision_range = 20
 	resistance_flags = LAVA_PROOF
-	aggro_vision_range = 4
 	mob_biotypes = MOB_SPIRIT
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	movement_type = FLYING
 	pass_flags = PASSTABLE|PASSGRILLE
 	retreat_distance = 0
@@ -233,9 +235,11 @@
 	maxHealth = 300
 	melee_damage_lower = 55
 	melee_damage_upper = 80
+	armor_penetration = 85
 	canparry = TRUE
 	d_intent = INTENT_PARRY
 	movement_type = GROUND
+	environment_smash = ENVIRONMENT_SMASH_WALLS
 	pass_flags = null
 	speed = 0.5
 	STACON = 18
@@ -302,6 +306,7 @@
 	maxHealth = 620
 	melee_damage_lower = 55
 	melee_damage_upper = 80
+	armor_penetration = 95
 	canparry = TRUE
 	d_intent = INTENT_PARRY
 	movement_type = GROUND
