@@ -110,10 +110,11 @@
 			belt = /obj/item/storage/belt/rogue/leather
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 			cloak = /obj/item/clothing/cloak/tabard
-			beltr = /obj/item/flashlight/flare/torch/lantern
 			beltl = /obj/item/rogueweapon/sword/iron/short
+			backl = /obj/item/storage/backpack/rogue/satchel
 			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/flashlight/flare/torch/lantern)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
@@ -139,7 +140,7 @@
 					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 				if("Longbow")
-					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), FALSE)
 					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 				if("Crossbow")

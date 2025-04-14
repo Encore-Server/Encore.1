@@ -638,6 +638,14 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 		WRITE_FILE(S["loadout"] , loadout.type)
 	else
 		WRITE_FILE(S["loadout"] , null)
+	if(loadout2)
+		WRITE_FILE(S["loadout2"] , loadout2.type)
+	else
+		WRITE_FILE(S["loadout2"] , null)
+	if(loadout3)
+		WRITE_FILE(S["loadout3"] , loadout3.type)
+	else
+		WRITE_FILE(S["loadout3"] , null)
 
 
 	return TRUE
