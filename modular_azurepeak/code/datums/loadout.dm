@@ -62,7 +62,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Duelist's Hat"
 	path = /obj/item/clothing/head/roguetown/duelhat
 
-/datum/loadout_item/hood
+/datum/loadout_item/rhood
 	name = "Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood
 
