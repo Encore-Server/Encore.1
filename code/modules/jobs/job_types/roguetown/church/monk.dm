@@ -21,17 +21,18 @@
 /datum/outfit/job/roguetown/monk
 	name = "Acolyte"
 	jobtype = /datum/job/roguetown/monk
-
-	allowed_patrons = ALL_ACOLYTE_PATRONS
+	has_loadout = TRUE
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh)
 
 
 /datum/outfit/job/roguetown/monk/pre_equip(mob/living/carbon/human/H)
 	..()
 	belt = /obj/item/storage/belt/rogue/leather/rope
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/storage/keyring/churchie
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	pants = /obj/item/clothing/under/roguetown/tights/black
+	backl = /obj/item/storage/backpack/rogue/satchel
+	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor)
 	if(H.patron?.amulet)
 		neck = H.patron.amulet
 	switch(H.patron?.type)
@@ -58,6 +59,7 @@
 			head = /obj/item/clothing/head/roguetown/roguehood/golerkanhhood
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/gani
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
+			beltr = /obj/item/roguekey/blacksmith
 		if(/datum/patron/elemental/iliope)
 			head = /obj/item/clothing/head/roguetown/roguehood/iliopehood
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
@@ -67,28 +69,58 @@
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-		if(H.patron?.type == /datum/patron/elemental/akan)
-			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
-			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
-		H.mind.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+		if(H.patron?.type == /datum/patron/elemental/akan)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 		if(istype(H.patron, /datum/patron/elemental/gani))
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/farming, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
+			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
+		if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/fishing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
+		if(H.patron?.type == /datum/patron/elemental/visires)
+			H.mind.adjust_skillrank(/datum/skill/labor/butchering, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
+		if(H.patron?.type == /datum/patron/elemental/iliope)
+			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/music,, 2, TRUE)
+		if(H.patron?.type == /datum/patron/elemental/golerkanh)
+			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/engineering, 2, TRUE)
 		if(H.age == AGE_OLD)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
 		H.change_stat("intelligence", 3)
 		H.change_stat("endurance", 2)
 		H.change_stat("speed", 1)
-		if(H.patron?.type == /datum/patron/elemental/mjallidhorn)
-			ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
-			ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)
-		if(H.patron?.type == /datum/patron/elemental/iliope)
-			ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.passive_devotion_gain += 0.25
@@ -105,3 +137,19 @@
 	if(H.patron?.type == /datum/patron/elemental/visires) //Visires grants fervent clergy the ability to transfer their own suffering and wounds onto someone else
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/damage_link)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+
+/datum/outfit/job/roguetown/monk/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Cudgel", "Selfbow", "Dagger")
+	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	switch(weapon_choice)
+		if("Cudgel")
+			H.put_in_hands(new /obj/item/rogueweapon/mace/cudgel(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
+		if("Selfbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+		if("Dagger")
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
