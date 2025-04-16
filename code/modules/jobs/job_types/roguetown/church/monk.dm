@@ -65,6 +65,7 @@
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
+			backpack_contents = list(/obj/item/lockpick)
 		
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
@@ -109,7 +110,7 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/misc/music,, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/music, 2, TRUE)
 		if(H.patron?.type == /datum/patron/elemental/golerkanh)
 			H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 4, TRUE)
