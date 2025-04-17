@@ -6,16 +6,13 @@
 /datum/virtue/combat/magical_potential/apply_to_human(mob/living/carbon/human/recipient)
 	if (!recipient.mind?.has_spell(/obj/effect/proc_holder/spell/targeted/touch/prestidigitation))
 		recipient.mind?.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/prestidigitation)
-		to_chat(recipient, span_warning("PREST CHECK PASSED"))
 
 	var/skill_level = recipient.mind?.get_skill_level(/datum/skill/magic/arcane)
 	if (skill_level == 0) // we can do this because apply_to is always called first
 		recipient.mind?.adjust_spellpoints(-6) // no martial-arcyne for you - not the intent of this virtue!
-		to_chat(recipient, span_warning("ARCANE SKILL CHECK PASSED"))
 	if (skill_level >= 1)
 		if (!HAS_TRAIT(recipient, TRAIT_MEDIUMARMOR) && !HAS_TRAIT(recipient, TRAIT_HEAVYARMOR) && !HAS_TRAIT(recipient, TRAIT_DODGEEXPERT))
 			recipient.mind?.adjust_spellpoints(1) // 1 extra spellpoint if you're already arcane
-			to_chat(recipient, span_warning("ARMOUR SKILL CHECK PASSED"))
 		else
 			to_chat(recipient, span_notice("I'm too trained in defensive tactics for my Virtue to benefit my spell knowledge any further."))
 
