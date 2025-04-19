@@ -65,7 +65,7 @@
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/akan
 			wrists = /obj/item/clothing/wrists/roguetown/wrappings
 			shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-			backpack_contents = list(/obj/item/lockpick)
+			backpack_contents = list(/obj/item/lockpickring/mundane)
 		
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
