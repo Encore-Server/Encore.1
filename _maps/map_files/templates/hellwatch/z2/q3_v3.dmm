@@ -154,7 +154,8 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "Dk" = (
 /obj/structure/bars/grille{
-	max_integrity = 5000
+	max_integrity = 5000;
+	density = 1
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -175,7 +176,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Ha" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Hk" = (
@@ -254,7 +255,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Pb" = (
