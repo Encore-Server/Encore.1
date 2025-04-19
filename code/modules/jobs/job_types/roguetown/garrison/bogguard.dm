@@ -57,19 +57,19 @@ Also given some non-combat skills that a peasent would have, just to support the
 	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
 	backl = /obj/item/storage/backpack/rogue/satchel
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/cleaver/combat = 1, /obj/item/signal_horn = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/keyring/guard = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/signal_horn = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/keyring/guard = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
@@ -255,3 +255,80 @@ Also given some non-combat skills that a peasent would have, just to support the
 		if("Spear")
 			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+
+/datum/advclass/bogguardsman/panther
+	name = "Panther Warden"
+	tutorial = "You are a Panther Warden, adept at skulking and keeping to the shadows. Yours is the unit most often filled by former criminals or thieves pressed into service for their crimes, but not all Panthers are footpads. Where your comrades prefer to fight up close or from afar with a bow, you're an opportunist. Though trained in all the various weapons offered to you by the Wardens to some extent, you're best at sneaking about unseen with a blade or bow."
+	outfit = /datum/outfit/job/roguetown/bogguardsman/panther
+
+	category_tags = list(CTAG_WARDEN)
+
+/*Design philosophy: "Jack of all tades, master of.. few" - Peasent, so bow, axe, and polearm skill. Knows most combat skills, but other than those not great with them.
+Also given some non-combat skills that a peasent would have, just to support themselves, but not anything to replace soilsons with.*/
+/datum/outfit/job/roguetown/bogguardsman/panther/pre_equip(mob/living/carbon/human/H)
+	. = ..()
+	head = /obj/item/clothing/head/roguetown/helmet/kettle
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/belted
+	cloak = /obj/item/clothing/cloak/raincloak/furcloak/woad
+	mask = /obj/item/clothing/mask/rogue/wildguard
+	neck = /obj/item/clothing/neck/roguetown/coif
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	id = /obj/item/scomstone/bad
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
+	belt = /obj/item/storage/belt/rogue/leather
+	beltr = /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
+	backl = /obj/item/storage/backpack/rogue/satchel
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	backpack_contents = list(/obj/item/lockpickring/mundane = 1, /obj/item/signal_horn = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/keyring/guard = 1)
+	if(H.mind)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)	//Peasent levy, so some skill
+		H.mind.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)		//Peasent levy, so some skill
+		H.mind.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
+		H.change_stat("strength", 1)
+		H.change_stat("perception", 3)
+		H.change_stat("constitution", 1)
+		H.change_stat("endurance", 2)
+		H.change_stat("speed", 2)
+		H.verbs |= /mob/proc/haltyell
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+
+/datum/outfit/job/roguetown/bogguardsman/panther/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Crossbow", "Recurve Bow", "Twin Daggers")
+	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	switch(weapon_choice)
+		if("Crossbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+		if("Recurve Bow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+		if("Twin Daggers")
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
