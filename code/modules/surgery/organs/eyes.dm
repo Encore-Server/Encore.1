@@ -30,7 +30,7 @@
 	var/eye_icon_state = "eyes"
 	var/flash_protect = FLASH_PROTECTION_NONE
 	var/see_invisible = SEE_INVISIBLE_LIVING
-	var/lighting_alpha
+	var/lighting_alpha = LIGHTING_PLANE_ALPHA_VISIBLE
 	var/no_glasses
 	var/damaged	= FALSE	//damaged indicates that our eyes are undergoing some level of negative effect
 
