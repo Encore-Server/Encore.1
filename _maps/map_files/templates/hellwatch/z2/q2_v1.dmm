@@ -203,8 +203,8 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort/basement)
 "BM" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
 /obj/structure/bed/rogue/bedroll,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Cf" = (
@@ -279,7 +279,8 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "Kh" = (
 /obj/structure/bars/grille{
-	max_integrity = 5000
+	max_integrity = 5000;
+	density = 1
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -309,7 +310,7 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/churchfort/basement)
 "QG" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Rl" = (
@@ -331,9 +332,8 @@
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/outdoors/woods/churchfort/basement)
 "VP" = (
-/obj/structure/bed/rogue/bedroll,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
-/turf/open/floor/rogue/ruinedwood,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Wo" = (
 /mob/living/carbon/human/species/goblin/npc/ambush/hell,
@@ -369,7 +369,7 @@ Rl
 fn
 bq
 bq
-Wo
+VP
 jT
 RQ
 LT
@@ -402,7 +402,7 @@ DP
 iG
 Kh
 bq
-Wo
+VP
 LT
 SC
 wD
@@ -456,7 +456,7 @@ se
 se
 se
 Dq
-VP
+BM
 CW
 vJ
 "}
@@ -569,7 +569,7 @@ SC
 SC
 CW
 CW
-VP
+BM
 Dq
 se
 pG

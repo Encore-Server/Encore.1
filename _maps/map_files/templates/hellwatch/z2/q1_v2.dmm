@@ -189,7 +189,8 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "Bl" = (
 /obj/structure/bars/grille{
-	max_integrity = 5000
+	max_integrity = 5000;
+	density = 1
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -217,10 +218,6 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/rogue/grass,
-/area/rogue/outdoors/woods/churchfort/basement)
-"DZ" = (
-/obj/item/natural/rock,
-/turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Ez" = (
 /obj/structure/lever{
@@ -546,7 +543,7 @@ kD
 BP
 aY
 TD
-DZ
+CW
 CW
 aY
 aY

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aw" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "az" = (
@@ -28,7 +28,7 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "cs" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "eX" = (
@@ -64,7 +64,6 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "jv" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "jD" = (
@@ -353,7 +352,7 @@
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/woods/churchfort/basement)
 "LP" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Oq" = (
@@ -432,12 +431,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
-"WW" = (
-/obj/effect/decal/cleanable/blood/gibs,
-/obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
-/turf/open/floor/rogue/ruinedwood/turned,
-/area/rogue/outdoors/woods/churchfort/basement)
 "Xk" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -459,6 +452,7 @@
 "ZM" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 
@@ -542,7 +536,7 @@ Qn
 vA
 TE
 TE
-aw
+TE
 Qn
 FD
 jg
@@ -556,10 +550,10 @@ Gk
 TE
 QL
 TE
-WW
+zy
 ZM
 TE
-TE
+aw
 Qn
 Qn
 KU

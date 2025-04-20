@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aF" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "aI" = (
@@ -90,7 +90,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/woods/churchfort/basement)
 "qQ" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/woods/churchfort/basement)
 "rg" = (
@@ -144,7 +144,7 @@
 /obj/structure/fluff/walldeco/katholikos_banner{
 	pixel_y = 25
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "wt" = (
@@ -200,7 +200,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Hn" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "IJ" = (
@@ -295,7 +295,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Tv" = (
-/obj/machinery/light/rogue/campfire,
+/obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Yv" = (
