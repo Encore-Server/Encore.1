@@ -57,15 +57,15 @@
 /obj/structure/fluff/railing/border{
 	dir = 6
 	},
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods/churchfort/basement)
 "fo" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "fA" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "gZ" = (
@@ -159,12 +159,12 @@
 "py" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "pD" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "pH" = (
@@ -231,7 +231,7 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "AX" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Bd" = (
@@ -345,7 +345,7 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Kc" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "KC" = (
@@ -381,7 +381,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Nz" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "NA" = (
@@ -419,7 +419,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "VN" = (
 /obj/machinery/light/rogue/torchholder/c,
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/church,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Wx" = (

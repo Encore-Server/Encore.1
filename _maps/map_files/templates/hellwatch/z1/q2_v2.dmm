@@ -23,7 +23,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "qJ" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "zl" = (

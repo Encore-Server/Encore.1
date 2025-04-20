@@ -2342,11 +2342,6 @@
 	},
 /turf/open/floor/carpet/red,
 /area/rogue/indoors/shelter)
-"ym" = (
-/mob/living/simple_animal/hostile/rogue/haunt,
-/obj/structure/bonepile,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
 "yn" = (
 /obj/effect/decal/cobbleedge{
 	dir = 6
@@ -4369,10 +4364,6 @@
 /obj/item/rogueweapon/shovel,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/town/basement)
-"Vv" = (
-/mob/living/simple_animal/hostile/rogue/haunt,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cave)
 "Vx" = (
 /obj/structure/bed/rogue/inn/hay,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -61825,7 +61816,7 @@ AQ
 AQ
 AQ
 Yv
-ym
+gr
 cz
 cz
 AQ
@@ -62338,7 +62329,7 @@ AQ
 AQ
 AQ
 cz
-gr
+cz
 Yv
 AQ
 cz
@@ -62598,7 +62589,7 @@ cz
 Yv
 cz
 Yv
-ym
+gr
 cz
 sR
 mR
@@ -62851,9 +62842,9 @@ AQ
 AQ
 AQ
 Su
-ym
+gr
 cz
-Vv
+cz
 cz
 cz
 vj
@@ -63366,7 +63357,7 @@ AQ
 AQ
 AQ
 cz
-gr
+cz
 cz
 cz
 cz
@@ -63623,9 +63614,9 @@ AQ
 AQ
 AQ
 Su
-Vv
+cz
 Su
-ym
+gr
 Su
 AQ
 vt

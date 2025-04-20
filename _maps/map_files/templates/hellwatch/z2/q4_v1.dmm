@@ -18,7 +18,8 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "eC" = (
 /obj/structure/bars/grille{
-	max_integrity = 5000
+	max_integrity = 5000;
+	density = 1
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -193,7 +194,7 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "tj" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/outdoors/woods/churchfort/basement)
 "tr" = (
@@ -282,7 +283,7 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "yC" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "yF" = (
@@ -359,7 +360,7 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Jx" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "JJ" = (
@@ -447,7 +448,7 @@
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Qn" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Qp" = (
