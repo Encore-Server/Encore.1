@@ -356,7 +356,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "QN" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Sa" = (

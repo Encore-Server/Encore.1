@@ -98,7 +98,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "WO" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 
