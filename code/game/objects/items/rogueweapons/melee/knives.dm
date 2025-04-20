@@ -270,7 +270,7 @@
 
 
 /obj/item/rogueweapon/huntingknife/stoneknife
-	possible_item_intents = list(/datum/intent/dagger/cut,/datum/intent/dagger/chop)
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/chop)
 	name = "stone knife"
 	desc = "A crudely crafted knife, made of stone."
 	icon_state = "stone_knife"

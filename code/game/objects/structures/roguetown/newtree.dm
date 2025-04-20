@@ -20,6 +20,17 @@
 		return
 	return ..()
 
+/obj/structure/flora/newtree/attackby(obj/item/W, mob/living/user)
+	..()
+
+	if(istype(W, /obj/item/rogueweapon/stoneaxe) && user.used_intent.blade_class == BCLASS_CHOP) // not much point in running this loop if you aren't on chop intent
+		user.changeNext_move(CLICK_CD_MELEE)
+		while(Adjacent(user))
+			if(do_after(user, 20, target = src))
+				..()
+			else
+				break
+
 /obj/structure/flora/newtree/attack_right(mob/user)
 	if(user.mind && isliving(user))
 		if(user.mind.special_items && user.mind.special_items.len)

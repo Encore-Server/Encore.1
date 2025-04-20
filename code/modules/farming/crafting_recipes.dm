@@ -69,6 +69,16 @@
 	craftsound = null
 	skillcraft = null
 
+/datum/crafting_recipe/roguetown/gathersalt
+	name = "gather salt pile"
+	result = /obj/item/reagent_containers/powder/salt
+	reqs = list(/datum/reagent/consumable/sodiumchloride = 15)
+	time = 2 SECONDS
+	verbage_simple = "gather"
+	verbage = "gathers"
+	craftsound = null
+	skillcraft = null
+
 /datum/crafting_recipe/roguetown/sigdry
 	name = "westleach zig"
 	result = /obj/item/clothing/mask/cigarette/rollie/nicotine
