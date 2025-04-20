@@ -343,6 +343,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	converted_type = /area/rogue/under/lake
 
+/area/rogue/outdoors/beach/tutorial
+	first_time_text = "TUTORIAL ISLAND"
+
 /area/rogue/outdoors/beach/forest
 	name = "coastforest"
 	icon_state = "beach"
@@ -791,6 +794,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 
+/area/rogue/outdoors/town/tutorial//For Tutorial Island, duh
+	first_time_text = "TUTORIAL CASTLE"
+	town_area = TRUE
 
 /area/rogue/outdoors/town/sargoth
 	name = "outdoors"
