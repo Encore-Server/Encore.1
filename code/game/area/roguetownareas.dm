@@ -241,12 +241,21 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/outdoors/woods/lakeside
 	first_time_text = "THE HAMLET OF LAKESIDE"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/whisperen
 	first_time_text = "WEY WHISPEREN"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/berkleigh
 	first_time_text = "LODGE BERKLEIGH"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/seculton
 	first_time_text = "SECULTON GATE"
@@ -599,14 +608,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/shirleigh_keep.ogg'
 	keep_area = TRUE
 	town_area = TRUE
 
 /area/rogue/indoors/town/manor
 	name = "Manor"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/shirleigh_keep.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
@@ -676,6 +685,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
+	first_time_text = "ETGARD KEEP"
 	keep_area = TRUE
 
 /area/rogue/indoors/town/cell
