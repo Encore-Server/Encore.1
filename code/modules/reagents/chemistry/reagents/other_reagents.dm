@@ -166,6 +166,17 @@
 		M.add_nausea(50)
 	return ..()
 
+/datum/reagent/water/salt
+	taste_description = "salt"
+	hydration = -12 // drinking saltwater dehydrates you, duh
+
+/datum/chemical_reaction/boil_saltwater
+	name = "Boiled Saltwater"
+	id = "boilsaltwater"
+	results = list(/datum/reagent/consumable/sodiumchloride = 15)
+	required_reagents = list(/datum/reagent/water/salt = 99) // a full pot of saltwater
+	required_temp = 374
+
 /*
  *	Water reaction to turf
  */

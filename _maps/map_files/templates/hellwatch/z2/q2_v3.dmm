@@ -264,7 +264,8 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "Oi" = (
 /obj/structure/bars/grille{
-	max_integrity = 5000
+	max_integrity = 5000;
+	density = 1
 	},
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)

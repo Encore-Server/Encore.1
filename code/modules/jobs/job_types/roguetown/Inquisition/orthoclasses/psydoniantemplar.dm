@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/katholikostemplar
 	category_tags = list(CTAG_INQUISITION)
-	cmode_music = 'sound/music/templarofpsydonia.ogg'
+	cmode_music = 'sound/music/combat_templar.ogg'
 
 /datum/outfit/job/roguetown/katholikostemplar/pre_equip(mob/living/carbon/human/H)
 	..()

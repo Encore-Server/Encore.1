@@ -34,3 +34,6 @@ Iconoclast.ogg: Valley of Judgement- Lateralis
 dragonden.ogg: Ash Lake Theme - Dark Souls
 inquisitorcombat.ogg: Hellsing OST RAID Track 15 Survival on the Street of Insincerity
 templarofpsydon.ogg: 26 - Duty and Honor II (with Ryan Patrick Buckley) - Chivalry 2 (Original Game Soundtrack)
+shirleigh_keep.ogg: Tavern (Undead) - World of Warcraft: Classic
+weeping_woods.ogg: Darkshire - World of Warcraft: Classic
+combat_templar.ogg: Nebakov Siege Theme (Poverty and Famine var.) - Kingdom Come: Deliverance II
