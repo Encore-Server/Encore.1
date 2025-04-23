@@ -54,6 +54,7 @@
 #include "code\__DEFINES\exports.dm"
 #include "code\__DEFINES\fantasy_affixes.dm"
 #include "code\__DEFINES\flags.dm"
+#include "code\__DEFINES\font_changers.dm"
 #include "code\__DEFINES\food.dm"
 #include "code\__DEFINES\footsteps.dm"
 #include "code\__DEFINES\forensics.dm"

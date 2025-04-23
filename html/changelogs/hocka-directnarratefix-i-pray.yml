@@ -1,0 +1,6 @@
+author: "Hocka"
+
+delete-after: True
+
+changes:
+  - rscadd: "Direct Narrate, Global Narrate and Local Narrate now lets you choose the size, colour and shape of the text it outputs."
