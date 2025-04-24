@@ -89,3 +89,19 @@
 	verbage_simple = "roll"
 	verbage = "rolls"
 	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/blessedwine
+	name = "consecrate wine"
+	result = list(/obj/item/reagent_containers/glass/bottle/rogue/blessedwine = 1)
+	reqs = list(/obj/item/reagent_containers/glass/bottle = 1, /datum/reagent/consumable/ethanol/beer/redwine = 24, /datum/reagent/water/blessed = 24) // Yes I know this just looks like you're watering down your wine but I hate weird chemistry ratios.
+	craftdiff = 0 // You're just putting magic water into your wine, that isn't hard.
+	verbage_simple = "decant"
+	verbage_simple = "decants"
+
+/datum/crafting_recipe/roguetown/cursedwine
+	name = "curse wine"
+	result = list(/obj/item/reagent_containers/glass/bottle/rogue/cursedwine = 1)
+	reqs = list(/obj/item/reagent_containers/glass/bottle = 1, /datum/reagent/consumable/ethanol/beer/redwine = 24, /datum/reagent/water/cursed = 24)
+	craftdiff = 0
+	verbage_simple = "decant"
+	verbage_simple = "decants"

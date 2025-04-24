@@ -2321,3 +2321,74 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "a mix of sweet and sour"
 	color = "#ddb99b"
 	quality = DRINK_VERYGOOD
+
+// Funny Religious Wines
+
+/datum/reagent/consumable/ethanol/beer/redwine/blessed
+	name = "Consecrated Wine"
+	boozepwr = 30
+	taste_description = "sweet red wine, with a comforting warmth"
+	color = "#830d0d"
+	quality = DRINK_NICE
+
+/datum/reagent/consumable/ethanol/beer/redwine/blessed/on_mob_life(mob/living/carbon/M)
+	. = ..()
+	if (M.mob_biotypes & MOB_UNDEAD)
+		M.adjustFireLoss(1*REM)
+	else
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+
+/datum/reagent/water/blessed/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
+	if (!istype(M))
+		return ..()
+	
+	if (method == TOUCH)
+		if (M.mob_biotypes & MOB_UNDEAD)
+			M.adjustFireLoss(4*reac_volume, 0)
+			M.visible_message(span_warning("[M] erupts into angry fizzling and hissing!"), span_warning("CONSECRATED WINE!!! IT BURNS!!!"))
+			M.emote("scream")
+	
+	return ..()
+
+/datum/reagent/consumable/ethanol/beer/redwine/cursed
+	name = "Cursed Wine"
+	boozepwr = 30
+	taste_description = "sweet red wine, with an unsettling chill"
+	color = "#830d0d"
+	quality = DRINK_NICE
+
+/datum/reagent/consumable/ethanol/beer/redwine/cursed/on_mob_life(mob/living/carbon/M)
+	. = ..()
+	var/mob/living/carbon/human/M_hum
+	if(istype(M,/mob/living/carbon/human/))
+		M_hum = M
+	if((M.mob_biotypes & MOB_UNDEAD) || (M_hum.patron.undead_hater == FALSE))
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+	else
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+		M.rogfat_add(1*REM)

@@ -146,7 +146,7 @@
 	reagents.add_reagent(/datum/reagent/consumable/ethanol/beer/blackgoat,900)
 
 /obj/structure/fermenting_barrel/hagwoodbitter
-	desc = "A barrel marked with the Hagwood Bitters emblem. The least bitter thing to be exported from the Grenzelhoft occupied state of Zorn."
+	desc = "A barrel marked with the hagwood bitters emblem. A common export from Tor Sterkenstadt, this drink is a popular mainstay at parties and celebrations across the Goblet."
 
 /obj/structure/fermenting_barrel/hagwoodbitter/Initialize()
 	. = ..()

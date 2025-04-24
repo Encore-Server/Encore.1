@@ -37,7 +37,7 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/hagwoodbitter
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/hagwoodbitter = 48)
-	desc = "A bottle with the hagwood bitters cork-seal. The least bitter thing to be exported from the Grenzelhoft occupied state of Zorn."
+	desc = "A bottle with the hagwood bitters cork-seal. A common export from Tor Sterkenstadt, this drink is a popular mainstay at parties and celebrations across the Goblet."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/aurorian = 48)
@@ -49,11 +49,11 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/butterhairs
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/butterhairs = 48)
-	desc = "A bottle with the Dwarven Federation Trade Alliance cork-seal. This beer, known as butterhairs: is widely considered one of the greatest exported by the Dwarves."
+	desc = "A bottle with the Tor Sterkenstadt cork-seal. This beer, known as butterhairs: is widely considered one of the greatest exported by the Dwarves."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/stonebeardreserve
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/stonebeards = 48)
-	desc = "A bottle with the House Stoutenson cork-seal. Stonebeards Reserve is one of the most legendary beers in existence, with only a few hundred barrels made every year."
+	desc = "A bottle with the Tor Sterkenstadt cork-seal. Stonebeards Reserve is one of the most renown beers in existence, with only a few hundred barrels made every year. Many have been pilfered by the invaders of the Sultanate, only increasing their rarity..."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/voddena = 48)
@@ -62,27 +62,39 @@
 // WINES - Expensive, Nobleblooded
 /obj/item/reagent_containers/glass/bottle/rogue/wine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/wine = 48)
-	desc = "A bottle that contains a generic red-wine, likely from Zybantia. It has a red-clay cork-seal."
+	desc = "A bottle with the cork-seal of the Jin merchants. This one appears to be labelled as a generic red wine from the city's vineyards."
 
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/sourwine = 48)
-	desc = "A bottle that contains a Grenzelhoftian classic with a black ink cork-seal.. An extremely sour wine that is watered down with mineral water."
+	desc = "A bottle with the black ink cork-seal of Tor Sterkenstadt. This one is labelled as an extremely sour wine that is watered down with mineral water."
 
 /obj/item/reagent_containers/glass/bottle/rogue/redwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine = 48)
-	desc = "A bottle with the Otavan Merchant Guild cork-seal. This one appears to be labelled as a relatively young red-wine from the coinlord state."
+	desc = "A bottle with the cork-seal of the vintners from Sanct. This one appears to be labelled as a relatively young red wine from the countryside vineyards."
 
 /obj/item/reagent_containers/glass/bottle/rogue/whitewine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/whitewine = 48)
-	desc = "A bottle with the Otavan Merchant Guild cork-seal. This one appears to be labelled as a sweet wine from the colder northern regions."
+	desc = "A bottle with the cork-seal of the vintners from Sanct. This one appears to be labelled as a sweet white wine from the countryside vineyards."
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfred
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfred = 48)
-	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elvish red wine from Otava. Likely worth more than what an entire village makes!"
+	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elvish red wine from Wavehearth, and is incredibly popular with the city's nobility. Likely worth more than what an entire village makes!"
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfblue
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfblue = 48)
-	desc = "A bottle gilded with a golden cork-seal. This is the legendary Valmora Blue from the Vineyard of Valmora, headed by a sainted Dark-Elf swordsmaster. This bottle would swoon Gods over!"
+	desc = "A bottle gilded with a golden cork-seal. This is the legendary Rols Blue from the Vineyard of Saint's Rest, created in commemoration of the discovery of the Good King. This bottle would swoon Gods over!"
+
+/obj/item/reagent_containers/glass/bottle/rogue/blessedwine
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine/blessed = 48)
+	desc = "A bottle that is labeled as containing a sweet red wine, consecrated with the divine power of the Aspects through the addition of blessed water. It is known for its gentle restorative properties."
+
+/obj/item/reagent_containers/glass/bottle/rogue/blessedwine/church
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine/blessed = 48)
+	desc = "A bottle with the Katholikos seal burned into the cork. It is labeled as a sweet red wine, consecrated with the divine power of the Aspects through the addition of blessed water, and is known for its gentle restorative properties."
+
+/obj/item/reagent_containers/glass/bottle/rogue/cursedwine
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine/cursed = 48)
+	desc = "A bottle with no cork-seal or indication as to who created it. It is labeled as containing a sweet red wine, though simply holding it makes you feel uneasy."
 
 //AZURE DRINKS
 /obj/item/reagent_containers/glass/bottle/rogue/beer/jagdtrunk
