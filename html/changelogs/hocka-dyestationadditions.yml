@@ -1,0 +1,6 @@
+author: "Hocka"
+
+delete-after: True
+
+changes:
+  - rscadd: "Replaced a chair with a dye station on the spawn boat."
