@@ -33,31 +33,31 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/ratkept
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/onion = 48)
-	desc = "A bottle with surprisingly no cork-seal. On the glass is carved the word \"ONI-N\", the 'O' seems to have been scratched out completely. Dubious. On the glass is a paper glued to it showing an illustration of rats guarding a cellar filled with bottles against a hoard of beggars."
+	desc = "A bottle with a cork-seal from the Bars of Fog. A drink first fermented as a joke by some Nortlanders on a Swampweed trip, this onion liquor found unexpected popularity locally, but didn't make much headway in the wider Goblet for its offputting choice of ingredient. "
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/hagwoodbitter
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/hagwoodbitter = 48)
 	desc = "A bottle with the hagwood bitters cork-seal. A common export from Tor Sterkenstadt, this drink is a popular mainstay at parties and celebrations across the Goblet."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer/aurorian = 48)
-	desc = "A bottle with the aurorian brewhouse cork-seal. An Elvish beer brewed from an herbal gruit."
+/obj/item/reagent_containers/glass/bottle/rogue/beer/druidsdelight
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/druidsdelight = 48)
+	desc = "A bottle with a generic leaf cork-seal. An Elvish beer brewed from an herbal gruit."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/fireleaf
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/fireleaf= 48)
-	desc = "A bottle with a generic leaf cork-seal. An Elvish beer formed by distilling cabbages. You're pretty sure you can make your own with certainly higher quality."
+	desc = "A bottle with a generic leaf cork-seal. An Elvish beer formed by distilling cabbages."
 
-/obj/item/reagent_containers/glass/bottle/rogue/beer/butterhairs
-	list_reagents = list(/datum/reagent/consumable/ethanol/beer/butterhairs = 48)
-	desc = "A bottle with the Tor Sterkenstadt cork-seal. This beer, known as butterhairs: is widely considered one of the greatest exported by the Dwarves."
+/obj/item/reagent_containers/glass/bottle/rogue/beer/buttermelt
+	list_reagents = list(/datum/reagent/consumable/ethanol/beer/buttermelt = 48)
+	desc = "A bottle with the Tor Sterkenstadt cork-seal. This beer, known as buttermelt: is widely considered one of the greatest exported by the City of Celebrants."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/stonebeardreserve
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/stonebeards = 48)
-	desc = "A bottle with the Tor Sterkenstadt cork-seal. Stonebeards Reserve is one of the most renown beers in existence, with only a few hundred barrels made every year. Many have been pilfered by the invaders of the Sultanate, only increasing their rarity..."
+	desc = "A bottle with the Tor Sterkenstadt cork-seal. Stonebeards Reserve is one of the most renown beers in existence, with only a few hundred barrels made every year. Many have been pilfered by the invaders of the Sultanate, only increasing their rarity."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/voddena = 48)
-	desc = "A bottle with the House Stoutenson cork-seal. This strange liquid is considered as the most spicy and alcoholic drink in all the Mountainhomes. Bought by nobles of all ages, mostly those with a deathwish."
+	desc = "A bottle with the Dors cork-seal. This strange liquid has a reputation for being one of the most potent alcoholic drink in all the Goblet. It has received wild success as an export, and is purchased by people of all classes, for an efficient and quick way to get wasted."
 
 // WINES - Expensive, Nobleblooded
 /obj/item/reagent_containers/glass/bottle/rogue/wine
@@ -66,7 +66,7 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/sourwine = 48)
-	desc = "A bottle with the black ink cork-seal of Tor Sterkenstadt. This one is labelled as an extremely sour wine that is watered down with mineral water."
+	desc = "A bottle with the black ink cork-seal of Wavehearth. This one is labelled as an extremely sour wine that is watered down with mineral water, cheap and popular with the peasantry."
 
 /obj/item/reagent_containers/glass/bottle/rogue/redwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/redwine = 48)
@@ -99,44 +99,44 @@
 //AZURE DRINKS
 /obj/item/reagent_containers/glass/bottle/rogue/beer/jagdtrunk
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/jagdtrunk = 48)
-	desc = "A bottle with a Saigabuck cork-seal. This dark liquid is the strongest alcohol coming out of Grenzelhoft available. A herbal schnapps, sure to burn out any disease."
+	desc = "A bottle with a Gernhollow cork-seal. This dark liquid is the strongest alcohol coming out of Geramor available. A herbal schnapps, sure to burn out any disease."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/apfelweinheim
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/apfelweinheim = 48)
-	desc = "A bottle with the Apfelweinheim cork-seal. A cider from the Grenzelhoftian town of Apfelweinheim. Well received for its addition of pear, alongside crisp apples."
+	desc = "A bottle with the Dunmoon Brewery cork-seal. A cider from the truetech giant, the city of Dunmoon. Well received for its addition of pear, alongside crisp apples."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/rtoper
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/rtoper = 48)
-	desc = "A bottle with the Rockhill-crest cork-seal. An especially tart cider from the kingdom of Rockhill. Myths say the brewers let the barrels age in the bog, which results in that especially stong flavour."
+	desc = "A bottle with a makeshift cork-seal of hardened clay. An especially tart, slightly salty cider from Havel Sectus. Myths say the brewers let the barrels age buried in the sand of the island shores, which results in that especially stong flavour."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/nred
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/nred = 48)
-	desc = "A bottle with the City of Norwandine cork-seal. A red ale brewed to perfection in the lands of Hammerhold."
+	desc = "A bottle with a Jin cork-seal. A red ale brewed to perfection in the Noma lands."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/gronnmead = 48)
-	desc = "A bottle with a Shieldmaiden Berewrey cork-seal. A deep red honey-wine, refined with the red berries native to Gronns highlands."
+	desc = "A bottle with a Nortmidst cork-seal. A deep red honey-wine, refined with the red berries that still cling to life in the frosty reaches of the capital. Legend claims the once-white berries that this wine was refined with became red in colour as the plants feasted on the spilled blood of the Wooly Serpent, Jormungandr."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/avarmead = 48)
-	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed in the Avar Steppes. Manages to keep a proper taste while staying strong."
+	desc = "A bottle with a simple cork-seal. A golden honey-wine brewed by the Nortic Tribes, primarily those that live in areas not overtaken by the creeping White Death. Manages to keep a proper taste while staying strong."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/avarrice
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/avarrice = 48)
-	desc = "A bottle with a simple cork-seal. A murky, white wine made from rice grown in the steppes of Avar."
+	desc = "A bottle with a simple cork-seal. A murky, white wine made from what few berries can be grown in the cold of Nortmidst."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/saigamilk
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/saigamilk = 48)
-	desc = "A bottle with a Running Saiga cork-seal. A form of alcohol brewed from the milk of a saiga and salt. Common drink of the nomads living in the steppe."
+	desc = "A bottle with a Running Saiga cork-seal. A form of alcohol brewed from the milk of a saiga and salt. Common drink of the Noma living in the steppe."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunlager
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/kgunlager = 48)
-	desc = "A bottle with a Yamaguchi Brewery cork-seal. A pale lager brewed in the far-away lands of Kazengun, refined with green tea for an unique flavour-profile. Even lighter than elven-brew!"
+	desc = "A bottle with a Dunmoon Brewery cork-seal. A pale lager brewed in the truetech heartland of Dunmoon, refined with green tea for an unique flavour-profile."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunsake
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/kgunsake = 48)
-	desc = "A bottle with a Golden Swan cork-seal. A translucient, pale-blue liquid made from rice. A favourite drink of the warlords and nobles of Kazengun."
+	desc = "A bottle with a Golden Swan cork-seal. A translucient, pale-blue liquid made from rice. A favourite drink of the people of the Cudao mainland."
 
 /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/kgunplum = 48)
-	desc = "A bottle with a Golden Swan cork-seal. A reddish-golden alcohol made from a fruit commonly found on the Kazengun-isles. A favourite of the commoners."
+	desc = "A bottle with a Yinshi cork-seal. A reddish-golden alcohol made from a fruit commonly found along the mountainous peaks around Cudao's capital. Popular with the peasantry and commonfolk."

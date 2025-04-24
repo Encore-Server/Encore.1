@@ -2134,7 +2134,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 15
 	taste_description = "cheap pisswater"
 	color = "#DBD77F"
-	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/hagwoodbitter
 	name = "Hagwood Bitter"
@@ -2151,7 +2150,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/onion
-	name = "Ratkept Onin Cognac"
+	name = "Onion Liquor"
 	boozepwr = 10
 	taste_description = "spicy sweet malty overtones"
 	color = "#f1b5ff"
@@ -2159,26 +2158,27 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 // Elf Production - LEAF-LOVERS MOTHERFUCKER
 
-/datum/reagent/consumable/ethanol/beer/aurorian
-	name = "Aurorian"
-	boozepwr = 5
+/datum/reagent/consumable/ethanol/beer/druidsdelight
+	name = "Druid's Delight"
+	boozepwr = 10
 	taste_description = "subtle herbacious undertones"
 	color = "#5D8A8A"
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/fireleaf // cabbbage
 	name = "Fireleaf"
-	boozepwr = 2
-	taste_description = "bland liquor"
+	boozepwr = 10
+	taste_description = "sweet and earthy liquor"
 	color = "#475e45"
+	quality = DRINK_NICE
 
 // Dwarven Production - Best in the Realms
 
-/datum/reagent/consumable/ethanol/beer/butterhairs
-	name = "Butterhairs"
+/datum/reagent/consumable/ethanol/beer/buttermelt
+	name = "Buttermelt"
 	boozepwr = 30
-	taste_description = "buttery richness"
-	color = "#5D8A8A"
+	taste_description = "buttery smooth, rich beer"
+	color = "#91722f"
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/stonebeards
@@ -2186,12 +2186,12 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 40
 	taste_description = "potent oatlike liquor"
 	color = "#5D8A8A"
-	quality = DRINK_GOOD
+	quality = DRINK_FANTASTIC
 
 /datum/reagent/consumable/ethanol/beer/voddena // Not vodka. Trust me.
 	name = "Voddena"
 	boozepwr = 55  // holy shit
-	taste_description = "burning starchy wet dirt"
+	taste_description = "astringent burning"
 	color = "#4b443c"
 
 // WINE - Fancy.. And yes: all drinks are beer, technically. Cope. Seethe. I didnt code it like this.
@@ -2236,7 +2236,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/elfblue
-	name = "Valmora Blue"
+	name = "Rols Blue"
 	boozepwr = 50
 	taste_description = "saintly sweetness"
 	color = "#2C9DAF"
@@ -2251,28 +2251,28 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/apfelweinheim
-	name = "Appelheimer"
+	name = "Dunmoon Cider"
 	boozepwr = 45
 	taste_description = "tart crispness and mellow sweetness"
 	color = "#e0cb55"
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/rtoper
-	name = "Rockhill Toper"
+	name = "Sectus Toper"
 	boozepwr = 40
-	taste_description = "overwhelming tartness"
+	taste_description = "overwhelming tartness, with a hint of salt"
 	color = "#e0a400"
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/nred
-	name = "Norwardine Red"
+	name = "Jin Red"
 	boozepwr = 30
 	taste_description = "heavy caramel note and slight bitterness"
 	color = "#543633"
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/gronnmead
-	name = "Ragnar's Brew"
+	name = "Hohenheim's Brew"
 	boozepwr = 35
 	taste_description = "notes of honey and red berries" //I love red mead ok...
 	color = "#772C48"
@@ -2303,13 +2303,13 @@ All effects don't start immediately, but rather get worse over time; the rate is
 //Kazengun boozes
 
 /datum/reagent/consumable/ethanol/beer/kgunlager
-	name = "Yamaguchi Pale"
+	name = "Dunmoon Pale"
 	boozepwr = 10 //A PALE imitation actual beer...
 	taste_description = "mellow bitterness and a hint of green tea"
 	color = "#d7dbbc"
 
 /datum/reagent/consumable/ethanol/beer/kgunsake
-	name = "Junmai-ginjo"
+	name = "Sake"
 	boozepwr = 50
 	taste_description = "dry sweetness"
 	color = "#ccd7e0"
