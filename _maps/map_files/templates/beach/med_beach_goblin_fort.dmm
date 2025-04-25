@@ -22,6 +22,11 @@
 /obj/effect/roofing_helper,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
+"ge" = (
+/obj/effect/roofing_helper,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
 "gB" = (
 /obj/effect/roofing_helper,
 /turf/open/floor/rogue/ruinedwood,
@@ -130,8 +135,8 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods)
 "KC" = (
-/obj/structure/fermenting_barrel,
 /obj/effect/roofing_helper,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
 "KN" = (
@@ -340,7 +345,7 @@ Sf
 nq
 nq
 nq
-Sf
+ge
 nq
 GL
 GL

@@ -563,7 +563,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach)
 "fy" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave)
 "fC" = (
@@ -926,7 +926,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/cave)
 "ji" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cave)
 "jj" = (
@@ -1719,7 +1719,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/crossroads)
 "sj" = (
-/obj/structure/fermenting_barrel,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet/bogcaves)
 "sl" = (
@@ -1969,6 +1969,10 @@
 	},
 /turf/open/floor/rogue/woodturned,
 /area/rogue/under/cave)
+"us" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter)
 "ut" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -2033,7 +2037,9 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
 "vb" = (
-/obj/structure/mineral_door/wood/window,
+/obj/structure/mineral_door/wood/window{
+	dir = 8
+	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter/woods)
 "ve" = (
@@ -2203,8 +2209,8 @@
 /area/rogue/under/town/basement)
 "wQ" = (
 /obj/structure/rack/rogue/shelf/biggest,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine,
+/obj/item/reagent_containers/glass/bottle/rogue/cursedwine,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
 "wS" = (
@@ -2559,6 +2565,10 @@
 "Bd" = (
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave)
+"Bk" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/shelter)
 "Bn" = (
 /obj/structure/mineral_door/bars,
 /obj/effect/decal/cobbleedge{
@@ -2757,7 +2767,7 @@
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/mountains)
 "De" = (
-/obj/structure/fermenting_barrel/random,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
 "Df" = (
@@ -2917,7 +2927,7 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
 "Ez" = (
-/obj/structure/fermenting_barrel,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods/heavenscoast)
 "EA" = (
@@ -3105,7 +3115,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
 "GU" = (
-/obj/structure/fermenting_barrel,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/beach)
 "GY" = (
@@ -3355,7 +3365,7 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave)
 "Jt" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
 "Jx" = (
@@ -4220,7 +4230,7 @@
 /turf/open/floor/rogue/woodturned/nosmooth,
 /area/rogue/indoors/shelter)
 "TZ" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet/bogcaves)
 "Uc" = (
@@ -4230,7 +4240,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cavewet/bogcaves)
 "Ud" = (
-/obj/structure/fermenting_barrel/random/water,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave)
 "Ue" = (
@@ -11225,7 +11235,7 @@ yS
 SF
 Hu
 mN
-sj
+TZ
 sj
 Hu
 SF
@@ -14920,7 +14930,7 @@ ds
 Et
 Sx
 Uy
-uU
+Bk
 sQ
 uU
 Pw
@@ -18517,7 +18527,7 @@ ds
 Sx
 nI
 Yf
-Yf
+us
 Sx
 ds
 ds
@@ -77613,8 +77623,8 @@ QJ
 Ev
 Xs
 Xs
-QJ
-QJ
+Xs
+Xs
 QJ
 en
 tY
@@ -117152,7 +117162,7 @@ ef
 Kk
 Kk
 HK
-HK
+Jt
 HK
 ef
 on

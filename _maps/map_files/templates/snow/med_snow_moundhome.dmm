@@ -351,8 +351,8 @@
 /obj/structure/fluff/railing/border{
 	dir = 4
 	},
-/obj/structure/fermenting_barrel/random/beer,
 /obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "HF" = (

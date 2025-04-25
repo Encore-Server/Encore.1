@@ -8,8 +8,8 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "bX" = (
-/obj/structure/fermenting_barrel/blackgoat,
 /obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "dd" = (
@@ -20,14 +20,9 @@
 /obj/effect/roofing_helper/snow,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/shelter/mountains)
-"dp" = (
-/obj/structure/fermenting_barrel/hagwoodbitter,
-/obj/effect/roofing_helper/snow,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "du" = (
-/obj/structure/fermenting_barrel/random/beer,
 /obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "dE" = (
@@ -39,9 +34,9 @@
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
 "gQ" = (
-/obj/structure/fermenting_barrel/hagwoodbitter,
 /obj/structure/spider/stickyweb,
 /obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "gS" = (
@@ -149,12 +144,6 @@
 "qK" = (
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
-"sb" = (
-/obj/structure/fermenting_barrel/random/beer,
-/obj/structure/spider/stickyweb,
-/obj/effect/roofing_helper/snow,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/indoors/shelter/mountains)
 "tt" = (
 /obj/effect/decal/mossy,
 /obj/effect/decal/mossy{
@@ -230,9 +219,9 @@
 /turf/open/floor/rogue/snow,
 /area/rogue/outdoors/mountains)
 "Cu" = (
-/obj/structure/fermenting_barrel/zagul,
 /obj/structure/spider/stickyweb,
 /obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains)
 "Cy" = (
@@ -421,7 +410,7 @@ Ef
 Ef
 Cu
 RS
-dp
+du
 RS
 bX
 RS
@@ -510,7 +499,7 @@ du
 RS
 du
 RS
-sb
+gQ
 Ef
 Ef
 qK
@@ -527,7 +516,7 @@ du
 GL
 du
 Iy
-sb
+gQ
 Ef
 Ef
 qK

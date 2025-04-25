@@ -74,7 +74,7 @@
 	pixel_y = -1
 	},
 /obj/structure/rack/rogue,
-/obj/structure/fermenting_barrel/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "rg" = (
@@ -109,7 +109,11 @@
 /area/rogue/under/cave)
 "Ft" = (
 /obj/structure/spacevine,
-/obj/structure/fermenting_barrel/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Gc" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/rare,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "HE" = (
@@ -128,7 +132,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "MU" = (
-/obj/structure/fermenting_barrel/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "OG" = (
@@ -245,7 +249,7 @@ iP
 (6,1,1) = {"
 iP
 mx
-MU
+Gc
 fo
 CE
 HE

@@ -76,8 +76,10 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "gQ" = (
-/obj/structure/chair/stool/rogue,
 /obj/effect/roofing_helper,
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 4
+	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "gS" = (
@@ -121,10 +123,8 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/mountains)
 "mZ" = (
-/obj/structure/chair/wood/rogue/chair3{
-	dir = 8
-	},
 /obj/effect/roofing_helper,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/mountains)
 "ny" = (

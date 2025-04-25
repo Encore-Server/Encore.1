@@ -940,6 +940,10 @@
 "MX" = (
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/mountains)
+"Nb" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
 "Nd" = (
 /turf/closed/wall/mineral/rogue/pipe{
 	icon_state = "iron_corner";
@@ -81821,7 +81825,7 @@ oZ
 Mx
 Mx
 XL
-By
+Nb
 pz
 Is
 cA
@@ -82078,7 +82082,7 @@ oZ
 Mx
 Mx
 XL
-By
+Nb
 pz
 ch
 cA
