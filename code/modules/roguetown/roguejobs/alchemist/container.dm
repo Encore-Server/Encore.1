@@ -62,7 +62,7 @@
 // WINES - Expensive, Nobleblooded
 /obj/item/reagent_containers/glass/bottle/rogue/wine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/wine = 48)
-	desc = "A bottle with the cork-seal of the Jin merchants. This one appears to be labelled as a generic red wine from the city's vineyards."
+	desc = "A bottle with a generic hardened clay cork-seal. This one appears to be labelled as a generic red wine, sourced from all over the Goblet."
 
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/sourwine = 48)
@@ -78,7 +78,7 @@
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfred
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfred = 48)
-	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elvish red wine from Wavehearth, and is incredibly popular with the city's nobility. Likely worth more than what an entire village makes!"
+	desc = "A bottle gilded with a silver cork-seal. It appears to be labelled as an elven red wine from Wavehearth, and is incredibly popular with the city's nobility. Likely worth more than what an entire village makes!"
 
 /obj/item/reagent_containers/glass/bottle/rogue/elfblue
 	list_reagents = list(/datum/reagent/consumable/ethanol/beer/elfblue = 48)

@@ -39,7 +39,7 @@
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/fireleaf)
 
 /datum/supply_pack/rogue/alcohol/buttermelt
-	name = "Dwarvish Butterhairs"
+	name = "Dwarvish Buttermelt"
 	cost = 35
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/buttermelt)
 

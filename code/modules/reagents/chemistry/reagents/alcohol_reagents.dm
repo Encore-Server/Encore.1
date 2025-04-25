@@ -2150,7 +2150,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/onion
-	name = "Onion Liquor"
+	name = "Onion Brandy"
 	boozepwr = 10
 	taste_description = "spicy sweet malty overtones"
 	color = "#f1b5ff"
@@ -2262,7 +2262,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 40
 	taste_description = "overwhelming tartness, with a hint of salt"
 	color = "#e0a400"
-	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/nred
 	name = "Jin Red"
@@ -2276,7 +2275,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 35
 	taste_description = "notes of honey and red berries" //I love red mead ok...
 	color = "#772C48"
-	quality = DRINK_GOOD
+	quality = DRINK_VERYGOOD
 
 //Avar boozes
 
