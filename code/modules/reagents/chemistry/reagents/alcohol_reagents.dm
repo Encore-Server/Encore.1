@@ -2385,6 +2385,8 @@ All effects don't start immediately, but rather get worse over time; the rate is
 		M.adjustBruteLoss(-0.5*REM)
 		M.adjustFireLoss(-0.5*REM)
 		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
 		var/list/our_wounds = M.get_wounds()
 		if (LAZYLEN(our_wounds))
 			var/upd = M.heal_wounds(1)
