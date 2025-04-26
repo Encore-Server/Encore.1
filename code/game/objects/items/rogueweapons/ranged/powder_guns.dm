@@ -153,15 +153,17 @@
 		else
 			to_chat(user, "The flash pan needs to be full first!")
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_with_empty_chamber()
+/obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_with_empty_chamber(mob/living/user)
 	if(powder)
 		playsound(src.loc, 'sound/combat/Ranged/musket-shot.ogg', 100, FALSE)
+		new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
 		powder = EMPTY
 	else
 		playsound(src.loc, 'sound/combat/Ranged/musket-shot-unpowdered.ogg', 100, FALSE)
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_live_shot(mob/living/user)
 	..()
+	new /obj/effect/temp_visual/small_smoke(get_step(user, user.dir))
 	powder = EMPTY
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/attackby(obj/item/A, mob/user, params)
