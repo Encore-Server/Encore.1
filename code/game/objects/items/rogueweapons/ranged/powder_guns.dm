@@ -1,6 +1,7 @@
 #define UNLOADED 0 // nothing in the barrel
-#define SEMI_LOADED 1 // a round is in the barrel but it hasn't been packed into the powder yet
-#define LOADED 2 // the round is ready to go
+#define DRY_LOADED 1 // there's a round in the barrel, but no gunpowder
+#define SEMI_LOADED 2 // a round is in the barrel but it hasn't been packed into the powder yet
+#define LOADED 3 // the round is ready to go
 
 #define EMPTY 0 // no gunpowder
 #define FILLED 1 // the powder is in the flash pan
@@ -22,11 +23,12 @@
 	can_parry = TRUE
 	pin = /obj/item/firing_pin
 	force = 10
-	cartridge_wording = "ball"
+	cartridge_wording = "sphere"
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
 	anvilrepair = /datum/skill/craft/engineering
 	var/powder = FALSE
 	var/pan_open = FALSE
+	var/reload_status = 0
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/getonmobprop(tag)
 	. = ..()
@@ -82,14 +84,19 @@
 /datum/intent/shoot/musket
 	chargedrain = 0
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/proc/barrel_status()
+/obj/item/gun/ballistic/revolver/grenadelauncher/musket/proc/update_reload_status()
 	if(chambered)
-		if(powder == PACKED)
-			return LOADED
-		else
-			return SEMI_LOADED
+		switch(powder)
+			if(EMPTY)
+				reload_status = DRY_LOADED
+			if(FILLED)
+				reload_status = SEMI_LOADED
+			if(PACKED)
+				reload_status = LOADED
 	else
-		return UNLOADED
+		reload_status = UNLOADED
+		if(powder)
+			powder = FILLED // the bullet got removed, so the powder can't be packed in anymore
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/examine(mob/user)
 	. = ..()
@@ -99,18 +106,20 @@
 	else
 		pan_status = "<font color='#80B077'>closed</font>."
 
-	switch(barrel_status())
+	switch(reload_status)
 		if(UNLOADED)
-			. += span_info("Barrel is <font color='#CC3730'>unloaded</font>.")
+			. += span_info("Barrel is <font color='#CC3730'>empty</font>.")
+		if(DRY_LOADED)
+			. += span_info("Barrel is <font color='#CC3730'>dry-loaded</font>.")
 		if(SEMI_LOADED)
 			. += span_info("Barrel is <font color='#F1D669'>partially loaded</font>.")
 		if(LOADED)
 			. += span_info("Barrel is <font color='#80B077'>loaded</font>.")
 
-	if(powder)
-		. += span_info("Flash pan is <font color='#80B077'>full</font> and " + pan_status)
+	if(pan_open)
+		pan_status = "Flash pan is<font color='#CC3730'>open</font>."
 	else
-		. += span_info("Flash pan is <font color='#CC3730'>empty</font> and " + pan_status)
+		pan_status = "Flash pan is<font color='#80B077'>closed</font>."
 
 /datum/intent/shoot/musket/can_charge()
 	if(mastermob)
@@ -135,6 +144,10 @@
 			return 10
 	return chargetime
 
+/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attack_self()
+	..()
+	update_reload_status()
+
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/MiddleClick(mob/living/user)
 	if(!pan_open)
 		to_chat(user, "You flick open \the [src]'s flash pan.")
@@ -144,14 +157,29 @@
 		pan_open = FALSE
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/attack_right(mob/living/user)
-	if(barrel_status() == SEMI_LOADED)
-		if(powder == FILLED)
-			user.visible_message("[user] starts packing \the [src]'s gunpowder.")
-			if(do_after(user, 30, FALSE))
-				playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
-				powder = PACKED
-		else
-			to_chat(user, "The flash pan needs to be full first!")
+	if(reload_status == SEMI_LOADED)
+		user.visible_message("[user] starts packing \the [src]'s gunpowder.")
+		if(do_after(user, 30, FALSE))
+			playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
+			powder = PACKED
+			update_reload_status()
+	else
+		to_chat(user, "The flash pan needs to be full first!")
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attackby(obj/item/A, mob/user, params)
+	..()
+
+	if(istype(A, /obj/item/gunpowderhorn))
+		if(chambered)
+			to_chat(user, span_warn("\The ammunition is in the way, remove it first!"))
+			return
+		if(!powder)
+			user.visible_message("[user] starts powdering \the [src].")
+			if(do_after(user, 10, FALSE))
+				playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
+				powder = FILLED
+
+	update_reload_status()
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_with_empty_chamber(mob/living/user)
 	if(powder)
@@ -163,20 +191,11 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_live_shot(mob/living/user)
 	..()
-	new /obj/effect/temp_visual/small_smoke(get_step(user, user.dir))
+	new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
 	powder = EMPTY
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attackby(obj/item/A, mob/user, params)
-	..()
-
-	if(istype(A, /obj/item/gunpowderhorn) && !powder && pan_open)
-		user.visible_message("[user] starts powdering \the [src].")
-		if(do_after(user, 10, FALSE))
-			playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
-			powder = FILLED
-
 /obj/item/gun/ballistic/revolver/grenadelauncher/musket/can_shoot()
-	if(!pan_open && barrel_status() == LOADED)
+	if(!pan_open && reload_status == LOADED)
 		return TRUE
 	else
 		return FALSE
