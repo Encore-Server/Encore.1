@@ -133,7 +133,8 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/polymorph_all,
 	/client/proc/show_tip,
 	/client/proc/smite,
-	/client/proc/admin_away
+	/client/proc/admin_away,
+	/client/proc/roll_admin_dice
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
 GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /datum/admins/proc/spawn_cargo, /datum/admins/proc/spawn_objasmob, /client/proc/respawn_character, /datum/admins/proc/beaker_panel))
@@ -249,6 +250,7 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/datum/admins/proc/toggleaban,
 	/datum/admins/proc/toggleAI,
 	/client/proc/restart_controller,
+	/client/proc/roll_admin_dice,
 	/client/proc/cmd_admin_list_open_jobs,
 	/client/proc/callproc,
 	/client/proc/callproc_datum,
@@ -881,3 +883,75 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	if(set_time_value)
 		set_time(set_time_value)		
 		world << "[ckey] has set the time to [station_time_timestamp()]."	
+
+/client/proc/roll_admin_dice()
+	set category = "Admin"
+	set name = "Roll Global Dice"
+	var/d6 = "1d6"
+	var/d20 = "1d20"
+	var/d100 = "1d100"
+	var/result = null
+	var/sound/dice_alert = new()
+
+	var/input = input(usr, "Give your reasoning, if any, for rolling THE DICE of FATE. Detail conditional modifiers here.", "Offer Nuance", "") as message|null
+	if(!input)
+		return
+
+	var/confirm = alert(src, "DICE of FATE", "Pick your dice size", "Roll D6", "Roll D20", "Roll D100")
+	switch(confirm)
+		if("Roll D6")
+			var/roll_result = roll(d6)
+			if(roll_result == 6)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<2)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Roll D20")
+			var/roll_result = roll(d20)
+			if(roll_result == 19)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<2)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Roll D100")
+			var/roll_result = roll(d100)
+			if(roll_result>95)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<5)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Cancel")
+			return
