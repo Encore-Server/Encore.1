@@ -299,15 +299,15 @@
 
 /obj/projectile/bullet/ironball
 	name = "iron ball"
-	damage = 50
+	damage = 80
 	damage_type = BRUTE
-	armor_penetration = 80
+	armor_penetration = 40 // this bullet does more damage than a bolt, so less armour-pen is a fair trade-off
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "musketball_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
 	range = 30
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'sound/combat/hits/hi_bolt (3).ogg'
 	embedchance = 100
-	woundclass = BCLASS_STAB
+	woundclass = BCLASS_SMASH // doesn't really cause severed arteries, but feels like it dislocates and fractures bones a lot more
 	flag = "bullet"
 	speed = 0.1

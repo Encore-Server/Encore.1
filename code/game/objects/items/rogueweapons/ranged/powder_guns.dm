@@ -25,7 +25,9 @@
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
 	dry_fire_sound = 'sound/combat/Ranged/musket-shot-unpowdered.ogg'
 	anvilrepair = /datum/skill/craft/engineering
+	var/two_handed = FALSE //does the gun require both hands to fire it
 	var/powder = FALSE
+	var/damfactor = 1 //lets one gun do more damage than another gun with the same projectile
 	var/reload_status = 0
 
 /obj/item/ammo_box/magazine/internal/shot/musketball
@@ -89,10 +91,11 @@
 	update_reload_status()
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/MiddleClick(mob/living/user)
+	user.changeNext_move(user.used_intent.clickcd)
 	if(reload_status == SEMI_LOADED)
 		user.visible_message("[user] starts packing \the [src]'s gunpowder.")
+		playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
 		if(do_after(user, 30, FALSE))
-			playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
 			powder = PACKED
 			update_reload_status()
 	else
@@ -107,8 +110,8 @@
 			return
 		if(!powder)
 			user.visible_message("[user] starts powdering \the [src].")
+			playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
 			if(do_after(user, 10, FALSE))
-				playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
 				powder = FILLED
 
 	update_reload_status()
@@ -132,7 +135,24 @@
 	else
 		return FALSE
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/process_fire()
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/process_fire(atom/target, mob/living/user)
+
+	if(user.get_num_arms(FALSE) < 2)
+		return FALSE
+	if(two_handed && user.get_inactive_held_item())
+		return FALSE
+	// if(user.client)
+		// if(user.client.chargedprog >= 100)
+			// spread = 0
+		// else
+			// spread = 150 - (150 * (user.client.chargedprog / 100))
+	// else
+		// spread = 0
+	// commented out temporarily while i figure out how exactly i want the aiming process to go
+	for(var/obj/item/ammo_casing/CB in get_ammo_list(FALSE, TRUE))
+		var/obj/projectile/BB = CB.BB
+		BB.damage = BB.damage * damfactor
+
 	..()
 	update_reload_status() // calling this on the shoot_live_shot proc causes it to read the chambered var before it gets updated, which results in the update proc incorrectly thinking a round is still loaded
 
@@ -146,11 +166,13 @@
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
 	experimental_onback = TRUE
-	randomspread = 1
-	spread = 0
+	randomspread = 0
+	spread = 40
 	can_parry = TRUE
 	pin = /obj/item/firing_pin
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
+	damfactor = 1.5
+	two_handed = TRUE
 	var/pan_open = FALSE
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/getonmobprop(tag)
@@ -206,18 +228,25 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/examine(mob/user)
 	. = ..()
-
+	var/pan_status
 	if(pan_open)
-		. += span_info("Flash pan is <font color='#CC3730'>open</font>.")
+		pan_status = ("<font color='#CC3730'>open</font>.")
 	else
-		. += span_info("Flash pan is <font color='#80B077'>closed</font>.")
+		pan_status = ("<font color='#80B077'>closed</font>.")
+
+	if(powder)
+		. += span_info("Flash pan is <font color='#80B077'>full</font> and " + pan_status)
+	else
+		. += span_info("Flash pan is <font color='#CC3730'>empty</font> and " + pan_status)
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/attack_right(mob/living/user)
 	if(!pan_open)
 		to_chat(user, "You flick open \the [src]'s flash pan.")
+		playsound(user, 'sound/combat/Ranged/musket-flashpan-open.ogg', 100, FALSE)
 		pan_open = TRUE
 	else
 		to_chat(user, "You close \the [src]'s flash pan.")
+		playsound(user, 'sound/combat/Ranged/musket-flashpan-close.ogg', 100, FALSE)
 		pan_open = FALSE
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/can_shoot()
@@ -231,7 +260,8 @@
 	desc = "a bag filled with gunpowder, used for priming powder-based firearms."
 	icon = 'icons/roguetown/weapons/guns.dmi'
 	icon_state = "powderhorn"
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
+	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_NECK
 
 /obj/item/ballpouch
 	name = "ball pouch"
