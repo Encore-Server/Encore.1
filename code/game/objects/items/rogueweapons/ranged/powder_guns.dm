@@ -4,16 +4,14 @@
 #define LOADED 3 // the round is ready to go
 
 #define EMPTY 0 // no gunpowder
-#define FILLED 1 // the powder is in the flash pan
+#define FILLED 1 // the powder is in the flash pan or barrel
 #define PACKED 2 // the musket shot has been packed into the powder
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket
-	name = "musket"
-	desc = "A simple firearm developed by cutting edge minds."
-	icon = 'icons/roguetown/weapons/guns.dmi'
-	icon_state = "arquebus"
-	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/musket)
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/musketball
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun // this is going to become a proper handcannon later on, but for now i want to focus on getting muskets implemented - Hocka
+	name = "hand cannon"
+	desc = "A basic, primordial iteration of a firearm."
+	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun)
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/ironball // pretty much every handheld powder gun i can think of will use these, thank god
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
@@ -25,12 +23,137 @@
 	force = 10
 	cartridge_wording = "sphere"
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
+	dry_fire_sound = 'sound/combat/Ranged/musket-shot-unpowdered.ogg'
 	anvilrepair = /datum/skill/craft/engineering
 	var/powder = FALSE
-	var/pan_open = FALSE
 	var/reload_status = 0
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/getonmobprop(tag)
+/obj/item/ammo_box/magazine/internal/shot/ironball
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
+	caliber = "musketball"
+	max_ammo = 1
+	start_empty = TRUE
+
+/datum/intent/shoot/powdergun
+	chargedrain = 0
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/proc/update_reload_status()
+	if(chambered)
+		switch(powder) //we already know there's a ball in the barrel at this point, so the rest of the context is entirely dependant on what state the gunpowder is in
+			if(EMPTY)
+				reload_status = DRY_LOADED
+			if(FILLED)
+				reload_status = SEMI_LOADED
+			if(PACKED)
+				reload_status = LOADED
+	else
+		reload_status = UNLOADED
+		if(powder == PACKED)
+			powder = FILLED // the bullet got removed, so the powder isn't packed anymore and it has to be redone
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/examine(mob/user)
+	. = ..()
+	switch(reload_status)
+		if(UNLOADED)
+			. += span_info("Barrel is <font color='#CC3730'>empty</font>.")
+		if(DRY_LOADED)
+			. += span_info("Barrel is <font color='#CC3730'>dry-loaded</font>.")
+		if(SEMI_LOADED)
+			. += span_info("Barrel is <font color='#F1D669'>partially loaded</font>.")
+		if(LOADED)
+			. += span_info("Barrel is <font color='#80B077'>loaded</font>.")
+
+/datum/intent/shoot/powdergun/can_charge()
+	if(mastermob)
+		if(mastermob.get_num_arms(FALSE) < 2)
+			return FALSE
+	return TRUE // we aren't checking for an empty second hand here because manually-lit firearms literally require that you're holding a fire source in your other hand
+
+/datum/intent/shoot/powdergun/get_chargetime() // i should probably rewrite this and take advantage of it for when hand cannons and their changeable fuses are added
+	if(mastermob && chargetime)
+		var/newtime = chargetime
+		//skill block
+		newtime = newtime + 80
+		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 20)
+		//stat block
+		newtime = newtime + 20
+		newtime = newtime - ((mastermob.STAPER)*1.5)
+		if(newtime > 0)
+			return newtime
+		else
+			return 10
+	return chargetime
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/attack_self()
+	..()
+	update_reload_status()
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/MiddleClick(mob/living/user)
+	if(reload_status == SEMI_LOADED)
+		user.visible_message("[user] starts packing \the [src]'s gunpowder.")
+		if(do_after(user, 30, FALSE))
+			playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
+			powder = PACKED
+			update_reload_status()
+	else
+		to_chat(user, "You need to add ball and powder first!")
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/attackby(obj/item/A, mob/user, params)
+	..()
+
+	if(istype(A, /obj/item/gunpowderhorn))
+		if(chambered)
+			to_chat(user, span_warn("The ammunition is in the way, remove it first!"))
+			return
+		if(!powder)
+			user.visible_message("[user] starts powdering \the [src].")
+			if(do_after(user, 10, FALSE))
+				playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
+				powder = FILLED
+
+	update_reload_status()
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/shoot_with_empty_chamber(mob/living/user)
+	if(powder)
+		playsound(src.loc, 'sound/combat/Ranged/musket-shot.ogg', 100, FALSE)
+		new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
+		powder = EMPTY
+	else
+		playsound(src.loc, 'sound/combat/Ranged/musket-shot-unpowdered.ogg', 100, FALSE)
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/shoot_live_shot(mob/living/user)
+	..()
+	new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
+	powder = EMPTY
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/can_shoot()
+	if(reload_status == LOADED)
+		. = ..()
+	else
+		return FALSE
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/process_fire()
+	..()
+	update_reload_status() // calling this on the shoot_live_shot proc causes it to read the chambered var before it gets updated, which results in the update proc incorrectly thinking a round is still loaded
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced // this is to separate powder guns with a firing mechanism from those that don't - so we don't run into conflicts where a hand cannon starts checking for a flash pan that it shouldn't have
+	name = "musket"
+	desc = "A simple two-handed firearm developed by cutting edge industrial minds."
+	icon = 'icons/roguetown/weapons/guns.dmi'
+	icon_state = "arquebus"
+	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun)
+	slot_flags = ITEM_SLOT_BACK
+	w_class = WEIGHT_CLASS_BULKY
+	experimental_inhand = TRUE
+	experimental_onback = TRUE
+	randomspread = 1
+	spread = 0
+	can_parry = TRUE
+	pin = /obj/item/firing_pin
+	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
+	var/pan_open = FALSE
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/getonmobprop(tag)
 	. = ..()
 	if(tag)
 		switch(tag)
@@ -81,74 +204,15 @@
 				"wflip" = 0,
 				"eflip" = 1)
 
-/datum/intent/shoot/musket
-	chargedrain = 0
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/proc/update_reload_status()
-	if(chambered)
-		switch(powder)
-			if(EMPTY)
-				reload_status = DRY_LOADED
-			if(FILLED)
-				reload_status = SEMI_LOADED
-			if(PACKED)
-				reload_status = LOADED
-	else
-		reload_status = UNLOADED
-		if(powder)
-			powder = FILLED // the bullet got removed, so the powder can't be packed in anymore
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/examine(mob/user)
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/examine(mob/user)
 	. = ..()
-	var/pan_status
-	if(pan_open)
-		pan_status = "<font color='#CC3730'>open</font>."
-	else
-		pan_status = "<font color='#80B077'>closed</font>."
-
-	switch(reload_status)
-		if(UNLOADED)
-			. += span_info("Barrel is <font color='#CC3730'>empty</font>.")
-		if(DRY_LOADED)
-			. += span_info("Barrel is <font color='#CC3730'>dry-loaded</font>.")
-		if(SEMI_LOADED)
-			. += span_info("Barrel is <font color='#F1D669'>partially loaded</font>.")
-		if(LOADED)
-			. += span_info("Barrel is <font color='#80B077'>loaded</font>.")
 
 	if(pan_open)
-		pan_status = "Flash pan is<font color='#CC3730'>open</font>."
+		. += span_info("Flash pan is <font color='#CC3730'>open</font>.")
 	else
-		pan_status = "Flash pan is<font color='#80B077'>closed</font>."
+		. += span_info("Flash pan is <font color='#80B077'>closed</font>.")
 
-/datum/intent/shoot/musket/can_charge()
-	if(mastermob)
-		if(mastermob.get_num_arms(FALSE) < 2)
-			return FALSE
-		if(mastermob.get_inactive_held_item())
-			return FALSE
-	return TRUE
-
-/datum/intent/shoot/musket/get_chargetime()
-	if(mastermob && chargetime)
-		var/newtime = chargetime
-		//skill block
-		newtime = newtime + 80
-		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 20)
-		//stat block
-		newtime = newtime + 20
-		newtime = newtime - ((mastermob.STAPER)*1.5)
-		if(newtime > 0)
-			return newtime
-		else
-			return 10
-	return chargetime
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attack_self()
-	..()
-	update_reload_status()
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/MiddleClick(mob/living/user)
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/attack_right(mob/living/user)
 	if(!pan_open)
 		to_chat(user, "You flick open \the [src]'s flash pan.")
 		pan_open = TRUE
@@ -156,47 +220,9 @@
 		to_chat(user, "You close \the [src]'s flash pan.")
 		pan_open = FALSE
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attack_right(mob/living/user)
-	if(reload_status == SEMI_LOADED)
-		user.visible_message("[user] starts packing \the [src]'s gunpowder.")
-		if(do_after(user, 30, FALSE))
-			playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
-			powder = PACKED
-			update_reload_status()
-	else
-		to_chat(user, "The flash pan needs to be full first!")
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/attackby(obj/item/A, mob/user, params)
-	..()
-
-	if(istype(A, /obj/item/gunpowderhorn))
-		if(chambered)
-			to_chat(user, span_warn("\The ammunition is in the way, remove it first!"))
-			return
-		if(!powder)
-			user.visible_message("[user] starts powdering \the [src].")
-			if(do_after(user, 10, FALSE))
-				playsound(src.loc, 'sound/combat/Ranged/gunpowder-pouring.ogg', 100, FALSE)
-				powder = FILLED
-
-	update_reload_status()
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_with_empty_chamber(mob/living/user)
-	if(powder)
-		playsound(src.loc, 'sound/combat/Ranged/musket-shot.ogg', 100, FALSE)
-		new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
-		powder = EMPTY
-	else
-		playsound(src.loc, 'sound/combat/Ranged/musket-shot-unpowdered.ogg', 100, FALSE)
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/shoot_live_shot(mob/living/user)
-	..()
-	new /obj/effect/temp_visual/small_smoke/gunpowdersmoke(get_step(user, user.dir))
-	powder = EMPTY
-
-/obj/item/gun/ballistic/revolver/grenadelauncher/musket/can_shoot()
-	if(!pan_open && reload_status == LOADED)
-		return TRUE
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/can_shoot()
+	if(!pan_open)
+		. = ..()
 	else
 		return FALSE
 
@@ -206,12 +232,6 @@
 	icon = 'icons/roguetown/weapons/guns.dmi'
 	icon_state = "powderhorn"
 	w_class = WEIGHT_CLASS_SMALL
-
-/obj/item/ammo_box/magazine/internal/shot/musketball
-	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/musketball
-	caliber = "musketball"
-	max_ammo = 1
-	start_empty = TRUE
 
 /obj/item/ballpouch
 	name = "ball pouch"
@@ -244,7 +264,7 @@
 /obj/item/ballpouch/Initialize()
 	. = ..()
 	for(var/i in 1 to max_storage)
-		var/obj/item/ammo_casing/caseless/rogue/bullet/musketball/B = new()
+		var/obj/item/ammo_casing/caseless/rogue/bullet/ironball/B = new()
 		bullets += B
 
 /obj/item/ballpouch/proc/takebullet(obj/A)
@@ -281,6 +301,7 @@
 
 
 #undef UNLOADED
+#undef DRY_LOADED
 #undef SEMI_LOADED
 #undef LOADED
 #undef EMPTY
