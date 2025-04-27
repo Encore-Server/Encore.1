@@ -11,7 +11,7 @@
 	name = "hand cannon"
 	desc = "A basic, primordial iteration of a firearm."
 	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun)
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/ironball // pretty much every handheld powder gun i can think of will use these, thank god
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/musketball // pretty much every handheld powder gun i can think of will use these, thank god
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
@@ -28,7 +28,7 @@
 	var/powder = FALSE
 	var/reload_status = 0
 
-/obj/item/ammo_box/magazine/internal/shot/ironball
+/obj/item/ammo_box/magazine/internal/shot/musketball
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
 	caliber = "musketball"
 	max_ammo = 1
