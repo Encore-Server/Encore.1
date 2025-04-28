@@ -1361,6 +1361,9 @@
 /area/rogue/outdoors/woods/heavenscoast)
 "nI" = (
 /obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
 "nJ" = (
