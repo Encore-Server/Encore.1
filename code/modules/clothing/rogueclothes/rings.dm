@@ -18,6 +18,27 @@
 	icon_state = "ring_s"
 	sellprice = 33
 
+/obj/item/clothing/ring/silver/templar
+	name = "inscribed silver ring"
+	icon_state = "ring_templar"
+	desc = "A slim band made of pure and sanctified silver, inscribed with Katholikos imagery. Typically worn on the middle finger, these rings represent the oaths that a Templar swears to serve their Aspect. To serve is to shoulder no small burden. Wear this with pride, child of the Elementals."
+	sellprice = 40
+
+/obj/item/clothing/ring/silver/templar/pickup(mob/living/user)
+	..()
+	var/notheretic = FALSE
+	for(var/i in ALL_PALADIN_PATRONS)
+		if(user.patron == ALL_PALADIN_PATRONS[i])
+			notheretic = TRUE
+			break
+
+	if(!notheretic)
+		to_chat(user, "<font color='yellow'>THE WEIGHT OF ANOTHER'S VOWS WEIGHS TOO HEAVY! BLESSED BY THE ASPECTS, THE RING IS ANATHEMA TO YOUR UNWORTHY HANDS, STAINED BY HERESY!</font>")
+		spawn(30)
+			if(loc == user)
+				user.adjust_fire_stacks(5)
+				user.IgniteMob()
+
 /obj/item/clothing/ring/gold
 	name = "gold ring"
 	icon_state = "ring_g"
