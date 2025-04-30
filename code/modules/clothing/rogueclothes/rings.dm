@@ -26,18 +26,12 @@
 
 /obj/item/clothing/ring/silver/templar/pickup(mob/living/user)
 	..()
-	var/notheretic = FALSE
-	for(var/i in ALL_PALADIN_PATRONS)
-		if(user.patron == ALL_PALADIN_PATRONS[i])
-			notheretic = TRUE
-			break
-
-	if(!notheretic)
-		to_chat(user, "<font color='yellow'>THE WEIGHT OF ANOTHER'S VOWS WEIGHS TOO HEAVY! BLESSED BY THE ASPECTS, THE RING IS ANATHEMA TO YOUR UNWORTHY HANDS, STAINED BY HERESY!</font>")
+	if(!(user.patron.type in ALL_PALADIN_PATRONS))
+		to_chat(user, "<font color='yellow'>THE WEIGHT OF ANOTHER'S VOWS IS TOO HEAVY! THE RING IS ANATHEMA TO YOUR UNWORTHY HANDS, STAINED BY HERESY!</font>")
 		spawn(30)
-			if(loc == user)
-				user.adjust_fire_stacks(5)
-				user.IgniteMob()
+		if(loc == user)
+			user.adjust_fire_stacks(5)
+			user.IgniteMob()
 
 /obj/item/clothing/ring/gold
 	name = "gold ring"
