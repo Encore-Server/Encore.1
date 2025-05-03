@@ -2134,7 +2134,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 15
 	taste_description = "cheap pisswater"
 	color = "#DBD77F"
-	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/hagwoodbitter
 	name = "Hagwood Bitter"
@@ -2151,7 +2150,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/onion
-	name = "Ratkept Onin Cognac"
+	name = "Onion Brandy"
 	boozepwr = 10
 	taste_description = "spicy sweet malty overtones"
 	color = "#f1b5ff"
@@ -2159,26 +2158,27 @@ All effects don't start immediately, but rather get worse over time; the rate is
 
 // Elf Production - LEAF-LOVERS MOTHERFUCKER
 
-/datum/reagent/consumable/ethanol/beer/aurorian
-	name = "Aurorian"
-	boozepwr = 5
+/datum/reagent/consumable/ethanol/beer/druidsdelight
+	name = "Druid's Delight"
+	boozepwr = 10
 	taste_description = "subtle herbacious undertones"
 	color = "#5D8A8A"
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/fireleaf // cabbbage
 	name = "Fireleaf"
-	boozepwr = 2
-	taste_description = "bland liquor"
+	boozepwr = 10
+	taste_description = "sweet and earthy liquor"
 	color = "#475e45"
+	quality = DRINK_NICE
 
 // Dwarven Production - Best in the Realms
 
-/datum/reagent/consumable/ethanol/beer/butterhairs
-	name = "Butterhairs"
+/datum/reagent/consumable/ethanol/beer/buttermelt
+	name = "Buttermelt"
 	boozepwr = 30
-	taste_description = "buttery richness"
-	color = "#5D8A8A"
+	taste_description = "buttery smooth, rich beer"
+	color = "#91722f"
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/stonebeards
@@ -2186,12 +2186,12 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 40
 	taste_description = "potent oatlike liquor"
 	color = "#5D8A8A"
-	quality = DRINK_GOOD
+	quality = DRINK_FANTASTIC
 
 /datum/reagent/consumable/ethanol/beer/voddena // Not vodka. Trust me.
 	name = "Voddena"
 	boozepwr = 55  // holy shit
-	taste_description = "burning starchy wet dirt"
+	taste_description = "astringent burning"
 	color = "#4b443c"
 
 // WINE - Fancy.. And yes: all drinks are beer, technically. Cope. Seethe. I didnt code it like this.
@@ -2236,7 +2236,7 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/elfblue
-	name = "Valmora Blue"
+	name = "Rols Blue"
 	boozepwr = 50
 	taste_description = "saintly sweetness"
 	color = "#2C9DAF"
@@ -2251,32 +2251,31 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/apfelweinheim
-	name = "Appelheimer"
+	name = "Dunmoon Cider"
 	boozepwr = 45
 	taste_description = "tart crispness and mellow sweetness"
 	color = "#e0cb55"
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/rtoper
-	name = "Rockhill Toper"
+	name = "Sectus Toper"
 	boozepwr = 40
-	taste_description = "overwhelming tartness"
+	taste_description = "overwhelming tartness, with a hint of salt"
 	color = "#e0a400"
-	quality = DRINK_NICE
 
 /datum/reagent/consumable/ethanol/beer/nred
-	name = "Norwardine Red"
+	name = "Jin Red"
 	boozepwr = 30
 	taste_description = "heavy caramel note and slight bitterness"
 	color = "#543633"
 	quality = DRINK_GOOD
 
 /datum/reagent/consumable/ethanol/beer/gronnmead
-	name = "Ragnar's Brew"
+	name = "Hohenheim's Brew"
 	boozepwr = 35
 	taste_description = "notes of honey and red berries" //I love red mead ok...
 	color = "#772C48"
-	quality = DRINK_GOOD
+	quality = DRINK_VERYGOOD
 
 //Avar boozes
 
@@ -2303,13 +2302,13 @@ All effects don't start immediately, but rather get worse over time; the rate is
 //Kazengun boozes
 
 /datum/reagent/consumable/ethanol/beer/kgunlager
-	name = "Yamaguchi Pale"
+	name = "Dunmoon Pale"
 	boozepwr = 10 //A PALE imitation actual beer...
 	taste_description = "mellow bitterness and a hint of green tea"
 	color = "#d7dbbc"
 
 /datum/reagent/consumable/ethanol/beer/kgunsake
-	name = "Junmai-ginjo"
+	name = "Sake"
 	boozepwr = 50
 	taste_description = "dry sweetness"
 	color = "#ccd7e0"
@@ -2321,3 +2320,76 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	taste_description = "a mix of sweet and sour"
 	color = "#ddb99b"
 	quality = DRINK_VERYGOOD
+
+// Funny Religious Wines
+
+/datum/reagent/consumable/ethanol/beer/redwine/blessed
+	name = "Consecrated Wine"
+	boozepwr = 30
+	taste_description = "sweet red wine, with a comforting warmth"
+	color = "#830d0d"
+	quality = DRINK_NICE
+
+/datum/reagent/consumable/ethanol/beer/redwine/blessed/on_mob_life(mob/living/carbon/M)
+	. = ..()
+	if (M.mob_biotypes & MOB_UNDEAD)
+		M.adjustFireLoss(1*REM)
+	else
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+
+/datum/reagent/water/blessed/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
+	if (!istype(M))
+		return ..()
+	
+	if (method == TOUCH)
+		if (M.mob_biotypes & MOB_UNDEAD)
+			M.adjustFireLoss(4*reac_volume, 0)
+			M.visible_message(span_warning("[M] erupts into angry fizzling and hissing!"), span_warning("CONSECRATED WINE!!! IT BURNS!!!"))
+			M.emote("scream")
+	
+	return ..()
+
+/datum/reagent/consumable/ethanol/beer/redwine/cursed
+	name = "Cursed Wine"
+	boozepwr = 30
+	taste_description = "sweet red wine, with an unsettling chill"
+	color = "#830d0d"
+	quality = DRINK_NICE
+
+/datum/reagent/consumable/ethanol/beer/redwine/cursed/on_mob_life(mob/living/carbon/M)
+	. = ..()
+	var/mob/living/carbon/human/M_hum
+	if(istype(M,/mob/living/carbon/human/))
+		M_hum = M
+	if((M.mob_biotypes & MOB_UNDEAD) || (M_hum.patron.undead_hater == FALSE))
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+	else
+		M.adjustBruteLoss(-0.5*REM)
+		M.adjustFireLoss(-0.5*REM)
+		M.adjustOxyLoss(-0.5, 0)
+		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -0.1*REM)
+		M.adjustCloneLoss(-0.1*REM, 0)
+		var/list/our_wounds = M.get_wounds()
+		if (LAZYLEN(our_wounds))
+			var/upd = M.heal_wounds(1)
+			if (upd)
+				M.update_damage_overlays()
+		M.rogfat_add(1*REM)

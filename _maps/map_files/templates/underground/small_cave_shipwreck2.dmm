@@ -11,7 +11,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "id" = (
-/obj/structure/fermenting_barrel/random,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "kd" = (

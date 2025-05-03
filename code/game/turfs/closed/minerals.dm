@@ -636,7 +636,7 @@
 	smooth_icon = 'icons/turf/walls/cwall.dmi'
 	wallclimb = TRUE
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
-	canSmoothWith = list(/turf/closed/mineral/random/rogue, /turf/closed/mineral/rogue)
+	canSmoothWith = list(/turf/closed/mineral/random/rogue, /turf/closed/mineral/rogue, /turf/closed/wall/mineral/rogue, /obj/structure/roguewindow)
 	turf_type = /turf/open/floor/rogue/naturalstone
 	baseturfs = /turf/open/floor/rogue/naturalstone
 	mineralAmt = 1

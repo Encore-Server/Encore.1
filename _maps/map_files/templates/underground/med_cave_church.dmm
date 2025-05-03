@@ -167,8 +167,8 @@
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave)
 "Pk" = (
-/obj/structure/fermenting_barrel,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/fermenting_barrel/blessedwine,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave)
 "SQ" = (

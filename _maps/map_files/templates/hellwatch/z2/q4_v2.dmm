@@ -12,16 +12,7 @@
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/outdoors/woods/churchfort/basement)
 "bw" = (
-/obj/structure/rack/rogue/shelf/big{
-	icon_state = "shelf_biggest";
-	pixel_y = 0
-	},
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/item/reagent_containers/glass/bottle/rogue/whitewine,
-/obj/item/reagent_containers/glass/bottle/rogue/whitewine,
+/obj/structure/fermenting_barrel/blessedwine,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "cK" = (
@@ -34,7 +25,7 @@
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort/basement)
 "cT" = (
-/obj/structure/fermenting_barrel/hagwoodbitter,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "dk" = (
@@ -150,7 +141,7 @@
 /turf/open/floor/carpet/red,
 /area/rogue/outdoors/woods/churchfort/basement)
 "lK" = (
-/obj/structure/fermenting_barrel/water,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "nq" = (
@@ -315,6 +306,11 @@
 /obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
 /obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
 /obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "FV" = (
@@ -335,6 +331,11 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "GF" = (
@@ -342,7 +343,7 @@
 /turf/open/floor/rogue/blocks/bluestone,
 /area/rogue/outdoors/woods/churchfort/basement)
 "IO" = (
-/obj/structure/fermenting_barrel/zagul,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Jq" = (
