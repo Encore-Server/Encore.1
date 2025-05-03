@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aJ" = (
 /obj/effect/roofing_helper/twig,
-/obj/structure/fermenting_barrel/water,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "gB" = (
@@ -103,6 +103,10 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/woods/heavenscoast)
+"KW" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/woods)
 "Pl" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter/woods)
@@ -193,7 +197,7 @@ rN
 Pl
 Pl
 KC
-KC
+KW
 gB
 FI
 FI

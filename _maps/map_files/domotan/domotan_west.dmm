@@ -87,7 +87,7 @@
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = 32
 	},
-/obj/structure/fermenting_barrel/water,
+/obj/structure/fermenting_barrel/cursedwine,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave/oldfort)
 "aI" = (
@@ -859,7 +859,7 @@
 	icon_state = "tablewood1";
 	dir = 1
 	},
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
+/obj/item/reagent_containers/glass/bottle/rogue/cursedwine,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/under/cave/oldfort)
 "ft" = (
@@ -932,9 +932,9 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/oldfort)
 "fU" = (
-/obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/rogue/haunt,
+/obj/structure/bonepile,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "fY" = (
@@ -1031,7 +1031,7 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/lighthouse)
 "gD" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/under/cave/oldtown)
 "gE" = (
@@ -1125,6 +1125,10 @@
 	icon_state = "cobbleedge-sread"
 	},
 /turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/woods)
+"gU" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "gX" = (
 /obj/structure/flora/newtree,
@@ -2226,7 +2230,7 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/west)
 "nC" = (
-/obj/structure/fermenting_barrel,
+/obj/structure/fermenting_barrel/cursedwine,
 /turf/open/floor/rogue/wood,
 /area/rogue/under/cave/oldfort)
 "nH" = (
@@ -2411,7 +2415,7 @@
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/cave/oldfort)
 "oX" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "oY" = (
@@ -2430,8 +2434,8 @@
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/woods/west/lonelyeerie)
 "pf" = (
-/obj/structure/fermenting_barrel/water,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/oldfort)
 "ph" = (
@@ -2728,7 +2732,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "rg" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/oldtown)
 "ri" = (
@@ -3288,6 +3292,10 @@
 	},
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/woods/west)
+"uT" = (
+/obj/structure/bonepile,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/oldfort)
 "uV" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -3556,6 +3564,7 @@
 /obj/item/rogueweapon/shovel/small{
 	pixel_x = 6
 	},
+/obj/item/rogueweapon/thresher,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "wL" = (
@@ -3572,7 +3581,7 @@
 /turf/open/floor/rogue/cobblerock,
 /area/rogue/outdoors/lighthouse)
 "wQ" = (
-/obj/structure/fermenting_barrel/random/water,
+/obj/structure/fermenting_barrel/cursedwine,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/lostkeep)
 "wT" = (
@@ -3664,6 +3673,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter/woods)
+"xx" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/oldfort)
 "xy" = (
 /obj/structure/spacevine{
 	opacity = 1
@@ -4278,8 +4291,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "Bo" = (
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/structure/rack/rogue,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/rare,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/oldfort)
 "Br" = (
@@ -4553,7 +4565,7 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/woods)
 "CO" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cavewet/bogcaves)
 "CQ" = (
@@ -4739,8 +4751,8 @@
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/berkleigh)
 "DR" = (
-/obj/structure/fermenting_barrel/random/beer,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "DT" = (
@@ -5219,9 +5231,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
 "Hf" = (
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/structure/rack/rogue,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/oldfort)
 "Hj" = (
@@ -5497,6 +5507,11 @@
 /obj/structure/flora/roguegrass/thorn_bush,
 /obj/structure/glowshroom,
 /turf/open/floor/rogue/blocks/green,
+/area/rogue/under/cave/oldfort)
+"IT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/oldfort)
 "IU" = (
 /obj/item/natural/stone,
@@ -5918,8 +5933,8 @@
 	dir = 4;
 	icon_state = "largetable"
 	},
-/obj/item/reagent_containers/glass/bottle/rogue/redwine,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/glass/bottle/rogue/cursedwine,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/cave/oldfort)
 "LO" = (
@@ -6109,11 +6124,8 @@
 /turf/open/water/swamp,
 /area/rogue/outdoors/woods/west/lonelyeerie)
 "MU" = (
-/obj/item/natural/bowstring,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/obj/structure/rack/rogue,
-/obj/item/reagent_containers/glass/bottle/rogue/wine,
-/turf/open/floor/rogue/cobble/mossy,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/wood,
 /area/rogue/under/cave/oldfort)
 "MY" = (
 /obj/structure/fluff/railing/border{
@@ -6157,6 +6169,11 @@
 /obj/structure/roguewindow/stained/yellow,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/lostkeep)
+"Nn" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/oldfort)
 "Np" = (
 /obj/structure/fluff/statue,
 /turf/open/floor/rogue/cobble/mossy,
@@ -6376,6 +6393,9 @@
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
 /obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/oldfort)
 "OJ" = (
@@ -6490,7 +6510,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/cave/oldfort)
 "Ps" = (
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/tile,
 /area/rogue/under/cave/oldtown)
 "Pu" = (
@@ -7572,8 +7592,8 @@
 	icon_state = "largetable";
 	dir = 8
 	},
-/obj/item/reagent_containers/glass/bottle/rogue/redwine,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/reagent_containers/glass/bottle/rogue/cursedwine,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/under/cave/oldfort)
 "Wh" = (
@@ -20739,7 +20759,7 @@ XE
 oK
 mh
 YM
-MU
+Hf
 Hf
 Bo
 ms
@@ -37384,7 +37404,7 @@ dP
 EC
 PF
 BZ
-Bc
+gU
 Pz
 cb
 Nc
@@ -62627,9 +62647,9 @@ vH
 vH
 zj
 gF
-DR
+Nn
 oX
-oX
+xx
 Ae
 Ae
 py
@@ -97322,7 +97342,7 @@ vH
 vH
 vH
 gF
-gF
+DR
 Ae
 QT
 Ey
@@ -97576,8 +97596,8 @@ SV
 EU
 sQ
 yD
+uT
 vH
-Jk
 Ae
 Ae
 Ae
@@ -99120,8 +99140,8 @@ kk
 kl
 ME
 hC
-kS
-kS
+IT
+pf
 Ae
 kA
 CT
@@ -101950,7 +101970,7 @@ kS
 hC
 Cd
 Ae
-nC
+MU
 OH
 og
 um
@@ -102207,8 +102227,8 @@ hC
 yS
 hC
 Ae
-nC
-nC
+MU
+MU
 og
 Ae
 ze
