@@ -183,7 +183,7 @@
 "FK" = (/obj/structure/bed/rogue/inn/wool,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/woodturned/nosmooth,/area/rogue/indoors)
 "GM" = (/obj/structure/mineral_door/wood{name = "Midships"; dir = 4},/turf/open/floor/rogue/twig,/area/rogue/indoors)
 "Hn" = (/obj/structure/closet/crate/chest/old_crate,/turf/open/floor/rogue/woodturned/nosmooth,/area/rogue/indoors)
-"Ht" = (/obj/structure/fluff/railing/border{dir = 8},/obj/structure/chair/wood/rogue/chair3{dir = 4},/turf/open/floor/rogue/wood/nosmooth,/area/rogue/indoors)
+"Ht" = (/obj/structure/fluff/railing/border{dir = 8},/obj/machinery/gear_painter,/turf/open/floor/rogue/wood/nosmooth,/area/rogue/indoors)
 "HD" = (/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/banditcamp)
 "HS" = (/obj/structure/mineral_door/wood/window{dir = 1; pixel_y = 4},/turf/open/floor/rogue/woodturned/nosmooth,/area/rogue/indoors)
 "Iw" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/woods)
