@@ -1,0 +1,7 @@
+author: "Hocka"
+
+delete-after: True
+
+changes:
+  - rscadd: "Direct Narrate, Global Narrate and Local Narrate now lets you choose the size, colour and shape of the text it outputs."
+  - refactor: "Added a bunch of defines such as FONT_TINY(), FONT_BRIGHTRED() etc to serve as an alternative to spans, this was mostly to make the changes to narrate a bit more readable but it should be nice to take advantage of in the future, with far less arbitraty names than the span defines."

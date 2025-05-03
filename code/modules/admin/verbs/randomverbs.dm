@@ -139,8 +139,10 @@
 
 	if (!msg)
 		return
+	var/admin_msg = msg // let's dodge the formatting we're about to do to keep the admin log clean, there's probably a cleaner way to do it and if someone figures it out they should do it
+	msg = choose_text(msg)
 	to_chat(world, "[msg]")
-	log_admin("GlobalNarrate: [key_name(usr)] : [msg]")
+	log_admin("GlobalNarrate: [key_name(usr)] : [admin_msg]")
 	message_admins(span_adminnotice("[key_name_admin(usr)] Sent a global narrate"))
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Global Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
@@ -162,11 +164,14 @@
 	if( !msg )
 		return
 
+	var/admin_msg = msg
+	msg = choose_text(msg)
+
 	to_chat(M, msg)
-	log_admin("DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [msg]")
-	msg = span_adminnotice("<b> DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]):</b> [msg]<BR>")
-	message_admins(msg)
-	admin_ticket_log(M, msg)
+	log_admin("DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [admin_msg]")
+	admin_msg = span_adminnotice("<b> DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]):</b> [admin_msg]<BR>")
+	message_admins(admin_msg)
+	admin_ticket_log(M, admin_msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Direct Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_local_narrate(atom/A)
@@ -183,12 +188,51 @@
 	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
 	if (!msg)
 		return
+	var/admin_msg = msg
+	msg = choose_text(msg)
 	for(var/mob/M in view(range,A))
 		to_chat(M, msg)
 
-	log_admin("LocalNarrate: [key_name(usr)] at [AREACOORD(A)]: [msg]")
-	message_admins(span_adminnotice("<b> LocalNarrate: [key_name_admin(usr)] at [ADMIN_VERBOSEJMP(A)]:</b> [msg]<BR>"))
+	log_admin("LocalNarrate: [key_name(usr)] at [AREACOORD(A)]: [admin_msg]")
+	message_admins(span_adminnotice("<b> LocalNarrate: [key_name_admin(usr)] at [ADMIN_VERBOSEJMP(A)]:</b> [admin_msg]<BR>"))
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Local Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/choose_text(text)
+	if(!text)
+		return
+
+	var/fontsizes = list("Small", "Medium", "Large")
+	var/fontcolors = list("White", "Red", "Yellow", "Purple", "Green")
+	var/fontshapes = list("Normal", "Bold", "Italic", "Bold and Italic")
+	switch(input("Font Size", "How big do you want the text to be?") as anything in fontsizes)
+		if("Small")
+			text = FONT_TINY(text)
+		if("Medium")
+			text = FONT_MEDIUM(text)
+		if("Large")
+			text = FONT_LARGE(text)
+
+	switch(input("Font Color", "What color do you want the text to be?") as anything in fontcolors)
+		if("Red")
+			text = FONT_BRIGHTRED(text)
+		if("Yellow")
+			text = FONT_YELLOW(text)
+		if("Purple")
+			text = FONT_PURPLE(text)
+		if("Green")
+			text = FONT_GREEN(text)
+		// no mention for the "white" option because it's just to use the default text colour
+
+	switch(input("Font Shape", "What shape do you want the text to be?") as anything in fontshapes)
+		if("Bold")
+			text = FONT_BOLD(text)
+		if("Italic")
+			text = FONT_ITALIC(text)
+		if("Bold and Italic")
+			text = FONT_BOLDANDITALIC(text)
+		// no mention for "normal" because it's also just the default
+
+	return text
 
 /client/proc/cmd_admin_godmode(mob/M in GLOB.mob_list)
 	set category = "Admin"
