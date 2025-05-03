@@ -32,7 +32,7 @@
 
 /datum/advclass/heir/daring
 	name = "Prideful Heir"
-	tutorial = "You're a somebody, someone important. You were always able to harness the powers of the One Envy well, and have some semblance of control over a club, at least."
+	tutorial = "You're a somebody, someone important. You were always able to harness the powers of the One Envy well, and have some semblance of control over a sword, at least."
 	outfit = /datum/outfit/job/roguetown/heir/daring
 	category_tags = list(CTAG_HEIR)
 
@@ -48,10 +48,10 @@
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
