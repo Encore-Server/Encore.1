@@ -8155,7 +8155,7 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/town/tavern)
 "hjr" = (
-/turf/closed/wall/mineral/rogue/stone,
+/turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/indoors/shelter/mountains)
 "hkl" = (
 /obj/structure/ladder,
@@ -12429,9 +12429,12 @@
 /turf/open/floor/rogue/blocks/newstone/alt,
 /area/rogue/indoors/town/vault)
 "kVj" = (
-/obj/machinery/light/rogue/torchholder/c,
-/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
-/turf/open/floor/rogue/naturalstone,
+/obj/structure/fluff/railing/wood{
+	dir = 4;
+	layer = 2.8;
+	pixel_x = 8
+	},
+/turf/open/floor/rogue/twig/platform,
 /area/rogue/under/cave)
 "kVI" = (
 /obj/structure/boatbell/fluff{
@@ -15946,7 +15949,7 @@
 	dir = 1;
 	pixel_y = -1
 	},
-/turf/open/floor/rogue/naturalstone,
+/turf/open/floor/rogue/twig/platform,
 /area/rogue/under/cave)
 "nPe" = (
 /obj/structure/closet/crate/roguecloset,
@@ -26607,14 +26610,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/exposed/town/keep)
-"xnd" = (
-/obj/structure/fluff/railing/wood{
-	dir = 4;
-	layer = 2.8;
-	pixel_x = 8
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
 "xnl" = (
 /turf/open/water/swamp,
 /area/rogue/outdoors/rtfield)
@@ -142038,7 +142033,7 @@ tEP
 tEP
 xgI
 tEP
-jbP
+tEP
 tEP
 uih
 uih
@@ -142810,7 +142805,7 @@ tEP
 xgI
 tEP
 tEP
-jbP
+tEP
 uih
 uih
 uih
@@ -143322,7 +143317,7 @@ eFm
 kIP
 tEP
 eFm
-kVj
+aaH
 tEP
 eFm
 uih
@@ -207048,7 +207043,7 @@ cAe
 xzu
 tEP
 xga
-xnd
+tEP
 tEP
 xzu
 tEP
@@ -207303,9 +207298,9 @@ uih
 uih
 eFm
 eFm
-ojv
+azm
 eFm
-wnY
+kVj
 eFm
 eFm
 tEP
@@ -268209,7 +268204,7 @@ sjF
 sjF
 sjF
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -268471,7 +268466,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -268721,7 +268716,7 @@ sjF
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -268734,7 +268729,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 sjF
 sjF
@@ -268981,7 +268976,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -269233,6 +269228,7 @@ sjF
 sjF
 dkn
 dkn
+sJc
 dkn
 dkn
 dkn
@@ -269242,8 +269238,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -269498,7 +269493,7 @@ sJc
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -269749,6 +269744,7 @@ sjF
 sjF
 dkn
 dkn
+sJc
 dkn
 dkn
 dkn
@@ -269757,8 +269753,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -270009,7 +270004,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -270262,7 +270257,7 @@ sjF
 sjF
 sjF
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -270278,7 +270273,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 sjF
@@ -270530,7 +270525,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -270781,11 +270776,11 @@ dkn
 dkn
 dkn
 dkn
+sJc
 dkn
 dkn
 dkn
-dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -271045,7 +271040,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -271289,6 +271284,7 @@ sjF
 dkn
 dkn
 dkn
+sJc
 dkn
 dkn
 dkn
@@ -271309,8 +271305,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -271554,7 +271549,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -271808,7 +271803,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -271822,7 +271817,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -272075,7 +272070,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -272319,6 +272314,14 @@ sjF
 sjF
 dkn
 dkn
+sJc
+dkn
+dkn
+dkn
+dkn
+dkn
+dkn
+sJc
 dkn
 dkn
 dkn
@@ -272333,15 +272336,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
-dkn
-dkn
-dkn
-dkn
-dkn
-dkn
-dkn
-dkn
+sJc
 dkn
 sjF
 sjF
@@ -272843,7 +272838,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -273103,7 +273098,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -273111,7 +273106,7 @@ gsB
 cKg
 cKg
 cKg
-dkn
+sJc
 dkn
 sjF
 sjF
@@ -273348,7 +273343,7 @@ sjF
 sjF
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -273608,7 +273603,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -274395,7 +274390,7 @@ eet
 gsB
 gsB
 dkn
-dkn
+sJc
 dkn
 dkn
 sjF
@@ -274893,7 +274888,7 @@ dkn
 dkn
 dkn
 dkn
-sNT
+hjr
 pIA
 egO
 sNT
@@ -275148,7 +275143,7 @@ sjF
 sjF
 sjF
 dkn
-dkn
+sJc
 dkn
 hjr
 vXb
@@ -275165,7 +275160,7 @@ gsB
 gsB
 gsB
 dkn
-dkn
+sJc
 dkn
 dkn
 sjF
@@ -275407,7 +275402,7 @@ sjF
 dkn
 dkn
 dkn
-sNT
+hjr
 sUi
 kSg
 sNT
@@ -276183,7 +276178,7 @@ dkn
 sJc
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 gsB
@@ -276435,7 +276430,7 @@ sjF
 sjF
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -276695,15 +276690,15 @@ dkn
 dkn
 dkn
 dkn
+sJc
+dkn
+dkn
+sJc
 dkn
 dkn
 dkn
 dkn
-dkn
-dkn
-dkn
-dkn
-dkn
+sJc
 dkn
 dkn
 dkn
@@ -276958,7 +276953,7 @@ dkn
 dkn
 dkn
 dkn
-dkn
+sJc
 dkn
 dkn
 dkn
