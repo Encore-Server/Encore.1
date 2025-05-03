@@ -1,11 +1,11 @@
 /turf/closed/wall/mineral/rogue
-	canSmoothWith = null
 	desc = ""
-	smooth = SMOOTH_FALSE
-	var/smooth_icon = null
-	smooth_diag = FALSE
 	sheet_type = null
 	baseturfs = list(/turf/open/floor/rogue/dirt/road)
+	smooth_diag = TRUE
+	smooth = SMOOTH_MORE
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue, /turf/closed/mineral, /obj/structure/roguewindow)
+	var/smooth_icon = null
 	wallclimb = TRUE
 	icon = 'icons/turf/roguewall.dmi'
 
@@ -20,13 +20,11 @@
 	desc = "A wall of smooth, unyielding stone."
 	icon = 'icons/turf/walls/stone_wall.dmi'
 	icon_state = "stone"
-	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
 	max_integrity = 1800
 	sheet_type = /obj/item/natural/stone
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
 	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
-	canSmoothWith = list(/turf/closed/wall/mineral/rogue/stone, /turf/closed/mineral/random/rogue, /turf/closed/mineral/rogue)
 	above_floor = /turf/open/floor/rogue/blocks
 	baseturfs = list(/turf/open/floor/rogue/blocks)
 	neighborlay = "dirtedge"
@@ -64,13 +62,11 @@
 	desc = "A durable wall made from specially crafted stone."
 	icon = 'icons/turf/walls/craftstone.dmi'
 	icon_state = "box"
-	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
 	max_integrity = 2200
 	sheet_type = /obj/item/natural/stone
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
 	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
-	canSmoothWith = list(/turf/closed/wall/mineral/rogue/craftstone, /turf/closed/mineral/random/rogue, /turf/closed/mineral/rogue)
 	above_floor = /turf/open/floor/rogue/blocks
 	baseturfs = list(/turf/open/floor/rogue/blocks)
 	neighborlay = "dirtedge"
@@ -83,13 +79,11 @@
 	desc = "Several rows of bricks form this wall."
 	icon = 'icons/turf/walls/stonebrick.dmi'
 	icon_state = "stonebrick"
-	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
 	max_integrity = 1500
 	sheet_type = /obj/item/natural/stone
 	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
 	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
-	canSmoothWith = list(/turf/closed/wall/mineral/rogue/stonebrick, /turf/closed/wall/mineral/rogue/wooddark, /turf/closed/mineral/random/rogue, /turf/closed/mineral/rogue)
 	above_floor = /turf/open/floor/rogue/blocks
 	baseturfs = list(/turf/open/floor/rogue/blocks)
 	neighborlay = "dirtedge"
@@ -101,12 +95,10 @@
 	desc = "A rough-hewn wall of wood."
 	icon = 'icons/turf/walls/wood_wall_plain.dmi'
 	icon_state = "wallformed"
-	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
 	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-	canSmoothWith = list(/turf/closed/wall/mineral/rogue/wood, /obj/structure/roguewindow, /obj/structure/roguetent, /turf/closed/wall/mineral/rogue/wooddark)
 //	sheet_type = /obj/item/grown/log/tree/lumber
 	above_floor = /turf/open/floor/rogue/ruinedwood
 	baseturfs = list(/turf/open/floor/rogue/ruinedwood)
@@ -151,7 +143,6 @@
 	desc = "Made from durable, somewhat darker wood." // i am not sure if the wood is really dark
 	icon = 'icons/turf/walls/wood_wall_plain_alt.dmi'
 	icon_state = "wallformed"
-	smooth = SMOOTH_TRUE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
@@ -216,7 +207,6 @@
 	desc = "Meticulously designed by an professional carpenter."
 	icon = 'icons/turf/walls/wood_wall.dmi'
 	icon_state = "wallformed"
-	smooth = SMOOTH_TRUE
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
@@ -241,7 +231,6 @@
 	desc = "The mason did an excellent job etching details into this wall."
 	icon = 'icons/turf/walls/decostone.dmi'
 	icon_state = "box"
-	smooth = SMOOTH_MORE
 	blade_dulling = DULLING_BASH
 	max_integrity = 1800
 	sheet_type = /obj/item/natural/stone
