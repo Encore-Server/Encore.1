@@ -53,4 +53,4 @@ delete-after: True
 changes:
   - rscadd: "Reflavours several Roguetown alcoholic drinks to be more in line with our setting."
   - rscadd: "Adds Consecrated and Cursed wine."
-  - rescadd: "Adds markers for randomised barrels of alcohol to spawn, and puts them across the map."
+  - rscadd: "Adds markers for randomised barrels of alcohol to spawn, and puts them across the map."
