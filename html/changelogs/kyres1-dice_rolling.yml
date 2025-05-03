@@ -1,7 +1,0 @@
-
-author: "kyres1"
-
-delete-after: True
-
-changes:
-  - rscadd: "Added a method for admins to roll dice using a Roll Global Dice verb in the Admin tab."
