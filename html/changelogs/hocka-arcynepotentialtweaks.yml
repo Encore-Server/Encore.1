@@ -5,4 +5,4 @@ delete-after: True
 
 changes:
   - bugfix: "Arcyne Potential now assigns Prestidigitation regardless of the recipient's arcane skill level."
-  - refactor: "Rearranged the proc for Arcyne Potential a bit for more readability, and so that it actually gives out Prestidigitation like it's supposed to.""
+  - rscadd: "Rearranged the proc for Arcyne Potential a bit for more readability, and so that it actually gives out Prestidigitation like it's supposed to.""
