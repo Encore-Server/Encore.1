@@ -50,14 +50,14 @@
 	switch(riteselection) // rite selection goes in this section, try to do something fluffy. Presentation is most important here, truthfully.
 		if("Guiding Light") // User selects Guiding Light, begins the stuff for it
 			if(do_after(user, 50)) // just flavor stuff before activation
-				user.say("I beseech the she-form of the Twinned God!!")
+				user.say("I beseech the One Star, blazing star of fire bright!!")
 				if(do_after(user, 50))
-					user.say("To bring Order to a world of naught!!")
+					user.say("To bring light that's wrought from the Flame's own might!!")
 					if(do_after(user, 50))
-						user.say("Place your gaze upon me, oh Radiant one!!")
-						to_chat(user,span_danger("You feel the eye of the Sun turned upon you. Her warmth dances upon your cheek. You feel yourself warming up...")) // A bunch of flavor stuff, slow incanting.
+						user.say("Place your gaze upon me, oh Radiant one!! And grant us the clarity of the Sun!!")
+						to_chat(user,span_danger("You feel the eye of the Sun turned upon you. The One Star is oft obscured without the Worldflame's intercession. With the cloud of dark rent, its warmth dances upon your cheek. You feel yourself warming up...")) // A bunch of flavor stuff, slow incanting.
 						icon_state = "astrata_active"
-						loc.visible_message(span_warning("[user]'s bursts to flames! Embraced by Her Warmth wholly!"))
+						loc.visible_message(span_warning("[user]'s bursts to flames! Embraced by Her flame wholly!"))
 						playsound(loc, 'sound/combat/hits/burn (1).ogg', 100, FALSE, -1)
 						user.adjust_fire_stacks(10)
 						user.IgniteMob()
@@ -72,7 +72,7 @@
 	var/ritualtargets = view(7, loc) // Range of 7 from the source, which is the rune
 	for(var/mob/living/carbon/human/target in ritualtargets) // defines the target as every human in this range
 		target.apply_status_effect(/datum/status_effect/buff/guidinglight) // applies the status effect
-		to_chat(target,span_cultsmall("Astrata's light guides me forward, drawn to me by the Ritualist's pyre!"))
+		to_chat(target,span_cultsmall("The One Star's light guides me forward, drawn to me by the Ritualist's pyre!"))
 		playsound(target, 'sound/magic/holyshield.ogg', 80, FALSE, -1) // Cool sound!
 // If you want to review a more complicated one, Undermaiden's Bargain is probs the most complicated of the starting set. - Have fun! - Onutsio 🏳️‍⚧️
 
@@ -80,7 +80,7 @@
 /obj/structure/ritualcircle/noc
 	name = "Rune of the Moon"
 	icon_state = "noc_chalky"
-	desc = "A Holy Rune of Noc"
+	desc = "A Moon Rune. Reading it leaves you feeling a light chill."
 	var/lunarrites = list("Moonlight Dance") // list for more to be added later
 
 /obj/structure/ritualcircle/noc/attack_hand(mob/living/user)
@@ -108,12 +108,12 @@
 	switch(riteselection) // put ur rite selection here
 		if("Moonlight Dance")
 			if(do_after(user, 50))
-				user.say("I beseech the he-form of the Twinned God!!")
+				user.say("I beseech the Dark Wanderer, hidden moon of the night sky!!")
 				if(do_after(user, 50))
-					user.say("To bring Wisdom to a world of naught!!")
+					user.say("To bring Wisdom obscrured from the Blind God's eye!!")
 					if(do_after(user, 50))
-						user.say("Place your gaze upon me, oh wise one!!")
-						to_chat(user,span_cultsmall("The waning half of the Twin-God carries but one eye. With some effort, it can be drawn upon supplicants."))
+						user.say("Place your gaze upon me, o' Wanderer on high!! Draw your hidden knowledge nigh!!")
+						to_chat(user,span_cultsmall("You feel the eye of the moon drawn upon you. The Dark Wanderer is oft obscured without the Worldflame's intercession. With some effort, it can be drawn upon by supplicants, even through the cloud of dark."))
 						playsound(loc, 'sound/magic/holyshield.ogg', 80, FALSE, -1)
 						moonlightdance(src)
 						user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
@@ -186,7 +186,7 @@
 
 /obj/structure/ritualcircle/dendor
 	name = "Rune of Beasts"
-	desc = "A Holy Rune of Dendor"
+	desc = "A Rune of Nature"
 	icon_state = "dendor_chalky"
 	var/bestialrites = list("Rite of the Lesser Wolf")
 
@@ -306,7 +306,7 @@
 
 /obj/structure/ritualcircle/eora
     name = "Rune of Love"
-    desc = "A Holy Rune of Eora"
+    desc = "A Rune of Love"
     icon_state = "eora_chalky"
     var/peacerites = list("Rite of Pacification", "Rite of Oblivion") // Added Rite of Oblivion
 
@@ -503,7 +503,7 @@
 user.apply_status_effect(/datum/status_effect/buff/mirroredsouls, target)
 target.apply_status_effect(/datum/status_effect/buff/mirroredsouls, user)
 
-*/
+
 /obj/structure/ritualcircle/xylix
 	name = "Rune of Trickery"
 	desc = "A Holy Rune of Xylix"
@@ -515,4 +515,4 @@ target.apply_status_effect(/datum/status_effect/buff/mirroredsouls, user)
 /obj/structure/ritualcircle/abyssor
 	name = "Rune of Storm"
 	desc = "A Holy Rune of Abyssor"
-
+*/
