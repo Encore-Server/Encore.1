@@ -16,57 +16,64 @@
 	alternate_worn_layer = UNDER_CLOAK_LAYER
 	strip_delay = 20
 	var/max_storage = 20
-	var/list/arrows = list()
+	var/list/ammo = list()
+	var/list/allowed_ammo = list(/obj/item/ammo_casing/caseless/rogue/arrow, /obj/item/ammo_casing/caseless/rogue/bolt)
 	sewrepair = TRUE
 
 /obj/item/quiver/attack_turf(turf/T, mob/living/user)
-	if(arrows.len >= max_storage)
+	if(ammo.len >= max_storage)
 		to_chat(user, span_warning("Your [src.name] is full!"))
 		return
 	to_chat(user, span_notice("You begin to gather the ammunition..."))
 	for(var/obj/item/ammo_casing/caseless/rogue/arrow in T.contents)
 		if(do_after(user, 5))
-			if(!eatarrow(arrow))
+			if(!eatammo(arrow))
 				break
 
-/obj/item/quiver/proc/eatarrow(obj/A)
-	if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue))
-		if(arrows.len < max_storage)
-			A.forceMove(src)
-			arrows += A
-			update_icon()
+/obj/item/quiver/proc/check_ammo(obj/A)
+	for(var/i in allowed_ammo)
+		to_chat(world, "checking [i]")
+		if(istype(A, i))
+			to_chat(world, "returned true")
 			return TRUE
-		else
-			return FALSE
+
+/obj/item/quiver/proc/eatammo(obj/A)
+	if(check_ammo(A) && ammo.len < max_storage)
+		A.forceMove(src)
+		ammo += A
+		update_icon()
+		return TRUE
+	else
+		return FALSE
 
 /obj/item/quiver/attackby(obj/A, loc, params)
-	if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue))
-		if(arrows.len < max_storage)
-			if(ismob(loc))
-				var/mob/M = loc
-				M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
-			else
-				A.forceMove(src)
-			arrows += A
-			update_icon()
+	if(A.type in allowed_ammo && ammo.len < max_storage)
+		if(ismob(loc))
+			var/mob/M = loc
+			M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
 		else
-			to_chat(loc, span_warning("Full!"))
+			A.forceMove(src)
+		ammo += A
+		update_icon()
+	else
+		to_chat(loc, span_warning("Full!"))
 		return
+
 	if(istype(A, /obj/item/gun/ballistic/revolver/grenadelauncher/bow))
 		var/obj/item/gun/ballistic/revolver/grenadelauncher/bow/B = A
-		if(arrows.len && !B.chambered)
-			for(var/AR in arrows)
+		if(ammo.len && !B.chambered)
+			for(var/AR in ammo)
 				if(istype(AR, /obj/item/ammo_casing/caseless/rogue/arrow))
-					arrows -= AR
+					ammo -= AR
 					B.attackby(AR, loc, params)
 					break
 		return
 	..()
 
 /obj/item/quiver/attack_right(mob/user)
-	if(arrows.len)
-		var/obj/O = arrows[arrows.len]
-		arrows -= O
+	if(ammo.len)
+		var/obj/O = ammo[ammo.len]
+		ammo -= O
 		O.forceMove(user.loc)
 		user.put_in_hands(O)
 		update_icon()
@@ -74,11 +81,11 @@
 
 /obj/item/quiver/examine(mob/user)
 	. = ..()
-	if(arrows.len)
-		. += span_notice("[arrows.len] inside.")
+	if(ammo.len)
+		. += span_notice("[ammo.len] inside.")
 
 /obj/item/quiver/update_icon()
-	if(arrows.len)
+	if(ammo.len)
 		icon_state = "quiver1"
 	else
 		icon_state = "quiver0"
@@ -87,14 +94,14 @@
 	. = ..()
 	for(var/i in 1 to max_storage)
 		var/obj/item/ammo_casing/caseless/rogue/arrow/iron/A = new()
-		arrows += A
+		ammo += A
 	update_icon()
 
 /obj/item/quiver/bolts/Initialize()
 	. = ..()
 	for(var/i in 1 to max_storage)
 		var/obj/item/ammo_casing/caseless/rogue/bolt/A = new()
-		arrows += A
+		ammo += A
 	update_icon()
 /*
 /obj/item/quiver/Parrows/Initialize()
