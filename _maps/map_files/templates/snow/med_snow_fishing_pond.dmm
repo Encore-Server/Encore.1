@@ -1,0 +1,396 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"cW" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dF" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/mountains)
+"fC" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"gB" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"ht" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"hN" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/item/roguecoin/copper/pile,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"kd" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/mountains)
+"nu" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"qv" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/item/fishingrod,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"sC" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Cw" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Dd" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Nu" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/mountains)
+"RY" = (
+/obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"TX" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/mountains)
+"Vs" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+YZ
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+yr
+YZ
+YZ
+YZ
+dE
+YZ
+qK
+YZ
+"}
+(2,1,1) = {"
+qK
+qK
+YZ
+ht
+uj
+YZ
+uj
+yr
+GL
+yr
+YZ
+YZ
+aJ
+qK
+qK
+"}
+(3,1,1) = {"
+qK
+YZ
+GL
+yr
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+yf
+Ae
+qC
+"}
+(4,1,1) = {"
+qK
+nu
+GL
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+yr
+qK
+qK
+"}
+(5,1,1) = {"
+YZ
+YZ
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+YZ
+YZ
+"}
+(6,1,1) = {"
+YZ
+KC
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+YZ
+YZ
+"}
+(7,1,1) = {"
+yf
+KC
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+gB
+qv
+gB
+Vs
+YZ
+"}
+(8,1,1) = {"
+yf
+yr
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+uj
+cW
+cW
+cW
+fC
+YZ
+"}
+(9,1,1) = {"
+YZ
+yr
+uj
+uj
+KC
+KC
+KC
+KC
+KC
+uj
+uj
+uj
+uj
+YZ
+qK
+"}
+(10,1,1) = {"
+YZ
+yr
+uj
+uj
+Nu
+Nu
+kd
+kd
+Nu
+KC
+uj
+uj
+yf
+YZ
+qK
+"}
+(11,1,1) = {"
+YZ
+yr
+uj
+uj
+Dd
+hN
+Cw
+AW
+TX
+YZ
+YZ
+uj
+yf
+qC
+qK
+"}
+(12,1,1) = {"
+YZ
+yr
+yr
+uj
+Dd
+RY
+Cw
+Cw
+sC
+KC
+YZ
+YZ
+YZ
+qK
+qK
+"}
+(13,1,1) = {"
+qK
+YZ
+yr
+YZ
+Dd
+AW
+Cw
+AW
+TX
+KC
+KC
+YZ
+YZ
+qK
+YZ
+"}
+(14,1,1) = {"
+qK
+qK
+YZ
+yf
+Nu
+Nu
+dF
+dF
+Nu
+Cy
+KC
+YZ
+qK
+dE
+YZ
+"}
+(15,1,1) = {"
+YZ
+qC
+qK
+YZ
+YZ
+YZ
+YZ
+KC
+KC
+yf
+YZ
+YZ
+YZ
+YZ
+YZ
+"}

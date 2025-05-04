@@ -256,7 +256,11 @@
 			if((key == TOOL_HOT) && (tool.get_temperature() >= FIRE_MINIMUM_TEMPERATURE_TO_EXIST))
 				implement_type = key
 				break
-
+			if((key == TOOL_HOLYSYMBOL) && istype(tool, /obj/item/clothing/neck/roguetown/psicross))
+				var/obj/item/clothing/neck/roguetown/psicross/psi = tool
+				if(psi.burns_rot)
+					implement_type = key
+					break
 		if(!implement_type && accept_any_item)
 			implement_type = TOOL_NONE
 

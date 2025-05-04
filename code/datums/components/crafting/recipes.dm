@@ -705,7 +705,7 @@
 	tools = list(TOOL_WELDER)
 
 /datum/crafting_recipe/rib
-	name = "Collosal Rib"
+	name = "Colossal Rib"
 	always_availible = FALSE
 	reqs = list(
             /obj/item/stack/sheet/bone = 10,

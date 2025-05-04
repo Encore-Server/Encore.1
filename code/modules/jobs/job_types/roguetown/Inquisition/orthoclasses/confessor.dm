@@ -25,7 +25,7 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
+	beltl = /obj/item/rogueweapon/huntingknife/idagger
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
@@ -34,9 +34,15 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	mask = /obj/item/clothing/mask/rogue/facemask
 	head = /obj/item/clothing/head/roguetown/roguehood/black
-	backpack_contents = list(/obj/item/roguekey/inquisition = 1, /obj/item/lockpickring/mundane = 1)
+	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/lockpickring/mundane = 1)
 	H.change_stat("strength", -1) // weasel
 	H.change_stat("endurance", 3)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 3) 
-	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC) 
+	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
+	C.grant_spells_templar(H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility/miracle) //Confessor is the one church role dedicated to skullduggery. They should get a little treat for their sneaky, spy ways. This comment is approved by true Iliope-pilled sneaker-cels.
+	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

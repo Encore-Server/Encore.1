@@ -4,7 +4,18 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	var/name = "Parent loadout datum"
 	var/desc
 	var/path
+	var/customitem			//autoset on new if null
+	var/list/ckeywhitelist
 
+/datum/loadout_item/New()
+	if(isnull(customitem))
+		if(ckeywhitelist)
+			customitem = TRUE
+
+/datum/loadout_item/proc/customitem_ckey_check(key)
+	if(ckeywhitelist && ckeywhitelist.Find(key))
+		return TRUE
+	return
 
 //HATS
 /datum/loadout_item/shalal
@@ -51,9 +62,21 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Duelist's Hat"
 	path = /obj/item/clothing/head/roguetown/duelhat
 
-/datum/loadout_item/hood
+/datum/loadout_item/rhood
 	name = "Hood"
 	path = /obj/item/clothing/head/roguetown/roguehood
+
+/datum/loadout_item/hood
+	name = "Papakha"
+	path = /obj/item/clothing/head/roguetown/papakha
+
+/datum/loadout_item/flathat
+	name = "Flat hat"
+	path = /obj/item/clothing/head/roguetown/flathat
+
+/datum/loadout_item/nun_hat
+	name = "Nun's veil"
+	path = /obj/item/clothing/head/roguetown/nun
 
 //CLOAKS
 /datum/loadout_item/tabard
@@ -159,11 +182,26 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Leather Vest"
 	path = /obj/item/clothing/suit/roguetown/armor/leather/vest
 
+// GLOVES
+
+/datum/loadout_item/leather_gloves
+	name = "Leather gloves"
+	path = /obj/item/clothing/gloves/roguetown/leather
+
+/datum/loadout_item/fingerless_gloves
+	name = "Fingerless gloves"
+	path = /obj/item/clothing/gloves/roguetown/fingerless
+
 /datum/loadout_item/nun_habit
 	name = "Nun Habit"
 	path = /obj/item/clothing/suit/roguetown/shirt/robe/nun
 
 //ACCESSORIES
+
+/datum/loadout_item/ring
+	name ="Gold ring"
+	path = /obj/item/clothing/ring/gold
+
 /datum/loadout_item/stockings
 	name = "Stockings"
 	path = /obj/item/clothing/under/roguetown/tights/stockings
@@ -203,3 +241,69 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/feather
 	name = "Feather"
 	path = /obj/item/natural/feather
+
+/datum/loadout_item/woodcross
+	name = "Wooden Amulet of the All-Aspect"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/katholikos
+
+/datum/loadout_item/ganicross
+	name = "Wooden Amulet of Gani"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/gani
+
+/datum/loadout_item/mjallidhorncross
+	name = "Wooden Amulet of Mjallidhorn"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
+
+/datum/loadout_item/visirescross
+	name = "Wooden Amulet of Visires"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/visires
+
+/datum/loadout_item/akancross
+	name = "Wooden Amulet of Akan"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/akan
+
+/datum/loadout_item/golerkanhcross
+	name = "Wooden Amulet of Goler Kanh"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
+
+/datum/loadout_item/iliopecross
+	name = "Wooden Amulet of Iliope"
+	path = /obj/item/clothing/neck/roguetown/psicross/wood/iliope
+
+/datum/loadout_item/lute
+	name = "Lute"
+	path = /obj/item/rogue/instrument/lute
+
+/datum/loadout_item/accordion
+	name = "Accordion"
+	path = /obj/item/rogue/instrument/accord
+
+/datum/loadout_item/guitar
+	name = "Guitar"
+	path = /obj/item/rogue/instrument/guitar
+
+/datum/loadout_item/harp
+	name = "Harp"
+	path = /obj/item/rogue/instrument/harp
+
+/datum/loadout_item/flute
+	name = "Flute"
+	path = /obj/item/rogue/instrument/flute
+
+/datum/loadout_item/drum
+	name = "Drum"
+	path = /obj/item/rogue/instrument/drum
+
+/datum/loadout_item/hurdygurdy
+	name = "Hurdy-Gurdy"
+	path = /obj/item/rogue/instrument/hurdygurdy
+
+/datum/loadout_item/viola
+	name = "Viola"
+	path = /obj/item/rogue/instrument/viola
+
+/datum/loadout_item/vocals
+	name = "Vocalist's Talisman"
+	path = /obj/item/rogue/instrument/vocals
+
+// Custom Items Go Here

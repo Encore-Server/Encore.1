@@ -560,7 +560,7 @@
 /mob/living/carbon/proc/handle_nausea()
 	if(nausea >= 100)
 		if(mob_timers["puke"])
-			if(world.time > mob_timers["puke"] + 16 SECONDS)
+			if(world.time > mob_timers["puke"] + 25 SECONDS)
 				mob_timers["puke"] = world.time
 				if(getorgan(/obj/item/organ/stomach))
 					to_chat(src, span_warning("I'm going to puke..."))
@@ -582,16 +582,25 @@
 
 	mob_timers["puke"] = world.time
 
-	if(nutrition <= 50 && !blood)
-		if(message)
-			emote("gag")
-		if(stun)
-			Immobilize(50)
-		return TRUE
 	if(!blood)
+		//Try to keep it in
+		if(STACON >= 11 && rand(min(STACON*3, 80)))
+			to_chat(src, span_warning("I almost vomit, but somehow I keep it down... for now."))
+			if(prob(40))
+				emote("gag")
+			add_nausea(-STACON)
+			return TRUE
+		//Not enough to vomit
+		if(nutrition <= 50)
+			if(message)
+				emote("gag")
+			if(stun)
+				Immobilize(50)
+			return TRUE
+		//Actually puke
 		if(HAS_TRAIT(src, TRAIT_NOHUNGER))
 			return TRUE
-		add_nausea(-100)
+		add_nausea(-150)
 		rogstam_add(-50)
 		if(is_mouth_covered()) //make this add a blood/vomit overlay later it'll be hilarious
 			if(message)
@@ -994,8 +1003,11 @@
 	if(status_flags & GODMODE)
 		return
 	if(stat != DEAD)
+		if(health <= HEALTH_THRESHOLD_NEARDEATH && HAS_TRAIT(src, TRAIT_DEATHBARGAIN))
+			src.apply_status_effect(/datum/status_effect/buff/undermaidenbargainheal)
+			return
 		if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
-			emote("deathgurgle")
+			INVOKE_ASYNC(src, PROC_REF(emote), "deathgurgle")
 			death()
 			cure_blind(UNCONSCIOUS_BLIND)
 			return
@@ -1018,7 +1030,6 @@
 	update_health_hud()
 //	update_tod_hud()
 	update_spd()
-	med_hud_set_status()
 
 //called when we get cuffed/uncuffed
 /mob/living/carbon/proc/update_handcuffed()

@@ -229,7 +229,7 @@
 	stage1	= list("You don't feel very well.")
 	stage2	= list("Your skin feels a little slimy.")
 	stage3	= list(span_danger("My appendages are melting away."), span_danger("My limbs begin to lose their shape."))
-	stage4	= list(span_danger("I are turning into a slime."))
+	stage4	= list(span_danger("I am turning into a slime."))
 	stage5	= list(span_danger("I have become a slime."))
 	new_form = /mob/living/simple_animal/slime/random
 

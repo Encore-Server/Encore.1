@@ -1,0 +1,433 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/bait/sweet,
+/obj/item/bait/sweet,
+/obj/item/bait/sweet,
+/obj/item/bait/sweet,
+/obj/item/bait/sweet,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"dE" = (
+/obj/structure/roguewindow/openclose{
+	dir = 8
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"ht" = (
+/obj/item/natural/thorn,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"jP" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"lt" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"nq" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"pj" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"qH" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"qK" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"rN" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"sX" = (
+/obj/structure/flora/roguegrass/thorn_bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"uf" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"uj" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"xQ" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"yf" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/bait/bloody,
+/obj/item/bait/bloody,
+/obj/item/bait/bloody,
+/obj/item/bait/bloody,
+/obj/item/bait/bloody,
+/obj/item/bait/bloody,
+/obj/item/bait{
+	pixel_x = 17
+	},
+/obj/item/bait{
+	pixel_x = 17
+	},
+/obj/item/bait{
+	pixel_x = 17
+	},
+/obj/item/bait{
+	pixel_x = 17
+	},
+/obj/structure/rack/rogue/shelf/big,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"yr" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"AW" = (
+/obj/item/natural/bone,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"Cy" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"Dc" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"Dd" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"FI" = (
+/obj/structure/chair/bench{
+	pixel_y = 16
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"GL" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"Jh" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"KC" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"KD" = (
+/obj/structure/roguewindow/openclose{
+	dir = 1
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"KT" = (
+/obj/item/natural/hide,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"VW" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"Wf" = (
+/obj/machinery/light/rogue/torchholder/r{
+	dir = 4
+	},
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/indoors/shelter/woods)
+"YZ" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"Ze" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+KC
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+"}
+(2,1,1) = {"
+YZ
+YZ
+YZ
+qC
+YZ
+YZ
+YZ
+Dd
+pj
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+"}
+(3,1,1) = {"
+qK
+YZ
+pj
+YZ
+uf
+uf
+YZ
+YZ
+YZ
+YZ
+sX
+Dc
+pj
+pj
+qC
+"}
+(4,1,1) = {"
+YZ
+YZ
+pj
+Ze
+Ze
+uf
+Dc
+Dc
+GL
+YZ
+Dc
+Dc
+KC
+YZ
+YZ
+"}
+(5,1,1) = {"
+YZ
+YZ
+uf
+uf
+uf
+Ze
+uf
+YZ
+Dc
+Dc
+Dc
+YZ
+YZ
+nq
+YZ
+"}
+(6,1,1) = {"
+YZ
+YZ
+VW
+YZ
+pj
+uf
+YZ
+VW
+YZ
+Dc
+Dc
+YZ
+YZ
+YZ
+YZ
+"}
+(7,1,1) = {"
+pj
+pj
+Dc
+rN
+YZ
+pj
+pj
+YZ
+pj
+pj
+Dc
+Dc
+YZ
+sX
+YZ
+"}
+(8,1,1) = {"
+pj
+Ae
+jP
+jP
+jP
+jP
+jP
+jP
+YZ
+pj
+Dc
+Dc
+YZ
+YZ
+lt
+"}
+(9,1,1) = {"
+YZ
+Dc
+jP
+yf
+yr
+Wf
+AW
+xQ
+YZ
+Dc
+Dc
+YZ
+YZ
+YZ
+YZ
+"}
+(10,1,1) = {"
+YZ
+YZ
+jP
+aJ
+ht
+yr
+Jh
+jP
+FI
+Dc
+YZ
+YZ
+YZ
+YZ
+pj
+"}
+(11,1,1) = {"
+YZ
+KC
+jP
+uj
+yr
+yr
+Jh
+KD
+YZ
+YZ
+YZ
+VW
+YZ
+qC
+pj
+"}
+(12,1,1) = {"
+YZ
+Dd
+jP
+dE
+jP
+jP
+jP
+jP
+qH
+pj
+pj
+YZ
+YZ
+Dd
+YZ
+"}
+(13,1,1) = {"
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+nq
+pj
+YZ
+YZ
+YZ
+YZ
+KT
+"}
+(14,1,1) = {"
+YZ
+sX
+YZ
+pj
+Cy
+YZ
+YZ
+pj
+YZ
+pj
+KC
+YZ
+qK
+YZ
+YZ
+"}
+(15,1,1) = {"
+YZ
+qC
+YZ
+YZ
+YZ
+YZ
+pj
+YZ
+YZ
+pj
+YZ
+YZ
+YZ
+YZ
+YZ
+"}

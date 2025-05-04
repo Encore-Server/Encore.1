@@ -34,8 +34,9 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/plaquesilver
 	cloak = /obj/item/clothing/cloak/stabard/guardhood
+	id = /obj/item/scomstone/bad
 
-/datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin)
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -108,10 +109,7 @@
 	H.verbs |= /mob/proc/haltyell
 	H.adjust_blindness(-3)
 	var/weapons = list(
-		"Zweihander",
-		"Great Mace",
 		"Battle Axe",
-		"Estoc",
 		"Bastard Sword & Shield",
 		"Flail & Shield",
 		"Sabre & Shield",
@@ -119,16 +117,8 @@
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
-		if("Zweihander")
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
-			backl = /obj/item/gwstrap
-		if("Great Mace")
-			r_hand = /obj/item/rogueweapon/mace/goden/steel
 		if("Battle Axe")
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
-		if("Estoc")
-			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 		if("Bastard Sword & Shield")
 			beltr = /obj/item/rogueweapon/sword/long
 			backl = /obj/item/rogueweapon/shield/tower/metal

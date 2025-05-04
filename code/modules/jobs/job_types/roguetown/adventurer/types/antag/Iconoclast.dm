@@ -2,7 +2,7 @@
 	name = "Iconoclast"
 	tutorial = "Trained by an ecclesial sect, you uphold the creed of a disruptive God somewhere far away. Make little of the Katholikos' grandeur and empower those who suffer at their hands."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_SHUNNED_UP
 	outfit = /datum/outfit/job/roguetown/bandit/iconoclast
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 1 // We only want one of these.
@@ -33,7 +33,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/needle/thorn = 1, /obj/item/natural/cloth = 1)
 	head = /obj/item/clothing/head/roguetown/roguehood
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 	beltr = /obj/item/rogueweapon/katar
 	id = /obj/item/mattcoin
 	H.change_stat("strength", 3) // LETS WRASSLE

@@ -1,0 +1,799 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/item/paper{
+	info = "Wedding's Dae - There's an uneasy feeling in this fort. Everyone's feeling real jumpy. Still, the weather is pretty bad today, and no one wants to venture out in a storm. Everyone agreed to stay an extra night here since we've got enough food. The cleric keeps swearing that they can hear scraping noises coming from the basement, though.";
+	name = "adventurer diary fragment #2"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"am" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bD" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ck" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"cO" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"cP" = (
+/obj/item/roguebin/water,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dp" = (
+/obj/machinery/light/rogue/wallfire{
+	pixel_y = 32
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dy" = (
+/obj/effect/decal/mossy,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eI" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fN" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fY" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = -6
+	},
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"gb" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"gk" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ho" = (
+/obj/structure/chair/wood/rogue{
+	icon_state = "chair2";
+	dir = 4
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"if" = (
+/obj/item/chair/rogue,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"im" = (
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jg" = (
+/obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kr" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 1;
+	name = "Larder"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"lH" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/kitchen/rollingpin,
+/obj/item/rogueweapon/huntingknife/chefknife,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nh" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nO" = (
+/obj/machinery/light/rogue/oven/south,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ob" = (
+/obj/structure/table/wood{
+	dir = 10;
+	icon_state = "largetable"
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oq" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pW" = (
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qt" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"rB" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_basement_gate";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sk" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"so" = (
+/obj/structure/table/wood{
+	dir = 9;
+	icon_state = "largetable"
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"st" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"th" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_courtyard_gate_2";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"tl" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"tH" = (
+/obj/structure/table/wood{
+	dir = 5;
+	icon_state = "largetable"
+	},
+/obj/item/chair/rogue{
+	dir = 1
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"tN" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vb" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vn" = (
+/obj/item/chair/rogue{
+	dir = 1
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vp" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear2,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vF" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vQ" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/pelt,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"wk" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ws" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ww" = (
+/obj/structure/well,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"wE" = (
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"wF" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
+	name = "hell troll"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yv" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yB" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yC" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/reagent_containers/glass/bucket/pot,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yL" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yP" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zk" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zB" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/structure/fluff/millstone{
+	pixel_y = 10;
+	pixel_x = 4
+	},
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Bl" = (
+/obj/structure/bars/grille{
+	max_integrity = 5000;
+	density = 1
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BB" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BD" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 4;
+	name = "North-East Tower"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BT" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cm" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/grown/berries/rogue,
+/obj/item/reagent_containers/food/snacks/grown/berries/rogue,
+/obj/item/reagent_containers/food/snacks/grown/berries/rogue,
+/obj/item/reagent_containers/food/snacks/grown/berries/rogue,
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ct" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"DW" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"EF" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 1;
+	name = "North-East Tower"
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"EH" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"EP" = (
+/obj/structure/lever{
+	name = "gate lever";
+	redstone_id = "church_keep_courtyard_gate_2"
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"GC" = (
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KQ" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/soap,
+/obj/item/soap,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LX" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"MW" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NL" = (
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"OU" = (
+/obj/structure/table/wood{
+	dir = 6;
+	icon_state = "largetable"
+	},
+/obj/item/chair/rogue,
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Po" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"PI" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/food/snacks/butter,
+/obj/item/reagent_containers/food/snacks/butter,
+/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
+/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/egg,
+/obj/item/reagent_containers/food/snacks/fat,
+/obj/item/reagent_containers/food/snacks/fat,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/item/reagent_containers/food/snacks/rogue/meat/steak,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qd" = (
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RE" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/cooking/pan,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Sg" = (
+/obj/structure/fermenting_barrel/blessedwine,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ug" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Uw" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Vi" = (
+/obj/structure/fermenting_barrel/water,
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wu" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Xd" = (
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XP" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"YV" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Zi" = (
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZS" = (
+/obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/obj/item/reagent_containers/food/snacks/rogue/saltfish,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+KC
+KC
+KC
+ck
+pW
+YV
+rB
+vp
+Uw
+CW
+th
+yP
+yP
+gk
+yP
+"}
+(2,1,1) = {"
+KC
+KC
+KC
+ck
+wE
+ck
+wE
+gb
+yv
+EP
+qt
+bD
+bD
+bD
+bD
+"}
+(3,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+qt
+EH
+tl
+Qd
+Bl
+bD
+ww
+Xd
+bD
+"}
+(4,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+qt
+MW
+LX
+Qd
+ck
+bD
+bD
+bD
+NL
+"}
+(5,1,1) = {"
+KC
+KC
+KC
+KC
+ck
+qt
+qt
+wk
+BD
+wk
+qt
+qt
+ck
+dy
+Ct
+"}
+(6,1,1) = {"
+KC
+KC
+KC
+KC
+ck
+RE
+yC
+fY
+tN
+BB
+Vi
+cP
+ck
+qt
+Bl
+"}
+(7,1,1) = {"
+KC
+KC
+KC
+KC
+ck
+nO
+Zi
+Zi
+yB
+BT
+sk
+im
+wk
+MW
+MW
+"}
+(8,1,1) = {"
+KC
+KC
+KC
+KC
+ck
+lH
+Zi
+st
+im
+yB
+yL
+yL
+EF
+zk
+ws
+"}
+(9,1,1) = {"
+KC
+KC
+KC
+KC
+ck
+zB
+Zi
+im
+im
+im
+im
+im
+wk
+vb
+cO
+"}
+(10,1,1) = {"
+ck
+qt
+qt
+ck
+ck
+ck
+ck
+dp
+im
+sk
+aa
+im
+ck
+ck
+qt
+"}
+(11,1,1) = {"
+ck
+PI
+Po
+nh
+ck
+jg
+ZS
+im
+GC
+ho
+if
+eI
+ck
+XP
+Wu
+"}
+(12,1,1) = {"
+qt
+fN
+wF
+am
+kr
+im
+im
+Ug
+GC
+so
+ob
+vn
+qt
+vQ
+oq
+"}
+(13,1,1) = {"
+ck
+Cm
+DW
+Sg
+qt
+KQ
+vF
+im
+vn
+tH
+OU
+GC
+ck
+ck
+ck
+"}
+(14,1,1) = {"
+ck
+ck
+qt
+qt
+qt
+qt
+qt
+ck
+ck
+qt
+qt
+ck
+ck
+KC
+KC
+"}
+(15,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}

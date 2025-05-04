@@ -4,7 +4,7 @@
 	force_wielded = 20
 	possible_item_intents = list(/datum/intent/axe/chop/stone)
 	name = "stone axe"
-	desc = "A rough stone axe. Badly balanced."
+	desc = "A rough stone axe. Poorly balanced."
 	icon_state = "stoneaxe"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	item_state = "axe"
@@ -112,7 +112,7 @@
 	force_wielded = 30
 	possible_item_intents = list(/datum/intent/axe/cut/battle, /datum/intent/axe/chop/battle)
 	name = "battle axe"
-	desc = "A steel battleaxe of war. Has a wicked edge."
+	desc = "A steel battle axe, made for war. It has a wicked edge."
 	icon_state = "battleaxe"
 	max_blade_int = 300
 	smeltresult = /obj/item/ingot/steel
@@ -137,7 +137,7 @@
 	force_wielded = 40
 	possible_item_intents = list(/datum/intent/axe/cut/battle, /datum/intent/axe/chop/battle)
 	name = "oath"
-	desc = "A hefty, steel-forged axe marred by the touch of countless Wardens. Despite it's weathered etchings and worn grip, the blade has been honed to a razor's edge and you can see your reflection in the finely polished metal."
+	desc = "A hefty, steel-forged axe, marred by the touch of countless Wardens. Despite its weathered etchings and worn grip, the blade has been honed to a razor's edge, and you can see your reflection in the finely polished metal."
 	icon_state = "oath"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	max_blade_int = 500
@@ -180,7 +180,7 @@
 //Pickaxe-axe ; Technically both a tool and a weapon, but it goes here due to weapon function. Subtype of woodcutter axe, mostly a weapon.
 /obj/item/rogueweapon/stoneaxe/woodcut/pick
 	name = "Pulaski axe"
-	desc = "An odd mix of a pickaxe front and a hatchet blade back, capable of being switched between."
+	desc = "An odd mix of a pickaxe front and a hatchet blade back. It is easy to switch between the two."
 	icon_state = "paxe"
 	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/pick)
 	gripped_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop, /datum/intent/pick)
@@ -190,7 +190,7 @@
 
 /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
 	name = "Wardens' axe"
-	desc = "A multi-use axe smithed by the Wardens since time immemorial for both it's use as a tool and a weapon."
+	desc = "A multi-use axe favored by the Wardens since time immemorial for both it's use as a tool and a weapon."
 	icon_state = "wardenpax"
 	force = 22
 	force_wielded = 28
@@ -240,7 +240,7 @@
 	force_wielded = 22
 	possible_item_intents = list(/datum/intent/axe/cut,/datum/intent/axe/chop)
 	name = "bone axe"
-	desc = "A rough axe made of bones"
+	desc = "A rough axe made of bone."
 	icon_state = "boneaxe"
 	lefthand_file = 'icons/mob/inhands/weapons/rogue_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/rogue_righthand.dmi'

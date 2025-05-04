@@ -25,26 +25,22 @@
 #     - (adds an image or sprite)
 #   imagedel
 #     - (removes an image or sprite)
+#   maptweak
+#     - (map updates/tweaks)
 #   spellcheck
 #     - (fixes spelling or grammar)
 #   experiment
 #     - (experimental change)
 #   balance
 #     - (balance changes)
-#   code_imp
-#     - (misc internal code change)
 #   refactor
 #     - (refactors code)
-#   config
-#     - (makes a change to the config files)
 #   admin
 #     - (makes changes to administrator tools)
-#   server
-#     - (miscellaneous changes to server)
 #################################
 
 # Your name.
-author: "
+author: "AuthorNameHere"
 
 # Optional: Remove this file after generating master changelog.  Useful for PR changelogs that won't get used again.
 delete-after: True
@@ -55,5 +51,5 @@ delete-after: True
 # Also, this gets changed to [] after reading.  Just remove the brackets when you add new shit.
 # Please surround your changes in  double quotes ("). It works without them, but if you use certain characters it screws up compiling. The quotes will not show up in the changelog.
 changes:
-  - rscadd: "Added a changelog editing system that should cause fewer conflicts and more accurate timestamps."
-  - rscdel: "Killed innocent kittens."
+  - rscadd: "Girl help."
+  - rscdel: "Help I'm drowning."

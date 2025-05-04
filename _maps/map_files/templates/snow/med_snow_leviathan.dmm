@@ -1,0 +1,339 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"cv" = (
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"ht" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/mountains)
+"uP" = (
+/obj/structure/statue/bone/rib{
+	dir = 4;
+	desc = "Something beyond mortal compare once dwelled here. Its reign is no more."
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/flora/roguegrass,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Bj" = (
+/obj/structure/statue/bone/rib{
+	dir = 8;
+	desc = "Something beyond mortal compare once dwelled here. Its reign is no more."
+	},
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Dd" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Hp" = (
+/obj/item/reagent_containers/food/snacks/crow,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"PQ" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+YZ
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+yr
+YZ
+YZ
+YZ
+qK
+YZ
+qK
+YZ
+"}
+(2,1,1) = {"
+qK
+qK
+YZ
+ht
+uj
+YZ
+yr
+yr
+GL
+yr
+YZ
+YZ
+aJ
+qK
+qK
+"}
+(3,1,1) = {"
+qK
+YZ
+GL
+yr
+uj
+uj
+uj
+yr
+yr
+uj
+yr
+yr
+yf
+Ae
+qC
+"}
+(4,1,1) = {"
+qK
+YZ
+GL
+yr
+yr
+uj
+yr
+cv
+uj
+Bj
+yr
+yr
+yr
+dE
+qK
+"}
+(5,1,1) = {"
+YZ
+YZ
+yr
+Dd
+yr
+yr
+yr
+Bj
+yr
+GL
+GL
+GL
+yr
+Hp
+YZ
+"}
+(6,1,1) = {"
+YZ
+KC
+yr
+yr
+uj
+yr
+GL
+yr
+yr
+yr
+GL
+AW
+uP
+YZ
+YZ
+"}
+(7,1,1) = {"
+yf
+KC
+uj
+yr
+uj
+Bj
+GL
+KC
+KC
+yr
+yr
+yr
+GL
+YZ
+YZ
+"}
+(8,1,1) = {"
+yf
+yr
+uj
+yr
+yr
+PQ
+GL
+KC
+uj
+yr
+GL
+uP
+GL
+yf
+YZ
+"}
+(9,1,1) = {"
+YZ
+yr
+yr
+cv
+yr
+uj
+yr
+ht
+uj
+yr
+cv
+uj
+yf
+yf
+qK
+"}
+(10,1,1) = {"
+YZ
+ht
+yr
+uj
+Bj
+yr
+yr
+uj
+yr
+uP
+uj
+YZ
+yf
+YZ
+qK
+"}
+(11,1,1) = {"
+YZ
+yr
+yr
+KC
+KC
+uP
+yr
+uP
+uj
+yr
+uj
+uj
+yf
+qC
+qK
+"}
+(12,1,1) = {"
+YZ
+yr
+yr
+yr
+yr
+YZ
+YZ
+YZ
+yr
+yr
+YZ
+uj
+YZ
+qK
+qK
+"}
+(13,1,1) = {"
+qK
+YZ
+ht
+YZ
+yr
+yr
+yr
+ht
+YZ
+YZ
+YZ
+YZ
+YZ
+qK
+YZ
+"}
+(14,1,1) = {"
+qK
+qK
+YZ
+yf
+YZ
+PQ
+cv
+yr
+yr
+Cy
+KC
+YZ
+qK
+dE
+YZ
+"}
+(15,1,1) = {"
+YZ
+qC
+qK
+YZ
+YZ
+YZ
+YZ
+yr
+yr
+yf
+YZ
+YZ
+YZ
+YZ
+YZ
+"}

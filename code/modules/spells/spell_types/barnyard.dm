@@ -25,7 +25,7 @@
 
 
 	if(!is_type_in_typecache(target, compatible_mobs_typecache))
-		to_chat(user, span_warning("I are unable to curse [target]'s head!"))
+		to_chat(user, span_warning("I am unable to curse [target]'s head!"))
 		return
 
 	if(!(target in oview(range)))

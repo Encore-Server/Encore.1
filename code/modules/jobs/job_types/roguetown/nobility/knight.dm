@@ -22,7 +22,7 @@
 
 	cmode_music = 'sound/music/combat_knight.ogg'
 
-/datum/job/roguetown/knight/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
+/datum/job/roguetown/knight/after_spawn(mob/living/L, mob/M, latejoin)
 	..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
@@ -62,23 +62,23 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/keyring/guardcastle
 	backr = /obj/item/storage/backpack/rogue/satchel/black
+	id = /obj/item/scomstone/bad
 	backpack_contents = list(/obj/item/signal_horn = 1)
 
 /datum/advclass/knight/heavy
 	name = "Heavy Knight"
-	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, and maces. People may fear the mounted knights, but they should truly fear those who come off their mount.."
+	tutorial = "You are the indesputed master of man-on-man combat. Shockingly adept with massive swords, axes, spears, and maces (but only equipped with axes and spears). People may fear the mounted knights, but they should truly fear those who come off their mount.."
 	outfit = /datum/outfit/job/roguetown/knight/heavy
 
 	category_tags = list(CTAG_ROYALGUARD)
 
 /datum/outfit/job/roguetown/knight/heavy/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)		//swapped with sword skill to make it fair for them to use the iconic high-strength two-handed swords
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)		//lowered shield skill and removed whips and flails to account for them having expert in 4 different weapons
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)		//axes are a two-handed weapon
-	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)			//Heavy-knight so not as good at riding. Don't crush your mount!
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)		
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)			//these guys suck with ranged weapons compared to other knights
@@ -106,20 +106,14 @@
 	H.change_stat("speed", -1)
 
 	H.adjust_blindness(-3)
-	var/weapons = list("Zweihander","Great Mace","Battle Axe", "Estoc")
+	var/weapons = list("Spear","Battle Axe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)
-		if("Zweihander") 	// A two-handed sword, but not the strongest one
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
-			backl = /obj/item/gwstrap
-		if("Great Mace")	// Great-mace, 2-handed
-			r_hand = /obj/item/rogueweapon/mace/goden/steel
+		if("Spear")
+			r_hand = /obj/item/rogueweapon/spear
 		if("Battle Axe")	// Why did heavy knights get a mace+shield combo if they're supposed to be the two-hander guys? Gives them a greataxe instead.
 			r_hand = /obj/item/rogueweapon/stoneaxe/battle
-		if("Estoc")
-			r_hand = /obj/item/rogueweapon/estoc
-			backl = /obj/item/gwstrap
 
 	neck = /obj/item/clothing/neck/roguetown/bevor
 	armor = /obj/item/clothing/suit/roguetown/armor/plate		//this is actually steel half-plate, full plate is plate/full. given because they are SLOW.

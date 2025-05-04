@@ -7,7 +7,7 @@
 	tutorial = "Templars are warriors who have forsaken wealth and title in lieu of service to the church, due to either zealotry or a past shame. They guard the church and its priest while keeping a watchful eye against heresy and nite-creechers. Within troubled dreams, they wonder if the blood they shed makes them holy or stained."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_patrons = ALL_DIVINE_PATRONS
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh) // Core Elemental Pantheon only, All-Aspect Templars should play the Adjudicator subclass for Orthodoxist
 	outfit = /datum/outfit/job/roguetown/templar
 	min_pq = -999
 	max_pq = null
@@ -16,13 +16,13 @@
 	spawn_positions = 99
 	advclass_cat_rolls = list(CTAG_TEMPLAR = 20)
 	display_order = JDO_TEMPLAR
-	
+	cmode_music = 'sound/music/combat_templar.ogg'
 	give_bank_account = TRUE
 
 /datum/outfit/job/roguetown/templar
 	has_loadout = TRUE
-	allowed_patrons = ALL_PALADIN_PATRONS
-	id = /obj/item/clothing/ring/silver
+	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh) // Core Elemental Pantheon only, All-Aspect Templars should play the Adjudicator subclass for Orthodoxist
+	id = /obj/item/clothing/ring/silver/templar
 	
 /datum/job/roguetown/templar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
@@ -43,18 +43,16 @@
 	..()
 	neck = /obj/item/clothing/neck/roguetown/psicross/gani
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 			cloak = /obj/item/clothing/cloak/tabard/crusader/visires
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			cloak = /obj/item/clothing/cloak/tabard/crusader/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 	backl = /obj/item/storage/backpack/rogue/satchel
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -84,7 +82,23 @@
 
 
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/hammerfall)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 /datum/advclass/templar/crusader
@@ -98,35 +112,32 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	backl = /obj/item/storage/backpack/rogue/satchel
-	gloves = /obj/item/clothing/gloves/roguetown/chain
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltr = /obj/item/storage/keyring/puritan
@@ -153,12 +164,28 @@
 	
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/hammerfall)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 /datum/outfit/job/roguetown/templar/crusader/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Flail","Mace","Zweihander","Lucerne")
+	var/weapons = list("Bastard Sword","Flail","Mace","Spear")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
 		if("Bastard Sword")
@@ -170,13 +197,8 @@
 		if("Mace")
 			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		if("Zweihander")
-			H.put_in_hands(new /obj/item/rogueweapon/greatsword/grenz(H), TRUE)
-			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-		if("Lucerne")
-			H.put_in_hands(new /obj/item/rogueweapon/eaglebeak/lucerne(H), TRUE)
-			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+		if("Spear")
+			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
 
 
@@ -191,36 +213,33 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
 	beltr = /obj/item/flashlight/flare/torch/lantern
-	beltl = /obj/item/rogueweapon/sword/short
+	beltl = /obj/item/rogueweapon/sword/iron/short
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
@@ -245,7 +264,23 @@
 	
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/hammerfall)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 /datum/outfit/job/roguetown/templar/heavyranger/choose_loadout(mob/living/carbon/human/H)
@@ -273,31 +308,28 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	wrists = /obj/item/clothing/neck/roguetown/psicross/gani
+	if(H.patron?.amulet)
+		wrists  = H.patron.amulet
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/visires
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/gani
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			wrists = /obj/item/clothing/neck/roguetown/psicross/akan
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	pants= /obj/item/clothing/under/roguetown/trou/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
@@ -328,7 +360,23 @@
 	
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.passive_devotion_gain += 0.1
 	C.grant_spells_templar(H)
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/hammerfall)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 /datum/outfit/job/roguetown/templar/lightranger/choose_loadout(mob/living/carbon/human/H)

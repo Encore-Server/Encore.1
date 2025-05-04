@@ -1,0 +1,324 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"iG" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mQ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nc" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oC" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = -6;
+	pixel_y = 15
+	},
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BY" = (
+/turf/open/water/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Es" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HI" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Tq" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/soap,
+/obj/item/soap,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Tu" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XM" = (
+/obj/structure/mirror,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+KC
+HI
+HI
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(2,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(3,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(4,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(5,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(6,1,1) = {"
+CW
+CW
+KC
+KC
+KC
+KC
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(7,1,1) = {"
+CW
+CW
+KC
+BY
+BY
+BY
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(8,1,1) = {"
+CW
+CW
+KC
+oC
+mQ
+mQ
+KC
+KC
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(9,1,1) = {"
+CW
+CW
+KC
+XM
+Es
+nc
+nc
+Tu
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(10,1,1) = {"
+CW
+CW
+KC
+Tq
+iG
+nc
+KC
+KC
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(11,1,1) = {"
+CW
+CW
+KC
+KC
+KC
+KC
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(12,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(13,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(14,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(15,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}

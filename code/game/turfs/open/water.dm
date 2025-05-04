@@ -365,7 +365,7 @@
 		water_top_overlay.dir = dir
 
 /turf/open/water/river/Initialize()
-	icon_state = "rock"
+	icon_state = "water"
 	.  = ..()
 
 /turf/open/water/river/Entered(atom/movable/AM, atom/oldLoc)
@@ -390,7 +390,7 @@
 	slowdown = 4
 	swim_skill = TRUE
 	wash_in = TRUE
-	water_reagent = /datum/reagent/water/gross
+	water_reagent = /datum/reagent/water/salt
 
 /turf/open/water/ocean
 	desc = "Thin and muddied water of a coast, it only appears deep enough to reach a one's knees."

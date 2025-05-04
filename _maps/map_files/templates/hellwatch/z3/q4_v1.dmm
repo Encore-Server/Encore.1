@@ -1,0 +1,616 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aT" = (
+/obj/structure/table/wood{
+	dir = 8;
+	icon_state = "longtable"
+	},
+/obj/item/natural/feather,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dp" = (
+/obj/structure/roguewindow/openclose{
+	dir = 1
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dN" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dP" = (
+/obj/effect/decal/cleanable/blood,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"gR" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "Chapel"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jy" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 1;
+	name = "Librarum"
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jW" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kn" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/yeoldecookingmanual,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kp" = (
+/obj/structure/chair/wood/rogue{
+	dir = 8
+	},
+/obj/structure/fluff/walldeco/katholikos_banner/akan{
+	pixel_y = 28
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ks" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mv" = (
+/obj/structure/chair/bench/church{
+	dir = 1
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mD" = (
+/obj/structure/rack/rogue/shelf/biggest,
+/obj/item/needle,
+/obj/item/storage/belt/rogue/surgery_bag/full,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nL" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nP" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oD" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qi" = (
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"tT" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vE" = (
+/obj/structure/bookcase/random/religion,
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vW" = (
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xe" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xr" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yF" = (
+/obj/structure/bookcase/random/fiction,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yI" = (
+/obj/structure/table/wood{
+	icon_state = "longtable";
+	dir = 4
+	},
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zt" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zE" = (
+/obj/effect/decal/cleanable/cobweb{
+	icon_state = "cobweb2"
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"At" = (
+/obj/structure/bookcase,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Az" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BA" = (
+/obj/structure/roguewindow/openclose{
+	icon_state = "woodwindowdir";
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CC" = (
+/obj/structure/fluff/littlebanners/elemental,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CT" = (
+/obj/structure/bookcase/random/nonfiction,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/churchfort/basement)
+"DG" = (
+/obj/structure/chair/bench/church/mid,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"En" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ED" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"EI" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"FB" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable_mid"
+	},
+/obj/item/natural/feather,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hi" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HE" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HH" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"IR" = (
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JA" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KS" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ni" = (
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ov" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Po" = (
+/obj/structure/table/optable,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/tile/checkeralt,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Pz" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qb" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RO" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RS" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Su" = (
+/obj/structure/chair/bench/church/r,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"TF" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"TX" = (
+/obj/machinery/light/rogue/torchholder/c,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ux" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UK" = (
+/obj/structure/bookcase,
+/obj/item/book/rogue/law,
+/obj/item/book/rogue/bibble,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Vk" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"VK" = (
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wz" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/clothing/neck/roguetown/psicross/akan,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"WE" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Xn" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XC" = (
+/obj/structure/bookcase/random/religion,
+/turf/open/floor/carpet/red,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XI" = (
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Yi" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/structure/fluff/walldeco/katholikos_banner/gani{
+	pixel_x = 33
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Yt" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZK" = (
+/obj/structure/fluff/walldeco/katholikos_banner/mjallidhorn{
+	pixel_x = 33
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZQ" = (
+/obj/structure/chair/wood/rogue,
+/turf/open/floor/rogue/ruinedwood/turned,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZT" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+CW
+Az
+TX
+tT
+Yt
+Hi
+mv
+XI
+zt
+WE
+Vk
+Ni
+CC
+Ni
+Ni
+"}
+(2,1,1) = {"
+CW
+Vk
+Ov
+Xn
+xr
+XI
+DG
+JA
+zt
+RO
+Az
+Ni
+CC
+Ni
+Ni
+"}
+(3,1,1) = {"
+CW
+Vk
+vW
+Yi
+TF
+XI
+Su
+HH
+zt
+IR
+dp
+Ni
+CC
+Ni
+Ni
+"}
+(4,1,1) = {"
+CW
+Vk
+Az
+Az
+Az
+zE
+ZK
+XI
+oD
+xe
+Vk
+Ni
+CC
+Ni
+Ni
+"}
+(5,1,1) = {"
+CW
+CW
+CW
+CW
+Vk
+Vk
+Vk
+Vk
+gR
+Az
+Az
+Vk
+Vk
+Ni
+Ni
+"}
+(6,1,1) = {"
+CW
+CW
+CW
+CW
+Vk
+yI
+aT
+VK
+EI
+Pz
+VK
+VK
+Vk
+Az
+BA
+"}
+(7,1,1) = {"
+CW
+CW
+CW
+CW
+Az
+kp
+VK
+Ux
+jW
+ks
+Qb
+VK
+KS
+ED
+RO
+"}
+(8,1,1) = {"
+CW
+CW
+CW
+CW
+Vk
+VK
+VK
+VK
+VK
+Ux
+jW
+ks
+jy
+nP
+nL
+"}
+(9,1,1) = {"
+CW
+CW
+CW
+CW
+Az
+UK
+At
+At
+kn
+VK
+VK
+VK
+Az
+Az
+Az
+"}
+(10,1,1) = {"
+CW
+CW
+CW
+CW
+Az
+En
+KC
+KC
+KC
+VK
+Ux
+VK
+Vk
+Po
+qi
+"}
+(11,1,1) = {"
+CW
+ZT
+CW
+CW
+Vk
+yF
+yF
+CT
+CT
+VK
+VK
+Wz
+Az
+HE
+dP
+"}
+(12,1,1) = {"
+CW
+CW
+CW
+CW
+Vk
+En
+KC
+KC
+KC
+VK
+ZQ
+FB
+Az
+mD
+RO
+"}
+(13,1,1) = {"
+CW
+CW
+CW
+CW
+Az
+vE
+XC
+XC
+XC
+RS
+VK
+dN
+Vk
+Vk
+Vk
+"}
+(14,1,1) = {"
+CW
+CW
+CW
+CW
+Az
+Az
+Az
+Vk
+Vk
+Az
+Az
+Az
+Vk
+CW
+CW
+"}
+(15,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}

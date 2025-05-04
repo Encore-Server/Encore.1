@@ -1,0 +1,171 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/roguegem/diamond{
+	name = "priceless gem";
+	desc = "A beautifully clear gem. It looks like the most expensive thing you've ever seen. It seems lodged precariously in the cracks below.";
+	anchored = 1
+	},
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/obj/structure/trap/lava,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KE" = (
+/turf/open/lava/smooth,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Vk" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+Vk
+RF
+Yn
+Yn
+Yn
+RF
+Ol
+kd
+"}
+(2,1,1) = {"
+Yn
+RF
+RF
+KE
+rf
+KE
+KE
+cR
+RF
+Yn
+"}
+(3,1,1) = {"
+Yn
+RF
+KE
+KE
+KE
+KE
+KE
+KE
+RF
+RF
+"}
+(4,1,1) = {"
+kd
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+RF
+"}
+(5,1,1) = {"
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+RF
+"}
+(6,1,1) = {"
+KE
+KE
+KE
+KE
+nV
+KE
+KE
+KE
+KE
+qp
+"}
+(7,1,1) = {"
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+cR
+"}
+(8,1,1) = {"
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+RF
+"}
+(9,1,1) = {"
+qp
+KE
+KE
+KE
+KE
+KE
+KE
+KE
+Yn
+kd
+"}
+(10,1,1) = {"
+Yn
+RF
+cR
+RF
+xx
+KE
+Yn
+RF
+RF
+XV
+"}

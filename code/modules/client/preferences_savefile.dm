@@ -341,17 +341,36 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 /datum/preferences/proc/_load_virtue(S)
 	var/virtue_type
+	var/virtuetwo_type
 	S["virtue"] >> virtue_type
+	S["virtuetwo"] >> virtuetwo_type
 	if (virtue_type)
 		virtue = new virtue_type()
 	else
 		virtue = new /datum/virtue/none
+
+	if( virtuetwo_type)
+		virtuetwo = new virtuetwo_type
+	else
+		virtuetwo = new /datum/virtue/none
 
 /datum/preferences/proc/_load_loadout(S)
 	var/loadout_type
 	S["loadout"] >> loadout_type
 	if (loadout_type)
 		loadout = new loadout_type()
+
+/datum/preferences/proc/_load_loadout2(S)
+	var/loadout_type2
+	S["loadout2"] >> loadout_type2
+	if (loadout_type2)
+		loadout2 = new loadout_type2()
+
+/datum/preferences/proc/_load_loadout3(S)
+	var/loadout_type3
+	S["loadout3"] >> loadout_type3
+	if (loadout_type3)
+		loadout3 = new loadout_type3()
 
 /datum/preferences/proc/_load_appearence(S)
 	S["real_name"]			>> real_name
@@ -413,6 +432,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	_load_statpack(S)
 
 	_load_loadout(S)
+	_load_loadout2(S)
+	_load_loadout3(S)
 
 	if(!S["features["mcolor"]"] || S["features["mcolor"]"] == "#000")
 		WRITE_FILE(S["features["mcolor"]"]	, "#FFF")
@@ -612,10 +633,19 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["pronouns"] , pronouns)
 	WRITE_FILE(S["statpack"] , statpack.type)
 	WRITE_FILE(S["virtue"] , virtue.type)
+	WRITE_FILE(S["virtuetwo"], virtuetwo.type)
 	if(loadout)
 		WRITE_FILE(S["loadout"] , loadout.type)
 	else
 		WRITE_FILE(S["loadout"] , null)
+	if(loadout2)
+		WRITE_FILE(S["loadout2"] , loadout2.type)
+	else
+		WRITE_FILE(S["loadout2"] , null)
+	if(loadout3)
+		WRITE_FILE(S["loadout3"] , loadout3.type)
+	else
+		WRITE_FILE(S["loadout3"] , null)
 
 
 	return TRUE

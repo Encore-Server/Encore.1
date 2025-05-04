@@ -1,7 +1,0 @@
-author: "Hocka"
-
-delete-after: True
-
-changes:
-  - rscadd: "Allows bait to trigger animal spawns off of regular trees instead of the weird ones with faces."
-  - rscadd: "Added an additional check to make sure bait cannot be used inside the town of Doma itself."

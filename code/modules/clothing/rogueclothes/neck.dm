@@ -180,6 +180,7 @@
 	sellprice = 10
 	experimental_onhip = TRUE
 	anvilrepair = /datum/skill/craft/armorsmithing
+	var/burns_rot = TRUE //Set FALSE if this symbol does not have the power to cure rot or zombification
 
 /obj/item/clothing/neck/roguetown/psicross/visires
 	name = "amulet of Visires"
@@ -206,10 +207,56 @@
 	desc = ""
 	icon_state = "malum"
 
+/obj/item/clothing/neck/roguetown/psicross/iliope
+	name = "amulet of Iliope"
+	desc = ""
+	icon_state = "ravox"
+
 /obj/item/clothing/neck/roguetown/psicross/wood
 	name = "wooden cross"
 	icon_state = "psicrossw"
 	sellprice = 0
+	burns_rot = FALSE //Wood amulets are no good for burning rot or curing zombies
+
+/obj/item/clothing/neck/roguetown/psicross/wood/OnCrafted(dir, user)
+	var/list/options = list()
+	for(var/P in subtypesof(type))
+		var/obj/item/clothing/neck/roguetown/psicross/wood/W = P
+		options[W.name] = W
+	var/choice = input(user, "Which god's holy amulet did you want to craft?", "Choose an Amulet or Cancel") as null|anything in options
+	if(choice)
+		var/obj/item/crafted = options[choice]
+		new crafted(get_turf(src))
+		qdel(src)
+		return
+	return ..()
+
+/obj/item/clothing/neck/roguetown/psicross/wood/katholikos
+	name = "wooden amulet of the All-Aspect"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/gani
+	name = "wooden amulet of Gani"
+	icon_state = "dendor_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/mjallidhorn
+	name = "wooden amulet of Mjallidhorn"
+	icon_state = "necra_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/visires
+	name = "wooden amulet of Visires"
+	icon_state = "astrata_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/akan
+	name = "wooden amulet of Akan"
+	icon_state = "noc_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/golerkanh
+	name = "wooden amulet of Goler Kanh"
+	icon_state = "malum_w"
+
+/obj/item/clothing/neck/roguetown/psicross/wood/iliope
+	name = "wooden amulet of Iliope"
+	icon_state = "ravox_w"
 
 /obj/item/clothing/neck/roguetown/psicross/silver
 	name = "silver cross"

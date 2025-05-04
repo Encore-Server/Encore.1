@@ -255,7 +255,7 @@
 
 /datum/action/innate/swap_body/Activate()
 	if(!isslimeperson(owner))
-		to_chat(owner, span_warning("I are not a slimeperson."))
+		to_chat(owner, span_warning("I am not a slimeperson."))
 		Remove(owner)
 	else
 		ui_interact(owner)
@@ -599,7 +599,7 @@
 	if(M in linked_mobs)
 		return FALSE
 	linked_mobs.Add(M)
-	to_chat(M, span_notice("I are now connected to [slimelink_owner.real_name]'s Slime Link."))
+	to_chat(M, span_notice("I am now connected to [slimelink_owner.real_name]'s Slime Link."))
 	var/datum/action/innate/linked_speech/action = new(src)
 	linked_actions.Add(action)
 	action.Grant(M)
@@ -611,7 +611,7 @@
 		return
 	var/datum/action/innate/linked_speech/action = linked_actions[link_id]
 	action.Remove(M)
-	to_chat(M, span_notice("I are no longer connected to [slimelink_owner.real_name]'s Slime Link."))
+	to_chat(M, span_notice("I am no longer connected to [slimelink_owner.real_name]'s Slime Link."))
 	linked_mobs[link_id] = null
 	linked_actions[link_id] = null
 

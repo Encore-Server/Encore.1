@@ -1,0 +1,305 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aT" = (
+/obj/structure/bed/rogue/inn/hay,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mR" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"oF" = (
+/turf/closed/mineral/random/rogue/med,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"wb" = (
+/obj/item/rogueweapon/pick/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"HZ" = (
+/obj/item/natural/rock/copper,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Jv" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Lr" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"MZ" = (
+/obj/item/natural/rock/copper,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ox" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+rN
+mR
+kA
+oF
+oF
+rN
+rN
+Jv
+rN
+uM
+uM
+"}
+(2,1,1) = {"
+oF
+oF
+rN
+rN
+oF
+rN
+Jv
+rN
+oF
+oF
+rN
+Jv
+rN
+rN
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+rN
+rN
+oF
+oF
+Jv
+Jv
+Jv
+rN
+rN
+oF
+rN
+Ox
+YB
+"}
+(4,1,1) = {"
+Jv
+rN
+rN
+uM
+uM
+oF
+oF
+rN
+Lr
+rN
+oF
+oF
+uM
+Jv
+rN
+"}
+(5,1,1) = {"
+Jv
+oF
+oF
+uM
+uM
+uM
+rN
+rN
+rN
+MZ
+rN
+uM
+uM
+oF
+Jv
+"}
+(6,1,1) = {"
+rN
+oF
+uM
+uM
+oF
+rN
+rN
+uM
+uM
+rN
+rN
+aT
+rN
+rN
+Jv
+"}
+(7,1,1) = {"
+rN
+rN
+rN
+Jv
+Jv
+Jv
+uM
+uM
+oF
+aT
+wb
+rN
+oF
+rN
+Jv
+"}
+(8,1,1) = {"
+oF
+oF
+rN
+Lr
+rN
+uM
+oF
+oF
+oF
+oF
+rN
+oF
+oF
+rN
+Jv
+"}
+(9,1,1) = {"
+kA
+oF
+rN
+Jv
+rN
+oF
+oF
+oF
+uM
+uM
+rN
+oF
+uM
+uM
+Lr
+"}
+(10,1,1) = {"
+mR
+rN
+rN
+Jv
+Jv
+oF
+oF
+oF
+uM
+rN
+rN
+uM
+uM
+Jv
+Jv
+"}
+(11,1,1) = {"
+rN
+oF
+oF
+uM
+Jv
+rN
+rN
+oF
+rN
+rN
+rN
+oF
+oF
+Jv
+rN
+"}
+(12,1,1) = {"
+rN
+rN
+oF
+uM
+Jv
+HZ
+rN
+oF
+oF
+rN
+rN
+rN
+rN
+rN
+mR
+"}
+(13,1,1) = {"
+Ox
+rN
+uM
+uM
+uM
+Jv
+kA
+oF
+rN
+Jv
+Jv
+rN
+rN
+oF
+oF
+"}
+(14,1,1) = {"
+YB
+oF
+oF
+rN
+rN
+rN
+Jv
+rN
+rN
+Jv
+oF
+rN
+kA
+rN
+oF
+"}
+(15,1,1) = {"
+oF
+oF
+oF
+oF
+rN
+uM
+rN
+rN
+kA
+rN
+oF
+oF
+rN
+kA
+uM
+"}

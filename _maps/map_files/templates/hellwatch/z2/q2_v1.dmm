@@ -1,0 +1,615 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aW" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"aX" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 6;
+	icon_state = "borderfall";
+	pixel_x = 27
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"aY" = (
+/obj/structure/lever{
+	name = "gate lever";
+	redstone_id = "church_keep_courtyard_gate_1";
+	pixel_y = 22
+	},
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bq" = (
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eB" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eU" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "Dormitories"
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"fn" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_courtyard_gate_1";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"iG" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jT" = (
+/obj/structure/bars/passage{
+	redstone_id = "church_keep_main_gate";
+	max_integrity = 9000
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ku" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kv" = (
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"lE" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mw" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "South-East Tower"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nq" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/pelt,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nG" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"op" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/obj/effect/decal/mossy,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oA" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/paper{
+	info = "Tiw's Dae - I'm glad we came to Domotan, with all these ruins about the island it makes for some easy mammon to comb them over and sell any valuables within. Far as I can tell this looks to be an old holding that the Katholikos had, something to watch over the road to Mount Miracle. Well it's empty now, and surprisingly still intact. Lucky as well, my group and I are looking forward to sleeping in an actual bed instead of keeping watch for volfs.";
+	name = "adventurer diary fragment #1"
+	},
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oB" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"oV" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pk" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/item/bedsheet/rogue/pelt,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pG" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"se" = (
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sl" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"uZ" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vs" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border,
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vE" = (
+/obj/structure/fluff/walldeco/katholikos_banner/gani{
+	pixel_x = 33
+	},
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vJ" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"wD" = (
+/obj/structure/fluff/walldeco/katholikos_banner{
+	pixel_y = 25
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xT" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BM" = (
+/obj/structure/bed/rogue/bedroll,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cf" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CA" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Dl" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Dq" = (
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/outdoors/woods/churchfort/basement)
+"DP" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Eo" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Fq" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Gb" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Gq" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hw" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Is" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/flora/ausbushes/lavendergrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/obj/item/clothing/neck/roguetown/psicross/gani,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Kh" = (
+/obj/structure/bars/grille{
+	max_integrity = 5000;
+	density = 1
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "borderfall";
+	pixel_x = -27
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LT" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"OV" = (
+/obj/structure/roguewindow,
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qh" = (
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"QG" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Rl" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RQ" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Sc" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	name = "South-East Tower"
+	},
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SC" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"VP" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wo" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/hell,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XV" = (
+/obj/machinery/light/rogue/firebowl/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ya" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Yk" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZT" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+oB
+Is
+vs
+Rl
+Rl
+eB
+Rl
+fn
+bq
+bq
+VP
+jT
+RQ
+LT
+Rl
+"}
+(2,1,1) = {"
+Rl
+Rl
+Rl
+Rl
+DP
+DP
+DP
+CW
+aY
+LT
+bq
+SC
+KC
+DP
+DP
+"}
+(3,1,1) = {"
+DP
+DP
+DP
+DP
+DP
+DP
+iG
+Kh
+bq
+VP
+LT
+SC
+wD
+XV
+DP
+"}
+(4,1,1) = {"
+Qh
+Qh
+Qh
+Qh
+DP
+iG
+ZT
+SC
+bq
+bq
+bq
+SC
+aX
+DP
+DP
+"}
+(5,1,1) = {"
+aW
+vE
+aW
+op
+CA
+CW
+CW
+CW
+OV
+mw
+OV
+CW
+CW
+CW
+KC
+"}
+(6,1,1) = {"
+SC
+SC
+SC
+Kh
+SC
+SC
+Gq
+Gb
+se
+se
+se
+Dq
+BM
+CW
+vJ
+"}
+(7,1,1) = {"
+bq
+bq
+bq
+LT
+LT
+OV
+se
+Dl
+LT
+QG
+se
+oV
+se
+SC
+vJ
+"}
+(8,1,1) = {"
+Yk
+Wo
+LT
+bq
+bq
+Sc
+se
+LT
+se
+se
+se
+Dq
+Dq
+SC
+vJ
+"}
+(9,1,1) = {"
+uZ
+Eo
+Yk
+Ya
+bq
+CW
+CW
+Fq
+Hw
+se
+QG
+se
+se
+CW
+vJ
+"}
+(10,1,1) = {"
+eU
+CW
+eU
+CW
+CW
+CW
+CW
+CW
+ku
+se
+se
+se
+se
+CW
+vJ
+"}
+(11,1,1) = {"
+sl
+kv
+Cf
+xT
+nG
+CW
+BM
+Dq
+se
+QG
+se
+Dq
+Dq
+CW
+vJ
+"}
+(12,1,1) = {"
+pk
+oA
+pk
+lE
+nq
+SC
+se
+oV
+se
+se
+se
+oV
+se
+SC
+vJ
+"}
+(13,1,1) = {"
+CW
+CW
+SC
+SC
+CW
+CW
+BM
+Dq
+se
+pG
+se
+Dq
+BM
+CW
+vJ
+"}
+(14,1,1) = {"
+vJ
+vJ
+vJ
+vJ
+vJ
+CW
+CW
+SC
+CW
+CW
+SC
+SC
+CW
+CW
+vJ
+"}
+(15,1,1) = {"
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+vJ
+"}

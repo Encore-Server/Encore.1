@@ -25,7 +25,7 @@
 		<b>Use</b>: Issue a prayer for illumination, causing you or another living creature to begin glowing with light for five minutes - this stacks each time you cast it, with no upper limit. Using thaumaturgy on a person will remove this blessing from them, and MMB on your praying hand will remove any light blessings from yourself."
 	catchphrase = null
 	possible_item_intents = list(/datum/intent/fill, INTENT_HELP, /datum/intent/use)
-	icon = 'icons/mob/roguehudgrabs.dmi'
+	icon = 'icons/ui/hud/roguehudgrabs.dmi'
 	icon_state = "pulling"
 	icon_state = "grabbing_greyscale"
 	color = "#FFFFFF"

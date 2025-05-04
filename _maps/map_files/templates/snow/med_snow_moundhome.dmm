@@ -1,0 +1,730 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/machinery/light/rogue/torchholder/c,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"aJ" = (
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/reagent_containers/food/snacks/butter,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/structure/closet/crate/roguecloset/inn,
+/obj/item/soap,
+/obj/item/flashlight/flare/torch,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"bS" = (
+/obj/structure/chair/stool/rogue,
+/obj/item/cooking/skewer,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"bX" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"dd" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/structure/fluff/millstone{
+	pixel_x = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 13;
+	pixel_x = 2
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"dE" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/effect/decal/mossy,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"gd" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"gQ" = (
+/obj/item/paper/scroll,
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "tablewood1"
+	},
+/obj/item/paper/scroll,
+/obj/item/paper/scroll,
+/obj/item/natural/feather,
+/obj/item/natural/feather,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"gS" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/bucket/wooden,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"ht" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/storage/backpack/rogue/satchel,
+/obj/item/reagent_containers/glass/cup/silver,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"hC" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"jl" = (
+/obj/machinery/light/rogue/torchholder/r,
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"lV" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/rogueweapon/huntingknife/chefknife,
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6;
+	pixel_y = -3
+	},
+/obj/item/reagent_containers/glass/bowl{
+	pixel_x = 6
+	},
+/obj/item/natural/fibers,
+/obj/item/natural/fibers,
+/obj/item/natural/bundle/silk,
+/obj/machinery/light/rogue/torchholder/l,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"ny" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"qC" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/stairs/stone,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"qE" = (
+/obj/item/flashlight/flare/torch/lantern,
+/obj/structure/closet/crate/chest/crate,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/item/natural/cloth,
+/obj/item/clothing/suit/roguetown/shirt/shortshirt/random,
+/obj/item/clothing/suit/roguetown/shirt/shortshirt/random,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/obj/item/clothing/suit/roguetown/shirt/tunic/random,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/item/clothing/shoes/roguetown/sandals,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/shelter/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"rd" = (
+/obj/machinery/light/rogue/wallfire{
+	pixel_y = 32
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/shelter/mountains)
+"sb" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/snow,
+/area/rogue/indoors/shelter/mountains)
+"tS" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/bundle/stick,
+/obj/item/natural/bundle/stick,
+/obj/item/natural/bundle/stick,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/candle/yellow,
+/obj/item/rope,
+/obj/item/rogueweapon/stoneaxe/woodcut,
+/obj/item/rogueweapon/stoneaxe/woodcut/pick,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"vI" = (
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 5
+	},
+/obj/structure/table/wood{
+	dir = 8;
+	icon_state = "longtable"
+	},
+/obj/item/candle/yellow{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/obj/item/kitchen/spoon/plastic{
+	pixel_y = 3;
+	pixel_x = 10
+	},
+/obj/item/kitchen/spoon/plastic{
+	pixel_y = 3;
+	pixel_x = 10
+	},
+/obj/item/kitchen/spoon/plastic{
+	pixel_y = 3;
+	pixel_x = 10
+	},
+/obj/item/flint,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"wR" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/shelter/mountains)
+"xG" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/snow,
+/turf/open/water/bath,
+/area/rogue/indoors/shelter/mountains)
+"yf" = (
+/obj/machinery/light/rogue/torchholder/c,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/shelter/mountains)
+"yr" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"zU" = (
+/obj/item/clothing/mask/cigarette/rollie/nicotine,
+/obj/machinery/light/rogue/torchholder/c,
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "longtable"
+	},
+/obj/item/natural/cloth{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/reagent_containers/powder/salt,
+/obj/item/reagent_containers/powder/salt,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ae" = (
+/obj/effect/roofing_helper/snow,
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/shelter/mountains)
+"Bj" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/natural/bundle/cloth,
+/obj/item/reagent_containers/glass/bucket/pot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ch" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Cu" = (
+/obj/machinery/light/rogue/torchholder/l,
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/fermenting_barrel/water,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Cy" = (
+/obj/effect/roofing_helper/snow,
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/mountains)
+"CY" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"Ef" = (
+/obj/machinery/light/rogue/hearth,
+/obj/machinery/light/rogue/oven/south,
+/obj/item/cooking/pan,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"FJ" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/effect/roofing_helper/snow,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/expensive,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"HF" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/wood/nosmooth,
+/area/rogue/indoors/shelter/mountains)
+"Iy" = (
+/obj/structure/chair/wood/rogue/chair3{
+	dir = 4
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ja" = (
+/obj/effect/decal/mossy{
+	dir = 8
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"Jp" = (
+/obj/structure/bed/rogue/inn,
+/obj/item/bedsheet/rogue/pelt,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/shelter/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ml" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ox" = (
+/obj/effect/decal/mossy{
+	dir = 1
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"PU" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"SC" = (
+/obj/machinery/light/rogue/torchholder/r,
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 8
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"Tn" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ud" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"Vl" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/mossy{
+	dir = 4
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"VE" = (
+/obj/structure/closet/crate/chest/neu,
+/obj/item/reagent_containers/glass/bottle/rogue/manapot,
+/obj/item/reagent_containers/glass/bottle/rogue/redwine,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/wheat,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/onion/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/grown/potato/rogue,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/food,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/twig,
+/area/rogue/indoors/shelter/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"ZO" = (
+/obj/structure/chair/wood/rogue/chair3,
+/obj/structure/rogue/trophy/deer,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+
+(1,1,1) = {"
+qK
+YZ
+YZ
+YZ
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+YZ
+KC
+KC
+YZ
+"}
+(2,1,1) = {"
+qK
+KC
+YZ
+Ae
+Ae
+Cy
+Cy
+Cy
+Cy
+Cy
+Ae
+Ae
+KC
+KC
+KC
+"}
+(3,1,1) = {"
+KC
+KC
+Ae
+Ae
+Ae
+Cy
+Ef
+dd
+lV
+Bj
+Cy
+Ae
+Ae
+PU
+KC
+"}
+(4,1,1) = {"
+KC
+Ae
+Ae
+Ae
+xG
+Cu
+bS
+bX
+bX
+aJ
+Cy
+Ae
+Ae
+qK
+qK
+"}
+(5,1,1) = {"
+KC
+Ae
+Ae
+xG
+xG
+FJ
+yr
+Vl
+hC
+gQ
+Cy
+Ae
+Ae
+Ae
+YZ
+"}
+(6,1,1) = {"
+YZ
+Ae
+Ae
+xG
+xG
+Tn
+dE
+Ud
+Ox
+tS
+Cy
+Cy
+Cy
+Ae
+YZ
+"}
+(7,1,1) = {"
+YZ
+Ae
+Ae
+xG
+gS
+SC
+gd
+Ja
+ny
+qC
+jl
+Ch
+Ml
+sb
+YZ
+"}
+(8,1,1) = {"
+qK
+Ae
+Ae
+Cy
+wR
+Cy
+ht
+VE
+ny
+ny
+Cy
+Cy
+Cy
+Ae
+YZ
+"}
+(9,1,1) = {"
+qK
+Ae
+Ae
+Cy
+yf
+Cy
+Cy
+Cy
+ar
+CY
+Cy
+Ae
+Ae
+Ae
+YZ
+"}
+(10,1,1) = {"
+qK
+Ae
+Ae
+Cy
+rd
+HF
+HF
+wR
+CY
+bX
+Cy
+Ae
+Ae
+Ae
+YZ
+"}
+(11,1,1) = {"
+YZ
+Ae
+Ae
+Cy
+qE
+Jp
+Jp
+Cy
+ZO
+Iy
+Cy
+Ae
+Ae
+YZ
+YZ
+"}
+(12,1,1) = {"
+YZ
+YZ
+Ae
+Cy
+Cy
+Cy
+Cy
+Cy
+zU
+vI
+Cy
+Ae
+Ae
+qK
+KC
+"}
+(13,1,1) = {"
+KC
+KC
+Ae
+Ae
+Ae
+Ae
+Ae
+Cy
+Cy
+Cy
+Cy
+Ae
+qK
+qK
+KC
+"}
+(14,1,1) = {"
+KC
+PU
+YZ
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+Ae
+KC
+KC
+YZ
+"}
+(15,1,1) = {"
+KC
+KC
+KC
+YZ
+qK
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+KC
+KC
+KC
+"}

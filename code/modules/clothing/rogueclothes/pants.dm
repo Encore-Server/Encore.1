@@ -12,6 +12,7 @@
 	sleevetype = "leg"
 	equip_delay_self = 30
 	bloody_icon_state = "bodyblood"
+	max_integrity = 100
 	sewrepair = TRUE
 	r_sleeve_zone = BODY_ZONE_R_LEG
 	l_sleeve_zone = BODY_ZONE_L_LEG
@@ -114,7 +115,6 @@
 	name = "leather trousers"
 	armor = list("blunt" = 50, "slash" = 40, "stab" = 40, "bullet" = 10, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "leathertrou"
-	max_integrity = 200
 	resistance_flags = FIRE_PROOF
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants
@@ -128,7 +128,6 @@
 	armor = list("blunt" = 75, "slash" = 70, "stab" = 60, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = SOFTHIT
-	max_integrity = 250
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
@@ -166,7 +165,6 @@
 	armor = list("blunt" = 60, "slash" = 100, "stab" = 80, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = CHAINHIT
-	max_integrity = 300
 	var/do_sound = FALSE
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -187,7 +185,6 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	body_parts_covered = GROIN
 	blocksound = CHAINHIT
-	max_integrity = 300
 	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
@@ -199,13 +196,17 @@
 /obj/item/clothing/under/roguetown/chainlegs/iron
 	name = "iron chain chausses"
 	icon_state = "ichain_legs"
-	max_integrity = 250
+	max_integrity = 150
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
+/obj/item/clothing/under/roguetown/chainlegs/iron/red
+	name = "red iron chain chausses"
+	color = "#b81865"
+
 /obj/item/clothing/under/roguetown/platelegs
 	name = "steel plate chausses"
-	desc = "Reinforced armor to protect the legs."
+	desc = "Reinforced steel armor to protect the legs."
 	gender = PLURAL
 	icon_state = "plate_legs"
 	item_state = "plate_legs"
@@ -214,7 +215,7 @@
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 50, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
-	max_integrity = 400
+	max_integrity = 250
 	var/do_sound = FALSE
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -225,12 +226,21 @@
 	resistance_flags = FIRE_PROOF
 	armor_class = ARMOR_CLASS_HEAVY
 
+/obj/item/clothing/under/roguetown/platelegs/iron
+	name = "iron plate chausses"
+	desc = "Reinforced iron armor to protect the legs."
+	icon_state = "iron_plate_legs"
+	item_state = "iron_plate_legs"
+	max_integrity = 150
+	smeltresult = /obj/item/ingot/iron
+
 
 /obj/item/clothing/under/roguetown/chainlegs/skirt
 	name = "steel chain skirt"
 	desc = "Interlinked metal rings that drape down to the crotch and no farther."
 	icon_state = "chain_skirt"
 	item_state = "chain_skirt"
+	max_integrity = 270
 	body_parts_covered = GROIN
 	armor_class = ARMOR_CLASS_LIGHT
 
@@ -239,6 +249,16 @@
 	desc = "Reinforced armor that doesn't even protect the legs."
 	icon_state = "plate_skirt"
 	item_state = "plate_skirt"
+	max_integrity = 315
+	body_parts_covered = GROIN
+	armor_class = ARMOR_CLASS_LIGHT
+
+/obj/item/clothing/under/roguetown/platelegs/skirt/iron
+	name = "iron plate skirt"
+	desc = "Reinforced armor that doesn't even protect the legs."
+	icon_state = "iron_plate_skirt"
+	item_state = "iron_plate_skirt"
+	max_integrity = 225
 	body_parts_covered = GROIN
 	armor_class = ARMOR_CLASS_LIGHT
 
@@ -323,7 +343,7 @@
 	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 50, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT)
 	blocksound = PLATEHIT
-	max_integrity = 500
+	max_integrity = 450
 	var/do_sound = FALSE
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing

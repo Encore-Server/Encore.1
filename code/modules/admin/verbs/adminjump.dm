@@ -26,7 +26,7 @@
 
 /client/proc/jumptoturf(turf/T in world)
 	set name = "Jump to Turf"
-	set category = "Admin"
+	set category = "GameMaster"
 	if(!src.holder)
 //		//to_chat(src, "Only administrators may use this command.")
 		return
@@ -57,7 +57,7 @@
 			to_chat(A, "This mob is not located in the game world.")
 
 /client/proc/jumptocoord(tx as num, ty as num, tz as num)
-	set category = "Admin"
+	set category = "GameMaster"
 	set name = "Jump to Coordinate"
 
 	if (!holder)
@@ -95,7 +95,7 @@
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Jump To Key") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/Getmob(mob/M in GLOB.mob_list - GLOB.dummy_mob_list)
-	set category = "Admin"
+	set category = "GameMaster"
 	set name = "Get Mob"
 	set desc = ""
 	if(!src.holder)

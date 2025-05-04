@@ -1,0 +1,188 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"hb" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mu" = (
+/mob/living/carbon/human/species/goblin/npc/cave,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rd" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wY" = (
+/obj/item/reagent_containers/glass/cup/wooden,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"zW" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Ba" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ca" = (
+/obj/machinery/light/rogue/hearth,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Eq" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"HX" = (
+/obj/item/roguecoin/copper/pile,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"MI" = (
+/obj/item/cooking/platter,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"OV" = (
+/obj/item/paper,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ru" = (
+/obj/item/natural/bundle/stick,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"VT" = (
+/mob/living/carbon/human/species/goblin/npc/cave,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YN" = (
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"YO" = (
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Zx" = (
+/obj/item/natural/feather,
+/mob/living/carbon/human/species/goblin/npc/cave,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+hb
+Eq
+zW
+kd
+kd
+rd
+kd
+kd
+zW
+zW
+"}
+(2,1,1) = {"
+Eq
+zW
+zW
+zW
+MI
+Eq
+zW
+Eq
+Eq
+kd
+"}
+(3,1,1) = {"
+HX
+zW
+Ru
+Ba
+kd
+zW
+zW
+Eq
+zW
+Ba
+"}
+(4,1,1) = {"
+zW
+zW
+rd
+zW
+zW
+zW
+kd
+Eq
+zW
+zW
+"}
+(5,1,1) = {"
+zW
+Eq
+Eq
+zW
+Ca
+kd
+YO
+Eq
+Eq
+zW
+"}
+(6,1,1) = {"
+kd
+kd
+Eq
+VT
+mu
+wY
+HX
+zW
+Eq
+zW
+"}
+(7,1,1) = {"
+zW
+zW
+zW
+Zx
+mu
+zW
+zW
+zW
+kd
+zW
+"}
+(8,1,1) = {"
+kd
+Eq
+zW
+YN
+Ru
+OV
+Ba
+zW
+Eq
+zW
+"}
+(9,1,1) = {"
+kd
+Eq
+zW
+zW
+zW
+zW
+kd
+zW
+hb
+rd
+"}
+(10,1,1) = {"
+zW
+Eq
+Eq
+kd
+Eq
+Eq
+rd
+zW
+zW
+Eq
+"}

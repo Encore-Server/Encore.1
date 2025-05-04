@@ -336,7 +336,7 @@
 	new /obj/effect/temp_visual/emp(loc)
 	if(paicard)
 		paicard.emp_act(severity)
-		src.visible_message(span_notice("[paicard] is flies out of [bot_name]!"),span_warning("I are forcefully ejected from [bot_name]!"))
+		src.visible_message(span_notice("[paicard] is flies out of [bot_name]!"),span_warning("I am forcefully ejected from [bot_name]!"))
 		ejectpai(0)
 	if(on)
 		turn_off()

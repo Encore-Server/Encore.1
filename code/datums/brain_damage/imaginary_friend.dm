@@ -82,8 +82,8 @@
 	Show()
 
 /mob/camera/imaginary_friend/proc/greet()
-		to_chat(src, span_notice("<b>I are the imaginary friend of [owner]!</b>"))
-		to_chat(src, span_notice("I are absolutely loyal to your friend, no matter what."))
+		to_chat(src, span_notice("<b>I am the imaginary friend of [owner]!</b>"))
+		to_chat(src, span_notice("I am absolutely loyal to your friend, no matter what."))
 		to_chat(src, span_notice("I cannot directly influence the world around you, but you can see what [owner] cannot."))
 
 /mob/camera/imaginary_friend/Initialize(mapload, _trauma)

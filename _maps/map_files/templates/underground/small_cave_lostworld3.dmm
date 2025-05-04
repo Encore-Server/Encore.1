@@ -1,0 +1,266 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cL" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"cR" = (
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"dI" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"eR" = (
+/obj/structure/fans,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"fS" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mK" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"nV" = (
+/obj/structure/flora/roguegrass/water,
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"pr" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	dir = 4;
+	icon_state = "iron_line"
+	},
+/area/rogue/under/cave)
+"ps" = (
+/obj/structure/flora/roguetree,
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"si" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"sk" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"sn" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"sC" = (
+/obj/effect/roofing_helper/open_space,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"yw" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"yC" = (
+/obj/structure/flora/roguetree,
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"Ct" = (
+/turf/open/floor/rogue/grassred,
+/area/rogue/under/cave)
+"Fj" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"Hu" = (
+/obj/structure/fans/tiny,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"Je" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"KL" = (
+/obj/machinery/light/roguestreet{
+	dir = 1
+	},
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"Pm" = (
+/obj/machinery/light/roguestreet,
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"Qb" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"Qq" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"QD" = (
+/obj/effect/roofing_helper/open_space,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/turf/closed/wall/mineral/rogue/pipe,
+/area/rogue/under/cave)
+"Sq" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/under/cave)
+"Vb" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"XN" = (
+/turf/open/floor/rogue/metal,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+Ol
+xx
+XV
+Yn
+Yn
+Yn
+rf
+Ol
+si
+"}
+(2,1,1) = {"
+Ol
+cR
+si
+yw
+rf
+Yn
+kd
+cR
+Ol
+cR
+"}
+(3,1,1) = {"
+cL
+cL
+Vb
+cR
+Je
+mK
+Qb
+ps
+cR
+Yn
+"}
+(4,1,1) = {"
+Yn
+Ct
+Ct
+Ol
+mK
+Qb
+sC
+Yn
+Yn
+Yn
+"}
+(5,1,1) = {"
+RF
+RF
+RF
+RF
+cR
+Fj
+QD
+Qb
+Yn
+Sq
+"}
+(6,1,1) = {"
+pr
+eR
+Pm
+RF
+yC
+cR
+Ol
+cR
+KE
+qp
+"}
+(7,1,1) = {"
+pr
+XN
+Hu
+RF
+fS
+Ct
+cL
+nV
+sn
+dI
+"}
+(8,1,1) = {"
+pr
+XN
+KL
+RF
+Ct
+Ct
+Qq
+sn
+fS
+Yn
+"}
+(9,1,1) = {"
+RF
+RF
+RF
+RF
+Ct
+cL
+Yn
+cL
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+cL
+dI
+sk
+kd
+Yn
+kd
+Yn
+XV
+"}

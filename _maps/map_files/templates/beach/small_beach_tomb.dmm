@@ -1,0 +1,221 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"cW" = (
+/obj/structure/fluff/statue{
+	name = "vestments of the end time";
+	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing.";
+	pixel_y = 26
+	},
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/woods)
+"dE" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/woods)
+"dF" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"gB" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"ht" = (
+/obj/structure/closet/crate/coffin/vampire,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/woods)
+"hN" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/woods)
+"kd" = (
+/obj/effect/decal/remains/mole,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/woods)
+"qv" = (
+/obj/structure/closet/crate/coffin/vampire,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/woods)
+"qX" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	lockid = "graveyard";
+	locked = 1
+	},
+/obj/effect/roofing_helper/stone,
+/obj/item/restraints/legcuffs/beartrap/armed/camouflage{
+	pixel_y = 2
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/woods)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"AW" = (
+/obj/effect/roofing_helper/stone,
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/woods)
+"Cy" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"GL" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Nu" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Sz" = (
+/obj/structure/flora/roguegrass,
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"TX" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/woods)
+
+(1,1,1) = {"
+dF
+aJ
+dF
+aJ
+aJ
+aJ
+gB
+aJ
+dF
+aJ
+"}
+(2,1,1) = {"
+aJ
+aJ
+gB
+gB
+aJ
+gB
+gB
+gB
+gB
+aJ
+"}
+(3,1,1) = {"
+aJ
+gB
+AW
+AW
+AW
+AW
+AW
+gB
+gB
+Cy
+"}
+(4,1,1) = {"
+sC
+aJ
+AW
+TX
+kd
+TX
+AW
+AW
+Sz
+gB
+"}
+(5,1,1) = {"
+sC
+aJ
+AW
+ht
+hN
+hN
+AW
+cW
+gB
+sC
+"}
+(6,1,1) = {"
+Dd
+aJ
+AW
+qv
+hN
+hN
+qX
+dE
+gB
+sC
+"}
+(7,1,1) = {"
+Nu
+aJ
+AW
+ht
+hN
+kd
+AW
+cW
+aJ
+sC
+"}
+(8,1,1) = {"
+aJ
+aJ
+AW
+TX
+hN
+TX
+AW
+AW
+GL
+aJ
+"}
+(9,1,1) = {"
+aJ
+Dd
+AW
+AW
+AW
+AW
+AW
+gB
+gB
+Nu
+"}
+(10,1,1) = {"
+Dd
+Dd
+Dd
+aJ
+gB
+gB
+gB
+gB
+aJ
+gB
+"}

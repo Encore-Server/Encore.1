@@ -20,15 +20,15 @@
 	switch(classchoice)
 
 		if("Normal Knight")
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
-			gloves = /obj/item/clothing/gloves/roguetown/chain
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron
+			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			cloak = /obj/item/clothing/cloak/tabard
 			neck = /obj/item/clothing/neck/roguetown/gorget
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			armor = /obj/item/clothing/suit/roguetown/armor/plate
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 			belt = /obj/item/storage/belt/rogue/leather
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			backl = /obj/item/rogueweapon/shield/tower/metal
@@ -60,20 +60,20 @@
 				if("Bastard Sword")	
 					beltr = /obj/item/rogueweapon/sword/long
 				if("Flail")
-					beltr = /obj/item/rogueweapon/flail/sflail
+					beltr = /obj/item/rogueweapon/flail
 				if("Spear")
 					r_hand = /obj/item/rogueweapon/spear
 
 		if("Black Knight")
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
-			gloves = /obj/item/clothing/gloves/roguetown/chain/blk
-			pants = /obj/item/clothing/under/roguetown/chainlegs/blk
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron/blk
+			gloves = /obj/item/clothing/gloves/roguetown/chain/iron/blk
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron/blk
 			cloak = /obj/item/clothing/cloak/half/rider/red
 			neck = /obj/item/clothing/neck/roguetown/gorget
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/blk
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
-			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blk
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/iron/blk
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
+			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron/blk
 			belt = /obj/item/storage/belt/rogue/leather
 			backr = /obj/item/storage/backpack/rogue/satchel/black
 			backl = /obj/item/rogueweapon/shield/tower/metal
@@ -105,18 +105,18 @@
 				if("Bastard Sword")	
 					beltr = /obj/item/rogueweapon/sword/long
 				if("Flail")
-					beltr = /obj/item/rogueweapon/flail/sflail
+					beltr = /obj/item/rogueweapon/flail
 				if("Spear")
 					r_hand = /obj/item/rogueweapon/spear
 
-/obj/item/clothing/gloves/roguetown/chain/blk
+/obj/item/clothing/gloves/roguetown/chain/iron/blk
 		color = CLOTHING_GREY
 
-/obj/item/clothing/under/roguetown/chainlegs/blk
+/obj/item/clothing/under/roguetown/chainlegs/iron/blk
 		color = CLOTHING_GREY
 
-/obj/item/clothing/suit/roguetown/armor/plate/blk
+/obj/item/clothing/suit/roguetown/armor/plate/iron/blk
 		color = CLOTHING_GREY
 
-/obj/item/clothing/shoes/roguetown/boots/armor/blk
+/obj/item/clothing/shoes/roguetown/boots/armor/iron/blk
 		color = CLOTHING_GREY

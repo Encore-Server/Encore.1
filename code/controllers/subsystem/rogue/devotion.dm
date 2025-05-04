@@ -70,11 +70,9 @@
 
 /datum/devotion/proc/update_devotion(dev_amt, prog_amt, silent = FALSE)
 	devotion = clamp(devotion + dev_amt, 0, max_devotion)
-	//Max devotion limit
-	if((devotion >= max_devotion) && !silent)
-		to_chat(holder, span_warning("I have reached the limit of my devotion..."))
 	if(!prog_amt) // no point in the rest if it's just an expenditure
 		return TRUE
+	//Spell unlocking, based on progression
 	progression = clamp(progression + prog_amt, 0, max_progression)
 	var/obj/effect/proc_holder/spell/spell_unlocked
 	switch(level)
@@ -129,9 +127,6 @@
 	if(length(patron.additional_spells))
 		for(var/S in patron.additional_spells)
 			spelllist += S
-	if(istype(patron,/datum/patron/elemental))
-		if(!istype(patron, /datum/patron/elemental/visires)) //Only clerics of visires should get healing
-			spelllist += /obj/effect/proc_holder/spell/invoked/lesser_heal
 	for(var/spell_type in spelllist)
 		if(!spell_type || H.mind.has_spell(spell_type))
 			continue
@@ -139,6 +134,7 @@
 		H.mind.AddSpell(newspell)
 		LAZYADD(granted_spells, newspell)
 	level = CLERIC_T0
+	passive_devotion_gain = 0.1
 	max_devotion = CLERIC_REQ_1 //Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
 	max_progression = CLERIC_REQ_1
 
@@ -228,10 +224,16 @@
 	if(!devotion)
 		return FALSE
 
+	//Prevents "I conclude my prayer, I gained 0 devotion" message when clicking pray at max.
+	if(devotion.devotion >= devotion.max_devotion && devotion.progression >= devotion.max_progression)
+		to_chat(src, span_notice("I am fully in tune with [devotion.patron.name]. I do not need to pray at this time."))
+		return TRUE
+
 	var/prayersesh = 0
 	visible_message("[src] kneels their head in prayer to the Gods.", "I kneel my head in prayer to [devotion.patron.name].")
 	for(var/i in 1 to 50)
-		if(devotion.devotion >= devotion.max_devotion)
+		//Stop only if we have both max devotion and max progression.
+		if(devotion.devotion >= devotion.max_devotion && devotion.progression >= devotion.max_progression)
 			to_chat(src, span_warning("I have reached the limit of my devotion..."))
 			break
 		if(!do_after(src, 30))
@@ -241,7 +243,9 @@
 			devotion_multiplier += (mind.get_skill_level(/datum/skill/magic/holy) / SKILL_LEVEL_LEGENDARY)
 		var/prayer_effectiveness = round(devotion.prayer_effectiveness * devotion_multiplier)
 		devotion.update_devotion(prayer_effectiveness, prayer_effectiveness)
-		prayersesh += prayer_effectiveness
+		//Check prevents the final message from telling the player they gained more than they did
+		if(devotion.devotion < devotion.max_devotion)
+			prayersesh += prayer_effectiveness
 	visible_message("[src] concludes their prayer.", "I conclude my prayer.")
 	to_chat(src, "<font color='purple'>I gained [prayersesh] devotion!</font>")
 	return TRUE

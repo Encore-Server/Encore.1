@@ -1,0 +1,324 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"if" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"jr" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nb" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ob" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"qJ" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zl" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/natural/cloth,
+/obj/item/natural/cloth,
+/obj/item/soap,
+/obj/item/soap,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Gd" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8
+	},
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = -6;
+	pixel_y = 15
+	},
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/tile/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Hz" = (
+/obj/structure/mirror,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HC" = (
+/obj/structure/closet/crate/roguecloset/dark,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/obj/item/clothing/suit/roguetown/shirt/tunic/white,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Rz" = (
+/turf/open/water/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+nb
+zl
+zl
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(2,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(3,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(4,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(5,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(6,1,1) = {"
+KC
+KC
+nb
+nb
+nb
+nb
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(7,1,1) = {"
+KC
+KC
+nb
+Rz
+Rz
+Rz
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(8,1,1) = {"
+KC
+KC
+nb
+Gd
+if
+if
+nb
+nb
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(9,1,1) = {"
+KC
+KC
+nb
+Hz
+qJ
+jr
+jr
+ob
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(10,1,1) = {"
+KC
+KC
+nb
+CW
+HC
+jr
+nb
+nb
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(11,1,1) = {"
+KC
+KC
+nb
+nb
+nb
+nb
+nb
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(12,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(13,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(14,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}
+(15,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+KC
+"}

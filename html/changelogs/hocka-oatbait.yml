@@ -1,7 +1,0 @@
-author: "Hocka"
-
-delete-after: True
-
-changes:
-  - rscadd: "Regular bait can now also be made from two sets of oat grains."
-  - rscadd: "Renamed the original bait recipe to 'bait (wheat)'"

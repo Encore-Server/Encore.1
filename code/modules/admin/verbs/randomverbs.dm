@@ -20,7 +20,7 @@
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Drop Everything") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_subtle_message(mob/M in GLOB.mob_list)
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "Subtle Message"
 
 	if(!ismob(M))
@@ -129,7 +129,7 @@
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Modify Antagonist Reputation") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_world_narrate()
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "Global Narrate"
 
 	if(!check_rights(R_ADMIN))
@@ -139,13 +139,15 @@
 
 	if (!msg)
 		return
+	var/admin_msg = msg // let's dodge the formatting we're about to do to keep the admin log clean, there's probably a cleaner way to do it and if someone figures it out they should do it
+	msg = choose_text(msg)
 	to_chat(world, "[msg]")
-	log_admin("GlobalNarrate: [key_name(usr)] : [msg]")
+	log_admin("GlobalNarrate: [key_name(usr)] : [admin_msg]")
 	message_admins(span_adminnotice("[key_name_admin(usr)] Sent a global narrate"))
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Global Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_direct_narrate(mob/M)
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "Direct Narrate"
 
 	if(!check_rights(R_ADMIN))
@@ -162,15 +164,18 @@
 	if( !msg )
 		return
 
+	var/admin_msg = msg
+	msg = choose_text(msg)
+
 	to_chat(M, msg)
-	log_admin("DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [msg]")
-	msg = span_adminnotice("<b> DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]):</b> [msg]<BR>")
-	message_admins(msg)
-	admin_ticket_log(M, msg)
+	log_admin("DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]): [admin_msg]")
+	admin_msg = span_adminnotice("<b> DirectNarrate: [key_name(usr)] to ([M.name]/[M.key]):</b> [admin_msg]<BR>")
+	message_admins(admin_msg)
+	admin_ticket_log(M, admin_msg)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Direct Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_local_narrate(atom/A)
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "Local Narrate"
 
 	if(!check_rights(R_ADMIN))
@@ -183,15 +188,54 @@
 	var/msg = input("Message:", text("Enter the text you wish to appear to everyone within view:")) as text|null
 	if (!msg)
 		return
+	var/admin_msg = msg
+	msg = choose_text(msg)
 	for(var/mob/M in view(range,A))
 		to_chat(M, msg)
 
-	log_admin("LocalNarrate: [key_name(usr)] at [AREACOORD(A)]: [msg]")
-	message_admins(span_adminnotice("<b> LocalNarrate: [key_name_admin(usr)] at [ADMIN_VERBOSEJMP(A)]:</b> [msg]<BR>"))
+	log_admin("LocalNarrate: [key_name(usr)] at [AREACOORD(A)]: [admin_msg]")
+	message_admins(span_adminnotice("<b> LocalNarrate: [key_name_admin(usr)] at [ADMIN_VERBOSEJMP(A)]:</b> [admin_msg]<BR>"))
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Local Narrate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
+/client/proc/choose_text(text)
+	if(!text)
+		return
+
+	var/fontsizes = list("Small", "Medium", "Large")
+	var/fontcolors = list("White", "Red", "Yellow", "Purple", "Green")
+	var/fontshapes = list("Normal", "Bold", "Italic", "Bold and Italic")
+	switch(input("Font Size", "How big do you want the text to be?") as anything in fontsizes)
+		if("Small")
+			text = FONT_TINY(text)
+		if("Medium")
+			text = FONT_MEDIUM(text)
+		if("Large")
+			text = FONT_LARGE(text)
+
+	switch(input("Font Color", "What color do you want the text to be?") as anything in fontcolors)
+		if("Red")
+			text = FONT_BRIGHTRED(text)
+		if("Yellow")
+			text = FONT_YELLOW(text)
+		if("Purple")
+			text = FONT_PURPLE(text)
+		if("Green")
+			text = FONT_GREEN(text)
+		// no mention for the "white" option because it's just to use the default text colour
+
+	switch(input("Font Shape", "What shape do you want the text to be?") as anything in fontshapes)
+		if("Bold")
+			text = FONT_BOLD(text)
+		if("Italic")
+			text = FONT_ITALIC(text)
+		if("Bold and Italic")
+			text = FONT_BOLDANDITALIC(text)
+		// no mention for "normal" because it's also just the default
+
+	return text
+
 /client/proc/cmd_admin_godmode(mob/M in GLOB.mob_list)
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Godmode"
 	if(!check_rights(R_ADMIN))
 		return
@@ -336,7 +380,7 @@ Works kind of like entering the game with a new character. Character receives a 
 Traitors and the like can also be revived with the previous role mostly intact.
 /N */
 /client/proc/respawn_character()
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Respawn Character"
 	set desc = ""
 	if(!check_rights(R_ADMIN))
@@ -548,26 +592,27 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Rejuvinate") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_create_centcom_report()
-	set category = "Special Verbs"
-	set name = "Create Command Report"
+	set category = "GameMaster"
+	set name = "Create IC Announcement"
 
 	if(!check_rights(R_ADMIN))
 		return
 
-	var/input = input(usr, "Enter a Command Report. Ensure it makes sense IC.", "What?", "") as message|null
+	var/input = input(usr, "Enter an announcement. Ensure it makes sense IC.", "What Say You?", "") as message|null
 	if(!input)
 		return
+	var/titled = input(usr, "Enter a title for this announcement or narration, or leave it blank.", "Let Them Hear!", "") as message|null
 
-	var/confirm = alert(src, "Do you want to announce the contents of the report to the crew?", "Announce", "Yes", "No", "Cancel")
+	var/confirm = alert(src, "Do you want to announce the contents of the report to the players? If not, it will only arrive as a written message at the throne.", "Announce", "Yes", "No", "Cancel")
 	var/announce_command_report = TRUE
 	switch(confirm)
 		if("Yes")
-			priority_announce(input, null, 'sound/blank.ogg')
+			priority_announce(input, titled, 'sound/misc/bell.ogg')
 			announce_command_report = FALSE
 		if("Cancel")
 			return
 
-	print_command_report(input, "[announce_command_report ? "Classified " : ""][command_name()] Update", announce_command_report)
+	print_command_report(input, titled, announce_command_report)
 
 	log_admin("[key_name(src)] has created a command report: [input]")
 	message_admins("[key_name_admin(src)] has created a command report")
@@ -694,7 +739,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 /client/proc/cmd_admin_gib_self()
 	set name = "Gibself"
-	set category = "Fun"
+	set category = "Admin"
 
 	var/confirm = alert(src, "You sure?", "Confirm", "Yes", "No")
 	if(confirm == "Yes")
@@ -704,7 +749,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		mob.gib(1, 1, 1)
 
 /client/proc/cmd_admin_check_contents(mob/living/M in GLOB.mob_list)
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Check Contents"
 
 	var/list/L = M.get_contents()
@@ -713,7 +758,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Check Contents") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/toggle_view_range()
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Change View Range"
 	set desc = ""
 
@@ -767,39 +812,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	message_admins(span_adminnotice("[key_name_admin(usr)] admin-recalled the emergency shuttle."))
 
 	return
-
-/client/proc/everyone_random()
-	set category = "Fun"
-	set name = "Make Everyone Random"
-	set desc = ""
-
-	if(SSticker.HasRoundStarted())
-		to_chat(usr, "Nope you can't do this, the game's already started. This only works before rounds!")
-		return
-
-	var/frn = CONFIG_GET(flag/force_random_names)
-	if(frn)
-		CONFIG_SET(flag/force_random_names, FALSE)
-		message_admins("Admin [key_name_admin(usr)] has disabled \"Everyone is Special\" mode.")
-		to_chat(usr, "Disabled.")
-		return
-
-
-	var/notifyplayers = alert(src, "Do you want to notify the players?", "Options", "Yes", "No", "Cancel")
-	if(notifyplayers == "Cancel")
-		return
-
-	log_admin("Admin [key_name(src)] has forced the players to have random appearances.")
-	message_admins("Admin [key_name_admin(usr)] has forced the players to have random appearances.")
-
-	if(notifyplayers == "Yes")
-		to_chat(world, span_adminnotice("Admin [usr.key] has forced the players to have completely random identities!"))
-
-	to_chat(usr, "<i>Remember: you can always disable the randomness by using the verb again, assuming the round hasn't started yet</i>.")
-
-	CONFIG_SET(flag/force_random_names, TRUE)
-	SSblackbox.record_feedback("tally", "admin_verb", 1, "Make Everyone Random") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-
 
 /client/proc/toggle_random_events()
 	set category = "Server"
@@ -889,7 +901,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 
 /client/proc/run_weather()
-	set category = "Fun"
+	set category = "GameMaster"
 	set name = "Run Weather"
 	set desc = ""
 
@@ -1045,7 +1057,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 /client/proc/smite(mob/living/target as mob)
 	set name = "Smite"
-	set category = "Fun"
+	set category = "GameMaster"
 	if(!check_rights(R_ADMIN) || !check_rights(R_FUN))
 		return
 	var/static/list/punishment_list = list(
@@ -1191,7 +1203,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 	var/list/msg = list()
-	msg += "<html><head><title>Playtime Report</title></head><body>Playtime:<BR><UL>"
+	msg += "<!DOCTYPE html><html><head><title>Playtime Report</title></head><body>Playtime:<BR><UL>"
 	for(var/client/C in GLOB.clients)
 		msg += "<LI> - [key_name_admin(C)]: <A href='?_src_=holder;[HrefToken()];getplaytimewindow=[REF(C.mob)]'>" + C.get_exp_living() + "</a></LI>"
 	msg += "</UL></BODY></HTML>"
@@ -1208,7 +1220,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 	var/list/body = list()
-	body += "<html><head><title>Playtime for [C.key]</title></head><BODY><BR>Playtime:"
+	body += "<!DOCTYPE html><html><head><title>Playtime for [C.key]</title></head><BODY><BR>Playtime:"
 	body += C.get_exp_report()
 	body += "<A href='?_src_=holder;[HrefToken()];toggleexempt=[REF(C)]'>Toggle Exempt status</a>"
 	body += "</BODY></HTML>"

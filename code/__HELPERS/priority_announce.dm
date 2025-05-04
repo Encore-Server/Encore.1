@@ -5,7 +5,7 @@
 	var/announcement
 
 	if (title && length(title) > 0)
-		announcement += "<h1 class='alert'>[title]</h1>"
+		announcement += "<span class='big bold'>[title]</span>"
 //		GLOB.news_network.SubmitArticle(text, "Captain's Announcement", "Station Announcements", null)
 /*
 	else
@@ -34,13 +34,12 @@
 					M.playsound_local(M, s, 100)
 
 /proc/print_command_report(text = "", title = null, announce=TRUE)
-	if(!title)
-		title = "Classified [command_name()] Update"
-
 	if(announce)
-		priority_announce("A report has been downloaded and printed out at all communications consoles.", "Incoming Classified Message", 'sound/blank.ogg')
+		priority_announce("A missive has been sent to the keep.", title, 'sound/misc/bell.ogg')
 
-	var/datum/comm_message/M  = new
+	var/datum/comm_message/M  = new /datum/comm_message
+	if(!title)
+		title = "Classified Missive"
 	M.title = title
 	M.content =  text
 

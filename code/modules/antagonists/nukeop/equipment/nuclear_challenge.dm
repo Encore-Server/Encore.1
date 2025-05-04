@@ -101,7 +101,7 @@ GLOBAL_LIST_EMPTY(jam_on_wardec)
 
 /obj/item/nuclear_challenge/proc/check_allowed(mob/living/user)
 	if(declaring_war)
-		to_chat(user, span_boldwarning("I are already in the process of declaring war! Make my mind up."))
+		to_chat(user, span_boldwarning("I am already in the process of declaring war! Make my mind up."))
 		return FALSE
 	if(GLOB.player_list.len < CHALLENGE_MIN_PLAYERS)
 		to_chat(user, span_boldwarning("The enemy crew is too small to be worth declaring war on."))

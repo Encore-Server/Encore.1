@@ -2,7 +2,7 @@
 	name = "Ranger"
 	tutorial = "Rangers are a mix of hunters and rogues, staying in the shadows, but often being more friendly to others than a rogue, much more in touch with nature and more skilled in the arts of survival"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/ranger
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT)
 	category_tags = list(CTAG_ADVENTURER)
@@ -75,7 +75,7 @@
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			backl = /obj/item/storage/backpack/rogue/satchel
 			beltr = /obj/item/flashlight/flare/torch/lantern
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1)
 			beltl = /obj/item/quiver/arrows
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
@@ -103,17 +103,18 @@
 		if("Ranger-Knight")
 			to_chat(H, span_warning("Ranger-Knights are the select few who have elected to diversify their skills with medium armor, melee weaponry and ranged warfare - at the cost of being lesser than dedicated followers of those arts."))
 			shoes = /obj/item/clothing/shoes/roguetown/boots
-			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/iron
 			neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-			gloves = /obj/item/clothing/gloves/roguetown/chain
-			wrists = /obj/item/clothing/wrists/roguetown/bracers
+			gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+			wrists = /obj/item/clothing/wrists/roguetown/bracers/iron
 			belt = /obj/item/storage/belt/rogue/leather
-			armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+			armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 			cloak = /obj/item/clothing/cloak/tabard
-			beltr = /obj/item/flashlight/flare/torch/lantern
-			beltl = /obj/item/rogueweapon/sword/short
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			beltl = /obj/item/rogueweapon/sword/iron/short
+			backl = /obj/item/storage/backpack/rogue/satchel
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger = 1, /obj/item/flashlight/flare/torch/lantern)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
@@ -139,7 +140,7 @@
 					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 				if("Longbow")
-					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), FALSE)
 					H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
 					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 				if("Crossbow")

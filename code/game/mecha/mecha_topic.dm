@@ -4,7 +4,7 @@
 ////////////////////////////////////
 
 /obj/mecha/proc/get_stats_html()
-	. = {"<html>
+	. = {"<!DOCTYPE html><html>
 			<head><title>[name] data</title>
 				<style>
 					body {color: #00ff00; background: #000000; font-family:"Lucida Console",monospace; font-size: 12px;}
@@ -160,7 +160,7 @@
 /obj/mecha/proc/output_access_dialog(obj/item/card/id/id_card, mob/user)
 	if(!id_card || !user)
 		return
-	. = {"<html>
+	. = {"<!DOCTYPE html><html>
 			<head>
 				<style>
 					h1 {font-size:15px;margin-bottom:4px;}
@@ -191,7 +191,7 @@
 /obj/mecha/proc/output_maintenance_dialog(obj/item/card/id/id_card,mob/user)
 	if(!id_card || !user)
 		return
-	. = {"<html>
+	. = {"<!DOCTYPE html><html>
 			<head>
 				<style>
 					body {color: #00ff00; background: #000000; font-family:"Courier New", Courier, monospace; font-size: 12px;}

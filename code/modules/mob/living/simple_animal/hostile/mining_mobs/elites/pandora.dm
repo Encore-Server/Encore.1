@@ -50,13 +50,13 @@
 /datum/action/innate/elite_attack/singular_shot
 	name = "Singular Shot"
 	button_icon_state = "singular_shot"
-	chosen_message = span_boldwarning("I are now creating a single linear magic square.")
+	chosen_message = span_boldwarning("I am now creating a single linear magic square.")
 	chosen_attack_num = SINGULAR_SHOT
 
 /datum/action/innate/elite_attack/magic_box
 	name = "Magic Box"
 	button_icon_state = "magic_box"
-	chosen_message = span_boldwarning("I are now attacking with a box of magic squares.")
+	chosen_message = span_boldwarning("I am now attacking with a box of magic squares.")
 	chosen_attack_num = MAGIC_BOX
 
 /datum/action/innate/elite_attack/pandora_teleport

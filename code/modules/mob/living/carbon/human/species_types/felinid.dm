@@ -84,4 +84,4 @@
 		if(!cat_species.original_felinid)
 			H.set_species(/datum/species/human)
 	if(!silent)
-		to_chat(H, span_boldnotice("I are no longer a cat."))
+		to_chat(H, span_boldnotice("I am no longer a cat."))

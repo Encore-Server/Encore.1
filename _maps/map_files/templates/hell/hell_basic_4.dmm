@@ -1,0 +1,638 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aR" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"bJ" = (
+/obj/machinery/light/rogue/firebowl/church,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"cw" = (
+/obj/structure/bars/pipe{
+	pixel_y = 8
+	},
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"cW" = (
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"dQ" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"ek" = (
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/mountains/decap/hell)
+"eG" = (
+/turf/closed/wall/mineral/rogue/pipe{
+	icon_state = "iron_line";
+	dir = 4
+	},
+/area/rogue/indoors/shelter/mountains/decap)
+"fh" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"fr" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"gf" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"ho" = (
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"jH" = (
+/obj/structure/bars/pipe{
+	pixel_y = 8
+	},
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"jN" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"kz" = (
+/obj/structure/table/church/m,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"mB" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"qx" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 9
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"qE" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"qR" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"sj" = (
+/obj/structure/fluff/railing/border,
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"sD" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"tm" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"ux" = (
+/obj/structure/table/church/m,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"uM" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/gibs/down,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"wr" = (
+/obj/structure/table/church,
+/obj/item/clothing/neck/roguetown/skullamulet,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"ws" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"wG" = (
+/obj/item/rogueweapon/sword/gladius,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"xi" = (
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"xQ" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"xR" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"xS" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"yb" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"yq" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"zg" = (
+/obj/item/clothing/neck/roguetown/gorget/steel,
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"zN" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Cz" = (
+/obj/effect/roguerune{
+	name = "seventh seal";
+	desc = "The birthplace of a new wrong in the world."
+	},
+/obj/item/reagent_containers/powder/health,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"CF" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Da" = (
+/obj/structure/table/church,
+/obj/item/storage/belt/rogue/pouch/coins/mid,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"DL" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"DM" = (
+/obj/effect/decal/remains/human,
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Fa" = (
+/obj/effect/decal/cleanable/blood/gibs/bubblegum,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Fe" = (
+/obj/structure/stairs/stone{
+	dir = 1;
+	icon_state = "stonestairs"
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/indoors/shelter/mountains/decap)
+"Fs" = (
+/obj/structure/fluff/statue/gargoyle,
+/turf/open/floor/rogue/church,
+/area/rogue/outdoors/mountains/decap/hell)
+"HS" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Id" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Im" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap/hell)
+"JG" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 8
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Ki" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Kv" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Lu" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"LO" = (
+/obj/item/rogueweapon/sword/gladius,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"MC" = (
+/obj/effect/decal/remains/human,
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"MX" = (
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Nj" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/item/toy/cards/deck/tarot,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"NE" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 6
+	},
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"OP" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Pf" = (
+/obj/effect/decal/cleanable/blood/innards,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Qc" = (
+/obj/effect/decal/cleanable/blood/footprints,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Qs" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Qt" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"QP" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"QQ" = (
+/obj/item/rogueore/copper,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Ro" = (
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Sf" = (
+/obj/effect/decal/remains/saiga,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"SG" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Ts" = (
+/obj/item/rogueweapon/thresher,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"TY" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/turf/open/floor/rogue/church,
+/area/rogue/indoors/shelter/mountains/decap)
+"Xu" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+"Xw" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/indoors/shelter/mountains/decap)
+"YE" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap/hell)
+
+(1,1,1) = {"
+CF
+CF
+CF
+CF
+CF
+CF
+CF
+CF
+CF
+Ro
+CF
+xi
+CF
+CF
+CF
+"}
+(2,1,1) = {"
+CF
+Xw
+Xw
+MC
+ws
+sD
+xS
+YE
+dQ
+CF
+xi
+Im
+qE
+dQ
+Qs
+"}
+(3,1,1) = {"
+CF
+eG
+eG
+tm
+Fs
+yq
+tm
+Fs
+zg
+CF
+xi
+sj
+ek
+yq
+CF
+"}
+(4,1,1) = {"
+CF
+jH
+jH
+xQ
+Id
+HS
+DM
+Id
+Xu
+CF
+CF
+SG
+Id
+Xu
+CF
+"}
+(5,1,1) = {"
+CF
+jH
+cw
+ws
+ws
+jN
+ws
+ws
+jN
+ws
+ws
+dQ
+CF
+CF
+Ro
+"}
+(6,1,1) = {"
+CF
+Xw
+Xw
+bJ
+MX
+Xw
+MX
+Lu
+Xw
+Lu
+Lu
+Xw
+CF
+CF
+CF
+"}
+(7,1,1) = {"
+CF
+Xw
+Da
+Sf
+MX
+fh
+zN
+MX
+MX
+OP
+MX
+cW
+CF
+CF
+CF
+"}
+(8,1,1) = {"
+CF
+Xw
+kz
+yb
+OP
+fr
+Ts
+MX
+Pf
+MX
+QQ
+Xw
+Xw
+Ro
+CF
+"}
+(9,1,1) = {"
+CF
+Xw
+TY
+JG
+aR
+aR
+NE
+yb
+LO
+qx
+aR
+DL
+Fe
+CF
+CF
+"}
+(10,1,1) = {"
+Ki
+Qc
+Qc
+Cz
+aR
+QP
+Nj
+xR
+uM
+Kv
+fh
+MX
+Fe
+CF
+CF
+"}
+(11,1,1) = {"
+CF
+Xw
+wr
+Qt
+aR
+gf
+aR
+aR
+qR
+Ts
+MX
+MX
+Fe
+CF
+CF
+"}
+(12,1,1) = {"
+CF
+Xw
+ux
+MX
+Pf
+wG
+MX
+Fa
+yb
+ho
+yb
+Xw
+Xw
+CF
+CF
+"}
+(13,1,1) = {"
+CF
+Xw
+TY
+MX
+MX
+MX
+fh
+MX
+MX
+Lu
+MX
+cW
+CF
+CF
+CF
+"}
+(14,1,1) = {"
+CF
+Xw
+Xw
+bJ
+Lu
+Xw
+OP
+MX
+Xw
+MX
+MX
+Xw
+CF
+CF
+CF
+"}
+(15,1,1) = {"
+CF
+CF
+xQ
+Id
+Id
+mB
+Id
+Id
+mB
+Id
+Id
+HS
+CF
+CF
+CF
+"}

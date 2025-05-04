@@ -69,6 +69,16 @@
 	craftsound = null
 	skillcraft = null
 
+/datum/crafting_recipe/roguetown/gathersalt
+	name = "gather salt pile"
+	result = /obj/item/reagent_containers/powder/salt
+	reqs = list(/datum/reagent/consumable/sodiumchloride = 15)
+	time = 2 SECONDS
+	verbage_simple = "gather"
+	verbage = "gathers"
+	craftsound = null
+	skillcraft = null
+
 /datum/crafting_recipe/roguetown/sigdry
 	name = "westleach zig"
 	result = /obj/item/clothing/mask/cigarette/rollie/nicotine
@@ -79,3 +89,23 @@
 	verbage_simple = "roll"
 	verbage = "rolls"
 	craftdiff = 0
+
+/datum/crafting_recipe/roguetown/blessedwine
+	name = "consecrate wine"
+	result = list(/obj/item/reagent_containers/glass/bottle/rogue/blessedwine = 1)
+	reqs = list(/obj/item/reagent_containers/glass/bottle = 1, /datum/reagent/consumable/ethanol/beer/wine = 24, /datum/reagent/water/blessed = 24) // Yes I know this just looks like you're watering down your wine but I hate weird chemistry ratios.
+	time = 2 SECONDS
+	verbage_simple = "decant"
+	verbage_simple = "decants"
+	craftsound = null
+	skillcraft = null
+
+/datum/crafting_recipe/roguetown/cursedwine
+	name = "curse wine"
+	result = list(/obj/item/reagent_containers/glass/bottle/rogue/cursedwine = 1)
+	reqs = list(/obj/item/reagent_containers/glass/bottle = 1, /datum/reagent/consumable/ethanol/beer/wine = 24, /datum/reagent/water/cursed = 24)
+	time = 2 SECONDS
+	verbage_simple = "decant"
+	verbage_simple = "decants"
+	craftsound = null
+	skillcraft = null

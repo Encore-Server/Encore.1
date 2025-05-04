@@ -1,0 +1,640 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"aJ" = (
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"bS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"bX" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dd" = (
+/obj/item/rogueweapon/spear,
+/obj/structure/rack/rogue,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"dp" = (
+/obj/item/rogueweapon/sword/gladius,
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/flail,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"du" = (
+/obj/item/rogueweapon/pitchfork,
+/obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"gd" = (
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"gQ" = (
+/obj/item/clothing/head/roguetown/helmet/kettle,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"gS" = (
+/obj/structure/chair/stool/rogue,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"ht" = (
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"hC" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"hT" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"jl" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"lV" = (
+/obj/item/rogueweapon/sword/short,
+/obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"mZ" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"ny" = (
+/obj/machinery/light/rogue/torchholder/c,
+/obj/structure/closet/crate/chest/crate,
+/obj/item/clothing/suit/roguetown/armor/gambeson,
+/obj/item/storage/roguebag,
+/obj/item/storage/roguebag,
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"qE" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"rd" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"sb" = (
+/obj/item/rogueweapon/spear/billhook,
+/obj/structure/rack/rogue,
+/obj/machinery/light/rogue/torchholder/r,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"tt" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"tS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"uj" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"vy" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/head/roguetown/helmet,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"wR" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"xG" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"yf" = (
+/obj/item/rogueweapon/mace,
+/obj/structure/rack/rogue,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"yr" = (
+/obj/structure/bars/cemetery,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"zL" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 4
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"zU" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"zW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"Am" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/structure/closet/dirthole/grave,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/mineral_door/wood/deadbolt{
+	dir = 1
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"Bj" = (
+/obj/structure/rack/rogue,
+/obj/item/clothing/suit/roguetown/armor/leather,
+/obj/item/clothing/neck/roguetown/gorget,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Ch" = (
+/obj/machinery/light/rogue/lanternpost{
+	dir = 8
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Cu" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"CY" = (
+/obj/structure/rack/rogue,
+/obj/item/quiver/arrows,
+/obj/item/gun/ballistic/revolver/grenadelauncher/bow,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"Dd" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"Ef" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"EM" = (
+/obj/effect/roofing_helper,
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"HF" = (
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Iy" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Jp" = (
+/obj/structure/well,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"JM" = (
+/obj/machinery/light/rogue/torchholder/r,
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ml" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Ox" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"Pu" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/structure/chair/wood/rogue/chair3,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"PU" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/cloth{
+	pixel_x = 7
+	},
+/obj/item/natural/bowstring,
+/obj/item/natural/fibers,
+/obj/item/natural/fibers,
+/obj/item/reagent_containers/food/snacks/grown/apple,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"RS" = (
+/obj/item/natural/bone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/mountains)
+"SC" = (
+/obj/item/rope,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"Tn" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/indoors/shelter/mountains)
+"Ud" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Vl" = (
+/obj/item/rogueweapon/sword/short,
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/shield/wood,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"VE" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"WI" = (
+/obj/item/rogueweapon/mace/goden,
+/obj/structure/rack/rogue,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+"XD" = (
+/obj/item/rogueweapon/shovel,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"ZO" = (
+/obj/structure/rack/rogue,
+/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/machinery/light/rogue/torchholder/r,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/obj/effect/roofing_helper,
+/turf/open/floor/rogue/blocks,
+/area/rogue/indoors/shelter/mountains)
+
+(1,1,1) = {"
+qK
+qK
+mZ
+KC
+mZ
+mZ
+qK
+Tn
+Tn
+Tn
+Tn
+mZ
+mZ
+qK
+qK
+"}
+(2,1,1) = {"
+qK
+qK
+Cu
+uj
+uj
+ar
+mZ
+rd
+YZ
+Ud
+EM
+EM
+EM
+EM
+Cu
+"}
+(3,1,1) = {"
+qK
+Cu
+dE
+mZ
+YZ
+mZ
+qK
+xG
+bX
+tt
+EM
+vy
+Pu
+EM
+mZ
+"}
+(4,1,1) = {"
+qK
+qK
+GL
+Cu
+Cu
+JM
+Cu
+xG
+bX
+RS
+EM
+ZO
+gQ
+EM
+mZ
+"}
+(5,1,1) = {"
+KC
+EM
+EM
+EM
+EM
+EM
+EM
+EM
+bX
+tt
+EM
+EM
+zL
+EM
+qK
+"}
+(6,1,1) = {"
+KC
+EM
+CY
+yf
+Vl
+dp
+WI
+EM
+Ox
+tt
+tt
+tt
+tt
+bS
+Cu
+"}
+(7,1,1) = {"
+KC
+EM
+gS
+jl
+jl
+jl
+gd
+AW
+qC
+tS
+tt
+tt
+tt
+bS
+Cu
+"}
+(8,1,1) = {"
+KC
+EM
+zW
+zW
+gd
+SC
+Dd
+EM
+wR
+tt
+aJ
+tt
+tt
+qE
+hC
+"}
+(9,1,1) = {"
+uj
+EM
+Bj
+sb
+dd
+du
+lV
+EM
+ny
+tt
+Jp
+tt
+Ef
+qC
+qK
+"}
+(10,1,1) = {"
+uj
+EM
+EM
+EM
+EM
+EM
+EM
+EM
+PU
+tt
+tt
+tt
+VE
+qC
+hT
+"}
+(11,1,1) = {"
+Cu
+KC
+xG
+XD
+ht
+ht
+Am
+Iy
+Iy
+Iy
+Iy
+Iy
+qC
+Tn
+HF
+"}
+(12,1,1) = {"
+Cu
+KC
+yr
+qK
+qK
+mZ
+KC
+mZ
+mZ
+YZ
+qK
+qC
+qC
+yr
+mZ
+"}
+(13,1,1) = {"
+Cu
+YZ
+yr
+KC
+KC
+KC
+KC
+KC
+KC
+YZ
+Ch
+qC
+KC
+yr
+mZ
+"}
+(14,1,1) = {"
+qK
+qK
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+Tn
+qK
+"}
+(15,1,1) = {"
+qK
+qK
+Cu
+Cy
+Ml
+qK
+qK
+qK
+Cu
+zU
+qK
+Cy
+mZ
+mZ
+dE
+"}

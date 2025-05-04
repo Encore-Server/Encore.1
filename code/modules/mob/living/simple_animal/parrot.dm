@@ -683,7 +683,7 @@
 		return -1
 
 	if(held_item)
-		to_chat(src, span_warning("I are already holding [held_item]!"))
+		to_chat(src, span_warning("I am already holding [held_item]!"))
 		return 1
 
 	for(var/obj/item/I in view(1,src))
@@ -711,7 +711,7 @@
 		return -1
 
 	if(held_item)
-		to_chat(src, span_warning("I are already holding [held_item]!"))
+		to_chat(src, span_warning("I am already holding [held_item]!"))
 		return 1
 
 	var/obj/item/stolen_item = null
@@ -828,7 +828,7 @@
 		icon_state = icon_living
 		parrot_state = PARROT_WANDER
 		if(buckled)
-			to_chat(src, span_notice("I are no longer sitting on [buckled]'s shoulder."))
+			to_chat(src, span_notice("I am no longer sitting on [buckled]'s shoulder."))
 			buckled.unbuckle_mob(src, TRUE)
 		buckled = null
 		pixel_x = initial(pixel_x)

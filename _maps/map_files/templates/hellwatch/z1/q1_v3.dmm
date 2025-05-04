@@ -1,0 +1,414 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"br" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"cN" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dL" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -1;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 7;
+	pixel_y = -5
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kM" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/obj/structure/fluff/millstone{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vf" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "Templar Crypt"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vr" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xM" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yn" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zb" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BP" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Cu" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CX" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"FQ" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JT" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/reagent_containers/glass/bucket/pot,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JU" = (
+/obj/machinery/light/rogue/oven/south,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LL" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"LS" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NJ" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/needle,
+/obj/item/needle,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"OD" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Pt" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"YO" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ze" = (
+/obj/item/roguebin/water/gross{
+	name = "tainted woodbin"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+CW
+KC
+KC
+LL
+vf
+KC
+KC
+KC
+KC
+LL
+LL
+KC
+KC
+KC
+KC
+"}
+(2,1,1) = {"
+CW
+CW
+CW
+KC
+BP
+BP
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(3,1,1) = {"
+KC
+LL
+LL
+KC
+LS
+cN
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(4,1,1) = {"
+JT
+CX
+kM
+KC
+BP
+cN
+LL
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(5,1,1) = {"
+JU
+BP
+cN
+KC
+BP
+BP
+LL
+LL
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(6,1,1) = {"
+dL
+BP
+cN
+LL
+LS
+BP
+BP
+zb
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(7,1,1) = {"
+BP
+Cu
+BP
+LL
+cN
+BP
+KC
+KC
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(8,1,1) = {"
+BP
+BP
+BP
+br
+cN
+BP
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(9,1,1) = {"
+cN
+BP
+BP
+FQ
+BP
+cN
+LL
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(10,1,1) = {"
+cN
+cN
+BP
+LL
+BP
+BP
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(11,1,1) = {"
+cN
+BP
+cN
+LL
+KC
+LL
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(12,1,1) = {"
+KC
+yn
+LL
+LL
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(13,1,1) = {"
+Ze
+BP
+Pt
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(14,1,1) = {"
+xM
+cN
+vr
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(15,1,1) = {"
+YO
+OD
+NJ
+KC
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}

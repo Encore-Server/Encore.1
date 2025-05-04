@@ -31,17 +31,17 @@
 /datum/supply_pack/rogue/alcohol/elfbeer
 	name = "Elvish Beer"
 	cost = 20
-	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian)
+	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/druidsdelight)
 
 /datum/supply_pack/rogue/alcohol/elfcab
 	name = "Elvish Fireleaf"
 	cost = 25
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/fireleaf)
 
-/datum/supply_pack/rogue/alcohol/butterhair
-	name = "Dwarvish Butterhairs"
+/datum/supply_pack/rogue/alcohol/buttermelt
+	name = "Dwarvish Buttermelt"
 	cost = 35
-	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/butterhairs)
+	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/beer/buttermelt)
 
 /datum/supply_pack/rogue/alcohol/stonebeard
 	name = "Stonebeards Reserve"

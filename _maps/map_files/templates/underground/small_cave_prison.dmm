@@ -1,0 +1,339 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"gp" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"hb" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ki" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"lh" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lR" = (
+/obj/item/natural/rock,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
+"ps" = (
+/obj/effect/decal/remains/human,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"uh" = (
+/obj/structure/mineral_door/bars{
+	locked = 1;
+	lockid = "garrison"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ux" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"vb" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"vo" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"wF" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"AS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Dj" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"DQ" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobble/mossy{
+	dir = 8
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"FE" = (
+/obj/structure/mineral_door/wood/deadbolt,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Hk" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"IO" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"MA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"NB" = (
+/obj/structure/table/wood{
+	dir = 4;
+	icon_state = "largetable"
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qm" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RG" = (
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RH" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"RT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"VT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Xi" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"YS" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"Zj" = (
+/obj/item/natural/stone,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/decal/remains/human,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+XV
+lR
+VT
+Yn
+Yn
+Yn
+Qm
+kd
+kd
+"}
+(2,1,1) = {"
+Yn
+ux
+YS
+YS
+rf
+YS
+YS
+YS
+RT
+Yn
+"}
+(3,1,1) = {"
+Yn
+Yn
+nV
+nV
+nV
+nV
+nV
+nV
+YS
+Yn
+"}
+(4,1,1) = {"
+Yn
+Yn
+nV
+ki
+Xi
+MA
+NB
+nV
+YS
+hb
+"}
+(5,1,1) = {"
+RG
+Hk
+FE
+RH
+Xi
+ps
+MA
+nV
+IO
+Ol
+"}
+(6,1,1) = {"
+kd
+DQ
+nV
+wF
+uh
+vb
+Zj
+nV
+KE
+qp
+"}
+(7,1,1) = {"
+gp
+YS
+nV
+nV
+nV
+nV
+nV
+nV
+hb
+XV
+"}
+(8,1,1) = {"
+gp
+Dj
+YS
+YS
+YS
+lh
+AS
+cR
+XV
+Yn
+"}
+(9,1,1) = {"
+qp
+vo
+Yn
+RF
+vo
+Yn
+Yn
+kd
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+Yn
+kd
+Yn
+XV
+"}

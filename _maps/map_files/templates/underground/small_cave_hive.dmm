@@ -1,0 +1,250 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/structure/spider/stickyweb,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"au" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"bz" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/effect/decal/cleanable/blood,
+/obj/item/roguegem/blue,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"cA" = (
+/obj/structure/spider/stickyweb,
+/mob/living/simple_animal/hostile/retaliate/rogue/spider,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"dJ" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/spider,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ev" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/spider,
+/obj/effect/decal/cleanable/blood/gibs/old,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"fS" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"jV" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"pd" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qi" = (
+/obj/structure/spider/cocoon,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"rZ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"sC" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"tB" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"CQ" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Jx" = (
+/obj/item/natural/stone,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Kb" = (
+/obj/structure/spider/stickyweb,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"KU" = (
+/obj/effect/decal/cleanable/cobweb,
+/obj/structure/spider/cocoon,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"MB" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"MU" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/cobweb,
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Od" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/spider,
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Qg" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"QG" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/decal/cleanable/blood/gibs/torso,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"SU" = (
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"VS" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Yz" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ZI" = (
+/obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+CQ
+ac
+rZ
+CQ
+Qg
+ac
+ac
+CQ
+CQ
+CQ
+"}
+(2,1,1) = {"
+CQ
+CQ
+CQ
+CQ
+CQ
+qi
+Kb
+ac
+VS
+CQ
+"}
+(3,1,1) = {"
+Kb
+SU
+CQ
+CQ
+bz
+VS
+sC
+Kb
+au
+MB
+"}
+(4,1,1) = {"
+pd
+Jx
+cA
+cA
+dJ
+CQ
+SU
+ac
+qi
+CQ
+"}
+(5,1,1) = {"
+CQ
+CQ
+dJ
+dJ
+dJ
+ev
+dJ
+jV
+CQ
+CQ
+"}
+(6,1,1) = {"
+CQ
+KU
+dJ
+CQ
+cA
+dJ
+cA
+dJ
+CQ
+MU
+"}
+(7,1,1) = {"
+Kb
+sC
+dJ
+dJ
+dJ
+CQ
+Yz
+ac
+ac
+Kb
+"}
+(8,1,1) = {"
+CQ
+CQ
+tB
+Od
+Od
+CQ
+CQ
+kd
+QG
+Kb
+"}
+(9,1,1) = {"
+Jx
+CQ
+CQ
+CQ
+ZI
+ac
+CQ
+qi
+Kb
+CQ
+"}
+(10,1,1) = {"
+fS
+Kb
+ac
+CQ
+CQ
+ac
+ac
+Qg
+CQ
+CQ
+"}

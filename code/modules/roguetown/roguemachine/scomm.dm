@@ -1,7 +1,7 @@
 
 /obj/structure/roguemachine/scomm
-	name = "SCOM"
-	desc = "The Supernatural Communication Optical Machine is a wonder of magic and technology."
+	name = "farcrier telephone"
+	desc = "A miracle of magical technique which can broadcast a voice far and wide, so long as you stand close enough to it."
 	icon = 'icons/roguetown/misc/machines.dmi'
 	icon_state = "scomm1"
 	density = FALSE
@@ -139,22 +139,22 @@
 		if(!nightcall)
 			return
 		if(nightcall == scom_number)
-			to_chat(user, span_warning("Nothing but rats squeaking back at you."))
+			to_chat(user, span_warning("Nothing but wires squeaking back at you."))
 			playsound(src, 'sound/vo/mobs/rat/rat_life.ogg', 100, TRUE, -1)
 			return
 		if(SSroguemachine.scomm_machines.len < nightcall)
-			say("There are no rats running this jabberline.", spans = list("info"))
+			say("There are no wires running this jabberline.", spans = list("info"))
 			return
 		var/obj/structure/roguemachine/scomm/S = SSroguemachine.scomm_machines[nightcall]
 		if(!S)
-			to_chat(user, span_warning("Nothing but rats squeaking back at you."))
+			to_chat(user, span_warning("Nothing but wires squeaking back at you."))
 			playsound(src, 'sound/vo/mobs/rat/rat_life.ogg', 100, TRUE, -1)
 			return
 		if(S.calling || S.called_by)
-			say("This jabberline's rats are occupied.", spans = list("info"))
+			say("This jabberline's wires are occupied.", spans = list("info"))
 			return
 		if(!S.speaking)
-			say("This jabberline's rats have been gagged.", spans = list("info"))
+			say("This jabberline's wires have been gagged.", spans = list("info"))
 			return
 		calling = S
 		S.called_by = src
@@ -169,7 +169,7 @@
 			calling.ring_ring()
 			ring_ring()
 			sleep(30)
-		say("This jabberline's rats are exhausted.", spans = list("info"))
+		say("This jabberline's wires are exhausted.", spans = list("info"))
 		calling.called_by = null
 		calling = null
 		update_icon()

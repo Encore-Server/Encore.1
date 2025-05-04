@@ -1,0 +1,220 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"hR" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/metal/barograte,
+/area/rogue/under/town/sewer)
+"ig" = (
+/obj/structure/bars/grille,
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/gethsmane,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ml" = (
+/turf/open/floor/rogue/metal,
+/area/rogue/under/town/sewer)
+"nF" = (
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"nV" = (
+/turf/open/water/sewer,
+/area/rogue/under/town/sewer)
+"oS" = (
+/obj/effect/decal/remains/bigrat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"pt" = (
+/obj/structure/bars/grille,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/town/sewer)
+"vA" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/town/sewer)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"An" = (
+/obj/structure/bars/pipe,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Cl" = (
+/obj/item/flashlight/flare/torch/metal,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/town/sewer)
+"KZ" = (
+/obj/structure/bars/pipe,
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Ol" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat/gethsmane,
+/obj/machinery/light/rogue/torchholder/c,
+/obj/structure/bars/grille,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Sx" = (
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"Vv" = (
+/obj/structure/bars/grille,
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"Xl" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/bigrat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/under/town/sewer)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Zs" = (
+/obj/structure/roguerock,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/town/sewer)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+vA
+nV
+rf
+ml
+kd
+rf
+"}
+(2,1,1) = {"
+Yn
+xx
+nF
+rf
+rf
+nV
+nV
+hR
+rf
+rf
+"}
+(3,1,1) = {"
+Sx
+Sx
+nF
+Vv
+An
+oS
+nV
+rf
+rf
+nV
+"}
+(4,1,1) = {"
+Yn
+rf
+cR
+nF
+KZ
+nF
+nV
+cR
+cR
+cR
+"}
+(5,1,1) = {"
+kd
+rf
+cR
+nF
+rf
+Ol
+Cl
+Xl
+nV
+nV
+"}
+(6,1,1) = {"
+Sx
+Sx
+Cl
+pt
+rf
+nF
+ig
+Vv
+KE
+rf
+"}
+(7,1,1) = {"
+kd
+Sx
+nV
+nF
+rf
+Vv
+nV
+nV
+nF
+Zs
+"}
+(8,1,1) = {"
+kd
+RF
+rf
+nF
+nF
+nF
+nV
+oS
+cR
+rf
+"}
+(9,1,1) = {"
+qp
+kd
+rf
+rf
+nF
+vA
+vA
+nF
+cR
+rf
+"}
+(10,1,1) = {"
+Yn
+RF
+XV
+kd
+Sx
+Sx
+Yn
+Sx
+Yn
+rf
+"}

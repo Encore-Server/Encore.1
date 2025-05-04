@@ -69,6 +69,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/voice_type = VOICE_TYPE_MASC	// LETHALSTONE EDIT: the type of soundpack the mob should use
 	var/datum/statpack/statpack	= new /datum/statpack/wildcard/fated // LETHALSTONE EDIT: the statpack we're giving our char instead of racial bonuses
 	var/datum/virtue/virtue = new /datum/virtue/none // LETHALSTONE EDIT: the virtue we get for not picking a statpack
+	var/datum/virtue/virtuetwo = new /datum/virtue/none
 	var/age = AGE_ADULT						//age of character
 	var/origin = "Default"
 	var/accessory = "Nothing"
@@ -158,6 +159,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/char_accent = "No accent"
 
 	var/datum/loadout_item/loadout
+	var/datum/loadout_item/loadout2
+	var/datum/loadout_item/loadout3
 
 	var/flavortext
 
@@ -354,6 +357,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 //			dat += "<b><a href='?_src_=prefs;preference=name;task=random'>Random Name</A></b><BR>"
 			dat += "<b>Virtue:</b> <a href='?_src_=prefs;preference=virtue;task=input'>[virtue]</a><BR>"
+			if(statpack.name == "Virtuous")
+				dat += "<b>Second Virtue:</b> <a href='?_src_=prefs;preference=virtuetwo;task=input'>[virtuetwo]</a><BR>"
 			dat += "<b>Vice:</b> <a href='?_src_=prefs;preference=charflaw;task=input'>[charflaw]</a><BR>"
 			var/datum/faith/selected_faith = GLOB.faithlist[selected_patron?.associated_faith]
 			dat += "<b>Faith:</b> <a href='?_src_=prefs;preference=faith;task=input'>[selected_faith?.name || "FUCK!"]</a><BR>"
@@ -422,7 +427,11 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 			dat += "<br><b>OOC Notes:</b> <a href='?_src_=prefs;preference=ooc_notes;task=input'>Change</a>"
 
-			dat += "<br><b>Loadout Item:</b> <a href='?_src_=prefs;preference=loadout_item;task=input'>[loadout ? loadout.name : "None"]</a>"
+			dat += "<br><b>Loadout Item I:</b> <a href='?_src_=prefs;preference=loadout_item;task=input'>[loadout ? loadout.name : "None"]</a>"
+
+			dat += "<br><b>Loadout Item II:</b> <a href='?_src_=prefs;preference=loadout_item2;task=input'>[loadout2 ? loadout2.name : "None"]</a>"
+
+			dat += "<br><b>Loadout Item III:</b> <a href='?_src_=prefs;preference=loadout_item3;task=input'>[loadout3 ? loadout3.name : "None"]</a>"
 			dat += "</td>"
 
 
@@ -817,6 +826,41 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			if(!job.required && !isnull(job.max_pq) && (get_playerquality(user.ckey) > job.max_pq))
 				HTML += "<font color=#a59461>[used_name] (Max PQ: [job.max_pq])</font></td> <td> </td></tr>"
 				continue
+			if(length(job.virtue_restrictions) && length(job.vice_restrictions))
+				var/name
+				if(virtue.type in job.virtue_restrictions)
+					name = virtue.name
+				if(virtuetwo?.type in job.virtue_restrictions)
+					if(name)
+						name += ", "
+						name += virtuetwo.name
+					else
+						name = virtuetwo.name
+				if(charflaw.type in job.vice_restrictions)
+					if(name)
+						name += ", "
+						name += charflaw.name
+					else
+						name += charflaw.name
+				if(!isnull(name))
+					HTML += "<font color='#a561a5'>[used_name] (Disallowed by Virtues / Vice: [name])</font></td> <td> </td></tr>"
+			if(length(job.virtue_restrictions))
+				var/name
+				if(virtue.type in job.virtue_restrictions)
+					name = virtue.name
+				if(virtuetwo?.type in job.virtue_restrictions)
+					if(name)
+						name += ", "
+						name += virtuetwo.name
+					else
+						name = virtuetwo.name
+				if(!isnull(name))
+					HTML += "<font color='#a59461'>[used_name] (Disallowed by Virtue: [name])</font></td> <td> </td></tr>"
+					continue
+			if(length(job.vice_restrictions))
+				if(charflaw.type in job.vice_restrictions)
+					HTML += "<font color='#a56161'>[used_name] (Disallowed by Vice: [charflaw.name])</font></td> <td> </td></tr>"
+					continue
 			var/job_unavailable = JOB_AVAILABLE
 			if(isnewplayer(parent?.mob))
 				var/mob/dead/new_player/new_player = parent.mob
@@ -828,6 +872,11 @@ GLOBAL_LIST_EMPTY(chosen_names)
 			if(!(job_unavailable in acceptable_unavailables))
 				HTML += "<font color=#a36c63>[used_name]</font></td> <td> </td></tr>"
 				continue
+
+
+
+
+
 //			if((job_preferences[SSjob.overflow_role] == JP_LOW) && (rank != SSjob.overflow_role) && !is_banned_from(user.ckey, SSjob.overflow_role))
 //				HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
 //				continue
@@ -1517,10 +1566,10 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						statpack = statpack_chosen
 						to_chat(user, "<font color='purple'>[statpack.name]</font>")
 						to_chat(user, "<font color='purple'>[statpack.description_string()]</font>")
-						// also, unset our virtue if we're not a virtuous statpack.
+						/* also, unset our virtue if we're not a virtuous statpack.
 						if (!istype(statpack, /datum/statpack/wildcard/virtuous) && virtue.type != /datum/virtue/none)
 							virtue = new /datum/virtue/none
-							to_chat(user, span_info("Your virtue has been removed due to taking a stat-altering statpack."))
+							to_chat(user, span_info("Your virtue has been removed due to taking a stat-altering statpack."))*/
 				// LETHALSTONE EDIT: add pronouns
 				if ("pronouns")
 					var pronouns_input = input(user, "Choose your character's pronouns", "Pronouns") as null|anything in GLOB.pronouns_list
@@ -1635,6 +1684,9 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 					var/list/loadouts_available = list("None")
 					for (var/path as anything in GLOB.loadout_items)
 						var/datum/loadout_item/loadout = GLOB.loadout_items[path]
+						var/customitem = loadout.customitem
+						if(customitem && !loadout.customitem_ckey_check(user.ckey))
+							continue
 						if (!loadout.name)
 							continue
 						loadouts_available[loadout.name] = loadout
@@ -1649,6 +1701,48 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 							to_chat(user, "<font color='yellow'><b>[loadout.name]</b></font>")
 							if(loadout.desc)
 								to_chat(user, "[loadout.desc]")
+				if("loadout_item2")
+					var/list/loadouts_available = list("None")
+					for (var/path as anything in GLOB.loadout_items)
+						var/datum/loadout_item/loadout2 = GLOB.loadout_items[path]
+						var/customitem= loadout2.customitem
+						if(customitem && !loadout.customitem_ckey_check(user.ckey))
+							continue
+						if (!loadout2.name)
+							continue
+						loadouts_available[loadout2.name] = loadout2
+
+					var/loadout_input2 = input(user, "Choose your character's loadout item. RMB a tree, statue or clock to collect. I cannot stress this enough. YOU DON'T SPAWN WITH THESE. YOU HAVE TO MANUALLY PICK THEM UP!!", "LOADOUT THAT YOU GET FROM A TREE OR STATUE OR CLOCK") as null|anything in loadouts_available
+					if(loadout_input2)
+						if(loadout_input2 == "None")
+							loadout2 = null
+							to_chat(user, "Who needs stuff anyway?")
+						else
+							loadout2 = loadouts_available[loadout_input2]
+							to_chat(user, "<font color='yellow'><b>[loadout2.name]</b></font>")
+							if(loadout2.desc)
+								to_chat(user, "[loadout2.desc]")
+				if("loadout_item3")
+					var/list/loadouts_available = list("None")
+					for (var/path as anything in GLOB.loadout_items)
+						var/datum/loadout_item/loadout3 = GLOB.loadout_items[path]
+						var/custom = loadout3.customitem
+						if(custom && !loadout3.customitem_ckey_check(user.ckey))
+							continue
+						if (!loadout3.name)
+							continue
+						loadouts_available[loadout3.name] = loadout3
+
+					var/loadout_input3 = input(user, "Choose your character's loadout item. RMB a tree, statue or clock to collect. I cannot stress this enough. YOU DON'T SPAWN WITH THESE. YOU HAVE TO MANUALLY PICK THEM UP!!", "LOADOUT THAT YOU GET FROM A TREE OR STATUE OR CLOCK") as null|anything in loadouts_available
+					if(loadout_input3)
+						if(loadout_input3 == "None")
+							loadout3 = null
+							to_chat(user, "Who needs stuff anyway?")
+						else
+							loadout3 = loadouts_available[loadout_input3]
+							to_chat(user, "<font color='yellow'><b>[loadout3.name]</b></font>")
+							if(loadout3.desc)
+								to_chat(user, "[loadout3.desc]")
 				if("species")
 
 					var/list/crap = list()
@@ -1673,20 +1767,41 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("virtue")
 					var/list/virtue_choices = list()
 					for (var/path as anything in GLOB.virtues)
-						var/datum/virtue/virtue = GLOB.virtues[path]
-						if (!virtue.name)
+						var/datum/virtue/V = GLOB.virtues[path]
+						if (!V.name)
 							continue
-						virtue_choices[virtue.name] = virtue
+						if (V.name == virtue.name || V.name == virtuetwo.name)
+							continue
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/heretic))
+							continue
+						virtue_choices[V.name] = V
 					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
 
 					if (result)
 						var/datum/virtue/virtue_chosen = virtue_choices[result]
 						virtue = virtue_chosen
-						if (virtue.desc)
-							to_chat(user, span_purple(virtue.desc))
-						if (statpack.type != /datum/statpack/wildcard/virtuous)
+						to_chat(user, process_virtue_text(virtue_chosen))
+
+				if("virtuetwo")
+					var/list/virtue_choices = list()
+					for (var/path as anything in GLOB.virtues)
+						var/datum/virtue/V = GLOB.virtues[path]
+						if (!V.name)
+							continue
+						if (V.name == virtue.name || V.name == virtuetwo.name)
+							continue
+						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/heretic))
+							continue
+						virtue_choices[V.name] = V
+					var/result = input(user, "Select a virtue", "Roguetown") as null|anything in virtue_choices
+
+					if (result)
+						var/datum/virtue/virtue_chosen = virtue_choices[result]
+						virtuetwo = virtue_chosen
+						to_chat(user, process_virtue_text(virtue_chosen))
+					/*	if (statpack.type != /datum/statpack/wildcard/virtuous)
 							statpack = new /datum/statpack/wildcard/virtuous
-							to_chat(user, span_purple("Your statpack has been set to virtuous (no stats) due to selecting a virtue."))
+							to_chat(user, span_purple("Your statpack has been set to virtuous (no stats) due to selecting a virtue.")) */
 
 				if("charflaw")
 					var/list/coom = GLOB.character_flaws.Copy()
@@ -2322,3 +2437,34 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 	if(!migrant.active)
 		return FALSE
 	return TRUE
+
+/datum/preferences/proc/process_virtue_text(datum/virtue/V)
+	var/dat
+	if(V.desc)
+		dat += "<font size = 3>[span_purple(V.desc)]</font><br>"
+	if(length(V.added_skills))
+		dat += "<font color = '#a3e2ff'><font size = 3>This Virtue adds the following skills: <br>"
+		for(var/list/L in V.added_skills)
+			var/name
+			if(ispath(L[1],/datum/skill))
+				var/datum/skill/S = L[1]
+				S = new S
+				name = S.name
+				qdel(S)
+			dat += "["\Roman[L[2]]"] level[L[2] > 1 ? "s" : ""] of <b>[name]</b>[L[3] ? ", up to <b>[SSskills.level_names_plain[L[3]]]</b>" : ""] <br>"
+		dat += "</font>"
+	if(length(V.added_traits))
+		dat += "<font color = '#a3ffe0'><font size = 3>This Virtue grants the following traits: <br>"
+		for(var/TR in V.added_traits)
+			dat += "[TR] — <font size = 2>[GLOB.roguetraits[TR]]</font><br>"
+		dat += "</font>"
+	if(length(V.added_stashed_items))
+		dat += "<font color = '#eeffa3'><font size = 3>This Virtue adds the following items to your stash: <br>"
+		for(var/I in V.added_stashed_items)
+			dat += "<i>[I]</i> <br>"
+		dat += "</font>"
+	if(V.custom_text)
+		dat += "<font color = '#ffffff'><font size = 3>This Virtue has this special behaviour: <br>"
+		dat += "[V.custom_text]"
+		dat += "</font>"
+	return dat

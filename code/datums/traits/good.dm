@@ -64,7 +64,7 @@
 	desc = ""
 	value = 1
 	mob_trait = TRAIT_FAN_CLOWN
-	gain_text = span_notice("I are a big fan of the Clown.")
+	gain_text = span_notice("I am a big fan of the Clown.")
 	lose_text = span_danger("The clown doesn't seem so great.")
 	medical_record_text = "Patient reports being a big fan of the Clown."
 
@@ -82,7 +82,7 @@
 	desc = ""
 	value = 1
 	mob_trait = TRAIT_FAN_MIME
-	gain_text = span_notice("I are a big fan of the Mime.")
+	gain_text = span_notice("I am a big fan of the Mime.")
 	lose_text = span_danger("The mime doesn't seem so great.")
 	medical_record_text = "Patient reports being a big fan of the Mime."
 

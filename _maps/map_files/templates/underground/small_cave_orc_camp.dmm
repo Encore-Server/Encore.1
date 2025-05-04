@@ -1,0 +1,258 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cm" = (
+/obj/item/natural/fur,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"cR" = (
+/obj/item/natural/bone,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ez" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"hg" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nU" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"rr" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"sG" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ts" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"tF" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"wa" = (
+/obj/machinery/light/rogue/torchholder/l,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"wp" = (
+/obj/machinery/light/rogue/torchholder/l,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"ye" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"CJ" = (
+/turf/open/water/sewer,
+/area/rogue/under/cave)
+"DT" = (
+/obj/machinery/light/rogue/torchholder/r,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Eq" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Er" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Fj" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc2,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Me" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"NB" = (
+/obj/item/natural/rock,
+/obj/machinery/light/rogue/torchholder/c,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"NP" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/item/natural/bowstring,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Pr" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/spear,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"PU" = (
+/obj/machinery/light/rogue/campfire/densefire,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"Rd" = (
+/obj/item/natural/cloth,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"XH" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+Yn
+Yn
+Yn
+Yn
+kd
+Ol
+CJ
+"}
+(2,1,1) = {"
+kd
+cm
+DT
+NP
+rf
+CJ
+DT
+kd
+XV
+Yn
+"}
+(3,1,1) = {"
+CJ
+Me
+Me
+Me
+Me
+Me
+Me
+qp
+CJ
+Yn
+"}
+(4,1,1) = {"
+CJ
+Me
+wp
+Fj
+hg
+wa
+Me
+cR
+rr
+Me
+"}
+(5,1,1) = {"
+Me
+Me
+Er
+PU
+ts
+XH
+tF
+ts
+ts
+Me
+"}
+(6,1,1) = {"
+Me
+Pr
+ts
+ts
+Rd
+Fj
+tF
+ts
+KE
+tF
+"}
+(7,1,1) = {"
+Me
+ye
+ez
+XH
+ts
+hg
+Me
+nV
+sG
+tF
+"}
+(8,1,1) = {"
+Me
+Me
+Me
+Me
+Me
+Me
+Me
+NB
+Eq
+Me
+"}
+(9,1,1) = {"
+qp
+kd
+Yn
+RF
+nU
+Yn
+Yn
+kd
+Me
+Me
+"}
+(10,1,1) = {"
+Yn
+kd
+XV
+kd
+xx
+kd
+Yn
+CJ
+Yn
+CJ
+"}

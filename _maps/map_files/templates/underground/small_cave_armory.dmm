@@ -1,0 +1,262 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"cR" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"dE" = (
+/obj/structure/table/wood{
+	icon_state = "longtable"
+	},
+/obj/item/quiver/arrows,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"jV" = (
+/obj/item/grown/log/tree/bowpartial,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"lK" = (
+/obj/structure/rack/rogue,
+/obj/structure/rack/rogue/shelf,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"mJ" = (
+/obj/structure/rack/rogue,
+/obj/structure/rack/rogue/shelf,
+/obj/item/quiver/bolts,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"mT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"nV" = (
+/obj/item/natural/cloth{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"qp" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"rf" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"ss" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"un" = (
+/obj/item/clothing/suit/roguetown/armor/gambeson,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"xw" = (
+/obj/structure/mineral_door/wood/donjon{
+	dir = 1;
+	locked = 1;
+	lockid = "garrison"
+	},
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"xx" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ee" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/natural/bowstring,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"EE" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree/stick,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Fh" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/tools,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"GR" = (
+/obj/item/natural/thorn,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"KE" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"LS" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Ol" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Po" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+"Ry" = (
+/obj/structure/table/wood{
+	dir = 1;
+	icon_state = "longtable"
+	},
+/obj/item/roguecoin/copper/pile,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"RF" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"RO" = (
+/obj/structure/rack/rogue,
+/obj/structure/rack/rogue/shelf,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/armor,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Vq" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"XV" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"Yn" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"Yt" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/tile,
+/area/rogue/under/cave)
+"Zf" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Yn
+kd
+xx
+XV
+Yn
+Yn
+Yn
+RF
+Ol
+kd
+"}
+(2,1,1) = {"
+Yn
+xx
+kd
+kd
+rf
+kd
+kd
+kd
+XV
+Yn
+"}
+(3,1,1) = {"
+Yn
+cR
+cR
+cR
+cR
+cR
+cR
+Zf
+RF
+Yn
+"}
+(4,1,1) = {"
+Yn
+cR
+Ry
+GR
+Yt
+Fh
+cR
+cR
+Po
+Po
+"}
+(5,1,1) = {"
+xx
+cR
+RO
+jV
+LS
+EE
+mT
+xw
+Po
+kd
+"}
+(6,1,1) = {"
+kd
+cR
+lK
+mT
+Vq
+dE
+cR
+cR
+KE
+qp
+"}
+(7,1,1) = {"
+Ol
+cR
+mJ
+Ee
+un
+cR
+cR
+nV
+XV
+XV
+"}
+(8,1,1) = {"
+kd
+cR
+cR
+cR
+cR
+cR
+kd
+XV
+ss
+Yn
+"}
+(9,1,1) = {"
+qp
+kd
+kd
+kd
+kd
+kd
+kd
+Ol
+Yn
+Yn
+"}
+(10,1,1) = {"
+Yn
+kd
+Yn
+Yn
+xx
+Yn
+Yn
+kd
+Yn
+XV
+"}

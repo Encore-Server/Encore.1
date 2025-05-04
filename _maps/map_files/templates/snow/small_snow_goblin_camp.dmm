@@ -1,0 +1,264 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"c" = (
+/mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"h" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"i" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"j" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter)
+"l" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"m" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter)
+"n" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"o" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"p" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"t" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"w" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"z" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter)
+"D" = (
+/obj/structure/toilet,
+/mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt,
+/area/rogue/indoors/shelter)
+"F" = (
+/obj/structure/bed/rogue/inn/hay,
+/mob/living/carbon/human/species/goblin/npc/sea,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"G" = (
+/obj/item/roguebin/water/gross,
+/obj/item/reagent_containers/glass/bucket/wooden{
+	pixel_x = 14;
+	pixel_y = -10
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"I" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"J" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"K" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"L" = (
+/obj/effect/decal/remains/human,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"M" = (
+/obj/item/roguebin/water/gross,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"O" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"P" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"Q" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"R" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"S" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"T" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"U" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter)
+"V" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"W" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Y" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter)
+"Z" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter)
+
+(1,1,1) = {"
+a
+o
+o
+o
+i
+p
+V
+V
+a
+a
+"}
+(2,1,1) = {"
+Z
+j
+j
+Z
+o
+o
+T
+S
+w
+w
+"}
+(3,1,1) = {"
+m
+R
+F
+U
+J
+J
+K
+K
+W
+w
+"}
+(4,1,1) = {"
+O
+c
+L
+O
+a
+n
+K
+T
+a
+w
+"}
+(5,1,1) = {"
+m
+Y
+c
+U
+a
+a
+K
+K
+a
+l
+"}
+(6,1,1) = {"
+Z
+z
+z
+Z
+Q
+a
+a
+a
+h
+w
+"}
+(7,1,1) = {"
+a
+M
+G
+a
+a
+a
+Z
+j
+Z
+w
+"}
+(8,1,1) = {"
+a
+J
+V
+V
+I
+p
+m
+D
+O
+w
+"}
+(9,1,1) = {"
+a
+P
+V
+a
+o
+p
+Z
+z
+Z
+a
+"}
+(10,1,1) = {"
+a
+V
+p
+o
+a
+a
+a
+a
+a
+t
+"}

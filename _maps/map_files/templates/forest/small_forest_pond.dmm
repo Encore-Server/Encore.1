@@ -1,0 +1,165 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"b" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"c" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"g" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"k" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"E" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"H" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"N" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"T" = (
+/obj/structure/flora/roguetree/stump/log,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"V" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"X" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+E
+E
+E
+X
+E
+E
+E
+E
+E
+g
+"}
+(2,1,1) = {"
+E
+N
+E
+E
+a
+V
+c
+c
+c
+E
+"}
+(3,1,1) = {"
+k
+b
+E
+k
+E
+c
+k
+H
+c
+E
+"}
+(4,1,1) = {"
+E
+E
+c
+H
+c
+c
+c
+c
+E
+E
+"}
+(5,1,1) = {"
+E
+a
+H
+c
+c
+c
+H
+c
+E
+X
+"}
+(6,1,1) = {"
+X
+E
+E
+H
+H
+c
+H
+H
+V
+E
+"}
+(7,1,1) = {"
+E
+E
+H
+H
+H
+c
+c
+E
+E
+c
+"}
+(8,1,1) = {"
+k
+c
+H
+c
+V
+c
+k
+T
+k
+E
+"}
+(9,1,1) = {"
+E
+V
+c
+E
+E
+E
+E
+X
+E
+E
+"}
+(10,1,1) = {"
+E
+E
+E
+E
+E
+E
+a
+E
+E
+E
+"}

@@ -1,0 +1,329 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"cW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"dE" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"dF" = (
+/obj/item/grown/log/tree/small,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"fC" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"gB" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/heavenscoast)
+"ht" = (
+/obj/structure/fluff/psycross/copper,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"hN" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/money,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"kd" = (
+/obj/structure/fluff/railing/border,
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"kx" = (
+/obj/effect/decal/cobbleedge{
+	dir = 9;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"nu" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"qv" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"qC" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods/heavenscoast)
+"qX" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"sC" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"yf" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"Ae" = (
+/obj/structure/fluff/psycross,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"AW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 6;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Cy" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Dd" = (
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"GL" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "borderfall"
+	},
+/obj/structure/fluff/railing/border,
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Hd" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/water/ocean,
+/area/rogue/outdoors/woods/heavenscoast)
+"Kk" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Ld" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "borderfall"
+	},
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Mj" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"Nu" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"ON" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"PX" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"RY" = (
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"Sz" = (
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"SW" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"TX" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "borderfall"
+	},
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Xo" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cobbleedge{
+	dir = 8;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"Yx" = (
+/obj/effect/decal/cobbleedge{
+	dir = 4;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+"ZF" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/heavenscoast)
+"ZP" = (
+/obj/effect/decal/cobbleedge{
+	dir = 5;
+	icon_state = "borderfall"
+	},
+/obj/item/natural/rock,
+/turf/open/floor/rogue/sand,
+/area/rogue/outdoors/woods/heavenscoast)
+
+(1,1,1) = {"
+Dd
+kx
+Yx
+Yx
+Yx
+Yx
+qX
+sC
+Dd
+aJ
+"}
+(2,1,1) = {"
+Dd
+TX
+PX
+Sz
+Sz
+kd
+Kk
+dF
+gB
+Dd
+"}
+(3,1,1) = {"
+sC
+TX
+qv
+Ae
+qv
+Mj
+SW
+Ld
+aJ
+Cy
+"}
+(4,1,1) = {"
+Nu
+TX
+qv
+qv
+dE
+nu
+Sz
+yf
+sC
+aJ
+"}
+(5,1,1) = {"
+aJ
+TX
+qv
+ht
+fC
+qv
+qv
+yf
+sC
+sC
+"}
+(6,1,1) = {"
+sC
+TX
+qv
+qv
+hN
+ZF
+RY
+yf
+aJ
+sC
+"}
+(7,1,1) = {"
+aJ
+GL
+qv
+Ae
+qv
+Mj
+Xo
+AW
+Hd
+sC
+"}
+(8,1,1) = {"
+sC
+TX
+RY
+RY
+RY
+ON
+Kk
+Dd
+Dd
+aJ
+"}
+(9,1,1) = {"
+gB
+ZP
+cW
+cW
+cW
+cW
+AW
+sC
+aJ
+Nu
+"}
+(10,1,1) = {"
+qC
+gB
+Dd
+Dd
+aJ
+sC
+sC
+sC
+Dd
+gB
+"}

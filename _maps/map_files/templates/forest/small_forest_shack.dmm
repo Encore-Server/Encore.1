@@ -1,0 +1,217 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"b" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/shelter/woods)
+"c" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
+"f" = (
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"g" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 1
+	},
+/area/rogue/indoors/shelter/woods)
+"k" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"q" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent,
+/area/rogue/indoors/shelter/woods)
+"u" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 8
+	},
+/area/rogue/indoors/shelter/woods)
+"w" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"x" = (
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"y" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/woods)
+"B" = (
+/obj/structure/closet/crate/chest/old_crate,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"D" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"E" = (
+/obj/item/roguebin/water,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"H" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/shelter/woods)
+"M" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"N" = (
+/obj/structure/bed/rogue/inn/hay,
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
+"P" = (
+/obj/effect/roofing_helper/twig,
+/turf/open/floor/rogue/grass,
+/area/rogue/indoors/shelter/woods)
+"T" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter/woods)
+"V" = (
+/obj/effect/roofing_helper/twig,
+/turf/closed/wall/mineral/rogue/tent{
+	dir = 4
+	},
+/area/rogue/indoors/shelter/woods)
+"W" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+"X" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+k
+x
+x
+x
+x
+k
+x
+x
+a
+x
+"}
+(2,1,1) = {"
+X
+T
+u
+D
+H
+x
+x
+W
+x
+x
+"}
+(3,1,1) = {"
+x
+g
+B
+M
+P
+P
+u
+T
+k
+a
+"}
+(4,1,1) = {"
+x
+H
+D
+M
+T
+N
+N
+T
+x
+x
+"}
+(5,1,1) = {"
+x
+b
+H
+M
+g
+D
+f
+q
+x
+x
+"}
+(6,1,1) = {"
+x
+b
+H
+M
+g
+D
+D
+w
+x
+x
+"}
+(7,1,1) = {"
+x
+x
+P
+y
+g
+N
+E
+q
+a
+a
+"}
+(8,1,1) = {"
+x
+k
+T
+y
+T
+V
+V
+T
+c
+a
+"}
+(9,1,1) = {"
+x
+x
+T
+T
+T
+x
+k
+X
+a
+x
+"}
+(10,1,1) = {"
+x
+x
+k
+x
+x
+x
+x
+x
+x
+x
+"}

@@ -1,0 +1,182 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"gz" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"hI" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/mist,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"hL" = (
+/obj/item/rogueore/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"iA" = (
+/obj/effect/mist,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Bubbly and warm!"
+	},
+/area/rogue/under/cave)
+"iT" = (
+/obj/machinery/light/rogue/campfire,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"jX" = (
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kd" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"sV" = (
+/obj/item/natural/stone,
+/obj/structure/spacevine,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Bm" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Dt" = (
+/obj/effect/mist,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ji" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Uy" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"XG" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+Uy
+iA
+kd
+Uy
+Uy
+jX
+kd
+Uy
+Uy
+Uy
+"}
+(2,1,1) = {"
+iA
+kd
+kd
+Uy
+jX
+sV
+iA
+iA
+iA
+Uy
+"}
+(3,1,1) = {"
+jX
+jX
+Uy
+Uy
+jX
+kd
+kd
+iA
+iA
+Uy
+"}
+(4,1,1) = {"
+Uy
+gz
+kd
+hL
+Dt
+Uy
+kd
+kd
+iA
+Ji
+"}
+(5,1,1) = {"
+Uy
+iT
+kd
+kd
+iA
+Uy
+Uy
+Dt
+kd
+jX
+"}
+(6,1,1) = {"
+XG
+Bm
+kd
+Dt
+iA
+iA
+iA
+iA
+Bm
+jX
+"}
+(7,1,1) = {"
+kd
+kd
+hI
+kd
+Dt
+iA
+iA
+kd
+Dt
+Uy
+"}
+(8,1,1) = {"
+Dt
+Dt
+iA
+Dt
+Ji
+kd
+hL
+kd
+iA
+Uy
+"}
+(9,1,1) = {"
+iA
+iA
+iA
+jX
+Uy
+Uy
+Dt
+iA
+iA
+Uy
+"}
+(10,1,1) = {"
+iA
+iA
+Dt
+kd
+jX
+jX
+Bm
+kd
+Dt
+Dt
+"}

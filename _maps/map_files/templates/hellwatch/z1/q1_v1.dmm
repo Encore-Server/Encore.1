@@ -1,0 +1,418 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"fP" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 8;
+	name = "Templar Crypt"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"hz" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/natural/bundle/cloth{
+	pixel_x = 5
+	},
+/obj/item/needle,
+/obj/item/needle,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mc" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pr" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"rb" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sb" = (
+/obj/structure/stairs/stone,
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"tJ" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/obj/structure/fluff/millstone{
+	pixel_y = 8;
+	pixel_x = -4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xR" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zf" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -1;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 7;
+	pixel_y = -5
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ak" = (
+/obj/item/roguebin/water/gross{
+	name = "tainted woodbin"
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"AG" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"GQ" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"HE" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/obj/item/reagent_containers/food/snacks/grown/oat,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ic" = (
+/obj/structure/mineral_door/wood/donjon/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"IO" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Md" = (
+/obj/machinery/light/rogue/oven/south,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"MM" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Oy" = (
+/obj/machinery/light/rogue/hearth,
+/obj/item/reagent_containers/glass/bucket/pot,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RF" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SO" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"TF" = (
+/obj/structure/closet/crate/chest/crate,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/metal,
+/obj/item/flashlight/flare/torch/metal,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UY" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"XO" = (
+/obj/structure/roguetent,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+GQ
+KC
+KC
+CW
+fP
+KC
+KC
+KC
+KC
+CW
+CW
+KC
+KC
+KC
+KC
+"}
+(2,1,1) = {"
+GQ
+GQ
+GQ
+KC
+RF
+RF
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(3,1,1) = {"
+KC
+CW
+CW
+KC
+IO
+mc
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(4,1,1) = {"
+Oy
+AG
+tJ
+KC
+RF
+mc
+CW
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(5,1,1) = {"
+Md
+RF
+mc
+KC
+RF
+RF
+CW
+CW
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(6,1,1) = {"
+zf
+RF
+mc
+CW
+IO
+RF
+RF
+sb
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(7,1,1) = {"
+RF
+pr
+RF
+CW
+mc
+RF
+KC
+KC
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(8,1,1) = {"
+RF
+RF
+RF
+MM
+mc
+RF
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(9,1,1) = {"
+mc
+xR
+RF
+XO
+RF
+mc
+CW
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(10,1,1) = {"
+mc
+mc
+RF
+CW
+RF
+RF
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(11,1,1) = {"
+mc
+RF
+mc
+CW
+KC
+CW
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(12,1,1) = {"
+KC
+Ic
+CW
+CW
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(13,1,1) = {"
+Ak
+RF
+rb
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(14,1,1) = {"
+SO
+mc
+HE
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}
+(15,1,1) = {"
+TF
+UY
+hz
+KC
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+GQ
+"}

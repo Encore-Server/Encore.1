@@ -12,7 +12,6 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/admin_ghost,
 	/datum/admins/proc/start_vote,
 	/client/proc/toggle_autovote,
-	/datum/admins/proc/show_player_panel,
 	/datum/admins/proc/admin_heal,
 	/datum/admins/proc/admin_revive,
 	/datum/admins/proc/admin_sleep,
@@ -32,9 +31,8 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/amend_player_book,
 	/client/proc/pull_book_file_names,
 	/client/proc/adminwho,
-	// RATWOOD MODULAR START
-	/client/proc/bunker_bypass,
-	// RATWOOD MODULAR END
+	/client/proc/admin_set_time,
+	/client/proc/admin_add_time
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
@@ -64,7 +62,6 @@ GLOBAL_PROTECT(admin_verbs_admin)
 //	/datum/admins/proc/show_player_panel,	/*shows an interface for individual players, with various links (links require additional flags*/
 //	/datum/verbs/menu/Admin/verb/playerpanel,
 	/client/proc/game_panel,			/*game panel, allows to change game-mode etc*/
-	/client/proc/check_ai_laws,			/*shows AI and borg laws*/
 	/datum/admins/proc/toggleooc,		/*toggles ooc on/off for everyone*/
 	/datum/admins/proc/toggleoocdead,	/*toggles ooc on/off for everyone who is dead*/
 	/datum/admins/proc/toggleenter,		/*toggles whether people can join the current game*/
@@ -81,9 +78,9 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/cmd_admin_headset_message,	/*send an message to somebody through their headset as CentCom*/
 	/client/proc/cmd_admin_delete,		/*delete an instance/object/mob/etc*/
 	/client/proc/cmd_admin_check_contents,	/*displays the contents of an instance*/
+	/client/proc/cmd_admin_create_centcom_report, //IC Announcer
 	/client/proc/centcom_podlauncher,/*Open a window to launch a Supplypod and configure it or it's contents*/
 	/client/proc/check_antagonists,		/*shows all antags*/
-	/datum/admins/proc/access_news_network,	/*allows access of newscasters*/
 	/client/proc/jumptocoord,			/*we ghost and jump to a coordinate*/
 	/client/proc/Getmob,				/*teleports a mob to our location*/
 	/client/proc/Getkey,				/*teleports a mob with a certain ckey to our location*/
@@ -97,8 +94,6 @@ GLOBAL_PROTECT(admin_verbs_admin)
 	/client/proc/cmd_admin_direct_narrate,	/*send text directly to a player with no padding. Useful for narratives and fluff-text*/
 	/client/proc/cmd_admin_world_narrate,	/*sends text to all players with no padding*/
 	/client/proc/cmd_admin_local_narrate,	/*sends text to all mobs within view of atom*/
-	/client/proc/cmd_admin_create_centcom_report,
-	/client/proc/cmd_change_command_name,
 	/client/proc/cmd_admin_check_player_exp, /* shows players by playtime */
 	/client/proc/toggle_combo_hud, // toggle display of the combination pizza antag and taco sci/med/eng hud
 	/client/proc/toggle_AI_interact, /*toggle admin ability to interact with machines as an AI*/
@@ -138,7 +133,8 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/polymorph_all,
 	/client/proc/show_tip,
 	/client/proc/smite,
-	/client/proc/admin_away
+	/client/proc/admin_away,
+	/client/proc/roll_admin_dice
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
 GLOBAL_LIST_INIT(admin_verbs_spawn, list(/datum/admins/proc/spawn_atom, /datum/admins/proc/podspawn_atom, /datum/admins/proc/spawn_cargo, /datum/admins/proc/spawn_objasmob, /client/proc/respawn_character, /datum/admins/proc/beaker_panel))
@@ -153,8 +149,6 @@ GLOBAL_PROTECT(admin_verbs_server)
 	/datum/admins/proc/end_round,
 	/datum/admins/proc/delay,
 	/datum/admins/proc/toggleaban,
-	/client/proc/everyone_random,
-	/datum/admins/proc/toggleAI,
 	/client/proc/cmd_admin_delete,		/*delete an instance/object/mob/etc*/
 	/client/proc/cmd_debug_del_all,
 	/client/proc/toggle_random_events,
@@ -229,7 +223,6 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/client/proc/cmd_admin_subtle_message,
 	/client/proc/cmd_admin_headset_message,
 	/client/proc/cmd_admin_check_contents,
-	/datum/admins/proc/access_news_network,
 	/client/proc/admin_call_shuttle,
 	/client/proc/admin_cancel_shuttle,
 	/client/proc/cmd_admin_direct_narrate,
@@ -255,9 +248,9 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/datum/admins/proc/restart,
 	/datum/admins/proc/delay,
 	/datum/admins/proc/toggleaban,
-	/client/proc/everyone_random,
 	/datum/admins/proc/toggleAI,
 	/client/proc/restart_controller,
+	/client/proc/roll_admin_dice,
 	/client/proc/cmd_admin_list_open_jobs,
 	/client/proc/callproc,
 	/client/proc/callproc_datum,
@@ -276,7 +269,9 @@ GLOBAL_LIST_INIT(admin_verbs_hideable, list(
 	/client/proc/toggle_nuke,
 	/client/proc/cmd_display_del_log,
 	/client/proc/toggle_combo_hud,
-	/client/proc/debug_huds
+	/client/proc/debug_huds,
+	/client/proc/admin_set_time,
+	/client/proc/admin_add_time
 	))
 GLOBAL_PROTECT(admin_verbs_hideable)
 
@@ -337,7 +332,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 /client/proc/hide_most_verbs()//Allows you to keep some functionality while hiding some verbs
 	set name = "Adminverbs - Hide Most"
-	set category = "Admin"
+	set category = "Prefs - Admin"
 
 	verbs.Remove(/client/proc/hide_most_verbs, GLOB.admin_verbs_hideable)
 	verbs += /client/proc/show_verbs
@@ -348,7 +343,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 /client/proc/hide_verbs()
 	set name = "Adminverbs - Hide All"
-	set category = "Admin"
+	set category = "Prefs - Admin"
 
 	remove_admin_verbs()
 	verbs += /client/proc/show_verbs
@@ -359,7 +354,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 /client/proc/show_verbs()
 	set name = "Adminverbs - Show"
-	set category = "Admin"
+	set category = "Prefs - Admin"
 
 	verbs -= /client/proc/show_verbs
 	add_admin_verbs()
@@ -368,7 +363,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Show Adminverbs") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/set_context_menu_enabled()
-	set category = "Admin"
+	set category = "Prefs - Admin"
 	set name = "Toggle Right-Click Menus"
 	if(!holder)
 		return
@@ -376,7 +371,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	to_chat(src, show_popup_menus ? "Right click menus are now enabled" : "Right click menus are now disabled")
 
 /client/proc/toggle_aghost_invis()
-	set category = "GameMaster"
+	set category = "Admin"
 	set name = "Aghost (Toggle Invisibility)"
 	if (!holder)
 		return
@@ -384,7 +379,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	to_chat(src, aghost_toggle ? "Aghosting will now turn your mob invisible." : "Aghost will no longer turn your mob invisible.")
 
 /client/proc/admin_ghost()
-	set category = "GameMaster"
+	set category = "Admin"
 	set name = "Aghost"
 	if(!holder)
 		return
@@ -561,7 +556,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Stealth Mode") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/drop_bomb()
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Drop Bomb"
 	set desc = ""
 
@@ -603,7 +598,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Drop Bomb") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/drop_dynex_bomb()
-	set category = "Special Verbs"
+	set category = "Admin"
 	set name = "Drop DynEx Bomb"
 	set desc = ""
 
@@ -650,7 +645,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	message_admins("[key_name_admin(usr)] has  modified Dynamic Explosion Scale: [ex_scale]")
 
 /client/proc/give_spell(mob/T in GLOB.mob_list)
-	set category = "Fun"
+	set category = "GameMaster"
 	set name = "Give Spell"
 	set desc = ""
 
@@ -674,7 +669,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		message_admins(span_danger("Spells given to mindless mobs will not be transferred in mindswap or cloning!"))
 
 /client/proc/remove_spell(mob/T in GLOB.mob_list)
-	set category = "Fun"
+	set category = "GameMaster"
 	set name = "Remove Spell"
 	set desc = ""
 
@@ -687,7 +682,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 			SSblackbox.record_feedback("tally", "admin_verb", 1, "Remove Spell") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/give_disease(mob/living/T in GLOB.mob_living_list)
-	set category = "Fun"
+	set category = "GameMaster"
 	set name = "Give Disease"
 	set desc = ""
 	if(!istype(T))
@@ -702,7 +697,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	message_admins(span_adminnotice("[key_name_admin(usr)] gave [key_name_admin(T)] the disease [D]."))
 
 /client/proc/object_say(obj/O in world)
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	set name = "OSay"
 	set desc = ""
 	var/message = input(usr, "What do you want the message to be?", "Make Sound") as text | null
@@ -714,7 +709,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Object Say") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 /client/proc/togglebuildmodeself()
 	set name = "Toggle Build Mode Self"
-	set category = "Special Verbs"
+	set category = "GameMaster"
 	if (!(holder.rank.rights & R_BUILD))
 		return
 	if(src.mob)
@@ -741,7 +736,7 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 
 	holder.deactivate()
 
-	to_chat(src, span_interface("I are now a normal player."))
+	to_chat(src, span_interface("I am now a normal player."))
 	log_admin("[src] deadmined themself.")
 	message_admins("[src] deadmined themself.")
 	SSblackbox.record_feedback("tally", "admin_verb", 1, "Deadmin")
@@ -870,3 +865,93 @@ GLOBAL_PROTECT(admin_verbs_hideable)
 		message_admins("[src] has amended [book_title]'s [amend_type] to [amend_text]")
 	else
 		to_chat(src, span_notice("Either the book file doesn't exist or you have failed to type something in properly (you can look up the file name by the verb 'database book file names'"))
+
+/client/proc/admin_add_time()
+	set category = "Admin"
+	set name = "Time: Add Time"
+	set desc= ""
+	var/add_time_value = input("Add Time: 0-864000 (negative number to go back in time)") as null|num
+	if(add_time_value)
+		add_time(add_time_value)		
+		world << "[ckey] has set the time to [station_time_timestamp()]."	
+
+/client/proc/admin_set_time()
+	set category = "Admin"
+	set name = "Time: Set Time"
+	set desc= ""
+	var/set_time_value = input("Set Time: 0-864000") as null|num
+	if(set_time_value)
+		set_time(set_time_value)		
+		world << "[ckey] has set the time to [station_time_timestamp()]."	
+
+/client/proc/roll_admin_dice()
+	set category = "Admin"
+	set name = "Roll Global Dice"
+	var/d6 = "1d6"
+	var/d20 = "1d20"
+	var/d100 = "1d100"
+	var/result = null
+	var/sound/dice_alert = new()
+
+	var/input = input(usr, "Give your reasoning, if any, for rolling THE DICE of FATE. Detail conditional modifiers here.", "Offer Nuance", "") as message|null
+	if(!input)
+		return
+
+	var/confirm = alert(src, "DICE of FATE", "Pick your dice size", "Roll D6", "Roll D20", "Roll D100")
+	switch(confirm)
+		if("Roll D6")
+			var/roll_result = roll(d6)
+			if(roll_result == 6)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<2)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Roll D20")
+			var/roll_result = roll(d20)
+			if(roll_result == 19)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<2)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Roll D100")
+			var/roll_result = roll(d100)
+			if(roll_result>95)
+				result = "CRITICAL SUCCESS! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/inspiration.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			if(roll_result<5)
+				result = "CRITICAL FAILURE! The Dice of Fate have landed upon [(roll_result)]!"
+				dice_alert.file = 'sound/misc/stinger.ogg'
+				for(var/mob/M in GLOB.player_list)
+					SEND_SOUND(M, dice_alert)
+
+			else result = "The Dice of Fate have landed upon [(roll_result)]!"
+			
+			priority_announce(result, input, 'sound/misc/fate_dice.ogg')
+
+		if("Cancel")
+			return

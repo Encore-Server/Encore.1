@@ -1,0 +1,677 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ar" = (
+/obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"aJ" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"bS" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"bX" = (
+/obj/effect/roofing_helper/snow,
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/indoors/shelter/mountains)
+"dd" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"eN" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"fC" = (
+/obj/structure/closet/dirthole/closed,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"gd" = (
+/obj/structure/closet/dirthole/closed/loot,
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"gQ" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"gS" = (
+/obj/item/reagent_containers/powder/salt,
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"hh" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"ht" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 4
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"jl" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/fluff/statue{
+	name = "vestments of the end time";
+	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing.";
+	pixel_y = 23
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"jN" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"kL" = (
+/obj/item/natural/stone,
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"mc" = (
+/obj/item/clothing/suit/roguetown/armor/plate/half/elven,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"mZ" = (
+/obj/structure/roguerock,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"ny" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"ox" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"qi" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"qC" = (
+/obj/item/reagent_containers/powder/salt,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"qE" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"rd" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"tt" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"tC" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 4
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"tS" = (
+/obj/machinery/light/rogue/forge,
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"uc" = (
+/obj/effect/decal/cleanable/ash/large,
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"uj" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"vl" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"wG" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"wR" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"xG" = (
+/obj/item/roguebin/water/gross,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"xX" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"yf" = (
+/obj/structure/fluff/railing/border{
+	dir = 9
+	},
+/obj/item/clothing/head/roguetown/helmet/sallet/elven,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"yi" = (
+/obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"yr" = (
+/obj/item/natural/cloth,
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"yP" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 1
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"zq" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"zU" = (
+/obj/structure/fluff/railing/border,
+/obj/effect/decal/cleanable/ash/large,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"zW" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AA" = (
+/obj/structure/fluff/statue{
+	name = "vestments of the end time";
+	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing."
+	},
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/structure/fluff/railing/border{
+	dir = 5
+	},
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Ch" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"Co" = (
+/obj/item/natural/stone,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Cu" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"Cy" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"CY" = (
+/obj/structure/fluff/railing/border,
+/obj/item/candle/yellow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Dd" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"HF" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"Id" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Iy" = (
+/mob/living/simple_animal/hostile/rogue/skeleton/guard,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"IE" = (
+/obj/item/reagent_containers/powder/salt,
+/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Jp" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/mountains)
+"JW" = (
+/obj/structure/fluff/railing/border{
+	icon_state = "border";
+	dir = 10
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"La" = (
+/obj/structure/closet/dirthole/closed,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ml" = (
+/obj/item/natural/rock/coal,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Nw" = (
+/obj/structure/closet/dirthole/closed,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"Om" = (
+/obj/machinery/anvil,
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"Ox" = (
+/obj/structure/closet/dirthole/closed/loot,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"Pz" = (
+/obj/item/rogueweapon/hammer/stone,
+/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"PU" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"PW" = (
+/obj/structure/fluff/statue{
+	name = "vestments of the end time";
+	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing."
+	},
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"SC" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/item/burial_shroud,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Tn" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"UJ" = (
+/obj/item/burial_shroud,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"UL" = (
+/obj/structure/fluff/railing/border{
+	dir = 1;
+	icon_state = "border"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble,
+/area/rogue/indoors/shelter/mountains)
+"Vl" = (
+/obj/item/natural/stone,
+/mob/living/simple_animal/hostile/rogue/skeleton/bow,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"VE" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/mountains)
+"WH" = (
+/obj/structure/fluff/statue{
+	name = "vestments of the end time";
+	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing.";
+	pixel_y = 23
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/mountains)
+"Yb" = (
+/obj/structure/mineral_door/wood/donjon{
+	locked = 1;
+	dir = 8
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/indoors/shelter/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+dE
+qK
+AA
+KC
+KC
+YZ
+qK
+Ae
+qK
+uj
+KC
+KC
+KC
+YZ
+PW
+"}
+(2,1,1) = {"
+qK
+bX
+bX
+bX
+bX
+bX
+bX
+bX
+bX
+KC
+qK
+fC
+fC
+Nw
+Ae
+"}
+(3,1,1) = {"
+Ae
+bX
+mc
+Co
+yP
+HF
+HF
+uc
+bX
+qi
+qK
+rd
+tt
+PU
+KC
+"}
+(4,1,1) = {"
+YZ
+bX
+xX
+gd
+bX
+UJ
+Dd
+bS
+bX
+Ae
+KC
+Jp
+Cu
+tt
+YZ
+"}
+(5,1,1) = {"
+KC
+bX
+bX
+bX
+bX
+tC
+bX
+bX
+bX
+bX
+bX
+Ae
+Ae
+Jp
+KC
+"}
+(6,1,1) = {"
+Cy
+KC
+bX
+xG
+Vl
+Tn
+bX
+AW
+Ox
+Ox
+bX
+ox
+YZ
+gQ
+Ml
+"}
+(7,1,1) = {"
+Cy
+bX
+bX
+tS
+ny
+CY
+VE
+zW
+Id
+qC
+bX
+WH
+KC
+YZ
+qK
+"}
+(8,1,1) = {"
+GL
+bX
+VE
+Om
+ny
+zU
+VE
+UL
+yi
+Dd
+eN
+Cy
+KC
+uj
+Ae
+"}
+(9,1,1) = {"
+KC
+bX
+VE
+zW
+Pz
+wR
+VE
+SC
+ar
+Ox
+bX
+jl
+KC
+KC
+YZ
+"}
+(10,1,1) = {"
+KC
+bX
+bX
+yf
+IE
+JW
+bX
+vl
+qE
+yr
+bX
+YZ
+KC
+KC
+YZ
+"}
+(11,1,1) = {"
+Cy
+qK
+bX
+bX
+bX
+ht
+bX
+Yb
+bX
+bX
+bX
+bX
+qK
+mZ
+KC
+"}
+(12,1,1) = {"
+dd
+KC
+qK
+dE
+bX
+ar
+Iy
+HF
+wG
+VE
+zq
+bX
+qK
+Nw
+La
+"}
+(13,1,1) = {"
+Cy
+KC
+Ae
+Ae
+bX
+kL
+bS
+gS
+bX
+Iy
+jN
+bX
+qK
+dE
+qK
+"}
+(14,1,1) = {"
+qK
+hh
+YZ
+YZ
+bX
+bX
+bX
+bX
+bX
+bX
+bX
+bX
+KC
+KC
+Ae
+"}
+(15,1,1) = {"
+PW
+Ae
+Nw
+Nw
+YZ
+Ch
+qK
+PU
+gQ
+KC
+Nw
+qK
+Ae
+PW
+aJ
+"}

@@ -21,8 +21,9 @@
 	melee_damage_lower = 45
 	melee_damage_upper = 70
 	vision_range = 2
+	armor_penetration = 50
 	aggro_vision_range = 3
-	environment_smash = ENVIRONMENT_SMASH_NONE
+	environment_smash = ENVIRONMENT_SMASH_WALLS
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
@@ -42,6 +43,13 @@
 	dodgetime = 0
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
+
+/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NOPAIN, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_BASHDOORS, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
 
 /mob/living/simple_animal/hostile/retaliate/rogue/cavetroll/death(gibbed)
 	..()

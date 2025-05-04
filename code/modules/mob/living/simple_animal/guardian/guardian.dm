@@ -51,7 +51,7 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	var/range = 10 //how far from the user the spirit can be
 	var/toggle_button_type = /atom/movable/screen/guardian/ToggleMode/Inactive //what sort of toggle button the hud uses
 	var/datum/guardianname/namedatum = new/datum/guardianname()
-	var/playstyle_string = span_holoparasitebold("I are a standard Guardian. You shouldn't exist!")
+	var/playstyle_string = span_holoparasitebold("I am a standard Guardian. You shouldn't exist!")
 	var/magic_fluff_string = span_holoparasite("I draw the Coder, symbolizing bugs and errors. This shouldn't happen! Submit a bug report!")
 	var/tech_fluff_string = span_holoparasite("BOOT SEQUENCE COMPLETE. ERROR MODULE LOADED. THIS SHOULDN'T HAPPEN. Submit a bug report!")
 	var/carp_fluff_string = span_holoparasite("CARP CARP CARP SOME SORT OF HORRIFIC BUG BLAME THE CODERS CARP CARP CARP")
@@ -126,8 +126,8 @@ GLOBAL_LIST_EMPTY(parasites) //all currently existing/living guardians
 	if(!summoner)
 		to_chat(src, span_holoparasitebold("For some reason, somehow, you have no summoner. Please report this bug immediately."))
 		return
-	to_chat(src, span_holoparasite("I are <font color=\"[namedatum.colour]\"><b>[real_name]</b></font>, bound to serve [summoner.real_name]."))
-	to_chat(src, span_holoparasite("I are capable of manifesting or recalling to my master with the buttons on my HUD. You will also find a button to communicate with [summoner.p_them()] privately there."))
+	to_chat(src, span_holoparasite("I am <font color=\"[namedatum.colour]\"><b>[real_name]</b></font>, bound to serve [summoner.real_name]."))
+	to_chat(src, span_holoparasite("I am capable of manifesting or recalling to my master with the buttons on my HUD. You will also find a button to communicate with [summoner.p_them()] privately there."))
 	to_chat(src, span_holoparasite("While personally invincible, you will die if [summoner.real_name] does, and any damage dealt to you will have a portion passed on to [summoner.p_them()] as you feed upon [summoner.p_them()] to sustain myself."))
 	to_chat(src, playstyle_string)
 

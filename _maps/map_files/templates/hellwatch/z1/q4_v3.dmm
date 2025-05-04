@@ -1,0 +1,419 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"bW" = (
+/obj/machinery/light/rogue/wallfire/candle/r,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eH" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"hU" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"iq" = (
+/obj/item/natural/rock,
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"iE" = (
+/obj/structure/fluff/walldeco/katholikos_banner/gani{
+	pixel_x = 33
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"iO" = (
+/obj/item/natural/stone,
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mf" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"mC" = (
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nG" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/totem,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"nI" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pm" = (
+/obj/item/roguegem/random,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pN" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"rM" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/effect/decal/cleanable/blood,
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_greater/fire_dancer,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"rP" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony,
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sc" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ss" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 5
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"sJ" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"uK" = (
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xq" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"xN" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"zn" = (
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"BE" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Df" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 10
+	},
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ed" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Go" = (
+/obj/effect/decal/cleanable/blood/tracks{
+	dir = 4
+	},
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/woods/churchfort/basement)
+"OF" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"OI" = (
+/obj/effect/decal/cleanable/blood/gibs/down,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Qc" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/underworld/road,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SY" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wn" = (
+/obj/structure/fluff/walldeco/katholikos_banner/mjallidhorn{
+	pixel_x = 33
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"YE" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZL" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ZZ" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood/tracks,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+iE
+bW
+Wn
+sc
+BE
+mC
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+mf
+"}
+(2,1,1) = {"
+mf
+mC
+mC
+mC
+mf
+mf
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(3,1,1) = {"
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(4,1,1) = {"
+KC
+KC
+KC
+KC
+KC
+KC
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(5,1,1) = {"
+KC
+xN
+KC
+CW
+CW
+KC
+KC
+KC
+xq
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(6,1,1) = {"
+Df
+CW
+CW
+CW
+iO
+eH
+nG
+KC
+KC
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(7,1,1) = {"
+ss
+OF
+ZZ
+OF
+OF
+Df
+CW
+CW
+KC
+xq
+xq
+xq
+xq
+xq
+xq
+"}
+(8,1,1) = {"
+CW
+CW
+CW
+iq
+CW
+ss
+Df
+xN
+KC
+KC
+xq
+xq
+xq
+xq
+xq
+"}
+(9,1,1) = {"
+KC
+CW
+CW
+KC
+KC
+nG
+ss
+Df
+nI
+KC
+xq
+xq
+xq
+xq
+xq
+"}
+(10,1,1) = {"
+KC
+CW
+SY
+KC
+KC
+KC
+hU
+sJ
+CW
+KC
+xq
+xq
+xq
+xq
+xq
+"}
+(11,1,1) = {"
+KC
+xN
+CW
+hU
+KC
+KC
+KC
+ss
+Df
+KC
+KC
+xq
+xq
+xq
+xq
+"}
+(12,1,1) = {"
+KC
+KC
+zn
+CW
+zn
+KC
+KC
+CW
+sJ
+xN
+KC
+xq
+xq
+xq
+xq
+"}
+(13,1,1) = {"
+xq
+KC
+nG
+CW
+zn
+CW
+Qc
+YE
+Go
+pN
+KC
+KC
+xq
+xq
+xq
+"}
+(14,1,1) = {"
+xq
+KC
+KC
+KC
+xN
+rP
+zn
+uK
+Ed
+OI
+zn
+KC
+xq
+xq
+xq
+"}
+(15,1,1) = {"
+xq
+xq
+xq
+KC
+KC
+KC
+KC
+ZL
+rM
+zn
+pm
+KC
+xq
+xq
+xq
+"}

@@ -27,7 +27,7 @@
 				return FALSE
 
 			user.visible_message(span_notice("[user] is slicing apart the [name]."), \
-								span_notice("I are slicing apart the [name]..."))
+								span_notice("I am slicing apart the [name]..."))
 			if(W.use_tool(src, user, 40, volume=50))
 				user.visible_message(span_notice("[user] slices apart the [name]."), \
 									span_notice("I slice apart the [name]!"))

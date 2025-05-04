@@ -1089,8 +1089,8 @@
 	vis_contents += flaggy
 	Stun(300)
 	Knockdown(300)
-	apply_status_effect(/datum/status_effect/debuff/breedable)
-	apply_status_effect(/datum/status_effect/debuff/submissive)
+	apply_status_effect(/datum/status_effect/debuff/yield)
+	apply_status_effect(/datum/status_effect/debuff/surrender)
 	src.visible_message(span_notice("[src] yields!"))
 	playsound(src, 'sound/misc/surrender.ogg', 100, FALSE, -1, ignore_walls=TRUE)
 	update_vision_cone()
@@ -1423,7 +1423,7 @@
 
 /mob/living/proc/can_use_guns(obj/item/G)//actually used for more than guns!
 	if(G.trigger_guard == TRIGGER_GUARD_NONE)
-		to_chat(src, span_warning("I are unable to fire this!"))
+		to_chat(src, span_warning("I am unable to fire this!"))
 		return FALSE
 	if(G.trigger_guard != TRIGGER_GUARD_ALLOW_ALL && !IsAdvancedToolUser())
 		to_chat(src, span_warning("I try to fire [G], but can't use the trigger!"))

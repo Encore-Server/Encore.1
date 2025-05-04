@@ -4,7 +4,7 @@
 	name = "Paladin"
 	tutorial = "Paladins are holy warriors who have taken sacred vows to uphold justice and righteousness. Often, they were promised redemption for past sins if they crusaded in the name of the gods."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	outfit = /datum/outfit/job/roguetown/adventurer/paladin
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	category_tags = list(CTAG_ADVENTURER)
@@ -15,21 +15,18 @@
 /datum/outfit/job/roguetown/adventurer/paladin/pre_equip(mob/living/carbon/human/H)
 	..()
 	cloak = /obj/item/clothing/cloak/tabard/crusader
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
 			cloak = /obj/item/clothing/cloak/tabard/crusader/visires
 		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
 			cloak = /obj/item/clothing/cloak/tabard/crusader/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
 		if(/datum/patron/all_aspect)
-			neck = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 		if(/datum/patron/heretic/devil) 
 			H.cmode_music = 'sound/music/combat_cult.ogg'
@@ -65,14 +62,14 @@
 			H.change_stat("strength", 2)
 			H.change_stat("constitution", 2) // Classic paladin is faster then the battle master.
 			H.change_stat("endurance", 1)
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 			beltr = /obj/item/rogueweapon/huntingknife
 			id = /obj/item/clothing/ring/silver
-			backr = /obj/item/rogueweapon/sword
+			backr = /obj/item/rogueweapon/sword/iron
 			backl = /obj/item/storage/backpack/rogue/satchel
 		if("Battle Master")
 			H.set_blindness(0)
@@ -99,8 +96,8 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 1)
 			H.change_stat("speed", -1)
-			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-			pants = /obj/item/clothing/under/roguetown/chainlegs
+			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
+			pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 			belt = /obj/item/storage/belt/rogue/leather/steel
 			beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -113,6 +110,27 @@
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/knight()
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	//Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
-	C.grant_spells_templar(H)
+	C.passive_devotion_gain += 0.1
+	C.grant_spells_templar(H) //Max devotion limit - Paladins are stronger but cannot pray to gain all abilities beyond t1
+	if(H.patron?.type == /datum/patron/elemental/gani) // Gani gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/slowdown_spell_aoe)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/acidsplash5e)
+	if(H.patron?.type == /datum/patron/elemental/mjallidhorn) // Mjallidhorn gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/divine_strike)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/snap_freeze)
+	if(H.patron?.type == /datum/patron/elemental/akan) // Akan gets two spells, because they've had a healing spell revoked.
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/gravity)
+	if(H.patron?.type == /datum/patron/elemental/visires)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heatmetal)
+	if(H.patron?.type == /datum/patron/elemental/iliope)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/mockery)
+	if(H.patron?.type == /datum/patron/elemental/golerkanh)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/hammerfall)
+	if(H.patron?.type == /datum/patron/all_aspect)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_arms)
+	if(H.patron?.type == /datum/patron/heretic/devil)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/call_to_slaughter)
+	if(H.patron?.type == /datum/patron/heretic/otherkind)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/fetch)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

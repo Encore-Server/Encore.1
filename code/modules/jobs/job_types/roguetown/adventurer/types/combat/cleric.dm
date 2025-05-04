@@ -3,7 +3,7 @@
 	name = "Cleric"
 	tutorial = "Clerics are wandering warriors of the Gods, an asset to any party."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_ALL_KINDS
+	allowed_races = RACES_TOLERATED_UP
 	vampcompat = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric
 	category_tags = list(CTAG_ADVENTURER)
@@ -13,18 +13,16 @@
 
 /datum/outfit/job/roguetown/adventurer/cleric/pre_equip(mob/living/carbon/human/H)
 	..()
-	switch(H.patron?.type)
-		if(/datum/patron/elemental/visires)
-			neck = /obj/item/clothing/neck/roguetown/psicross/visires
-		if(/datum/patron/elemental/akan)
-			neck = /obj/item/clothing/neck/roguetown/psicross/akan
-		if(/datum/patron/elemental/gani)
-			neck = /obj/item/clothing/neck/roguetown/psicross/gani
-		if(/datum/patron/elemental/mjallidhorn)
-			neck = /obj/item/clothing/neck/roguetown/psicross/mjallidhorn
-		if(/datum/patron/heretic/devil)
-			H.cmode_music = 'sound/music/combat_cult.ogg'
-			neck = /obj/item/roguekey/inhumen
+	if(H.patron?.amulet)
+		neck = H.patron.amulet
+	if(istype(H.patron, /datum/patron/heretic/devil))
+		H.cmode_music = 'sound/music/combat_cult.ogg'
+		neck = /obj/item/roguekey/inhumen
+	
+// Add druidic skill for Gani followers
+	if(istype(H.patron, /datum/patron/elemental/gani))
+		H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+		to_chat(H, span_notice("As a follower of Gani, you have innate knowledge of druidic magic."))
 
 	// CLASS ARCHETYPES
 	H.adjust_blindness(-3)
@@ -54,6 +52,10 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+			if(H.patron?.type == /datum/patron/elemental/gani)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+			if(H.patron?.type == /datum/patron/heretic/otherkind)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 			H.change_stat("intelligence", 2)
 			H.change_stat("perception", 1) // More intelligence and no speed penalty for Life Clerics.
 			H.change_stat("strength", 1)
@@ -80,6 +82,10 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+			if(H.patron?.type == /datum/patron/elemental/gani)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+			if(H.patron?.type == /datum/patron/heretic/otherkind)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 			H.change_stat("intelligence", 1)
 			H.change_stat("strength", 2)
 			H.change_stat("constitution", 2)
@@ -105,13 +111,17 @@
 			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+			if(H.patron?.type == /datum/patron/elemental/gani)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 2, TRUE)
+			if(H.patron?.type == /datum/patron/heretic/otherkind)
+				H.mind.adjust_skillrank(/datum/skill/magic/druidic, 3, TRUE)
 			H.change_stat("intelligence", 2)
 			H.change_stat("strength", -1)
 			H.change_stat("perception", 2)
 			H.change_stat("speed", 1)
 		// HEARTHSTONE ADDITION END
 
-	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
@@ -157,14 +167,19 @@
 				belt = /obj/item/storage/belt/rogue/leather/rope
 				shoes = /obj/item/clothing/shoes/roguetown/sandals
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
-		C.passive_devotion_gain += 0.25
+		C.passive_devotion_gain += 0.5
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
+		if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Here's where it starts getting messy
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
 		C.grant_spells(H) // don't give churn as an extra spell to cloistered since they get their patron's full spell list (up to t3)
 		START_PROCESSING(SSobj, C)
 	else
 // HEARTHSTONE ADDITION END
 		ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		var/datum/devotion/C = new /datum/devotion(H, H.patron)
+		C.passive_devotion_gain += 0.25
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal) //All clerics get miracle
+		if(H.patron?.type in list(/datum/patron/elemental/akan, /datum/patron/elemental/gani)) // Non-militant Akan and Gani clergy are supposed to have Fortify too
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)
 		C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)

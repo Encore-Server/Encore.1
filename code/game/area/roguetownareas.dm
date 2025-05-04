@@ -106,8 +106,24 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound = 'sound/music/area/townstreets.ogg'
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
+	ambush_types = list(
+				/turf/open/floor/rogue/dirt,
+				/turf/open/floor/rogue/grassyel,
+				/turf/open/floor/rogue/grasscold,
+				/turf/open/floor/rogue/grass,
+				/turf/open/floor/rogue/snow,
+				/turf/open/floor/rogue/snowpatchy,
+				/turf/open/floor/rogue/snowrough)
+	ambush_mobs = list(
+				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 10,
+				/mob/living/simple_animal/hostile/retaliate/rogue/orc = 15,
+				/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged = 15,
+				/mob/living/simple_animal/hostile/retaliate/rogue/orc/spear = 15,
+				/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder = 10,
+				/mob/living/simple_animal/hostile/retaliate/rogue/orc/orc_marauder/ravager = 5)
 	soundenv = 17
 	converted_type = /area/rogue/indoors/shelter/mountains
+
 /area/rogue/indoors/shelter/mountains
 	icon_state = "mountains"
 	droning_sound = 'sound/music/area/townstreets.ogg'
@@ -120,18 +136,18 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	first_time_text = "THE CANYON OF DECEPTION"
 
 /area/rogue/outdoors/mountains/decap
-	name = "mount miracle"
+	name = "mount miracle foothills"//Coastline of mount miracle
 	icon_state = "decap"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt)
 	ambush_mobs = list(
-				/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 30,
-				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
-				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 20)
+				/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll = 20,
+				/mob/living/carbon/human/species/skeleton/npc/ambush = 70,
+				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 30)
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "MOUNT DECAPITATION"
+	first_time_text = "MIRACLE FOOTHILLS"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 /area/rogue/indoors/shelter/mountains/decap
@@ -142,18 +158,34 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 
 /area/rogue/outdoors/mountains/decap/stepbelow
-	name = "mount miracle"
+	name = "mount miracle crypts"//One level above hell.
 	icon_state = "decap"
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt)
 	ambush_mobs = list(
-				/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 30,
-				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
-				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 20)
-	droning_sound = 'sound/music/area/decap_deeper.ogg'
+				/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll = 20,
+				/mob/living/simple_animal/hostile/rogue/skeleton/guard = 80,
+				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 30)
+	droning_sound = 'sound/misc/hel.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
-	first_time_text = "TARICHEA, VALLEY OF LOSS"
+	first_time_text = "PRECIPICE"
+	ambush_times = list("night","dawn","dusk","day")
+	converted_type = /area/rogue/indoors/shelter/mountains/decap
+
+
+/area/rogue/outdoors/mountains/decap/hell
+	name = "hell"//Welcome to hell, but literally
+	icon_state = "decap"
+	ambush_types = list(
+				/turf/open/floor/rogue/dirt)
+	ambush_mobs = list(
+				/mob/living/simple_animal/hostile/rogue/skeleton/guard = 80,//lmao
+				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 80)
+	droning_sound = 'sound/music/area/underworlddrone.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = null
+	first_time_text = "HELL"
 	ambush_times = list("night","dawn","dusk","day")
 	converted_type = /area/rogue/indoors/shelter/mountains/decap
 
@@ -209,15 +241,42 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 
 /area/rogue/outdoors/woods/lakeside
 	first_time_text = "THE HAMLET OF LAKESIDE"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/whisperen
 	first_time_text = "WEY WHISPEREN"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/berkleigh
 	first_time_text = "LODGE BERKLEIGH"
+	droning_sound = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_dusk = 'sound/music/area/creepy_woods.ogg'
+	droning_sound_night = 'sound/music/area/creepy_woods.ogg'
 
 /area/rogue/outdoors/woods/seculton
 	first_time_text = "SECULTON GATE"
+
+// Heavenscoast Church Fort, next to Seculton
+/area/rogue/outdoors/woods/churchfort
+	name = "fort_hellwatch"
+	icon_state = "indoors"
+	first_time_text = "FORT HELLWATCH"
+	droning_sound = 'sound/music/area/decap.ogg'
+
+/area/rogue/outdoors/woods/churchfort/basement
+	name = "hellwatch_basement"
+	icon_state = "cave"
+	droning_sound = 'sound/music/area/decap.ogg'
+
+/area/rogue/outdoors/woods/churchfort/basement/hell_crack
+	name = "hellwatch_crack"
+	icon_state = "cavelava"
+	first_time_text = "THE CRACK"
+	droning_sound = 'sound/music/area/siege.ogg'
 
 /area/rogue/outdoors/woods/northplains
 	first_time_text = "NORTHPLAINS"
@@ -283,6 +342,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 	converted_type = /area/rogue/under/lake
+
+/area/rogue/outdoors/beach/tutorial
+	first_time_text = "TUTORIAL ISLAND"
 
 /area/rogue/outdoors/beach/forest
 	name = "coastforest"
@@ -413,7 +475,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/under/cavelava
 	name = "cavelava"
 	icon_state = "cavelava"
-	first_time_text = "MOUNT DECAPITATION"
+	first_time_text = "UNDERCROFT"
 	ambientsounds = AMB_CAVELAVA
 	ambientnight = AMB_CAVELAVA
 	spookysounds = SPOOKY_CAVE
@@ -422,9 +484,8 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambush_types = list(
 				/turf/open/floor/rogue/dirt)
 	ambush_mobs = list(
-				/mob/living/simple_animal/hostile/retaliate/rogue/bigrat = 30,
-				/mob/living/carbon/human/species/skeleton/npc = 10,
-				/mob/living/carbon/human/species/goblin/npc/hell = 20,
+				/mob/living/carbon/human/species/skeleton/npc = 20,
+				/mob/living/carbon/human/species/goblin/npc/hell = 60,
 				/mob/living/simple_animal/hostile/retaliate/rogue/minotaur = 5)
 	droning_sound = 'sound/music/area/decap.ogg'
 	droning_sound_dusk = null
@@ -550,14 +611,14 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/shirleigh_keep.ogg'
 	keep_area = TRUE
 	town_area = TRUE
 
 /area/rogue/indoors/town/manor
 	name = "Manor"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/shirleigh_keep.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
@@ -627,6 +688,7 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
+	first_time_text = "ETGARD KEEP"
 	keep_area = TRUE
 
 /area/rogue/indoors/town/cell
@@ -732,6 +794,9 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	droning_sound_dusk = 'sound/music/area/septimus.ogg'
 	droning_sound_night = 'sound/music/area/sleeping.ogg'
 
+/area/rogue/outdoors/town/tutorial//For Tutorial Island, duh
+	first_time_text = "TUTORIAL CASTLE"
+	town_area = TRUE
 
 /area/rogue/outdoors/town/sargoth
 	name = "outdoors"

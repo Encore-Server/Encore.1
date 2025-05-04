@@ -109,7 +109,7 @@
 /obj/structure/chair/wood/rogue/chair3
 	icon_state = "chair3"
 	icon = 'icons/roguetown/misc/structure.dmi'
-	item_chair = /obj/item/chair/rogue
+	item_chair = /obj/item/chair/rogue/wood
 	blade_dulling = DULLING_BASHCHOP
 	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
 	attacked_sound = "woodimpact"
@@ -135,6 +135,10 @@
 	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
 	attacked_sound = "woodimpact"
 	sleepy = 0.35
+
+/obj/item/chair/rogue/wood
+	icon_state = "chair3"
+	origin_type = /obj/structure/chair/wood/rogue/chair3
 
 /obj/item/chair/rogue/getonmobprop(tag)
 	. = ..()

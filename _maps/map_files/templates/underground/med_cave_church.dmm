@@ -1,0 +1,467 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"eJ" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"fb" = (
+/obj/structure/fluff/railing/border,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"fd" = (
+/obj/structure/bed/rogue/shit,
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"fI" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"hg" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"iL" = (
+/obj/structure/chair/bench/church/mid{
+	dir = 1
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"kl" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"kA" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"mj" = (
+/obj/structure/closet/crate/chest/crate{
+	name = "produce crate"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"mP" = (
+/obj/item/clothing/neck/roguetown/psicross/silver,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"mR" = (
+/obj/item/natural/stone,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"nI" = (
+/obj/effect/decal/cobble/mossy{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"oe" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"pq" = (
+/obj/structure/bed/rogue/shit,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ry" = (
+/obj/item/natural/fibers,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"rN" = (
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"uM" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"vo" = (
+/turf/closed/wall/mineral/rogue/craftstone,
+/area/rogue/under/cave)
+"xd" = (
+/obj/structure/table/church,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"xB" = (
+/obj/structure/fluff/psycross{
+	pixel_y = 24
+	},
+/obj/effect/decal/cobble/mossy,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"yp" = (
+/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/area/rogue/under/cave)
+"zk" = (
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Ag" = (
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"Ak" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"BV" = (
+/obj/structure/fluff/railing/border{
+	dir = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"GI" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"JG" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"KY" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"LM" = (
+/obj/effect/decal/cobble/mossy,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"MH" = (
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"NT" = (
+/obj/structure/table/church/m,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/cobble/mossy,
+/area/rogue/under/cave)
+"ON" = (
+/obj/structure/fluff/railing/border{
+	dir = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"Pk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fermenting_barrel/blessedwine,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+"SQ" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
+/obj/structure/fluff/railing/border{
+	dir = 8
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"VX" = (
+/obj/structure/chair/bench/church/r,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"Wj" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"WT" = (
+/obj/effect/decal/cobbleedge{
+	dir = 1;
+	icon_state = "borderfall"
+	},
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/under/cave)
+"Yx" = (
+/obj/item/natural/dirtclod,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YB" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"YD" = (
+/obj/structure/fluff/railing/border,
+/obj/item/natural/feather,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/rogue/church,
+/area/rogue/under/cave)
+
+(1,1,1) = {"
+uM
+uM
+uM
+rN
+uM
+uM
+kA
+rN
+rN
+rN
+rN
+uM
+rN
+uM
+uM
+"}
+(2,1,1) = {"
+uM
+uM
+zk
+rN
+rN
+Yx
+rN
+rN
+uM
+uM
+rN
+rN
+rN
+rN
+uM
+"}
+(3,1,1) = {"
+uM
+rN
+rN
+rN
+uM
+rN
+rN
+uM
+uM
+uM
+uM
+rN
+rN
+rN
+YB
+"}
+(4,1,1) = {"
+rN
+rN
+yp
+yp
+yp
+uM
+uM
+uM
+uM
+vo
+vo
+vo
+vo
+rN
+rN
+"}
+(5,1,1) = {"
+uM
+rN
+yp
+fI
+Pk
+ON
+SQ
+Ag
+Ag
+VX
+Ag
+oe
+vo
+rN
+zk
+"}
+(6,1,1) = {"
+uM
+rN
+yp
+rN
+hg
+BV
+KY
+oe
+Yx
+rN
+rN
+oe
+vo
+rN
+uM
+"}
+(7,1,1) = {"
+rN
+rN
+rN
+kl
+nI
+YD
+WT
+rN
+uM
+rN
+mR
+oe
+kl
+kl
+uM
+"}
+(8,1,1) = {"
+rN
+rN
+yp
+LM
+GI
+xd
+JG
+mP
+uM
+uM
+aQ
+oe
+kl
+uM
+uM
+"}
+(9,1,1) = {"
+kA
+rN
+yp
+xB
+GI
+NT
+JG
+mR
+iL
+uM
+oe
+Wj
+rN
+rN
+kA
+"}
+(10,1,1) = {"
+rN
+rN
+yp
+eJ
+pq
+Ak
+WT
+oe
+VX
+ry
+oe
+oe
+vo
+rN
+rN
+"}
+(11,1,1) = {"
+uM
+rN
+yp
+fd
+MH
+fb
+WT
+Ag
+oe
+oe
+oe
+mj
+vo
+rN
+uM
+"}
+(12,1,1) = {"
+uM
+rN
+yp
+yp
+yp
+uM
+uM
+uM
+uM
+vo
+vo
+vo
+vo
+rN
+uM
+"}
+(13,1,1) = {"
+uM
+rN
+uM
+uM
+rN
+rN
+rN
+uM
+uM
+uM
+uM
+rN
+rN
+rN
+rN
+"}
+(14,1,1) = {"
+YB
+zk
+uM
+uM
+uM
+uM
+rN
+rN
+uM
+uM
+zk
+rN
+kA
+rN
+uM
+"}
+(15,1,1) = {"
+uM
+rN
+rN
+uM
+uM
+uM
+uM
+rN
+kA
+rN
+rN
+uM
+uM
+kA
+uM
+"}

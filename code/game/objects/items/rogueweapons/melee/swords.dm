@@ -99,7 +99,7 @@
 
 /obj/item/rogueweapon/sword/short
 	name = "short sword"
-	desc = "An archaic steel sword made for stabbing."
+	desc = "A short, steel sword made for stabbing."
 	force = 19
 	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short)
 	icon_state = "swordshort"
@@ -197,7 +197,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/roguebig_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/roguebig_righthand.dmi'
 	name = "judgement"
-	desc = "A sword with a silver grip, a topaz gem hilt and a steel blade, what more could a noble ask for."
+	desc = "A sword with a silver grip, a topaz gem hilt and a steel blade; what more could a noble ask for?"
 	parrysound = "bladedmedium"
 	swingsound = BLADEWOOSH_LARGE
 	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
@@ -435,7 +435,7 @@
 
 /obj/item/rogueweapon/sword/iron
 	name = "sword"
-	desc = "A simple iron sword, the most classical war weapon."
+	desc = "A simple iron sword, the classic weapon of war."
 	icon_state = "isword"
 	minstr = 6
 	smeltresult = /obj/item/ingot/iron
@@ -467,7 +467,7 @@
 
 /obj/item/rogueweapon/sword/iron/messer
 	name = "iron messer"
-	desc = "A single edged blade to slice and chop with."
+	desc = "A single edged blade with which to slice and chop."
 	icon_state = "imesser"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
 	gripped_intents = null
@@ -476,7 +476,7 @@
 
 /obj/item/rogueweapon/sword/sabre
 	name = "sabre"
-	desc = "A swift saber. Parries realiantly and strikes swiftly"
+	desc = "A swift saber. Parries reliably and strikes swiftly."
 	icon_state = "saber"
 	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust)
 	gripped_intents = null
@@ -495,7 +495,7 @@
 
 /obj/item/rogueweapon/sword/rapier
 	name = "rapier"
-	desc = "A duelist's weapon derived from western battlefield instruments, it features a tapered \
+	desc = "A duelist's weapon derived from western battlefield instruments. It features a tapered \
 	blade with a specialized stabbing tip."
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "rapier"
@@ -602,15 +602,15 @@
 
 /obj/item/rogueweapon/sword/rapier/dec
 	icon_state = "decrapier"
-	desc = "A fine duelist's instrument with a tapered thrusting blade. Its hilt is gilt in gold and inlaid, \
+	desc = "A fine duelist's instrument with a tapered thrusting blade. Its hilt is gilded in gold, \
 	and its blade bears twin inscriptions on either side. One reads, 'CAST IN THE NAME OF GODS' while the \
-	obverse reads, 'YE NOT GUILTY'."
+	reverse reads, 'YE NOT GUILTY'."
 	sellprice = 140
 
 /obj/item/rogueweapon/sword/rapier/lord
 	name = "sword of the Mad Duke"
-	desc = "A royal heirloom whose spiraling basket hilt is inlaid with fine cut gems. It bears the burnish of \
-	time, where once sharply defined features have been worn down by so many hands. An old rumor ties this implement \
+	desc = "A royal heirloom whose spiraling basket hilt is inlaid with fine cut gems. It bears the wear of \
+	time; once sharply defined features have been worn down by so many hands. An old rumor ties this implement \
 	to the siege that smashed the Mad Duke's keep to rubble, and burnt the Duke himself to cinders."
 	icon_state = "lordrap"
 	sellprice = 300

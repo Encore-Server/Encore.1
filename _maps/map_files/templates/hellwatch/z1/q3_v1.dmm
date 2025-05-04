@@ -1,0 +1,359 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"at" = (
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"bd" = (
+/obj/structure/fluff/walldeco/katholikos_banner/akan{
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"dB" = (
+/turf/closed/wall/mineral/rogue/stone/red_moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"eV" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"kg" = (
+/obj/structure/mineral_door/bars,
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"pY" = (
+/obj/structure/fluff/walldeco/chains,
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"vz" = (
+/obj/machinery/light/rogue/wallfire/candle/l,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"ys" = (
+/obj/machinery/light/rogue/wallfire/candle/blue,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yz" = (
+/obj/structure/fluff/walldeco/katholikos_banner/visires{
+	pixel_x = -31
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"yU" = (
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Be" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"CW" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Ho" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"JF" = (
+/obj/effect/decal/cleanable/blood/tracks,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"KC" = (
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Nk" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 4
+	},
+/obj/item/clothing/neck/roguetown/psicross/wood,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NE" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"NW" = (
+/obj/structure/table/wood{
+	icon_state = "largetable";
+	dir = 6
+	},
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"RH" = (
+/turf/closed/wall/mineral/rogue/stone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Tm" = (
+/obj/structure/bars,
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"TY" = (
+/obj/item/reagent_containers/food/snacks/smallrat,
+/turf/open/floor/rogue/concrete,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UB" = (
+/turf/closed/wall/mineral/rogue/stone/moss,
+/area/rogue/outdoors/woods/churchfort/basement)
+"UY" = (
+/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"WO" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+
+(1,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(2,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+"}
+(3,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+UB
+UB
+RH
+"}
+(4,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+UB
+UB
+UB
+RH
+RH
+Nk
+NW
+UB
+"}
+(5,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+UB
+NE
+KC
+TY
+Tm
+at
+yU
+RH
+"}
+(6,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+UB
+pY
+TY
+KC
+kg
+at
+at
+RH
+"}
+(7,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+RH
+UB
+UB
+RH
+ys
+at
+UY
+"}
+(8,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+pY
+KC
+KC
+Tm
+at
+WO
+yU
+"}
+(9,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+UB
+KC
+NE
+KC
+kg
+WO
+yU
+yU
+"}
+(10,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+UB
+RH
+RH
+UB
+ys
+at
+WO
+"}
+(11,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+UB
+NE
+KC
+KC
+Tm
+yU
+at
+Ho
+"}
+(12,1,1) = {"
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+KC
+pY
+KC
+kg
+yU
+at
+UB
+"}
+(13,1,1) = {"
+dB
+RH
+dB
+RH
+dB
+RH
+CW
+RH
+RH
+UB
+UB
+UB
+at
+yU
+UB
+"}
+(14,1,1) = {"
+yz
+vz
+bd
+yU
+eV
+RH
+CW
+CW
+CW
+CW
+CW
+RH
+RH
+UB
+UB
+"}
+(15,1,1) = {"
+JF
+JF
+JF
+Be
+eV
+dB
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+CW
+RH
+"}

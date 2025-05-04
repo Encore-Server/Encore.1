@@ -1,0 +1,409 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"aJ" = (
+/obj/structure/flora/roguetree/stump/burnt,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"dE" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"ei" = (
+/obj/item/rogueore/coal,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"ey" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"eD" = (
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"ht" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"jM" = (
+/obj/effect/roofing_helper/stone,
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/shelter/mountains)
+"qg" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"qK" = (
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"uj" = (
+/obj/effect/roofing_helper/snow,
+/turf/closed/mineral/random/rogue,
+/area/rogue/indoors/shelter/mountains)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+"yr" = (
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"yF" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ae" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains)
+"AW" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/stone,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Bubbly and warm!"
+	},
+/area/rogue/indoors/shelter/mountains)
+"Cy" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Dd" = (
+/obj/structure/flora/roguetree/burnt,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"Eu" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/materials,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/snowrough,
+/area/rogue/outdoors/mountains)
+"HL" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/indoors/shelter/mountains)
+"Io" = (
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"JS" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"KC" = (
+/turf/open/floor/rogue/snowpatchy,
+/area/rogue/outdoors/mountains)
+"Ne" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/snow,
+/turf/open/water/pond{
+	name = "hotspring";
+	desc = "Bubbly and warm!"
+	},
+/area/rogue/indoors/shelter/mountains)
+"Pk" = (
+/obj/effect/mist,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"Pn" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"Qu" = (
+/obj/machinery/light/rogue/campfire,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"Qz" = (
+/obj/item/natural/stone,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"RY" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"Wf" = (
+/obj/item/rogueore/coal,
+/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,
+/obj/effect/roofing_helper/snow,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/indoors/shelter/mountains)
+"YZ" = (
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains)
+
+(1,1,1) = {"
+YZ
+qK
+YZ
+YZ
+YZ
+YZ
+YZ
+yr
+YZ
+YZ
+YZ
+qK
+YZ
+qK
+YZ
+"}
+(2,1,1) = {"
+YZ
+qK
+YZ
+ht
+YZ
+YZ
+yr
+yr
+GL
+yr
+YZ
+YZ
+aJ
+qK
+qK
+"}
+(3,1,1) = {"
+YZ
+YZ
+GL
+Dd
+YZ
+uj
+jM
+jM
+jM
+jM
+YZ
+yr
+yf
+Ae
+qC
+"}
+(4,1,1) = {"
+qK
+YZ
+GL
+uj
+uj
+uj
+jM
+jM
+jM
+jM
+uj
+uj
+uj
+qK
+qK
+"}
+(5,1,1) = {"
+YZ
+YZ
+uj
+uj
+uj
+ei
+Pk
+Pn
+Qz
+RY
+qg
+uj
+jM
+jM
+YZ
+"}
+(6,1,1) = {"
+YZ
+KC
+uj
+uj
+Io
+dE
+AW
+AW
+Eu
+Pn
+eD
+RY
+jM
+jM
+YZ
+"}
+(7,1,1) = {"
+yf
+KC
+uj
+eD
+dE
+Ne
+Ne
+Ne
+dE
+Qu
+ei
+eD
+JS
+YZ
+YZ
+"}
+(8,1,1) = {"
+yf
+yr
+uj
+jM
+Pn
+AW
+AW
+AW
+AW
+qg
+qg
+af
+uj
+YZ
+YZ
+"}
+(9,1,1) = {"
+YZ
+yr
+uj
+jM
+Pk
+AW
+AW
+AW
+AW
+dE
+uj
+uj
+uj
+YZ
+qK
+"}
+(10,1,1) = {"
+YZ
+yr
+uj
+jM
+Eu
+Pk
+Pk
+dE
+dE
+uj
+uj
+uj
+yf
+YZ
+qK
+"}
+(11,1,1) = {"
+YZ
+Dd
+yr
+jM
+jM
+jM
+Pn
+Wf
+uj
+uj
+uj
+YZ
+yf
+qC
+qK
+"}
+(12,1,1) = {"
+YZ
+yr
+yr
+YZ
+uj
+uj
+uj
+uj
+uj
+HL
+YZ
+YZ
+YZ
+qK
+qK
+"}
+(13,1,1) = {"
+YZ
+YZ
+yr
+YZ
+yr
+yr
+YZ
+uj
+uj
+YZ
+YZ
+ey
+YZ
+qK
+YZ
+"}
+(14,1,1) = {"
+KC
+KC
+YZ
+yf
+YZ
+yr
+KC
+KC
+KC
+Cy
+KC
+YZ
+qK
+qK
+YZ
+"}
+(15,1,1) = {"
+KC
+yF
+KC
+YZ
+YZ
+YZ
+YZ
+KC
+KC
+yf
+YZ
+YZ
+YZ
+YZ
+YZ
+"}

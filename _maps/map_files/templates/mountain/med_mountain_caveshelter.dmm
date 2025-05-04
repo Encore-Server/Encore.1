@@ -1,0 +1,664 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aJ" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"bC" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 5
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"cs" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"cS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"cW" = (
+/obj/structure/spider/stickyweb,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"dE" = (
+/obj/item/rope,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"dF" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"et" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"eP" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/grass/yellow,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"eY" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/under/cave)
+"fv" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 6
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"fC" = (
+/obj/structure/fluff/railing/ledge,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"gB" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"ht" = (
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/stone,
+/obj/effect/spawner/lootdrop/roguetown/sewers,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"hN" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/stone{
+	dir = 6
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"iS" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-w"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-sread"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"kd" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"ke" = (
+/obj/structure/fluff/edge/natural/grass/yellow/corner{
+	dir = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"kh" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"lZ" = (
+/obj/structure/fluff/edge/natural/stone{
+	dir = 10
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"mS" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 4
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"nh" = (
+/obj/item/rogueweapon/stoneaxe,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"nu" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/fluff/railing/ledge{
+	dir = 4
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"pP" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/fluff/edge/natural/grass/yellow/corner,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"qr" = (
+/obj/structure/fluff/edge/natural/stone{
+	dir = 5
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"qv" = (
+/obj/effect/roofing_helper/stone,
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"qC" = (
+/obj/item/natural/rock,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"qG" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"qK" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 9
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"qX" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 1
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"rb" = (
+/obj/structure/fluff/railing/ledge{
+	dir = 4
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"rE" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 10
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"rZ" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"sC" = (
+/obj/structure/flora/roguegrass/water,
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"uj" = (
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"uI" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/stone{
+	dir = 9
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/water/pond,
+/area/rogue/under/cave)
+"xl" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"yf" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"yr" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"zr" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/structure/rack/rogue,
+/obj/item/rogueweapon/woodstaff,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ae" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 4
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"As" = (
+/turf/closed/mineral/random/rogue,
+/area/rogue/under/cave)
+"AW" = (
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"Bc" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"Cw" = (
+/obj/item/natural/rock,
+/obj/structure/fluff/edge/natural/grass/yellow/corner,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"Cy" = (
+/obj/structure/fluff/railing/ledge{
+	dir = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"Db" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Dd" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"GL" = (
+/obj/structure/flora/roguegrass,
+/obj/structure/flora/ausbushes/ywflowers,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"HK" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 8
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"HS" = (
+/obj/structure/fluff/railing/ledge{
+	dir = 9
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"Is" = (
+/obj/effect/decal/cobbleedge{
+	dir = 10;
+	icon_state = "cobbleedge-e"
+	},
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/structure/bed/rogue/shit{
+	name = "makeshift bed"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/twig,
+/area/rogue/under/cave)
+"Ix" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 5
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"Jk" = (
+/obj/structure/roguetent,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"KC" = (
+/obj/item/natural/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"KH" = (
+/obj/machinery/light/rogue/campfire/densefire,
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Lh" = (
+/obj/structure/flora/roguetree/stump,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"LY" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 9
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"Ne" = (
+/obj/structure/flora/roguegrass/pyroclasticflowers,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 9
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"Nu" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"OG" = (
+/obj/structure/fluff/edge/natural/grass/yellow,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"Rz" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cave)
+"RY" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"TX" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "cobbleedge-n"
+	},
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"UU" = (
+/obj/structure/fluff/railing/ledge{
+	dir = 5
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+"UV" = (
+/obj/structure/fluff/edge/natural/grass/yellow/corner{
+	dir = 1
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"Vs" = (
+/obj/structure/flora/roguegrass/water/reeds,
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 5
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"VY" = (
+/obj/structure/fluff/edge/natural/grass/yellow{
+	dir = 1
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"Wd" = (
+/obj/structure/flora/roguegrass/water,
+/obj/structure/fluff/edge/natural/grass/yellow/corner{
+	dir = 1
+	},
+/turf/open/water/pond,
+/area/rogue/outdoors/woods)
+"XU" = (
+/obj/structure/flora/roguegrass/bush,
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/woods)
+"Yj" = (
+/obj/effect/roofing_helper/stone,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/cave)
+"YZ" = (
+/obj/structure/flora/roguetree/stump/log,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods)
+
+(1,1,1) = {"
+Nu
+Nu
+AW
+Nu
+Nu
+aJ
+Nu
+Nu
+AW
+Nu
+Nu
+Nu
+Nu
+Nu
+dF
+"}
+(2,1,1) = {"
+Nu
+AW
+Bc
+qC
+qK
+Ae
+rE
+Nu
+GL
+qC
+kd
+Lh
+KC
+Nu
+Nu
+"}
+(3,1,1) = {"
+qC
+XU
+yf
+yr
+eP
+sC
+VY
+qv
+AW
+dF
+AW
+gB
+gB
+gB
+qC
+"}
+(4,1,1) = {"
+Nu
+Nu
+yf
+qK
+Wd
+uj
+qv
+qv
+qv
+qv
+qG
+kh
+Cw
+AW
+Nu
+"}
+(5,1,1) = {"
+YZ
+Nu
+qK
+UV
+sC
+qv
+qv
+qv
+qv
+qv
+qv
+Nu
+bC
+qG
+pP
+"}
+(6,1,1) = {"
+Nu
+Ne
+Wd
+qv
+qv
+qv
+qv
+Yj
+Jk
+Yj
+qv
+nu
+rb
+UU
+OG
+"}
+(7,1,1) = {"
+yf
+Vs
+qv
+qv
+ht
+qv
+qv
+Yj
+qv
+rZ
+qv
+qv
+yf
+fC
+OG
+"}
+(8,1,1) = {"
+yf
+qv
+qv
+zr
+xl
+dE
+qv
+Yj
+qv
+rZ
+Db
+eY
+Nu
+fC
+OG
+"}
+(9,1,1) = {"
+KC
+qv
+qv
+Rz
+Rz
+Is
+qv
+Yj
+qv
+rZ
+qv
+qv
+Nu
+fC
+OG
+"}
+(10,1,1) = {"
+qv
+qv
+cW
+et
+nh
+Rz
+TX
+rZ
+qv
+qv
+qv
+qv
+Cy
+HS
+OG
+"}
+(11,1,1) = {"
+qv
+uI
+lZ
+rZ
+iS
+Rz
+TX
+rZ
+qv
+qv
+qv
+mS
+mS
+mS
+ke
+"}
+(12,1,1) = {"
+qv
+qr
+hN
+KH
+rZ
+cS
+qv
+qv
+qv
+AW
+Lh
+AW
+Nu
+Nu
+Nu
+"}
+(13,1,1) = {"
+qv
+qv
+qv
+qv
+cW
+qv
+As
+AW
+RY
+AW
+AW
+Nu
+Nu
+qK
+rE
+"}
+(14,1,1) = {"
+cs
+Nu
+qv
+qv
+qv
+qv
+Nu
+dF
+yf
+gB
+KC
+Nu
+LY
+UV
+qX
+"}
+(15,1,1) = {"
+Nu
+qC
+Nu
+yf
+Nu
+Nu
+AW
+Dd
+Nu
+yf
+Nu
+Dd
+Ix
+HK
+fv
+"}
