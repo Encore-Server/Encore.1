@@ -51,10 +51,10 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 2)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
 			H.faction |= "undead"
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
 			C.passive_devotion_gain += 0.25
@@ -97,10 +97,10 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 2)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
 			H.faction |= "undead"
 			var/datum/devotion/C = new /datum/devotion(H, H.patron)
 			C.passive_devotion_gain += 0.25
@@ -141,10 +141,10 @@
 			H.change_stat("strength", 1)
 			H.change_stat("constitution", 2)
 			H.change_stat("endurance", 2)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/rituos)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
-			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/rituos)
 			H.faction |= "undead"
