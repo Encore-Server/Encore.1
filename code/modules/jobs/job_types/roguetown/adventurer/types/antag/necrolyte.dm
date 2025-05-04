@@ -1,46 +1,150 @@
 /datum/advclass/necromancer
 	name = "Necrolyte"
-	tutorial = "Ostracized by society for their dark magic, Necrolytes are heretical, secretive magicians whose curiosity has led them down darker avenues in pursuit of Lichdom. Ware the living, but especially the forces of the Katholikos - and their Inquisition most of all - for you are HERETIC. Claims of piety, nobility, or insanity will not save you from Judgement - regardless of your origin before you walked this dark path - for you defy the very design of the Elementals."
+	tutorial = "Ostracized by society for their dark magic, Necrolytes are heretical, secretive magicians whose curiosity has led them down darker avenues in pursuit of immortality, into the realm of Necromancy. Ware the living, but especially the forces of the Katholikos - and their Inquisition most of all - for you are HERETIC. Nothing will save you from Judgement, for you defy the very design of the Elementals. IMPORTANT NOTE: By playing this class, you must accept that you are overtly an ANTAGONIST. Other Bandit classes have a lot of leeway, but by learning Necromancy, you have made a conscious choice to overtly be an Evil Dude. Expect that people will (and should) try to straight-up kill you. Try to make it fun for everyone in your time alive."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	outfit = /datum/outfit/job/roguetown/adventurer/necromancer
-	traits_applied = list(TRAIT_ZOMBIE_IMMUNE)
+	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_NOSTINK)
 	category_tags = list(CTAG_DISABLED)
+	cmode_music = 'sound/music/combat_cult.ogg'
 
 /datum/outfit/job/roguetown/adventurer/necromancer/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/necromhood
-	pants = /obj/item/clothing/under/roguetown/trou/leather
-	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	armor = /obj/item/clothing/suit/roguetown/shirt/robe/necromancer
-	belt = /obj/item/storage/belt/rogue/leather/rope
-	backl = /obj/item/storage/backpack/rogue/satchel
-	beltr = /obj/item/flashlight/flare/torch/lantern/bronzelamptern
-	beltl = /obj/item/rogueweapon/huntingknife
-	r_hand = /obj/item/rogueweapon/woodstaff/wizard
-	H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/magic/arcane, 5, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
-	H.change_stat("strength", -1)
-	H.change_stat("intelligence", 3)
-	H.change_stat("constitution", -2)
-	H.change_stat("endurance", -1)
-	H.change_stat("speed", -1)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
-	H.faction |= "undead"
+	H.adjust_blindness(-3)
+	var/classes = list("Infernal Necrolyte","Eldritch Necrolyte", "Godless Necrolyte")
+	var/classchoice = input("Choose your archetypes", "Available archetypes") as anything in classes
+
+	switch(classchoice)
+
+		if("Infernal Necrolyte")
+			H.set_blindness(0)
+			to_chat(H, span_warning("You are a Necrolyte and cultist who has sworn fealty to the Hells and its Archdevils. Revel in blood and gore, and let the disquiet dead be the vanguard for the inevitable coming of Hell and its legions."))
+			H.set_patron(/datum/patron/heretic/devil)
+			head = /obj/item/clothing/head/roguetown/necromhood
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+			neck = /obj/item/clothing/neck/roguetown/skullamulet
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necromancer
+			belt = /obj/item/storage/belt/rogue/leather/rope
+			backl = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/rogueweapon/sword/long/blackflamb
+			beltr = /obj/item/flashlight/flare/torch/lantern/bronzelamptern
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
+			backpack_contents = list(/obj/item/ritechalk = 1, /obj/item/rogueweapon/huntingknife = 1)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/ritual, 5, TRUE)
+			H.change_stat("intelligence", 2)
+			H.change_stat("perception", 1)
+			H.change_stat("strength", 1)
+			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 2)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.faction |= "undead"
+			var/datum/devotion/C = new /datum/devotion(H, H.patron)
+			C.passive_devotion_gain += 0.25
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+			C.grant_spells(H)
+			H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+		if("Eldritch Necrolyte")
+			H.set_blindness(0)
+			to_chat(H, span_warning("You are a Necrolyte that swears fealty to one of the Secret Gods beyond counting. Carry out your patron's shadowy goals, whatever they may be, and leverage the dead to your advantage in doing such."))
+			H.set_patron(/datum/patron/heretic/otherkind)
+			head = /obj/item/clothing/head/roguetown/necromhood
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+			neck = /obj/item/clothing/neck/roguetown/skullamulet
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necromancer
+			belt = /obj/item/storage/belt/rogue/leather/rope
+			backl = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/rogueweapon/woodstaff/naledi
+			beltr = /obj/item/flashlight/flare/torch/lantern/bronzelamptern
+			beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
+			backpack_contents = list(/obj/item/ritechalk = 1, /obj/item/rogueweapon/huntingknife = 1)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/druidic, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/ritual, 5, TRUE)
+			H.change_stat("intelligence", 2)
+			H.change_stat("perception", 1)
+			H.change_stat("strength", 1)
+			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 2)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.faction |= "undead"
+			var/datum/devotion/C = new /datum/devotion(H, H.patron)
+			C.passive_devotion_gain += 0.25
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_heal)
+			C.grant_spells(H)
+			H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+		if("Godless Necrolyte")
+			H.set_blindness(0)
+			to_chat(H, span_warning("You are a Necrolyte that swears fealty to no god or deity, a magician fallen from grace for your heresy. Carry out your own personal goals, whatever they may be, and leverage the remains of the dead to accomplish them. The age of Gods will end, it must."))
+			H.set_patron(/datum/patron/godless)
+			head = /obj/item/clothing/head/roguetown/necromhood
+			pants = /obj/item/clothing/under/roguetown/trou/leather
+			shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
+			neck = /obj/item/clothing/neck/roguetown/skullamulet
+			armor = /obj/item/clothing/suit/roguetown/shirt/robe/necromancer
+			belt = /obj/item/storage/belt/rogue/leather/rope
+			backl = /obj/item/storage/backpack/rogue/satchel
+			backr = /obj/item/rogueweapon/woodstaff/wizard
+			beltr = /obj/item/flashlight/flare/torch/lantern/bronzelamptern
+			beltl = /obj/item/book/granter/spellbook/magician
+			backpack_contents = list(/obj/item/ritechalk = 1, /obj/item/rogueweapon/huntingknife = 1, /obj/item/storage/belt/rogue/pouch/coins/rich = 1, /datum/reagent/medicine/healthpotnew = 1)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/ritual, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 6, TRUE)
+			H.change_stat("intelligence", 2)
+			H.change_stat("perception", 1)
+			H.change_stat("strength", 1)
+			H.change_stat("constitution", 2)
+			H.change_stat("endurance", 2)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/rituos)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/bonechill)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_lesser_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/raise_undead)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/sickness)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
+			H.faction |= "undead"
