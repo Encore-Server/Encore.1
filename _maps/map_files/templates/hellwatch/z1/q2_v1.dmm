@@ -10,6 +10,10 @@
 /obj/item/natural/cloth,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/outdoors/woods/churchfort/basement)
+"mv" = (
+/obj/structure/trap/spider,
+/turf/open/water/bath,
+/area/rogue/outdoors/woods/churchfort/basement)
 "qa" = (
 /obj/effect/decal/cobbleedge{
 	dir = 8
@@ -17,9 +21,7 @@
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/outdoors/woods/churchfort/basement)
 "qy" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "CW" = (
@@ -44,6 +46,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "PQ" = (
 /obj/structure/mirror,
+/obj/structure/trap/skeleton,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "UH" = (
@@ -175,7 +178,7 @@ CW
 CW
 CW
 KC
-UH
+mv
 UH
 UH
 KC
@@ -228,7 +231,7 @@ CW
 KC
 UQ
 Gv
-JX
+qy
 KC
 KC
 KC
