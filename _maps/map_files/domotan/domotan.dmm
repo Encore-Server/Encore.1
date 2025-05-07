@@ -22828,10 +22828,6 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
-"tLb" = (
-/obj/structure/flora/roguegrass/maneater/real,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/under/cavewet)
 "tLg" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cavewet)
@@ -68248,7 +68244,7 @@ bKo
 bKo
 tLg
 laU
-tLb
+bKo
 bKo
 vUz
 nsQ

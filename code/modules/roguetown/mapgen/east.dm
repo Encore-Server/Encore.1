@@ -21,7 +21,6 @@
 							/obj/structure/flora/roguetree/stump = 4,
 							/obj/structure/flora/roguegrass/bush = 25,
 							/obj/structure/flora/roguegrass = 53,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/item/natural/stone = 43,
 							/obj/item/natural/rock = 23,
 							/obj/item/grown/log/tree/stick = 16,
@@ -42,7 +41,6 @@
 							/obj/structure/flora/roguetree/stump = 4,
 							/obj/structure/flora/roguegrass/bush = 25,
 							/obj/structure/flora/roguegrass = 53,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/item/natural/stone = 43,
 							/obj/item/natural/rock = 23,
 							/obj/item/grown/log/tree/stick = 16,
@@ -61,7 +59,6 @@
 							/obj/structure/flora/roguetree/stump/burnt = 11,
 							/obj/structure/flora/roguegrass/bush = 25,
 							/obj/structure/flora/roguegrass = 53,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/item/natural/stone = 43,
 							/obj/item/natural/rock = 23,
 							/obj/item/grown/log/tree/stick = 16,
@@ -78,7 +75,6 @@
 	excluded_turfs = list(/turf/open/floor/rogue/dirt/road, /turf/open/lava)
 	spawnableAtoms = list(/obj/structure/flora/rogueshroom=20,
 							/obj/structure/roguerock=25,
-							/obj/structure/flora/roguegrass/maneater = 43,
 							/obj/item/natural/stone = 43,
 							/obj/item/natural/rock = 23,
 							/obj/structure/closet/dirthole/closed/loot=15)

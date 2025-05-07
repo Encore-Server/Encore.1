@@ -1,0 +1,10 @@
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - rscadd: "The pillar of bodies will scream now."
+  - rscadd: "Adds ents, big tree mobs that are kinda scary but don't attack if you don't get close."
+  - rscadd: "Adds more flowers to the world generators for the Weeping Wood and the County of Etgard because they looked kinda dull before."
+  - rscadd: "Adjusted fiend behavior. Stationary fiends shouldn't move anymore, and chargers will actually charge you at ludicrous speeds."
+  - rscdel: "Removed random maneater spawns from all areas, and mapped in maneaters are all gone now."
