@@ -1,0 +1,7 @@
+
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - rscadd: "Adds a verb to spawn checkpoints. To be used in events to give players an alternative method to depart long dungeons, as well as an OOC safe zone. It is located in the admin tab."

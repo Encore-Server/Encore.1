@@ -164,3 +164,22 @@
 	bound_width = 96
 	appearance_flags = NONE
 	opacity = FALSE
+
+//Dungeon helpers
+//checkpoints, these are basically travel portals. Can be spawned via admin tools as well
+/obj/structure/fluff/traveltile/checkpoint
+	name = "idol of respite"
+	desc = "A common sight of the most archaic subterranean miracles strewn about the world. This faceless totem of stone is welcome by explorers thanks to its ability to repel beasts, demons and creatures of the night. Its impenetrable surface leaves much mystery about its origins, however. Typically, the first in any delve will have no connection to those deeper within- they only work as methods to exit, not to go deeper."
+	icon = 'icons/obj/structures/truetech.dmi'
+	icon_state = "totem"
+	density = TRUE
+	aportalid = "first_checkpoint"
+	aportalgoesto = "dead_end_checkpoint"//to avoid someone mapping in an exit by accident
+
+/obj/structure/fluff/traveltile/checkpoint/second
+	aportalid = "second_checkpoint"
+	aportalgoesto = "first_checkpoint"//these only go backwards
+
+/obj/structure/fluff/traveltile/checkpoint/third
+	aportalid = "third_checkpoint"
+	aportalgoesto = "second_checkpoint"//these only go backwards

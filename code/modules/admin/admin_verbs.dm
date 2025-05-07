@@ -134,6 +134,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/show_tip,
 	/client/proc/smite,
 	/client/proc/admin_away,
+	/client/proc/event_checkpoint,
 	/client/proc/roll_admin_dice
 	))
 GLOBAL_PROTECT(admin_verbs_fun)
