@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"an" = (
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/cobble,
+/area/rogue/outdoors/woods/churchfort/basement)
 "as" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/blocks/green,
@@ -27,8 +31,7 @@
 "eh" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Alchemy";
-	dir = 4;
-	locked = 1
+	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -239,8 +242,7 @@
 "LF" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Reagent Stores";
-	dir = 1;
-	locked = 1
+	dir = 1
 	},
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -274,6 +276,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "OQ" = (
 /obj/machinery/light/rogue/torchholder/r,
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/outdoors/woods/churchfort/basement)
 "PW" = (
@@ -352,6 +355,10 @@
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /obj/item/needle,
 /obj/item/needle,
+/turf/open/floor/rogue/blocks/green,
+/area/rogue/outdoors/woods/churchfort/basement)
+"Wj" = (
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "WZ" = (
@@ -542,7 +549,7 @@ tU
 cf
 cf
 tU
-dd
+Wj
 dd
 UL
 tU
@@ -555,7 +562,7 @@ ro
 as
 ro
 tU
-CW
+an
 Gm
 dd
 LF

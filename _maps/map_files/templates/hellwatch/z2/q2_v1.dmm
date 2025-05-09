@@ -335,10 +335,6 @@
 /mob/living/carbon/human/species/goblin/npc/ambush/cave,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/woods/churchfort/basement)
-"Wo" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/hell,
-/turf/open/floor/rogue/cobble,
-/area/rogue/outdoors/woods/churchfort/basement)
 "XV" = (
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
@@ -479,7 +475,7 @@ vJ
 "}
 (8,1,1) = {"
 Yk
-Wo
+VP
 LT
 bq
 bq

@@ -7,6 +7,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/churchfort/basement)
 "am" = (
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "bD" = (
@@ -39,6 +40,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "fN" = (
 /obj/machinery/light/rogue/torchholder/c,
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "fY" = (
@@ -243,12 +245,6 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "wE" = (
 /turf/closed/wall/mineral/rogue/stone/red_moss,
-/area/rogue/outdoors/woods/churchfort/basement)
-"wF" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
-/turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "yv" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -732,7 +728,7 @@ Wu
 (12,1,1) = {"
 qt
 fN
-wF
+am
 am
 kr
 im

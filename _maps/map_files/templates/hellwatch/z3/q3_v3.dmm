@@ -207,16 +207,12 @@
 "yo" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "AT" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Bi" = (
@@ -276,9 +272,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "HS" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Ij" = (
@@ -343,9 +337,7 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "PT" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Qu" = (
@@ -492,7 +484,7 @@ JO
 Og
 Se
 CW
-CW
+PT
 CW
 OY
 CW
@@ -508,7 +500,7 @@ KC
 Wm
 LC
 Bi
-CW
+PT
 CW
 qj
 lN
@@ -525,7 +517,7 @@ KC
 JO
 Qu
 Sa
-CW
+PT
 CW
 qj
 hH
@@ -557,7 +549,7 @@ KC
 KC
 KC
 Wm
-CW
+PT
 OY
 CW
 yo
@@ -614,7 +606,7 @@ Bi
 xi
 Uz
 CW
-CW
+PT
 Wm
 JO
 Wf
