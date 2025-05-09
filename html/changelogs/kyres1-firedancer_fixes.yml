@@ -1,0 +1,9 @@
+
+author: "kyres1"
+
+delete-after: True
+
+changes:
+  - bugfix: "Fixes upgraded fire dancers not having functioning projectiles."
+  - bugfix: "Fixes more double turf map errors in Mount Miracle."
+  - bugfix: "Fixes lava runtimes by disabling unused Hell templates."
