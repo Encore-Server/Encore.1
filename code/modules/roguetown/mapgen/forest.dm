@@ -18,7 +18,6 @@
 	spawnableAtoms = list(/obj/structure/flora/newtree = 30,
 							/obj/structure/flora/roguegrass/bush = 25,
 							/obj/structure/flora/roguegrass = 26,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/structure/flora/roguegrass/swampweed = 15,
 							/obj/structure/flora/roguegrass/pyroclasticflowers = 1,
 							/obj/item/natural/stone = 23,
@@ -26,8 +25,7 @@
 							/obj/item/grown/log/tree/stick = 16,
 							/obj/structure/flora/roguetree/stump/log = 3,
 							/obj/structure/flora/roguetree/stump = 4,
-							/obj/structure/closet/dirthole/closed/loot=3,
-							/obj/structure/flora/roguegrass/maneater/real=3)
+							/obj/structure/closet/dirthole/closed/loot=3,)
 	spawnableTurfs = list(/turf/open/floor/rogue/dirt/road=2,
 						/turf/open/water/swamp=1)
 	allowed_areas = list(/area/rogue/outdoors/woods, /area/rogue/outdoors/rtfield, /area/rogue/outdoors/beach/forest, /area/rogue/outdoors/woods/berkleigh)
@@ -53,8 +51,6 @@
 							/obj/structure/flora/roguetree/wise=1,
 							/obj/structure/flora/roguegrass/bush = 25,
 							/obj/structure/flora/roguegrass = 44,
-							/obj/structure/flora/roguegrass/maneater = 13,
-							/obj/structure/flora/roguegrass/maneater/real=2,
 							/obj/structure/flora/roguegrass/swampweed = 15,
 							/obj/item/natural/stone = 6,
 							/obj/item/natural/rock = 1,
@@ -87,15 +83,13 @@
 							/obj/structure/flora/ausbushes/brflowers = 38,
 							/obj/structure/flora/ausbushes/grassybush = 38,
 							/obj/structure/flora/ausbushes/fernybush = 38,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/structure/flora/roguegrass/pyroclasticflowers = 5,
 							/obj/item/natural/stone = 23,
 							/obj/item/natural/rock = 6,
 							/obj/item/grown/log/tree/stick = 25,
 							/obj/structure/flora/roguetree/stump/log = 11,
 							/obj/structure/flora/roguetree/stump = 4,
-							/obj/structure/closet/dirthole/closed/loot = 3,
-							/obj/structure/flora/roguegrass/maneater/real = 15)
+							/obj/structure/closet/dirthole/closed/loot = 3)
 	spawnableTurfs = list()
 	allowed_areas = list(/area/rogue/outdoors/woods, /area/rogue/outdoors/woods/west, /area/rogue/outdoors/beach/forest)
 
@@ -109,11 +103,9 @@
 	spawnableAtoms = list(/obj/structure/flora/roguegrass = 78,
 							/obj/structure/flora/roguetree/burnt = 18,
 							/obj/structure/flora/ausbushes/sparsegrass = 58,
-							/obj/structure/flora/roguegrass/maneater = 13,
 							/obj/item/natural/stone = 25,
 							/obj/item/natural/rock = 25,
-							/obj/structure/closet/dirthole/closed/loot = 15,
-							/obj/structure/flora/roguegrass/maneater/real = 35)
+							/obj/structure/closet/dirthole/closed/loot = 15)
 	spawnableTurfs = list(/turf/open/floor/rogue/sand = 5)
 	allowed_areas = list(/area/rogue/outdoors/woods/west/crags)
 
@@ -127,13 +119,11 @@
 	spawnableAtoms = list(/obj/structure/flora/roguegrass = 38,
 							/obj/structure/flora/roguetree/burnt = 18,
 							/obj/structure/flora/roguegrass/thorn_bush = 28,
-							/obj/structure/flora/roguegrass/maneater = 45,
 							/obj/item/natural/stone = 15,
 							/obj/item/natural/rock = 5,
 							/obj/item/grown/log/tree/stick = 25,
 							/obj/structure/flora/roguegrass/swampweed = 15,
-							/obj/structure/closet/dirthole/closed/loot = 5,
-							/obj/structure/flora/roguegrass/maneater/real = 35)
+							/obj/structure/closet/dirthole/closed/loot = 5)
 	allowed_areas = list(/area/rogue/outdoors/woods/west/thornbed)
 
 //Lonely Eerie
@@ -168,7 +158,6 @@
 							/obj/structure/spacevine = 23,
 							/obj/structure/spider/stickyweb = 13,
 							/obj/effect/decal/cleanable/dirt = 23,
-							/obj/structure/flora/roguegrass/maneater = 53,
 							/obj/structure/closet/dirthole/closed/loot=15,
 							/obj/item/natural/stone = 24,
 							/obj/item/natural/rock = 8, 

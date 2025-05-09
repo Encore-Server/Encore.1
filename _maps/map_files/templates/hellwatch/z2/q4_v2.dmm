@@ -351,6 +351,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "JR" = (
 /obj/machinery/light/rogue/torchholder/c,
+/obj/structure/trap/skeleton,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Kd" = (
@@ -439,6 +440,10 @@
 	redstone_id = "church_keep_courtyard_gate_2"
 	},
 /turf/open/floor/rogue/blocks/bluestone,
+/area/rogue/outdoors/woods/churchfort/basement)
+"SB" = (
+/obj/structure/trap/spider,
+/turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "SV" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -730,7 +735,7 @@ sz
 (12,1,1) = {"
 Jq
 JR
-XB
+SB
 XB
 up
 KC

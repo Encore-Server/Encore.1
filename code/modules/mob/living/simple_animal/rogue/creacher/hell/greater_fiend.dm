@@ -148,4 +148,4 @@
 	name = "crazed infernal dancer"
 	health = 125//These things are extremely brutal. May as well cut people some slack
 	maxHealth = 125
-	projectiletype = /obj/item/ammo_casing/caseless/rogue/bolt/pyro//lmao
+	projectiletype = /obj/projectile/bullet/bolt/pyro//lmao
