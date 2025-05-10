@@ -230,6 +230,9 @@
 	icon_state = "smoke"
 	duration = 50
 
+/obj/effect/temp_visual/small_smoke/gunpowdersmoke
+	duration = 15
+
 /obj/effect/temp_visual/small_smoke/halfsecond
 	duration = 5
 
