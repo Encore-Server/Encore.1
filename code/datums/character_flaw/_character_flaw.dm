@@ -17,6 +17,10 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Wood Arm (L)"=/datum/charflaw/limbloss/arm_l,
 	"Peg Leg (R)" = /datum/charflaw/limbloss/leg_r,
 	"Peg Leg (L)" = /datum/charflaw/limbloss/leg_l,
+	"Bronze Arm (R)"=/datum/charflaw/limbloss/arm_r_bronze,
+	"Bronze Arm (L)"=/datum/charflaw/limbloss/arm_l_bronze,
+	"Bronze Leg (R)" = /datum/charflaw/limbloss/leg_r_bronze,
+	"Bronze Leg (L)" = /datum/charflaw/limbloss/leg_l_bronze,
 	"Random or No Flaw"=/datum/charflaw/randflaw,
 	"No Flaw"=/datum/charflaw/eznoflaw
 	))
