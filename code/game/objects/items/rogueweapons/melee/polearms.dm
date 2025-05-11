@@ -488,9 +488,11 @@
 	clickcd = 10
 
 /obj/item/rogueweapon/woodstaff/naledi
-	name = "naledian warstaff"
-	desc = "A staff carrying the crescent moon of Psydon's knowledge, as well as the black and gold insignia of the war scholars."
+	name = "crescent warstaff"
+	desc = "A staff carrying the crescent moon of the Dark Wanderer, inscribed in black and gold. Sometimes carried by pupils of the Sun's Science, those educated in Sultanate astronomy."
 	icon_state = "naledistaff"
+	force = 25
+	force_wielded = 28
 
 /obj/item/rogueweapon/woodstaff/wizard
 	name = "wizard staff"
