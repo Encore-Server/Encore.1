@@ -21,7 +21,7 @@
 /obj/structure/ritualcircle/astrata
 	name = "Rune of the Sun" // defines name of the circle itself
 	icon_state = "astrata_chalky" // the icon state, so, the sprite the runes use on the floor. As of making, we have 6, each needs an active/inactive state. 
-	desc = "A Sun Rune. Reading it leaves you feeling warm." // description on examine
+	desc = "A rune depicting the Sun. Reading it leaves you feeling warm." // description on examine
 	var/solarrites = list("Guiding Light") // This is important - This is the var which stores every ritual option available to a ritualist - Ideally, we'd have like, 3 for each God. Right now, just 1.
 
 /obj/structure/ritualcircle/astrata/attack_hand(mob/living/user)
@@ -80,7 +80,7 @@
 /obj/structure/ritualcircle/noc
 	name = "Rune of the Moon"
 	icon_state = "noc_chalky"
-	desc = "A Moon Rune. Reading it leaves you feeling a light chill."
+	desc = "A rune depicting the Moon. Reading it leaves you feeling a light chill."
 	var/lunarrites = list("Moonlight Dance") // list for more to be added later
 
 /obj/structure/ritualcircle/noc/attack_hand(mob/living/user)
@@ -110,7 +110,7 @@
 			if(do_after(user, 50))
 				user.say("I beseech the Dark Wanderer, hidden moon of the night sky!!")
 				if(do_after(user, 50))
-					user.say("To bring Wisdom obscrured from the Blind God's eye!!")
+					user.say("To bring Wisdom obscured from the Blind God's eye!!")
 					if(do_after(user, 50))
 						user.say("Place your gaze upon me, o' Wanderer on high!! Draw your hidden knowledge nigh!!")
 						to_chat(user,span_cultsmall("You feel the eye of the moon drawn upon you. The Dark Wanderer is oft obscured without the Worldflame's intercession. With some effort, it can be drawn upon by supplicants, even through the cloud of dark."))
