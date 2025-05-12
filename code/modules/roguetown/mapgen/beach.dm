@@ -16,7 +16,6 @@
 	spawnableAtoms = list(/obj/structure/flora/newtree = 15,
 							/obj/structure/flora/roguegrass/bush = 13,
 							/obj/structure/flora/roguegrass = 40,
-							/obj/structure/flora/roguegrass/maneater = 16,
 							/obj/item/natural/stone = 18,
 							/obj/item/natural/rock = 2,
 							/obj/item/grown/log/tree/stick = 3,
