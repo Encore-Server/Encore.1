@@ -75,6 +75,7 @@
 #define TRAIT_CABAL "of the One Envy" //Jealous God cultists recognize each other too
 #define TRAIT_HORDE "Daemonic" //Archdevils also recognize each other
 #define TRAIT_DEPRAVED "Deceiver" //Secret heretics recognize each other
+#define TRAIT_NECROMANCER "Necromancer"
 
 #define TRAIT_BASHDOORS "bashdoors"
 #define TRAIT_NOMOOD "no_mood"
@@ -180,6 +181,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_BIGGUY = span_info("My immense frame and size allows me to smash through wooden doors, and throw people more easily."),
 	TRAIT_DEATHBARGAIN = span_info("A horrible deal has been prepared in your name. May you never see it fulfilled..."),
 	TRAIT_RITUALIST = span_info("I am skilled in art of using rituals."),
+	TRAIT_NECROMANCER = span_necrosis("I am an adept of the dark art of Necromancy. Even those uninitiated in the arcane will sense the dreadful magic upon me."),
 ))
 
 // trait accessor defines

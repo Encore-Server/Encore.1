@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_NOSTINK)
+	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_NOSTINK, TRAIT_NECROMANCER)
 	category_tags = list(CTAG_DISABLED)
 	cmode_music = 'sound/music/combat_cult.ogg'
 
