@@ -120,6 +120,8 @@
 			. += span_notice("Daemonic!")
 		else if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(user, TRAIT_DEPRAVED))
 			. += span_notice("Deceiver!")
+		else if(HAS_TRAIT(src, TRAIT_NECROMANCER) && HAS_TRAIT(user, TRAIT_NECROMANCER))
+			. += span_notice("Necromancer!")
 
 	if(leprosy == 1)
 		. += span_necrosis("A LEPER...")
