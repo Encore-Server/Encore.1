@@ -9,6 +9,8 @@
 		user.add_stress(/datum/stressevent/jesterphobia)
 	if(HAS_TRAIT(src, TRAIT_BEAUTIFUL))
 		user.add_stress(/datum/stressevent/beautiful)
+	if(HAS_TRAIT(src, TRAIT_NECROMANCER))
+		user.add_stress(/datum/stressevent/necromancer)
 
 /mob/living/carbon/human/examine(mob/user)
 	var/observer_privilege = isobserver(user)
