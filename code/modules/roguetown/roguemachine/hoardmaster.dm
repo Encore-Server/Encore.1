@@ -106,6 +106,8 @@
 			unlocked_cats+="Knave"
 		if("Iconoclast")
 			unlocked_cats+="Iconoclast"
+		if("Necrolyte")
+			unlocked_cats+="Mage"
    
 	if(current_cat == "1")
 		contents += "<center>"
