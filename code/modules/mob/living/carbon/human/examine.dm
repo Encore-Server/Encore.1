@@ -9,6 +9,8 @@
 		user.add_stress(/datum/stressevent/jesterphobia)
 	if(HAS_TRAIT(src, TRAIT_BEAUTIFUL))
 		user.add_stress(/datum/stressevent/beautiful)
+	if(HAS_TRAIT(src, TRAIT_NECROMANCER))
+		user.add_stress(/datum/stressevent/necromancer)
 
 /mob/living/carbon/human/examine(mob/user)
 	var/observer_privilege = isobserver(user)
@@ -120,6 +122,8 @@
 			. += span_notice("Daemonic!")
 		else if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(user, TRAIT_DEPRAVED))
 			. += span_notice("Deceiver!")
+		else if(HAS_TRAIT(src, TRAIT_NECROMANCER) && HAS_TRAIT(user, TRAIT_NECROMANCER))
+			. += span_notice("Necromancer!")
 
 	if(leprosy == 1)
 		. += span_necrosis("A LEPER...")
@@ -142,6 +146,8 @@
 			if (THEY_THEM, THEY_THEM_F, IT_ITS)
 				. += span_redtext("[m1] repulsive!")
 
+	if (HAS_TRAIT(src, TRAIT_NECROMANCER))
+		. += span_userdanger("A NECROMANCER! FLEE OR FIGHT!")
 
 	if(user != src)
 		var/datum/mind/Umind = user.mind
