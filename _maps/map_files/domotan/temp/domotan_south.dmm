@@ -2570,6 +2570,11 @@
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave)
+"TS" = (
+/obj/item/natural/stone,
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods/seculton)
 "TV" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/under/cavewet/bogcaves)
@@ -45112,8 +45117,8 @@ Vv
 Es
 RM
 Mi
-qC
 Mi
+qC
 Es
 Es
 js
@@ -46140,8 +46145,8 @@ Vv
 iz
 RM
 Mi
-qC
 Mi
+qC
 Es
 Es
 MO
@@ -47686,11 +47691,11 @@ Uf
 Uf
 qd
 Es
+NC
 js
 js
 js
-js
-YD
+TS
 Es
 qd
 Uf
@@ -47943,11 +47948,11 @@ Uf
 Uf
 qd
 Es
-NC
 js
 js
 js
-NC
+js
+YD
 Es
 qd
 Uf
