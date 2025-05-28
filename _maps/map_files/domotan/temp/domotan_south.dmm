@@ -217,6 +217,10 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
+"dT" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/woodturned,
+/area/rogue/indoors/shelter)
 "el" = (
 /obj/structure/mineral_door/bars,
 /turf/open/floor/rogue/hexstone,
@@ -421,6 +425,9 @@
 /obj/structure/flora/roguegrass/water,
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cave)
+"iz" = (
+/turf/closed/wall/mineral/rogue/stonebrick,
+/area/rogue/under/cavewet/bogcaves)
 "iA" = (
 /turf/open/water/river{
 	icon_state = "rockwd"
@@ -526,6 +533,10 @@
 	},
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/woods/heavenscoast)
+"ke" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/ruinedwood/spiral,
+/area/rogue/indoors/shelter)
 "kl" = (
 /obj/structure/bars/cemetery,
 /turf/open/floor/rogue/hexstone,
@@ -888,9 +899,9 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog/dense)
 "qC" = (
-/obj/structure/trap/skeleton,
-/turf/open/floor/rogue/woodturned,
-/area/rogue/indoors/shelter)
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cave)
 "qI" = (
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/wood,
@@ -965,6 +976,12 @@
 /obj/structure/far_travel,
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/woods/heavenscoast)
+"rZ" = (
+/obj/structure/fluff/signage{
+	name = "SECULTON GATE - EAST"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods/seculton)
 "se" = (
 /turf/closed/wall/mineral/rogue/decowood,
 /area/rogue/outdoors/bog/dense)
@@ -1310,10 +1327,6 @@
 "wG" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/under/cavewet/bogcaves)
-"wN" = (
-/obj/structure/trap/skeleton,
-/turf/open/floor/rogue/cobble,
 /area/rogue/under/cavewet/bogcaves)
 "wO" = (
 /obj/structure/closet/crate/coffin,
@@ -1720,7 +1733,7 @@
 /turf/open/water/swamp,
 /area/rogue/outdoors/bog/dense)
 "Es" = (
-/turf/closed/wall/mineral/rogue/stone/blue_moss,
+/turf/closed/wall/mineral/rogue/stonebrick,
 /area/rogue/under/cave)
 "Ev" = (
 /obj/structure/table/wood{
@@ -1797,6 +1810,16 @@
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave)
+"Ft" = (
+/mob/living/simple_animal/hostile/retaliate/rogue/mole,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
+"Fu" = (
+/obj/structure/fluff/signage{
+	name = "FORT HELLWATCH - NORTH"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods/seculton)
 "Fx" = (
 /obj/structure/lever{
 	redstone_id = "bandit_gate"
@@ -1828,6 +1851,10 @@
 /obj/item/roguestatue/silver,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"GE" = (
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/ruinedwood,
+/area/rogue/indoors/shelter)
 "GI" = (
 /obj/structure/bars/passage{
 	redstone_id = "puzzle2";
@@ -2110,8 +2137,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
 "Mi" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/mole,
-/turf/open/floor/rogue/naturalstone,
+/turf/open/floor/rogue/cobblerock,
 /area/rogue/under/cave)
 "Mm" = (
 /obj/structure/flora/roguegrass/water/reeds,
@@ -2195,9 +2221,9 @@
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/woods/heavenscoast)
 "NC" = (
-/obj/structure/trap/skeleton,
-/turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/shelter)
+/obj/machinery/light/rogue/firebowl,
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/outdoors/woods/seculton)
 "NH" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/crossroads)
@@ -2409,6 +2435,17 @@
 /obj/item/roguecoin/copper/pile,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave)
+"RM" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "z1-hellwatch1-out";
+	aportalid = "z1-hellwatch1-in";
+	aallmig = "z1-hellwatch1"
+	},
+/turf/open/floor/rogue/cobblerock,
+/area/rogue/under/cave)
+"RN" = (
+/turf/closed/mineral/rogue/bedrock,
+/area/rogue/outdoors/woods/seculton)
 "RQ" = (
 /obj/item/natural/stone{
 	pixel_x = 6;
@@ -2782,8 +2819,8 @@
 /area/rogue/under/cavewet/bogcaves)
 "YT" = (
 /obj/structure/trap/skeleton,
-/turf/open/floor/rogue/ruinedwood,
-/area/rogue/indoors/shelter)
+/turf/open/floor/rogue/cobble,
+/area/rogue/under/cavewet/bogcaves)
 "YU" = (
 /obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/hexstone,
@@ -10090,7 +10127,7 @@ RS
 RS
 uN
 uM
-wN
+YT
 uM
 uM
 uM
@@ -13017,7 +13054,7 @@ oW
 ji
 kt
 Fe
-qC
+dT
 Tv
 pi
 Uu
@@ -16354,7 +16391,7 @@ Uu
 Uu
 oW
 eo
-YT
+GE
 OJ
 nk
 Uu
@@ -18162,7 +18199,7 @@ Uu
 oW
 Tf
 hG
-NC
+ke
 oW
 Oc
 Oc
@@ -23040,7 +23077,7 @@ As
 bG
 As
 bG
-Mi
+Ft
 bG
 Uf
 Uf
@@ -40968,7 +41005,7 @@ Uf
 Uf
 Uf
 Uf
-Uf
+js
 js
 js
 js
@@ -43797,7 +43834,7 @@ js
 js
 js
 js
-Uf
+js
 Uf
 Uf
 Uf
@@ -44054,7 +44091,7 @@ js
 js
 js
 js
-Uf
+js
 Uf
 Uf
 Uf
@@ -44301,9 +44338,9 @@ As
 As
 As
 As
-As
-As
-As
+Uf
+Uf
+Uf
 Uf
 Uf
 Uf
@@ -44556,15 +44593,15 @@ Uf
 Uf
 As
 As
-bG
-As
-As
 Uf
-Uf
-Uf
-Uf
-Uf
-js
+qd
+qd
+qd
+qd
+qd
+qd
+qd
+RN
 js
 js
 js
@@ -44813,16 +44850,16 @@ Uf
 Uf
 As
 As
-bG
-Wj
-As
 Uf
-Uf
-Uf
-Uf
-Uf
-Uf
-js
+Vv
+Es
+Es
+Es
+Es
+Es
+Es
+qd
+Fu
 js
 js
 js
@@ -45069,16 +45106,16 @@ Wj
 Wj
 Uf
 Wj
-Wj
 Gi
-Wj
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
+Gi
+Vv
+Es
+RM
+Mi
+qC
+Mi
+Es
+Es
 js
 js
 js
@@ -45325,17 +45362,17 @@ Wj
 Wj
 Wj
 Wj
-Wj
 Gi
 Gi
 Wj
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
+Vv
+Es
+RM
+Mi
+Mi
+Mi
+Mi
+Mi
 js
 js
 js
@@ -45582,17 +45619,17 @@ Wj
 Wj
 Wj
 Wj
-Wj
 Gi
 Gi
 Wj
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
+Vv
+Es
+RM
+Mi
+Mi
+Mi
+Mi
+Mi
 js
 js
 js
@@ -45840,16 +45877,16 @@ Wj
 Wj
 Wj
 Wj
-Wj
 Gi
 Wj
-Wj
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
+Vv
+iz
+RM
+Mi
+Mi
+Mi
+Mi
+Mi
 YD
 js
 js
@@ -46097,16 +46134,16 @@ Wj
 Wj
 Wj
 Wj
-Wj
 Gi
 Wj
-Wj
-Uf
-Uf
-Uf
-Uf
-Uf
-Uf
+Vv
+iz
+RM
+Mi
+qC
+Mi
+Es
+Es
 MO
 js
 js
@@ -46354,21 +46391,21 @@ Wj
 Wj
 Wj
 Wj
-Wj
 Gi
 Gi
-Wj
-Uf
-Uf
-Uf
-Uf
-qd
-qd
+Vv
+iz
+Es
+Es
+Es
+Es
+Es
+Es
 js
 js
 js
 js
-js
+rZ
 eX
 qd
 Uf
@@ -46613,12 +46650,12 @@ YR
 YR
 Gi
 Gi
-Gi
-Wj
-Uf
-Uf
-Uf
-Uf
+Vv
+Vv
+qd
+qd
+qd
+qd
 qd
 Es
 Es
@@ -46871,7 +46908,7 @@ YR
 Gi
 YR
 YR
-YR
+Wj
 Uf
 Uf
 Uf
@@ -47906,11 +47943,11 @@ Uf
 Uf
 qd
 Es
+NC
 js
 js
 js
-js
-mQ
+NC
 Es
 qd
 Uf
@@ -48674,7 +48711,7 @@ Gi
 Uf
 Uf
 Uf
-qd
+Uf
 qd
 Es
 so
@@ -48931,7 +48968,7 @@ PL
 LM
 LM
 Wj
-qd
+Uf
 qd
 Es
 Es

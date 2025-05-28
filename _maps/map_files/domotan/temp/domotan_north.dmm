@@ -90,6 +90,10 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/beach/forest)
+"aN" = (
+/obj/item/roguegem/random,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "aP" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/cobble,
@@ -101,6 +105,9 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
+"aV" = (
+/turf/closed/mineral/rogue/gem,
+/area/rogue/under/cave)
 "aX" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/water/ocean/deep,
@@ -476,10 +483,6 @@
 	},
 /turf/open/water/ocean,
 /area/rogue/outdoors/beach/tutorial)
-"fN" = (
-/obj/item/roguegem/random,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
 "fV" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -553,6 +556,10 @@
 "gH" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/under/cavewet)
+"gI" = (
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/under/cave)
 "gJ" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/rtfield)
@@ -625,9 +632,6 @@
 	},
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/town)
-"iu" = (
-/turf/closed/mineral/rogue/gem,
-/area/rogue/under/cave)
 "iz" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-n"
@@ -920,20 +924,6 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/beach)
-"mV" = (
-/obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
-/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
-/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
-/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
-/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
-/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
-/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
-/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
-/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
-/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
-/turf/open/floor/rogue/twig/platform,
-/area/rogue/under/cave)
 "mW" = (
 /obj/item/rogueore/coal,
 /turf/open/floor/rogue/naturalstone,
@@ -1376,13 +1366,6 @@
 "tK" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
-"tQ" = (
-/obj/structure/fluff/traveltile{
-	aportalgoesto = "z2-townsouth1-in";
-	aportalid = "z2-townsouth1-out"
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/rtfield)
 "tR" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/ocean,
@@ -1393,10 +1376,6 @@
 "uj" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/woods/lakeside)
-"uk" = (
-/obj/structure/fermenting_barrel/water,
-/turf/open/floor/rogue/twig/platform,
-/area/rogue/under/cave)
 "uo" = (
 /obj/effect/mist{
 	opacity = 1;
@@ -1406,10 +1385,6 @@
 	},
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/beach/tutorial)
-"uq" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/outdoors/rtfield)
 "uM" = (
 /obj/structure/closet/crate/chest/crate,
 /obj/effect/decal/cleanable/cobweb,
@@ -1647,10 +1622,6 @@
 /obj/item/grown/log/tree/stick,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter)
-"yV" = (
-/obj/effect/landmark/map_load_mark/forest,
-/turf/open/floor/rogue/metal,
-/area/rogue/outdoors/rtfield)
 "yW" = (
 /obj/structure/flora/ausbushes/palebush,
 /turf/open/floor/rogue/grass,
@@ -1750,20 +1721,6 @@
 /obj/effect/decal/mossy,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/beach/tutorial)
-"AX" = (
-/obj/structure/closet/crate/chest/wicker,
-/obj/item/reagent_containers/food/snacks/fat/salo,
-/obj/item/reagent_containers/food/snacks/fat/salo,
-/obj/item/reagent_containers/food/snacks/fat/salo,
-/obj/item/reagent_containers/food/snacks/fat/salo,
-/obj/item/reagent_containers/food/snacks/fat/salo,
-/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
-/turf/open/floor/rogue/twig/platform,
-/area/rogue/under/cave)
 "Bc" = (
 /obj/effect/landmark/mapGenerator/rogue/forest,
 /obj/effect/landmark/mapGenerator/rogue/cave{
@@ -2000,6 +1957,10 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
+"ER" = (
+/obj/effect/landmark/map_load_mark/forest,
+/turf/open/floor/rogue/metal,
+/area/rogue/outdoors/rtfield)
 "EZ" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/rogue/grass,
@@ -2015,6 +1976,13 @@
 /obj/structure/roguetent,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave)
+"Ff" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "z1-townsouth2-in";
+	aportalid = "z1-townsouth2-out"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/rtfield)
 "Fg" = (
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/woods)
@@ -2061,6 +2029,10 @@
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/pond,
 /area/rogue/outdoors/woods/lakeside)
+"Gf" = (
+/obj/structure/fermenting_barrel/water,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/under/cave)
 "GA" = (
 /obj/structure/roguewindow,
 /turf/open/floor/rogue/twig,
@@ -2125,16 +2097,16 @@
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/beach)
-"HW" = (
-/turf/closed/wall/mineral/rogue/wooddark,
-/area/rogue/indoors/shelter)
-"Ia" = (
+"HP" = (
 /obj/structure/fluff/traveltile{
-	aportalgoesto = "z1-townsouth2-in";
-	aportalid = "z1-townsouth2-out"
+	aportalgoesto = "z1-townsouth1-in";
+	aportalid = "z1-townsouth1-out"
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
+"HW" = (
+/turf/closed/wall/mineral/rogue/wooddark,
+/area/rogue/indoors/shelter)
 "Ie" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/rogue/dirt,
@@ -2152,6 +2124,20 @@
 	},
 /turf/open/water/ocean,
 /area/rogue/outdoors/beach/tutorial)
+"IE" = (
+/obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/fat/salo,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/under/cave)
 "IQ" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town/tutorial)
@@ -2213,6 +2199,36 @@
 /obj/machinery/light/rogue/torchholder/l,
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/beach/tutorial)
+"JE" = (
+/obj/structure/rack/rogue/shelf/big{
+	icon_state = "shelf_biggest";
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -1;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -9;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 7;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 8;
+	pixel_y = 12
+	},
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/under/cave)
 "JP" = (
 /obj/machinery/light/rogue/lanternpost{
 	dir = 4
@@ -2397,6 +2413,20 @@
 /obj/item/cooking/skewer,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town)
+"Mq" = (
+/obj/structure/closet/crate/chest/wicker,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,
+/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
+/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
+/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
+/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
+/obj/item/reagent_containers/food/snacks/rogue/cheddarslice/aged,
+/turf/open/floor/rogue/twig/platform,
+/area/rogue/under/cave)
 "Ms" = (
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/twig,
@@ -2677,13 +2707,6 @@
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/lakeside)
-"PL" = (
-/obj/structure/fluff/traveltile{
-	aportalgoesto = "z1-townsouth1-in";
-	aportalid = "z1-townsouth1-out"
-	},
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/rtfield)
 "PO" = (
 /obj/structure/fluff/edge/natural/grass{
 	dir = 1
@@ -2754,10 +2777,6 @@
 "QS" = (
 /turf/open/floor/rogue/sand,
 /area/rogue/outdoors/rtfield)
-"QT" = (
-/obj/item/natural/rock/gem,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
 "Rd" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/beach/tutorial)
@@ -2783,6 +2802,10 @@
 /obj/item/rogueweapon/tongs,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
+"RM" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "RO" = (
 /obj/structure/flora/ausbushes/genericbush,
 /turf/open/floor/rogue/dirt/road,
@@ -2968,6 +2991,10 @@
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
+"Vv" = (
+/obj/item/natural/rock/gem,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cave)
 "Vx" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -3000,36 +3027,6 @@
 	},
 /turf/open/water/ocean,
 /area/rogue/outdoors/beach/tutorial)
-"Wp" = (
-/obj/structure/rack/rogue/shelf/big{
-	icon_state = "shelf_biggest";
-	pixel_y = 0
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -9;
-	pixel_y = -5
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -1;
-	pixel_y = -5
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = -9;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 7;
-	pixel_y = -5
-	},
-/obj/item/reagent_containers/glass/cup/wooden{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/turf/open/floor/rogue/twig/platform,
-/area/rogue/under/cave)
 "WB" = (
 /obj/item/natural/stone,
 /obj/machinery/light/rogue/torchholder/c,
@@ -3069,6 +3066,13 @@
 /obj/effect/landmark/map_load_mark/forest/small,
 /turf/open/floor/rogue/metal,
 /area/rogue/outdoors/woods/lakeside)
+"XK" = (
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "z2-townsouth1-in";
+	aportalid = "z2-townsouth1-out"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/rtfield)
 "XO" = (
 /obj/structure/table/wood{
 	dir = 5;
@@ -3110,10 +3114,6 @@
 "Yi" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/under/cave)
-"Yl" = (
-/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
-/turf/open/floor/rogue/twig/platform,
 /area/rogue/under/cave)
 "Ym" = (
 /obj/machinery/light/rogue/torchholder/l,
@@ -12656,7 +12656,7 @@ Tg
 Tg
 Tg
 Tg
-yV
+ER
 Hz
 Hz
 Hz
@@ -32941,7 +32941,7 @@ Xy
 Xy
 Xy
 Xy
-PL
+HP
 Hz
 jI
 Hz
@@ -33198,7 +33198,7 @@ Xy
 Xy
 Xy
 Xy
-PL
+HP
 OX
 Hz
 OX
@@ -33455,7 +33455,7 @@ Xy
 Xy
 Xy
 Xy
-PL
+HP
 OX
 Hz
 Hz
@@ -33712,7 +33712,7 @@ Xy
 Xy
 Xy
 Xy
-PL
+HP
 Hz
 Hz
 Hz
@@ -33972,7 +33972,7 @@ Xy
 Hz
 Hz
 jW
-uq
+RM
 Hz
 Xo
 Hz
@@ -35254,7 +35254,7 @@ Xy
 Xy
 Xy
 Xy
-tQ
+XK
 Hz
 OX
 OX
@@ -35511,7 +35511,7 @@ Xy
 Xy
 Xy
 Xy
-tQ
+XK
 OX
 OX
 OX
@@ -35768,7 +35768,7 @@ Xy
 Xy
 Xy
 Xy
-tQ
+XK
 OX
 OX
 Hz
@@ -36025,7 +36025,7 @@ Xy
 Xy
 Xy
 Xy
-tQ
+XK
 OX
 Hz
 Hz
@@ -36282,7 +36282,7 @@ Xy
 Xy
 Xy
 Xy
-tQ
+XK
 Hz
 Hz
 jI
@@ -38081,7 +38081,7 @@ Xy
 Xy
 Xy
 Xy
-Ia
+Ff
 OX
 OX
 OX
@@ -38338,7 +38338,7 @@ Xy
 Xy
 Xy
 Xy
-Ia
+Ff
 OX
 Hz
 Hz
@@ -38595,7 +38595,7 @@ Xy
 Xy
 Xy
 Xy
-Ia
+Ff
 Hz
 Hz
 Hz
@@ -38852,7 +38852,7 @@ Xy
 Xy
 Xy
 Xy
-Ia
+Ff
 Hz
 Hz
 Hz
@@ -51229,10 +51229,10 @@ Ty
 AA
 AA
 tK
-iu
+aV
 tK
 sa
-iu
+aV
 AA
 AA
 AA
@@ -51486,10 +51486,10 @@ Ty
 Ty
 tK
 tK
-iu
-QT
-fN
-iu
+aV
+Vv
+aN
+aV
 AA
 AA
 AA
@@ -51742,11 +51742,11 @@ AA
 AA
 tK
 tK
-iu
-iu
-iu
-iu
-iu
+aV
+aV
+aV
+aV
+aV
 AA
 AA
 AA
@@ -51998,19 +51998,19 @@ AA
 tK
 tK
 tK
-iu
-iu
-iu
-iu
-iu
+aV
+aV
+aV
+aV
+aV
 AA
 AA
 AA
 AA
 AA
 jF
-mV
-AX
+Mq
+IE
 FL
 Gc
 tK
@@ -52256,8 +52256,8 @@ tK
 AA
 AA
 AA
-iu
-iu
+aV
+aV
 AA
 AA
 AA
@@ -52523,9 +52523,9 @@ AA
 AA
 AA
 jF
-uk
-Yl
-Wp
+Gf
+gI
+JE
 jF
 AA
 AA
@@ -63309,7 +63309,7 @@ Tg
 Tg
 Tg
 Tg
-yV
+ER
 IY
 IY
 IY
