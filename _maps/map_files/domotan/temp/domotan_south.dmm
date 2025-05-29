@@ -425,9 +425,6 @@
 /obj/structure/flora/roguegrass/water,
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cave)
-"iz" = (
-/turf/closed/wall/mineral/rogue/stonebrick,
-/area/rogue/under/cavewet/bogcaves)
 "iA" = (
 /turf/open/water/river{
 	icon_state = "rockwd"
@@ -898,10 +895,6 @@
 /obj/item/grown/log/tree/small,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog/dense)
-"qC" = (
-/obj/machinery/light/rogue/firebowl,
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/under/cave)
 "qI" = (
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/wood,
@@ -2136,9 +2129,6 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/spider,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave)
-"Mi" = (
-/turf/open/floor/rogue/cobblerock,
-/area/rogue/under/cave)
 "Mm" = (
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/ocean/deep,
@@ -2442,7 +2432,7 @@
 	aallmig = "z1-hellwatch1"
 	},
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/under/cave)
+/area/rogue/outdoors/woods/seculton)
 "RN" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/woods/seculton)
@@ -44856,7 +44846,7 @@ Uf
 As
 As
 Uf
-Vv
+qd
 Es
 Es
 Es
@@ -45110,15 +45100,15 @@ YR
 Wj
 Wj
 Uf
-Wj
+Uf
 Gi
 Gi
-Vv
+qd
 Es
 RM
-Mi
-Mi
-qC
+js
+js
+NC
 Es
 Es
 js
@@ -45369,15 +45359,15 @@ Wj
 Wj
 Gi
 Gi
-Wj
-Vv
+Uf
+qd
 Es
 RM
-Mi
-Mi
-Mi
-Mi
-Mi
+js
+js
+js
+js
+js
 js
 js
 js
@@ -45626,15 +45616,15 @@ Wj
 Wj
 Gi
 Gi
-Wj
-Vv
+Uf
+qd
 Es
 RM
-Mi
-Mi
-Mi
-Mi
-Mi
+js
+js
+js
+js
+js
 js
 js
 js
@@ -45883,15 +45873,15 @@ Wj
 Wj
 Wj
 Gi
-Wj
-Vv
-iz
+Uf
+qd
+Es
 RM
-Mi
-Mi
-Mi
-Mi
-Mi
+js
+js
+js
+js
+js
 YD
 js
 js
@@ -46140,13 +46130,13 @@ Wj
 Wj
 Wj
 Gi
-Wj
-Vv
-iz
+Uf
+qd
+Es
 RM
-Mi
-Mi
-qC
+js
+js
+NC
 Es
 Es
 MO
@@ -46398,8 +46388,8 @@ Wj
 Wj
 Gi
 Gi
-Vv
-iz
+qd
+Es
 Es
 Es
 Es
@@ -46655,8 +46645,8 @@ YR
 YR
 Gi
 Gi
-Vv
-Vv
+qd
+qd
 qd
 qd
 qd
@@ -46913,7 +46903,7 @@ YR
 Gi
 YR
 YR
-Wj
+Uf
 Uf
 Uf
 Uf
@@ -47170,7 +47160,7 @@ YR
 YR
 YR
 YR
-Wj
+Uf
 Uf
 Uf
 Uf

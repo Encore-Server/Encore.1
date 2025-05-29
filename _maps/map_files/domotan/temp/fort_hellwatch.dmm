@@ -1,19 +1,19 @@
 "aw" = (/obj/structure/fluff/clodpile,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
-"aO" = (/turf/open/floor/rogue/metal,/area/rogue)
+"aO" = (/turf/open/floor/rogue/metal,/area/rogue/outdoors/woods/crossroads)
 "aW" = (/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "ba" = (/obj/effect/landmark/map_load_mark/hellwatch/z3/q3,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "bY" = (/obj/item/roguecoin/silver/pile,/obj/item/roguecoin/silver/pile,/turf/open/floor/rogue/volcanic,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "ca" = (/obj/item/roguegem/random,/turf/open/floor/rogue/underworld/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"cf" = (/obj/effect/landmark/map_load_mark/mountain,/turf/open/floor/rogue/metal,/area/rogue)
-"ch" = (/obj/structure/flora/newtree,/turf/open/floor/rogue/grassyel,/area/rogue)
-"ck" = (/turf/closed/mineral/rogue/bedrock,/area/rogue)
+"cf" = (/obj/effect/landmark/map_load_mark/mountain,/turf/open/floor/rogue/metal,/area/rogue/outdoors/woods/crossroads)
+"ch" = (/obj/structure/flora/newtree,/turf/open/floor/rogue/grassyel,/area/rogue/outdoors/woods/crossroads)
+"ck" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/under/cavewet/bogcaves)
 "cO" = (/mob/living/simple_animal/hostile/rogue/skeleton/guard,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "cP" = (/obj/structure/gravemarker{pixel_x = -21},/obj/structure/closet/dirthole/grave,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "cR" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate2"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "dt" = (/obj/structure/mineral_door/bars,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "dR" = (/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "dX" = (/obj/structure/fluff/psycross/crafted{pixel_y = 24},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"dY" = (/obj/machinery/light/rogue/lanternpost{pixel_y = 28},/turf/open/floor/rogue/dirt/road,/area/rogue)
+"dY" = (/obj/machinery/light/rogue/lanternpost{pixel_y = 28},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/crossroads)
 "eD" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "eV" = (/obj/effect/decal/cleanable/blood/tracks{dir = 4},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "fx" = (/mob/living/simple_animal/hostile/rogue/skeleton/bow,/obj/machinery/light/rogue/wallfire/candle/blue/l,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
@@ -24,12 +24,12 @@
 "gy" = (/obj/effect/landmark/map_load_mark/hellwatch/z2,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "hc" = (/turf/closed/mineral/random/rogue,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "hH" = (/obj/structure/lever/wall{pixel_x = 19; redstone_id = "church_keep_hell_gate1"; name = "gate lever"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"iQ" = (/turf/open/floor/rogue/cobble,/area/rogue)
-"iS" = (/turf/open/floor/rogue/dirt,/area/rogue)
+"iQ" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/crossroads)
+"iS" = (/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/crossroads)
 "jh" = (/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "jn" = (/obj/effect/decal/cleanable/blood/tracks,/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate1"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "jp" = (/obj/structure/table/wood{dir = 5; icon_state = "largetable"},/obj/item/candle/skull/lit{pixel_x = -3; pixel_y = 12},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
-"jy" = (/obj/structure/fluff/traveltile{aportalgoesto = "z1-hellwatch1-in"; aportalid = "z1-hellwatch1-out"},/turf/open/floor/rogue/cobblerock,/area/rogue)
+"jy" = (/obj/structure/fluff/traveltile{aportalgoesto = "z1-hellwatch1-in"; aportalid = "z1-hellwatch1-out"},/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "jG" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 6},/obj/machinery/light/rogue/wallfire/candle/blue,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "kv" = (/obj/effect/landmark/map_load_mark/hellwatch/z3,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "kL" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
@@ -47,18 +47,17 @@
 "pk" = (/obj/effect/decal/cleanable/blood/tracks{dir = 9},/mob/living/simple_animal/hostile/retaliate/rogue/fiend_greater,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "pD" = (/obj/structure/closet/dirthole/closed/loot,/obj/structure/gravemarker{pixel_x = -21},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "pN" = (/obj/effect/landmark/map_load_mark/hellwatch/z1,/turf/open/floor/rogue/metal/barograte,/area/rogue)
-"pR" = (/turf/open/floor/rogue/grassyel,/area/rogue)
+"pR" = (/turf/open/floor/rogue/grassyel,/area/rogue/outdoors/woods/crossroads)
 "pS" = (/obj/effect/decal/cleanable/blood/tracks{dir = 4},/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "qw" = (/obj/structure/fluff/statue{name = "vestments of the end time"; desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing."},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "rs" = (/turf/open/floor/rogue/volcanic,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"rx" = (/turf/open/floor/rogue/cobblerock,/area/rogue)
-"sh" = (/turf/closed/mineral/random/rogue,/area/rogue)
+"rx" = (/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "sw" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "sB" = (/obj/effect/landmark/map_load_mark/hellwatch/z1/q2,/turf/open/floor/rogue/metal/barograte,/area/rogue)
-"sZ" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue)
+"sZ" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue/under/cavewet/bogcaves)
 "tG" = (/turf/closed/wall/mineral/rogue/stone/moss,/area/rogue/outdoors/woods/churchfort/basement)
 "tN" = (/obj/item/natural/rock,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"tO" = (/obj/effect/landmark/map_load_mark/mountain/small,/turf/open/floor/rogue/metal,/area/rogue)
+"tO" = (/obj/effect/landmark/map_load_mark/mountain/small,/turf/open/floor/rogue/metal,/area/rogue/outdoors/woods/crossroads)
 "tW" = (/obj/item/rogueweapon/pick,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "vF" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate3"},/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "vY" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate3"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
@@ -75,19 +74,19 @@
 "AG" = (/obj/structure/table/wood{icon_state = "largetable"},/obj/item/burial_shroud,/obj/item/burial_shroud,/obj/item/burial_shroud{pixel_x = 5; pixel_y = 10},/obj/item/burial_shroud{pixel_x = 5; pixel_y = 10},/obj/item/rogueweapon/huntingknife/idagger/silver,/obj/structure/fluff/walldeco/katholikos_banner/mjallidhorn{pixel_y = 25},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "AK" = (/obj/item/rogueweapon/shovel,/obj/machinery/light/rogue/wallfire/candle/blue/r,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "BP" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"Cm" = (/obj/item/natural/rock,/turf/open/floor/rogue/cobble,/area/rogue)
-"Cn" = (/turf/open/floor/rogue/grass,/area/rogue)
+"Cm" = (/obj/item/natural/rock,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/crossroads)
+"Cn" = (/turf/open/floor/rogue/grass,/area/rogue/outdoors/woods/crossroads)
 "CZ" = (/obj/item/roguecoin/silver/pile,/obj/item/roguecoin/silver/pile,/turf/open/floor/rogue/underworld/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Dh" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate1"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "DX" = (/turf/closed/wall/mineral/rogue/stone/red_moss,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"DZ" = (/obj/item/natural/stone,/turf/open/floor/rogue/dirt/road,/area/rogue)
+"DZ" = (/obj/item/natural/stone,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/crossroads)
 "EG" = (/obj/structure/bars/cemetery,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "EQ" = (/turf/closed,/area/rogue)
 "FL" = (/obj/structure/closet/dirthole/closed/loot,/obj/structure/gravemarker{pixel_x = -21},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "Gn" = (/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "HX" = (/obj/item/roguecoin/copper/pile,/obj/item/roguecoin/copper/pile,/turf/open/floor/rogue/volcanic,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Jy" = (/mob/living/simple_animal/hostile/rogue/skeleton/bow,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
-"JC" = (/turf/open/floor/rogue/dirt/road,/area/rogue)
+"JC" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/crossroads)
 "JF" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate1"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "JY" = (/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods/churchfort)
 "Ko" = (/obj/effect/landmark/map_load_mark/hellwatch/z3/q4,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
@@ -96,7 +95,7 @@
 "My" = (/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "MK" = (/obj/structure/closet/dirthole,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "Np" = (/obj/machinery/light/rogue/wallfire/candle/blue/r,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
-"NT" = (/turf/open/transparent/openspace,/area/rogue)
+"NT" = (/turf/open/transparent/openspace,/area/rogue/outdoors/woods/crossroads)
 "OK" = (/obj/effect/landmark/map_load_mark/hellwatch/z2/q3,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "Pb" = (/obj/effect/landmark/map_load_mark/hellwatch/z2/q2,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "PA" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
@@ -113,10 +112,10 @@
 "Ux" = (/obj/structure/closet/dirthole/closed/loot,/obj/structure/gravemarker,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "UV" = (/obj/effect/landmark/map_load_mark/hellwatch/z1/q4,/turf/open/floor/rogue/metal/barograte,/area/rogue)
 "Vk" = (/obj/item/grown/log/tree/small{pixel_y = 7},/obj/item/grown/log/tree/small{pixel_x = 6},/obj/item/grown/log/tree/small{pixel_y = -9; pixel_x = -11},/obj/machinery/light/rogue/torchholder/c,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"Vr" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/cobblerock,/area/rogue)
+"Vr" = (/obj/machinery/light/rogue/firebowl,/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "VK" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 10},/obj/item/clothing/head/roguetown/mjallidhornhood,/obj/item/clothing/suit/roguetown/shirt/robe/mjallidhorn,/obj/item/clothing/neck/roguetown/psicross/mjallidhorn,/obj/machinery/light/rogue/wallfire/candle/blue,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "VO" = (/obj/structure/closet/dirthole/closed/loot,/obj/structure/gravemarker,/obj/machinery/light/rogue/wallfire/candle/blue/r,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
-"WG" = (/obj/machinery/light/rogue/lanternpost{pixel_y = 28},/turf/open/floor/rogue/cobblerock,/area/rogue)
+"WG" = (/obj/machinery/light/rogue/lanternpost{pixel_y = 28},/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "WP" = (/obj/structure/gravemarker,/obj/structure/closet/dirthole/closed/loot,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "XG" = (/obj/effect/decal/cleanable/blood/tracks{dir = 5},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "Zy" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
@@ -188,42 +187,42 @@ EQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQ
 EQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQ
 EQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQ
 EQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxExExExExExExExExExExExExExExExExExExExExExExExExExExExExExEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYxEJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-EQEQEQEQEQshshxEJYJYJYJYJYJYJYJYxEJYJYJYJYxExEJYJYJYJYJYxExExEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-shshshEQEQshshxEJYJYJYJYJYxEJYJYxEJYJYJYJYxExEJYJYJYJYJYJYJYxEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-shshshshEQshshxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYJYxEJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnshshshshshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnshshshshshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnshshshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnshshshshOKxExExExExExExExExExExExExExEzhxExExExExExExExExExExExExExEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnshshshshxExExExExExExExExExExExExExExExExExExExExExExExExExExExExExEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnCnshshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnCnCnshshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshEQEQEQEQEQEQEQEQEQEQEQ
-CnCnCnCnCnCnshxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshshshshshshshshshshshsh
-CnCnCnCnCnCnCnxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshshshshshshshshshshshsh
-CnCnCnCnCnCnCnxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEshshckckckckckckckckckshsh
-CnCnCnCnCnCnJCxEJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYxEJYJYJYJYJYxEshshcksZsZsZsZsZsZsZckshsh
-CnCnCnCnCnCnJCxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYJYxEshshcksZjyjyjyjyjysZckshsh
-CnCnCnCnJCCniQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEshshcksZrxrxrxrxrxsZckshsh
-CnCnCnJCJCiQiQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYJYJYJYJYJYJYxEshshcksZrxrxrxrxrxsZckshsh
-CnJCJCJCCnCnDZxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYxExExExEJYJYJYJYJYxEshshcksZVrrxrxrxVrsZckshsh
-JCJCJCCnCnCnJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshcksZsZrxrxrxsZsZckshsh
-JCJCCnCnCnJCJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshcksZsZrxrxrxsZsZckshsh
-CnCnJCJCCnJCCmxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEshshckckckrxrxrxckckckshsh
-CnJCJCCnCnCnCngyxExExExExExExExExExExExExExEPbxExExExExExExExExExExExExExEshshrxrxrxrxrxrxshshshshsh
-JCCnJCJCCnCnCnCnCnCnCniQJCCnCnCnCnCnCnCnJCJCJCCnCnCnCnshshshshshshshshshshshWGrxrxrxrxrxrxshshshshsh
-JCJCJCJCJCJCiQiQJCCnJCJCiQCnCnCnCnCnJCiQJCJCJCiQJCCnCniQJCdYrxiQrxrxrxrxrxrxrxrxrxrxrxrxshshshEQEQEQ
-CnCnCnCnCnJCCnCnCnCnJCJCJCCnCnJCJCJCJCJCJCJCJCiQJCiQJCJCrxiQiQrxrxrxrxrxrxrxrxrxrxshshshshshshEQEQEQ
-iSJCCnJCiQiQJCJCCnJCCnJCJCJCJCJCJCiQJCJCJCJCJCJCJCiQJCJCiQrxJCrxiQrxrxrxrxrxrxrxshshshshshshEQEQEQEQ
+EQEQEQEQEQKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxExExExExExExExExExExExExExExExExExExExExExExExExExExExExExEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYxEJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYJYxEJYxEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+EQEQEQEQEQKrKrxEJYJYJYJYJYJYJYJYxEJYJYJYJYxExEJYJYJYJYJYxExExEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+KrKrKrEQEQKrKrxEJYJYJYJYJYxEJYJYxEJYJYJYJYxExEJYJYJYJYJYJYJYxEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+KrKrKrKrEQKrKrxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYJYxEJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnKrKrKrKrKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnKrKrKrKrKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnKrKrKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnKrKrKrKrOKxExExExExExExExExExExExExExEzhxExExExExExExExExExExExExExEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnKrKrKrKrxExExExExExExExExExExExExExExExExExExExExExExExExExExExExExEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnCnKrKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnCnCnKrKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrEQEQEQEQEQEQEQEQEQEQEQ
+CnCnCnCnCnCnKrxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrKrKrKrKrKrKrKrKrKrKrKr
+CnCnCnCnCnCnCnxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrKrKrKrKrKrKrKrKrKrKrKr
+CnCnCnCnCnCnCnxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEKrKrckckckckckckckckckKrKr
+CnCnCnCnCnCnJCxEJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYxEJYJYJYJYJYxEKrKrcksZsZsZsZsZsZsZckKrKr
+CnCnCnCnCnCnJCxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYJYxEKrKrcksZjyjyjyjyjysZckKrKr
+CnCnCnCnJCCniQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEKrKrcksZrxrxrxrxrxsZckKrKr
+CnCnCnJCJCiQiQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYJYJYJYJYJYJYxEKrKrcksZrxrxrxrxrxsZckKrKr
+CnJCJCJCCnCnDZxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYxExExExEJYJYJYJYJYxEKrKrcksZVrrxrxrxVrsZckKrKr
+JCJCJCCnCnCnJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZrxrxrxsZsZckKrKr
+JCJCCnCnCnJCJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZrxrxrxsZsZckKrKr
+CnCnJCJCCnJCCmxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrckckckrxrxrxckckckKrKr
+CnJCJCCnCnCnCngyxExExExExExExExExExExExExExEPbxExExExExExExExExExExExExExEKrKrrxrxrxrxrxrxKrKrKrKrKr
+JCCnJCJCCnCnCnCnCnCnCniQJCCnCnCnCnCnCnCnJCJCJCCnCnCnCnKrKrKrKrKrKrKrKrKrKrKrWGrxrxrxrxrxrxKrKrKrKrKr
+JCJCJCJCJCJCiQiQJCCnJCJCiQCnCnCnCnCnJCiQJCJCJCiQJCCnCniQJCdYrxiQrxrxrxrxrxrxrxrxrxrxrxrxKrKrKrEQEQEQ
+CnCnCnCnCnJCCnCnCnCnJCJCJCCnCnJCJCJCJCJCJCJCJCiQJCiQJCJCrxiQiQrxrxrxrxrxrxrxrxrxrxKrKrKrKrKrKrEQEQEQ
+iSJCCnJCiQiQJCJCCnJCCnJCJCJCJCJCJCiQJCJCJCJCJCJCJCiQJCJCiQrxJCrxiQrxrxrxrxrxrxrxKrKrKrKrKrKrEQEQEQEQ
 "}
 (1,1,3) = {"
 pRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpR
