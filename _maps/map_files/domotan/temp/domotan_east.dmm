@@ -1389,6 +1389,9 @@
 "QT" = (
 /turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/mountains/decap)
+"QX" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/town/sewer)
 "Rg" = (
 /turf/closed/wall/mineral/rogue/tent,
 /area/rogue)
@@ -2376,17 +2379,17 @@ bv
 bv
 bv
 bv
+iN
+iN
 bv
+iN
 bv
+iN
+iN
+iN
 bv
-bv
-bv
-bv
-bv
-bv
-bv
-bv
-bv
+iN
+iN
 bv
 bv
 bv
@@ -2632,6 +2635,8 @@ bv
 bv
 bv
 bv
+iN
+iN
 bv
 bv
 bv
@@ -2643,10 +2648,8 @@ bv
 bv
 bv
 bv
-bv
-bv
-bv
-bv
+iN
+iN
 bv
 bv
 bv
@@ -2904,9 +2907,9 @@ bv
 bv
 bv
 bv
-bv
-bv
-bv
+iN
+iN
+iN
 bv
 bv
 bv
@@ -3164,8 +3167,8 @@ bv
 bv
 bv
 bv
-bv
-bv
+iN
+iN
 bv
 hi
 WO
@@ -3425,7 +3428,7 @@ bv
 bv
 bv
 hi
-NM
+QX
 ln
 tc
 pM
@@ -3680,9 +3683,9 @@ bv
 MK
 bv
 bv
-bv
-hi
-NM
+iN
+hL
+QX
 ln
 tc
 tc
@@ -3936,10 +3939,10 @@ CC
 bv
 bv
 bv
-bv
-bv
-hi
-NM
+iN
+iN
+hL
+QX
 ln
 tc
 Up
@@ -4192,10 +4195,10 @@ CC
 CC
 bv
 bv
-bv
-bv
-bv
-hi
+iN
+iN
+iN
+hL
 NM
 vH
 XF
@@ -4449,8 +4452,8 @@ CC
 CC
 CC
 Nt
-bv
-bv
+iN
+iN
 bv
 hi
 NM
@@ -4706,7 +4709,7 @@ CC
 CC
 CC
 Nt
-bv
+iN
 bv
 bv
 hi
