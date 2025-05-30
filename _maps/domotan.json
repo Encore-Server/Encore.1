@@ -1,6 +1,6 @@
 {
     "map_name": "Domotan Island", 
-    "map_path": "map_files/domotan/new",
+    "map_path": "map_files/domotan",
 	"map_file": [
 	"old_doma.dmm",
 	"domotan_north.dmm",
@@ -10,11 +10,11 @@
 	"fort_hellwatch.dmm"
 	],
 	"traits": [{"Name": "Old Doma", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Northern Domotan", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Eastern Domotan", "Up": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Western Domotan", "Up": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Southern Domotan", "Up": true}, {"Up": true, "Down": true}, {"Down": true},
-	{"Name": "Fort Hellwatch", "Up": true}, {"Up": true, "Down": true}, {"Down": true}]
+	{"Name": "Northern Domotan"},
+	{"Name": "Eastern Domotan", "Up": true}, {"Down": true},
+	{"Name": "Western Domotan", "Up": true}, {"Down": true},
+	{"Name": "Southern Domotan"},
+	{"Name": "Fort Hellwatch", "Up": true}, {"Up": true, "Down": true}, {"Down": true}],
 	"minetype": null,
 	"space_empty_levels": 0,
 	"space_ruin_levels": 0,

@@ -635,9 +635,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/mountains)
 "wM" = (
-/obj/structure/headpike/bone,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/mountains/decap)
+/obj/structure/roguetent,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavelava)
 "wP" = (
 /obj/structure/fluff/railing/border{
 	dir = 8
@@ -791,8 +791,8 @@
 /area/rogue/under/cavelava)
 "Cz" = (
 /obj/structure/fluff/traveltile{
-	aportalgoesto = "z1-northeast1-out";
-	aportalid = "z1-northeast1-in"
+	aportalgoesto = "z1-northeast1-in";
+	aportalid = "z1-northeast1-out"
 	},
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
@@ -817,7 +817,8 @@
 /turf/open/transparent/openspace,
 /area/rogue)
 "EA" = (
-/turf/open/floor/rogue/grassred,
+/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavelava)
 "Fb" = (
 /obj/structure/closet/crate/chest/wicker,
@@ -868,9 +869,9 @@
 /turf/open/floor/rogue/volcanic,
 /area/rogue/under/cavelava)
 "Gu" = (
-/obj/structure/headpike/bone,
-/turf/open/floor/rogue/naturalstone,
-/area/rogue/outdoors/mountains/decap)
+/obj/structure/roguetent,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/cavelava)
 "Gy" = (
 /obj/structure/bars/pipe{
 	pixel_y = 8
@@ -913,9 +914,9 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/mountains/decap)
 "Hj" = (
-/obj/structure/headpike/bone,
-/turf/open/floor/rogue/grassred,
-/area/rogue/outdoors/mountains/decap)
+/obj/machinery/light/rogue/firebowl/standing,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/under/cavelava)
 "Hl" = (
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/cobblerock,
@@ -1036,7 +1037,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
+/obj/structure/roguetent,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavelava)
 "JU" = (
@@ -1396,10 +1397,7 @@
 /area/rogue/indoors/shelter/mountains)
 "UF" = (
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/structure/mineral_door/wood/donjon/stone{
-	dir = 1;
-	name = "Unnatural Chapel"
-	},
+/obj/structure/roguetent,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/under/cavelava)
 "UG" = (
@@ -1600,7 +1598,7 @@ gn
 gn
 gn
 gn
-bv
+Cz
 Cz
 Cz
 Cz
@@ -26077,7 +26075,7 @@ yF
 yF
 yF
 yF
-Hj
+yF
 yF
 yF
 yF
@@ -26894,7 +26892,7 @@ nR
 nR
 nR
 vE
-OZ
+zM
 vE
 vE
 vE
@@ -27367,7 +27365,7 @@ yF
 Qk
 Qk
 yF
-Hj
+yF
 yF
 vE
 vE
@@ -27409,7 +27407,7 @@ Sy
 nR
 vE
 vE
-zM
+OZ
 vE
 vE
 vE
@@ -27618,7 +27616,7 @@ PG
 Jx
 Jx
 Jx
-Hj
+yF
 yF
 yF
 yF
@@ -27666,7 +27664,7 @@ Sy
 OZ
 hL
 vE
-zM
+wM
 vE
 vE
 vE
@@ -28393,7 +28391,7 @@ PG
 PG
 Jx
 Jx
-Hj
+yF
 yF
 Qk
 Qk
@@ -28655,7 +28653,7 @@ Jx
 Jx
 Jx
 Qk
-wM
+Qk
 zw
 vE
 vE
@@ -29467,7 +29465,7 @@ vE
 vE
 vE
 hL
-JQ
+BN
 OZ
 vE
 vE
@@ -29487,7 +29485,7 @@ vE
 yF
 yF
 yF
-Hj
+yF
 yF
 yF
 yF
@@ -29724,8 +29722,8 @@ vE
 vE
 vE
 vE
-BN
-hL
+JQ
+Gu
 vE
 vE
 vE
@@ -29940,7 +29938,7 @@ PG
 PG
 PG
 PG
-Gu
+Jx
 zw
 zw
 zw
@@ -29980,8 +29978,8 @@ vE
 vE
 vE
 vE
-Yy
-hL
+Hj
+OZ
 hL
 Yy
 vE
@@ -30235,14 +30233,14 @@ yF
 vE
 vE
 vE
+hL
+OZ
+OZ
 EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
+hL
+hL
+OZ
+OZ
 vE
 vE
 vE
@@ -30262,7 +30260,7 @@ yF
 Qk
 yF
 yF
-Hj
+yF
 Jx
 PG
 Jx
@@ -30493,15 +30491,15 @@ yF
 yF
 yF
 yF
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
-EA
+hL
+hL
+hL
+hL
+hL
+hL
+hL
+hL
+hL
 yF
 vE
 vE
@@ -31026,7 +31024,7 @@ yF
 yF
 yF
 yF
-Hj
+yF
 yF
 yF
 yF
@@ -31793,7 +31791,7 @@ yF
 zw
 ox
 zw
-Hj
+yF
 yF
 yF
 yF
@@ -32828,7 +32826,7 @@ yF
 Qk
 yF
 yF
-Hj
+yF
 yF
 yF
 yF
@@ -33335,7 +33333,7 @@ yF
 zw
 ox
 zw
-Hj
+yF
 yF
 yF
 yF
