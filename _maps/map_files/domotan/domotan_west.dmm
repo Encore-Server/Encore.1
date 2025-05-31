@@ -3996,6 +3996,19 @@
 /obj/effect/spawner/lootdrop/roguetown/dungeon/misc,
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/under/cave/oldfort)
+"CM" = (
+/obj/effect/decal/cobbleedge{
+	icon_state = "borderfall";
+	dir = 1
+	},
+/obj/structure/winch{
+	dir = 1;
+	gid = "minotaurgate";
+	pixel_x = -7;
+	redstone_id = "minotaurgate"
+	},
+/turf/open/floor/rogue/blocks,
+/area/rogue/under/cave/oldfort)
 "CN" = (
 /obj/item/bedroll,
 /obj/effect/decal/cleanable/blood/splatter,
@@ -56443,7 +56456,7 @@ sI
 Kb
 Nk
 Qw
-pC
+CM
 CZ
 tH
 AS

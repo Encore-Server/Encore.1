@@ -1000,6 +1000,10 @@
 /obj/structure/fluff/railing/wood,
 /turf/open/water/ocean,
 /area/rogue/outdoors/woods)
+"mp" = (
+/obj/structure/flora/roguegrass,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "mv" = (
 /obj/effect/decal/mossy{
 	dir = 8
@@ -1748,6 +1752,10 @@
 "vL" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/beach/tutorial)
+"vW" = (
+/obj/structure/flora/ausbushes/ppflowers,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "vY" = (
 /obj/item/storage/roguebag{
 	pixel_y = 16;
@@ -1912,6 +1920,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/beach/forest)
+"yn" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "yo" = (
 /obj/effect/decal/mossy{
 	dir = 1
@@ -2111,6 +2123,10 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/beach/tutorial)
+"Cq" = (
+/obj/structure/flora/ausbushes/brflowers,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "Cs" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
@@ -2287,6 +2303,10 @@
 	},
 /turf/open/water/pond,
 /area/rogue/outdoors/beach/tutorial)
+"Et" = (
+/obj/structure/flora/rock/jungle,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "EA" = (
 /obj/machinery/light/rogue/smelter/great,
 /turf/open/floor/rogue/cobble,
@@ -2349,6 +2369,12 @@
 	dir = 4
 	},
 /area/rogue/outdoors/beach/forest)
+"Fp" = (
+/obj/structure/roguemachine/bounty{
+	density = 1
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/rtfield)
 "Fu" = (
 /turf/closed/mineral/random/rogue/high,
 /area/rogue/under/cave)
@@ -25415,7 +25441,7 @@ AA
 AA
 tK
 tK
-AA
+tK
 Hz
 OX
 Hz
@@ -26322,7 +26348,7 @@ by
 AN
 AN
 AN
-AN
+Jo
 Jo
 Jo
 Jo
@@ -26579,7 +26605,7 @@ by
 by
 AN
 AN
-AN
+tI
 tI
 tI
 tI
@@ -37344,10 +37370,10 @@ Xy
 Xy
 Xy
 Hz
+jW
+jW
+Cq
 Hz
-jW
-jW
-jW
 jW
 Hz
 Hz
@@ -37602,8 +37628,8 @@ Xy
 Xy
 Hz
 jW
-jW
-jW
+yn
+Fp
 jW
 Hz
 Hz
@@ -37858,10 +37884,10 @@ Xy
 Xy
 Xy
 Hz
-Xo
+mp
+vW
+Et
 jW
-jW
-Hz
 Hz
 Hz
 Hz
@@ -38116,9 +38142,9 @@ Xy
 Xy
 Hz
 Hz
-Hz
-Hz
-Hz
+jW
+jW
+mp
 Hz
 Hz
 Hz
@@ -62827,9 +62853,9 @@ gN
 gN
 Hz
 Hz
-Hz
-OX
-OX
+YP
+oT
+ls
 Hz
 Hz
 gN
@@ -64883,9 +64909,9 @@ Hz
 Hz
 Hz
 Hz
-Hz
-OX
-OX
+YP
+oT
+ls
 Hz
 Hz
 Hz

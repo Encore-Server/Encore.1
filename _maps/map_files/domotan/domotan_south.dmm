@@ -279,7 +279,7 @@
 "eX" = (
 /obj/item/natural/stone,
 /turf/closed/mineral/rogue/bedrock,
-/area/rogue/outdoors/woods/seculton)
+/area/rogue/under/cave)
 "eY" = (
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/ocean/deep,
@@ -1726,7 +1726,7 @@
 /turf/open/water/swamp,
 /area/rogue/outdoors/bog/dense)
 "Es" = (
-/turf/closed/wall/mineral/rogue/stonebrick,
+/turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/under/cave)
 "Ev" = (
 /obj/structure/table/wood{
@@ -2432,9 +2432,6 @@
 	aallmig = "z1-hellwatch1"
 	},
 /turf/open/floor/rogue/cobblerock,
-/area/rogue/outdoors/woods/seculton)
-"RN" = (
-/turf/closed/mineral/rogue/bedrock,
 /area/rogue/outdoors/woods/seculton)
 "RQ" = (
 /obj/item/natural/stone{
@@ -44596,7 +44593,7 @@ qd
 qd
 qd
 qd
-RN
+qd
 js
 js
 js
@@ -44853,7 +44850,7 @@ Es
 Es
 Es
 Es
-qd
+Es
 Fu
 js
 js

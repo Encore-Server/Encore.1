@@ -7,7 +7,7 @@
 "cf" = (/obj/effect/landmark/map_load_mark/mountain,/turf/open/floor/rogue/metal,/area/rogue/outdoors/woods/crossroads)
 "ch" = (/obj/structure/flora/newtree,/turf/open/floor/rogue/grassyel,/area/rogue/outdoors/woods/crossroads)
 "ck" = (/turf/closed/mineral/rogue/bedrock,/area/rogue/under/cavewet/bogcaves)
-"cO" = (/mob/living/simple_animal/hostile/rogue/skeleton/guard,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
+"cO" = (/obj/structure/trap/skeleton,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "cP" = (/obj/structure/gravemarker{pixel_x = -21},/obj/structure/closet/dirthole/grave,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "cR" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate2"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "dt" = (/obj/structure/mineral_door/bars,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
@@ -16,7 +16,7 @@
 "dY" = (/obj/machinery/light/rogue/lanternpost{pixel_y = 28},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/crossroads)
 "eD" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "eV" = (/obj/effect/decal/cleanable/blood/tracks{dir = 4},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"fx" = (/mob/living/simple_animal/hostile/rogue/skeleton/bow,/obj/machinery/light/rogue/wallfire/candle/blue/l,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
+"fx" = (/obj/machinery/light/rogue/wallfire/candle/blue/l,/obj/structure/trap/skeleton,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "fA" = (/obj/effect/decal/cleanable/blood/tracks,/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "fF" = (/obj/effect/decal/cleanable/blood/tracks{dir = 4},/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate2"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "gc" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/outdoors/woods/churchfort/basement)
@@ -54,7 +54,7 @@
 "rx" = (/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "sw" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "sB" = (/obj/effect/landmark/map_load_mark/hellwatch/z1/q2,/turf/open/floor/rogue/metal/barograte,/area/rogue)
-"sZ" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue/under/cavewet/bogcaves)
+"sZ" = (/turf/closed/wall/mineral/rogue/stone/blue_moss,/area/rogue/under/cavewet/bogcaves)
 "tG" = (/turf/closed/wall/mineral/rogue/stone/moss,/area/rogue/outdoors/woods/churchfort/basement)
 "tN" = (/obj/item/natural/rock,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "tO" = (/obj/effect/landmark/map_load_mark/mountain/small,/turf/open/floor/rogue/metal,/area/rogue/outdoors/woods/crossroads)
@@ -85,7 +85,7 @@
 "FL" = (/obj/structure/closet/dirthole/closed/loot,/obj/structure/gravemarker{pixel_x = -21},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/churchfort/basement)
 "Gn" = (/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "HX" = (/obj/item/roguecoin/copper/pile,/obj/item/roguecoin/copper/pile,/turf/open/floor/rogue/volcanic,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
-"Jy" = (/mob/living/simple_animal/hostile/rogue/skeleton/bow,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
+"Jy" = (/obj/structure/trap/skeleton,/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "JC" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/woods/crossroads)
 "JF" = (/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate1"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "JY" = (/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods/churchfort)
@@ -212,17 +212,17 @@ CnCnCnCnCnCnCnxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrKr
 CnCnCnCnCnCnCnxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEKrKrckckckckckckckckckKrKr
 CnCnCnCnCnCnJCxEJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYxEJYJYJYJYJYxEKrKrcksZsZsZsZsZsZsZckKrKr
 CnCnCnCnCnCnJCxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYJYxExEJYJYJYJYJYxEKrKrcksZjyjyjyjyjysZckKrKr
-CnCnCnCnJCCniQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEKrKrcksZrxrxrxrxrxsZckKrKr
-CnCnCnJCJCiQiQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYJYJYJYJYJYJYxEKrKrcksZrxrxrxrxrxsZckKrKr
+CnCnCnCnJCCniQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYJYxExEJYJYJYJYJYJYxEKrKrcksZiQrxrxrxrxsZckKrKr
+CnCnCnJCJCiQiQxEJYJYJYJYJYJYxEJYJYJYJYJYJYxExEJYJYJYJYxEJYJYJYJYJYJYJYJYxEKrKrcksZrxrxrxiQrxsZckKrKr
 CnJCJCJCCnCnDZxEJYJYJYJYJYxExExEJYJYJYJYJYxExEJYJYJYJYxExExExEJYJYJYJYJYxEKrKrcksZVrrxrxrxVrsZckKrKr
-JCJCJCCnCnCnJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZrxrxrxsZsZckKrKr
-JCJCCnCnCnJCJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZrxrxrxsZsZckKrKr
+JCJCJCCnCnCnJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZrxiQrxsZsZckKrKr
+JCJCCnCnCnJCJCxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrcksZsZiQiQrxsZsZckKrKr
 CnCnJCJCCnJCCmxEJYJYJYJYJYJYJYJYJYJYJYJYJYxExEJYJYJYJYJYJYJYJYJYJYJYJYJYxEKrKrckckckrxrxrxckckckKrKr
-CnJCJCCnCnCnCngyxExExExExExExExExExExExExExEPbxExExExExExExExExExExExExExEKrKrrxrxrxrxrxrxKrKrKrKrKr
-JCCnJCJCCnCnCnCnCnCnCniQJCCnCnCnCnCnCnCnJCJCJCCnCnCnCnKrKrKrKrKrKrKrKrKrKrKrWGrxrxrxrxrxrxKrKrKrKrKr
-JCJCJCJCJCJCiQiQJCCnJCJCiQCnCnCnCnCnJCiQJCJCJCiQJCCnCniQJCdYrxiQrxrxrxrxrxrxrxrxrxrxrxrxKrKrKrEQEQEQ
-CnCnCnCnCnJCCnCnCnCnJCJCJCCnCnJCJCJCJCJCJCJCJCiQJCiQJCJCrxiQiQrxrxrxrxrxrxrxrxrxrxKrKrKrKrKrKrEQEQEQ
-iSJCCnJCiQiQJCJCCnJCCnJCJCJCJCJCJCiQJCJCJCJCJCJCJCiQJCJCiQrxJCrxiQrxrxrxrxrxrxrxKrKrKrKrKrKrEQEQEQEQ
+CnJCJCCnCnCnCngyxExExExExExExExExExExExExExEPbxExExExExExExExExExExExExExEKrKrrxrxiQrxrxiQKrKrKrKrKr
+JCCnJCJCCnCnCnCnCnCnCniQJCCnCnCnCnCnCnCnJCJCJCCnCnCnCnKrKrKrKrKrKrKrKrKrKrKrWGiQiQiQrxrxrxKrKrKrKrKr
+JCJCJCJCJCJCiQiQJCCnJCJCiQCnCnCnCnCnJCiQJCJCJCiQJCCnCniQJCdYrxiQrxrxiQiQrxrxrxrxrxrxrxrxKrKrKrEQEQEQ
+CnCnCnCnCnJCCnCnCnCnJCJCJCCnCnJCJCJCJCJCJCJCJCiQJCiQJCJCrxiQiQrxrxrxrxrxrxrxrxiQrxKrKrKrKrKrKrEQEQEQ
+iSJCCnJCiQiQJCJCCnJCCnJCJCJCJCJCJCiQJCJCJCJCJCJCJCiQJCJCiQrxJCrxiQrxrxrxrxiQiQrxKrKrKrKrKrKrEQEQEQEQ
 "}
 (1,1,3) = {"
 pRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpRpR
