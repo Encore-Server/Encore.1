@@ -30,6 +30,12 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/lostkeep)
+"as" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/west/thornbed)
 "ax" = (
 /obj/structure/flora/roguegrass/thorn_bush,
 /obj/structure/spacevine,
@@ -46,6 +52,10 @@
 /obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/oldfort)
+"aC" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "aD" = (
 /obj/structure/spacevine,
 /turf/open/floor/rogue/churchbrick,
@@ -412,6 +422,9 @@
 /obj/effect/landmark/map_load_mark/underground/small,
 /turf/open/floor/rogue/metal/barograte,
 /area/rogue/under/cavewet/bogcaves)
+"dn" = (
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "do" = (
 /obj/structure/closet/crate/roguecloset/dark,
 /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy,
@@ -912,6 +925,13 @@
 /obj/structure/fermenting_barrel/random/water,
 /turf/open/floor/rogue/tile/checkeralt,
 /area/rogue/indoors/lighthouse)
+"gU" = (
+/obj/structure/table/church/m,
+/obj/item/clothing/neck/roguetown/psicross/wood/iliope{
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/west)
 "gV" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 1
@@ -1462,6 +1482,10 @@
 	icon_state = "plating2"
 	},
 /area/rogue/under/cave/lostkeep)
+"kG" = (
+/obj/machinery/light/rogue/firebowl/standing/blue,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/west)
 "kJ" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/lostkeep)
@@ -1570,6 +1594,13 @@
 	},
 /turf/open/floor/rogue/metal,
 /area/rogue/under/cave/oldtown)
+"ls" = (
+/obj/structure/table/church/m,
+/obj/item/clothing/neck/roguetown/psicross/wood/akan{
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "lu" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/sand,
@@ -1790,6 +1821,15 @@
 /obj/structure/fluff/grindwheel,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
+"nj" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/obj/item/candle/yellow{
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "nk" = (
 /obj/machinery/light/rogue/lanternpost{
 	dir = 8
@@ -2346,6 +2386,13 @@
 	},
 /turf/open/transparent/openspace,
 /area/rogue/outdoors/woods/west)
+"qQ" = (
+/obj/structure/table/church,
+/obj/item/clothing/head/roguetown/jester{
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods/west)
 "qS" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -2671,6 +2718,10 @@
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/oldfort)
+"tl" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/outdoors/woods/west)
 "tm" = (
 /obj/item/shard,
 /obj/structure/fluff/railing/border,
@@ -2963,6 +3014,10 @@
 /obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/oldfort)
+"vu" = (
+/obj/structure/stairs/stone,
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/woods/west)
 "vv" = (
 /obj/structure/flora/roguegrass/swampweed,
 /turf/open/water/swamp,
@@ -3303,6 +3358,12 @@
 /obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/under/cave/oldtown)
+"xZ" = (
+/obj/structure/stairs/stone{
+	dir = 4
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
 "ya" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 5
@@ -4307,6 +4368,10 @@
 /obj/effect/decal/mossy,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/oldtown)
+"Em" = (
+/obj/structure/flora/roguegrass/swampweed,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "En" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble/mossy,
@@ -5094,6 +5159,10 @@
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/lighthouse)
+"JF" = (
+/obj/structure/flora/newtree,
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "JG" = (
 /obj/structure/bars,
 /turf/open/water/ocean/deep,
@@ -6160,6 +6229,13 @@
 "QL" = (
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/woods/west/crescent)
+"QN" = (
+/obj/structure/table/church,
+/obj/item/natural/feather{
+	pixel_y = 8
+	},
+/turf/open/floor/rogue/grassyel,
+/area/rogue/indoors/shelter/woods)
 "QP" = (
 /obj/item/natural/rock,
 /turf/open/floor/rogue/naturalstone,
@@ -6382,6 +6458,9 @@
 "Sv" = (
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/lostkeep)
+"Sx" = (
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/indoors/shelter/woods)
 "Sz" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/under/cave/oldfort)
@@ -6704,6 +6783,15 @@
 "Un" = (
 /obj/item/natural/stone,
 /turf/open/floor/rogue/cobble/mossy,
+/area/rogue/outdoors/woods/west)
+"Up" = (
+/obj/structure/table/church{
+	icon_state = "churchtable_end"
+	},
+/obj/item/candle/yellow{
+	pixel_y = 10
+	},
+/turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/woods/west)
 "Us" = (
 /turf/closed/wall/mineral/rogue/wooddark,
@@ -26325,7 +26413,7 @@ UM
 dM
 dM
 dM
-dM
+Dj
 dM
 dM
 dM
@@ -26581,11 +26669,11 @@ dM
 dM
 dM
 dM
+as
 dM
-dM
-dM
-dM
-dM
+Dj
+Dj
+Dj
 dM
 dM
 dM
@@ -26844,7 +26932,7 @@ KQ
 KQ
 dM
 dM
-dM
+Dj
 dM
 dM
 KQ
@@ -27102,7 +27190,7 @@ KQ
 KQ
 KQ
 dM
-dM
+Dj
 dM
 KQ
 KQ
@@ -27359,7 +27447,7 @@ KQ
 KQ
 KQ
 dM
-dM
+Dj
 dM
 KQ
 KQ
@@ -27873,7 +27961,7 @@ zG
 Nq
 KQ
 KQ
-dM
+Dj
 dM
 dM
 KQ
@@ -28131,9 +28219,9 @@ zG
 zG
 zG
 dM
+Dj
 dM
-dM
-dM
+Dj
 dM
 qr
 qr
@@ -36828,7 +36916,7 @@ sQ
 ie
 ZX
 vr
-ZX
+vr
 KQ
 zG
 zG
@@ -37085,7 +37173,7 @@ sQ
 ie
 vr
 vr
-vr
+vu
 KQ
 aQ
 zG
@@ -66670,14 +66758,14 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-OD
-OD
-OD
+dn
+dn
+dn
+dn
+xZ
+dn
+dn
+JF
 by
 by
 by
@@ -66926,17 +67014,17 @@ by
 by
 by
 by
-OD
-nV
-OD
-IB
-IB
-OD
-OD
-nV
-OD
-OD
-OD
+dn
+dn
+JF
+dn
+dn
+dn
+Sx
+dn
+dn
+dn
+dn
 by
 by
 by
@@ -67183,17 +67271,17 @@ by
 by
 by
 by
-OD
-OD
-OD
-IB
-IB
-IB
-OD
-OD
-OD
-OD
-OD
+dn
+dn
+dn
+Em
+dn
+dn
+dn
+Sx
+dn
+JF
+dn
 by
 by
 by
@@ -67440,18 +67528,18 @@ by
 by
 by
 by
-OD
-nV
-OD
-IB
-IB
-IB
-IB
-OD
-OD
-OD
-OD
-OD
+dn
+dn
+dn
+dn
+dn
+aC
+dn
+dn
+Sx
+dn
+dn
+dn
 by
 by
 OD
@@ -67697,18 +67785,18 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-IB
-OD
-OD
-OD
-OD
-nV
-OD
+dn
+JF
+dn
+QN
+Sx
+dn
+dn
+Sx
+Sx
+dn
+Em
+dn
 by
 by
 by
@@ -67955,17 +68043,17 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-OD
-nV
-OD
-OD
-OD
-OD
+dn
+dn
+ls
+Sx
+Sx
+Sx
+Sx
+dn
+dn
+dn
+dn
 by
 by
 by
@@ -68213,16 +68301,16 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-OD
-nV
-OD
-OD
-OD
+dn
+nj
+Sx
+dn
+Sx
+dn
+Em
+dn
+JF
+dn
 by
 by
 by
@@ -68470,15 +68558,15 @@ by
 by
 by
 by
-OD
-nV
-OD
-nV
-OD
-OD
-OD
-OD
-OD
+dn
+dn
+dn
+dn
+aC
+dn
+dn
+dn
+dn
 by
 by
 by
@@ -68727,15 +68815,15 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-OD
-OD
-OD
-OD
+JF
+dn
+Em
+dn
+dn
+dn
+JF
+dn
+dn
 by
 by
 by
@@ -68984,13 +69072,13 @@ by
 by
 by
 by
-OD
-OD
-OD
-nV
-OD
-OD
-OD
+dn
+dn
+JF
+dn
+Em
+dn
+dn
 by
 by
 by
@@ -69241,13 +69329,13 @@ by
 by
 by
 by
-OD
-OD
-OD
-OD
-OD
-OD
-OD
+dn
+dn
+dn
+dn
+dn
+dn
+dn
 by
 by
 by
@@ -76411,7 +76499,7 @@ by
 OD
 OD
 OD
-OD
+nV
 OD
 by
 by
@@ -76666,7 +76754,7 @@ by
 by
 by
 OD
-OD
+qk
 OD
 OD
 OD
@@ -76922,11 +77010,11 @@ by
 by
 by
 by
-OD
+tl
+qk
+qk
 OD
 nV
-OD
-OD
 OD
 by
 by
@@ -77181,9 +77269,9 @@ by
 by
 OD
 OD
+qk
 OD
 OD
-nV
 OD
 by
 by
@@ -77439,8 +77527,8 @@ by
 OD
 nV
 OD
-OD
-OD
+qk
+qk
 OD
 OD
 OD
@@ -77697,7 +77785,7 @@ OD
 OD
 OD
 OD
-OD
+qk
 OD
 OD
 OD
@@ -77955,7 +78043,7 @@ OD
 nV
 OD
 OD
-nV
+qk
 OD
 nV
 OD
@@ -78212,8 +78300,8 @@ by
 by
 OD
 OD
-OD
-OD
+qk
+qk
 OD
 OD
 OD
@@ -78470,8 +78558,8 @@ by
 OD
 OD
 OD
+qk
 OD
-nV
 nV
 OD
 OD
@@ -78728,7 +78816,7 @@ by
 OD
 OD
 OD
-OD
+qk
 OD
 OD
 OD
@@ -78985,8 +79073,8 @@ by
 by
 OD
 OD
-OD
-OD
+qk
+qk
 OD
 nV
 OD
@@ -79242,8 +79330,8 @@ by
 by
 OD
 OD
-nV
-OD
+kG
+qk
 OD
 OD
 OD
@@ -79498,12 +79586,12 @@ by
 by
 OD
 OD
-OD
-OD
+qQ
+qk
+qk
 OD
 OD
 nV
-OD
 by
 by
 by
@@ -79755,10 +79843,10 @@ by
 OD
 nV
 OD
-nV
-OD
-OD
-OD
+gU
+qk
+qk
+qk
 OD
 OD
 by
@@ -80012,8 +80100,8 @@ by
 OD
 OD
 OD
-OD
-OD
+Up
+qk
 OD
 OD
 OD
@@ -80271,9 +80359,9 @@ OD
 OD
 OD
 OD
+kG
 OD
 nV
-OD
 OD
 by
 by
