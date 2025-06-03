@@ -9,7 +9,6 @@
 	allowed_races = RACES_ALL_KINDS //Maybe a system to force-pick lineage based on king and queen should be implemented.
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
-	allowed_patrons = list(/datum/patron/heretic/jealous_god)
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
 
 	tutorial = "You’ve never felt the gnawing of the winter, never known the bite of hunger and certainly have never known an honest day's work. You are as free as any bird in the sky, and you may revel in your debauchery for as long as your parents remain upon the throne: But someday you’ll have to grow up, and that will be the day your carelessness will cost you more than a few mammons."
@@ -21,6 +20,10 @@
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_fancy.ogg'
+
+/datum/outfit/job/roguetown/prince
+	has_loadout = TRUE
+	allowed_patrons = list(/datum/patron/heretic/jealous_god)
 
 /datum/job/roguetown/prince/after_spawn(mob/living/H, mob/M, latejoin)
 	. = ..()
@@ -43,18 +46,18 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/rogueweapon/sword
 	beltr = /obj/item/storage/keyring/heir
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
@@ -78,6 +81,48 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/rituos/miracle)
 	if(H.mind)
 		H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
+
+/datum/outfit/job/roguetown/heir/daring/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Recurve Bow", "Crossbow", "Sword & Shield", "Axe & Buckler", "Shamshir & Buckler", "Rapier & Parrying Dagger", "Twin Daggers")
+	var/weaponchoice = input(H, "Choose your weapon", "TAKE UP ARMS") as anything in weapons
+	switch(weaponchoice)
+		if("Recurve Bow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+		if("Crossbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+		if("Sword & Shield")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/decorated, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/tower/metal, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+		if("Axe & Buckler")
+			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/woodcut/steel, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+		if("Shamshir & Buckler")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/long/rider, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+		if("Rapier & Parrying Dagger")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/dec, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+		if("Twin Daggers")
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 /datum/advclass/heir/aristocrat
 	name = "Unawakened Blood"
