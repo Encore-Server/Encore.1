@@ -5559,7 +5559,7 @@
 /turf/open/floor/rogue/metal,
 /area/rogue/under/cave/lighthouse)
 "Mh" = (
-/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
 "Mk" = (
@@ -6549,6 +6549,9 @@
 /obj/structure/table/wood{
 	dir = 5;
 	icon_state = "largetable"
+	},
+/obj/item/natural/bundle/stick{
+	amount = 10
 	},
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter/woods)
