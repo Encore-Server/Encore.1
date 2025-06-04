@@ -5006,6 +5006,13 @@
 /obj/structure/flora/roguegrass/water,
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/town)
+"fEc" = (
+/obj/effect/landmark/mapGenerator/sunlights{
+	endTurfY = 130;
+	endTurfX = 80
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/town/roofs)
 "fEv" = (
 /obj/structure/ladder,
 /turf/open/floor/rogue/ruinedwood/turned,
@@ -64988,7 +64995,7 @@ fNx
 fNx
 fNx
 fNx
-fNx
+fEc
 "}
 (2,1,5) = {"
 fNx

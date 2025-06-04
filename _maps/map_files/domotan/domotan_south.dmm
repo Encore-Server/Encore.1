@@ -33,7 +33,7 @@
 	name = "makeshift bed"
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "aD" = (
 /obj/structure/flora/roguegrass/swampweed,
 /turf/open/floor/rogue/sand,
@@ -161,7 +161,7 @@
 	name = "makeshift bed"
 	},
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "cP" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -381,7 +381,7 @@
 /area/rogue/under/cavewet/bogcaves)
 "gV" = (
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "gY" = (
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/shelter)
@@ -427,7 +427,7 @@
 /area/rogue/under/cave)
 "ij" = (
 /turf/closed/mineral/random/rogue,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "io" = (
 /obj/structure/fluff/railing/border{
 	dir = 1;
@@ -556,7 +556,7 @@
 "kk" = (
 /obj/machinery/light/rogue/campfire/densefire,
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "kl" = (
 /obj/structure/bars/cemetery,
 /turf/open/floor/rogue/hexstone,
@@ -676,7 +676,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "mP" = (
 /obj/effect/decal/cleanable/food/salt,
 /turf/open/floor/rogue/dirt,
@@ -744,7 +744,7 @@
 /area/rogue/outdoors/banditcamp)
 "ob" = (
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "oc" = (
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/outdoors/bog/dense)
@@ -774,6 +774,13 @@
 	endTurfY = 255
 	},
 /obj/effect/landmark/mapGenerator/rogue/forest,
+/obj/effect/landmark/mapGenerator/rogue/cave{
+	endTurfX = 255;
+	endTurfY = 255
+	},
+/obj/effect/landmark/mapGenerator/sunlights{
+	endTurfY = 255
+	},
 /turf/closed,
 /area/rogue)
 "os" = (
@@ -1214,7 +1221,7 @@
 "uv" = (
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "uy" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/hexstone,
@@ -1360,7 +1367,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "wO" = (
 /obj/structure/closet/crate/coffin,
 /turf/open/floor/rogue/cobble,
@@ -1870,7 +1877,7 @@
 "FT" = (
 /obj/structure/fluff/dryingrack,
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "FX" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
@@ -2161,7 +2168,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "LL" = (
 /obj/machinery/light/rogue/wallfire/candle/blue,
 /turf/open/floor/rogue/hexstone,
@@ -2448,7 +2455,7 @@
 	icon_state = "carpdried"
 	},
 /turf/open/floor/rogue/naturalstone,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/indoors/shelter)
 "QL" = (
 /turf/closed/mineral/random/rogue,
 /area/rogue/outdoors/woods/seculton)

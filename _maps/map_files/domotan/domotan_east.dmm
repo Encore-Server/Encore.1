@@ -74,7 +74,7 @@
 	desc = "A rickety statue depicting an agent of Mjallidhorn and His will. Made to ferry lost souls from the grasp of Hell after their passing."
 	},
 /turf/open/floor/rogue/snow,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "dt" = (
 /obj/structure/spider/stickyweb,
 /turf/open/floor/rogue/blocks,
@@ -392,7 +392,7 @@
 "pv" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/snow,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "pC" = (
 /obj/structure/bars/grille,
 /obj/structure/bars,
@@ -467,8 +467,13 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains/decap)
 "qs" = (
-/turf/open/floor/rogue/snow,
-/area/rogue/indoors/shelter/mountains)
+/obj/effect/landmark/mapGenerator/rogue/east_domotan,
+/obj/effect/landmark/mapGenerator/sunlights{
+	endTurfX = 155;
+	endTurfY = 255
+	},
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/mountains)
 "qx" = (
 /turf/open/floor/rogue/rooftop{
 	dir = 1;
@@ -646,7 +651,7 @@
 "uo" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "uu" = (
 /obj/structure/fluff/railing/wood,
 /turf/open/floor/rogue/twig/platform,
@@ -690,9 +695,6 @@
 /obj/item/reagent_containers/glass/bottle/rogue/wine/sourwine,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/shelter/mountains/decap)
-"vY" = (
-/turf/open/floor/rogue/snowpatchy,
-/area/rogue/indoors/shelter/mountains)
 "wd" = (
 /obj/structure/spider/stickyweb,
 /obj/machinery/light/rogue/torchholder/c,
@@ -780,9 +782,6 @@
 /obj/machinery/light/rogue/torchholder/c,
 /turf/open/floor/rogue/hay,
 /area/rogue/outdoors/mountains/decap)
-"yw" = (
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/mountains)
 "yF" = (
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/mountains/decap)
@@ -790,9 +789,6 @@
 /obj/machinery/light/rogue/firebowl,
 /turf/open/floor/rogue/grasscold,
 /area/rogue/outdoors/mountains)
-"zd" = (
-/turf/open/floor/rogue/grasscold,
-/area/rogue/indoors/shelter/mountains)
 "zj" = (
 /turf/open/floor/rogue/volcanic,
 /area/rogue/under/cave)
@@ -916,7 +912,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "DY" = (
 /turf/open/transparent/openspace,
 /area/rogue)
@@ -1145,9 +1141,6 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/orc/ranged,
 /turf/open/floor/rogue/twig/platform,
 /area/rogue/indoors/shelter/mountains/decap)
-"Jw" = (
-/turf/open/floor/rogue/snowrough,
-/area/rogue/indoors/shelter/mountains)
 "Jx" = (
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap)
@@ -1518,7 +1511,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "SC" = (
 /obj/structure/fluff/railing/border{
 	dir = 9
@@ -1587,7 +1580,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/mountains)
+/area/rogue/outdoors/mountains)
 "Vg" = (
 /obj/machinery/light/rogue/torchholder/r,
 /turf/open/floor/rogue/cobble/mossy,
@@ -41856,7 +41849,7 @@ vH
 vH
 vH
 vH
-vH
+qs
 "}
 (2,1,2) = {"
 vH
@@ -67699,10 +67692,10 @@ vE
 vE
 vE
 vE
-qs
+OR
 vE
 vE
-qs
+OR
 OR
 OR
 OR
@@ -67952,15 +67945,15 @@ vE
 vE
 vE
 vE
-qs
+OR
 vE
 vE
-qs
-qs
-vY
-vY
-qs
-qs
+OR
+OR
+MV
+MV
+OR
+OR
 OR
 OR
 vE
@@ -68208,16 +68201,16 @@ vE
 vE
 vE
 dc
-vY
+MV
 pv
-qs
-vY
-qs
-zd
-zd
-qs
-qs
-qs
+OR
+MV
+OR
+bv
+bv
+OR
+OR
+OR
 OR
 vE
 vE
@@ -68464,17 +68457,17 @@ OR
 vE
 vE
 SB
-vY
-yw
-Jw
-yw
-zd
-zd
-zd
-qs
-qs
-qs
-qs
+MV
+fC
+ii
+fC
+bv
+bv
+bv
+OR
+OR
+OR
+OR
 vE
 vE
 vE
@@ -68721,16 +68714,16 @@ vE
 vE
 vE
 DU
-yw
-yw
-yw
-yw
-yw
-zd
-zd
-zd
-Jw
-Jw
+fC
+fC
+fC
+fC
+fC
+bv
+bv
+bv
+ii
+ii
 vE
 vE
 vE
@@ -68978,15 +68971,15 @@ vE
 vE
 vE
 UI
-yw
-zd
-yw
-zd
-zd
-vY
-zd
-qs
-qs
+fC
+bv
+fC
+bv
+bv
+MV
+bv
+OR
+OR
 vE
 vE
 vE
@@ -69236,13 +69229,13 @@ vE
 vE
 vE
 dc
-vY
-zd
+MV
+bv
 uo
-Jw
-qs
-qs
-qs
+ii
+OR
+OR
+OR
 vE
 vE
 vE
@@ -69493,12 +69486,12 @@ vE
 vE
 vE
 vE
-qs
-vY
-qs
-qs
-qs
-Jw
+OR
+MV
+OR
+OR
+OR
+ii
 vE
 vE
 vE
@@ -69751,8 +69744,8 @@ vE
 vE
 vE
 vE
-qs
-qs
+OR
+OR
 vE
 vE
 vE

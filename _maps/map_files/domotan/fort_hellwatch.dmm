@@ -25,12 +25,13 @@
 "hc" = (/turf/closed/mineral/random/rogue,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "hH" = (/obj/structure/lever/wall{pixel_x = 19; redstone_id = "church_keep_hell_gate1"; name = "gate lever"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "iQ" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/crossroads)
-"iS" = (/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/crossroads)
+"iS" = (/obj/effect/landmark/mapGenerator/rogue/forest,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/woods/crossroads)
 "jh" = (/turf/open/floor/rogue/naturalstone,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "jn" = (/obj/effect/decal/cleanable/blood/tracks,/obj/structure/bars/passage{redstone_id = "church_keep_hell_gate1"},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
 "jp" = (/obj/structure/table/wood{dir = 5; icon_state = "largetable"},/obj/item/candle/skull/lit{pixel_x = -3; pixel_y = 12},/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
 "jy" = (/obj/structure/fluff/traveltile{aportalgoesto = "z1-hellwatch1-in"; aportalid = "z1-hellwatch1-out"},/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/woods/crossroads)
 "jG" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 6},/obj/machinery/light/rogue/wallfire/candle/blue,/turf/open/floor/rogue/blocks/green,/area/rogue/outdoors/woods/churchfort/basement)
+"kg" = (/obj/effect/landmark/mapGenerator/sunlights{endTurfY = 50; endTurfX = 50},/turf/open/transparent/openspace,/area/rogue/outdoors/woods/crossroads)
 "kv" = (/obj/effect/landmark/map_load_mark/hellwatch/z3,/turf/open/floor/rogue/metal/barograte,/area/rogue/outdoors/woods/churchfort)
 "kL" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/woods/churchfort/basement)
 "kP" = (/obj/item/roguecoin/gold/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/underworld/road,/area/rogue/outdoors/woods/churchfort/basement/hell_crack)
@@ -274,5 +275,5 @@ NTNTNTNTNTNTNTkvxExExExExExExExExExExExExExESuxExExExExExExExExExExExExExEpRpRaO
 NTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTpRpRpRpRpRpRpRpRpRpRchpRaOpRpRpRaOpRpRpRpRaOpR
 NTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTpRpRpRpRpRpRchpRpRpRpRpRaOaOaOaOaOaOaOaOaOaOpR
 NTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTpRchpRchpRpRpRpRpRchpRtOaOaOaOaOaOaOaOaOaOpR
-NTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTpRpRpRpRpRpRpRchpRpRpRpRpRpRpRpRpRpRpRpRpRpR
+kgNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTNTpRpRpRpRpRpRpRchpRpRpRpRpRpRpRpRpRpRpRpRpRpR
 "}

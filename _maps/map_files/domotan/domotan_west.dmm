@@ -662,9 +662,6 @@
 /obj/item/natural/fibers,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cavewet/bogcaves)
-"fa" = (
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
 "fc" = (
 /obj/structure/fluff/railing/border{
 	icon_state = "border";
@@ -890,7 +887,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "gI" = (
 /obj/item/rogueweapon/sword/iron/short/chipped,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1481,7 +1478,7 @@
 	dir = 4
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "kJ" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/indoors/lostkeep)
@@ -1519,7 +1516,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "kW" = (
 /obj/item/rogueweapon/sword/iron/short,
 /obj/structure/spider/stickyweb,
@@ -2548,8 +2545,13 @@
 /turf/open/water/swamp/deep,
 /area/rogue/under/cave/oldtown)
 "rZ" = (
-/turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/obj/effect/landmark/mapGenerator/rogue/west_domotan,
+/obj/effect/landmark/mapGenerator/sunlights{
+	endTurfX = 155;
+	endTurfY = 255
+	},
+/turf/closed,
+/area/rogue)
 "sc" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -3309,7 +3311,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "xJ" = (
 /obj/item/rogueweapon/spear,
 /turf/open/floor/rogue/blocks,
@@ -3519,7 +3521,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "zi" = (
 /obj/structure/chair/wood/rogue/chair3{
 	dir = 8
@@ -4842,10 +4844,6 @@
 /obj/structure/flora/roguegrass/water/reeds,
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/beach)
-"HB" = (
-/obj/structure/flora/newtree,
-/turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
 "HD" = (
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter/woods)
@@ -5406,7 +5404,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "Lt" = (
 /obj/effect/decal/mossy{
 	dir = 1
@@ -6111,7 +6109,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/rogue/dirt/road,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "PW" = (
 /obj/machinery/light/rogue/lanternpost{
 	pixel_y = 26
@@ -6393,7 +6391,7 @@
 "RV" = (
 /obj/machinery/light/rogue/firebowl/standing/blue,
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "RX" = (
 /obj/structure/bars,
 /obj/structure/fluff/railing/border,
@@ -6878,7 +6876,7 @@
 "UU" = (
 /obj/structure/flora/roguegrass/swampweed,
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "UV" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -6944,7 +6942,7 @@
 "Vz" = (
 /obj/structure/stairs/stone,
 /turf/open/floor/rogue/grassyel,
-/area/rogue/indoors/shelter/woods)
+/area/rogue/outdoors/woods/west)
 "VB" = (
 /obj/structure/bars{
 	icon_state = "barsbent";
@@ -47638,7 +47636,7 @@ HE
 HE
 HE
 HE
-Rl
+rZ
 "}
 (2,1,2) = {"
 HE
@@ -66757,14 +66755,14 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
 kI
-rZ
-rZ
-HB
+OD
+OD
+nV
 by
 by
 by
@@ -67013,17 +67011,17 @@ by
 by
 by
 by
-rZ
-rZ
-HB
-rZ
-rZ
-rZ
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+nV
+OD
+OD
+OD
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -67270,17 +67268,17 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
+OD
+OD
+OD
 UU
-rZ
-rZ
-rZ
-fa
-rZ
-HB
-rZ
+OD
+OD
+OD
+qk
+OD
+nV
+OD
 by
 by
 by
@@ -67527,18 +67525,18 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
+OD
 RV
-rZ
-rZ
-fa
-rZ
-rZ
-rZ
+OD
+OD
+qk
+OD
+OD
+OD
 by
 by
 OD
@@ -67784,18 +67782,18 @@ by
 by
 by
 by
-rZ
-HB
-rZ
+OD
+nV
+OD
 kV
-fa
-rZ
-rZ
-fa
-fa
-rZ
+qk
+OD
+OD
+qk
+qk
+OD
 UU
-rZ
+OD
 by
 by
 by
@@ -68042,17 +68040,17 @@ by
 by
 by
 by
-rZ
-rZ
+OD
+OD
 gH
-fa
-fa
-fa
-fa
-rZ
-rZ
-rZ
-rZ
+qk
+qk
+qk
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -68300,16 +68298,16 @@ by
 by
 by
 by
-rZ
+OD
 Ls
-fa
-rZ
-fa
-rZ
+qk
+OD
+qk
+OD
 UU
-rZ
-HB
-rZ
+OD
+nV
+OD
 by
 by
 by
@@ -68557,15 +68555,15 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
 RV
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -68814,15 +68812,15 @@ by
 by
 by
 by
-HB
-rZ
+nV
+OD
 UU
-rZ
-rZ
-rZ
-HB
-rZ
-rZ
+OD
+OD
+OD
+nV
+OD
+OD
 by
 by
 by
@@ -69071,13 +69069,13 @@ by
 by
 by
 by
-rZ
-rZ
-HB
-rZ
+OD
+OD
+nV
+OD
 UU
-rZ
-rZ
+OD
+OD
 by
 by
 by
@@ -69328,13 +69326,13 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -76239,9 +76237,9 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
+OD
+OD
+OD
 by
 by
 by
@@ -76495,11 +76493,11 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-HB
-rZ
+OD
+OD
+OD
+nV
+OD
 by
 by
 by
@@ -76752,12 +76750,12 @@ by
 by
 by
 by
-rZ
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -77010,11 +77008,11 @@ by
 by
 by
 Vz
-fa
-fa
-rZ
-HB
-rZ
+qk
+qk
+OD
+nV
+OD
 by
 by
 by
@@ -77266,12 +77264,12 @@ by
 by
 by
 by
-rZ
-rZ
-fa
-rZ
-rZ
-rZ
+OD
+OD
+qk
+OD
+OD
+OD
 by
 by
 by
@@ -77523,15 +77521,15 @@ by
 by
 by
 by
-rZ
-HB
-rZ
-fa
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+nV
+OD
+qk
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -77780,15 +77778,15 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -78038,15 +78036,15 @@ by
 by
 by
 by
-rZ
-HB
-rZ
-rZ
-fa
-rZ
-HB
-rZ
-rZ
+OD
+nV
+OD
+OD
+qk
+OD
+nV
+OD
+OD
 by
 by
 by
@@ -78297,14 +78295,14 @@ by
 by
 by
 by
-rZ
-rZ
-fa
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+qk
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -78554,15 +78552,15 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-fa
-rZ
-HB
-rZ
-rZ
-rZ
+OD
+OD
+OD
+qk
+OD
+nV
+OD
+OD
+OD
 by
 OD
 OD
@@ -78812,14 +78810,14 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-fa
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+qk
+OD
+OD
+OD
+OD
 by
 OD
 nV
@@ -79070,13 +79068,13 @@ by
 by
 by
 by
-rZ
-rZ
-fa
-fa
-rZ
-HB
-rZ
+OD
+OD
+qk
+qk
+OD
+nV
+OD
 by
 by
 OD
@@ -79327,13 +79325,13 @@ by
 by
 by
 by
-rZ
-rZ
+OD
+OD
 RV
-fa
-rZ
-rZ
-rZ
+qk
+OD
+OD
+OD
 by
 by
 OD
@@ -79583,14 +79581,14 @@ by
 by
 by
 by
-rZ
-rZ
+OD
+OD
 zh
-fa
-fa
-rZ
-rZ
-HB
+qk
+qk
+OD
+OD
+nV
 by
 by
 by
@@ -79839,15 +79837,15 @@ by
 by
 by
 by
-rZ
-HB
-rZ
+OD
+nV
+OD
 xH
-fa
-fa
-fa
-rZ
-rZ
+qk
+qk
+qk
+OD
+OD
 by
 by
 by
@@ -80096,15 +80094,15 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
+OD
+OD
+OD
 PU
-fa
-rZ
-rZ
-rZ
-rZ
+qk
+OD
+OD
+OD
+OD
 by
 by
 by
@@ -80354,14 +80352,14 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
-rZ
+OD
+OD
+OD
+OD
 RV
-rZ
-HB
-rZ
+OD
+nV
+OD
 by
 by
 OD
@@ -80612,12 +80610,12 @@ by
 by
 by
 by
-rZ
-rZ
-HB
-rZ
-rZ
-rZ
+OD
+OD
+nV
+OD
+OD
+OD
 by
 by
 OD
@@ -80869,9 +80867,9 @@ by
 by
 by
 by
-rZ
-rZ
-rZ
+OD
+OD
+OD
 by
 by
 by
