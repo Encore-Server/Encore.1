@@ -33,6 +33,12 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	required = TRUE
 	cmode_music = 'sound/music/combat_fancy.ogg'
 
+/datum/outfit/job/roguetown/lord
+	has_loadout = TRUE
+	jobtype = /datum/job/roguetown/lord
+	allowed_patrons = list(/datum/patron/heretic/jealous_god)
+	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
+
 /datum/job/roguetown/exlord //just used to change the lords title
 	title = "Prince Emeritus"
 	f_title = "Princess Emeritus"
@@ -69,11 +75,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/crown/serpcrown
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	cloak = /obj/item/clothing/cloak/lordcloak
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltl = /obj/item/storage/keyring/lord
-	l_hand = /obj/item/rogueweapon/lordscepter
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
 	id = /obj/item/clothing/ring/active/nomag
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -82,10 +86,12 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
@@ -130,6 +136,47 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 //	SSticker.rulermob = H
+
+/datum/outfit/job/roguetown/lord/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Recurve Bow", "Crossbow", "Sword & Shield", "Axe & Buckler", "Shamshir & Buckler", "Rapier & Parrying Dagger", "Twin Daggers")
+	var/weaponchoice = input(H, "Choose your combat playstyle", "TAKE UP ARMS") as anything in weapons
+	switch(weaponchoice)
+		if("Recurve Bow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+		if("Crossbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+		if("Sword & Shield")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/decorated, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/tower/metal, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+		if("Axe & Buckler")
+			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/woodcut/steel, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+		if("Shamshir & Buckler")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/long/rider, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+		if("Rapier & Parrying Dagger")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/dec, TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+		if("Twin Daggers")
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 
 /datum/outfit/job/roguetown/lord/visuals/pre_equip(mob/living/carbon/human/H)
 	..()

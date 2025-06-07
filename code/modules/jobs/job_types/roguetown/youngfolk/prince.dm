@@ -6,10 +6,9 @@
 	faction = "Station"
 	total_positions = 99
 	spawn_positions = 99
-	allowed_races = RACES_ALL_KINDS //Maybe a system to force-pick lineage based on king and queen should be implemented.
+	allowed_races = list(/datum/species/human/halfelf) //Not sure why this was previously set to all_kinds
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT)
-	allowed_patrons = list(/datum/patron/heretic/jealous_god)
 	advclass_cat_rolls = list(CTAG_HEIR = 20)
 
 	tutorial = "You’ve never felt the gnawing of the winter, never known the bite of hunger and certainly have never known an honest day's work. You are as free as any bird in the sky, and you may revel in your debauchery for as long as your parents remain upon the throne: But someday you’ll have to grow up, and that will be the day your carelessness will cost you more than a few mammons."
@@ -21,6 +20,12 @@
 	max_pq = null
 	round_contrib_points = 3
 	cmode_music = 'sound/music/combat_fancy.ogg'
+
+/datum/outfit/job/roguetown/prince
+	has_loadout = TRUE
+	jobtype = /datum/job/roguetown/prince
+	allowed_patrons = list(/datum/patron/heretic/jealous_god)
+	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 
 /datum/job/roguetown/prince/after_spawn(mob/living/H, mob/M, latejoin)
 	. = ..()
@@ -43,18 +48,17 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/rogueweapon/sword
 	beltr = /obj/item/storage/keyring/heir
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
@@ -67,6 +71,45 @@
 		H.change_stat("constitution", 1)
 		H.change_stat("speed", 1)
 		H.change_stat("fortune", 1)
+		// Integrating the weapon selection into the pre_equip instead of choose_loadout is not my first choice, but for some reason, I simply cannot get choose_loadout to work for this fucking job. It still works like this, you're just naked in-game until you've picked your weapon, after which you get all of your stuff at the same time. This should be fine.
+		var/weapons = list("Recurve Bow", "Crossbow", "Sword & Shield (Heavy Proficiency)", "Axe & Buckler (Medium Proficiency)", "Shamshir & Buckler (Medium Proficiency)", "Rapier & Parrying Dagger (Dodge Proficiency)", "Twin Daggers (Dodge Proficiency)")
+		var/weaponchoice = input(H, "Choose your combat playstyle. (DON'T CHOOSE TOO QUICKLY OR THE ITEMS MAY NOT SPAWN)", "TAKE UP ARMS") as anything in weapons
+		switch(weaponchoice)
+			if("Recurve Bow")
+				H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+				H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+			if("Crossbow")
+				H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
+				H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
+			if("Sword & Shield (Heavy Proficiency)")
+				H.put_in_hands(new /obj/item/rogueweapon/sword/decorated, TRUE)
+				H.put_in_hands(new /obj/item/rogueweapon/shield/tower/metal, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+				ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+			if("Axe & Buckler (Medium Proficiency)")
+				H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/woodcut/steel, TRUE)
+				H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+				ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			if("Shamshir & Buckler (Medium Proficiency)")
+				H.put_in_hands(new /obj/item/rogueweapon/sword/long/rider, TRUE)
+				H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+				ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+			if("Rapier & Parrying Dagger (Dodge Proficiency)")
+				H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/dec, TRUE)
+				H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+				ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			if("Twin Daggers (Dodge Proficiency)")
+				H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
+				H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+				ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+
 		ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_spells_priest(H)
@@ -91,8 +134,7 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC) // Pillow princesses (gender neutral)
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/storage/keyring/heir
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltr = /obj/item/storage/keyring/heir
 	if(H.gender == MALE)
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
@@ -125,6 +167,18 @@
 		H.change_stat("intelligence", 2)
 		H.change_stat("fortune", 1)
 		H.change_stat("speed", 1)
+		
+		var/weapons = list("Selfbow", "Dagger")
+		var/weaponchoice = input(H, "Choose your combat playstyle. (DON'T CHOOSE TOO QUICKLY OR THE ITEMS MAY NOT SPAWN)", "TAKE UP ARMS") as anything in weapons
+		switch(weaponchoice)
+			if("Selfbow")
+				H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow(H), TRUE)
+				H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+			if("Dagger")
+				H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel(H), TRUE)
+				H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+	
 	var/datum/devotion/C = new /datum/devotion(H, H.patron) // This creates the cleric holder used for devotion spells
 	C.grant_spells_priest(H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eyebite)
