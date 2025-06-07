@@ -97,7 +97,6 @@
 			if("Shamshir & Buckler (Medium Proficiency)")
 				H.put_in_hands(new /obj/item/rogueweapon/sword/long/rider, TRUE)
 				H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
-				H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 				H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 				ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 			if("Rapier & Parrying Dagger (Dodge Proficiency)")
