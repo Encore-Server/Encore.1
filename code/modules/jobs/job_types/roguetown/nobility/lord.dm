@@ -35,7 +35,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/outfit/job/roguetown/lord
 	has_loadout = TRUE
+	jobtype = /datum/job/roguetown/lord
 	allowed_patrons = list(/datum/patron/heretic/jealous_god)
+	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 
 /datum/job/roguetown/exlord //just used to change the lords title
 	title = "Prince Emeritus"
@@ -73,11 +75,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/crown/serpcrown
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	cloak = /obj/item/clothing/cloak/lordcloak
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltl = /obj/item/storage/keyring/lord
-	l_hand = /obj/item/rogueweapon/lordscepter
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1)
 	id = /obj/item/clothing/ring/active/nomag
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -140,7 +140,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 /datum/outfit/job/roguetown/lord/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Recurve Bow", "Crossbow", "Sword & Shield", "Axe & Buckler", "Shamshir & Buckler", "Rapier & Parrying Dagger", "Twin Daggers")
-	var/weaponchoice = input(H, "Choose your weapon", "TAKE UP ARMS") as anything in weapons
+	var/weaponchoice = input(H, "Choose your combat playstyle", "TAKE UP ARMS") as anything in weapons
 	switch(weaponchoice)
 		if("Recurve Bow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
