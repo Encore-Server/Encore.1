@@ -24,6 +24,7 @@
 /datum/outfit/job/roguetown/prince
 	has_loadout = TRUE
 	allowed_patrons = list(/datum/patron/heretic/jealous_god)
+	beltl = /obj/item/storage/belt/rogue/pouch/coins/rich
 
 /datum/job/roguetown/prince/after_spawn(mob/living/H, mob/M, latejoin)
 	. = ..()
@@ -47,14 +48,13 @@
 	shoes = /obj/item/clothing/shoes/roguetown/nobleboot
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/keyring/heir
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	backr = /obj/item/storage/backpack/rogue/satchel
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -90,33 +90,32 @@
 		if("Recurve Bow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
 			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 		if("Crossbow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), TRUE)
 			H.put_in_hands(new /obj/item/quiver/bolts(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Sword & Shield")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/decorated, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/shield/tower/metal, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 		if("Axe & Buckler")
 			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/woodcut/steel, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/axes, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 		if("Shamshir & Buckler")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/long/rider, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/shield/buckler, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/shields, 2, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 		if("Rapier & Parrying Dagger")
 			H.put_in_hands(new /obj/item/rogueweapon/sword/rapier/dec, TRUE)
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/parrying(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 		if("Twin Daggers")
 			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
@@ -136,8 +135,7 @@
 	ADD_TRAIT(H, TRAIT_SEEPRICES_SHITTY, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC) // Pillow princesses (gender neutral)
 	belt = /obj/item/storage/belt/rogue/leather
-	beltl = /obj/item/storage/keyring/heir
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltr = /obj/item/storage/keyring/heir
 	if(H.gender == MALE)
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
@@ -178,3 +176,16 @@
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 	if(H.mind)
 		H.mind.adjust_spellpoints(-4)//You already have like 10 spells lmao
+
+/datum/outfit/job/roguetown/heir/aristocrat/choose_loadout(mob/living/carbon/human/H)
+	. = ..()
+	var/weapons = list("Selfbow", "Dagger")
+	var/weaponchoice = input(H, "Choose your weapon", "TAKE UP ARMS") as anything in weapons
+	switch(weaponchoice)
+		if("Selfbow")
+			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow(H), TRUE)
+			H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+		if("Dagger")
+			H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
