@@ -715,4 +715,4 @@
 /atom/movable/screen/alert/status_effect/buff/levelup
 	name = "Level Up"
 	desc = "I should get some rest to level up."
-	icon_state = "sleepy"
+	icon_state = "lvl_up"
