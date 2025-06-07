@@ -2,7 +2,7 @@
     "map_name": "Domotan Island", 
     "map_path": "map_files/domotan",
 	"map_file": [
-	"old_doma.dmm",
+	"domotan.dmm",
 	"domotan_north.dmm",
 	"domotan_east.dmm",
 	"domotan_west.dmm",
