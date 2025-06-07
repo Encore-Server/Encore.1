@@ -87,6 +87,7 @@
 							/obj/item/natural/stone = 23,
 							/obj/item/natural/rock = 6,
 							/obj/item/grown/log/tree/stick = 25,
+							/obj/structure/flora/roguetree = 15,
 							/obj/structure/flora/roguetree/stump/log = 11,
 							/obj/structure/flora/roguetree/stump = 4,
 							/obj/structure/closet/dirthole/closed/loot = 3)
