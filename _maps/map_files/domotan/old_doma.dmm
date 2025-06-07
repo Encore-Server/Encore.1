@@ -1184,11 +1184,19 @@
 /area/rogue/outdoors/town)
 "byq" = (
 /obj/structure/rack/rogue,
-/obj/item/clothing/suit/roguetown/armor/chainmail,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
 /obj/item/clothing/suit/roguetown/armor/chainmail{
 	pixel_y = -6
 	},
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,
+/obj/item/clothing/suit/roguetown/armor/chainmail{
+	pixel_y = -6
+	},
+/obj/item/clothing/suit/roguetown/armor/chainmail{
+	pixel_y = -6
+	},
 /obj/item/clothing/suit/roguetown/armor/chainmail{
 	pixel_y = -6
 	},
@@ -6638,6 +6646,8 @@
 	pixel_x = -4
 	},
 /obj/item/clothing/suit/roguetown/shirt/robe/necromancer,
+/obj/item/clothing/head/roguetown/necromhood,
+/obj/item/clothing/head/roguetown/necromhood,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/indoors/town/vault)
 "hBw" = (
@@ -6893,6 +6903,8 @@
 	pixel_x = 9
 	},
 /obj/item/clothing/suit/roguetown/armor/plate/full,
+/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
+/obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /obj/item/reagent_containers/glass/bottle/rogue/healthpot,
 /turf/open/floor/rogue/tile/bath,
@@ -19732,6 +19744,14 @@
 	},
 /obj/item/clothing/suit/roguetown/armor/gambeson/lord,
 /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates{
+	pixel_x = -1
+	},
+/obj/item/clothing/suit/roguetown/armor/plate/half{
+	pixel_y = -4;
+	pixel_x = 8
+	},
+/obj/item/clothing/suit/roguetown/armor/plate/half{
+	pixel_y = -4;
 	pixel_x = -1
 	},
 /turf/open/floor/rogue/tile/bath,
