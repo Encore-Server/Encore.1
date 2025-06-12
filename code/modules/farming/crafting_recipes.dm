@@ -36,6 +36,17 @@
 	skillcraft = /datum/skill/craft/carpentry
 	time = 4 SECONDS
 
+/datum/crafting_recipe/roguetown/dryflower
+	name = "dry fyritius"
+	result = /obj/item/reagent_containers/food/snacks/grown/rogue/fyritiusdry
+	reqs = list(/obj/item/reagent_containers/food/snacks/grown/rogue/fyritius = 1)
+	structurecraft = /obj/structure/fluff/dryingrack
+	time = 2 SECONDS
+	verbage_simple = "dry"
+	verbage = "dries"
+	craftsound = null
+	skillcraft = null
+
 /datum/crafting_recipe/roguetown/dryleaf
 	name = "dry swampweed"
 	result = /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleafdry
