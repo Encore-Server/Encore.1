@@ -18,7 +18,7 @@
 	switch(classchoice)
 		if("Samurai")
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Samurai of Cudao, a swordsman experienced with katana and bow."))
+			to_chat(H, span_warning("You are a Samurai of Cudao, an armoured swordsman experienced with katana and bow."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
