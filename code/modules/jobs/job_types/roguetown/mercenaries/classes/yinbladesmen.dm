@@ -42,15 +42,16 @@
 			beltl = /obj/item/rogueweapon/sword/long/katana
 			beltr = /obj/item/quiver/arrows
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
+			cloak = /obj/item/clothing/cloak/straw
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/samurai/iron
 			armor = /obj/item/clothing/suit/roguetown/armor/brigandine/coatplates/iron
 			pants = /obj/item/clothing/under/roguetown/platelegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 			gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			backl = /obj/item/storage/backpack/rogue/satchel
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1)
+			backpack_contents = list(/obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1)
 		if("Ninja")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Ninja of Cudao, a rogue or assassin that utilises a curious combination of blade and magic."))

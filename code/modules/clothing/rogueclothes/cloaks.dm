@@ -1363,3 +1363,11 @@
 	icon_state = "naledisash"
 	item_state = "naledisash"
 	desc = "A limp piece of fabric traditionally used to fasten bags that are too baggy, but in modern days has become more of a fashion statement than anything."
+
+/obj/item/clothing/cloak/straw
+	name = "straw cloak"
+	desc = "A lightweight and water-repellant cloak fashioned from woven rice straw, originating in Cudao."
+	icon_state = "straw_cloak"
+	alternate_worn_layer = TABARD_LAYER
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
