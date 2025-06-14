@@ -739,6 +739,28 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
+/obj/item/clothing/head/roguetown/helmet/heavy/samurai
+	name = "steel samurai helmet"
+	desc = "A steel Cudese helmet with a menacing visage, evocative of a demon, intended to strike terror into the foe beholding it."
+	icon_state = "samurai"
+	item_state = "samurai"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_RIGHT|FOV_LEFT
+	smeltresult = /obj/item/ingot/steel
+	smelt_bar_num = 2
+
+/obj/item/clothing/head/roguetown/helmet/heavy/samurai/iron
+	name = "iron samurai helmet"
+	desc = "An iron Cudese helmet with a menacing visage, evocative of a demon, intended to strike terror into the foe beholding it."
+	icon_state = "iron_samurai"
+	item_state = "iron_samurai"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_RIGHT|FOV_LEFT
+	smeltresult = /obj/item/ingot/iron
+	smelt_bar_num = 2
+
 /obj/item/clothing/head/roguetown/helmet/heavy/sheriff
 	name = "barred helmet"
 	desc = "A helmet which offers good protection to the face at the expense of vision."
@@ -1443,3 +1465,11 @@
 	desc = "A feathered leather hat, to show them all your superiority."
 	icon_state = "duelhat"
 	sewrepair = TRUE
+
+/obj/item/clothing/head/roguetown/cudese_straw_hat
+	name = "cudese straw hat"
+	desc = "A straw hat popular in Cudao, water-resistant and good at keeping the sun off."
+	icon_state = "cudese_straw_hat"
+	item_state = "cudese_straw_hat"
+	sewrepair = TRUE
+	color = "#fbc588"

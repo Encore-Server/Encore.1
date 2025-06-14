@@ -372,3 +372,39 @@
 	desc = "A billowing tunic made of the finest silks and softest fabrics. Inlaid with golden thread, this is the height of fashion for the wealthiest of wearers."
 	icon_state = "stewardtunic"
 	item_state = "stewardtunic"
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	name = "cudese tunic"
+	desc = "A tunic originating from Cudao."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "cudese_tunic"
+	boobed = FALSE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	flags_inv = HIDECROTCH|HIDEBOOB
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/green
+	color = CLOTHING_GREEN
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/blue
+	color = CLOTHING_BLUE
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/red
+	color = CLOTHING_RED
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/purple
+	color = CLOTHING_PURPLE
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/white
+	color = CLOTHING_WHITE
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/black
+	color = CLOTHING_BLACK
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/ucolored
+	color = COLOR_GRAY
+
+/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/random/Initialize()
+	color = pick(CLOTHING_PURPLE, CLOTHING_RED, CLOTHING_BLUE, CLOTHING_GREEN, CLOTHING_BLACK, CLOTHING_WHITE, COLOR_GRAY)
+	..()
