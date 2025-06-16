@@ -662,6 +662,17 @@
 	smelt_bar_num = 2
 	max_blade_int = 150
 	max_integrity = 200
+	sellprice = 150
+
+/obj/item/rogueweapon/sword/long/silver
+	name = "silver longsword"
+	desc = "A longsword forged of pure silver. Katholikos imagery is inscribed down the length of the blade."
+	icon_state = "silverlongsword"
+	item_state = "silverlongsword"
+	is_silver = TRUE
+	smeltresult = /obj/item/ingot/silver
+	smelt_bar_num = 2
+	sellprice = 200
 
 /obj/item/rogueweapon/sword/long/blackflamb
 	force = 20

@@ -102,8 +102,8 @@
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
 
 /datum/advclass/templar/crusader
-	name = "Templar"
-	tutorial = "You are a templar of the Church, trained in heavy weaponry and zealous warfare. You are the instrument of your God's wrath, clad in steel and faith."
+	name = "Crusader"
+	tutorial = "You are a templar of the Church, trained in heavy weaponry and zealous warfare. You are the instrument of your God's wrath, clad in silver and faith."
 	outfit = /datum/outfit/job/roguetown/templar/crusader
 	
 	category_tags = list(CTAG_TEMPLAR)
@@ -143,8 +143,10 @@
 	beltr = /obj/item/storage/keyring/puritan
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
@@ -185,22 +187,25 @@
 
 /datum/outfit/job/roguetown/templar/crusader/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Flail","Mace","Spear")
+	var/weapons = list("Axe","Longsword","Billhook","Flail","Mace")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
-		if("Bastard Sword")
-			H.put_in_hands(new /obj/item/rogueweapon/sword/long(H), TRUE)
+		if("Axe")
+			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/silver(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+		if("Longsword")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/long/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		if("Billhook")
+			H.put_in_hands(new /obj/item/rogueweapon/spear/billhook/silver(H), TRUE)
+			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Flail")
-			H.put_in_hands(new /obj/item/rogueweapon/flail(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/flail/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 		if("Mace")
-			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/mace/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		if("Spear")
-			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-
 
 /datum/advclass/templar/heavyranger
 	name = "Ranger-Zealot"

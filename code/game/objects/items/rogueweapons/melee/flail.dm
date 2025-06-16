@@ -85,12 +85,21 @@
 
 
 /obj/item/rogueweapon/flail/sflail
+	name = "steel flail"
 	force = 30
 	icon_state = "flail"
 	desc = "This is a swift, steel flail. Strikes hard and far."
 	smeltresult = /obj/item/ingot/steel
 	minstr = 5
 
+/obj/item/rogueweapon/flail/silver
+	force = 30
+	name = "silver flail"
+	icon_state = "silverflail"
+	desc = "This is a swift, silver flail. Strikes hard and far. Katholikos imagery is inscribed across the metal."
+	is_silver = TRUE
+	smeltresult = /obj/item/ingot/silver
+	minstr = 5
 
 /datum/intent/whip/lash
 	name = "lash"
