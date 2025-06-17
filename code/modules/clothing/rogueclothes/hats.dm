@@ -720,7 +720,6 @@
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 
-
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
 	name = "iron katholikos barbute"
 	desc = "A barbute styled with Katholikos imagery."
@@ -728,6 +727,14 @@
 	item_state = "iron_psydonbarbute"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
+
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
+	name = "silver katholikos barbute"
+	desc = "A barbute styled with Katholikos imagery, in gleaming silver."
+	icon_state = "silver_psydonbarbute"
+	item_state = "silver_psydonbarbute"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard
 	name = "savoyard"
@@ -929,6 +936,13 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 
+/obj/item/clothing/head/roguetown/helmet/heavy/visireshelm/silver
+	name = "silver visires helmet"
+	icon_state = "silver_astratahelm"
+	item_state = "silver_astratahelm"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
+
 /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
 	name ="steel aspect armet"
 	desc = "Headwear commonly worn by Templars in service to the Inquisition of the Katholikos."
@@ -947,6 +961,13 @@
 	item_state = "iron_psydonarmet"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
+
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
+	name ="silver aspect armet"
+	icon_state = "silver_psydonarmet"
+	item_state = "silver_psydonarmet"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
 
 /obj/item/clothing/head/roguetown/helmet/heavy/akan
 	name = "steel helmet of skies"
@@ -968,6 +989,13 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 
+/obj/item/clothing/head/roguetown/helmet/heavy/akan/silver
+	name = "silver helmet of skies"
+	icon_state = "silver_nochelm"
+	item_state = "silver_nochelm"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
+
 /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
 	name = "steel mjallidhorn helmet"
 	desc = "Headwear commonly worn by Templars in service to Mjallidhorn. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
@@ -987,6 +1015,13 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
+	name = "silver mjallidhorn helmet"
+	icon_state = "silver_necrahelm"
+	item_state = "silver_necrahelm"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
+
 /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm
 	name = "steel earthen helmet"
 	desc = "Headwear commonly worn by Templars in service to Gani. Its protrusions almost resemble branches. Take root in the earth, and you will never be moved."
@@ -1005,6 +1040,13 @@
 	item_state = "iron_dendorhelm"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
+
+/obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/silver
+	name = "silver earthen helmet"
+	icon_state = "silver_dendorhelm"
+	item_state = "silver_dendorhelm"
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 225
 
 /obj/item/clothing/head/roguetown/helmet/bascinet
 	name = "bascinet"

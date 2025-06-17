@@ -25,16 +25,16 @@
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	wrists = /obj/item/clothing/neck/roguetown/psicross/silver
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/special
+	beltl = /obj/item/rogueweapon/huntingknife/idagger/silver/church
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded
 	shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	mask = /obj/item/clothing/mask/rogue/facemask
+	mask = /obj/item/clothing/mask/rogue/facemask/silver
 	head = /obj/item/clothing/head/roguetown/roguehood/black
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/parrying = 1)
+	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/lockpickring/mundane = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/church = 1)
 	H.change_stat("strength", -1) // weasel
 	H.change_stat("endurance", 3)
 	H.change_stat("perception", 2)

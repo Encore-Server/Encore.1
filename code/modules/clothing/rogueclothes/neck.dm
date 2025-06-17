@@ -88,6 +88,13 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 
+/obj/item/clothing/neck/roguetown/chaincoif/silver
+	name = "silver chain coif"
+	icon_state = "silver_chaincoif"
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 175
+
 /obj/item/clothing/neck/roguetown/chaincoif/full
 	name = "full chain coif"
 	icon_state = "fchaincoif"

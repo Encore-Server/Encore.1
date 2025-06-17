@@ -14,13 +14,13 @@
 	cloak = /obj/item/clothing/cloak/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain/all_aspect
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/silver
+	pants = /obj/item/clothing/under/roguetown/chainlegs/silver
 	backl = /obj/item/storage/backpack/rogue/satchel/black
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/psydonboots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	id = /obj/item/clothing/ring/silver

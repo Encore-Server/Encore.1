@@ -59,8 +59,9 @@
 	wrists = /obj/item/clothing/wrists/roguetown/wrappings
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	belt = /obj/item/storage/belt/rogue/leather/black
-	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltl = /obj/item/rogueweapon/katar/silver
 	beltr = /obj/item/storage/keyring/puritan
+	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/mid = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE) 
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
@@ -117,27 +118,25 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/silver
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
-		if(/datum/patron/all_aspect)
-			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	backl = /obj/item/storage/backpack/rogue/satchel
-	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	gloves = /obj/item/clothing/gloves/roguetown/chain/silver
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/silver
+	pants = /obj/item/clothing/under/roguetown/chainlegs/silver
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltr = /obj/item/storage/keyring/puritan
@@ -223,28 +222,26 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/silver
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
-		if(/datum/patron/all_aspect)
-			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
-	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
+	gloves = /obj/item/clothing/gloves/roguetown/chain/silver
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	pants = /obj/item/clothing/under/roguetown/chainlegs/silver
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/boots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
 	beltr = /obj/item/flashlight/flare/torch/lantern
-	beltl = /obj/item/rogueweapon/sword/iron/short
+	beltl = /obj/item/rogueweapon/sword/short/silver
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
@@ -295,11 +292,11 @@
 	switch(weapon_choice)
 		if("Crossbow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
-			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/silver_bolts(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)
 		if("Longbow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), FALSE)
-			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/silver_arrows(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 
 /datum/advclass/templar/lightranger
@@ -318,19 +315,17 @@
 	cloak = /obj/item/clothing/cloak/tabard/crusader/tief
 	switch(H.patron?.type)
 		if(/datum/patron/elemental/visires)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/visires/silver
 			cloak = /obj/item/clothing/cloak/templar/visires
 		if(/datum/patron/elemental/gani)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/gani
 		if(/datum/patron/elemental/mjallidhorn)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
 			cloak = /obj/item/clothing/cloak/templar/mjallidhorn
 		if(/datum/patron/elemental/akan)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/iron
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/akan/silver
 			cloak = /obj/item/clothing/cloak/tabard/crusader/akan
-		if(/datum/patron/all_aspect)
-			cloak = /obj/item/clothing/cloak/tabard/crusader/all_aspect
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	pants= /obj/item/clothing/under/roguetown/trou/leather
@@ -340,7 +335,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black/puritan
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backl = /obj/item/storage/backpack/rogue/satchel
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/silver/church = 1)
 
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
@@ -391,9 +386,9 @@
 	switch(weapon_choice)
 		if("Crossbow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow(H), FALSE)
-			H.put_in_hands(new /obj/item/quiver/bolts(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/silver_bolts(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		if("Recurve Bow")
 			H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), FALSE)
-			H.put_in_hands(new /obj/item/quiver/arrows(H), FALSE)
+			H.put_in_hands(new /obj/item/quiver/silver_arrows(H), FALSE)
 			H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)

@@ -76,7 +76,7 @@
 	sewrepair = TRUE
 
 /obj/item/clothing/gloves/roguetown/chain
-	name = "chain gauntlets"
+	name = "steel chain gauntlets"
 	desc = ""
 	icon_state = "cgloves"
 	armor = list("blunt" = 60, "slash" = 100, "stab" = 80, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
@@ -96,10 +96,18 @@
 	item_state = "psydongloveschains"
 
 /obj/item/clothing/gloves/roguetown/chain/iron
+	name = "iron chain gauntlets"
 	icon_state = "icgloves"
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 115
+
+/obj/item/clothing/gloves/roguetown/chain/silver
+	name = "silver chain gauntlets"
+	icon_state = "silver_cgloves"
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/silver
+	max_integrity = 125
 
 //rogtodo sprites for this
 /obj/item/clothing/gloves/roguetown/plate
@@ -121,6 +129,12 @@
 	name = "iron plate gauntlets"
 	max_integrity = 135
 	smeltresult = /obj/item/ingot/iron
+
+/obj/item/clothing/gloves/roguetown/plate/silver
+	name = "silver plate gauntlets"
+	desc = "Silver plate gauntlets, inscribed with Katholikos imagery."
+	max_integrity = 175
+	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/gloves/roguetown/grenzelgloves
 	name = "grenzelhoft gloves"
