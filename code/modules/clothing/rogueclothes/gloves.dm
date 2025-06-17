@@ -127,12 +127,14 @@
 
 /obj/item/clothing/gloves/roguetown/plate/iron
 	name = "iron plate gauntlets"
+	icon_state = "iron_gauntlets"
 	max_integrity = 135
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/gloves/roguetown/plate/silver
 	name = "silver plate gauntlets"
 	desc = "Silver plate gauntlets, inscribed with Katholikos imagery."
+	icon_state = "silver_gauntlets"
 	max_integrity = 175
 	smeltresult = /obj/item/ingot/silver
 

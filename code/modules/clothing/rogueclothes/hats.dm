@@ -714,13 +714,13 @@
 	smeltresult = /obj/item/ingot/steel
 	max_integrity = 250
 
-/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/barbute
 	name = "steel katholikos barbute"
 	desc = "A barbute styled with Katholikos imagery."
 	icon_state = "psydonbarbute"
 	item_state = "psydonbarbute"
 
-/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/barbute/iron
 	name = "iron katholikos barbute"
 	desc = "A barbute styled with Katholikos imagery."
 	icon_state = "iron_psydonbarbute"
@@ -728,7 +728,7 @@
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 150
 
-/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/barbute/silver
 	name = "silver katholikos barbute"
 	desc = "A barbute styled with Katholikos imagery, in gleaming silver."
 	icon_state = "silver_psydonbarbute"
@@ -996,7 +996,7 @@
 	smeltresult = /obj/item/ingot/silver
 	max_integrity = 225
 
-/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/alt
 	name = "steel mjallidhorn helmet"
 	desc = "Headwear commonly worn by Templars in service to Mjallidhorn. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
 	icon_state = "necrahelm"
@@ -1008,14 +1008,7 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/iron
-	name = "iron mjallidhorn helmet"
-	icon_state = "necrahelm"
-	item_state = "necrahelm"
-	smeltresult = /obj/item/ingot/iron
-	max_integrity = 150
-
-/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
+/obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver/alt
 	name = "silver mjallidhorn helmet"
 	icon_state = "silver_necrahelm"
 	item_state = "silver_necrahelm"
