@@ -626,6 +626,7 @@
 	wdefense = 7
 
 /obj/item/rogueweapon/sword/rapier/silver
+	name = "silver rapier"
 	icon_state = "silver_rapier"
 	desc = "A duelist's weapon forged in pure silver, inscribed with Katholikos imagery. Bane of the night creatures and heretics alike. An Inquisitor's weapon."
 	sellprice = 140
