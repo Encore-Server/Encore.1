@@ -67,24 +67,24 @@ SUBSYSTEM_DEF(shuttle)
 /datum/controller/subsystem/shuttle/Initialize(timeofday)
 	// ordernum = rand(1, 9000)
 
-	// for(var/pack in subtypesof(/datum/supply_pack/rogue))
-	// 	var/datum/supply_pack/P = new pack()
-	// 	if(!P.contains)
-	// 		continue
-	// 	supply_packs[P.type] = P
-	// 	if(!(P.group in supply_cats))
-	// 		supply_cats += P.group
+	for(var/pack in subtypesof(/datum/supply_pack/rogue))
+		var/datum/supply_pack/P = new pack()
+		if(!P.contains)
+			continue
+		supply_packs[P.type] = P
+		if(!(P.group in supply_cats))
+			supply_cats += P.group
 
 	// initial_load()
 
 	// if(!arrivals)
-	// 	WARNING("No /obj/docking_port/mobile/arrivals placed on the map!")
+	//	WARNING("No /obj/docking_port/mobile/arrivals placed on the map!")
 	// if(!emergency)
 	// 	WARNING("No /obj/docking_port/mobile/emergency placed on the map!")
 	// if(!backup_shuttle)
-	// 	WARNING("No /obj/docking_port/mobile/emergency/backup placed on the map!")
+	//	WARNING("No /obj/docking_port/mobile/emergency/backup placed on the map!")
 	// if(!supply)
-	// 	WARNING("No /obj/docking_port/mobile/supply placed on the map!")
+	//	WARNING("No /obj/docking_port/mobile/supply placed on the map!")
 	return ..()
 
 /datum/controller/subsystem/shuttle/proc/initial_load()

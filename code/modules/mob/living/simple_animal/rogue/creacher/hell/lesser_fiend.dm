@@ -159,6 +159,19 @@
 	defprob = 45
 	defdrain = 18
 
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony/get_sound(input)
+	switch(input)
+		if("aggro")
+			return pick('sound/vo/male/knight/agony (1).ogg','sound/vo/male/knight/agony (2).ogg','sound/vo/male/knight/firescream (2).ogg')
+		if("pain")
+			return pick('sound/vo/male/knight/painscream (3).ogg','sound/vo/male/knight/firescream (1).ogg','sound/vo/male/knight/firescream (2).ogg','sound/vo/mobs/demon/demon_growl.ogg')
+		if("death")
+			return pick('sound/vo/male/knight/agony (2).ogg')
+		if("idle")
+			return pick('sound/vo/male/gen/agony (11).ogg')
+		if("cidle")
+			return pick('sound/vo/male/gen/painscream (3).ogg')
+
 /mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/cacophony/simple_limb_hit(zone)
 	if(!zone)
 		return ""
@@ -216,13 +229,18 @@
 	ranged_cooldown_time = 20
 	melee_damage_lower = 45
 	melee_damage_upper = 70
-	movement_type = FLYING
-	pass_flags = PASSTABLE|PASSGRILLE
 	STACON = 13
 	STASTR = 15
 	STASPD = 3
 	defprob = 45
 	defdrain = 18
+
+//movement vars
+	movement_type = FLYING
+	pass_flags = PASSTABLE|PASSGRILLE
+	move_to_delay = 25
+	inertia_move_delay = 5
+	wander = 0
 
 //charger
 /mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/charger
@@ -230,7 +248,6 @@
 	icon_state = "charger"
 	icon_living = "charger"
 	icon_dead = "charger"
-	turns_per_move = 5
 	health = 300
 	maxHealth = 300
 	melee_damage_lower = 55
@@ -252,26 +269,33 @@
 	attack_sound = 'sound/combat/wooshes/bladed/wooshmed (1).ogg'
 	dodge_sound = 'sound/combat/dodge.ogg'
 	parry_sound = "bladedmedium"
+	melee_queue_distance = 0//otherwise it runs around pointlessly
+	turns_per_move = 5
+	move_to_delay = 1
+	inertia_move_delay = 2
+	wander = 0
 
 //shambler
 /mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/shambler
-	name = "broken memory"
+	name = "shambling memory"
 	icon_state = "shambler"
 	icon_living = "shambler"
 	icon_dead = "shambler"
-	turns_per_move = 5
 	health = 120
 	maxHealth = 120
 	canparry = TRUE
 	d_intent = INTENT_PARRY
 	movement_type = GROUND
 	pass_flags = null
-	speed = 3//sloooowww
 	STACON = 18
 	STASTR = 18
 	STASPD = 18
 	defprob = 50
 	defdrain = 30
+	turns_per_move = 2
+	move_to_delay = 25
+	inertia_move_delay = 2
+	wander = 1
 
 //totem
 /mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/totem
@@ -293,8 +317,23 @@
 //Totems can't move, just a turret basically
 	anchored = TRUE
 	turns_per_move = 0
+	move_to_delay = 9999//janky but works I guess
+	inertia_move_delay = 5
 	stop_automated_movement = 1
 	wander = 0
+
+/mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/totem/get_sound(input)
+	switch(input)
+		if("aggro")
+			return pick('sound/vo/male/knight/agony (1).ogg','sound/vo/male/knight/agony (2).ogg','sound/vo/male/knight/firescream (2).ogg')
+		if("pain")
+			return pick('sound/vo/male/knight/painscream (3).ogg','sound/vo/mobs/wwolf/pain (1).ogg','sound/vo/male/knight/firescream (2).ogg','sound/vo/mobs/demon/demon_growl.ogg')
+		if("death")
+			return pick('sound/vo/mobs/demon/demon_hiss.ogg')
+		if("idle")
+			return pick('sound/vo/mobs/demon/demon_laughter.ogg',)
+		if("cidle")
+			return pick('sound/vo/mobs/demon/demon_growl.ogg')
 
 //dragon
 /mob/living/simple_animal/hostile/retaliate/rogue/fiend_lesser/dragon

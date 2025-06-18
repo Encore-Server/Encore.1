@@ -22,6 +22,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort/basement)
 "fT" = (
@@ -308,9 +309,7 @@
 	info = "Tiw's Dae - I'm glad we came to Domotan, with all these ruins about the island it makes for some easy mammon to comb them over and sell any valuables within. Far as I can tell this looks to be an old holding that the Katholikos had, something to watch over the road to Mount Miracle. Well it's empty now, and surprisingly still intact. Lucky as well, my group and I are looking forward to sleeping in an actual bed instead of keeping watch for volfs.";
 	name = "adventurer diary fragment #1"
 	},
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Tx" = (

@@ -20,7 +20,8 @@
 	ambush_mobs = list(
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 40,
 				/mob/living/simple_animal/hostile/retaliate/rogue/mossback = 20,
-				/mob/living/carbon/human/species/goblin/npc/ambush = 30)
+				/mob/living/carbon/human/species/goblin/npc/ambush = 30,
+				/mob/living/simple_animal/hostile/retaliate/rogue/ent = 10)
 	first_time_text = "THE WEEPING WOOD"
 
 /area/rogue/outdoors/woods/west/thornbed

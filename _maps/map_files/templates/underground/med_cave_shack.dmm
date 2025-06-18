@@ -173,7 +173,7 @@
 /obj/effect/decal/mossy{
 	dir = 4
 	},
-/obj/structure/fermenting_barrel/random/beer,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "Oa" = (

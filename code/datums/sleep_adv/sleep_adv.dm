@@ -83,10 +83,12 @@
 			"With some rest, I feel like I can get better at [lowertext(skillref.name)]...",
 			"[skillref.name] starts making more sense to me...",
 		))))
+		mind.current.apply_status_effect(/datum/status_effect/buff/levelup)
 	if(!capped_pre && capped_post && !silent)
 		to_chat(mind.current, span_nicegreen(pick(list(
 			"My [lowertext(skillref.name)] is not gonna get any better without some rest...",
 		))))
+		mind.current.apply_status_effect(/datum/status_effect/buff/levelup)
 
 /datum/sleep_adv/proc/advance_cycle()
 	// Stuff

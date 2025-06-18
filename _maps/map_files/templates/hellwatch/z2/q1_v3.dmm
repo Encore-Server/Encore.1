@@ -71,9 +71,7 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/woods/churchfort/basement)
 "mF" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/twig,
 /area/rogue/outdoors/woods/churchfort/basement)
 "oO" = (
@@ -470,9 +468,9 @@ rq
 "}
 (4,1,1) = {"
 Xd
+mF
 Xd
-Xd
-Xd
+mF
 Bo
 CW
 vj

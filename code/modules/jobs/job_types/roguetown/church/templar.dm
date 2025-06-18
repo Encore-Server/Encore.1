@@ -22,7 +22,7 @@
 /datum/outfit/job/roguetown/templar
 	has_loadout = TRUE
 	allowed_patrons = list(/datum/patron/elemental/gani, /datum/patron/elemental/akan, /datum/patron/elemental/mjallidhorn, /datum/patron/elemental/visires, /datum/patron/elemental/iliope, /datum/patron/elemental/golerkanh) // Core Elemental Pantheon only, All-Aspect Templars should play the Adjudicator subclass for Orthodoxist
-	id = /obj/item/clothing/ring/silver
+	id = /obj/item/clothing/ring/silver/templar
 	
 /datum/job/roguetown/templar/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()

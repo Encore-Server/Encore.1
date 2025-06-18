@@ -271,3 +271,8 @@
 	stressadd = 8
 	desc = span_red("How dare they utter such a thing!?")
 	timer = 5 MINUTES
+
+/datum/stressevent/necromancer
+	stressadd = 10
+	desc = span_red("I saw a Necromancer with my own eyes! I'm lucky to be alive!")
+	timer = 5 MINUTES

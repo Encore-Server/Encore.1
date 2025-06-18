@@ -32,8 +32,8 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/shelter)
 "jP" = (
-/obj/structure/fermenting_barrel,
 /obj/effect/roofing_helper,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/average,
 /turf/open/floor/rogue/twig,
 /area/rogue/indoors/shelter)
 "lt" = (

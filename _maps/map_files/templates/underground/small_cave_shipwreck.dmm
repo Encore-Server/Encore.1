@@ -17,7 +17,7 @@
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "hA" = (
-/obj/structure/fermenting_barrel/random,
+/obj/effect/spawner/lootdrop/roguetown/alcohol/cheap,
 /turf/open/floor/rogue/twig,
 /area/rogue/under/cave)
 "hG" = (
