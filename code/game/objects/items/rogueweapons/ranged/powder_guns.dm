@@ -57,13 +57,13 @@
 	. = ..()
 	switch(reload_status)
 		if(UNLOADED)
-			. += span_info("Barrel is <font color='#CC3730'>empty</font>.")
+			. += span_info("Barrel is " + FONT_BRIGHTRED("empty"))
 		if(DRY_LOADED)
-			. += span_info("Barrel is <font color='#CC3730'>dry-loaded</font>.")
+			. += span_info("Barrel is " + FONT_BRIGHTRED("dry-loaded"))
 		if(SEMI_LOADED)
-			. += span_info("Barrel is <font color='#F1D669'>partially loaded</font>.")
+			. += span_info("Barrel is " + FONT_YELLOW("partially loaded"))
 		if(LOADED)
-			. += span_info("Barrel is <font color='#80B077'>loaded</font>.")
+			. += span_info("Barrel is " + FONT_GREEN("loaded"))
 
 /datum/intent/shoot/powdergun/can_charge()
 	if(mastermob)
@@ -230,14 +230,14 @@
 	. = ..()
 	var/pan_status
 	if(pan_open)
-		pan_status = ("<font color='#CC3730'>open</font>.")
+		pan_status = FONT_BRIGHTRED("open")
 	else
-		pan_status = ("<font color='#80B077'>closed</font>.")
+		pan_status = FONT_GREEN("closed")
 
 	if(powder)
-		. += span_info("Flash pan is <font color='#80B077'>full</font> and " + pan_status)
+		. += span_info("Flash pan is " + FONT_GREEN("full ") + "and " + pan_status)
 	else
-		. += span_info("Flash pan is <font color='#CC3730'>empty</font> and " + pan_status)
+		. += span_info("Flash pan is " + FONT_BRIGHTRED("empty ") + "and " + pan_status)
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/attack_right(mob/living/user)
 	if(!pan_open)
