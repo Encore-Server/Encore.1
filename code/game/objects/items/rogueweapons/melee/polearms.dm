@@ -168,6 +168,13 @@
 	wdefense = 6
 	throwforce = 15
 
+/obj/item/rogueweapon/spear/billhook/silver
+	name = "silver billhook"
+	desc = "A neat hook, forged of pure silver. Katholikos imagery is inscribed along the length of the blade."
+	is_silver = TRUE
+	icon_state = "silverbillhook"
+	smeltresult = /obj/item/ingot/silver
+
 /obj/item/rogueweapon/spear/improvisedbillhook
 	force = 12
 	force_wielded = 25
@@ -325,7 +332,7 @@
 
 /obj/item/rogueweapon/greatsword
 	force = 12
-	force_wielded = 30
+	force_wielded = 35
 	possible_item_intents = list(/datum/intent/sword/chop,/datum/intent/sword/strike) //bash is for nonlethal takedowns, only targets limbs
 	gripped_intents = list(/datum/intent/sword/cut/zwei, /datum/intent/sword/chop, /datum/intent/sword/thrust/zwei, /datum/intent/sword/strike)
 	name = "greatsword"
@@ -379,6 +386,16 @@
 	icon_state = "steelzwei"
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 3
+
+/obj/item/rogueweapon/greatsword/silver
+	name = "silver claymore"
+	desc = "A claymore, forged of pure silver. Katholikos imagery is inscribed along the length of the blade."
+	is_silver = TRUE
+	icon_state = "silverclaymore"
+	item_state = "silverclaymore"
+	smeltresult = /obj/item/ingot/silver
+	smelt_bar_num = 3
+	sellprice = 300
 
 /obj/item/rogueweapon/estoc
 	name = "estoc"
