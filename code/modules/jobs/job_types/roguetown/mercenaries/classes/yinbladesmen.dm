@@ -5,7 +5,7 @@
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/mercenary/yinbladesman
 	category_tags = list(CTAG_MERCENARY)
-	cmode_music = 'sound/music/combat_grenzelhoft.ogg'
+	cmode_music = 'sound/music/combat_yinbladesmen.ogg'
 
 /datum/outfit/job/roguetown/mercenary/yinbladesman/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -18,15 +18,15 @@
 	switch(classchoice)
 		if("Samurai")
 			H.set_blindness(0)
-			to_chat(H, span_warning("You are a Samurai of Cudao, an armoured swordsman experienced with katana and bow."))
+			to_chat(H, span_warning("You are a Samurai of Cudao, an armoured swordsman experienced with a variety of weapons."))
 			H.mind.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 2, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -38,9 +38,8 @@
 			H.change_stat("constitution", 2)
 			H.change_stat("perception", 1)
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			belt = /obj/item/storage/belt/rogue/leather
-			beltl = /obj/item/rogueweapon/sword/long/katana
-			beltr = /obj/item/quiver/arrows
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 			cloak = /obj/item/clothing/cloak/straw
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
@@ -49,9 +48,32 @@
 			pants = /obj/item/clothing/under/roguetown/platelegs/iron
 			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 			gloves = /obj/item/clothing/gloves/roguetown/plate/iron
-			backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 			backl = /obj/item/storage/backpack/rogue/satchel
 			backpack_contents = list(/obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1)
+
+			var/weapons = list("Katana & Recurve Bow","Tachi & Buckler","Odachi","Naginata")
+			var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			switch(weapon_choice)
+				if("Katana & Recurve Bow")
+					H.put_in_hands(new /obj/item/rogueweapon/sword/katana(H), TRUE)
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+					H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+				if("Tachi & Buckler")
+					H.put_in_hands(new /obj/item/rogueweapon/sword/long/tachi(H), TRUE)
+					H.put_in_hands(new /obj/item/rogueweapon/shield/buckler(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
+				if("Odachi")
+					H.put_in_hands(new /obj/item/rogueweapon/greatsword/odachi(H), TRUE)
+					H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+				if("Naginata")
+					H.put_in_hands(new /obj/item/rogueweapon/halberd/naginata(H), TRUE)
+					H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
+
 		if("Ninja")
 			H.set_blindness(0)
 			to_chat(H, span_warning("You are a Ninja of Cudao, a rogue or assassin that utilises a curious combination of blade and magic."))
@@ -59,19 +81,18 @@
 			H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/alchemy, 2, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
-			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 4, TRUE)
-			H.change_stat("strength", 2)
+			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 3, TRUE)
+			H.change_stat("strength", 1)
 			H.change_stat("endurance", 2)
-			H.change_stat("constitution", 2)
-			H.change_stat("perception", 1)
+			H.change_stat("perception", 3)
 			H.change_stat("speed", 1)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/darkvision)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
@@ -79,9 +100,9 @@
 			if(H.mind)
 				H.mind.adjust_spellpoints(-4)//No ninjas with lightning bolt or fireball or blade burst or invisibility pls. I understand the fantasy but it would be far too busted. You get what you start with.
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
+			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			belt = /obj/item/storage/belt/rogue/leather/black
-			beltl = /obj/item/rogueweapon/sword/long/katana
-			beltr = /obj/item/quiver/arrows
+			beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
 			neck = /obj/item/clothing/neck/roguetown/coif
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 			head = /obj/item/clothing/head/roguetown/roguehood/black
@@ -91,8 +112,23 @@
 			shoes = /obj/item/clothing/shoes/roguetown/boots
 			gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather/blk
 			backr = /obj/item/storage/backpack/rogue/satchel/black
-			backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-			backpack_contents = list(/obj/item/rogueweapon/huntingknife = 1, /obj/item/flashlight/flare/torch/lantern = 1, /obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/lockpickring/mundane = 1)
+			backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/poor = 1, /obj/item/lockpickring/mundane = 1)
+
+			var/weapons = list("Katana & Recurve Bow","Dagger & Longbow")
+			var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+			switch(weapon_choice)
+				if("Katana & Recurve Bow")
+					H.put_in_hands(new /obj/item/rogueweapon/sword/katana(H), TRUE)
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
+					H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
+				if("Dagger & Longbow")
+					H.put_in_hands(new /obj/item/rogueweapon/huntingknife/idagger/steel/special(H), TRUE)
+					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow(H), TRUE)
+					H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
+					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 
 // Funny recolours for the Ninja stuff.
 /obj/item/clothing/mask/rogue/ragmask/blk
