@@ -47,18 +47,6 @@
 		return FALSE
 
 /obj/item/quiver/attackby(obj/A, loc, params)
-	if(A.type in allowed_ammo && ammo.len < max_storage)
-		if(ismob(loc))
-			var/mob/M = loc
-			M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
-		else
-			A.forceMove(src)
-		ammo += A
-		update_icon()
-	else
-		to_chat(loc, span_warning("Full!"))
-		return
-
 	if(istype(A, /obj/item/gun/ballistic/revolver/grenadelauncher/bow))
 		var/obj/item/gun/ballistic/revolver/grenadelauncher/bow/B = A
 		if(ammo.len && !B.chambered)
@@ -68,6 +56,16 @@
 					B.attackby(AR, loc, params)
 					break
 		return
+
+	if(check_ammo(A) && ammo.len < max_storage)
+		if(ismob(loc))
+			var/mob/M = loc
+			M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
+		else
+			A.forceMove(src)
+		ammo += A
+		update_icon()
+
 	..()
 
 /obj/item/quiver/attack_right(mob/user)
@@ -122,12 +120,12 @@
 	. = ..()
 	for(var/i in 1 to max_storage)
 		var/obj/item/ammo_casing/caseless/rogue/arrow/silver/A = new()
-		arrows += A
+		ammo += A
 	update_icon()
 
 /obj/item/quiver/silver_bolts/Initialize()
 	. = ..()
 	for(var/i in 1 to max_storage)
 		var/obj/item/ammo_casing/caseless/rogue/bolt/silver/A = new()
-		arrows += A
+		ammo += A
 	update_icon()
