@@ -32,9 +32,7 @@
 
 /obj/item/quiver/proc/check_ammo(obj/A)
 	for(var/i in allowed_ammo)
-		to_chat(world, "checking [i]")
 		if(istype(A, i))
-			to_chat(world, "returned true")
 			return TRUE
 
 /obj/item/quiver/proc/eatammo(obj/A)
