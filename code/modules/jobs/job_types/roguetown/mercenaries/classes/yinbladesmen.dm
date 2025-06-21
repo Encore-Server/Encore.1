@@ -40,6 +40,7 @@
 			ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			belt = /obj/item/storage/belt/rogue/leather
+			beltr = /obj/item/quiver/arrows
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 			cloak = /obj/item/clothing/cloak/straw
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
@@ -57,11 +58,10 @@
 				if("Katana & Recurve Bow")
 					H.put_in_hands(new /obj/item/rogueweapon/sword/katana(H), TRUE)
 					H.put_in_hands(new /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve(H), TRUE)
-					H.put_in_hands(new /obj/item/quiver/arrows(H), TRUE)
 					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					H.mind.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)
 				if("Tachi & Buckler")
-					H.put_in_hands(new /obj/item/rogueweapon/sword/long/tachi(H), TRUE)
+					H.put_in_hands(new /obj/item/rogueweapon/sword/tachi(H), TRUE)
 					H.put_in_hands(new /obj/item/rogueweapon/shield/buckler(H), TRUE)
 					H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 					H.mind.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
@@ -103,9 +103,9 @@
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			belt = /obj/item/storage/belt/rogue/leather/black
 			beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying
-			neck = /obj/item/clothing/neck/roguetown/coif
-			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
-			head = /obj/item/clothing/head/roguetown/roguehood/black
+			beltr = /obj/item/quiver/arrows
+			neck = /obj/item/clothing/neck/roguetown/coif/blk
+			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/blk
 			mask = /obj/item/clothing/mask/rogue/ragmask/blk
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/belted/blk
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/blk
@@ -141,4 +141,10 @@
 		color = CLOTHING_GREY
 
 /obj/item/clothing/gloves/roguetown/fingerless_leather/blk
+		color = CLOTHING_GREY
+
+/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/blk
+		color = CLOTHING_GREY
+
+/obj/item/clothing/neck/roguetown/coif/blk
 		color = CLOTHING_GREY

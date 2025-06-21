@@ -377,7 +377,7 @@
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	name = "cudese tunic"
 	desc = "A tunic originating from Cudao."
-	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
 	icon_state = "cudese_tunic"
 	boobed = FALSE
 	r_sleeve_status = SLEEVE_NORMAL

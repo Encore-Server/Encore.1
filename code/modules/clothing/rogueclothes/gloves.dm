@@ -127,7 +127,7 @@
 
 /obj/item/clothing/gloves/roguetown/plate/iron
 	name = "iron plate gauntlets"
-	icon_state = "iron_gauntlets"
+	icon_state = "igauntlets"
 	max_integrity = 135
 	smeltresult = /obj/item/ingot/iron
 

@@ -125,6 +125,19 @@
 	minstr = 4
 	wdefense = 4
 
+/obj/item/rogueweapon/sword/tachi
+	icon_state = "tachi"
+	item_state = "tachi"
+	icon = 'icons/roguetown/weapons/32.dmi'
+	name = "tachi"
+	desc = "A slightly curved sword originating in Cudao, sharpened to a razor's edge. Longer than its sibling, the Katana."
+	force = 25
+	force_wielded = 30
+	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
+	bigboy = 1
+	wlength = WLENGTH_LONG
+
 /obj/item/rogueweapon/sword/long
 	force = 25
 	force_wielded = 30
@@ -396,11 +409,6 @@
 			if("onbelt")
 				return list("shrink" = 0.5,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
-/obj/item/rogueweapon/sword/long/tachi
-	icon_state = "tachi"
-	item_state = "tachi"
-	name = "tachi"
-	desc = "A slightly curved sword originating in Cudao, sharpened to a razor's edge. Longer than its sibling, the Katana."
 
 /datum/intent/sword/strike
 	name = "pommel strike"

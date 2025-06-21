@@ -1370,4 +1370,6 @@
 	icon_state = "straw_cloak"
 	alternate_worn_layer = TABARD_LAYER
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
-	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT|ITEM_SLOT_CLOAK
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
