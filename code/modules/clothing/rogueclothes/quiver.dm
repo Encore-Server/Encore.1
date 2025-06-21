@@ -57,14 +57,15 @@
 					break
 		return
 
-	if(check_ammo(A) && ammo.len < max_storage)
-		if(ismob(loc))
-			var/mob/M = loc
-			M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
-		else
-			A.forceMove(src)
-		ammo += A
-		update_icon()
+	if(ammo.len < max_storage)
+		if(check_ammo(A))
+			if(ismob(loc))
+				var/mob/M = loc
+				M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
+			else
+				A.forceMove(src)
+			ammo += A
+			update_icon()
 
 	..()
 
