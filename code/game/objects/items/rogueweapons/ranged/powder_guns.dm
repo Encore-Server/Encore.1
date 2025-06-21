@@ -39,6 +39,9 @@
 /datum/intent/shoot/powdergun
 	chargedrain = 0
 
+/datum/intent/arc/powdergun
+	chargedrain = 0
+
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/proc/update_reload_status()
 	if(chambered)
 		switch(powder) //we already know there's a ball in the barrel at this point, so the rest of the context is entirely dependant on what state the gunpowder is in
@@ -156,12 +159,12 @@
 	..()
 	update_reload_status() // calling this on the shoot_live_shot proc causes it to read the chambered var before it gets updated, which results in the update proc incorrectly thinking a round is still loaded
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced // this is to separate powder guns with a firing mechanism from those that don't - so we don't run into conflicts where a hand cannon starts checking for a flash pan that it shouldn't have
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced // this is to separate powder guns with a complex firing mechanism from those that don't - so we don't run into conflicts where a hand cannon starts checking for a flash pan that it shouldn't have
 	name = "musket"
 	desc = "A simple two-handed firearm developed by cutting edge industrial minds."
 	icon = 'icons/roguetown/weapons/guns.dmi'
 	icon_state = "arquebus"
-	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun)
+	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun, /datum/intent/arc/powdergun)
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
@@ -254,6 +257,16 @@
 		. = ..()
 	else
 		return FALSE
+
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/attackby(obj/item/A, mob/user, params)
+	if(istype(A, /obj/item/gunpowderhorn) &&)
+		if(pan_open)
+			..()
+		else
+			to_chat(user, span_warning("Flash pan is closed!"))
+			return
+
+	..()
 
 /obj/item/gunpowderhorn
 	name = "gunpowder horn"
