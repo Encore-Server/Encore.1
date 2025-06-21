@@ -16426,9 +16426,11 @@
 /area/rogue/indoors/town/church/chapel)
 "ojW" = (
 /obj/structure/closet/crate/roguecloset,
-/obj/item/clothing/suit/roguetown/armor/chainmail,
-/obj/item/clothing/suit/roguetown/armor/chainmail,
-/obj/item/clothing/suit/roguetown/armor/chainmail,
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /obj/item/clothing/suit/roguetown/armor/chainmail,
 /obj/item/clothing/suit/roguetown/armor/chainmail,
 /turf/open/floor/rogue/cobble,
@@ -17462,8 +17464,30 @@
 	icon_state = "cobbleedge-sread"
 	},
 /obj/structure/rack/rogue,
-/obj/item/rogueweapon/shield/buckler,
-/obj/item/rogueweapon/shield/buckler,
+/obj/item/rogueweapon/huntingknife/idagger/steel/special{
+	pixel_x = -4
+	},
+/obj/item/rogueweapon/huntingknife/idagger/steel/special{
+	pixel_x = -4
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger{
+	pixel_x = 8
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "oYM" = (
@@ -19731,6 +19755,8 @@
 /obj/item/rogueweapon/shield/wood,
 /obj/item/rogueweapon/shield/wood,
 /obj/item/rogueweapon/shield/wood,
+/obj/item/rogueweapon/shield/buckler,
+/obj/item/rogueweapon/shield/buckler,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "raB" = (
@@ -22608,9 +22634,25 @@
 /obj/structure/rack/rogue,
 /obj/item/rogueweapon/sword/short,
 /obj/item/rogueweapon/sword/short,
-/obj/item/rogueweapon/sword/short,
-/obj/item/rogueweapon/sword/short,
 /obj/machinery/light/rogue/torchholder/l,
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/sword/iron/short{
+	pixel_x = 8
+	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "tBj" = (
@@ -22828,10 +22870,6 @@
 /obj/machinery/light/rogue/firebowl/stump,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
-"tLb" = (
-/obj/structure/flora/roguegrass/maneater/real,
-/turf/open/floor/rogue/cobble/mossy,
-/area/rogue/under/cavewet)
 "tLg" = (
 /turf/closed/wall/mineral/rogue/stone/moss,
 /area/rogue/under/cavewet)
@@ -23833,10 +23871,6 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/item/rogueweapon/sword/iron{
-	pixel_x = 3;
-	pixel_y = -3
-	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
 "uFD" = (
@@ -24390,6 +24424,12 @@
 /obj/item/rogueweapon/sword/iron/messer{
 	pixel_x = -3;
 	pixel_y = 2
+	},
+/obj/item/rogueweapon/huntingknife/idagger/steel/parrying{
+	pixel_x = 8
+	},
+/obj/item/rogueweapon/huntingknife/idagger/steel/parrying{
+	pixel_x = 8
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/town/garrison)
@@ -68248,7 +68288,7 @@ bKo
 bKo
 tLg
 laU
-tLb
+bKo
 bKo
 vUz
 nsQ

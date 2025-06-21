@@ -133,7 +133,7 @@
 	dir = 1;
 	icon_state = "longtable"
 	},
-/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect,
+/obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "pR" = (
@@ -207,16 +207,12 @@
 "yo" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "AT" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Bi" = (
@@ -276,9 +272,7 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "HS" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/carpet/royalblack,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Ij" = (
@@ -343,9 +337,7 @@
 /turf/open/floor/rogue/churchmarble,
 /area/rogue/outdoors/woods/churchfort/basement)
 "PT" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/spider,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Qu" = (
@@ -375,26 +367,28 @@
 /obj/item/gwstrap,
 /obj/item/gwstrap,
 /obj/item/gwstrap,
+/obj/item/gwstrap,
+/obj/item/rogueweapon/spear/billhook/silver,
+/obj/item/rogueweapon/spear/billhook/silver,
+/obj/item/rogueweapon/greatsword/silver,
+/obj/item/rogueweapon/greatsword/silver,
 /obj/effect/decal/cleanable/cobweb,
-/obj/item/rogueweapon/mace/goden,
-/obj/item/rogueweapon/greatsword/zwei,
-/obj/item/rogueweapon/eaglebeak/lucerne,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Tu" = (
 /obj/structure/closet/crate/roguecloset/dark,
-/obj/item/clothing/gloves/roguetown/plate/iron,
-/obj/item/clothing/gloves/roguetown/plate/iron,
-/obj/item/clothing/gloves/roguetown/plate/iron,
-/obj/item/clothing/gloves/roguetown/plate/iron,
-/obj/item/clothing/shoes/roguetown/boots/armor/iron,
-/obj/item/clothing/shoes/roguetown/boots/armor/iron,
-/obj/item/clothing/shoes/roguetown/boots/armor/iron,
-/obj/item/clothing/shoes/roguetown/boots/armor/iron,
-/obj/item/clothing/under/roguetown/platelegs/iron,
-/obj/item/clothing/under/roguetown/platelegs/iron,
-/obj/item/clothing/under/roguetown/platelegs/iron,
-/obj/item/clothing/under/roguetown/platelegs/iron,
+/obj/item/clothing/shoes/roguetown/boots/armor/silver,
+/obj/item/clothing/shoes/roguetown/boots/armor/silver,
+/obj/item/clothing/shoes/roguetown/boots/armor/silver,
+/obj/item/clothing/shoes/roguetown/boots/armor/silver,
+/obj/item/clothing/gloves/roguetown/plate/silver,
+/obj/item/clothing/gloves/roguetown/plate/silver,
+/obj/item/clothing/gloves/roguetown/plate/silver,
+/obj/item/clothing/gloves/roguetown/plate/silver,
+/obj/item/clothing/under/roguetown/platelegs/silver,
+/obj/item/clothing/under/roguetown/platelegs/silver,
+/obj/item/clothing/under/roguetown/platelegs/silver,
+/obj/item/clothing/under/roguetown/platelegs/silver,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "TX" = (
@@ -407,18 +401,18 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "Wd" = (
 /obj/structure/closet/crate/roguecloset/dark,
-/obj/item/clothing/suit/roguetown/armor/plate/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/iron,
-/obj/item/clothing/neck/roguetown/chaincoif/iron,
-/obj/item/clothing/neck/roguetown/chaincoif/iron,
-/obj/item/clothing/neck/roguetown/chaincoif/iron,
-/obj/item/clothing/neck/roguetown/chaincoif/iron,
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/silver,
+/obj/item/clothing/suit/roguetown/armor/plate/silver,
+/obj/item/clothing/suit/roguetown/armor/plate/silver,
+/obj/item/clothing/suit/roguetown/armor/plate/silver,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver,
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver,
+/obj/item/clothing/neck/roguetown/chaincoif/silver,
+/obj/item/clothing/neck/roguetown/chaincoif/silver,
+/obj/item/clothing/neck/roguetown/chaincoif/silver,
+/obj/item/clothing/neck/roguetown/chaincoif/silver,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "Wf" = (
@@ -492,7 +486,7 @@ JO
 Og
 Se
 CW
-CW
+PT
 CW
 OY
 CW
@@ -508,7 +502,7 @@ KC
 Wm
 LC
 Bi
-CW
+PT
 CW
 qj
 lN
@@ -525,7 +519,7 @@ KC
 JO
 Qu
 Sa
-CW
+PT
 CW
 qj
 hH
@@ -557,7 +551,7 @@ KC
 KC
 KC
 Wm
-CW
+PT
 OY
 CW
 yo
@@ -614,7 +608,7 @@ Bi
 xi
 Uz
 CW
-CW
+PT
 Wm
 JO
 Wf

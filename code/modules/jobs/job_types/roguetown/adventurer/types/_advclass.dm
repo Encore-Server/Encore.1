@@ -36,13 +36,13 @@
 	post_equip(H)
 
 	H.advjob = name
-
+/* Commented out the below because it's obnoxious with everyone spawning with a torch only to drop it, and also not necessary on Encore as everyone spawns in town or at least in a place with light.
 	//sleep(1)
 	//testing("[H] spawn troch")
 	var/obj/item/flashlight/flare/torch/T = new()
 	T.spark_act()
 	H.put_in_hands(T, forced = TRUE)
-
+*/
 	var/turf/TU = get_turf(H)
 	if(TU)
 		if(horse)

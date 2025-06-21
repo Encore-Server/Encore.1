@@ -37,8 +37,8 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
 	head = /obj/item/clothing/head/roguetown/puritan
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	beltl = /obj/item/rogueweapon/sword/rapier
-	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/rogueweapon/huntingknife/idagger/silver, /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron = 1)
+	beltl = /obj/item/rogueweapon/sword/rapier/silver
+	backpack_contents = list(/obj/item/storage/keyring/puritan = 1, /obj/item/rogueweapon/huntingknife/idagger/silver/church = 1, /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/church = 1, /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/barbute/silver = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)

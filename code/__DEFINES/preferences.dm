@@ -1,4 +1,12 @@
-#define MINIMUM_FLAVOR_TEXT		200
+
+#ifdef FASTLOAD
+   #define MINIMUM_FLAVOR_TEXT		0
+#endif
+
+#ifndef FASTLOAD
+   #define MINIMUM_FLAVOR_TEXT		200
+#endif
+
 
 
 //Preference toggles

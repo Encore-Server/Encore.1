@@ -173,6 +173,7 @@
 	l_sleeve_status = SLEEVE_NOMOD
 	resistance_flags = FIRE_PROOF
 	armor_class = ARMOR_CLASS_MEDIUM
+	max_integrity = 200
 
 /obj/item/clothing/under/roguetown/brayette
 	name = "brayette"
@@ -199,6 +200,13 @@
 	max_integrity = 150
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
+
+/obj/item/clothing/under/roguetown/chainlegs/silver
+	name = "silver chain chausses"
+	icon_state = "silver_chain_legs"
+	max_integrity = 175
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/under/roguetown/chainlegs/iron/red
 	name = "red iron chain chausses"
@@ -234,6 +242,13 @@
 	max_integrity = 150
 	smeltresult = /obj/item/ingot/iron
 
+/obj/item/clothing/under/roguetown/platelegs/silver
+	name = "silver plate chausses"
+	desc = "Reinforced silver armor to protect the legs, inscribed with Katholikos imagery."
+	icon_state = "silver_plate_legs"
+	item_state = "silver_plate_legs"
+	max_integrity = 200
+	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/under/roguetown/chainlegs/skirt
 	name = "steel chain skirt"

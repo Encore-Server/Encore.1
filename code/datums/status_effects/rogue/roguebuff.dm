@@ -707,3 +707,12 @@
 	var/temp_appearance = owner.appearance
 	owner.appearance = linked_mob.appearance
 	linked_mob.appearance = temp_appearance
+
+/datum/status_effect/buff/levelup
+	id = "levelup"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/levelup
+
+/atom/movable/screen/alert/status_effect/buff/levelup
+	name = "Level Up"
+	desc = "I should get some rest to level up."
+	icon_state = "lvl_up"

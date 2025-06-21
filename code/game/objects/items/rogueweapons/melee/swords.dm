@@ -107,6 +107,13 @@
 	minstr = 4
 	wdefense = 4
 
+/obj/item/rogueweapon/sword/short/silver
+	name = "silver short sword"
+	desc = "A short, silver sword made for stabbing. Katholikos imagery is engraved down the length of the blade."
+	force = 18
+	is_silver = TRUE
+	icon_state = "silverswordshort"
+
 /obj/item/rogueweapon/sword/long
 	force = 25
 	force_wielded = 30
@@ -443,7 +450,7 @@
 	sellprice = 10
 
 /obj/item/rogueweapon/sword/iron/short
-	name = "short sword"
+	name = "iron short sword"
 	desc = "An archaic iron sword."
 	icon_state = "iswordshort"
 	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short)
@@ -618,6 +625,12 @@
 	max_blade_int = 300
 	wdefense = 7
 
+/obj/item/rogueweapon/sword/rapier/silver
+	name = "silver rapier"
+	icon_state = "silver_rapier"
+	desc = "A duelist's weapon forged in pure silver, inscribed with Katholikos imagery. Bane of the night creatures and heretics alike. An Inquisitor's weapon."
+	sellprice = 140
+
 /obj/item/rogueweapon/sword/cutlass
 	name = "cutlass"
 	desc = "Used by pirates and deckhands."
@@ -662,6 +675,17 @@
 	smelt_bar_num = 2
 	max_blade_int = 150
 	max_integrity = 200
+	sellprice = 150
+
+/obj/item/rogueweapon/sword/long/silver
+	name = "silver longsword"
+	desc = "A longsword forged of pure silver. Katholikos imagery is inscribed down the length of the blade."
+	icon_state = "silverlongsword"
+	item_state = "silverlongsword"
+	is_silver = TRUE
+	smeltresult = /obj/item/ingot/silver
+	smelt_bar_num = 2
+	sellprice = 200
 
 /obj/item/rogueweapon/sword/long/blackflamb
 	force = 20

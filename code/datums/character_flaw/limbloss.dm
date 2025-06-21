@@ -56,3 +56,55 @@
 	var/mob/living/carbon/human/H = user
 	var/obj/item/bodypart/l_leg/prosthetic/wood/L = new()
 	L.replace_limb(H, TRUE)
+
+/datum/charflaw/limbloss/arm_r_bronze
+	name = "Bronze Arm (R)"
+	desc = "I lost my right arm long ago, but the bronze arm is a technological marvel!"
+	lost_zone = BODY_ZONE_R_ARM
+
+/datum/charflaw/limbloss/arm_r_bronze/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/r_arm/prosthetic/bronzeright/L = new()
+	L.replace_limb(H, TRUE)
+
+/datum/charflaw/limbloss/arm_l_bronze
+	name = "Bronze Arm (L)"
+	desc = "I lost my left arm long ago, but the bronze arm is a technological marvel!"
+	lost_zone = BODY_ZONE_L_ARM
+
+/datum/charflaw/limbloss/arm_l_bronze/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/l_arm/prosthetic/bronzeleft/L = new()
+	L.replace_limb(H, TRUE)
+
+/datum/charflaw/limbloss/leg_r_bronze
+	name = "Bronze Leg (R)"
+	desc = "I lost my right leg long ago, but the bronze leg is a technological marvel!"
+	lost_zone = BODY_ZONE_R_LEG
+
+/datum/charflaw/limbloss/leg_r_bronze/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/r_leg/prosthetic/bronze/L = new()
+	L.replace_limb(H, TRUE)
+
+/datum/charflaw/limbloss/leg_l_bronze
+	name = "Bronze Leg (L)"
+	desc = "I lost my left leg long ago, but the bronze leg is a technological marvel!"
+	lost_zone = BODY_ZONE_L_LEG
+
+/datum/charflaw/limbloss/leg_l_bronze/on_mob_creation(mob/user)
+	..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	var/obj/item/bodypart/l_leg/prosthetic/bronze/L = new()
+	L.replace_limb(H, TRUE)

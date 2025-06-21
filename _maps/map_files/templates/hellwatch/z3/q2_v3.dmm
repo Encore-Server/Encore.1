@@ -35,10 +35,8 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
 "gw" = (
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
-/turf/open/floor/rogue/cobble,
+/obj/structure/trap/skeleton,
+/turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "gJ" = (
 /turf/open/floor/rogue/blocks,
@@ -88,8 +86,7 @@
 "lm" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Reagent Stores";
-	dir = 1;
-	locked = 1
+	dir = 1
 	},
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -117,6 +114,7 @@
 /area/rogue/outdoors/woods/churchfort/basement)
 "mI" = (
 /obj/effect/decal/cleanable/blood,
+/obj/structure/trap/skeleton,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "nT" = (
@@ -212,9 +210,7 @@
 	dir = 4
 	},
 /obj/machinery/light/rogue/torchholder/c,
-/mob/living/simple_animal/hostile/retaliate/rogue/cavetroll{
-	name = "hell troll"
-	},
+/obj/structure/trap/skeleton,
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/outdoors/woods/churchfort/basement)
 "HQ" = (
@@ -230,8 +226,7 @@
 "Jd" = (
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Alchemy";
-	dir = 4;
-	locked = 1
+	dir = 4
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/woods/churchfort/basement)
@@ -477,7 +472,7 @@ SG
 HQ
 HQ
 HQ
-HQ
+gw
 QH
 qo
 MY
@@ -545,7 +540,7 @@ OM
 HQ
 mI
 SG
-gw
+SG
 eh
 eh
 CW
