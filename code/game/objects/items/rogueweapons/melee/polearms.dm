@@ -257,6 +257,12 @@
 	smeltresult = /obj/item/ingot/iron
 	max_blade_int = 200
 
+/obj/item/rogueweapon/halberd/naginata
+	name = "naginata"
+	desc = "A Cudese polearm with a long bladed end."
+	icon_state = "naginata"
+	item_state = "naginata"
+
 /datum/intent/spear/cut/halberd
 	damfactor = 0.9
 	swingdelay = 10
@@ -396,6 +402,12 @@
 	smeltresult = /obj/item/ingot/silver
 	smelt_bar_num = 3
 	sellprice = 300
+
+/obj/item/rogueweapon/greatsword/odachi
+	name = "odachi"
+	desc = "A long curved blade originating in Cudao, too unwieldly to be handled one-handed. Larger than its sibling, the Tachi."
+	icon_state = "odachi"
+	item_state = "odachi"
 
 /obj/item/rogueweapon/estoc
 	name = "estoc"

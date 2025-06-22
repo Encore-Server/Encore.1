@@ -306,4 +306,16 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Vocalist's Talisman"
 	path = /obj/item/rogue/instrument/vocals
 
+/datum/loadout_item/cudese_tunic
+	name = "Cudese Tunic"
+	path = /obj/item/clothing/suit/roguetown/shirt/cudese_tunic/random
+
+/datum/loadout_item/cudese_straw_hat
+	name = "Cudese Straw Hat"
+	path = /obj/item/clothing/head/roguetown/cudese_straw_hat
+
+/datum/loadout_item/straw_cloak
+	name = "Straw Cloak"
+	path = /obj/item/clothing/cloak/straw
+
 // Custom Items Go Here

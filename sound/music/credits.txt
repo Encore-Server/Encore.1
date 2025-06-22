@@ -37,3 +37,4 @@ templarofpsydon.ogg: 26 - Duty and Honor II (with Ryan Patrick Buckley) - Chival
 shirleigh_keep.ogg: Tavern (Undead) - World of Warcraft: Classic
 weeping_woods.ogg: Darkshire - World of Warcraft: Classic
 combat_templar.ogg: Nebakov Siege Theme (Poverty and Famine var.) - Kingdom Come: Deliverance II
+combat_yinbladesmen.ogg: Duel Theme - Ghosts of Tsushima
