@@ -327,23 +327,23 @@
 		addtimer(CALLBACK(M, TYPE_PROC_REF(/mob/living, adjustToxLoss), 100), 10 SECONDS)
 		addtimer(CALLBACK(M, TYPE_PROC_REF(/atom, visible_message), span_danger("[M] appears greatly weakened by the poison!")), 10 SECONDS)
 
-/obj/item/ammo_casing/caseless/rogue/bullet/ironball
-	name = "iron sphere"
-	desc = "A small iron sphere, often seen being propelled with great force from various firearms."
-	projectile_type = /obj/projectile/bullet/ironball
+/obj/item/ammo_casing/caseless/rogue/bullet/ironshot
+	name = "iron ball"
+	desc = "A small iron ball, often seen being propelled with great force from various firearms."
+	projectile_type = /obj/projectile/bullet/ironshot
 	caliber = "musketball"
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "musketball"
 	dropshrink = 0.5
 
-/obj/projectile/bullet/ironball
+/obj/projectile/bullet/ironshot
 	name = "iron ball"
 	damage = 80
 	damage_type = BRUTE
 	armor_penetration = 40 // this bullet does more damage than a bolt, so less armour-pen is a fair trade-off
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "musketball_proj"
-	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironshot
 	range = 30
 	hitsound = 'sound/combat/hits/hi_bolt (3).ogg'
 	embedchance = 100

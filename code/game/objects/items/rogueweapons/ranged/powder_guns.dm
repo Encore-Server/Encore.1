@@ -10,8 +10,8 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun // this is going to become a proper handcannon later on, but for now i want to focus on getting muskets implemented - Hocka
 	name = "hand cannon"
 	desc = "A basic, primordial iteration of a firearm."
-	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun)
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/musketball // pretty much every handheld powder gun i can think of will use these, thank god
+	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun, /datum/intent/arc/powdergun)
+	mag_type = /obj/item/ammo_box/magazine/internal/shot/powdergun // pretty much every handheld powder gun i can think of will use these, thank god
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
@@ -21,7 +21,7 @@
 	can_parry = TRUE
 	pin = /obj/item/firing_pin
 	force = 10
-	cartridge_wording = "sphere"
+	cartridge_wording = "bullet"
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
 	dry_fire_sound = 'sound/combat/Ranged/musket-shot-unpowdered.ogg'
 	anvilrepair = /datum/skill/craft/engineering
@@ -30,8 +30,8 @@
 	var/damfactor = 1 //lets one gun do more damage than another gun with the same projectile
 	var/reload_status = 0
 
-/obj/item/ammo_box/magazine/internal/shot/musketball
-	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
+/obj/item/ammo_box/magazine/internal/shot/powdergun
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet
 	caliber = "musketball"
 	max_ammo = 1
 	start_empty = TRUE
@@ -39,8 +39,50 @@
 /datum/intent/shoot/powdergun
 	chargedrain = 0
 
+/datum/intent/shoot/powdergun/can_charge()
+	if(mastermob)
+		if(mastermob.get_num_arms(FALSE) < 2)
+			return FALSE
+	return TRUE // we aren't checking for an empty second hand here because manually-lit firearms literally require that you're holding a fire source in your other hand
+
+/datum/intent/shoot/powdergun/get_chargetime() // i should probably rewrite this and take advantage of it for when hand cannons and their changeable fuses are added
+	if(mastermob && chargetime)
+		var/newtime = chargetime
+		//skill block
+		newtime = newtime + 80
+		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 20)
+		//stat block
+		newtime = newtime + 20
+		newtime = newtime - ((mastermob.STAPER)*1.5)
+		if(newtime > 0)
+			return newtime
+		else
+			return 5
+	return chargetime
+
 /datum/intent/arc/powdergun
 	chargedrain = 0
+
+/datum/intent/arc/powdergun/can_charge()
+	if(mastermob)
+		if(mastermob.get_num_arms(FALSE) < 2)
+			return FALSE
+	return TRUE
+
+/datum/intent/shoot/powdergun/get_chargetime()
+	if(mastermob && chargetime)
+		var/newtime = chargetime
+
+		newtime = newtime + 80
+		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 20)
+
+		newtime = newtime + 20
+		newtime = newtime - ((mastermob.STAPER)*1.5)
+		if(newtime > 0)
+			return newtime
+		else
+			return 5
+	return chargetime
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/proc/update_reload_status()
 	if(chambered)
@@ -68,27 +110,6 @@
 		if(LOADED)
 			. += span_info("Barrel is " + FONT_GREEN("loaded"))
 
-/datum/intent/shoot/powdergun/can_charge()
-	if(mastermob)
-		if(mastermob.get_num_arms(FALSE) < 2)
-			return FALSE
-	return TRUE // we aren't checking for an empty second hand here because manually-lit firearms literally require that you're holding a fire source in your other hand
-
-/datum/intent/shoot/powdergun/get_chargetime() // i should probably rewrite this and take advantage of it for when hand cannons and their changeable fuses are added
-	if(mastermob && chargetime)
-		var/newtime = chargetime
-		//skill block
-		newtime = newtime + 80
-		newtime = newtime - (mastermob.mind.get_skill_level(/datum/skill/combat/firearms) * 20)
-		//stat block
-		newtime = newtime + 20
-		newtime = newtime - ((mastermob.STAPER)*1.5)
-		if(newtime > 0)
-			return newtime
-		else
-			return 10
-	return chargetime
-
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/attack_self()
 	..()
 	update_reload_status()
@@ -96,9 +117,10 @@
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/MiddleClick(mob/living/user)
 	user.changeNext_move(user.used_intent.clickcd)
 	if(reload_status == SEMI_LOADED)
+		var/pack_timer = 30 - (user.mind.get_skill_level(/datum/skill/combat/firearms) * 3) // people who are better with guns can pack the powder faster
 		user.visible_message("[user] starts packing \the [src]'s gunpowder.")
 		playsound(src.loc, 'sound/combat/Ranged/gunpowder-packing.ogg', 100, FALSE)
-		if(do_after(user, 30, FALSE))
+		if(do_after(user, pack_timer, FALSE))
 			powder = PACKED
 			update_reload_status()
 	else
@@ -144,14 +166,14 @@
 		return FALSE
 	if(two_handed && user.get_inactive_held_item())
 		return FALSE
-	// if(user.client)
-		// if(user.client.chargedprog >= 100)
-			// spread = 0
-		// else
-			// spread = 150 - (150 * (user.client.chargedprog / 100))
-	// else
-		// spread = 0
-	// commented out temporarily while i figure out how exactly i want the aiming process to go
+	if(user.client)
+		if(user.client.chargedprog >= 100)
+			spread = 0
+		else
+			spread = 150 - (150 * (user.client.chargedprog / 100))
+	else
+		spread = 75
+
 	for(var/obj/item/ammo_casing/CB in get_ammo_list(FALSE, TRUE))
 		var/obj/projectile/BB = CB.BB
 		BB.damage = BB.damage * damfactor
@@ -163,14 +185,14 @@
 	name = "musket"
 	desc = "A simple two-handed firearm developed by cutting edge industrial minds."
 	icon = 'icons/roguetown/weapons/guns.dmi'
+	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun/advanced, /datum/intent/arc/powdergun/advanced)
 	icon_state = "arquebus"
-	possible_item_intents = list(/datum/intent/mace/smash/wood, /datum/intent/shoot/powdergun, /datum/intent/arc/powdergun)
 	slot_flags = ITEM_SLOT_BACK
 	w_class = WEIGHT_CLASS_BULKY
 	experimental_inhand = TRUE
 	experimental_onback = TRUE
 	randomspread = 0
-	spread = 40
+	spread = 0
 	can_parry = TRUE
 	pin = /obj/item/firing_pin
 	fire_sound = 'sound/combat/Ranged/musket-shot.ogg'
@@ -229,6 +251,22 @@
 				"wflip" = 0,
 				"eflip" = 1)
 
+/datum/intent/shoot/powdergun/advanced/can_charge()
+	if(mastermob)
+		if(mastermob.get_num_arms(FALSE) < 2)
+			return FALSE
+		if(mastermob.get_inactive_held_item())
+			return FALSE
+	return TRUE
+
+/datum/intent/arc/powdergun/advanced/can_charge()
+	if(mastermob)
+		if(mastermob.get_num_arms(FALSE) < 2)
+			return FALSE
+		if(mastermob.get_inactive_held_item())
+			return FALSE
+	return TRUE
+
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/examine(mob/user)
 	. = ..()
 	var/pan_status
@@ -259,13 +297,12 @@
 		return FALSE
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced/attackby(obj/item/A, mob/user, params)
-	if(istype(A, /obj/item/gunpowderhorn) &&)
+	if(istype(A, /obj/item/gunpowderhorn))
 		if(pan_open)
 			..()
 		else
 			to_chat(user, span_warning("Flash pan is closed!"))
 			return
-
 	..()
 
 /obj/item/gunpowderhorn
@@ -275,73 +312,6 @@
 	icon_state = "powderhorn"
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_NECK
-
-/obj/item/ballpouch
-	name = "ball pouch"
-	desc = "a bag used for carrying musket balls."
-	icon = 'icons/roguetown/weapons/guns.dmi'
-	icon_state = "ballpouch"
-	w_class = WEIGHT_CLASS_BULKY
-	slot_flags = ITEM_SLOT_HIP
-	max_integrity = 0
-	bloody_icon_state = "bodyblood"
-	alternate_worn_layer = UNDER_CLOAK_LAYER
-	strip_delay = 10
-	var/max_storage = 20
-	var/list/bullets = list()
-	sewrepair = TRUE
-
-/obj/item/ballpouch/attack_right(mob/user)
-	if(bullets.len)
-		var/obj/O = bullets[bullets.len]
-		bullets -= O
-		O.forceMove(user.loc)
-		user.put_in_hands(O)
-		return TRUE
-
-/obj/item/ballpouch/examine(mob/user)
-	. = ..()
-	if(bullets.len)
-		. += span_notice("[bullets.len] inside.")
-
-/obj/item/ballpouch/Initialize()
-	. = ..()
-	for(var/i in 1 to max_storage)
-		var/obj/item/ammo_casing/caseless/rogue/bullet/ironball/B = new()
-		bullets += B
-
-/obj/item/ballpouch/proc/takebullet(obj/A)
-	if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue/bullet))
-		A.forceMove(src)
-		bullets += A
-		return TRUE
-	else
-		return FALSE
-
-/obj/item/ballpouch/attack_turf(turf/T, mob/living/user)
-	if(bullets.len >= max_storage)
-		to_chat(user, span_warning("Your [src.name] is full!"))
-		return
-	to_chat(user, span_notice("You begin to gather the bullets..."))
-	for(var/obj/item/ammo_casing/caseless/rogue/bullet/musketball in T.contents)
-		if(do_after(user, 5))
-			if(!takebullet(musketball))
-				break
-
-/obj/item/ballpouch/attackby(obj/A, loc, params)
-	if(A.type in subtypesof(/obj/item/ammo_casing/caseless/rogue/bullet))
-		if(bullets.len < max_storage)
-			if(ismob(loc))
-				var/mob/M = loc
-				M.doUnEquip(A, TRUE, src, TRUE, silent = TRUE)
-			else
-				A.forceMove(src)
-			bullets += A
-		else
-			to_chat(loc, span_warning("Full!"))
-		return
-	..()
-
 
 #undef UNLOADED
 #undef DRY_LOADED

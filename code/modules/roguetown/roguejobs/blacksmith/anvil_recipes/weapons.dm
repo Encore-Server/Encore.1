@@ -459,7 +459,7 @@
 /datum/anvil_recipe/weapons/iron/bullets
 	name = "Iron balls x5"
 	req_bar = /obj/item/ingot/iron
-	created_item = /obj/item/ammo_casing/caseless/rogue/bullet/ironball
+	created_item = /obj/item/ammo_casing/caseless/rogue/bullet/ironshot
 	createditem_num = 5
 	appro_skill = /datum/skill/craft/engineering
 	i_type = "Ammo"
