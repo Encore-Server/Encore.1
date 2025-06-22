@@ -1,0 +1,6 @@
+author: "Hocka"
+
+delete-after: True
+
+changes:
+  - bugfix: "Archer's Apprentice and Warden's Apprentice now get their appropriate skill modifiers."
