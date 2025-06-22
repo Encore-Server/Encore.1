@@ -310,9 +310,21 @@
 	craftdiff = 3
 
 /datum/anvil_recipe/weapons/silver/dagger
-	name = "Dagger"
+	name = "Ceremonial Silver Dagger"
 	req_bar = /obj/item/ingot/silver
 	created_item = /obj/item/rogueweapon/huntingknife/idagger/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/daggeralt
+	name = "Silver Dueling Dagger"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/huntingknife/idagger/silver/church
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/daggerparrying
+	name = "Silver Parrying Dagger"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/huntingknife/idagger/steel/parrying/church
 	craftdiff = 2
 
 /datum/anvil_recipe/weapons/silver/sword
@@ -320,21 +332,66 @@
 	req_bar = /obj/item/ingot/silver
 	additional_items = list(/obj/item/ingot/silver)
 	created_item = /obj/item/rogueweapon/sword/silver
-	craftdiff = 3
+	craftdiff = 2
 
 /datum/anvil_recipe/weapons/silver/waraxe
 	name = "Silver War Axe (+1 Silver, +1 Stick)"
 	req_bar = /obj/item/ingot/silver
 	additional_items = list(/obj/item/ingot/silver, /obj/item/grown/log/tree/stick)
 	created_item = /obj/item/rogueweapon/stoneaxe/silver
-	craftdiff = 3
+	craftdiff = 2
 
 /datum/anvil_recipe/weapons/silver/warhammer
 	name = "Silver War Hammer (+1 Silver, +1 Stick)"
 	req_bar = /obj/item/ingot/silver
 	additional_items = list(/obj/item/ingot/silver, /obj/item/grown/log/tree/stick)
 	created_item = /obj/item/rogueweapon/mace/silver
-	craftdiff = 3
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/longsword
+	name = "Silver Longsword (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/rogueweapon/sword/long/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/shortsword
+	name = "Silver Short Sword"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/sword/short/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/greatsword
+	name = "Silver Claymore (+2 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver, /obj/item/ingot/silver)
+	created_item = /obj/item/rogueweapon/greatsword/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/rapier
+	name = "Silver Rapier"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/sword/rapier/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/billhook
+	name = "Silver Bilhook (+1 Small Log)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/rogueweapon/spear/billhook/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/katar
+	name = "Silver Katar"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/katar/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/weapons/silver/flail
+	name = "Silver Flail"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/rogueweapon/flail/silver
+	craftdiff = 2
 
 // ------ BRONZE ------
 

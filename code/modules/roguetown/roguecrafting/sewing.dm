@@ -91,6 +91,13 @@
 				/obj/item/natural/fibers = 2)
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/sewing/cudese_tunic
+	name = "cudese tunic"
+	result = list(/obj/item/clothing/suit/roguetown/shirt/cudese_tunic/random)
+	reqs = list(/obj/item/natural/cloth = 2,
+				/obj/item/natural/fibers = 2)
+	craftdiff = 1
+
 /datum/crafting_recipe/roguetown/sewing/tights
 	name = "tights"
 	result = list(/obj/item/clothing/under/roguetown/tights/random)
@@ -122,6 +129,12 @@
 /datum/crafting_recipe/roguetown/sewing/strawhat
 	name = "straw hat"
 	result = list(/obj/item/clothing/head/roguetown/strawhat)
+	reqs = list(/obj/item/natural/fibers = 3)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/cudese_strawhat
+	name = "cudese straw hat"
+	result = list(/obj/item/clothing/head/roguetown/cudese_straw_hat)
 	reqs = list(/obj/item/natural/fibers = 3)
 	craftdiff = 1
 
@@ -248,6 +261,12 @@
 /datum/crafting_recipe/roguetown/sewing/stabard/bog
 	name = "bog surcoat"
 	result = list(/obj/item/clothing/cloak/stabard/bog)
+
+/datum/crafting_recipe/roguetown/sewing/straw_cloak
+	name = "straw cloak"
+	result = list(/obj/item/clothing/cloak/straw)
+	reqs = list(/obj/item/natural/fibers = 6)
+	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/sewing/robe
 	name = "robes"

@@ -172,7 +172,7 @@
 	penfactor = 30
 
 /obj/item/rogueweapon/huntingknife/idagger
-	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut, /datum/intent/dagger/thrust/pick)
+	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/cut, /datum/intent/dagger/chop/cleaver, /datum/intent/dagger/thrust/pick)
 	force = 15
 	max_integrity = 100
 	name = "iron dagger"
@@ -204,6 +204,11 @@
 	icon_state = "spdagger"
 	wdefense = 6
 
+/obj/item/rogueweapon/huntingknife/idagger/steel/parrying/church
+	icon_state = "silver_pdagger"
+	name = "silver parrying dagger"
+	desc = "This is a parrying dagger made of inscribed silver, used to catch opponent's weapons in the handguard. It's a bit more dull, however."
+
 /obj/item/rogueweapon/huntingknife/idagger/steel/special
 	icon_state = "sdaggeralt"
 
@@ -211,11 +216,15 @@
 	name = "silver dagger"
 	desc = "This silver dagger can be the bane of vampires and werewolves."
 	icon_state = "sildagger"
-	smeltresult = null
+	force = 18
 	sellprice = 50
 	smeltresult = /obj/item/ingot/silver
 	last_used = 0
 	is_silver = TRUE
+
+/obj/item/rogueweapon/huntingknife/idagger/silver/church
+	icon_state = "silver_daggeralt"
+	desc = "This silver dagger is a favoured blade for Katholikos scouts and agents. Religious imagery is inscribed down the blade."
 
 /obj/item/rogueweapon/huntingknife/idagger/silver/pickup(mob/user)
 	. = ..()

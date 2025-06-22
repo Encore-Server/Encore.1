@@ -14,21 +14,23 @@
 	cloak = /obj/item/clothing/cloak/all_aspect
 	backr = /obj/item/rogueweapon/shield/tower/metal
 	gloves = /obj/item/clothing/gloves/roguetown/chain/all_aspect
-	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
-	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/silver
+	pants = /obj/item/clothing/under/roguetown/chainlegs/silver
 	backl = /obj/item/storage/backpack/rogue/satchel/black
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	shoes = /obj/item/clothing/shoes/roguetown/psydonboots
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	id = /obj/item/clothing/ring/silver
 	backpack_contents = list(/obj/item/storage/keyring/puritan = 1)
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
@@ -56,22 +58,26 @@
 
 /datum/outfit/job/roguetown/katholikostemplar/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
-	var/weapons = list("Bastard Sword","Zweihander","Flail","Mace","Spear")
+	var/weapons = list("Axe","Longsword","Billhook","Flail","Mace","Claymore")
 	var/weapon_choice = input(H,"Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
-		if("Bastard Sword")
-			H.put_in_hands(new /obj/item/rogueweapon/sword/long/exe(H), TRUE)
+		if("Axe")
+			H.put_in_hands(new /obj/item/rogueweapon/stoneaxe/silver(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
+		if("Longsword")
+			H.put_in_hands(new /obj/item/rogueweapon/sword/long/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
-		if("Zweihander")
-			H.put_in_hands(new /obj/item/rogueweapon/greatsword/zwei(H), TRUE)
+		if("Billhook")
+			H.put_in_hands(new /obj/item/rogueweapon/spear/billhook/silver(H), TRUE)
 			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Flail")
-			H.put_in_hands(new /obj/item/rogueweapon/flail(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/flail/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 1, TRUE)
 		if("Mace")
-			H.put_in_hands(new /obj/item/rogueweapon/mace(H), TRUE)
+			H.put_in_hands(new /obj/item/rogueweapon/mace/silver(H), TRUE)
 			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
-		if("Spear")
-			H.put_in_hands(new /obj/item/rogueweapon/spear(H), TRUE)
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+		if("Claymore")
+			H.put_in_hands(new /obj/item/rogueweapon/greatsword/silver(H), TRUE)
+			H.put_in_hands(new /obj/item/gwstrap(H), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)

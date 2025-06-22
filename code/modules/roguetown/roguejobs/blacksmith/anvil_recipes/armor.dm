@@ -392,6 +392,125 @@
 	created_item = /obj/item/storage/belt/rogue/leather/plaquesilver
 	craftdiff = 3
 
+/datum/anvil_recipe/armor/silver/hauberk
+	name = "Silver Hauberk"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/flutedhauberk
+	name = "Silver Fluted Hauberk"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/breastplate
+	name = "Silver Breastplate (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/halfplate
+	name = "Silver Half-plate (+2 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver, /obj/item/ingot/silver)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/fullplate
+	name = "Silver Full-plate (+3 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver, /obj/item/ingot/silver, /obj/item/ingot/silver)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/chainglove
+	name = "Silver Chain Gloves"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/gloves/roguetown/chain/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/plateglove
+	name = "Silver Plate Gauntlets"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/gloves/roguetown/plate/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/chainlegs
+	name = "Silver Chain Chausses"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/under/roguetown/chainlegs/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/boot
+	name = "Silver Plate Boots (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/shoes/roguetown/boots/armor/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/chainlegs
+	name = "Silver Plate Chausses (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	created_item = /obj/item/clothing/under/roguetown/platelegs/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/mjallidhornhelm
+	name = "Silver Helmet of Frost (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/mjallidhornhelmalt
+	name = "Silver Helmet of Frost, Alt (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/mjallidhorn/silver/alt
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/ganihelm
+	name = "Silver Helmet of Earth (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/ganihelm/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/golerkanhhelm
+	name = "Silver Helmet of the Forge (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/golerkanh/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/visireshhelm
+	name = "Silver Helmet of Fire (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/visireshelm/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/visireshhelmalt
+	name = "Silver Helmet of Fire, Alt (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/visires/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/allaspect
+	name = "Silver All-Aspect Armet (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/silver
+	craftdiff = 2
+
+/datum/anvil_recipe/armor/silver/allaspectalt
+	name = "Silver Katholikos Barbute (+1 Silver)"
+	req_bar = /obj/item/ingot/silver
+	additional_items = list(/obj/item/ingot/silver)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/all_aspect/barbute/silver
+	craftdiff = 2
+
 // --------- GOLD RECIPES-----------
 
 /datum/anvil_recipe/armor/gold/belt

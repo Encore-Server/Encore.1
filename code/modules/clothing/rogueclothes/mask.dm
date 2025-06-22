@@ -129,6 +129,13 @@
 	max_integrity = 200
 	smeltresult = /obj/item/ingot/steel
 
+/obj/item/clothing/mask/rogue/facemask/silver
+	name = "silver mask"
+	desc = "The faceless silver mask of the Katholikos' Confessors. They conceal the identities of those who must do the dangerous work in the dark to root out heresy."
+	icon_state = "silver_mask"
+	max_integrity = 175
+	smeltresult = /obj/item/ingot/silver
+
 /obj/item/clothing/mask/rogue/facemask/goldmask
 	name = "Gold Mask"
 	icon_state = "goldmask"
