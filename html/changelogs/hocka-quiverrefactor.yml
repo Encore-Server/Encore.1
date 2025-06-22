@@ -1,6 +1,0 @@
-author: "Hocka"
-
-delete-after: True
-
-changes:
-  - refactor: "Refactored the quiver code."
