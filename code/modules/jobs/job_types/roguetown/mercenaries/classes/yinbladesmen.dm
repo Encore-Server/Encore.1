@@ -97,8 +97,9 @@
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/darkvision)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/featherfall)
 			H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/smoke)
+			H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibility)
 			if(H.mind)
-				H.mind.adjust_spellpoints(-4)//No ninjas with lightning bolt or fireball or blade burst or invisibility pls. I understand the fantasy but it would be far too busted. You get what you start with.
+				H.mind.adjust_spellpoints(-4)//No ninjas with lightning bolt or fireball or blade burst pls. I understand the fantasy but it would be far too busted. You get what you start with.
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			belt = /obj/item/storage/belt/rogue/leather/black
