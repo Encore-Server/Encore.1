@@ -157,6 +157,14 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/iron
 
+/obj/item/clothing/shoes/roguetown/boots/armor/silver
+	name = "silver plated boots"
+	desc = "Boots forged of a set of silver plates, inscribed with Katholikos imagery."
+	icon_state = "silver_armorboots"
+	item_state = "silver_armorboots"
+	max_integrity = 200
+	smeltresult = /obj/item/ingot/silver
+
 /obj/item/clothing/shoes/roguetown/boots/armor/iron/red
 	name = "red iron plated boots"
 	color = "#b81865"

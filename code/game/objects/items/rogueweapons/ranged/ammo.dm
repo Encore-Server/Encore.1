@@ -9,6 +9,17 @@
 	dropshrink = 0.6
 	max_integrity = 10
 	force = 10
+
+/obj/item/ammo_casing/caseless/rogue/bolt/silver
+	name = "silver bolt"
+	desc = "A bolt of pure silver, favoured by the agents of the Katholikos."
+	projectile_type = /obj/projectile/bullet/reusable/bolt/silver
+	icon_state = "silver_bolt"
+	is_silver = TRUE
+	dropshrink = 0.6
+	max_integrity = 10
+	force = 10
+
 /*
 /obj/item/ammo_casing/caseless/rogue/bolt/poison
 	name = "poisoned bolt"
@@ -60,6 +71,22 @@
 		var/mob/living/carbon/M = target
 		M.reagents.add_reagent(/datum/reagent/toxin/mutetoxin, 7) //not gonna kill anyone, but they will be quite quiet
 */
+
+/obj/projectile/bullet/reusable/bolt/silver
+	name = "silver bolt"
+	damage = 70
+	damage_type = BRUTE
+	armor_penetration = 50
+	icon = 'icons/roguetown/weapons/ammo.dmi'
+	icon_state = "bolt_proj"
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/bolt/silver
+	range = 15
+	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	embedchance = 100
+	woundclass = BCLASS_STAB
+	flag = "bullet"
+	speed = 0.5
+
 /obj/item/ammo_casing/caseless/rogue/arrow
 	name = "arrow"
 	desc = "A wooden shaft with a pointy iron end."
@@ -127,6 +154,10 @@
 	name = "bone arrow"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/bone
 
+/obj/projectile/bullet/reusable/arrow/silver
+	name = "silver arrow"
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/silver
+
 /obj/item/ammo_casing/caseless/rogue/arrow/stone
 	name = "stone arrow"
 	desc = "A wooden shaft with a jagged rock on the end."
@@ -140,6 +171,14 @@
 	icon_state = "bonearrow"
 	max_integrity = 5
 	projectile_type = /obj/projectile/bullet/reusable/arrow/bone
+
+/obj/item/ammo_casing/caseless/rogue/arrow/silver
+	name = "silver arrow"
+	desc = "A wooden shaft with an arrowhead of pure silver, a favoured choice for Katholikos scouts."
+	icon_state = "silver_arrow"
+	max_integrity = 5
+	is_silver = TRUE
+	projectile_type = /obj/projectile/bullet/reusable/arrow/silver
 
 /obj/item/ammo_casing/caseless/rogue/arrow/poison
 	name = "poisoned arrow"

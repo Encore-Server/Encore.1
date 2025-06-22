@@ -1,6 +1,6 @@
 /datum/advclass/disciple
 	name = "Disciple"
-	tutorial = "Disciples are Otavan martial artists, recruited by the Inquisition for their iron physique. Elemental  Monks."
+	tutorial = "Disciples are martial artists, recruited by the Inquisition for their iron physique. Elemental Monks."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/disciple
@@ -17,6 +17,7 @@
 	neck = /obj/item/clothing/neck/roguetown/psicross/silver
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
+	beltr = /obj/item/rogueweapon/katar/silver
 	id = /obj/item/clothing/ring/silver
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(/obj/item/storage/keyring/puritan = 1)
