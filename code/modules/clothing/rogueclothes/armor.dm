@@ -84,21 +84,32 @@
 	desc = "A longer iron maille that protects the legs."
 	icon_state = "iron_hauberk"
 	item_state = "iron_hauberk"
-	max_integrity = 230
 	smeltresult = /obj/item/ingot/iron
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/silver
+	name = "silver hauberk"
+	desc = "A longer silver maille that protects the legs."
+	icon_state = "silver_hauberk"
+	item_state = "silver_hauberk"
+	smeltresult = /obj/item/ingot/silver
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted
 	name = "steel fluted hauberk"
-	desc = "A steel maille, of a pattern popularized by Aelondan templars."
+	desc = "A steel maille, of a pattern popularized by templars of the Katholikos."
 	icon_state = "flutedhauberk"
 	item_state = "flutedhauberk"
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/iron
 	name = "iron fluted hauberk"
-	desc = "An iron maille, of a pattern popularized by Aelondan templars."
+	desc = "An iron maille, of a pattern popularized by templars of the Katholikos."
 	icon_state = "iron_flutedhauberk"
 	item_state = "iron_flutedhauberk"
-	max_integrity = 230
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/fluted/silver
+	name = "silver fluted hauberk"
+	desc = "A silver maille, of a pattern popularized by templars of the Katholikos."
+	icon_state = "silver_flutedhauberk"
+	item_state = "silver_flutedhauberk"
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 	name = "steel chainmail bikini"
@@ -145,6 +156,15 @@
 	item_state = "iron_halfplate"
 	smeltresult = /obj/item/ingot/iron
 	max_integrity = 255
+	smelt_bar_num = 3
+
+/obj/item/clothing/suit/roguetown/armor/plate/silver
+	name = "silver half-plate"
+	desc = "Plate armor with pauldrons. Forged from silver and inscribed with Katholikos imagery, fit for hunting the creatures of the night."
+	icon_state = "silver_halfplate"	
+	item_state = "silver_halfplate"
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 325
 	smelt_bar_num = 3
 
 /obj/item/clothing/suit/roguetown/armor/plate/bikini
@@ -216,6 +236,14 @@
 	smeltresult = /obj/item/ingot/iron
 	smelt_bar_num = 4
 
+/obj/item/clothing/suit/roguetown/armor/plate/full/silver
+	name = "silver plate armor"
+	desc = "Full silver plate. Leg protecting tassets, groin cup, armored vambraces - a full set engraved with Katholikos imagery. Fit for hunting the most dangerous beasts of the night."
+	icon_state = "silver_plate"
+	item_state = "silver_plate"
+	max_integrity = 410
+	smeltresult = /obj/item/ingot/silver
+
 /obj/item/clothing/suit/roguetown/armor/plate/full/bikini
 	name = "steel fullplate bikini"
 	desc = "Full plate in bikini form, full package and full exposure."
@@ -245,6 +273,14 @@
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2
+
+/obj/item/clothing/suit/roguetown/armor/plate/half/silver
+	name = "silver breastplate"
+	desc = "A basic cuirass of silver, protective and moderately durable. It is inscribed with Katholikos imagery."
+	icon_state = "silver_cuirass"
+	max_integrity = 315
+	smeltresult = /obj/item/ingot/silver
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/plate/half/elven
 	name = "elven guardian cuirass"
