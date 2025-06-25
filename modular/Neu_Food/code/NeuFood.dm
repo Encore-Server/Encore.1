@@ -334,25 +334,30 @@
 	nutriment_factor = 1
 	taste_mult = 4
 	hydration = 10
-	metabolization_rate = 0.5
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	taste_description = "tart aromatic tea"
 
-/datum/reagent/consumable/soup/tea/on_mob_metabolize(mob/living/M)
+/datum/reagent/consumable/soup/tea/westleach/on_mob_metabolize(mob/living/M)
 	M.add_stress(/datum/stressevent/westleachtea)
 	..()
 
-/datum/reagent/consumable/soup/tea/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/soup/tea/westleach/on_mob_life(mob/living/carbon/M)
 	if(prob(1))
 		var/tea_message = pick("You feel alert.", "You feel energised.", "You feel refreshed.")
 		to_chat(M, span_notice("[tea_message]"))
+
+/datum/reagent/consumable/soup/tea/westleach/on_mob_life(mob/living/carbon/M)
+	M.rogstam_add(10)
+	..()
+	. = 1
 
 /datum/reagent/consumable/soup/tea/swampweed
 	name = "swampweed tea"
 	description = "A relaxing and calming brew. A common herbal remedy and sleep aid, for peasantry and nobility alike."
 	color = "#47210a81"
 	trippy = TRUE
-	overdose_threshold = 30
-	metabolization_rate = 0.5
+	overdose_threshold = 50
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
 	taste_description = "bitter earthy tea"
 
 /datum/reagent/consumable/soup/tea/swampweed/on_mob_life(mob/living/carbon/M)
@@ -407,7 +412,7 @@
 	nutriment_factor = 1
 	taste_mult = 4
 	hydration = 10
-	metabolization_rate = 1
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM
 	overdose_threshold = 15
 	taste_description = "burning floral tea"
 
