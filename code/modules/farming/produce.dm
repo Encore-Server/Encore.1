@@ -230,7 +230,7 @@
 
 /obj/item/reagent_containers/food/snacks/grown/rogue/pipeweeddry
 	seed = null
-	name = "westleach leaf"
+	name = "dried westleach"
 	desc = "A dried leaf."
 	icon_state = "westleachd"
 	dry = TRUE
@@ -241,13 +241,24 @@
 
 /obj/item/reagent_containers/food/snacks/grown/rogue/sweetleafdry
 	seed = null
-	name = "swampweed"
+	name = "dried swampweed"
 	desc = "It's dried."
 	icon_state = "swampweedd"
 	dry = TRUE
 	pipe_reagents = list(/datum/reagent/drug/space_drugs = 30)
 	list_reagents = list(/datum/reagent/drug/space_drugs = 2,/datum/reagent/consumable/nutriment = 1)
 	grind_results = list(/datum/reagent/drug/space_drugs = 5)
+	eat_effect = /datum/status_effect/debuff/badmeal
+
+/obj/item/reagent_containers/food/snacks/grown/rogue/fyritiusdry
+	seed = null
+	name = "dried fyritius"
+	desc = "A dried flower. The drying process has only turned the flower's warmth into an almost stinging heat."
+	icon_state = "fyritiusd"
+	dry = TRUE
+	pipe_reagents = list(/datum/reagent/toxin/fyritiusnectar = 30)
+	list_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/toxin/fyritiusnectar = 5)
+	grind_results = list(/datum/reagent/toxin/fyritiusnectar = 5)
 	eat_effect = /datum/status_effect/debuff/badmeal
 
 /obj/item/reagent_containers/food/snacks/grown/onion/rogue
