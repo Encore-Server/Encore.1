@@ -43,6 +43,16 @@
 	stressadd = -4
 	desc = span_blue("I love you sweet leaf.")
 
+/datum/stressevent/westleachtea
+	timer = 5 MINUTES
+	stressadd = -4
+	desc = span_blue("An energising and refreshing tea.")
+
+/datum/stressevent/swampweedtea
+	timer = 5 MINUTES
+	stressadd = -4
+	desc = span_blue("A calming and relaxing tea.")
+
 /datum/stressevent/high
 	timer = 5 MINUTES
 	stressadd = -4
