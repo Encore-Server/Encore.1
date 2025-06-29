@@ -112,7 +112,7 @@
 	alpha = 173
 
 /datum/reagent/medicine/manapot/on_mob_life(mob/living/carbon/M)
-	M.rogstam_add(10)
+	M.rogstam_add(25)
 	..()
 	. = 1
 
