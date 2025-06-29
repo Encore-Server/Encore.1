@@ -94,6 +94,11 @@
 					/obj/item/gun/ballistic/revolver/grenadelauncher/bow,
 				)
 
+/datum/supply_pack/rogue/weapons/musket
+	name = "Musket"
+	cost = 100
+	contains = list(/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced)
+
 /datum/supply_pack/rogue/weapons/quiver
 	name = "Quiver"
 	cost = 15
@@ -129,6 +134,32 @@
 					/obj/item/ammo_casing/caseless/rogue/arrow/iron,
 				)
 
+/datum/supply_pack/rogue/weapons/ironshots
+	name = "Iron Shots"
+	cost = 20
+	contains = list(
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+					/obj/item/ammo_casing/caseless/rogue/bullet/ironshot,
+				)
+
 /datum/supply_pack/rogue/weapons/quivers/arrows
 	name = "Quiver of Arrows"
 	cost = 50
@@ -146,6 +177,11 @@
 					/obj/item/quiver/bolts,
 					/obj/item/quiver/bolts,
 				)
+
+/datum/supply_pack/rogue/weapons/shotpouch
+	name = "Loaded Shot Pouch"
+	cost = 30
+	contains = list(/obj/item/quiver/shotpouch/ironshots)
 
 /*
 /datum/supply_pack/rogue/weapons/Parrows
@@ -207,3 +243,7 @@
 					/obj/item/ammo_casing/caseless/rogue/bolt/poison)
 */
 
+/datum/supply_pack/rogue/weapons/gunpowderhorn
+	name = "Gunpowder Horn"
+	cost = 10
+	contains = list(/obj/item/gunpowderhorn)

@@ -66,3 +66,23 @@
 	additional_items = list(/obj/item/ingot/bronze, /obj/item/roguegear, /obj/item/roguegear)
 	created_item = /obj/item/bodypart/r_leg/prosthetic/bronze
 	craftdiff = 4
+
+// ------------ FIREARMS ----------------
+
+/datum/crafting_recipe/roguetown/gunpowderhorn
+	name = "Gunpowder Horn"
+	result = list(/obj/item/gunpowderhorn)
+	reqs = list(/obj/item/reagent_containers/glass/bottle/waterskin = 1,
+				/obj/item/roguegear = 1,
+				/obj/item/ash = 2,
+				/obj/item/rogueore/coal = 1
+				)
+	skillcraft = /datum/skill/craft/engineering
+	craftdiff = 4
+
+/datum/anvil_recipe/engineering/steel/firearms/powdergun_advanced
+	name = "Musket"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced
+	craftdiff = 4
