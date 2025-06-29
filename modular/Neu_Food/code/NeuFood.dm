@@ -314,6 +314,152 @@
 	color = "#9e559c"
 	taste_description = "something rancid"
 
+/*	........   Teas   ................ */// These are made in the pot in the exact same way you make soups and stews, but they have different effects depending on the type of tea and are more mechanically involved than just food. Better than smoking, worse than alchemy.
+
+/datum/reagent/consumable/soup/tea
+	name = "tea"
+	metabolization_rate = 0.1
+	taste_description = "bitterness"
+	var/trippy = FALSE //Does this tea make you trip?
+
+/datum/reagent/consumable/soup/tea/on_mob_end_metabolize(mob/living/M)
+	if(trippy)
+		SEND_SIGNAL(M, COMSIG_CLEAR_MOOD_EVENT, "[type]_high")
+
+/datum/reagent/consumable/soup/tea/westleach
+	name = "westleach tea"
+	description = "An energising brew. Popular with sleep deprived soldiers, or peasants rising before dawn."
+	color = "#aa2c1665"
+	reagent_state = LIQUID
+	nutriment_factor = 1
+	taste_mult = 4
+	hydration = 10
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	taste_description = "tart aromatic tea"
+
+/datum/reagent/consumable/soup/tea/westleach/on_mob_metabolize(mob/living/M)
+	M.add_stress(/datum/stressevent/westleachtea)
+	..()
+
+/datum/reagent/consumable/soup/tea/westleach/on_mob_life(mob/living/carbon/M)
+	if(prob(1))
+		var/tea_message = pick("You feel alert.", "You feel energised.", "You feel refreshed.")
+		to_chat(M, span_notice("[tea_message]"))
+
+/datum/reagent/consumable/soup/tea/westleach/on_mob_life(mob/living/carbon/M)
+	M.rogstam_add(10)
+	..()
+	. = 1
+
+/datum/reagent/consumable/soup/tea/swampweed
+	name = "swampweed tea"
+	description = "A relaxing and calming brew. A common herbal remedy and sleep aid, for peasantry and nobility alike."
+	color = "#47210a81"
+	trippy = TRUE
+	overdose_threshold = 50
+	metabolization_rate = 0.5 * REAGENTS_METABOLISM
+	taste_description = "bitter earthy tea"
+
+/datum/reagent/consumable/soup/tea/swampweed/on_mob_life(mob/living/carbon/M)
+	M.set_drugginess(30)
+	if(prob(1))
+		var/tea_message = pick("You feel relaxed.", "You feel calm.", "You feel like your anxieties are less of a burden.")
+		to_chat(M, span_notice("[tea_message]"))
+	if(prob(5))
+		if(M.gender == FEMALE)
+			M.emote(pick("twitch_s","giggle"))
+		else
+			M.emote(pick("twitch_s","chuckle"))
+	M.apply_status_effect(/datum/status_effect/buff/weed)
+	..()
+
+/datum/reagent/consumable/soup/tea/swampweed/on_mob_end_metabolize(mob/living/M)
+	M.clear_fullscreen("weedsm")
+	M.update_body_parts_head_only()
+
+/datum/reagent/consumable/soup/tea/swampweed/on_mob_metabolize(mob/living/M)
+	..()
+	M.set_drugginess(30)
+	M.update_body_parts_head_only()
+	M.overlay_fullscreen("weedsm", /atom/movable/screen/fullscreen/weedsm)
+
+/atom/movable/screen/fullscreen/weedsm
+	icon_state = "smok"
+	plane = BLACKNESS_PLANE
+	layer = AREA_LAYER
+	blend_mode = 0
+	alpha = 100
+	show_when_dead = FALSE
+
+/atom/movable/screen/fullscreen/weedsm/Initialize()
+	. = ..()
+	filters += filter(type="angular_blur",x=5,y=5,size=1)
+
+/datum/reagent/consumable/soup/tea/swampweed/overdose_start(mob/living/M)
+	to_chat(M, span_danger("I start tripping hard!"))
+	SEND_SIGNAL(M, COMSIG_ADD_MOOD_EVENT, "[type]_overdose", /datum/mood_event/overdose, name)
+
+/datum/reagent/drug/space_drugs/overdose_process(mob/living/M)
+	M.adjustToxLoss(0.1*REM, 0)
+	M.adjustOxyLoss(1.1*REM, 0)
+	..()
+
+/datum/reagent/consumable/soup/tea/fyritius // Inteded to be a more available healing potion alternative to characters that live out in the wild but don't have alchemy skill. Potent and strong healing, but will probably kill you dead if you're not careful with it. Risk and reward.
+	name = "fyritius tea"
+	description = "An ever-simmering, dangerous brew. Old wives tales and outdated apothecary journals speak of this tea as having potent medicinal properties, but twice as terrible consequences if not portioned carefully."
+	color = "#ff99007e"
+	reagent_state = LIQUID
+	nutriment_factor = 1
+	taste_mult = 4
+	hydration = 10
+	metabolization_rate = 1.5 * REAGENTS_METABOLISM
+	overdose_threshold = 15
+	taste_description = "burning floral tea"
+
+/datum/reagent/consumable/soup/tea/fyritius/on_mob_life(mob/living/carbon/M)
+	if(prob(1))
+		var/tea_message = pick("You feel warmth blossom outwards from your chest. It's just slightly too hot to be comfortable.", "You feel your blood almost simmering with heat, bringing relief and faint stinging pain in equal measure.")
+		to_chat(M, span_notice("[tea_message]"))
+
+/datum/reagent/consumable/soup/tea/fyritius/on_mob_life(mob/living/carbon/M)
+	if(volume >= 60)
+		M.reagents.remove_reagent(/datum/reagent/consumable/soup/tea/fyritius, 2) //No overhealing.
+	var/list/wCount = M.get_wounds()
+	if(M.blood_volume < BLOOD_VOLUME_NORMAL)
+		M.blood_volume = min(M.blood_volume+50, BLOOD_VOLUME_MAXIMUM)
+	else
+		M.blood_volume = min(M.blood_volume+10, BLOOD_VOLUME_MAXIMUM)
+	if(wCount.len > 0)
+		M.heal_wounds(3) 
+		M.update_damage_overlays()
+	M.adjustBruteLoss(-2*REM, 0)
+	M.adjustFireLoss(-2*REM, 0)
+	M.adjustOxyLoss(-2, 0)
+	M.adjustOrganLoss(ORGAN_SLOT_BRAIN, -2*REM)
+	M.adjustCloneLoss(-2*REM, 0)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(!istype(H.dna.species, /datum/species/werewolf))
+			M.adjust_nutrition(-0.5*REM)
+	..()
+	. = 1
+
+/datum/reagent/consumable/soup/tea/fyritius/overdose_start(mob/living/M)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(!istype(H.dna.species, /datum/species/werewolf))
+			H.playsound_local(H, 'sound/misc/heroin_rush.ogg', 100, FALSE)
+			H.visible_message(span_warning("A terrible fever-flush seizes [H], and burning blisters begin to spread!"))
+	. = 1
+
+/datum/reagent/consumable/soup/tea/fyritius/overdose_process(mob/living/M)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(!istype(H.dna.species, /datum/species/werewolf))
+			M.adjustFireLoss(6, 0)
+			M.adjustToxLoss(2, 0)
+	..()
+	. = 1
 
 /* * * * * * * * * * * * * * *	*
  *								*

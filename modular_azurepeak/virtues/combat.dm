@@ -130,7 +130,7 @@
 	custom_text = "Increases axe skill by 1, minimum apprentice. Increases tracking by 1, minimum apprentice. Capped at journeyman."
 	added_stashed_items = list("Iron Axe" = /datum/supply_pack/rogue/weapons/axe,
 								)
-/datum/virtue/combat/archer/apply_to_human(mob/living/carbon/human/recipient)
+/datum/virtue/combat/axeman/apply_to_human(mob/living/carbon/human/recipient)
 	if(recipient.mind?.get_skill_level(/datum/skill/combat/axes) < SKILL_LEVEL_APPRENTICE)
 		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/axes, SKILL_LEVEL_APPRENTICE, silent = TRUE)
 	else
