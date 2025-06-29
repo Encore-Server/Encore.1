@@ -142,6 +142,18 @@
 		added_skills = list(list(/datum/skill/misc/tracking, 1, 3))
 		handle_skills(recipient)
 
+/datum/virtue/combat/musketeer
+	name = "Musket Enthusiast"
+	desc = "Cudao's firearm technology greatly fascinates you - so much so that you managed to procure your own musket along with the tools to operate it."
+	custom_text = "Grants novice firearms skill."
+	added_stashed_items = list("Musket" = /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced,
+								"Shotpouch (Iron shots)" = /obj/item/quiver/shotpouch/ironshots,
+								"Gunpowder horn" = /obj/item/gunpowderhorn)
+
+/datum/virtue/combat/musketeer/apply_to_human(mob/living/carbon/human/recipient)
+	if(recipient.mind?.get_skill_level(/datum/skill/combat/firearms) < SKILL_LEVEL_NOVICE)
+		recipient.mind?.adjust_skillrank_up_to(/datum/skill/combat/firearms, SKILL_LEVEL_NOVICE, silent = TRUE)
+
 
 /*/datum/virtue/combat/tavern_brawler
 	name = "Tavern Brawler"
