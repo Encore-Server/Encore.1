@@ -2171,14 +2171,18 @@
 /area/rogue/outdoors/beach)
 "cxZ" = (
 /obj/structure/closet/crate/roguecloset,
-/obj/item/quiver/arrows,
-/obj/item/quiver/arrows,
-/obj/item/quiver/arrows,
-/obj/item/quiver/arrows,
-/obj/item/quiver/arrows,
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
 	},
+/obj/item/quiver/shotpouch/ironshots,
+/obj/item/quiver/shotpouch/ironshots,
+/obj/item/quiver/shotpouch/ironshots,
+/obj/item/gunpowderhorn,
+/obj/item/gunpowderhorn,
+/obj/item/gunpowderhorn,
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced,
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced,
+/obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/town/garrison)
 "czX" = (

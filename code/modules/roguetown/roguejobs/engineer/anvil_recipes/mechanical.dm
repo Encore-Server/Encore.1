@@ -66,3 +66,12 @@
 	additional_items = list(/obj/item/ingot/bronze, /obj/item/roguegear, /obj/item/roguegear)
 	created_item = /obj/item/bodypart/r_leg/prosthetic/bronze
 	craftdiff = 4
+
+// ------------ FIREARMS ----------------
+
+/datum/anvil_recipe/engineering/steel/firearms/powdergun_advanced
+	name = "Musket"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced
+	craftdiff = 4
