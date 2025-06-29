@@ -538,7 +538,7 @@
 	sellprice = 4
 
 /datum/crafting_recipe/roguetown/shotpouch
-	name = "shotpouch"
+	name = "shot pouch"
 	result = list(/obj/item/quiver/shotpouch)
 	reqs = list(/obj/item/natural/fibers = 5,
 				/obj/item/natural/cloth = 5)

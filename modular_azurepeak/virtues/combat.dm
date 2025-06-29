@@ -147,7 +147,7 @@
 	desc = "Cudao's firearm technology greatly fascinates you - so much so that you managed to procure your own musket along with the tools to operate it."
 	custom_text = "Grants novice firearms skill."
 	added_stashed_items = list("Musket" = /obj/item/gun/ballistic/revolver/grenadelauncher/powdergun/advanced,
-								"Shotpouch (Iron shots)" = /obj/item/quiver/shotpouch/ironshots,
+								"Shot pouch (Iron shots)" = /obj/item/quiver/shotpouch/ironshots,
 								"Gunpowder horn" = /obj/item/gunpowderhorn)
 
 /datum/virtue/combat/musketeer/apply_to_human(mob/living/carbon/human/recipient)
