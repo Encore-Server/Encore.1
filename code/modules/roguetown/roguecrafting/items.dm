@@ -537,6 +537,14 @@
 /obj/item/storage/roguebag/crafted
 	sellprice = 4
 
+/datum/crafting_recipe/roguetown/shotpouch
+	name = "shot pouch"
+	result = list(/obj/item/quiver/shotpouch)
+	reqs = list(/obj/item/natural/fibers = 5,
+				/obj/item/natural/cloth = 5)
+	tools = list(/obj/item/needle)
+	skillcraft = /datum/skill/misc/sewing
+	req_table = FALSE
 
 /datum/crafting_recipe/roguetown/bait
 	name = "bait (wheat)"
