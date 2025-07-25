@@ -52,6 +52,21 @@
 		-->
 		<div class="commit sansserif">
 
+			<h2 class="date">25 July 2025</h2>
+			<h3 class="author">Hocka updated:</h3>
+			<ul class="changes bgimages16">
+				<li class="rscadd">Added muskets to the game - as well as the gunpowder horn, required for priming it. Iron shots (and shot pouches to carry them in more conveniently) have of course also been added - the musketeer virtue and Cudao Marksman mercenary subclass spawn with these items. They can also be crafted, bought from the merchant, or found in the town watch's armoury.</li>
+				<li class="rscadd">Musketeer Virtue - gives you a little bit of firearms skill and gives you a musket kit in your stash.</li>
+				<li class="rscadd">Cudao Marksman mercenary subclass - basically a class dedicated to using the newly added musket (and other firearms down the line, most likely.)</li>
+				<li class="rscadd">Added the firearms skill - this skill impacts how quickly you pack your musket's gunpowder and how quickly you can get a perfect aim with firearms.</li>
+				<li class="imageadd">Added sprites for the gunpowder horn, shot pouch and musket, made by Lancer.</li>
+				<li class="maptweak">Added three muskets and the equipment needed to operate them to the garrison armoury.</li>
+				<li class="soundadd">Added musket firing sound, dry firing sound, pan opening/closing sound, musket barrel ram-rodding sound. Also added combat music for the Cudao Marksman.</li>
+				<li class="refactor">Fixed the colour on the 'red' font define to look a bit more appropriate compared to the rest of the game, mimicking red text from other areas.</li>
+				<li class="refactor">Refactoed how gun code handles removing rounds from a gun, so that the bullet goes straight to your inactive hand (if it's empty) - this should also affect bows and crossbows!</li>
+				<li class="refactor">Added a special variety of the smoke effect specifically for powder gun blasts.</li>
+			</ul>
+
 			<h2 class="date">26 June 2025</h2>
 			<h3 class="author">Furrycactus updated:</h3>
 			<ul class="changes bgimages16">
@@ -82,80 +97,6 @@
 			<h3 class="author">kyres1 updated:</h3>
 			<ul class="changes bgimages16">
 				<li class="rscadd">Adds a new level up icon.</li>
-			</ul>
-
-			<h2 class="date">14 May 2025</h2>
-			<h3 class="author">Furrycactus updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Adds the Necrolyte subclass for the Bandit job.</li>
-				<li class="rscadd">Adds vices for having bronze prosthetics, similar to the ones that grant wooden ones.</li>
-				<li class="rscadd">Tweaked the gear in the Garrison armoury.</li>
-				<li class="rscadd">Tweaks some of the flavour and descriptions of the ritual spells to remove references to Noc, Astrata, Dendor, and Eora.</li>
-				<li class="rscadd">Comments out some of the broken ritual circles.</li>
-			</ul>
-
-			<h2 class="date">09 May 2025</h2>
-			<h3 class="author">Furrycactus updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Tweaks Fort Hellwatch some more, again. Removes the hell trolls, places mob-spawn traps instead that hopefully aren't going to cause more cases of monsters fighting each other.</li>
-			</ul>
-			<h3 class="author">kyres1 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">The pillar of bodies will scream now.</li>
-				<li class="rscadd">Adds ents, big tree mobs that are kinda scary but don't attack if you don't get close.</li>
-				<li class="rscadd">Adds more flowers to the world generators for the Weeping Wood and the County of Etgard because they looked kinda dull before.</li>
-				<li class="rscadd">Adjusted fiend behavior. Stationary fiends shouldn't move anymore, and chargers will actually charge you at ludicrous speeds.</li>
-				<li class="rscdel">Removed random maneater spawns from all areas, and mapped in maneaters are all gone now.</li>
-				<li class="bugfix">Fixes upgraded fire dancers not having functioning projectiles.</li>
-				<li class="bugfix">Fixes more double turf map errors in Mount Miracle.</li>
-				<li class="bugfix">Fixes lava runtimes by disabling unused Hell templates.</li>
-				<li class="rscadd">Adds a verb to spawn checkpoints. To be used in events to give players an alternative method to depart long dungeons, as well as an OOC safe zone. It is located in the admin tab.</li>
-			</ul>
-
-			<h2 class="date">03 May 2025</h2>
-			<h3 class="author">ClemTheDuck updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">fixes a small bug that saw the hood item not selectable in the loadout.</li>
-			</ul>
-			<h3 class="author">CometBlaze updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Fixes the Night-Eyed virtue so it now does what it's supposed to.</li>
-			</ul>
-			<h3 class="author">Furrycactus updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Adds a new Warden subclass - the Panther Warden. While still Ranger-types, they lean a little more in the direction of Rogue, adding more versatility to the job.</li>
-				<li class="rscadd">Drastically overhauls the skills granted to Acolytes, and makes Acolytes of each Patron distinct from each other.</li>
-				<li class="rscadd">Makes some small fixes to the new minining tunnels dungeon.</li>
-				<li class="rscadd">Makes some tweaks to the Fort Hellwatch templates so it's hopefully less uber-death-kill now.</li>
-				<li class="rscadd">Fixes the item path for the lockpick ring granted by the Petty Thief virtue.</li>
-				<li class="rscadd">Reflavours several Roguetown alcoholic drinks to be more in line with our setting.</li>
-				<li class="rscadd">Adds Consecrated and Cursed wine.</li>
-				<li class="rscadd">Adds markers for randomised barrels of alcohol to spawn, and puts them across the map.</li>
-				<li class="qol">Increases the Heir skill in Swords to Journeyman.</li>
-				<li class="qol">Reduces the Heir skill in Maces to Apprentice.</li>
-				<li class="rscadd">Adds a small network of old mining tunnels to the south-east of Old Doma, and north of the Lakeside Hamlet. Baby's first dungeon, plus a place you can go mining if you want.</li>
-				<li class="rscadd">Adds three new tracks to the game. One for the Shirleigh Keep, one for the spooky or abandoned villages (Lodge Berkleigh, Lakeside Hamlet, Wey Whisperen), and one combat theme for Church militant roles.</li>
-				<li class="rscadd">Added some levels in Druidic Trickery for Gani and Secret God patron Clerics and Witches. Some subclasses offer more skills than others.</li>
-			</ul>
-			<h3 class="author">Hocka updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="bugfix">Uncommented some of the shuttle code to allow merchant-type machines to work.</li>
-				<li class="rscadd">Replaced a chair with a dye station on the spawn boat.</li>
-				<li class="bugfix">Added stab intent to stone knives, letting them be used for cooking meat over a campfire.</li>
-				<li class="rscadd">Added a new salt water subtype for the water reagent - drinking it lowers hydrations but it can be filtered by purifier waterskins. If you gather a full pot of it you can boil it to get the salt out.</li>
-				<li class="rscadd">New crafting recipe, mostly a side-fix for transferring the chemical reagent version of salt into the salt pile item, needed for cooking recipes.</li>
-				<li class="balance">The salt alchemy recipe now outputs 3 piles of salt instead of one to hopefully keep it competitive with the new source of salt.</li>
-				<li class="qol">Clicking on a tree trunk with either a stone axe or woodcutting axe on chop intent will now automatically cycle through the hits for you, much like blacksmithing.</li>
-				<li class="rscadd">Direct Narrate, Global Narrate and Local Narrate now lets you choose the size, colour and shape of the text it outputs.</li>
-				<li class="refactor">Added a bunch of defines such as FONT_TINY(), FONT_BRIGHTRED() etc to serve as an alternative to spans, this was mostly to make the changes to narrate a bit more readable but it should be nice to take advantage of in the future, with far less arbitraty names than the span defines.</li>
-				<li class="bugfix">Arcyne Potential now assigns Prestidigitation regardless of the recipient's arcane skill level.</li>
-				<li class="rscadd">Rearranged the proc for Arcyne Potential a bit for more readability, and so that it actually gives out Prestidigitation like it's supposed to.</li>
-			</ul>
-			<h3 class="author">kyres1 updated:</h3>
-			<ul class="changes bgimages16">
-				<li class="rscadd">Added a method for admins to roll dice using a Roll Global Dice verb in the Admin tab.</li>
-				<li class="rscadd">Added a tutorial area accessible from the roundstart spawn where people can learn the game safely.</li>
-				<li class="bugfix">Tidies up a lot of turf smoothing problems.</li>
 			</ul>
 		</div>
 
