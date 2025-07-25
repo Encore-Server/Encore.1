@@ -105,6 +105,13 @@
 	"...the crossbow is a deadly marvel of engineering, waiting for your guidance. You steady your breath, finger poised on the trigger. The world narrows as you take aim, the perfect shot soon to come..."
 	)
 
+/datum/skill/combat/firearms
+	name = "Firearms"
+	dreams = list(
+	"...'HOLD!' your commander yells, you're just able to maintain your balance and your cannon's aim trained on the behemoth of an airborne demon just off the airship's port-side. 'FIRE!' your cannon looses its payload, the demon is hit in the eye - blinded, it begins to fall out of the air...",
+	"...an instructor drills the same mantra over and over into you and your comrades: 'fill the flash pan with the powder, put your ball in, pack it into the powder with your ramrod, close the flash pan. Fail any of these steps and you may as well be blowing air at your enemy'..."
+	)
+
 /datum/skill/combat/wrestling
 	name = "Wrestling"
 	dreams = list(

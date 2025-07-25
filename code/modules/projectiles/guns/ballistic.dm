@@ -85,6 +85,7 @@
 	var/tac_reloads = TRUE //Snowflake mechanic no more.
 	///Whether the gun can be sawn off by sawing tools
 	var/can_be_sawn_off  = FALSE
+	var/ammo_to_hand = TRUE // when we empty the gun's chamber, will our character try to grab it? useful for weapons like muskets, crossbows and bows
 	var/verbage = "load"
 
 /obj/item/gun/ballistic/Initialize()
@@ -347,10 +348,16 @@
 			return
 	if(bolt_type == BOLT_TYPE_NO_BOLT)
 		chambered = null
+		var/to_hand = FALSE
+		if(!user.get_inactive_held_item() && ammo_to_hand) // checking this here instead of in the for loop so we're not potentially calling it multiple times, when it only needs to be checked once
+			to_hand = TRUE
 		var/num_unloaded = 0
 		for(var/obj/item/ammo_casing/CB in get_ammo_list(FALSE, TRUE))
-			CB.forceMove(drop_location())
-			CB.bounce_away(FALSE, NONE)
+			if(to_hand)
+				user.put_in_inactive_hand(CB)
+			else
+				CB.forceMove(drop_location())
+				CB.bounce_away(FALSE, NONE)
 			num_unloaded++
 			var/turf/T = get_turf(drop_location())
 			if(T && is_station_level(T.z))

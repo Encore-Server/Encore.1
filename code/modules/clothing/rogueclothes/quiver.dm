@@ -128,3 +128,27 @@
 		var/obj/item/ammo_casing/caseless/rogue/bolt/silver/A = new()
 		ammo += A
 	update_icon()
+
+/obj/item/quiver/shotpouch
+	name = "shot pouch"
+	desc = "a bag used for carrying musket shots."
+	icon = 'icons/roguetown/weapons/guns.dmi'
+	icon_state = "shotpouch"
+	w_class = WEIGHT_CLASS_SMALL
+	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_NECK
+	max_integrity = 0
+	bloody_icon_state = "bodyblood"
+	alternate_worn_layer = UNDER_CLOAK_LAYER
+	strip_delay = 10
+	max_storage = 20
+	allowed_ammo = list(/obj/item/ammo_casing/caseless/rogue/bullet/ironshot)
+	sewrepair = TRUE
+
+/obj/item/quiver/shotpouch/update_icon()
+	return
+
+/obj/item/quiver/shotpouch/ironshots/Initialize()
+	. = ..()
+	for(var/i in 1 to max_storage)
+		var/obj/item/ammo_casing/caseless/rogue/bullet/ironshot/B = new()
+		ammo += B

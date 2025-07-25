@@ -212,7 +212,7 @@
 	poisonfeel = "burning" //Ditto
 	poisonamount = 5 //Support and balance for bodkins, which will hold less poison due to how
 
-//pyro bolts - stonekeep port 
+//pyro bolts - stonekeep port
 
 /obj/item/ammo_casing/caseless/rogue/bolt/pyro
 	name = "pyroclastic bolt"
@@ -327,28 +327,26 @@
 		addtimer(CALLBACK(M, TYPE_PROC_REF(/mob/living, adjustToxLoss), 100), 10 SECONDS)
 		addtimer(CALLBACK(M, TYPE_PROC_REF(/atom, visible_message), span_danger("[M] appears greatly weakened by the poison!")), 10 SECONDS)
 
-/obj/projectile/bullet/reusable/bullet
-	name = "lead ball"
-	damage = 50
-	damage_type = BRUTE
-	icon = 'icons/roguetown/weapons/ammo.dmi'
-	icon_state = "musketball_proj"
-	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet
-	range = 30
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
-	embedchance = 100
-	woundclass = BCLASS_STAB
-	flag = "bullet"
-	armor_penetration = 200
-	speed = 0.1
-
-/obj/item/ammo_casing/caseless/rogue/bullet
-	name = "lead sphere"
-	desc = "A small lead sphere. This should go well with gunpowder."
-	projectile_type = /obj/projectile/bullet/reusable/bullet
+/obj/item/ammo_casing/caseless/rogue/bullet/ironshot
+	name = "iron ball"
+	desc = "A small iron ball, often seen being propelled with great force from various firearms."
+	projectile_type = /obj/projectile/bullet/ironshot
 	caliber = "musketball"
 	icon = 'icons/roguetown/weapons/ammo.dmi'
 	icon_state = "musketball"
 	dropshrink = 0.5
-	possible_item_intents = list(/datum/intent/use)
-	max_integrity = 0.1
+
+/obj/projectile/bullet/ironshot
+	name = "iron ball"
+	damage = 80
+	damage_type = BRUTE
+	armor_penetration = 40 // this bullet does more damage than a bolt, so less armour-pen is a fair trade-off
+	icon = 'icons/roguetown/weapons/ammo.dmi'
+	icon_state = "musketball_proj"
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/bullet/ironshot
+	range = 30
+	hitsound = 'sound/combat/hits/hi_bolt (3).ogg'
+	embedchance = 100
+	woundclass = BCLASS_SMASH // doesn't really cause severed arteries, but feels like it dislocates and fractures bones a lot more
+	flag = "bullet"
+	speed = 0.1
